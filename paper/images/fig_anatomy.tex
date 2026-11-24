@@ -1,0 +1,139 @@
+% 2026-11-09, second slimming pass (G-54): caption syntax tightened; no fact removed.
+% 2026-11-09: caption shortened (consensus F-08; the author's note: even shorter)
+% Figure 2 (Chapter 2, reused for scoring in Chapter 5) -- anatomy of a technology frame and the scoring of a model
+% output against it. Drawn by hand in TikZ in the thesis figure style (preamble); restructuring plan v3, Fig 2.
+% THE PARAGRAPH IS INVENTED. It is not corpus text and paraphrases none: checked on 2026-11-05 against all 1,047
+% paragraphs and headlines of tools/annotation/sheets/ALL_paragraphs.csv (lower-cased word 5-grams): no shared
+% 5-word sequence (script and counts only, no corpus text printed). Do not replace it with a corpus paragraph.
+% Element names, frames, the disjunctive derivation, the evaluation values and the comparison-target value
+% "natural gas" (natural_gas) are those of tools/annotation/codebook/codebook-v1.0.yaml. The coding in panel a is the
+% author of the figure's reading of the invented text under the codebook, for illustration only; the model output in
+% panel b is hypothetical. The scoring follows tools/pipeline/evaluate.py: element tuples (paragraph x technology x
+% element) scored as sets; evaluation score A on the reference (row, frame) pairs the model also predicted, score B on
+% (paragraph, technology, frame, value) tuples; comparison target per row, score A on rows present in both;
+% displacement on paragraph-level presence indicators (Equation eq:displacement). Arithmetic of panel b: elements TP 2,
+% FP 1, FN 2 -> precision 2/3, recall 2/4, micro-F1 4/7 = 0.57; evaluation score A 2/2 = 1.00, score B TP 2, FP 1,
+% FN 1 -> 4/6 = 0.67; comparison target: the model gives natural gas (wind) and none (solar), as the coder does in panel a,
+% so 2 of 2 matched rows agree (shown in the footer since 2026-11-05, so that the reader can verify it).
+% Colour doubles the written outcome only (missed in model blue, invented in orange, as "below" and "above" the
+% reference elsewhere); every outcome is also spelled out.
+% Palette 2026-11-06: outcome cells moved to the palette names (missed: figModel, invented: figAbove, matched and TP:
+% figInk), the "Coder" and "Model" column heads of panel b marked figInk and figModel, the caption names the two
+% colours; no value, label text or band fill changed, panel a untouched.
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\figfontsmall,
+  para/.style={draw=figInk, line width=0.5pt, rectangle, rounded corners=1.5pt, fill=white, align=left,
+    inner sep=4pt, text width=146mm, font=\figfont},
+  band/.style={fill=figGreyC, rounded corners=2pt},
+  el/.style={draw=figInk, line width=0.5pt, rectangle, rounded corners=1.5pt, fill=white, align=left,
+    anchor=west, minimum height=5.6mm, text width=63mm, inner sep=2pt},
+  fr/.style={draw=figInk, line width=0.8pt, rectangle, rounded corners=1.5pt, fill=white, align=center,
+    minimum height=5.6mm, text width=19mm, inner sep=2pt},
+  head/.style={anchor=base west, text=figGreyA, font=\figfontsmall},
+  tech/.style={anchor=west, font=\figfont\bfseries},
+  val/.style={anchor=west},
+  arr/.style={-{Latex[length=1.6mm]}, line width=0.6pt},
+  cue/.style={},
+]
+% ---------------------------------------------------------------- panel a: the paragraph
+\node[para, anchor=north west] (p) at (0,0) {%
+The new offshore wind farm will supply electricity \textbf{more cheaply than gas-fired power stations}\textsuperscript{1} and \textbf{needs no state subsidy}\textsuperscript{2}, the operator said. Residents on the coast fear that \textbf{the turbines will spoil their view of the sea}\textsuperscript{3}. Meanwhile, \textbf{planning law still blocks a solar park}\textsuperscript{4} next to the harbour.};
+\node[anchor=south west, inner sep=0pt, font=\figfontsmall\itshape, text=figGreyA] at ([yshift=1.2mm]p.north west)
+  {Constructed example, invented for this figure (not corpus text)};
+\node[panellabel, anchor=south east] at ([xshift=-1.5mm, yshift=1.2mm]p.north west) {a};
+
+% ---------------------------------------------------------------- panel a: the coding of that paragraph
+\begin{scope}[shift={(0,-21mm)}]
+  \node[head] at (0,0) {Technology};
+  \node[head] at (21mm,0) {Fired elements (codebook names)};
+  \node[head] at (95mm,0) {Frame};
+  \node[head] at (118mm,0) {Evaluation};
+  \node[head, align=left] at (135mm,0) {Comparison\\target};
+  \node[head, font=\figfontsmall\itshape] at (95mm,-3.4mm) {any element fires};
+  % wind row
+  \fill[band] (0,-6mm) rectangle (152mm,-31mm);
+  \node[tech] at (1.5mm,-18mm) {Wind};
+  \node[el] (e1) at (21mm,-10mm) {\textsuperscript{1}\,Cost or price (F1a)};
+  \node[el] (e2) at (21mm,-18mm) {\textsuperscript{2}\,Subsidy, levy or public funding (F1b)};
+  \node[el] (e3) at (21mm,-26mm) {\textsuperscript{3}\,Landscape, visual impact and local amenity (F7b)};
+  \node[fr] (f1) at (105mm,-14mm) {Costs};
+  \node[fr] (f2) at (105mm,-26mm) {Siting};
+  \draw[arr] (e1.east) -- ++(4mm,0) |- ([yshift=1mm]f1.west);
+  \draw[arr] (e2.east) -- ++(4mm,0) |- ([yshift=-1mm]f1.west);
+  \draw[arr] (e3.east) -- (f2.west);
+  \node[val] at (118mm,-14mm) {positive};
+  \node[val] at (118mm,-26mm) {negative};
+  \node[val] at (135mm,-18mm) {natural gas};
+  % solar row
+  \fill[band] (0,-33mm) rectangle (152mm,-41mm);
+  \node[tech] at (1.5mm,-37mm) {Solar};
+  \node[el] (e4) at (21mm,-37mm) {\textsuperscript{4}\,Regulation, permitting and legal process (F8a)};
+  \node[fr] (f3) at (105mm,-37mm) {Regulation};
+  \draw[arr] (e4.east) -- (f3.west);
+  \node[val] at (118mm,-37mm) {negative};
+  \node[val] at (135mm,-37mm) {none};
+\end{scope}
+
+% ---------------------------------------------------------------- panel b: scoring a hypothetical model output
+\begin{scope}[shift={(0,-71mm)}]
+  \node[panellabel, anchor=south east] at (-1.5mm,1.2mm) {b};
+  \node[anchor=south west, inner sep=0pt, font=\figfontsmall\itshape, text=figGreyA] at (0,1.2mm)
+    {A hypothetical model output scored against the coding in panel a};
+  % elements
+  \node[anchor=north west, inner sep=0pt] (tb1) at (0,-1mm) {%
+    \renewcommand{\arraystretch}{1.12}\setlength{\tabcolsep}{3pt}%
+    \begin{tabular}{@{}l c c l@{}}
+    \multicolumn{4}{@{}l}{\textbf{Frame elements}, tuples (row $\times$ element)} \\
+    \toprule
+    Row $\cdot$ element & \textcolor{figInk}{Coder} & \textcolor{figModel}{Model} & Scored as \\
+    \midrule
+    wind $\cdot$ cost or price (F1a) & 1 & 1 & \textcolor{figInk}{TP} \\
+    wind $\cdot$ subsidy (F1b) & 1 & 0 & \textcolor{figModel}{FN, missed} \\
+    wind $\cdot$ landscape (F7b) & 1 & 0 & \textcolor{figModel}{FN, missed} \\
+    wind $\cdot$ emissions (F3a) & 0 & 1 & \textcolor{figAbove}{FP, invented} \\
+    solar $\cdot$ regulation (F8a) & 1 & 1 & \textcolor{figInk}{TP} \\
+    \midrule
+    \multicolumn{4}{@{}l}{precision 2/3, recall 2/4, micro-F1 0.57} \\
+    \bottomrule
+    \end{tabular}};
+  % evaluation and comparison target
+  \node[anchor=north west, inner sep=0pt] (tb2) at (78mm,-1mm) {%
+    \renewcommand{\arraystretch}{1.12}\setlength{\tabcolsep}{3pt}%
+    \begin{tabular}{@{}l l l l@{}}
+    \multicolumn{4}{@{}l}{\textbf{Evaluation}, one value per row $\times$ frame} \\
+    \toprule
+    Row $\cdot$ frame & \textcolor{figInk}{Coder} & \textcolor{figModel}{Model} & Scored as \\
+    \midrule
+    wind $\cdot$ costs & positive & positive & \textcolor{figInk}{matched, agrees} \\
+    wind $\cdot$ siting & negative & -- & \textcolor{figModel}{FN, frame missed} \\
+    wind $\cdot$ climate & -- & positive & \textcolor{figAbove}{FP, frame invented} \\
+    solar $\cdot$ regulation & negative & negative & \textcolor{figInk}{matched, agrees} \\
+    \midrule
+    \multicolumn{4}{@{}l}{matched-frame accuracy 2/2 = 1.00} \\
+    \multicolumn{4}{@{}l}{end-to-end F1 0.67 (TP 2, FP 1, FN 1)} \\
+    \multicolumn{4}{@{}l}{comparison target, model: natural gas (wind), none (solar);} \\
+    \multicolumn{4}{@{}l}{as coded, so 2 of 2 matched rows agree} \\
+    \bottomrule
+    \end{tabular}};
+  % from tuples to a paragraph prevalence
+  \node[anchor=north west, inner sep=0pt] at (0,-50mm) {\textbf{Paragraph indicator}: element present on any row};
+  \node[anchor=north west, inner sep=0pt] (tb3) at (0,-54.5mm) {%
+    \renewcommand{\arraystretch}{1.12}\setlength{\tabcolsep}{3pt}%
+    \begin{tabular}{@{}l *{5}{>{\centering\arraybackslash}p{7mm}}@{}}
+    \toprule
+    & F1a & F1b & F3a & F7b & F8a \\
+    \midrule
+    \textcolor{figInk}{Coder}, $y_i$ & 1 & 1 & 0 & 1 & 1 \\
+    \textcolor{figModel}{Model}, $\hat{y}_i$ & 1 & \textcolor{figModel}{0} & \textcolor{figAbove}{1} & \textcolor{figModel}{0} & 1 \\
+    \bottomrule
+    \end{tabular}};
+  \node[anchor=north west, text width=72mm, align=left, inner sep=0pt] at (78mm,-54.5mm) {%
+    Prevalence: the design-weighted share of sampled paragraphs with indicator 1; displacement: the model's share minus the coder's, in percentage points, as in Equation~\eqref{eq:displacement}. Here, the model's share falls for subsidy and landscape and rises for emissions.};
+  \path (0,-75mm); % keeps a little space above the caption
+\end{scope}
+\end{tikzpicture}
+\caption[Anatomy of a technology frame and scoring of a model output]{\textbf{Technology frames derive from fired elements; model output is scored at three levels.} \textbf{a},~An invented paragraph sharing no five-word sequence with the corpus. \textbf{b},~The hypothetical output misses subsidy, but cost or price keeps the costs frame present. TP, FP, FN: true positive, false positive, false negative. Blue: the model and its misses; orange: its inventions.}
+\label{fig:anatomy}
+\end{figure}

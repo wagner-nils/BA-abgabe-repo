@@ -1,0 +1,24 @@
+% 2026-11-24: four rows moved unchanged from tab_added_analyses; hand-maintained; detailed sources remain in the cited appendix tables.
+% OUTLINE: Four descriptive instrument checks summarise retry handling, wording sensitivity, mandatory decisions and development iterations; none replaced the registered instrument.
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{threeparttable}
+\caption[Instrument checks added after the registered result]{Instrument checks added after the registered result, supplementing Table~\ref{tab:added_analyses}. Descriptive; no variant replaced the registered instrument.}
+\label{tab:instrument_checks}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{36mm}>{\raggedright\arraybackslash}p{50mm}>{\raggedright\arraybackslash}p{65mm}@{}}
+\toprule
+\textbf{Analysis (appendix tables)} & \textbf{Question; material} & \textbf{Result} \\
+\midrule
+Retry candidate (Tables~\ref{tab:a3_candidate} and~\ref{tab:form_variant}) & Does validator feedback recover failed output? Both samples, later runs & Census: 0 against 23 terminal failures of 165 executions; F1 0.662 against 0.563. Evaluation sample: F1 0.646 against 0.643 \\
+Perturbation battery (Tables~\ref{tab:battery_primary} and~\ref{tab:battery_sharpen}) & Do labels follow wording rather than content? 443 paragraphs outside both samples & Labels move with definition wording, frame order and element labels; sensitivity at the documented gap shown; planted gaps not shown, as two computations disagree \\
+Mandatory form (Table~\ref{tab:form_variant}) & Does a yes or no per element reduce the deficit? Both samples, against the retry candidate & Recall $+0.019$ [$-0.046$, $+0.078$] (evaluation sample) and $+0.079$ [$+0.031$, $+0.116$] (census); output cap doubled \\
+Development iterations (Table~\ref{tab:development_review}) & Do instrument changes help? 32 development paragraphs & None adopted: mean element F1 0.591 to 0.656, registered instrument 0.663 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Evaluation sample design-weighted, census unweighted. F1: element micro-F1. Terminal failure: no valid record after retry. Brackets: 95\% intervals over paired article resamples. Battery analysis code was corrected after its first output.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

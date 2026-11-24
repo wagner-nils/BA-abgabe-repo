@@ -1,0 +1,86 @@
+Against the first coding, agreement is high on technologies and shared-frame evaluations, but the model marks fewer frame elements and most reported element shares are lower. Later reference checks show that this recall deficit's size depends on which of the coder's two codings is the reference. Registered results answer RQ2 in Sections~\ref{subsec:agreement} to~\ref{subsubsec:categorical}, RQ3 in~\ref{subsec:stability_results} and RQ4 in~\ref{subsec:displacement_results}, beside these checks. Sections~\ref{subsec:dsl_results} and~\ref{subsec:recurrence} cover later analyses (Table~\ref{tab:added_analyses}): prevalence adjustment (Figure~\ref{fig:dsl}) and further articles and models (Figure~\ref{fig:model_comparison}).
+
+Unless stated otherwise, intervals and per-class reporting follow Section~\ref{subsec:metrics}, and estimates are design-weighted to the 618-paragraph eligible frame. The \emph{first coding} is the registered evaluation reference; registered temporal stability uses the 40 paragraphs re-coded before the model run. Model comparisons with that re-code are later analyses. The \emph{second coding} combines those 40 with the supplementary 80, re-coded after the results. Analyses using the latter are exploratory.
+
+\subsection{Technologies Agree Closely, Elements Less}\label{subsec:agreement}
+
+Technology detection reaches a micro-F1 of 0.935 [0.901, 0.963], whereas the registered headline, element micro-F1, is 0.643 [0.581, 0.705] (Table~\ref{tab:primary}). Every eligible-frame paragraph passed the keyword prefilter, so its screening is not evaluated. Excluding the 15 paragraphs from calibration or development articles changes no headline figure by more than 0.01 (Appendix~\ref{app:detailed_results}).
+
+\input{tables/tab_primary}
+
+A later comparison scores the prefilter's keywords against the first coding. They lead the model in point estimate on the five technologies with their own pattern but trail it across all seven (Table~\ref{tab:checks_4p}). The coder had seen their suggestions in a discarded attempt.
+
+\label{subsec:run_record}\label{subsec:sensitivity}%
+The two parts of the eligible frame come from different outlets, so per-language differences are not effects of language alone. Technology micro-F1 is 0.884 in German and 0.960 in English, and element micro-F1 is 0.621 and 0.653 (Table~\ref{tab:primary}).
+
+All five parse failures in the 120 first executions fell on German paragraphs, as did 11 of the 13 in all 360 executions (Table~\ref{tab:attrition}). Later checks find lower German technology F1 end to end, but no clear element difference (Table~\ref{tab:checks_4o}). The five failed paragraphs carry ten of the fifteen missed German technology rows. Among valid first executions, a selected subset, the technology contrast is inconclusive (Table~\ref{tab:checks_4p}).
+
+A later comparison of translated and original German input is inconclusive for element micro-F1 (Appendix~\ref{app:language}).
+
+\subsection{Fewer Elements Than the First Coding}\label{subsec:directional}\label{subsubsec:per_element}
+
+Agreement varies more than twofold across the fifteen reported frame elements (Figure~\ref{fig:elements}a, Table~\ref{tab:element_prf}). Seven reach an F1 of 0.7 or more, led by intermittency at 0.830. Four fall below 0.5: land requirement, landscape, technical performance and regulation, the last two with a registered re-code $\alpha$ of 0.462 and 0.598.
+
+\input{images/fig_elements}
+
+\label{subsubsec:error_decomposition}%
+A later split of registered predictions gives pooled element precision 0.76 and recall 0.56 against the first coding, a recall deficit (Table~\ref{tab:checks_4o}). Precision exceeds recall for 12 of the 15 reported elements. For derived frames, detection precision is at least 0.677 for every reported frame, whereas recall falls to 0.301 for siting (Table~\ref{tab:frame_prf}).
+
+\label{subsec:reliability_results}%
+The reference's temporal stability limits interpretation. In the registered 40-paragraph re-code, unweighted $\alpha$ ranges from 0.369 to 0.899 across eight reportable elements (Figure~\ref{fig:elements}). Later article-bootstrap intervals for all eight (Table~\ref{tab:alpha_full_grid}) reach below 0.667, the lowest level at which \textcite[p.~242]{krippendorff2004contentanalysis}, with stated hesitation, would accept reliability data. Stability over time is the weakest form of reliability (p.~215). Pooled-cell $\alpha$ is 0.641 [0.555, 0.723] on shared rows and 0.619 [0.530, 0.697] on the full grid. Each element result is therefore read beside its own $\alpha$ where one is reportable (Figure~\ref{fig:elements}).
+
+On the 40 paragraphs re-coded before the model run, neither model score is shown equivalent to the coder's own retest. Scored later in the model's metric, the two codings agree at an element F1 of 0.656 (Table~\ref{tab:checks_4p}). Against the first coding, the model reaches 0.571, below the retest, with no interval for the difference. Against the second coding, it reaches 0.620, which differs from the retest by $-0.035$ [$-0.129$, $+0.063$] (Table~\ref{tab:recode_waves}).
+
+On these 40 paragraphs, the recall deficit narrows against the second coding but persists in point estimate. Model recall there is 0.584, above that against the first coding by $+0.088$ [$+0.002$, $+0.178$], a contrast declared before the supplementary re-code (Table~\ref{tab:recode_comparison}). Precision is 0.662, so their gap is $+0.078$, against $+0.177$ with the first coding. Its interval and paired change, both defined after the supplementary re-code was inspected, are in Table~\ref{tab:recode_waves}.
+
+Exploratory checks on all 120 paragraphs show that the second coding drops most first-coding tuples the model misses but few that it finds. It no longer holds 102 of the 168 misses and 36 of the 208 hits (unweighted; Table~\ref{tab:checks_4p}). Against the full second coding, precision and recall nearly balance in point estimate, at 0.695 and 0.666, as they do without the 25 re-read paragraphs (Table~\ref{tab:recode_waves}). This balance mixes elements with opposite gaps (Table~\ref{tab:recode_elements}) and does not establish unbiased paragraph shares. These checks measure one coder's agreement over time, not an intercoder ceiling or evidence of validity. Neither coding is established as correct, and a dropped tuple is not thereby a reference error.
+
+\label{subsec:missed_results}%
+A later re-reading of 45 randomly drawn misses within matched rows points in both directions: 16 clear misses, 15 possible first-coding over-marks and 10 borderline. Of the other 4, two rest on cues outside the paragraph (Table~\ref{tab:missed_elements}). Investment accounts for 13 of the 45, only 3 of them clear misses. These are one coder's non-blind judgements of their own reference, not error rates.
+
+\subsection{Evaluations Agree on Shared Frames, Comparison Targets Less}\label{subsubsec:categorical}
+
+Against the first coding, matched-frame accuracy is 0.874 (Table~\ref{tab:primary}). A later comparator that always chooses the most frequent value, positive, reaches 0.630 on the same 208 units and weights (Table~\ref{tab:checks_4p}). Positive and negative evaluations agree best, with per-value F1 of 0.916 and 0.933. Neutral and mixed, with 11 and 9 matched units, reach only 0.558 and 0.571 (Table~\ref{tab:per_value}).
+
+End-to-end F1, also counting unmatched frames and rows, falls to 0.617. The model missed 105 reference frames within matched rows, and 20 reference technology rows with 27 frame--evaluation units.
+
+In a later comparison on the 40 paragraphs re-coded before the model run, the coder's two codings agree on evaluations at 0.876. The model reaches 0.802 against the first coding on these paragraphs. The matched sets differ, so these accuracies are not ranked.
+
+The comparison target agrees less well. Its matched-row accuracy is 0.794 (Table~\ref{tab:primary}), but a later constant guess of ``none'' already reaches 0.674. On German rows, the guess scores 0.887 against the model's 0.881 (Appendix~\ref{app:later_checks}). The comparison target's end-to-end macro-F1, the unweighted mean of per-class F1, is 0.379. Whole rows match exactly at a rate of 0.215 over 184 rows (Table~\ref{tab:primary_full}).
+
+\subsection{Outputs Vary, Scores Stay Similar}\label{subsec:stability_results}
+
+Across the three executions of the identical request, element micro-F1 ranges from 0.632 to 0.648. Averaged over pairs of successful executions, however, a paragraph's output differs in at least one label at a rate of 0.150 [0.091, 0.213] over 117 paragraphs (Table~\ref{tab:stability}). A paragraph's technology set changes at 0.037, and a technology row's element set at 0.088 [0.047, 0.133] over 115 paragraphs.
+
+\subsection{Most Element Prevalences Are Lower}\label{subsec:displacement_results}
+
+\input{tables/tab_added_analyses}
+
+Against the first coding, paragraph-level displacement is downward for eleven of the fifteen reported elements, upward for three and zero for one (Figure~\ref{fig:elements}b; all classes in Table~\ref{tab:displacement}). Investment, industry or competitiveness is displaced most, by $-18.3$ [$-24.4$, $-12.2$] points. The first coding marks it on 44 of 120 paragraphs and the model on 24. Five downward article intervals exclude zero, but no upward one does. Under later design-based intervals, four remain, as technical feasibility drops out (Section~\ref{subsec:dsl_results}; Table~\ref{tab:checks_4p}). The intervals are pointwise and unadjusted for the fifteen elements.
+
+Pooled technology prevalences differ by at most 5 points. Within German, solar differs by $-10.1$, an undecomposed end-to-end figure counting failed executions as unmarked.
+
+Among frame--evaluation pairs, positive evaluations in the jobs frame are displaced most, by $-13.5$ [$-19.6$, $-7.6$] points. As employment has two reference paragraphs, investment and deployment growth carry this frame.
+
+An exploratory check against the second coding gives nine lower and six higher element shares (Table~\ref{tab:checks_4p}). Land requirement, among the nine, is below the reporting threshold there. Two article intervals lie above zero, for transition pathway and technical performance (registered re-code $\alpha$ 0.562 and 0.462), and one below, for investment at $-13.6$ [$-20.4$, $-7.6$]. Only investment has an article interval below zero under both readings.
+
+Sample size and reference stability limit reporting. The reporting threshold suppresses displacements for employment, the residual other frame and 15 of 31 frame--evaluation pairs marked by either side. Reported element intervals are 5.6 to 17.0 points wide, so even the $-5.7$ points of cost or price are indistinguishable from zero. Scored later on the 40 paragraphs re-coded before the model run, the two codings agree on derived-frame presence at an F1 of 0.736 [0.642, 0.819] (Table~\ref{tab:checks_4p}). Such agreement over time does not validate the frames or their shares.
+
+\subsection{Adjusted Prevalences Shift with the Reference Coding}\label{subsec:dsl_results}\label{subsec:after_registered}\label{subsec:instrument_checks}
+
+The exploratory adjustment of Section~\ref{subsec:added_methods} targets a chosen coding convention rather than correcting reference error. The model marks investment on 19.4\% of eligible-frame paragraphs, but its sample share is 18.3 points below the first coding's. The adjustment therefore estimates investment's eligible-frame prevalence at 37.7\% [31.1, 44.3] under the first coding (Figure~\ref{fig:dsl}) and, with the supplementary re-code included, 33.1\% [27.1, 39.0] under the second. Technical feasibility (registered re-code $\alpha$ 0.625) rises from the model's 16.5\% to 21.4\% under the first coding but falls to 12.8\% under the second (Tables~\ref{tab:dsl} and~\ref{tab:checks_4o}).
+
+\input{images/fig_dsl}
+
+\subsection{Most Configurations Share the Recall Deficit}\label{subsec:recurrence}
+
+\input{images/fig_model_comparison}
+
+\label{subsec:fresh_results}%
+\enlargethispage{\baselineskip}%
+Against the fresh census's first coding (Appendix~\ref{app:fresh}), the unchanged pipeline reaches a lower unweighted element micro-F1 of 0.563 [0.511, 0.622]. Its gap, precision minus recall, is $+0.164$ [$+0.071$, $+0.245$] end to end. A later check on the 47 paragraphs with a valid first execution, a selected subset, gives $+0.057$ [$-0.006$, $+0.108$] (Table~\ref{tab:checks_4o}). The census reference was coded after the registered result, its stability is unmeasured, and the intervals rest on ten articles.
+
+\label{subsec:model_comparison}%
+Against both first codings, eleven of twelve configurations have positive gaps in point estimate, all but Claude Opus~5 (Figure~\ref{fig:model_comparison}). Nine have intervals above zero on both samples (Table~\ref{tab:pr_gaps}). All twelve used the same texts, prompt and tool schema, so these are not independent replications; none was selected (Appendix~\ref{app:model_comparison}). A later valid-output check gives the same eleven positive gaps (Table~\ref{tab:checks_4o}). Exploratory rescoring against the second coding leaves fewer positive gaps; the registered model's gap interval includes zero (Table~\ref{tab:checks_4p}).
+
+Against the first codings, Opus~5's gap is near zero on the evaluation sample and negative on the census. Three further executions reproduce this pattern (Appendix~\ref{app:model_comparison}). Under Opus~5's request settings, however, three other configurations kept the deficit.

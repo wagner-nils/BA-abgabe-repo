@@ -1,0 +1,303 @@
+{
+  "started_at": "2026-10-19T18:52:56.500186+00:00",
+  "ended_at": "2026-10-19T18:53:01.973062+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "novapro": "eu.amazon.nova-pro-v1:0"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "system_prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+  "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+  "instrument": "v1.0",
+  "provenance": {
+    "git_commit": "62a080340c743997da89f210e5d6658f81a5c987",
+    "git_dirty": true,
+    "git_dirty_files": 8,
+    "preflight_sha256": "2c7b45e9a1d14339eb6458cbd8be7d339f2896ab62196856a62927b8a3d2d0af",
+    "instrument_sha256": "cd5679b1e8856d7681ee0d434b9048dfde06985df6d34f366cedbc5da3cae128",
+    "instrument_version": "v1.0",
+    "instrument_v11_sha256": null,
+    "uv_lock_sha256": "ee09c5c794c8d08f6423ddaa0573e04f43416c6fb26e1aae668e5ac41f0d10e8",
+    "python": "3.13.12",
+    "botocore": "1.43.83"
+  },
+  "execution_mode": "live",
+  "live_attempted": true,
+  "skip_reason": "",
+  "cache_initial_state": {
+    "novapro": "no cache point (\u00a74f)"
+  },
+  "cache_prefix_tokens": {},
+  "cache_ttl": "1h",
+  "checks": [
+    {
+      "id": "14",
+      "name": "the pinned instrument loads and matches its pins",
+      "silent": true,
+      "ok": true,
+      "detail": "prompt 13,260 chars sha=138cade3add5dcc4; tool config sha=a1e82607f50e8c04; codebook v1.0",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "11",
+      "name": "codebook is frozen and matches its pinned hash",
+      "silent": true,
+      "ok": true,
+      "detail": "annotation/codebook/codebook-v1.0.yaml sha256=1edb4601519417de == pin",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "7",
+      "name": "tool config matches its pin and is the config the builder loads",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/tool-config_v1.0.json sha256=a1e82607f50e8c04 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "12",
+      "name": "the prompt under test IS the pinned production prompt",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/system-prompt_v1.0.txt sha256=138cade3add5dcc4 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "13",
+      "name": "the request comes from instrument.build_request()",
+      "silent": true,
+      "ok": true,
+      "detail": "6/6 clauses hold. No topP (the API rejects it beside temperature), no thinking block, no extra system instruction. Converse caches tools then system then messages, so the cached prefix is the pinned config plus the pinned prompt.",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "1",
+      "name": "[novapro] inference profile resolves and returns a completion",
+      "silent": false,
+      "ok": true,
+      "detail": "eu.amazon.nova-pro-v1:0  stopReason=end_turn",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "2",
+      "name": "[novapro] forced tool use returns exactly one schema-valid toolUse and no reasoning block on both production calls",
+      "silent": false,
+      "ok": true,
+      "detail": "call 1: schema-valid and contract-valid: {\"relations\": [{\"technology\": \"wind\", \"elements\": [\"F8a\", \"F7b\"], \"evaluations\": {\"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\", \"wind_siting\": \"onshore\"}], \"outcome\": \"technologies_present\"}  |  call 2: schema-valid and contract-valid: {\"relations\": [{\"technology\": \"wind\", \"elements\": [\"F8a\", \"F7b\"], \"evaluations\": {\"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\", \"wind_siting\": \"onshore\"}], \"outcome\": \"technologies_present\"}",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "3",
+      "name": "[novapro] stopReason is tool_use on both production calls, never max_tokens",
+      "silent": true,
+      "ok": true,
+      "detail": "call 1 stopReason=tool_use, call 2 stopReason=tool_use",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "5n",
+      "name": "[novapro] no cache point is sent and no cache traffic is reported",
+      "silent": true,
+      "ok": true,
+      "detail": "no cachePoint in the request; call 1 write=0 read=0, call 2 write=0 read=0",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "8",
+      "name": "[novapro] usage complete (no cache counters: no cache point)",
+      "silent": true,
+      "ok": true,
+      "detail": "{'inputTokens': 4270, 'outputTokens': 78, 'cacheReadInputTokens': None, 'cacheWriteInputTokens': None}",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "13b",
+      "name": "every submitted envelope is canonically identical to the one the builder produced",
+      "silent": true,
+      "ok": true,
+      "detail": "2 production call(s), 1 distinct request digest(s): 87125eaa27e6. Every one matched the digest taken when it was built.",
+      "skipped": "",
+      "phase": "live"
+    }
+  ],
+  "raw_responses": [
+    {
+      "model": "novapro",
+      "label": "reachability",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "915d5bc9-8e5b-46ce-ab1a-b8c7b915eddb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 19 Oct 2026 18:52:59 GMT",
+            "content-type": "application/json",
+            "content-length": "203",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "915d5bc9-8e5b-46ce-ab1a-b8c7b915eddb"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "text": "OK."
+              }
+            ]
+          }
+        },
+        "stopReason": "end_turn",
+        "usage": {
+          "inputTokens": 7,
+          "outputTokens": 3,
+          "totalTokens": 10
+        },
+        "metrics": {
+          "latencyMs": 326
+        }
+      }
+    },
+    {
+      "model": "novapro",
+      "label": "production-call-1",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "bc54a7f7-920e-41b5-9e91-196bce2cce86",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 19 Oct 2026 18:53:01 GMT",
+            "content-type": "application/json",
+            "content-length": "495",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "bc54a7f7-920e-41b5-9e91-196bce2cce86"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_OzlacPHJr4sYa83r8gWnjF",
+                  "name": "record_relations",
+                  "input": {
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "elements": [
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none",
+                        "wind_siting": "onshore"
+                      }
+                    ],
+                    "outcome": "technologies_present"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 4270,
+          "outputTokens": 78,
+          "totalTokens": 4348
+        },
+        "metrics": {
+          "latencyMs": 1602
+        }
+      }
+    },
+    {
+      "model": "novapro",
+      "label": "production-call-2",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "e3d1a913-19d3-4cc6-b1fb-2018105ba64f",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 19 Oct 2026 18:53:01 GMT",
+            "content-type": "application/json",
+            "content-length": "494",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "e3d1a913-19d3-4cc6-b1fb-2018105ba64f"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_ouHJ8siZQei9hWHjba2Wga",
+                  "name": "record_relations",
+                  "input": {
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "elements": [
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none",
+                        "wind_siting": "onshore"
+                      }
+                    ],
+                    "outcome": "technologies_present"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 4270,
+          "outputTokens": 78,
+          "totalTokens": 4348
+        },
+        "metrics": {
+          "latencyMs": 838
+        }
+      }
+    }
+  ],
+  "persisted_to": "/Users/nilswagner/Entwicklung/llm-energy-discourse-analysis/tools/runs/preflight_mc_novapro_a2_20261019.json",
+  "certification_status": "CERTIFIED",
+  "certified": true,
+  "offline_checks": "passed",
+  "live_checks": "passed",
+  "n_failed": 0,
+  "n_failed_offline": 0,
+  "n_failed_live": 0,
+  "n_unasserted": 0
+}

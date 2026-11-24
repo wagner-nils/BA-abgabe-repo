@@ -1,0 +1,26 @@
+% 2026-11-11: rewritten for the fourth review's plan (M16); earlier versions and number sources in git (state d5a2bfb).
+% 2026-11-13 (final optimisation pass, plan item TAB1): two columns; the column "Finding relied on" dropped (findings by study remain in Table tab:literature, Appendix A.1); the same citation keys moved into the design column, now headed "Taken into this design"; caption reworded to match; table note unchanged.
+% 2026-11-16: table note removed (author comment C14); the preprint caveat remains in Table tab:literature; caption semicolon replaced.
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{threeparttable}
+\caption[Studies that shaped the design (abridged)]{Literature streams and what the design takes from each (findings by study: Table~\ref{tab:literature}, Appendix~\ref{app:literature}).}
+\label{tab:literature_short}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{38mm}>{\raggedright\arraybackslash}p{112mm}@{}}
+\toprule
+\textbf{Stream} & \textbf{Taken into this design} \\
+\midrule
+Media framing of energy technologies & evaluation separate from frame; per-element reliability; fixed element-to-frame mapping, not factor analysis \parencite{stephens2009windmedia,ali2025hydrogenframing} \\
+\addlinespace
+Computational analysis of energy discourse & paragraph as coding unit; keyword matching to technologies \parencite{toetzke2022energydiscourse} \\
+\addlinespace
+Large language models as annotators & full codebook definitions as prompt; one joint call per paragraph; agreement beyond raw percentages; configuration fixed in advance; human reference; one codebook for coder and model \parencite{gilardi2023chatgpt,lupo2024humanlevelcoding,toetzke2023llmclimatetech,baumann2025llmhacking,halterman2026codebookllms} \\
+\addlinespace
+Validation and aggregates & reference's temporal stability; sample-size limit; registered displacement; design-weighted probability sample; declared exploratory adjustment \parencite{song2020validations,linder2026multicalibrated,egami2023dsl} \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{table}

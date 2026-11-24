@@ -1,0 +1,27 @@
+% Left print on 2026-11-24 (appendix cut on the author's order); hand-maintained, moved unchanged from chapters/appendix.tex.
+% Not input by the thesis; listed in the index of the electronic appendix (tab:electronic).
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{27mm}>{\raggedright\arraybackslash}p{127mm}@{}}
+\caption[Battery: design and conduct]{Perturbation battery (specification \S4i): design, conduct and departures. The results by variant and the paraphrase reading per unit are electronic (Appendix~\ref{app:electronic}).}\label{tab:battery_design} \\
+\toprule
+\textbf{Item} & \textbf{Record} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Item} & \textbf{Record} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Declaration & 30 October 2026, before any battery call, after earlier evaluation results had been inspected; budget USD 150 shared with the mandatory form \\
+Material & The 443 frame-completion paragraphs, never coded by a human; baseline: the registered Sonnet 4.6 request, asserted byte-identical, three executions and two more on the global route; on the evaluation sample, the baseline twice and three variants once, for a unit-level validation \\
+Variants & One declared change each, rendered from the frozen codebook: order, labels, one sentence on a reading, secondary rules removed for one seeded half of eight elements, all definitions paraphrased, or one unit paraphrased (seven units chosen before any call) \\
+Paraphrases & 33 definition texts reworded by Kimi K3 and Qwen3-235B. Equivalence was rated by language models, not by people: a text entered only if two blinded judges (Codex and a Claude judge) both rated it equivalent and neither found an ambiguity resolved. 74 of 90 candidates accepted; 20 of 28 one-unit variants exist; one of eight rewordings of the general category kept its reading \\
+Measures & Instability of two executions: one minus the Jaccard index (intersection divided by union) of the sets of paragraphs, valid in both, on which a class is present. Shift of a variant: its mean instability against the baseline minus the mean repetition instability of the two. A class moves when the 95\% article-resampling interval of its shift lies above zero ($B = 2{,}000$), and is reported when its union reaches ten paragraphs in every pair. A unit is underdetermined when every available paraphrase of its definition moves its firing rate the same way, a signed reading kept apart from the unsigned instability. It shows the model's sensitivity to the wording, not an established ambiguity of the rule \\
+Readings & PR1 (planted gaps), PR2 (documented gap; both defined with Table~\ref{tab:battery_primary}) and the paraphrase rule, fixed before any call; a variant would not have been read if its invalid rate exceeded the baseline's by more than five points (observed 0.035 to 0.081 against 0.073) \\
+Route & 19,206 executions in 22,643 attempts; USD 121.01 at the EU route's prices, paraphrase calls excluded. From 14:03 UTC the EU route's daily token quota was exhausted; from 15:11 UTC, on the author's authorisation, calls used the global profile, which may process requests outside the EU: 11,913 of 19,206 executions (62\%). Shifts are computed within route and averaged by compared pairs; repetition differences between routes are indistinguishable from zero ($+0.017$ [$-0.003$, $+0.038$] and $+0.021$ [$-0.008$, $+0.048$]) \\
+Corrections & Route stratification fixed after a smoke test had printed interim contrasts, before any variant result was read; four departures of the first analysis code from the declaration (measure, paraphrase rule, reporting threshold, an empty correlation input) corrected after its first complete output, before any figure entered the thesis \\
+Sharpening & Nine units read in their flipping paragraphs by model agents (reader, verifier, merger) of the coding assistant, outside the Bedrock EU route; 23 recommendations, the eight to settle before the next freeze in Table~\ref{tab:battery_sharpen} \\
+\end{longtable}
+\endgroup

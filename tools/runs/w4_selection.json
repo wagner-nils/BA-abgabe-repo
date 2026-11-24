@@ -1,0 +1,56 @@
+{
+  "kind": "w4_selection",
+  "phase": "W4",
+  "selected_at": "2026-10-14T10:24:17.930515+00:00",
+  "seal_digest": "c7d7e591ce05a48884ce5c89cd66bd0bcbb24e1e48c5624109db967f03104d00",
+  "candidates": {
+    "v0": {
+      "run_id": "a1_w4_v10_20261014",
+      "slot": "v0",
+      "instrument": "v1.0",
+      "assessed": true,
+      "eligible": true,
+      "scoreable": true,
+      "problems": [],
+      "S": "638/963",
+      "S_float": 0.6625129802699896,
+      "I": 1,
+      "terminal_outcomes": {
+        "technologies_present": 78,
+        "off_topic": 18
+      },
+      "retries": 1,
+      "feedback_retries": 0,
+      "cost_usd": 0.514369,
+      "started_at": "2026-10-14T10:17:43.850307+00:00",
+      "first_returned_missing": 0
+    },
+    "v1": {
+      "run_id": "a1_w4_v12S_20261014",
+      "slot": "v1",
+      "instrument": "v1.2S",
+      "assessed": true,
+      "eligible": true,
+      "scoreable": true,
+      "problems": [],
+      "S": "94/159",
+      "S_float": 0.5911949685534591,
+      "I": 2,
+      "terminal_outcomes": {
+        "technologies_present": 78,
+        "off_topic": 18
+      },
+      "retries": 2,
+      "feedback_retries": 2,
+      "cost_usd": 0.568488,
+      "started_at": "2026-10-14T10:20:41.621548+00:00",
+      "first_returned_missing": 0
+    }
+  },
+  "decision": {
+    "outcome": "retained",
+    "selected": "v1.0",
+    "reason": "S 0.5912 vs 0.6625, I 2 vs 1: not at least as good on both"
+  },
+  "note": "A1-only: this record authorises no run on the evaluation sample; the only evaluation route is the A3 protocol"
+}

@@ -1,0 +1,1773 @@
+{
+  "declared": "pre-analysis specification §4g (2026-10-30)",
+  "B": 2000,
+  "seed": 20260905,
+  "rule": "per sample: better / worse if the 95 % paired article-resampling interval of the element micro-F1 difference lies entirely above / below zero, otherwise no distinguishable difference; overall better / worse only if both samples agree, otherwise no consistent difference",
+  "rows": {
+    "A2": [
+      {
+        "run_id": "a2_sonnet_20261013",
+        "sample": "A2",
+        "model_key": "sonnet",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "registered primary",
+        "repeats": 3,
+        "paragraphs": 120,
+        "technology_f1": 0.934988770484702,
+        "technology_iv": [
+          0.901342006560639,
+          0.9625696021653125
+        ],
+        "element_f1": 0.6427086518526188,
+        "element_iv": [
+          0.5805066378278154,
+          0.7050337558087766
+        ],
+        "element_precision": 0.7591325333068862,
+        "element_recall": 0.5572468419322,
+        "evaluation_A": 0.874132183380739,
+        "evaluation_A_units": 208,
+        "evaluation_A_iv": [
+          0.8124134201586347,
+          0.9239040388630184
+        ],
+        "evaluation_B": 0.6167173224171733,
+        "evaluation_B_iv": [
+          0.554612431040291,
+          0.6787402724614225
+        ],
+        "comparison_A": 0.7940354678679372,
+        "comparison_A_iv": [
+          0.6973607792748707,
+          0.8787128833219903
+        ],
+        "comparison_A_units": 158,
+        "comparison_B": 0.7424142458230868,
+        "comparison_B_iv": [
+          0.6471484114085603,
+          0.8314924434212915
+        ],
+        "exact": 0.21471283931767268,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 5,
+          "off_topic": 3
+        },
+        "displacement_down": 29,
+        "displacement_up": 6,
+        "displacement_reportable": 38,
+        "cost_usd": 2.180693,
+        "billing_complete": true,
+        "executions": 360,
+        "usd_per_100_executions": 0.6057480555555557,
+        "paired_vs_sonnet46": null,
+        "metrics_sha256": "9d69e490475a885f7216ceb5c49d295b9d7e55662b7092ca6faa1636e46c57f4",
+        "run_record_sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3"
+      },
+      {
+        "run_id": "mc_opus46_a2_20261019",
+        "sample": "A2",
+        "model_key": "opus",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9454214397526838,
+        "technology_iv": [
+          0.9218523784492094,
+          0.9677819738851774
+        ],
+        "element_f1": 0.6743800614353532,
+        "element_iv": [
+          0.6257481244994211,
+          0.7227982003369945
+        ],
+        "element_precision": 0.7940783340813921,
+        "element_recall": 0.5860410430511589,
+        "evaluation_A": 0.8638522852881474,
+        "evaluation_A_units": 215,
+        "evaluation_A_iv": [
+          0.8103757008802294,
+          0.9114539724674926
+        ],
+        "evaluation_B": 0.6174508348428315,
+        "evaluation_B_iv": [
+          0.571469254776417,
+          0.66674837246633
+        ],
+        "comparison_A": 0.8331786125005204,
+        "comparison_A_iv": [
+          0.7438901152489156,
+          0.9169692666164763
+        ],
+        "comparison_A_units": 166,
+        "comparison_B": 0.7877049234013845,
+        "comparison_B_iv": [
+          0.6984227408554171,
+          0.8681344715259052
+        ],
+        "exact": 0.18728293543338384,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 118,
+          "parse_failed": 1,
+          "off_topic": 1
+        },
+        "displacement_down": 28,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "cost_usd": 1.065701,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.8880841666666667,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.0316714095827344,
+            "lo": -0.024139536023788932,
+            "hi": 0.09016749657881973,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010432669267981809,
+            "lo": -0.012437350727557694,
+            "hi": 0.037257757824536775,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "704f099d74de07fcab26de9740a3d2da2782390285a7e65a28970f5bbb96a18a",
+        "run_record_sha256": "55fad9774ef9f675df843782a96f438e57d3bedec434e93266befeb7da2b8220"
+      },
+      {
+        "run_id": "mc_sonnet45_a2_20261019",
+        "sample": "A2",
+        "model_key": "sonnet45",
+        "model_id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "model": "Claude Sonnet 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8760024091656572,
+        "technology_iv": [
+          0.8184473415365564,
+          0.923322872158641
+        ],
+        "element_f1": 0.5784323250764271,
+        "element_iv": [
+          0.5145151388419367,
+          0.6430631954986386
+        ],
+        "element_precision": 0.7625491979395447,
+        "element_recall": 0.46593315124872753,
+        "evaluation_A": 0.8831617744382343,
+        "evaluation_A_units": 181,
+        "evaluation_A_iv": [
+          0.8345237564054583,
+          0.9290378357337418
+        ],
+        "evaluation_B": 0.563772216954958,
+        "evaluation_B_iv": [
+          0.5006463199537037,
+          0.6242962178749454
+        ],
+        "comparison_A": 0.8107318882004856,
+        "comparison_A_iv": [
+          0.7398165349576733,
+          0.8768629780303209
+        ],
+        "comparison_A_units": 150,
+        "comparison_B": 0.7102030872510474,
+        "comparison_B_iv": [
+          0.6285080628477282,
+          0.7910613323925433
+        ],
+        "exact": 0.13853045300195072,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 111,
+          "parse_failed": 5,
+          "off_topic": 4
+        },
+        "displacement_down": 32,
+        "displacement_up": 6,
+        "displacement_reportable": 38,
+        "cost_usd": 0.701333,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.5844441666666665,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.06427632677619177,
+            "lo": -0.13161288237669455,
+            "hi": 0.0037170174982794624,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.05898636131904478,
+            "lo": -0.11870893313933062,
+            "hi": -0.004158471184951051,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "ed02f9afc0da1c51ba683d70195f95ea0d2d4f271b7ae7488818711e1809ea65",
+        "run_record_sha256": "3f41adda4212e396adb2741f2c38586c9ba98c2b99348d08e292717354758c33"
+      },
+      {
+        "run_id": "mc_haiku45_a2_20261019",
+        "sample": "A2",
+        "model_key": "haiku45",
+        "model_id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model": "Claude Haiku 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8097502097531537,
+        "technology_iv": [
+          0.7336569796072732,
+          0.8740594844812948
+        ],
+        "element_f1": 0.4126694622415525,
+        "element_iv": [
+          0.3507713684070362,
+          0.4819357167240994
+        ],
+        "element_precision": 0.7208303204315585,
+        "element_recall": 0.28908378116358613,
+        "evaluation_A": 0.8191547450038216,
+        "evaluation_A_units": 118,
+        "evaluation_A_iv": [
+          0.7313313675705089,
+          0.8962229923842819
+        ],
+        "evaluation_B": 0.3840735957581171,
+        "evaluation_B_iv": [
+          0.31756273005978775,
+          0.45251383397197625
+        ],
+        "comparison_A": 0.7621609830582415,
+        "comparison_A_iv": [
+          0.6645383170180533,
+          0.853668619667625
+        ],
+        "comparison_A_units": 129,
+        "comparison_B": 0.6171600158970812,
+        "comparison_B_iv": [
+          0.516856493122636,
+          0.7193222253021179
+        ],
+        "exact": 0.0892928693329376,
+        "execution1_failed": 12,
+        "execution1_outcomes": {
+          "parse_failed": 12,
+          "off_topic": 10,
+          "technologies_present": 98
+        },
+        "displacement_down": 37,
+        "displacement_up": 1,
+        "displacement_reportable": 38,
+        "cost_usd": 0.241242,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.20103500000000002,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.23003918961106634,
+            "lo": -0.31695607289678357,
+            "hi": -0.14991585459500822,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.12523856073154827,
+            "lo": -0.2050285433017368,
+            "hi": -0.05343700333532664,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "d8b81db914c0bf9fc8fd605c113c165844cf88e61f7d21de943226a2d27de82f",
+        "run_record_sha256": "ac559b0eaa6c0faa1c1c959efacf4beebc190a020af7d01e025240ab3537a02c"
+      },
+      {
+        "run_id": "mc_novapro_a2_20261019",
+        "sample": "A2",
+        "model_key": "novapro",
+        "model_id": "eu.amazon.nova-pro-v1:0",
+        "model": "Amazon Nova Pro",
+        "provider": "Amazon, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.7596200164642875,
+        "technology_iv": [
+          0.6915286026524413,
+          0.8251805650979988
+        ],
+        "element_f1": 0.35012332755610875,
+        "element_iv": [
+          0.2812230568054685,
+          0.42863318642038856
+        ],
+        "element_precision": 0.49417960395207433,
+        "element_recall": 0.2710969606592903,
+        "evaluation_A": 0.7842368388279037,
+        "evaluation_A_units": 129,
+        "evaluation_A_iv": [
+          0.6925460028945133,
+          0.8781553318477924
+        ],
+        "evaluation_B": 0.3753052362707536,
+        "evaluation_B_iv": [
+          0.3165342496778493,
+          0.4380795896253331
+        ],
+        "comparison_A": 0.8922860432390948,
+        "comparison_A_iv": [
+          0.8235444732998224,
+          0.953297233575852
+        ],
+        "comparison_A_units": 128,
+        "comparison_B": 0.6777983388561347,
+        "comparison_B_iv": [
+          0.5917208636476892,
+          0.7583894960476585
+        ],
+        "exact": 0.040326624167323265,
+        "execution1_failed": 18,
+        "execution1_outcomes": {
+          "parse_failed": 18,
+          "technologies_present": 101,
+          "off_topic": 1
+        },
+        "displacement_down": 33,
+        "displacement_up": 5,
+        "displacement_reportable": 38,
+        "cost_usd": 0.604717,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.5039308333333333,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.2925853242965101,
+            "lo": -0.39321168056105016,
+            "hi": -0.192233833005088,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.17536875402041452,
+            "lo": -0.25190720330051664,
+            "hi": -0.10244295118697166,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "9ac8b7053842c53f0f300051a4caa8e9243fe6fab53f065023d9390009904a08",
+        "run_record_sha256": "e131654278306e8e3a452f3149819560319e2f85175c5a672d9ef12a8b3f3161"
+      },
+      {
+        "run_id": "mc_nemotron3s_a2_20261019r3",
+        "sample": "A2",
+        "model_key": "nemotron3s",
+        "model_id": "nvidia.nemotron-super-3-120b",
+        "model": "NVIDIA Nemotron 3 Super",
+        "provider": "NVIDIA, open weights",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.805439642854604,
+        "technology_iv": [
+          0.7412368184147534,
+          0.8662920894182339
+        ],
+        "element_f1": 0.4253085238883825,
+        "element_iv": [
+          0.36583586754094555,
+          0.49332327945284965
+        ],
+        "element_precision": 0.6576845141664422,
+        "element_recall": 0.31426945528714734,
+        "evaluation_A": 0.7328105442953063,
+        "evaluation_A_units": 134,
+        "evaluation_A_iv": [
+          0.6488179474256602,
+          0.807209847625399
+        ],
+        "evaluation_B": 0.3762012446438778,
+        "evaluation_B_iv": [
+          0.3228733150108586,
+          0.4285780988681447
+        ],
+        "comparison_A": 0.8022629785881981,
+        "comparison_A_iv": [
+          0.7099308186791928,
+          0.8850817570657173
+        ],
+        "comparison_A_units": 132,
+        "comparison_B": 0.646174406949549,
+        "comparison_B_iv": [
+          0.5443265482965953,
+          0.7385957727172401
+        ],
+        "exact": 0.042989764341823375,
+        "execution1_failed": 12,
+        "execution1_outcomes": {
+          "technologies_present": 108,
+          "parse_failed": 12
+        },
+        "displacement_down": 36,
+        "displacement_up": 2,
+        "displacement_reportable": 38,
+        "cost_usd": 0.123948,
+        "billing_complete": false,
+        "executions": 120,
+        "usd_per_100_executions": 0.10329,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.21740012796423636,
+            "lo": -0.3067405464273539,
+            "hi": -0.13461594399112747,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.12954912763009796,
+            "lo": -0.19842108920272594,
+            "hi": -0.06818531583484344,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "9027ff2a5adf4bfcc874039cb844e01476c51b3f8ea25ba66c20588cd402be97",
+        "run_record_sha256": "48b47c1cb2141e9304c1ab6630a77e87c9744b178b3f0ca65bca1c49915c8e80"
+      },
+      {
+        "run_id": "mc_qwen3_235b_a2_20261019",
+        "sample": "A2",
+        "model_key": "qwen3_235b",
+        "model_id": "qwen.qwen3-235b-a22b-2507-v1:0",
+        "model": "Qwen3-235B-A22B",
+        "provider": "Alibaba, open weights",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8572974676174232,
+        "technology_iv": [
+          0.8060710578567808,
+          0.9051568784524304
+        ],
+        "element_f1": 0.5148697437431436,
+        "element_iv": [
+          0.4505815946994375,
+          0.5760623942910101
+        ],
+        "element_precision": 0.7060502645167019,
+        "element_recall": 0.4051621107092199,
+        "evaluation_A": 0.8328375273025126,
+        "evaluation_A_units": 164,
+        "evaluation_A_iv": [
+          0.7543086904125778,
+          0.9056427286205904
+        ],
+        "evaluation_B": 0.493195881150233,
+        "evaluation_B_iv": [
+          0.42613951743018263,
+          0.5589467467739297
+        ],
+        "comparison_A": 0.808047556649302,
+        "comparison_A_iv": [
+          0.7066540034844436,
+          0.8931741719064054
+        ],
+        "comparison_A_units": 144,
+        "comparison_B": 0.6927371240298926,
+        "comparison_B_iv": [
+          0.6030603044964981,
+          0.7802554852944885
+        ],
+        "exact": 0.12207982160626296,
+        "execution1_failed": 9,
+        "execution1_outcomes": {
+          "parse_failed": 9,
+          "technologies_present": 108,
+          "off_topic": 3
+        },
+        "displacement_down": 33,
+        "displacement_up": 5,
+        "displacement_reportable": 38,
+        "cost_usd": 0.132677,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.11056416666666666,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.12783890810947518,
+            "lo": -0.19868303776393242,
+            "hi": -0.06569242245287399,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.07769130286727877,
+            "lo": -0.13657237439644587,
+            "hi": -0.014952400955352663,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "aec1f4314a2980674776300ec6e79d2de1e6792d36775216cdd891e0a178c7fb",
+        "run_record_sha256": "07efe653912b772dab6c7c8c72bf0408547c831030662863eed59c71416f2965"
+      },
+      {
+        "run_id": "mc_mercury3_instant_a2_20261030",
+        "sample": "A2",
+        "model_key": "mercury3_instant",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (instant)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.7675588588451661,
+        "technology_iv": [
+          0.6849614754432259,
+          0.8395102819498385
+        ],
+        "element_f1": 0.42844068145781633,
+        "element_iv": [
+          0.34906301479845,
+          0.5144361677547422
+        ],
+        "element_precision": 0.7043107013876744,
+        "element_recall": 0.30785685771798893,
+        "evaluation_A": 0.8495299033178919,
+        "evaluation_A_units": 118,
+        "evaluation_A_iv": [
+          0.7750909279911845,
+          0.9108815608038808
+        ],
+        "evaluation_B": 0.4063065948245993,
+        "evaluation_B_iv": [
+          0.3228841484215294,
+          0.4953273124829188
+        ],
+        "comparison_A": 0.8362970297029698,
+        "comparison_A_iv": [
+          0.7293128832030984,
+          0.9313581428987915
+        ],
+        "comparison_A_units": 118,
+        "comparison_B": 0.6419071937744137,
+        "comparison_B_iv": [
+          0.545274997582487,
+          0.7338678064110308
+        ],
+        "exact": 0.11348444861011767,
+        "execution1_failed": 27,
+        "execution1_outcomes": {
+          "technologies_present": 91,
+          "parse_failed": 27,
+          "off_topic": 2
+        },
+        "displacement_down": 38,
+        "displacement_up": 0,
+        "displacement_reportable": 38,
+        "cost_usd": 0.075733,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.06311083333333332,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.2142679703948025,
+            "lo": -0.28453702746084186,
+            "hi": -0.1408869522335211,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.1674299116395359,
+            "lo": -0.2533077004324561,
+            "hi": -0.08997539765490359,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "96e1f6d950e75fb09f47a8cf7c112b56d8c2865d13e89ac3cd4b799ed7a0a329",
+        "run_record_sha256": "3a680314e610309bee1369ef10456b3c8cdca8faceba52215684efbf2a8bc749"
+      },
+      {
+        "run_id": "mc_mercury3_low_a2_20261030",
+        "sample": "A2",
+        "model_key": "mercury3_low",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (low)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8898280892070101,
+        "technology_iv": [
+          0.8308468445706095,
+          0.9385894283096023
+        ],
+        "element_f1": 0.5799753182896117,
+        "element_iv": [
+          0.5214523256346355,
+          0.6418142403016667
+        ],
+        "element_precision": 0.8003399559253122,
+        "element_recall": 0.45476176320345957,
+        "evaluation_A": 0.8450902469532712,
+        "evaluation_A_units": 171,
+        "evaluation_A_iv": [
+          0.7790246946054487,
+          0.9052356404429432
+        ],
+        "evaluation_B": 0.5307319109155058,
+        "evaluation_B_iv": [
+          0.46676650768623784,
+          0.5964370733927857
+        ],
+        "comparison_A": 0.778588084320569,
+        "comparison_A_iv": [
+          0.6913365401318573,
+          0.8571089357073931
+        ],
+        "comparison_A_units": 146,
+        "comparison_B": 0.6928095473503179,
+        "comparison_B_iv": [
+          0.6102426372056874,
+          0.7725602171465961
+        ],
+        "exact": 0.130809563232232,
+        "execution1_failed": 7,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 7,
+          "off_topic": 1
+        },
+        "displacement_down": 35,
+        "displacement_up": 1,
+        "displacement_reportable": 38,
+        "cost_usd": 0.152781,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.1273175,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.06273333356300714,
+            "lo": -0.14168554841086567,
+            "hi": 0.015196871381057409,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.045160681277691905,
+            "lo": -0.10359697183092398,
+            "hi": 0.0032215288745310877,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "08011440dd0dd0be619261626dd771c4de3865b1b9fce086816c3908fe5e7b74",
+        "run_record_sha256": "781590942a96bd0709cb29f31a3bb25c9e0afa9732198360478cfd4ee0998777"
+      }
+    ],
+    "A3": [
+      {
+        "run_id": "a3_sonnet_20261019",
+        "sample": "A3",
+        "model_key": "sonnet",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "fresh-sample evaluation",
+        "repeats": 3,
+        "paragraphs": 55,
+        "technology_f1": 0.8648648648648649,
+        "technology_iv": [
+          0.7884469696969697,
+          0.9271578674756742
+        ],
+        "element_f1": 0.563265306122449,
+        "element_iv": [
+          0.5106382978723404,
+          0.6218667233430336
+        ],
+        "element_precision": 0.6571428571428571,
+        "element_recall": 0.4928571428571429,
+        "evaluation_A": 0.7424242424242424,
+        "evaluation_A_units": 66,
+        "evaluation_A_iv": [
+          0.6037654521795706,
+          0.8571428571428571
+        ],
+        "evaluation_B": 0.4474885844748858,
+        "evaluation_B_iv": [
+          0.37426711941143176,
+          0.5043538093338651
+        ],
+        "comparison_A": 0.890625,
+        "comparison_A_iv": [
+          0.826519520851819,
+          0.9743589743589743
+        ],
+        "comparison_A_units": 64,
+        "comparison_B": 0.7702702702702703,
+        "comparison_B_iv": [
+          0.7085714285714285,
+          0.8427695417789758
+        ],
+        "exact": 0.13095238095238096,
+        "execution1_failed": 8,
+        "execution1_outcomes": {
+          "parse_failed": 8,
+          "technologies_present": 47
+        },
+        "displacement_down": 19,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "cost_usd": 1.087634,
+        "billing_complete": true,
+        "executions": 165,
+        "usd_per_100_executions": 0.6591721212121212,
+        "paired_vs_sonnet46": null,
+        "metrics_sha256": "5e469e5e5a702466cf11223d7be1977b65bc105f4dc620c459a125de4b441805",
+        "run_record_sha256": "d4aae3e1eb96b0d0470774d0727f690462480e0cc99e73627ced3c165b426062"
+      },
+      {
+        "run_id": "mc_opus46_a3_20261019",
+        "sample": "A3",
+        "model_key": "opus",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9447852760736196,
+        "technology_iv": [
+          0.8928520984665053,
+          0.9859203834115806
+        ],
+        "element_f1": 0.6795366795366795,
+        "element_iv": [
+          0.6299958563535911,
+          0.7282186234817812
+        ],
+        "element_precision": 0.7394957983193278,
+        "element_recall": 0.6285714285714286,
+        "evaluation_A": 0.8,
+        "evaluation_A_units": 80,
+        "evaluation_A_iv": [
+          0.6712073739434568,
+          0.8932071197411003
+        ],
+        "evaluation_B": 0.5517241379310345,
+        "evaluation_B_iv": [
+          0.4623093243997767,
+          0.6359678706588059
+        ],
+        "comparison_A": 0.8311688311688312,
+        "comparison_A_iv": [
+          0.7362599206349207,
+          0.9355010295126972
+        ],
+        "comparison_A_units": 77,
+        "comparison_B": 0.7852760736196319,
+        "comparison_B_iv": [
+          0.6923076923076923,
+          0.8920863309352518
+        ],
+        "exact": 0.22093023255813954,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 11,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "cost_usd": 0.483068,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.8783054545454546,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.11627137341423055,
+            "lo": 0.06449705891046664,
+            "hi": 0.16519740807715488,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0799204112087547,
+            "lo": 0.019676884838442432,
+            "hi": 0.1502747252747253,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "44e045c7581286a1aa6bb166180fb0ea6ce106e46b21917848b518dbe6d8ab91",
+        "run_record_sha256": "4ab192ca9c3676e54e9110cac44f309b7b0565d26ed8b147ee3a37156eafa633"
+      },
+      {
+        "run_id": "mc_sonnet45_a3_20261019",
+        "sample": "A3",
+        "model_key": "sonnet45",
+        "model_id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "model": "Claude Sonnet 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8551724137931035,
+        "technology_iv": [
+          0.8059647804144744,
+          0.9155028300644991
+        ],
+        "element_f1": 0.6228070175438597,
+        "element_iv": [
+          0.5680461538461539,
+          0.6881946326917863
+        ],
+        "element_precision": 0.8068181818181818,
+        "element_recall": 0.5071428571428571,
+        "evaluation_A": 0.8382352941176471,
+        "evaluation_A_units": 68,
+        "evaluation_A_iv": [
+          0.7246376811594203,
+          0.9531340843023255
+        ],
+        "evaluation_B": 0.5480769230769231,
+        "evaluation_B_iv": [
+          0.46530137636449925,
+          0.6565694255992763
+        ],
+        "comparison_A": 0.8387096774193549,
+        "comparison_A_iv": [
+          0.7272727272727273,
+          0.9629629629629629
+        ],
+        "comparison_A_units": 62,
+        "comparison_B": 0.7172413793103448,
+        "comparison_B_iv": [
+          0.6025568181818182,
+          0.8593782283057851
+        ],
+        "exact": 0.18072289156626506,
+        "execution1_failed": 6,
+        "execution1_outcomes": {
+          "technologies_present": 47,
+          "parse_failed": 6,
+          "off_topic": 2
+        },
+        "displacement_down": 23,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "cost_usd": 0.349772,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.635949090909091,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.05954171142141074,
+            "lo": -0.0031520882584712417,
+            "hi": 0.13023255813953494,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.009692451071761421,
+            "lo": -0.07679051492382982,
+            "hi": 0.0829629629629629,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "ad39e01d58e29737e5fc286d4f02aa05e65bf2cd578f7904544eb390b9a751ab",
+        "run_record_sha256": "c4dd3275d6733c5cd3cbd403f59a4ff9f50f6889e3340c4ba68b58f708405df1"
+      },
+      {
+        "run_id": "mc_haiku45_a3_20261019",
+        "sample": "A3",
+        "model_key": "haiku45",
+        "model_id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model": "Claude Haiku 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8251748251748252,
+        "technology_iv": [
+          0.7356284760845384,
+          0.9245333739095151
+        ],
+        "element_f1": 0.5288461538461539,
+        "element_iv": [
+          0.4482689655172414,
+          0.6115248786025096
+        ],
+        "element_precision": 0.8088235294117647,
+        "element_recall": 0.39285714285714285,
+        "evaluation_A": 0.7843137254901961,
+        "evaluation_A_units": 51,
+        "evaluation_A_iv": [
+          0.6444444444444445,
+          0.9090909090909091
+        ],
+        "evaluation_B": 0.43243243243243246,
+        "evaluation_B_iv": [
+          0.36220472440944884,
+          0.48148824006488233
+        ],
+        "comparison_A": 0.9152542372881356,
+        "comparison_A_iv": [
+          0.8333333333333334,
+          1.0
+        ],
+        "comparison_A_units": 59,
+        "comparison_B": 0.7552447552447552,
+        "comparison_B_iv": [
+          0.6666666666666666,
+          0.8666814159292034
+        ],
+        "exact": 0.13095238095238096,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 47,
+          "off_topic": 3,
+          "parse_failed": 5
+        },
+        "displacement_down": 23,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "cost_usd": 0.107907,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.19619454545454548,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.034419152276295106,
+            "lo": -0.11555108765463129,
+            "hi": 0.04464285714285715,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.0396900396900397,
+            "lo": -0.11541081891265836,
+            "hi": 0.05981896890987792,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "a37a95950273c91a4571e0c14e45e9d208417c878ade29a65a47ae03617e3f89",
+        "run_record_sha256": "e37ab4901a6233212b028ab578a176c615604c2374997d9e1ed1480a6286eb39"
+      },
+      {
+        "run_id": "mc_novapro_a3_20261019",
+        "sample": "A3",
+        "model_key": "novapro",
+        "model_id": "eu.amazon.nova-pro-v1:0",
+        "model": "Amazon Nova Pro",
+        "provider": "Amazon, proprietary",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.6973684210526315,
+        "technology_iv": [
+          0.5680397022332506,
+          0.8296516007532955
+        ],
+        "element_f1": 0.416,
+        "element_iv": [
+          0.33002960089823413,
+          0.5193406041472339
+        ],
+        "element_precision": 0.4727272727272727,
+        "element_recall": 0.37142857142857144,
+        "evaluation_A": 0.6862745098039216,
+        "evaluation_A_units": 51,
+        "evaluation_A_iv": [
+          0.5531914893617021,
+          0.8200357142857141
+        ],
+        "evaluation_B": 0.31390134529147984,
+        "evaluation_B_iv": [
+          0.2537295231161267,
+          0.37606837606837606
+        ],
+        "comparison_A": 0.8679245283018868,
+        "comparison_A_iv": [
+          0.7187160326086957,
+          0.9807692307692307
+        ],
+        "comparison_A_units": 53,
+        "comparison_B": 0.6052631578947368,
+        "comparison_B_iv": [
+          0.46994370926328266,
+          0.7377186709208934
+        ],
+        "exact": 0.030303030303030304,
+        "execution1_failed": 6,
+        "execution1_outcomes": {
+          "technologies_present": 46,
+          "parse_failed": 6,
+          "off_topic": 3
+        },
+        "displacement_down": 18,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "cost_usd": 0.26198,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.4763272727272727,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.14726530612244898,
+            "lo": -0.2274085637823372,
+            "hi": -0.04650446566060984,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.1674964438122334,
+            "lo": -0.28376068376068386,
+            "hi": -0.020879120879120916,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "c4ab27bcee6ff2c3e96f000e56e3f4c81601e84c6cd31fadb3f8c210243a3cd4",
+        "run_record_sha256": "7f1649b03eeee0633c7dc7817ec6b2e87f731b4333c22b56575d8fbeaea9c901"
+      },
+      {
+        "run_id": "mc_nemotron3s_a3_20261019",
+        "sample": "A3",
+        "model_key": "nemotron3s",
+        "model_id": "nvidia.nemotron-super-3-120b",
+        "model": "NVIDIA Nemotron 3 Super",
+        "provider": "NVIDIA, open weights",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.7586206896551724,
+        "technology_iv": [
+          0.6775869546361349,
+          0.8695818121473613
+        ],
+        "element_f1": 0.42201834862385323,
+        "element_iv": [
+          0.37450114435873527,
+          0.489089937749698
+        ],
+        "element_precision": 0.5897435897435898,
+        "element_recall": 0.32857142857142857,
+        "evaluation_A": 0.7441860465116279,
+        "evaluation_A_units": 43,
+        "evaluation_A_iv": [
+          0.5483137829912023,
+          0.9047991071428569
+        ],
+        "evaluation_B": 0.33507853403141363,
+        "evaluation_B_iv": [
+          0.2643558429118774,
+          0.4079067925048222
+        ],
+        "comparison_A": 0.8545454545454545,
+        "comparison_A_iv": [
+          0.75,
+          0.9531430288461538
+        ],
+        "comparison_A_units": 55,
+        "comparison_B": 0.6482758620689655,
+        "comparison_B_iv": [
+          0.5813765941485372,
+          0.7347025989883132
+        ],
+        "exact": 0.07777777777777778,
+        "execution1_failed": 10,
+        "execution1_outcomes": {
+          "technologies_present": 45,
+          "parse_failed": 10
+        },
+        "displacement_down": 20,
+        "displacement_up": 5,
+        "displacement_reportable": 25,
+        "cost_usd": 0.063214,
+        "billing_complete": false,
+        "executions": 55,
+        "usd_per_100_executions": 0.11493454545454547,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.14124695749859573,
+            "lo": -0.21067821067821063,
+            "hi": -0.06137091607943629,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.10624417520969254,
+            "lo": -0.1895386538536662,
+            "hi": 0.01379310344827589,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "98945f3143695873e74bd0a2878ee00d6f209fde2fd7eb1619af4ed5c425cc95",
+        "run_record_sha256": "1b93955a9b9dfd2dd6698d49be43f25244fcae1e047959cbbc05b3f950e728b6"
+      },
+      {
+        "run_id": "mc_qwen3_235b_a3_20261019",
+        "sample": "A3",
+        "model_key": "qwen3_235b",
+        "model_id": "qwen.qwen3-235b-a22b-2507-v1:0",
+        "model": "Qwen3-235B-A22B",
+        "provider": "Alibaba, open weights",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.7862068965517242,
+        "technology_iv": [
+          0.6328780812791472,
+          0.9019607843137255
+        ],
+        "element_f1": 0.5361702127659574,
+        "element_iv": [
+          0.44932619931319157,
+          0.6343525021949077
+        ],
+        "element_precision": 0.6631578947368421,
+        "element_recall": 0.45,
+        "evaluation_A": 0.7288135593220338,
+        "evaluation_A_units": 59,
+        "evaluation_A_iv": [
+          0.6323335913312693,
+          0.8181818181818182
+        ],
+        "evaluation_B": 0.41346153846153844,
+        "evaluation_B_iv": [
+          0.3586057896977437,
+          0.4788732394366197
+        ],
+        "comparison_A": 0.7017543859649122,
+        "comparison_A_iv": [
+          0.5454146730462519,
+          0.8780803195962993
+        ],
+        "comparison_A_units": 57,
+        "comparison_B": 0.5517241379310345,
+        "comparison_B_iv": [
+          0.4152953912774513,
+          0.7007689307405136
+        ],
+        "exact": 0.056818181818181816,
+        "execution1_failed": 4,
+        "execution1_outcomes": {
+          "technologies_present": 50,
+          "parse_failed": 4,
+          "off_topic": 1
+        },
+        "displacement_down": 18,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "cost_usd": 0.060231,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.1095109090909091,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.027095093356491518,
+            "lo": -0.1174618683167779,
+            "hi": 0.0746658746658746,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.07865796831314076,
+            "lo": -0.20302552789158534,
+            "hi": 0.041964285714285676,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "5319aea7e4c80ebb7903e5f20450611c7d3bf0e974f9e640e101f1ff2bc43259",
+        "run_record_sha256": "2445c6fe1f4d14a41d4dd4ae20877a53a9dfae1a59dbfb2035955f776d41d258"
+      },
+      {
+        "run_id": "mc_mercury3_instant_a3_20261030r3",
+        "sample": "A3",
+        "model_key": "mercury3_instant",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (instant)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.7368421052631579,
+        "technology_iv": [
+          0.5651714635639926,
+          0.8979678312002767
+        ],
+        "element_f1": 0.44221105527638194,
+        "element_iv": [
+          0.2857142857142857,
+          0.5934199134199134
+        ],
+        "element_precision": 0.7457627118644068,
+        "element_recall": 0.3142857142857143,
+        "evaluation_A": 0.6923076923076923,
+        "evaluation_A_units": 39,
+        "evaluation_A_iv": [
+          0.5,
+          0.8928571428571429
+        ],
+        "evaluation_B": 0.3050847457627119,
+        "evaluation_B_iv": [
+          0.2,
+          0.4359154929577464
+        ],
+        "comparison_A": 0.8367346938775511,
+        "comparison_A_iv": [
+          0.7209216826265389,
+          0.9454545454545454
+        ],
+        "comparison_A_units": 49,
+        "comparison_B": 0.6165413533834586,
+        "comparison_B_iv": [
+          0.44274809160305345,
+          0.7826434782608694
+        ],
+        "exact": 0.10714285714285714,
+        "execution1_failed": 12,
+        "execution1_outcomes": {
+          "technologies_present": 42,
+          "parse_failed": 12,
+          "off_topic": 1
+        },
+        "displacement_down": 24,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "cost_usd": 0.033619,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.06112545454545455,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.12105425084606702,
+            "lo": -0.2829847289570819,
+            "hi": 0.047331608699817895,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.12802275960170706,
+            "lo": -0.28045886075949367,
+            "hi": 0.032581453634085156,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "8263ef5e682b8764af379d9e9142c70a8f3221cf687643bf655de9592a74bf83",
+        "run_record_sha256": "ab7ae9b6bd7ccaa2d851ca39bad6a0c37e09bf1a29d710cf4899c9e904117f25"
+      },
+      {
+        "run_id": "mc_mercury3_low_a3_20261030r2",
+        "sample": "A3",
+        "model_key": "mercury3_low",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (low)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8551724137931035,
+        "technology_iv": [
+          0.7586206896551724,
+          0.9365129596142254
+        ],
+        "element_f1": 0.6842105263157895,
+        "element_iv": [
+          0.5555376344086022,
+          0.803509206320623
+        ],
+        "element_precision": 0.8863636363636364,
+        "element_recall": 0.5571428571428572,
+        "evaluation_A": 0.8428571428571429,
+        "evaluation_A_units": 70,
+        "evaluation_A_iv": [
+          0.7777777777777778,
+          0.9
+        ],
+        "evaluation_B": 0.5841584158415841,
+        "evaluation_B_iv": [
+          0.473085194375517,
+          0.6875
+        ],
+        "comparison_A": 0.8064516129032258,
+        "comparison_A_iv": [
+          0.6882913961038961,
+          0.9491737288135592
+        ],
+        "comparison_A_units": 62,
+        "comparison_B": 0.6896551724137931,
+        "comparison_B_iv": [
+          0.5696950517836594,
+          0.8430390378283944
+        ],
+        "exact": 0.2289156626506024,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 49,
+          "parse_failed": 5,
+          "off_topic": 1
+        },
+        "displacement_down": 21,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "cost_usd": 0.07869,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.14307272727272727,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.12094522019334053,
+            "lo": -0.02490852800450316,
+            "hi": 0.2532031726662599,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.009692451071761421,
+            "lo": -0.13888888888888884,
+            "hi": 0.11650717703349278,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "b7cb0c7904395b62e9425003345426731b71a61e596c7d6daf862913213f602e",
+        "run_record_sha256": "932c98bdb97a0a87f5751c05d3793a8aae0b4ca675f12c841f5461c9f0618619"
+      }
+    ]
+  },
+  "verdicts": {
+    "mercury3_instant": {
+      "Opus 4.6": {
+        "A2": {
+          "verdict": "worse",
+          "paired": {
+            "element": {
+              "diff": -0.2459393799775369,
+              "lo": -0.3219086761629154,
+              "hi": -0.1706077487074103,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.17786258090751772,
+              "lo": -0.2601756801789459,
+              "hi": -0.10779794067555293,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": -0.08976763269371735,
+              "lo": -0.17722760039478413,
+              "hi": -0.005108882168070816,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.2781841853331693,
+              "lo": -0.3453176003138404,
+              "hi": -0.20732856168314368,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "A3": {
+          "verdict": "worse",
+          "paired": {
+            "element": {
+              "diff": -0.23732562426029757,
+              "lo": -0.38050152062890913,
+              "hi": -0.09392841458058854,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.20794317081046176,
+              "lo": -0.3705610216980517,
+              "hi": -0.06405778225090275,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": 0.0062669135450790225,
+              "lo": -0.09318755256518074,
+              "hi": 0.08786057692307692,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.3142857142857143,
+              "lo": -0.425414364640884,
+              "hi": -0.1681415929203539,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "overall": "worse"
+      },
+      "Sonnet 4.6": {
+        "A2": {
+          "verdict": "worse",
+          "paired": {
+            "element": {
+              "diff": -0.2142679703948025,
+              "lo": -0.28453702746084186,
+              "hi": -0.1408869522335211,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.1674299116395359,
+              "lo": -0.2533077004324561,
+              "hi": -0.08997539765490359,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": -0.05482183191921142,
+              "lo": -0.14458141265255164,
+              "hi": 0.03241931360257799,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.2493899842142105,
+              "lo": -0.31256177241558525,
+              "hi": -0.17888778856898846,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "A3": {
+          "verdict": "no distinguishable difference",
+          "paired": {
+            "element": {
+              "diff": -0.12105425084606702,
+              "lo": -0.2829847289570819,
+              "hi": 0.047331608699817895,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.12802275960170706,
+              "lo": -0.28045886075949367,
+              "hi": 0.032581453634085156,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": 0.08861985472154965,
+              "lo": -0.0357142857142857,
+              "hi": 0.20058139534883723,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.1785714285714286,
+              "lo": -0.31292517006802717,
+              "hi": 0.0,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "overall": "no consistent difference"
+      }
+    },
+    "mercury3_low": {
+      "Opus 4.6": {
+        "A2": {
+          "verdict": "worse",
+          "paired": {
+            "element": {
+              "diff": -0.09440474314574154,
+              "lo": -0.1550210635752972,
+              "hi": -0.03900723183367849,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.055593350545673714,
+              "lo": -0.1154826453187009,
+              "hi": -0.006899230975847659,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": 0.0062616218439200955,
+              "lo": -0.046085616751225245,
+              "hi": 0.058819622813284234,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.13127927984769916,
+              "lo": -0.19392006348528068,
+              "hi": -0.07377989809027519,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "A3": {
+          "verdict": "no distinguishable difference",
+          "paired": {
+            "element": {
+              "diff": 0.00467384677910998,
+              "lo": -0.08975613734605659,
+              "hi": 0.0888054523935844,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.08961286228051613,
+              "lo": -0.17155979508920693,
+              "hi": -0.023005979527718656,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": 0.14686783804430859,
+              "lo": 0.0905797101449275,
+              "hi": 0.1912621359223301,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.0714285714285714,
+              "lo": -0.1826923076923077,
+              "hi": 0.038461538461538436,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "overall": "no consistent difference"
+      },
+      "Sonnet 4.6": {
+        "A2": {
+          "verdict": "no distinguishable difference",
+          "paired": {
+            "element": {
+              "diff": -0.06273333356300714,
+              "lo": -0.14168554841086567,
+              "hi": 0.015196871381057409,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.045160681277691905,
+              "lo": -0.10359697183092398,
+              "hi": 0.0032215288745310877,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": 0.041207422618426026,
+              "lo": -0.021403645041392028,
+              "hi": 0.10649087004187585,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": -0.10248507872874035,
+              "lo": -0.1920040898778012,
+              "hi": -0.02023099410757978,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "A3": {
+          "verdict": "no distinguishable difference",
+          "paired": {
+            "element": {
+              "diff": 0.12094522019334053,
+              "lo": -0.02490852800450316,
+              "hi": 0.2532031726662599,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "technology": {
+              "diff": -0.009692451071761421,
+              "lo": -0.13888888888888884,
+              "hi": 0.11650717703349278,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_precision": {
+              "diff": 0.2292207792207792,
+              "lo": 0.13470096602626724,
+              "hi": 0.3115089514066497,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "element_recall": {
+              "diff": 0.06428571428571428,
+              "lo": -0.10119047619047622,
+              "hi": 0.2303030303030303,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            }
+          }
+        },
+        "overall": "no consistent difference"
+      }
+    }
+  }
+}

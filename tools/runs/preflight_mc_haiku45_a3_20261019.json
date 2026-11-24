@@ -1,0 +1,322 @@
+{
+  "started_at": "2026-10-19T18:56:37.704086+00:00",
+  "ended_at": "2026-10-19T18:56:41.388091+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "haiku45": "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "system_prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+  "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+  "instrument": "v1.0",
+  "provenance": {
+    "git_commit": "62a080340c743997da89f210e5d6658f81a5c987",
+    "git_dirty": true,
+    "git_dirty_files": 29,
+    "preflight_sha256": "2c7b45e9a1d14339eb6458cbd8be7d339f2896ab62196856a62927b8a3d2d0af",
+    "instrument_sha256": "cd5679b1e8856d7681ee0d434b9048dfde06985df6d34f366cedbc5da3cae128",
+    "instrument_version": "v1.0",
+    "instrument_v11_sha256": null,
+    "uv_lock_sha256": "ee09c5c794c8d08f6423ddaa0573e04f43416c6fb26e1aae668e5ac41f0d10e8",
+    "python": "3.13.12",
+    "botocore": "1.43.83"
+  },
+  "execution_mode": "live",
+  "live_attempted": true,
+  "skip_reason": "",
+  "cache_initial_state": {
+    "haiku45": "warm"
+  },
+  "cache_prefix_tokens": {
+    "haiku45": 4318
+  },
+  "cache_ttl": "1h",
+  "checks": [
+    {
+      "id": "14",
+      "name": "the pinned instrument loads and matches its pins",
+      "silent": true,
+      "ok": true,
+      "detail": "prompt 13,260 chars sha=138cade3add5dcc4; tool config sha=a1e82607f50e8c04; codebook v1.0",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "11",
+      "name": "codebook is frozen and matches its pinned hash",
+      "silent": true,
+      "ok": true,
+      "detail": "annotation/codebook/codebook-v1.0.yaml sha256=1edb4601519417de == pin",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "7",
+      "name": "tool config matches its pin and is the config the builder loads",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/tool-config_v1.0.json sha256=a1e82607f50e8c04 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "12",
+      "name": "the prompt under test IS the pinned production prompt",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/system-prompt_v1.0.txt sha256=138cade3add5dcc4 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "13",
+      "name": "the request comes from instrument.build_request()",
+      "silent": true,
+      "ok": true,
+      "detail": "6/6 clauses hold. No topP (the API rejects it beside temperature), no thinking block, no extra system instruction. Converse caches tools then system then messages, so the cached prefix is the pinned config plus the pinned prompt.",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "1",
+      "name": "[haiku45] inference profile resolves and returns a completion",
+      "silent": false,
+      "ok": true,
+      "detail": "eu.anthropic.claude-haiku-4-5-20251001-v1:0  stopReason=end_turn",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "2",
+      "name": "[haiku45] forced tool use returns exactly one schema-valid toolUse and no reasoning block on both production calls",
+      "silent": false,
+      "ok": true,
+      "detail": "call 1: schema-valid and contract-valid: {\"outcome\": \"technologies_present\", \"relations\": [{\"technology\": \"wind\", \"wind_siting\": \"onshore\", \"elements\": [\"F8a\", \"F7b\"], \"evaluations\": {\"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\"}]}  |  call 2: schema-valid and contract-valid: {\"outcome\": \"technologies_present\", \"relations\": [{\"technology\": \"wind\", \"wind_siting\": \"onshore\", \"elements\": [\"F8a\", \"F7b\"], \"evaluations\": {\"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\"}]}",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "3",
+      "name": "[haiku45] stopReason is tool_use on both production calls, never max_tokens",
+      "silent": true,
+      "ok": true,
+      "detail": "call 1 stopReason=tool_use, call 2 stopReason=tool_use",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "5",
+      "name": "[haiku45] the production prefix caches, and reads back whole",
+      "silent": true,
+      "ok": true,
+      "detail": "warm start: 4318 tokens read and read back whole (requested ttl=1h); stored TTL not observable here (warm start, no write)",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "6",
+      "name": "[haiku45] cached prefix clears this model's minimum (4096 tokens)",
+      "silent": true,
+      "ok": true,
+      "detail": "cached_prefix_tokens=4318  model_minimum=4096  margin=+222. CountTokens is not callable on this credential, so a live call is the only way to know. The cached prefix is the pinned tool config plus the pinned system prompt.",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "8",
+      "name": "[haiku45] usage complete; two accountings recorded",
+      "silent": true,
+      "ok": true,
+      "detail": "{'inputTokens': 472, 'outputTokens': 108, 'cacheReadInputTokens': 4318, 'cacheWriteInputTokens': 0}  |  billable=4898 quota=472 (10.4x divergence)",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "13b",
+      "name": "every submitted envelope is canonically identical to the one the builder produced",
+      "silent": true,
+      "ok": true,
+      "detail": "2 production call(s), 1 distinct request digest(s): 8898a9d6b453. Every one matched the digest taken when it was built.",
+      "skipped": "",
+      "phase": "live"
+    }
+  ],
+  "raw_responses": [
+    {
+      "model": "haiku45",
+      "label": "reachability",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "a35caf5c-1bc4-4858-b741-ebc969144f1e",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 19 Oct 2026 18:56:38 GMT",
+            "content-type": "application/json",
+            "content-length": "313",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "a35caf5c-1bc4-4858-b741-ebc969144f1e"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "text": "OK"
+              }
+            ]
+          }
+        },
+        "stopReason": "end_turn",
+        "usage": {
+          "inputTokens": 14,
+          "outputTokens": 4,
+          "totalTokens": 18,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 471
+        }
+      }
+    },
+    {
+      "model": "haiku45",
+      "label": "production-call-1",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "e5864151-e644-4e00-b114-de6912286654",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 19 Oct 2026 18:56:39 GMT",
+            "content-type": "application/json",
+            "content-length": "629",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "e5864151-e644-4e00-b114-de6912286654"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_bVRC27qNPDE6KZlSKhk76J",
+                  "name": "record_relations",
+                  "input": {
+                    "outcome": "technologies_present",
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "wind_siting": "onshore",
+                        "elements": [
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none"
+                      }
+                    ]
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 472,
+          "outputTokens": 108,
+          "totalTokens": 4898,
+          "cacheReadInputTokens": 4318,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 1347
+        }
+      }
+    },
+    {
+      "model": "haiku45",
+      "label": "production-call-2",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "71be260e-ec76-4929-b9f0-2390ea2d549e",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 19 Oct 2026 18:56:41 GMT",
+            "content-type": "application/json",
+            "content-length": "629",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "71be260e-ec76-4929-b9f0-2390ea2d549e"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_1zFYqoHcyFseMVqRdRUIHv",
+                  "name": "record_relations",
+                  "input": {
+                    "outcome": "technologies_present",
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "wind_siting": "onshore",
+                        "elements": [
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none"
+                      }
+                    ]
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 472,
+          "outputTokens": 108,
+          "totalTokens": 4898,
+          "cacheReadInputTokens": 4318,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 1393
+        }
+      }
+    }
+  ],
+  "persisted_to": "/Users/nilswagner/Entwicklung/llm-energy-discourse-analysis/tools/runs/preflight_mc_haiku45_a3_20261019.json",
+  "certification_status": "CERTIFIED",
+  "certified": true,
+  "offline_checks": "passed",
+  "live_checks": "passed",
+  "n_failed": 0,
+  "n_failed_offline": 0,
+  "n_failed_live": 0,
+  "n_unasserted": 0
+}

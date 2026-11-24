@@ -1,0 +1,47 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{64.6pt}>{\raggedright\arraybackslash}p{61.0pt}>{\raggedright\arraybackslash}p{71.0pt}>{\raggedright\arraybackslash}p{47.8pt}>{\raggedright\arraybackslash}p{67.6pt}>{\raggedright\arraybackslash}p{71.0pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (EXPLORATORY -- translated inputs (specification §4e(a)):\allowbreak{} the German A2 paragraphs machine-translated into English, scored against the unchanged German reference; a comparison of complete configurations, not a language effect, not the registered result). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.832 & 90 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 44; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 11 & 0.558 \\
+pooled & comparison target & 0.905 & 72 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 12 & 0.815 \\
+de & evaluation & 0.832 & 90 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 44; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 11 & 0.558 \\
+de & comparison target & 0.905 & 72 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 12 & 0.815 \\
+clean\_\allowbreak{}pooled & evaluation & 0.804 & 72 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 38; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 9 & 0.521 \\
+clean\_\allowbreak{}pooled & comparison target & 0.888 & 61 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 11 & 0.791 \\
+clean\_\allowbreak{}de & evaluation & 0.804 & 72 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 38; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 9 & 0.521 \\
+clean\_\allowbreak{}de & comparison target & 0.888 & 61 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 11 & 0.791 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{69.7pt}>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{82.4pt}>{\raggedright\arraybackslash}p{87.4pt}>{\raggedright\arraybackslash}p{87.4pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (EXPLORATORY -- translated inputs (specification §4e(a)):\allowbreak{} the German A2 paragraphs machine-translated into English, scored against the unchanged German reference; a comparison of complete configurations, not a language effect, not the registered result). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.832 & 0.694 over 4 & 0.466 over 4 \\
+pooled & comparison target & 0.905 & 0.917 over 3 & 0.521 over 5 \\
+de & evaluation & 0.832 & 0.694 over 4 & 0.466 over 4 \\
+de & comparison target & 0.905 & 0.917 over 3 & 0.521 over 5 \\
+clean\_\allowbreak{}pooled & evaluation & 0.804 & 0.641 over 4 & 0.412 over 4 \\
+clean\_\allowbreak{}pooled & comparison target & 0.888 & 0.913 over 3 & 0.518 over 5 \\
+clean\_\allowbreak{}de & evaluation & 0.804 & 0.641 over 4 & 0.412 over 4 \\
+clean\_\allowbreak{}de & comparison target & 0.888 & 0.913 over 3 & 0.518 over 5 \\
+\end{longtable}
+\endgroup

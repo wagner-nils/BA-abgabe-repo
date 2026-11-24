@@ -1,0 +1,1115 @@
+{
+  "authority": "pre-analysis specification \u00a74l (6), declared 2026-11-06",
+  "seed": 20261106,
+  "n": 45,
+  "pool_size": 140,
+  "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+  "run_record_sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3",
+  "items": [
+    {
+      "item": 1,
+      "paragraph_id": "A037_p02",
+      "technology": "solar",
+      "element": "F2b",
+      "text_sha256": "f8eae6d0e7eb9b92"
+    },
+    {
+      "item": 2,
+      "paragraph_id": "A046_p03",
+      "technology": "other_renewable",
+      "element": "F6b",
+      "text_sha256": "ea87540a77153c86"
+    },
+    {
+      "item": 3,
+      "paragraph_id": "A053_p09",
+      "technology": "storage",
+      "element": "F8a",
+      "text_sha256": "c350174abd4722ae"
+    },
+    {
+      "item": 4,
+      "paragraph_id": "A061_p12",
+      "technology": "hydrogen",
+      "element": "F3a",
+      "text_sha256": "6de404c4d2f70e24"
+    },
+    {
+      "item": 5,
+      "paragraph_id": "A003_p10",
+      "technology": "wind",
+      "element": "F1b",
+      "text_sha256": "4ca3fad7b68ba9a3"
+    },
+    {
+      "item": 6,
+      "paragraph_id": "A070_p16",
+      "technology": "general",
+      "element": "F2b",
+      "text_sha256": "4bb3651c3017280b"
+    },
+    {
+      "item": 7,
+      "paragraph_id": "A077_p15",
+      "technology": "other_renewable",
+      "element": "F3b",
+      "text_sha256": "5740055ff86e85b3"
+    },
+    {
+      "item": 8,
+      "paragraph_id": "A063_p20",
+      "technology": "hydrogen",
+      "element": "F7b",
+      "text_sha256": "a39acf99f9087b82"
+    },
+    {
+      "item": 9,
+      "paragraph_id": "A003_p11",
+      "technology": "wind",
+      "element": "F7b",
+      "text_sha256": "1957907579756f45"
+    },
+    {
+      "item": 10,
+      "paragraph_id": "A008_p05",
+      "technology": "solar",
+      "element": "F8a",
+      "text_sha256": "5c15103778a9f9c9"
+    },
+    {
+      "item": 11,
+      "paragraph_id": "A049_p07",
+      "technology": "wind",
+      "element": "F1b",
+      "text_sha256": "4334dfd18b73ff00"
+    },
+    {
+      "item": 12,
+      "paragraph_id": "A060_p23",
+      "technology": "hydrogen",
+      "element": "F5b",
+      "text_sha256": "bf6bfa17386abd08"
+    },
+    {
+      "item": 13,
+      "paragraph_id": "A063_p20",
+      "technology": "hydrogen",
+      "element": "F2b",
+      "text_sha256": "a39acf99f9087b82"
+    },
+    {
+      "item": 14,
+      "paragraph_id": "A085_p07",
+      "technology": "wind",
+      "element": "F2b",
+      "text_sha256": "0de49372340623b1"
+    },
+    {
+      "item": 15,
+      "paragraph_id": "A042_p06",
+      "technology": "general",
+      "element": "F2b",
+      "text_sha256": "4eab7f6c80c19896"
+    },
+    {
+      "item": 16,
+      "paragraph_id": "A042_p11",
+      "technology": "storage",
+      "element": "F8a",
+      "text_sha256": "d6503261f0603919"
+    },
+    {
+      "item": 17,
+      "paragraph_id": "A056_p02",
+      "technology": "general",
+      "element": "F1a",
+      "text_sha256": "9ad825ff19ab07f8"
+    },
+    {
+      "item": 18,
+      "paragraph_id": "A067_p05",
+      "technology": "hydrogen",
+      "element": "F6a",
+      "text_sha256": "c63f11aee60f9038"
+    },
+    {
+      "item": 19,
+      "paragraph_id": "A085_p10",
+      "technology": "solar",
+      "element": "F3b",
+      "text_sha256": "26f9c9286bed9a8b"
+    },
+    {
+      "item": 20,
+      "paragraph_id": "A056_p02",
+      "technology": "wind",
+      "element": "F1a",
+      "text_sha256": "9ad825ff19ab07f8"
+    },
+    {
+      "item": 21,
+      "paragraph_id": "A080_p01",
+      "technology": "wind",
+      "element": "F2c",
+      "text_sha256": "6e4a66cc6c0955ee"
+    },
+    {
+      "item": 22,
+      "paragraph_id": "A072_p16",
+      "technology": "nuclear",
+      "element": "F2b",
+      "text_sha256": "f3830ae9b024816f"
+    },
+    {
+      "item": 23,
+      "paragraph_id": "A001_p12",
+      "technology": "hydrogen",
+      "element": "F3a",
+      "text_sha256": "afbe88dde24b4fb5"
+    },
+    {
+      "item": 24,
+      "paragraph_id": "A051_p06",
+      "technology": "nuclear",
+      "element": "F9",
+      "text_sha256": "7b1e807012c328aa"
+    },
+    {
+      "item": 25,
+      "paragraph_id": "A075_p04",
+      "technology": "solar",
+      "element": "F8a",
+      "text_sha256": "768414253b271b81"
+    },
+    {
+      "item": 26,
+      "paragraph_id": "A077_p01",
+      "technology": "wind",
+      "element": "F3b",
+      "text_sha256": "458bde50429c9121"
+    },
+    {
+      "item": 27,
+      "paragraph_id": "A072_p18",
+      "technology": "nuclear",
+      "element": "F7b",
+      "text_sha256": "3a4d360ddba67be0"
+    },
+    {
+      "item": 28,
+      "paragraph_id": "A063_p03",
+      "technology": "wind",
+      "element": "F2b",
+      "text_sha256": "ffedd6ba1d346d73"
+    },
+    {
+      "item": 29,
+      "paragraph_id": "A085_p03",
+      "technology": "wind",
+      "element": "F6b",
+      "text_sha256": "71e9437f6b4d06de"
+    },
+    {
+      "item": 30,
+      "paragraph_id": "A012_p11",
+      "technology": "general",
+      "element": "F1b",
+      "text_sha256": "c362bedfca4dae52"
+    },
+    {
+      "item": 31,
+      "paragraph_id": "A067_p05",
+      "technology": "hydrogen",
+      "element": "F2b",
+      "text_sha256": "c63f11aee60f9038"
+    },
+    {
+      "item": 32,
+      "paragraph_id": "A080_p01",
+      "technology": "wind",
+      "element": "F2b",
+      "text_sha256": "6e4a66cc6c0955ee"
+    },
+    {
+      "item": 33,
+      "paragraph_id": "A078_p03",
+      "technology": "solar",
+      "element": "F4a",
+      "text_sha256": "1cfa4deda1aaed1a"
+    },
+    {
+      "item": 34,
+      "paragraph_id": "A076_p03",
+      "technology": "wind",
+      "element": "F2b",
+      "text_sha256": "30fa6298e32fe341"
+    },
+    {
+      "item": 35,
+      "paragraph_id": "A063_p01",
+      "technology": "hydrogen",
+      "element": "F7a",
+      "text_sha256": "24864d72a0a80aa0"
+    },
+    {
+      "item": 36,
+      "paragraph_id": "A077_p15",
+      "technology": "nuclear",
+      "element": "F3b",
+      "text_sha256": "5740055ff86e85b3"
+    },
+    {
+      "item": 37,
+      "paragraph_id": "A063_p20",
+      "technology": "general",
+      "element": "F2b",
+      "text_sha256": "a39acf99f9087b82"
+    },
+    {
+      "item": 38,
+      "paragraph_id": "A049_p07",
+      "technology": "wind",
+      "element": "F3b",
+      "text_sha256": "4334dfd18b73ff00"
+    },
+    {
+      "item": 39,
+      "paragraph_id": "A085_p07",
+      "technology": "solar",
+      "element": "F2b",
+      "text_sha256": "0de49372340623b1"
+    },
+    {
+      "item": 40,
+      "paragraph_id": "A049_p07",
+      "technology": "nuclear",
+      "element": "F3b",
+      "text_sha256": "4334dfd18b73ff00"
+    },
+    {
+      "item": 41,
+      "paragraph_id": "A079_p02",
+      "technology": "wind",
+      "element": "F7a",
+      "text_sha256": "7fdb6d7bed03332d"
+    },
+    {
+      "item": 42,
+      "paragraph_id": "A057_p03",
+      "technology": "nuclear",
+      "element": "F2c",
+      "text_sha256": "8b820b9a1301a9cf"
+    },
+    {
+      "item": 43,
+      "paragraph_id": "A085_p03",
+      "technology": "solar",
+      "element": "F6b",
+      "text_sha256": "71e9437f6b4d06de"
+    },
+    {
+      "item": 44,
+      "paragraph_id": "A060_p16",
+      "technology": "hydrogen",
+      "element": "F2b",
+      "text_sha256": "e38fec4ffdd4d9f0"
+    },
+    {
+      "item": 45,
+      "paragraph_id": "A085_p11",
+      "technology": "solar",
+      "element": "F8a",
+      "text_sha256": "d163be496bda1a6a"
+    }
+  ],
+  "categories": {
+    "a": "clear miss",
+    "b": "borderline",
+    "c": "coder possibly over-marked",
+    "d": "cue outside the paragraph",
+    "e": "assigned elsewhere",
+    "f": "other"
+  },
+  "sheet_sha256_at_creation": "91e233ca77ffade79d78a58e42ef1497613a158bdf450728df6be93a77f86406",
+  "coding": {
+    "tallied": "2026-11-09",
+    "sheet_sha256_coded": "f1534784af3a4c1dd0e519106319d4afa17edc643e134d6765f34c2968b4d2ad",
+    "reading": "one coder's judgement of their own reference, made with the model's output in view and after every other result was known; category c is at most a lower bound on over-marking, and nothing here is an error rate; the reference labels were not changed",
+    "n": 45,
+    "paragraphs": 35,
+    "articles": 25,
+    "counts": {
+      "a": 16,
+      "b": 10,
+      "c": 15,
+      "d": 2,
+      "e": 1,
+      "f": 1
+    },
+    "shares_percent": {
+      "a": 35.6,
+      "b": 22.2,
+      "c": 33.3,
+      "d": 4.4,
+      "e": 2.2,
+      "f": 2.2
+    },
+    "reconciled": {
+      "16": {
+        "as_returned": "c",
+        "reconciled": "b",
+        "reason": "the note argues that the paragraph supports F8a, but only through a regulatory reading the paragraph does not state and that partly depends on the interview context: a generous reading",
+        "by": "coding agent (Claude Code, Claude Opus 5.5) on the author's instruction, 2026-11-09"
+      },
+      "21": {
+        "as_returned": "a",
+        "reconciled": "b",
+        "reason": "the note itself concludes 'borderline under the current codebook' (a record without a figure)",
+        "by": "coding agent (Claude Code, Claude Opus 5.5) on the author's instruction, 2026-11-09"
+      }
+    },
+    "counts_as_returned": {
+      "a": 17,
+      "b": 8,
+      "c": 16,
+      "d": 2,
+      "e": 1,
+      "f": 1
+    },
+    "ai_assistance_in_coding": "none (the author's statement of 2026-11-09: categories and notes written by the author)",
+    "model_marked_another_element_on_row": {
+      "a": 16,
+      "b": 7,
+      "c": 12,
+      "d": 2,
+      "e": 1,
+      "f": 1
+    },
+    "by_element": {
+      "F2b": {
+        "a": 3,
+        "b": 5,
+        "c": 5,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F3b": {
+        "a": 5,
+        "b": 0,
+        "c": 1,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F8a": {
+        "a": 2,
+        "b": 1,
+        "c": 2,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F1b": {
+        "a": 1,
+        "b": 0,
+        "c": 1,
+        "d": 1,
+        "e": 0,
+        "f": 0
+      },
+      "F6b": {
+        "a": 0,
+        "b": 1,
+        "c": 2,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F7b": {
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 1,
+        "e": 0,
+        "f": 1
+      },
+      "F1a": {
+        "a": 2,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F2c": {
+        "a": 0,
+        "b": 1,
+        "c": 1,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F3a": {
+        "a": 0,
+        "b": 0,
+        "c": 1,
+        "d": 0,
+        "e": 1,
+        "f": 0
+      },
+      "F7a": {
+        "a": 1,
+        "b": 0,
+        "c": 1,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F4a": {
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F5b": {
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F6a": {
+        "a": 0,
+        "b": 0,
+        "c": 1,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      },
+      "F9": {
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "e": 0,
+        "f": 0
+      }
+    },
+    "by_language_not_declared": {
+      "de": {
+        "a": 3,
+        "b": 6,
+        "c": 8,
+        "d": 1,
+        "e": 0,
+        "f": 0
+      },
+      "en": {
+        "a": 13,
+        "b": 4,
+        "c": 7,
+        "d": 1,
+        "e": 1,
+        "f": 1
+      }
+    },
+    "items": [
+      {
+        "item": 1,
+        "category": "b",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F1a",
+          "F1b",
+          "F2a",
+          "F2b",
+          "F5b"
+        ],
+        "model_elements_on_row": [
+          "F1a",
+          "F1b",
+          "F2a",
+          "F5b"
+        ]
+      },
+      {
+        "item": 2,
+        "category": "b",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F4a",
+          "F6a",
+          "F6b"
+        ],
+        "model_elements_on_row": [
+          "F3b",
+          "F4a",
+          "F6a"
+        ]
+      },
+      {
+        "item": 3,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F5b",
+          "F7a",
+          "F8a"
+        ],
+        "model_elements_on_row": [
+          "F5b"
+        ]
+      },
+      {
+        "item": 4,
+        "category": "e",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F3a"
+        ],
+        "model_elements_on_row": [
+          "F3b",
+          "F6b"
+        ]
+      },
+      {
+        "item": 5,
+        "category": "a",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F1b",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F7b",
+          "F8a"
+        ]
+      },
+      {
+        "item": 6,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1a",
+          "F2b"
+        ],
+        "model_elements_on_row": [
+          "F2c"
+        ]
+      },
+      {
+        "item": 7,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1a",
+          "F2b",
+          "F3b",
+          "F5a",
+          "F7a"
+        ],
+        "model_elements_on_row": [
+          "F1a",
+          "F2b",
+          "F4b",
+          "F5a"
+        ]
+      },
+      {
+        "item": 8,
+        "category": "f",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F7a",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F3a"
+        ]
+      },
+      {
+        "item": 9,
+        "category": "d",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F2b"
+        ]
+      },
+      {
+        "item": 10,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F1b",
+          "F2b",
+          "F8a"
+        ],
+        "model_elements_on_row": [
+          "F1b",
+          "F2c"
+        ]
+      },
+      {
+        "item": 11,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F3b"
+        ],
+        "model_elements_on_row": []
+      },
+      {
+        "item": 12,
+        "category": "b",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2c",
+          "F3b",
+          "F5b",
+          "F6a"
+        ],
+        "model_elements_on_row": [
+          "F3b",
+          "F6a",
+          "F6b"
+        ]
+      },
+      {
+        "item": 13,
+        "category": "b",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F7a",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F3a"
+        ]
+      },
+      {
+        "item": 14,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F6b"
+        ],
+        "model_elements_on_row": [
+          "F2c"
+        ]
+      },
+      {
+        "item": 15,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b"
+        ],
+        "model_elements_on_row": [
+          "F2c"
+        ]
+      },
+      {
+        "item": 16,
+        "category": "b",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F8a"
+        ],
+        "model_elements_on_row": []
+      },
+      {
+        "item": 17,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1a",
+          "F3b",
+          "F4a",
+          "F4b"
+        ],
+        "model_elements_on_row": [
+          "F4b"
+        ]
+      },
+      {
+        "item": 18,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F2b",
+          "F6a"
+        ],
+        "model_elements_on_row": [
+          "F1b",
+          "F2c",
+          "F8a"
+        ]
+      },
+      {
+        "item": 19,
+        "category": "a",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F3b",
+          "F6b"
+        ],
+        "model_elements_on_row": [
+          "F6b"
+        ]
+      },
+      {
+        "item": 20,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1a",
+          "F2b",
+          "F3b"
+        ],
+        "model_elements_on_row": [
+          "F2b",
+          "F2c"
+        ]
+      },
+      {
+        "item": 21,
+        "category": "b",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F2c"
+        ],
+        "model_elements_on_row": []
+      },
+      {
+        "item": 22,
+        "category": "b",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F6a"
+        ],
+        "model_elements_on_row": [
+          "F6a"
+        ]
+      },
+      {
+        "item": 23,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F3a",
+          "F4a",
+          "F4b"
+        ],
+        "model_elements_on_row": [
+          "F4a",
+          "F4b"
+        ]
+      },
+      {
+        "item": 24,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F6a",
+          "F9"
+        ],
+        "model_elements_on_row": [
+          "F6a",
+          "F6b"
+        ]
+      },
+      {
+        "item": 25,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F8a"
+        ],
+        "model_elements_on_row": []
+      },
+      {
+        "item": 26,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F3b",
+          "F8a"
+        ],
+        "model_elements_on_row": [
+          "F1b"
+        ]
+      },
+      {
+        "item": 27,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F6a",
+          "F7b",
+          "F9"
+        ],
+        "model_elements_on_row": [
+          "F1b",
+          "F6a",
+          "F9"
+        ]
+      },
+      {
+        "item": 28,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F7a"
+        ],
+        "model_elements_on_row": [
+          "F7a"
+        ]
+      },
+      {
+        "item": 29,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F5a",
+          "F6b"
+        ],
+        "model_elements_on_row": [
+          "F2c",
+          "F5a"
+        ]
+      },
+      {
+        "item": 30,
+        "category": "d",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F2b",
+          "F2c"
+        ],
+        "model_elements_on_row": [
+          "F2b",
+          "F2c"
+        ]
+      },
+      {
+        "item": 31,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F2b",
+          "F6a"
+        ],
+        "model_elements_on_row": [
+          "F1b",
+          "F2c",
+          "F8a"
+        ]
+      },
+      {
+        "item": 32,
+        "category": "b",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F2c"
+        ],
+        "model_elements_on_row": []
+      },
+      {
+        "item": 33,
+        "category": "b",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2c",
+          "F4a",
+          "F4b"
+        ],
+        "model_elements_on_row": [
+          "F2c",
+          "F4b"
+        ]
+      },
+      {
+        "item": 34,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F7a",
+          "F8a"
+        ],
+        "model_elements_on_row": [
+          "F1b",
+          "F3b"
+        ]
+      },
+      {
+        "item": 35,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F7a",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F7b"
+        ]
+      },
+      {
+        "item": 36,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1a",
+          "F2b",
+          "F3b",
+          "F5a",
+          "F7a"
+        ],
+        "model_elements_on_row": [
+          "F1a",
+          "F2b",
+          "F4b",
+          "F5a"
+        ]
+      },
+      {
+        "item": 37,
+        "category": "b",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b",
+          "F7a",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F3a"
+        ]
+      },
+      {
+        "item": 38,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F3b"
+        ],
+        "model_elements_on_row": []
+      },
+      {
+        "item": 39,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F6b"
+        ],
+        "model_elements_on_row": [
+          "F2c"
+        ]
+      },
+      {
+        "item": 40,
+        "category": "a",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F1b",
+          "F3b"
+        ],
+        "model_elements_on_row": [
+          "F1b"
+        ]
+      },
+      {
+        "item": 41,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F6a",
+          "F6b",
+          "F7a",
+          "F7b"
+        ],
+        "model_elements_on_row": [
+          "F3a",
+          "F6b"
+        ]
+      },
+      {
+        "item": 42,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2c",
+          "F3b",
+          "F4b"
+        ],
+        "model_elements_on_row": [
+          "F3b"
+        ]
+      },
+      {
+        "item": 43,
+        "category": "c",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F2b",
+          "F5a",
+          "F6b"
+        ],
+        "model_elements_on_row": [
+          "F2c",
+          "F5a"
+        ]
+      },
+      {
+        "item": 44,
+        "category": "c",
+        "language": "en",
+        "coder_elements_on_row": [
+          "F2b"
+        ],
+        "model_elements_on_row": [
+          "F3b"
+        ]
+      },
+      {
+        "item": 45,
+        "category": "a",
+        "language": "de",
+        "coder_elements_on_row": [
+          "F1b",
+          "F6b",
+          "F8a"
+        ],
+        "model_elements_on_row": [
+          "F1b",
+          "F6b",
+          "F7a"
+        ]
+      }
+    ]
+  }
+}

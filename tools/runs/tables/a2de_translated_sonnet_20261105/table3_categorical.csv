@@ -1,0 +1,9 @@
+population;dimension;score A accuracy (weighted);matched units;excluded units (reason: n);score B micro-F1 (weighted);score A macro (supported classes);score B macro (supported classes)
+pooled;evaluation;0.832;90;"frame_not_predicted: 44; row_not_predicted: 11";0.558;0.694 over 4;0.466 over 4
+pooled;comparison target;0.905;72;row_not_predicted: 12;0.815;0.917 over 3;0.521 over 5
+de;evaluation;0.832;90;"frame_not_predicted: 44; row_not_predicted: 11";0.558;0.694 over 4;0.466 over 4
+de;comparison target;0.905;72;row_not_predicted: 12;0.815;0.917 over 3;0.521 over 5
+clean_pooled;evaluation;0.804;72;"frame_not_predicted: 38; row_not_predicted: 9";0.521;0.641 over 4;0.412 over 4
+clean_pooled;comparison target;0.888;61;row_not_predicted: 11;0.791;0.913 over 3;0.518 over 5
+clean_de;evaluation;0.804;72;"frame_not_predicted: 38; row_not_predicted: 9";0.521;0.641 over 4;0.412 over 4
+clean_de;comparison target;0.888;61;row_not_predicted: 11;0.791;0.913 over 3;0.518 over 5

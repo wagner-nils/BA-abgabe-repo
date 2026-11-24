@@ -1,0 +1,7 @@
+population;dimension;score A accuracy (weighted);matched units;excluded units (reason: n);score B micro-F1 (weighted);score A macro (supported classes);score B macro (supported classes)
+pooled;evaluation;0.742;66;"row_not_predicted: 29; frame_not_predicted: 29";0.447;0.601 over 4;0.367 over 4
+pooled;comparison target;0.891;64;row_not_predicted: 17;0.770;0.492 over 7;0.387 over 8
+de;evaluation;0.757;37;"row_not_predicted: 16; frame_not_predicted: 18";0.448;0.516 over 4;0.296 over 4
+de;comparison target;0.900;30;row_not_predicted: 8;0.771;0.653 over 4;0.618 over 4
+en;evaluation;0.724;29;"row_not_predicted: 13; frame_not_predicted: 11";0.447;0.672 over 4;0.409 over 4
+en;comparison target;0.882;34;row_not_predicted: 9;0.769;0.390 over 5;0.313 over 6

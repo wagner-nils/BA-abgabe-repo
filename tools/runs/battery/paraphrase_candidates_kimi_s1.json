@@ -1,0 +1,1545 @@
+{
+ "declared": "pre-analysis specification §4i (2026-10-30)",
+ "items": {
+  "kimi_s1|technologies.general.definition": {
+   "generator": "kimi",
+   "path": "technologies.general.definition",
+   "unit": "general",
+   "original": "Renewables, clean power, green energy, or \"the energy transition\" as a bundle, with no identifiable individual technology carrying the statement.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Renewables, clean energy, green power, or \"the energy transition\" taken collectively, where no specific identifiable technology carries the statement on its own.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "Renewables, clean power, green energy, or \"the energy transition\" taken together as a group, where the statement is not carried by any single identifiable individual technology.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Renewables, clean power, green energy, or \"the energy transition\" taken together as a group, where the statement is not carried by any single identifiable individual technology.",
+   "status": "rejected_round2",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-070",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "On its own favors allowing identifiable technologies to carry the statement jointly. Swapping clean power/green energy for clean energy/green power also changes scope."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "Adds 'on its own': the exclusion now applies only when a single technology carries the statement alone. When a named technology carries the statement together with the bundle, the original excludes the case and the rewrite may code it as a bundle. Term swaps (clean energy, green power) are minor."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-048",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "Adding 'single' favors admitting a statement carried jointly by several identifiable technologies, shifting the boundary for bundles with named members."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'not carried by any single identifiable individual technology' can be read as 'not carried by one technology alone'. Read that way, a statement carried jointly by several named technologies (e.g. wind and solar) could still count as the bundle. The original's 'no identifiable individual technology carrying the statement' excludes that case."
+     },
+     "accepted": false
+    }
+   ]
+  },
+  "kimi_s1|technologies.solar.definition": {
+   "generator": "kimi",
+   "path": "technologies.solar.definition",
+   "unit": "solar",
+   "original": "Solar photovoltaic and solar thermal.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Photovoltaic solar and solar thermal.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Photovoltaic solar and solar thermal.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-048",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|technologies.wind.definition": {
+   "generator": "kimi",
+   "path": "technologies.wind.definition",
+   "unit": "wind",
+   "original": "Onshore and offshore wind power.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Wind power generated on land and at sea.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "Wind power, whether onshore or offshore.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Wind power, whether onshore or offshore.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-014",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "At sea excludes offshore wind installations in freshwater lakes that offshore wind power can include."
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-005",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|technologies.hydrogen.definition": {
+   "generator": "kimi",
+   "path": "technologies.hydrogen.definition",
+   "unit": "hydrogen",
+   "original": "Hydrogen as an energy carrier, particularly low-carbon, renewable or green hydrogen. Record the production pathway where the text identifies one.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Hydrogen used as an energy carrier, especially low-carbon, renewable or green hydrogen. Document the production pathway when the text identifies one.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Hydrogen used as an energy carrier, especially low-carbon, renewable or green hydrogen. Document the production pathway when the text identifies one.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-006",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|technologies.nuclear.definition": {
+   "generator": "kimi",
+   "path": "technologies.nuclear.definition",
+   "unit": "nuclear",
+   "original": "Included as a low-carbon COMPARATOR, although not a renewable technology.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Counted as a low-carbon COMPARATOR, even though it is not a renewable technology.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Counted as a low-carbon COMPARATOR, even though it is not a renewable technology.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-010",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|technologies.other_renewable.definition": {
+   "generator": "kimi",
+   "path": "technologies.other_renewable.definition",
+   "unit": "other_renewable",
+   "original": "Hydropower, bioenergy, geothermal, marine energy.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Water power, biomass energy, geothermal energy, and marine power.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "Hydropower, bioenergy, geothermal, and marine energy.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Hydropower, bioenergy, geothermal, and marine energy.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-036",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'bioenergy' became 'biomass energy'. This can be read narrowly as solid biomass combustion, so biogas and biofuels might drop out of scope."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-004",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|technologies.storage.definition": {
+   "generator": "kimi",
+   "path": "technologies.storage.definition",
+   "unit": "storage",
+   "original": "Batteries, pumped hydro, and other storage as the SUBJECT of the statement.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Statements in which batteries, pumped hydro, or any other type of storage constitute the SUBJECT.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "Statements in which batteries, pumped hydro, and other storage constitute the SUBJECT.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Statements in which batteries, pumped hydro, and other storage constitute the SUBJECT.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-040",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Mild: 'other storage' became 'any other type of storage'. The added 'any' stresses inclusiveness and could pull borderline storage (thermal, hydrogen storage) in. The SUBJECT condition is kept."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-003",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F1a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F1a.fires_when",
+   "unit": "F1a",
+   "original": "The paragraph refers to the money cost or price of the technology, of the electricity it produces, or of the bills, levies or taxes people pay because of it. Includes claims that it is cheap, expensive, cheaper or dearer than something else, or that costs are rising or falling.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph concerns the monetary cost or price of the technology itself, of the electricity generated by it, or of the bills, levies or taxes that people pay as a result of it. This covers claims that it is cheap or expensive, cheaper or more costly than something else, or that costs are going up or down.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to the monetary cost or price of the technology, of the electricity it generates, or of the bills, levies or taxes people pay as a result of it. Includes claims that it is cheap, expensive, cheaper or more costly than something else, or that costs are going up or down.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to the monetary cost or price of the technology, of the electricity it generates, or of the bills, levies or taxes people pay as a result of it. Includes claims that it is cheap, expensive, cheaper or more costly than something else, or that costs are going up or down.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-063",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'refers to' becomes 'concerns', which can be read as 'the paragraph is about cost' and so may exclude passing cost references. 'the technology itself' adds emphasis. Other changes are synonyms."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-033",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F1a.does_not_fire_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F1a.does_not_fire_when",
+   "unit": "F1a",
+   "original": "A number appears that is not a price. Installed capacity in megawatts, output in terawatt-hours, or a count of turbines is NOT a cost claim.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "A figure is mentioned that does not represent a price. Installed capacity measured in megawatts, output expressed in terawatt-hours, or a tally of turbines is NOT a cost claim.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "A figure is mentioned that does not represent a price. Installed capacity measured in megawatts, output expressed in terawatt-hours, or a tally of turbines is NOT a cost claim.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-062",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F1b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F1b.fires_when",
+   "unit": "F1b",
+   "original": "The paragraph refers to subsidies, feed-in tariffs, levies, auctions, public funding, tax credits, or the question of who pays for deployment.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph concerns subsidies, feed-in tariffs, levies, auctions, public funding, tax credits, or the issue of who covers the cost of deployment.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "This paragraph refers to subsidies, feed-in tariffs, levies, auctions, public funding, tax credits, or the issue of who bears the cost of deployment.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "This paragraph refers to subsidies, feed-in tariffs, levies, auctions, public funding, tax credits, or the issue of who bears the cost of deployment.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-068",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Minor: 'refers to' becomes 'concerns', which may narrow the condition to paragraphs that are about subsidies/funding rather than ones that merely refer to them. The rest is equivalent."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-039",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F2a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F2a.fires_when",
+   "unit": "F2a",
+   "original": "The paragraph refers to jobs created, lost, threatened or secured, or to workers, skills shortages, or plant closures in employment terms.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph concerns the creation, loss, endangerment or safeguarding of jobs, or touches on workers, shortages of skills, or the shutting down of plants, in terms of employment.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to jobs created, lost, threatened or safeguarded, or to workers, skills shortages, or plant closures in employment terms.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to jobs created, lost, threatened or safeguarded, or to workers, skills shortages, or plant closures in employment terms.",
+   "status": "rejected_round2",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-037",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "The detached employment qualifier favors applying it to the whole list, whereas the original permits attachment only to plant closures."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'refers to' became 'concerns', which may narrow mentions to topics. The comma before 'in terms of employment' makes the qualifier likelier to cover workers and skills shortages too, not only plant closures."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-051",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'Safeguarded' selects protection of jobs, whereas 'secured' can also mean jobs obtained or guaranteed."
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": false
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F2b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F2b.fires_when",
+   "unit": "F2b",
+   "original": "The paragraph refers to investment, industrial capacity, factory or project decisions, exports, supply chains, or national competitiveness.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions investing, industrial capacity, factory or project choices, exports, supply chains, or the competitiveness of the nation.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to investment, industrial capacity, decisions about factories or projects, exports, supply chains, or national competitiveness.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to investment, industrial capacity, decisions about factories or projects, exports, supply chains, or national competitiveness.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-085",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Investing emphasizes an activity and may exclude references to existing investment holdings or their value covered by investment."
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-038",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F2b.does_not_fire_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F2b.does_not_fire_when",
+   "unit": "F2b",
+   "original": "A company is merely named, or corporate boilerplate appears, without the statement bearing on the technology.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "A company is only mentioned by name, or standard corporate boilerplate is present, while the statement does not bear on the technology.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "A company is only mentioned by name, or standard corporate boilerplate is present, while the statement does not bear on the technology.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-012",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F2c.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F2c.fires_when",
+   "unit": "F2c",
+   "original": "The paragraph reports a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph presents a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph presents a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-046",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F2c.does_not_fire_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F2c.does_not_fire_when",
+   "unit": "F2c",
+   "original": "The number carries no direction. \"Wind produced 132 TWh\" on its own fires nothing; \"wind produced a record 132 TWh, up a fifth\" fires F2c.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The numeral conveys no orientation. \"Wind produced 132 TWh\" by itself triggers nothing, whereas \"wind produced a record 132 TWh, up a fifth\" triggers F2c.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The number has no direction. By itself, \"Wind produced 132 TWh\" fires nothing; \"wind produced a record 132 TWh, up a fifth\" fires F2c.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The number has no direction. By itself, \"Wind produced 132 TWh\" fires nothing; \"wind produced a record 132 TWh, up a fifth\" fires F2c.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-089",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Orientation does not reliably preserve the numerical trend meaning of direction, weakening the general boundary despite retaining the examples."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'number' becomes 'numeral', which could exclude numbers written as words (e.g. 'a fifth'). 'direction' becomes 'orientation', which is vaguer and could be read as evaluative stance rather than up/down trend. The examples are kept."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-045",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F3a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F3a.fires_when",
+   "unit": "F3a",
+   "original": "The paragraph refers to greenhouse gases, carbon, emissions, climate targets, or the technology's effect on the climate.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions greenhouse gases, carbon, emissions, climate objectives, or the technology's impact on the climate.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to carbon, greenhouse gases, emissions, climate targets, or the effect of the technology on the climate.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to carbon, greenhouse gases, emissions, climate targets, or the effect of the technology on the climate.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-082",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Climate objectives can include broad qualitative aims beyond climate targets, potentially broadening the inclusion condition."
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-031",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F3b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F3b.fires_when",
+   "unit": "F3b",
+   "original": "The paragraph places the technology inside — or as an obstacle to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT making an explicit emissions claim.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph situates the technology as part of — or as standing in the way of — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT explicitly asserting anything about emissions.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph situates the technology within — or as a barrier to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT putting forward an explicit emissions claim.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph situates the technology within — or as a barrier to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT putting forward an explicit emissions claim.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-052",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Mild: 'WITHOUT making an explicit emissions claim' became 'WITHOUT explicitly asserting anything about emissions'. The added 'anything' may widen the exclusion to any explicit mention of emissions."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-027",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F4a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F4a.fires_when",
+   "unit": "F4a",
+   "original": "The paragraph refers to dependence on, or independence from, energy imports, a foreign supplier, or a named exporting country.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions reliance on, or freedom from, energy imports, a supplier abroad, or an explicitly named exporting nation.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to reliance on, or freedom from, energy imports, a foreign supplier, or a named exporting country.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to reliance on, or freedom from, energy imports, a foreign supplier, or a named exporting country.",
+   "status": "rejected_round2",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-020",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "Supplier abroad selects location as the meaning of foreign supplier, potentially excluding foreign suppliers operating domestically."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'named' becomes 'explicitly named', which adds emphasis and narrows the trigger. 'a foreign supplier' becomes 'a supplier abroad', moving from nationality to location. 'refers to' also becomes 'mentions'."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-029",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'Freedom from' can suggest absence of imports or suppliers, whereas independence can coexist with optional imports."
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": false
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F4b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F4b.fires_when",
+   "unit": "F4b",
+   "original": "The paragraph refers to security of supply, sovereignty, geopolitical risk, or shortage framed as a national-security matter.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions security of supply, sovereignty, geopolitical risk, or shortage presented as a matter of national security.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph mentions security of supply, sovereignty, geopolitical risk, or shortage presented as a matter of national security.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-078",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F4b.recall_warning": {
+   "generator": "kimi",
+   "path": "frame_elements.F4b.recall_warning",
+   "unit": "F4b",
+   "original": "A frame does NOT require a stated causal mechanism. \"Wind strengthens Germany's energy security\", with no explanation of how, fires F4b.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "A frame need not include an articulated causal mechanism. \"Wind strengthens Germany's energy security\" activates F4b even when no explanation of how is provided.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "A frame does NOT call for an articulated causal mechanism. \"Wind strengthens Germany's energy security\", without an explanation of how, triggers F4b.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "A frame does NOT call for an articulated causal mechanism. \"Wind strengthens Germany's energy security\", without an explanation of how, triggers F4b.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-049",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Minor: the capitalised emphasis in 'does NOT require' is dropped ('need not'). The rule itself and the example are kept."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-042",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F5a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F5a.fires_when",
+   "unit": "F5a",
+   "original": "The paragraph refers to intermittency, baseload, dispatchability, backup, the need for storage, or whether power is available when it is needed.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph touches on intermittency, baseload, dispatchability, backup, the requirement for storage, or the question of whether power is available at the time it is needed.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph touches on intermittency, baseload, dispatchability, backup, the requirement for storage, or the question of whether power is available at the time it is needed.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-039",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F5a.does_not_fire_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F5a.does_not_fire_when",
+   "unit": "F5a",
+   "original": "Weather is described without being connected to power supply. \"It was a still, grey week\" alone does not fire F5a.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Weather is portrayed with no link to power supply. On its own, \"It was a still, grey week\" does not trigger F5a.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Weather is portrayed with no link to power supply. On its own, \"It was a still, grey week\" does not trigger F5a.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-015",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F5b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F5b.fires_when",
+   "unit": "F5b",
+   "original": "The paragraph refers to grid infrastructure, connection queues, transmission lines and their permitting, curtailment, or the siting of generation relative to demand.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph concerns grid infrastructure, queues for connection, transmission lines along with their permitting, curtailment, or where generation is sited in relation to demand.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to transmission lines and their permitting, connection queues, grid infrastructure, curtailment, or the siting of generation relative to demand.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to transmission lines and their permitting, connection queues, grid infrastructure, curtailment, or the siting of generation relative to demand.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-032",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'refers to' became 'concerns'. That can read as 'is about', which is narrower than a mention: a passing reference to curtailment might no longer qualify. Mild."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-032",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F6a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F6a.fires_when",
+   "unit": "F6a",
+   "original": "The paragraph refers to whether the technology can be built, rebuilt, restarted or operated at all: technical obstacles, immaturity, irreversibility, or a physical constraint on doing it.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The passage concerns whether the technology is capable of being constructed, reconstructed, relaunched or run in the first place: engineering difficulties, lack of maturity, the impossibility of reversing it, or a physical limitation on carrying it out.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to whether it is possible at all to build, rebuild, restart or operate the technology: technical obstacles, immaturity, irreversibility, or a physical constraint on doing so.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to whether it is possible at all to build, rebuild, restart or operate the technology: technical obstacles, immaturity, irreversibility, or a physical constraint on doing so.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-083",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Relaunched can include renewed development or commercialization rather than restarting operation, broadening the feasibility cases."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'restarted' becomes 'relaunched', which shifts toward a program or market relaunch rather than restarting a plant. 'at all' becomes 'in the first place'. 'irreversibility' becomes 'the impossibility of reversing it', whose 'it' is ambiguous. 'paragraph' becomes 'passage', a change of unit. 'refers to' becomes 'concerns'."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-025",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F6a.boundary": {
+   "generator": "kimi",
+   "path": "frame_elements.F6a.boundary",
+   "unit": "F6a",
+   "original": "NOT F5a. F5a is about delivering power when it is needed - intermittency, baseload, backup. F6a is about whether the plant can exist or run at all. \"Reaktivierung kaum mehr denkbar, weil der Rückbau fortgeschritten ist\" is F6a, not F5a.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Not F5a. F5a concerns supplying power at the time it is required - intermittency, baseload, backup. F6a concerns whether the plant is able to exist or run at all. \"Reaktivierung kaum mehr denkbar, weil der Rückbau fortgeschritten ist\" counts as F6a, not F5a.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "NOT F5a. F5a is about supplying power at the time it is needed - intermittency, baseload, backup. F6a is about whether the plant can exist or operate at all. \"Reaktivierung kaum mehr denkbar, weil der Rückbau fortgeschritten ist\" counts as F6a, not F5a.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "NOT F5a. F5a is about supplying power at the time it is needed - intermittency, baseload, backup. F6a is about whether the plant can exist or operate at all. \"Reaktivierung kaum mehr denkbar, weil der Rückbau fortgeschritten ist\" counts as F6a, not F5a.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-001",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Minor: the capitalised exclusion header 'NOT F5a' becomes 'Not F5a', so the emphasis is lost. Content otherwise preserved."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-011",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F6b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F6b.fires_when",
+   "unit": "F6b",
+   "original": "The paragraph refers to efficiency, yield, output potential, or the technical suitability of a design or a site.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions efficiency, yield, the potential for output, or how technically suitable a design or a site is.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph mentions efficiency, yield, the potential for output, or how technically suitable a design or a site is.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-072",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F6b.boundary": {
+   "generator": "kimi",
+   "path": "frame_elements.F6b.boundary",
+   "unit": "F6b",
+   "original": "NOT F1a. Cost per unit is F1a; energy per unit of area, or a yield estimate, is F6b. \"Cheaper per MWh\" is F1a. \"Produces more kWh per m²\" is F6b. A paragraph can fire both.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "This is NOT F1a. F1a applies to cost per unit, while energy per unit of area, or a yield estimate, falls under F6b. Code \"Cheaper per MWh\" as F1a. Code \"Produces more kWh per m²\" as F6b. A single paragraph may trigger both.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "This is NOT F1a. F1a applies to cost per unit, while energy per unit of area, or a yield estimate, falls under F6b. Code \"Cheaper per MWh\" as F1a. Code \"Produces more kWh per m²\" as F6b. A single paragraph may trigger both.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-016",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F6b.boundary_vs_F5a": {
+   "generator": "kimi",
+   "path": "frame_elements.F6b.boundary_vs_F5a",
+   "unit": "F6b",
+   "original": "Go by the CAUSE, not the effect. Where the cause is weather, season or variability, it is an availability claim and fires F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. Where the cause is the design, the site or the technology's efficiency, it is a performance claim and fires F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Both fire when the text makes both claims.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Judge by the CAUSE, not the effect. If the cause is weather, season or variability, this counts as an availability claim and triggers F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. If the cause is the design, the site or the technology's efficiency, this counts as a performance claim and triggers F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Both are triggered when the text makes both claims.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Judge by the CAUSE, not the effect. If the cause is weather, season or variability, this counts as an availability claim and triggers F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. If the cause is the design, the site or the technology's efficiency, this counts as a performance claim and triggers F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Both are triggered when the text makes both claims.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-022",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F7a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F7a.fires_when",
+   "unit": "F7a",
+   "original": "The paragraph refers to how much land or space the technology needs, or to competition with other uses of that land.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph refers to the amount of land or space the technology requires, or to competition with alternative uses of that land.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to the amount of land or space the technology requires, or to competition with alternative uses of that land.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-058",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F7b.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F7b.fires_when",
+   "unit": "F7b",
+   "original": "The paragraph refers to how the technology looks in the landscape, to noise, to local acceptance or opposition, or to a siting conflict.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph touches on the visual appearance of the technology in the landscape, on noise, on local acceptance or resistance, or on a conflict over siting.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph touches on the visual appearance of the technology in the landscape, on noise, on local acceptance or resistance, or on a conflict over siting.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-045",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F8a.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F8a.fires_when",
+   "unit": "F8a",
+   "original": "The paragraph refers to approval procedures, legal classification, planning law, regulatory burden, or regulatory facilitation.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph deals with authorization procedures, legal categorization, planning legislation, the burden of regulation, or the easing of regulation.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph in question refers to planning law, legal classification, approval procedures, regulatory facilitation, or regulatory burden.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph in question refers to planning law, legal classification, approval procedures, regulatory facilitation, or regulatory burden.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-076",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Planning legislation is narrower than planning law; easing regulation can exclude facilitation that improves administration without easing the rules."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'regulatory facilitation' becomes 'the easing of regulation'. Facilitation includes new enabling rules (priority status, acceleration zones); easing suggests deregulation only, so the condition narrows. 'planning law' becomes 'planning legislation', slightly narrower. 'refers to' becomes 'deals with', a possible topicality narrowing."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-018",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F8a.boundary": {
+   "generator": "kimi",
+   "path": "frame_elements.F8a.boundary",
+   "unit": "F8a",
+   "original": "NOT F5b. F5b is permitting of GRID infrastructure - transmission lines, connection queues. F8a is the legal and administrative treatment of the generating installation itself.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "This is not F5b. F5b concerns the permitting of GRID infrastructure, namely transmission lines and connection queues. F8a, in contrast, covers the legal and administrative handling of the generating installation itself.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "NOT F5b. F5b constitutes permitting of GRID infrastructure — transmission lines, connection queues. F8a constitutes the legal and administrative treatment of the generating installation itself.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "NOT F5b. F5b constitutes permitting of GRID infrastructure — transmission lines, connection queues. F8a constitutes the legal and administrative treatment of the generating installation itself.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-024",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "Namely makes transmission lines and connection queues read as an exhaustive specification, narrowing the original grid-infrastructure category."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'namely transmission lines and connection queues' makes the GRID list exhaustive, where the original dash list could be read as illustrative. The capitalised 'NOT F5b' also becomes 'not F5b', losing the emphasis."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-010",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "kimi_s1|frame_elements.F9.fires_when": {
+   "generator": "kimi",
+   "path": "frame_elements.F9.fires_when",
+   "unit": "F9",
+   "original": "A framing function is clearly performed that none of F1a-F8a captures.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "A framing function is evidently carried out that is not covered by any of F1a-F8a.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "A framing function is clearly carried out that none of F1a-F8a captures.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "A framing function is clearly carried out that none of F1a-F8a captures.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-054",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'clearly performed' became 'evidently carried out'. 'Evidently' can read as 'apparently', which lowers the certainty threshold."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-040",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  }
+ }
+}

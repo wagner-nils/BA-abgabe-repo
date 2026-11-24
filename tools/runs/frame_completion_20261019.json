@@ -1,0 +1,245 @@
+{
+  "run_id": "frame_completion_20261019",
+  "started_at": "2026-10-19T11:26:09.326514+00:00",
+  "ended_at": "2026-10-19T11:41:15.065464+00:00",
+  "first_call_at": "2026-10-19T11:26:19.061226+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "analysis_status": "exploratory frame completion",
+  "w3_authorisation": null,
+  "a3_embargo": {
+    "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+    "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "touches_a3": false,
+    "paragraphs_touched": 0
+  },
+  "manifest": {
+    "path": "tools/annotation/labels/A2_frame_completion_manifest.json",
+    "sha256": "fd46e5b37c97ace32e3c3883a447988f1b7fcf6fcd53fc581cef93ea486a1903",
+    "restrict_split": null,
+    "n_paragraphs": 443
+  },
+  "repeats": 1,
+  "execution_fingerprint": "d51286ec3c7b9157b0e44ccdf893dcc2bb148496649d80a03e9462b14d545bf4",
+  "execution_contract": {
+    "manifest_sha256": "fd46e5b37c97ace32e3c3883a447988f1b7fcf6fcd53fc581cef93ea486a1903",
+    "restrict_split": null,
+    "dev": false,
+    "a3_embargo": {
+      "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+      "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+      "touches_a3": false,
+      "paragraphs_touched": 0
+    },
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 1,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "60d707a5264d14d6315daa1b2154d99b279b7e84ec8d7634c6d7d4361c42cd8e",
+    "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+    "instrument_version": "1.0",
+    "instrument_v11_sha256": null,
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sample_contract_sha256": "5e40edaf61ef130df57d113d8a30520b4d2c172b11d93f55d3b7697550d81654",
+    "preflight_sha256": "32c2fcd6c51a4799ff153be60878d51fe1cfde9c78570717af71236aeda97951",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null
+  },
+  "git_commit": "98fd2a02341a8e9a2e2534a71509480ea0177631",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "paper/tables/tab_element_prf.tex",
+      "paper/tables/tab_frame_prf.tex",
+      "tools/pipeline/error_breakdown.py",
+      "tools/runs/tables/a2_sonnet_20261013/table10_error_breakdown.csv"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "paper/tables/tab_element_prf.tex",
+      "paper/tables/tab_frame_prf.tex",
+      "tools/pipeline/error_breakdown.py",
+      "tools/runs/tables/a2_sonnet_20261013/table10_error_breakdown.csv"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "instrument": {
+    "name": "v1.0",
+    "version": "1.0",
+    "variant": null,
+    "retry_policy_version": "2",
+    "pins": "tools/pipeline/pins.json",
+    "module_sha256": {
+      "instrument.py": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa"
+    }
+  },
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_frame_completion_20261019.json",
+    "sha256": "81b7ca3649e3fdd25de94a09b8dc6c7311c880949e358afaa4d17b512ee70fe1",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_frame_completion_20261019.json",
+        "sha256": "81b7ca3649e3fdd25de94a09b8dc6c7311c880949e358afaa4d17b512ee70fe1",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-19T11:26:09.348837+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 479,
+    "input_tokens": 250841,
+    "output_tokens": 75867,
+    "cache_read_tokens": 2068801,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 397,
+      "ok_off_topic": 16,
+      "contract_invalid": 61,
+      "schema_invalid": 5
+    },
+    "billable_tokens": 2395509,
+    "quota_tokens": 250841
+  },
+  "cost": {
+    "estimated_usd": 2.762285,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "frame_completion_20261019_calls.jsonl": {
+      "path": "tools/runs/frame_completion_20261019_calls.jsonl",
+      "sha256": "9923a43f3291126095a42c8ad2ac03d71dbcdacafdbbeb0d8d014d2f4645f369"
+    },
+    "frame_completion_20261019_terminal.csv": {
+      "path": "tools/runs/frame_completion_20261019_terminal.csv",
+      "sha256": "4b9f571ee1de4407c066d2f3eb73b9547e02cf345e07ec482b51a388120a8569"
+    },
+    "frame_completion_20261019_predictions.csv": {
+      "path": "tools/runs/frame_completion_20261019_predictions.csv",
+      "sha256": "03eee42e44989b58125781495abddd43b69f297292f1520833621c9a05d054db"
+    }
+  },
+  "raw_private": "tools/runs/raw/frame_completion_20261019.jsonl"
+}

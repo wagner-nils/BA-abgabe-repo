@@ -1,0 +1,207 @@
+{
+  "run_id": "a2_sonnet_20261013",
+  "started_at": "2026-10-13T13:50:31.229220+00:00",
+  "ended_at": "2026-10-13T14:03:02.965280+00:00",
+  "first_call_at": "2026-10-13T13:50:38.382738+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "manifest": {
+    "path": "tools/annotation/labels/A2_sample_manifest.json",
+    "sha256": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+    "restrict_split": null,
+    "n_paragraphs": 120
+  },
+  "repeats": 3,
+  "execution_fingerprint": "579d5725ca2b635e72a88d16d85d78d6192f47d6753fd3fd1aeaf8e2152cc5c5",
+  "execution_contract": {
+    "manifest_sha256": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+    "restrict_split": null,
+    "dev": false,
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 3,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "f6e9b9d467a0fd752c02fec6786266838b70422aca5de3820bfd0674099d1387",
+    "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+    "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+    "preflight_sha256": "b22f0194685a90f0ba550c0e4b4a6109ef2efe87680ce9dfffff4c8a531b9ee9",
+    "max_recovery_episodes": 2
+  },
+  "git_commit": "07e1f8d84494f856b4610019e3e2d939031d0110",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": false,
+    "changed_paths": []
+  },
+  "git_at_invocation": {
+    "dirty": false,
+    "changed_paths": []
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_a2_sonnet_20261013.json",
+    "sha256": "41ac7beeb5c3f5cc2d5489f996f37616f3d06e21676cca1a92a8c10734864c2f",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_a2_sonnet_20261013.json",
+        "sha256": "41ac7beeb5c3f5cc2d5489f996f37616f3d06e21676cca1a92a8c10734864c2f",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-13T13:50:31.250697+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 379,
+    "input_tokens": 200646,
+    "output_tokens": 59296,
+    "cache_read_tokens": 1636901,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 339,
+      "contract_invalid": 29,
+      "schema_invalid": 3,
+      "ok_off_topic": 8
+    },
+    "billable_tokens": 1896843,
+    "quota_tokens": 200646
+  },
+  "cost": {
+    "estimated_usd": 2.180693,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "a2_sonnet_20261013_calls.jsonl": {
+      "path": "tools/runs/a2_sonnet_20261013_calls.jsonl",
+      "sha256": "ce1255b8b24576c67d66e69eb5d1770107bf7dda520b5cc7a66b17e97bd94d9c"
+    },
+    "a2_sonnet_20261013_terminal.csv": {
+      "path": "tools/runs/a2_sonnet_20261013_terminal.csv",
+      "sha256": "cd6f051e0960393dea271845852bce29a6bfa83e678765972185ed20a17f94b9"
+    },
+    "a2_sonnet_20261013_predictions.csv": {
+      "path": "tools/runs/a2_sonnet_20261013_predictions.csv",
+      "sha256": "cc1a3136a5d6c4bcdb77606785d2f95ed66be3452fcbc7f0468d57f59d6d7028"
+    }
+  },
+  "raw_private": "tools/runs/raw/a2_sonnet_20261013.jsonl"
+}

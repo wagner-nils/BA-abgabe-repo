@@ -1,0 +1,589 @@
+{
+ "declared": "pre-analysis specification §4i (2026-10-30)",
+ "items": {
+  "qwen_s2|technologies.general.definition": {
+   "generator": "qwen",
+   "path": "technologies.general.definition",
+   "unit": "general",
+   "original": "Renewables, clean power, green energy, or \"the energy transition\" as a bundle, with no identifiable individual technology carrying the statement.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "References to renewable energy, clean energy, green power, or \"the energy transition\" collectively, where no specific technology is singled out as the focus of the statement.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "Renewables, clean power, green energy, or \"the energy transition\" collectively, where no specific technology is singled out as the focus of the statement.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Renewables, clean power, green energy, or \"the energy transition\" collectively, where no specific technology is singled out as the focus of the statement.",
+   "status": "rejected_round2",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-025",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "Being singled out as the focus differs from carrying the statement, favoring bundle coding when named technologies share it. Clean/green energy and power also exchange scopes."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'no identifiable individual technology carrying the statement' becomes 'no specific technology is singled out as the focus'. Under the rewrite, a statement naming several technologies together (e.g. wind and solar) could count as general, because none is singled out. This decides the bundle-with-named-items case differently."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-055",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "Replaces an identifiable technology carrying the statement with a technology being singled out as its focus, potentially admitting statements carried jointly by named technologies."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'no identifiable individual technology carrying the statement' becomes 'no specific technology is singled out as the focus'. A technology can carry a statement without being singled out as its focus, e.g. one of several named. So statements that name individual technologies jointly would now count as the bundle."
+     },
+     "accepted": false
+    }
+   ]
+  },
+  "qwen_s2|technologies.hydrogen.definition": {
+   "generator": "qwen",
+   "path": "technologies.hydrogen.definition",
+   "unit": "hydrogen",
+   "original": "Hydrogen as an energy carrier, particularly low-carbon, renewable or green hydrogen. Record the production pathway where the text identifies one.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Hydrogen used as an energy carrier, especially low-carbon, renewable, or green hydrogen. Capture the production method if the text specifies one.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "Hydrogen when referred to as an energy carrier, especially low-carbon, renewable or green hydrogen. Capture the production pathway if the text specifies one.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Hydrogen when referred to as an energy carrier, especially low-carbon, renewable or green hydrogen. Capture the production pathway if the text specifies one.",
+   "status": "rejected_round2",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-059",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Production method can omit feedstock or energy-source distinctions contained in a production pathway, changing when and what information must be recorded."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Minor: 'production pathway' became 'production method', which loses the lexical link to the hydrogen_pathway field (green/blue/gray). 'identifies' became 'specifies', which may raise the threshold for recording the pathway."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-008",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": true,
+      "changes_condition": true,
+      "note": "'Hydrogen when referred to as an energy carrier' suggests the text must explicitly call hydrogen an energy carrier. The original 'hydrogen as an energy carrier' describes the role it plays. This may exclude green-hydrogen paragraphs that never frame it that way, such as hydrogen as a feedstock. 'Specifies' is also slightly stricter than 'identifies'."
+     },
+     "accepted": false
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F2b.fires_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F2b.fires_when",
+   "unit": "F2b",
+   "original": "The paragraph refers to investment, industrial capacity, factory or project decisions, exports, supply chains, or national competitiveness.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions investment, industrial capacity, factory or project decisions, exports, supply chains, or national competitiveness.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph mentions investment, industrial capacity, factory or project decisions, exports, supply chains, or national competitiveness.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-087",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F2b.does_not_fire_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F2b.does_not_fire_when",
+   "unit": "F2b",
+   "original": "A company is merely named, or corporate boilerplate appears, without the statement bearing on the technology.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The mention of a company occurs only by name or includes standard corporate language, with no connection between the statement and the technology.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "A company is mentioned, or standard corporate language is present, NOT indicating any relation to the technology.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "A company is mentioned, or standard corporate language is present, NOT indicating any relation to the technology.",
+   "status": "rejected_round2",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-047",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Makes corporate language part of a company mention, losing the independent boilerplate case. Standard corporate language is also broader than boilerplate."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'without the statement bearing on the technology' became 'with no connection between the statement and the technology'. That narrows the exclusion: a weakly connected but non-bearing statement is no longer excluded. 'corporate boilerplate' became 'standard corporate language', and the boilerplate is now tied to the company mention."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-026",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Drops the restriction to a company being merely named and replaces substantive bearing on the technology with any relation to it."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "The rewrite drops 'merely'. It also changes 'without the statement bearing on the technology' to 'NOT indicating any relation to the technology', which adds capitalised emphasis. A company named as, for example, a wind developer shows a relation to the technology even when the statement does not bear on it. That narrows the exclusion and could flip decisions."
+     },
+     "accepted": false
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F2c.fires_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F2c.fires_when",
+   "unit": "F2c",
+   "original": "The paragraph reports a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph presents a deployment, output or market figure as growth, as a record, or as a decline. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph presents a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph presents a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. \"Solar reached a record 22 percent of the mix\", \"installations fell by a fifth\", \"the IEA expects strong growth\".",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-079",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Removes the capitalised emphasis 'AS GROWTH, AS A RECORD, or AS A DECLINE', which marks the key distinction from bare figures. The wording is otherwise equivalent."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-013",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F2c.does_not_fire_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F2c.does_not_fire_when",
+   "unit": "F2c",
+   "original": "The number carries no direction. \"Wind produced 132 TWh\" on its own fires nothing; \"wind produced a record 132 TWh, up a fifth\" fires F2c.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The number does not indicate a direction. By itself, \"Wind produced 132 TWh\" activates nothing; \"wind produced a record 132 TWh, up a fifth\" activates F2c.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The number does not indicate a direction. By itself, \"Wind produced 132 TWh\" activates nothing; \"wind produced a record 132 TWh, up a fifth\" activates F2c.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-034",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F3b.fires_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F3b.fires_when",
+   "unit": "F3b",
+   "original": "The paragraph places the technology inside — or as an obstacle to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT making an explicit emissions claim.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph situates the technology within — or as a barrier to — the energy transition, a phase-out of coal or nuclear power, or a decarbonisation trajectory, while not stating an explicit emissions claim.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph situates the technology within — or as a barrier to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT explicitly stating an emissions claim.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph situates the technology within — or as a barrier to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT explicitly stating an emissions claim.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-008",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "The capitalised 'WITHOUT' becomes 'while not', so the emphasis on the key exclusion is lost. 'decarbonisation pathway' becomes 'trajectory', which shifts the meaning slightly from a planned route to an actual course."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-050",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F5a.fires_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F5a.fires_when",
+   "unit": "F5a",
+   "original": "The paragraph refers to intermittency, baseload, dispatchability, backup, the need for storage, or whether power is available when it is needed.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions intermittency, baseload, dispatchability, backup, the requirement for storage, or whether power is accessible when required.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "The paragraph refers to intermittency, baseload, dispatchability, backup, the need for storage, or whether power is available when it is needed.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph refers to intermittency, baseload, dispatchability, backup, the need for storage, or whether power is available when it is needed.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-021",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Accessible can concern affordability or permission to obtain power, changing the boundary from power being available when needed."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "'whether power is available' becomes 'accessible', which invites a reading about access or connection rather than temporal availability. 'refers to' also becomes 'mentions'."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-012",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F5a.does_not_fire_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F5a.does_not_fire_when",
+   "unit": "F5a",
+   "original": "Weather is described without being connected to power supply. \"It was a still, grey week\" alone does not fire F5a.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "A description of weather that is not linked to the power supply does not trigger F5a when \"It was a still, grey week\" is present alone.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "A description of weather that is not linked to power supply. \"It was a still, grey week\" by itself does not trigger F5a.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "A description of weather that is not linked to power supply. \"It was a still, grey week\" by itself does not trigger F5a.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-030",
+     "codex": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Makes the exclusion conditional on the quoted sentence being present alone, losing the general exclusion for weather descriptions unconnected to power supply."
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Restructured into one conditional sentence: unconnected weather does not trigger F5a only 'when' the example sentence is present alone. The general non-trigger rule is narrowed to the specific quoted example."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-022",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F6b.fires_when": {
+   "generator": "qwen",
+   "path": "frame_elements.F6b.fires_when",
+   "unit": "F6b",
+   "original": "The paragraph refers to efficiency, yield, output potential, or the technical suitability of a design or a site.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "The paragraph mentions efficiency, output potential, yield, or the technical suitability of a site or a design.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "The paragraph mentions efficiency, output potential, yield, or the technical suitability of a site or a design.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-081",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F6b.boundary": {
+   "generator": "qwen",
+   "path": "frame_elements.F6b.boundary",
+   "unit": "F6b",
+   "original": "NOT F1a. Cost per unit is F1a; energy per unit of area, or a yield estimate, is F6b. \"Cheaper per MWh\" is F1a. \"Produces more kWh per m²\" is F6b. A paragraph can fire both.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Not F1a. The cost per unit is classified as F1a; energy per unit of area or a yield estimate is classified as F6b. \"Cheaper per MWh\" is F1a. \"Produces more kWh per m²\" is F6b. It is possible for a paragraph to trigger both.",
+     "auto_problems": []
+    },
+    {
+     "round": 2,
+     "paraphrase": "NOT F1a. Cost per unit qualifies as F1a; energy per unit of area, or a yield estimate, qualifies as F6b. \"Cheaper per MWh\" is F1a. \"Produces more kWh per m²\" is F6b. A paragraph may trigger both.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "NOT F1a. Cost per unit qualifies as F1a; energy per unit of area, or a yield estimate, qualifies as F6b. \"Cheaper per MWh\" is F1a. \"Produces more kWh per m²\" is F6b. A paragraph may trigger both.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-043",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": false,
+      "resolves_ambiguity": false,
+      "changes_condition": true,
+      "note": "Minor: the capitalised 'NOT F1a' became 'Not F1a', so the emphasis is lost. The content is otherwise faithful."
+     },
+     "accepted": false
+    },
+    {
+     "round": 2,
+     "pair": "R2-046",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  },
+  "qwen_s2|frame_elements.F6b.boundary_vs_F5a": {
+   "generator": "qwen",
+   "path": "frame_elements.F6b.boundary_vs_F5a",
+   "unit": "F6b",
+   "original": "Go by the CAUSE, not the effect. Where the cause is weather, season or variability, it is an availability claim and fires F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. Where the cause is the design, the site or the technology's efficiency, it is a performance claim and fires F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Both fire when the text makes both claims.",
+   "history": [
+    {
+     "round": 1,
+     "paraphrase": "Focus on the CAUSE, not the outcome. If the cause lies in weather, season, or variability, classify as an availability claim and trigger F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. If the cause lies in the design, the site, or the technology's efficiency, classify as a performance claim and trigger F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Trigger both codes when the text expresses both types of claims.",
+     "auto_problems": []
+    }
+   ],
+   "paraphrase": "Focus on the CAUSE, not the outcome. If the cause lies in weather, season, or variability, classify as an availability claim and trigger F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. If the cause lies in the design, the site, or the technology's efficiency, classify as a performance claim and trigger F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Trigger both codes when the text expresses both types of claims.",
+   "status": "accepted",
+   "judging": [
+    {
+     "round": 1,
+     "pair": "R1-031",
+     "codex": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "claude": {
+      "equivalent": true,
+      "resolves_ambiguity": false,
+      "changes_condition": false,
+      "note": ""
+     },
+     "accepted": true
+    }
+   ]
+  }
+ }
+}

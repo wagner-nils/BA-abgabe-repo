@@ -1,0 +1,19 @@
+population;dimension;change rate weighted;unweighted;interval;paragraphs;without pairs;empty union;failure rate
+pooled;tech;undefined;undefined;[undefined, undefined];0;55;0;0.073
+pooled;elements;undefined;undefined;[undefined, undefined];0;55;0;0.073
+pooled;evaluations;undefined;undefined;[undefined, undefined];0;55;0;0.073
+pooled;comparison;undefined;undefined;[undefined, undefined];0;55;0;0.073
+pooled;subtype;undefined;undefined;[undefined, undefined];0;55;0;0.073
+pooled;any;undefined;undefined;[undefined, undefined];0;55;0;0.073
+de;tech;undefined;undefined;[undefined, undefined];0;27;0;0.000
+de;elements;undefined;undefined;[undefined, undefined];0;27;0;0.000
+de;evaluations;undefined;undefined;[undefined, undefined];0;27;0;0.000
+de;comparison;undefined;undefined;[undefined, undefined];0;27;0;0.000
+de;subtype;undefined;undefined;[undefined, undefined];0;27;0;0.000
+de;any;undefined;undefined;[undefined, undefined];0;27;0;0.000
+en;tech;undefined;undefined;[undefined, undefined];0;28;0;0.143
+en;elements;undefined;undefined;[undefined, undefined];0;28;0;0.143
+en;evaluations;undefined;undefined;[undefined, undefined];0;28;0;0.143
+en;comparison;undefined;undefined;[undefined, undefined];0;28;0;0.143
+en;subtype;undefined;undefined;[undefined, undefined];0;28;0;0.143
+en;any;undefined;undefined;[undefined, undefined];0;28;0;0.143

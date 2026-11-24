@@ -1,0 +1,1296 @@
+{
+  "kind": "A3_sample_manifest",
+  "created": "2026-10-14",
+  "frame_manifest_digest": "a5eccabd1bf6ef64a4583d74b5276a20ad6fbd176fe2224174f20a0727bea425",
+  "freeze_event_hash": "24167d3a65b99f06",
+  "excludes_sample_manifest": {
+    "kind": "A2_sample_manifest",
+    "digest": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015"
+  },
+  "design": {
+    "census": true,
+    "rule": "every frame paragraph not in the A2 sample, with exposure clean_article and an article that has no paragraph in the A2 sample",
+    "estimand": "the registered quantities on this residual census itself; weight 1 describes the census and gives no design-based extrapolation to the frame",
+    "strata": "language x outlet (reporting only)",
+    "pi": 1.0,
+    "weight": 1.0,
+    "reliability_subsample": null,
+    "seeds": {
+      "order": 20261014
+    }
+  },
+  "exposure_audit": {
+    "rule": "refuse the listing if any A3 article identifier (standalone or inside a paragraph or row identifier) or any A3 paragraph digest or text hash appears in a public run record, a session manifest, a finalised label file, a codebook file or a rendered instrument artefact; the frame manifest is excepted because it lists the frame itself. Covers documented study exposure only.",
+    "sources": [
+      "tools/runs/*_calls.jsonl",
+      "tools/runs/*_terminal.csv",
+      "tools/runs/*_predictions.csv",
+      "tools/runs/*.json",
+      "tools/annotation/labels/*.csv",
+      "tools/annotation/labels/*.json",
+      "tools/annotation/codebook/*.yaml",
+      "tools/annotation/codebook/*.yml",
+      "tools/annotation/codebook/*.md",
+      "tools/pipeline/instrument/*"
+    ],
+    "excepted": [
+      "A2_frame_manifest.json",
+      "A3_manifest.json",
+      "A3_sample_manifest.json"
+    ],
+    "files": [
+      {
+        "file": "tools/runs/a1_dryrun_20260905b_calls.jsonl",
+        "sha256": "5d8dcb934dacd8ceeb48fceedb88d3b21c4b8dfa1bd3d7844bc65e1d18df449f",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20261009_calls.jsonl",
+        "sha256": "fd492a4ff0f62462552b78b5dd146d2df786cd7ce37ba5d8ab3cf0da81d3deb3",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v10_20261014_calls.jsonl",
+        "sha256": "560d518d714c6271976779ff4117fbed28a6857b5d843bd5309f182f3ce308ed",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v11E_20261014_calls.jsonl",
+        "sha256": "5b90cfac8b1b73ba4efacbc76eb2219cdb904f6b6c65e023a81876f389a9f360",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v11S_20261014_calls.jsonl",
+        "sha256": "80b5b9784f840b3d014096357157d989074dbef52ba83e265b7cbdc03c4726bf",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w4_v10_20261014_calls.jsonl",
+        "sha256": "3e25154bc1cfc89ea47d2986a55673c6cee8412545e81e276e51db722e97c8ec",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w4_v12S_20261014_calls.jsonl",
+        "sha256": "0acfb402f5e467853332660033da341fba0f3aa7513365a61132de3bef113cc4",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a2_sonnet_20261013_calls.jsonl",
+        "sha256": "ce1255b8b24576c67d66e69eb5d1770107bf7dda520b5cc7a66b17e97bd94d9c",
+        "article_ids": 56
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20260905b_terminal.csv",
+        "sha256": "774127061b8810bd40a5325c7a197d0063e7147f53dd89a5d0fd51a66b943981",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20261009_terminal.csv",
+        "sha256": "a706de39faa51ae5f5f68bf0326fa14cb708eaaad91e65fe03d9e8fc3a8081e5",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v10_20261014_terminal.csv",
+        "sha256": "272fa36b641625ce79b4cc0ea147c88a4c488eba1dde1da23577ab3e5d372750",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v11E_20261014_terminal.csv",
+        "sha256": "9a98ce98a549dda517428dd432019e938bf023543cefe92611e2c4f1a1ac477e",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v11S_20261014_terminal.csv",
+        "sha256": "e2fdc726927783dec075f5ad1fe96a3df11d3c6b43e611652984253bb9769461",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w4_v10_20261014_terminal.csv",
+        "sha256": "2c7506a7b582b3cf66241670d58de04ab1308268606734cc341e61c9acb3662b",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w4_v12S_20261014_terminal.csv",
+        "sha256": "b606e5d4ada6302494539218888a26e5df9e2ef9fb10145db6819f8261a2722f",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a2_sonnet_20261013_terminal.csv",
+        "sha256": "cd6f051e0960393dea271845852bce29a6bfa83e678765972185ed20a17f94b9",
+        "article_ids": 56
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20260905b_predictions.csv",
+        "sha256": "1a23d48ebbf35be7cb33046f7c8c18f6311880fe7b76b7bcf8cca35870461ba2",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20261009_predictions.csv",
+        "sha256": "69349178e9cd36c1b514294c0c66b4b98b0d3334336b60c9137c61a8250ea6d3",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v10_20261014_predictions.csv",
+        "sha256": "7cd0ecf65da678cd9d7b5e975d1dc846d073ac94eefe4237b59aaf84dfe94fbf",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v11E_20261014_predictions.csv",
+        "sha256": "6598f3cf89433c59324d9367d6197fd350497057bd8103bb78cafffbe824770c",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w3_v11S_20261014_predictions.csv",
+        "sha256": "ae6f7c13c6b8e5d8094aabce3ddf5b5eaf0480c7a6968c7b9cbd713017901b12",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w4_v10_20261014_predictions.csv",
+        "sha256": "51eb30d79b49767a74480f9d636c46abe2800f6d8cbe1de732c77b41131fc16a",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a1_w4_v12S_20261014_predictions.csv",
+        "sha256": "d9c77125eec5f5184ea93add235c70e6ebabbbfded3d8044827e70640f53c7b9",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/runs/a2_sonnet_20261013_predictions.csv",
+        "sha256": "cc1a3136a5d6c4bcdb77606785d2f95ed66be3452fcbc7f0468d57f59d6d7028",
+        "article_ids": 55
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20260905b.json",
+        "sha256": "c3dd51c5354c21cd913d3d0bfa01a63dadaae36657af763196b4d828593e9b3c",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a1_dryrun_20261009.json",
+        "sha256": "ed394492d62b9f89d623f0836351e3081c199ed2e46fccfe952e658b0c2bf534",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a1_w3_v10_20261014.json",
+        "sha256": "5b74ca0bcedb48a35e7ade5c8e4fd0c7e7a7c5740c5c5bb8f4f38d48fb078aac",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a1_w3_v11E_20261014.json",
+        "sha256": "f1df37c7519a31103be72eb1133fbe5feccc082a632b399713ad4addba7091bf",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a1_w3_v11S_20261014.json",
+        "sha256": "81952ef3104d28c7e1578dce2bf0e5fda5e0cf200cf39d709be54b0dec43f8cf",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a1_w4_v10_20261014.json",
+        "sha256": "95d59c4e49c14bb840a9c9309b052a59b93253656700785b3a9c0c516e319c6c",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a1_w4_v12S_20261014.json",
+        "sha256": "09767686f131647ffdf98c0c9e41ed927311a827ece5a3233d5ee19c79a22ee8",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a2_sonnet_20261013.json",
+        "sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/a2_sonnet_20261013_class_manifest.json",
+        "sha256": "18b98df8c3caca61062a17c5d308fb2e79e25c40a1bd6ed24415322da5331ce7",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_20260831T171000.json",
+        "sha256": "882288ff13d5378557bdcefd59bd097a775f2e5efee8f2a5761a55798292fcc9",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_20261013T103732.json",
+        "sha256": "b9ddacd02448b7e0437cb15228ddda894b2ad617e4260e27e076648241574aca",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_dryrun_20260905b.json",
+        "sha256": "31e7bec0caefe3b1c372fcaa419e88bb43fbe422659033e0b72a085bdc4b8c1e",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_dryrun_20261009.json",
+        "sha256": "fc908e05d696964d948a18d0ef1ebea6e071b3125e409202395708bd7b13814b",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_w3_v10_20261014.json",
+        "sha256": "e26e1faf351240e1230c287ee0c41d72e044fd7609c1cd76a8f9d32fa688282d",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_w3_v11E_20261014.json",
+        "sha256": "f241803b750acafd07809e1e6c9224e92bc22643667bb1c9509449640c524a17",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_w3_v11S_20261014.json",
+        "sha256": "072256d4919d2d058dcd731a4154278f00a930c7005e5e41f582fb91873ef49a",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_w4_v10_20261014.json",
+        "sha256": "da54591d5af1a1735b001fd7ad53a8fc1fac245fa180558664899169f69621da",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a1_w4_v12S_20261014.json",
+        "sha256": "d7c183eed35661ecf15f16e7a457b9a51b11f6e08fcb9c599063f42e3256582a",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_a2_sonnet_20261013.json",
+        "sha256": "41ac7beeb5c3f5cc2d5489f996f37616f3d06e21676cca1a92a8c10734864c2f",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_opus5_20260906.json",
+        "sha256": "5fef5f7cb553b7bf9c8bd8b917148c76657027c76e52603c3c97a8d8db426127",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/preflight_sonnet5_20260906.json",
+        "sha256": "864658d93b09f251276de89ae310558c73d164c0094396fee5b154d3b3d5f98b",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/w3_seal.json",
+        "sha256": "6c96bafbc2264dc8e17cfee8e63bee67d964a969b7f055e88906ab6c3063ec7a",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/w3_selection.json",
+        "sha256": "d2e2ca1b6bfc8e17263e4ac57a671c23b6b5a08c7bc8212a5e4f37f6a58443d1",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/w4_seal.json",
+        "sha256": "b4248132c851cf98453d2bb918b72ad0af9ba1105a48a97ab86226780c43890c",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/runs/w4_selection.json",
+        "sha256": "3bb4103505850e08246abc48f722a4a431155d7c08e5aff2e0385e6e2a45e7ad",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/annotation/labels/A0_pass1_v0.1.csv",
+        "sha256": "2d18c2e5446105d5b164ea318237085bdb74d328fb5b8603d5e15c411d802a5a",
+        "article_ids": 2
+      },
+      {
+        "file": "tools/annotation/labels/A0_pass2_v0.3.csv",
+        "sha256": "24e09e3893aa31048bddf6dbc8e17950cbc2ff4a813b92dafa5ed17b2e8f8c5f",
+        "article_ids": 2
+      },
+      {
+        "file": "tools/annotation/labels/A0b_pass1_v0.2.csv",
+        "sha256": "714ee9369ce32a71b839f002d1756ccab483727bec973e0f75c1cf034c526550",
+        "article_ids": 12
+      },
+      {
+        "file": "tools/annotation/labels/A0b_pass2_v0.3.csv",
+        "sha256": "3fe08cb6c885d7faf3a1cf8d2b4f3b32af93619d4f57d647490b14e18f48c710",
+        "article_ids": 12
+      },
+      {
+        "file": "tools/annotation/labels/A1_pass1_v1.0.csv",
+        "sha256": "3119dd2c1485233e1b77a7a9406cfcb77605742e038fdf70b4d1855cd5c19435",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/annotation/labels/A1_pass2_v1.0.csv",
+        "sha256": "50ef4dd9934a4c3450365c5c773ba2b253da5bccd4f32fb756cb80f37fc9f624",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/annotation/labels/A2R_pass1_v1.0.csv",
+        "sha256": "201b439216d7a62e57abafa31d38518b3bc332ab98ffb4ab79dcfa37dff065b3",
+        "article_ids": 28
+      },
+      {
+        "file": "tools/annotation/labels/A2R_pass2_v1.0.csv",
+        "sha256": "6b9b203db52f9729cd96d3f43a6e0825d183dc0839bea01ab3a64592b5d2f191",
+        "article_ids": 28
+      },
+      {
+        "file": "tools/annotation/labels/A2_pass1_v1.0.csv",
+        "sha256": "46db3ab6e661d80b3e73898e7c85c21fb7c8d0fa2083b2d1eb33c1d4469be8a1",
+        "article_ids": 56
+      },
+      {
+        "file": "tools/annotation/labels/A2_pass2_v1.0.csv",
+        "sha256": "59eb4937324e8e3d213ba2c9731b32769a3e3b92e207909417801183c64359ec",
+        "article_ids": 56
+      },
+      {
+        "file": "tools/annotation/labels/sessions.csv",
+        "sha256": "3465f7b878eb65a9237ffcd49c5a227ba2dc79e75d04b069850ffa1f7c7a5d0b",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/annotation/labels/A0_manifest.json",
+        "sha256": "c895856562818bff66b2eb029dec23e8f26c1f7a0cca3047065daf6325e4607c",
+        "article_ids": 2
+      },
+      {
+        "file": "tools/annotation/labels/A0b_manifest.json",
+        "sha256": "e325cd439ffeff025d23007e9dbef5134682bd1195c218001eae2ad1ce79b8de",
+        "article_ids": 12
+      },
+      {
+        "file": "tools/annotation/labels/A1_manifest.json",
+        "sha256": "95ee10d99a805a88d4d31f63422a479df171cc363662ab365bb774655f8f6c9d",
+        "article_ids": 3
+      },
+      {
+        "file": "tools/annotation/labels/A2R_manifest.json",
+        "sha256": "07668389e6062c25bfc9548096709c9045cc4edf4db7c57139b57d705671f2ee",
+        "article_ids": 28
+      },
+      {
+        "file": "tools/annotation/labels/A2_manifest.json",
+        "sha256": "b70109d2cca4313243407a3e6e371899c3cab5420883d91cfed93a90a1fc0cb5",
+        "article_ids": 56
+      },
+      {
+        "file": "tools/annotation/labels/A2_sample_manifest.json",
+        "sha256": "fe76f13a2336bc1839008d607952752cd777433087fe38872d2ccb0471201e96",
+        "article_ids": 56
+      },
+      {
+        "file": "tools/annotation/labels/A2_threshold_seal.json",
+        "sha256": "1c14bc28dd09ff07ec24e804eb619e25ba165d95e742073741ece9d8a8f67e19",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/annotation/codebook/codebook-v0.1.yaml",
+        "sha256": "77cfb20c130f01b9c7bcbf4edf5fdb446a27624ce921a77946022ea2cb874285",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/annotation/codebook/codebook-v0.2.yaml",
+        "sha256": "f51645edb5b6ec18f08a9e09ac256eb6ee19aa83265b5ab8dc4cd437caa2e1b8",
+        "article_ids": 4
+      },
+      {
+        "file": "tools/annotation/codebook/codebook-v0.3.yaml",
+        "sha256": "612240bf7b6b1a46e41061e277989e31062fd635df016f7bc8979c3de3a99e97",
+        "article_ids": 7
+      },
+      {
+        "file": "tools/annotation/codebook/codebook-v1.0.yaml",
+        "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+        "article_ids": 9
+      },
+      {
+        "file": "tools/annotation/codebook/README.md",
+        "sha256": "ee86b79b7c9c3eff30b9983d96a6c3e499c35cb5d74940538678902f88e84aea",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/manifest_v1.0.json",
+        "sha256": "4b1f2efac45d59487a03e715db7f80926bd433408beb8dd9676107b9090ee778",
+        "article_ids": 1
+      },
+      {
+        "file": "tools/pipeline/instrument/manifest_v1.1E.json",
+        "sha256": "eab1bcff90a88ac690ea06a2cd547f7336493087b266d09421ea78cf4f9e0ee9",
+        "article_ids": 1
+      },
+      {
+        "file": "tools/pipeline/instrument/manifest_v1.1S.json",
+        "sha256": "fee457b731bbbb26567391cfa2becd8b2f3ca2c1302f083d9acc6cb9d1770493",
+        "article_ids": 1
+      },
+      {
+        "file": "tools/pipeline/instrument/manifest_v1.2S.json",
+        "sha256": "9587287c23ce84748a63a943dc49336337b2692256ab8c6fc5f8ae081adbd7ec",
+        "article_ids": 1
+      },
+      {
+        "file": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+        "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/system-prompt_v1.1E.txt",
+        "sha256": "97657900e0d30376e57321d09e634d60c42805c899eddf46202534301be4d6a8",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/system-prompt_v1.1S.txt",
+        "sha256": "ec19c1978527a6c5ba5cad02f8c542c03f6f464f5653b1c1c44120b81fe2f888",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/system-prompt_v1.2S.txt",
+        "sha256": "bf796df44959102b00f3d1eaf7fbd49e01d0e5dc6b2b2a5d1add3970ee1b4e26",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/tool-config_v1.0.json",
+        "sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/tool-config_v1.1E.json",
+        "sha256": "74e8e9cac03bc0adb13beb9597a88fca93621ef976b7298f7ab4b71db0f7e264",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/tool-config_v1.1S.json",
+        "sha256": "8d29762f89fba1e64460702ab8045ffb4e786a941761561055e1631eb59b0fb5",
+        "article_ids": 0
+      },
+      {
+        "file": "tools/pipeline/instrument/tool-config_v1.2S.json",
+        "sha256": "80a923052f1c143e0b33d5efd902a01e27a873a9cca96405cff0113dc836fa78",
+        "article_ids": 0
+      }
+    ],
+    "overlap": {},
+    "clean": true
+  },
+  "strata": [
+    {
+      "stratum": "de|BILD",
+      "n": 9
+    },
+    {
+      "stratum": "de|DER SPIEGEL",
+      "n": 4
+    },
+    {
+      "stratum": "de|DIE ZEIT",
+      "n": 4
+    },
+    {
+      "stratum": "de|Neue Zürcher Zeitung",
+      "n": 9
+    },
+    {
+      "stratum": "de|Süddeutsche Zeitung",
+      "n": 1
+    },
+    {
+      "stratum": "en|The Economist",
+      "n": 4
+    },
+    {
+      "stratum": "en|The Guardian",
+      "n": 8
+    },
+    {
+      "stratum": "en|The New York Times",
+      "n": 16
+    }
+  ],
+  "n": 55,
+  "by_language": {
+    "de": 27,
+    "en": 28
+  },
+  "n_articles": 10,
+  "by_article": {
+    "A038": 3,
+    "A040": 6,
+    "A045": 4,
+    "A050": 4,
+    "A062": 8,
+    "A064": 10,
+    "A073": 6,
+    "A081": 4,
+    "A084": 9,
+    "A090": 1
+  },
+  "paragraphs": [
+    {
+      "article_id": "A040",
+      "paragraph_id": "A040_p02",
+      "digest": "331a1d53260ad3c064dcdf9d6e8bb8f6b05f9b96784905f89d9203d77db3944e",
+      "text_sha256": "331a1d53260ad3c0",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 1
+    },
+    {
+      "article_id": "A081",
+      "paragraph_id": "A081_p01",
+      "digest": "a7cac15432acb2c7745114de304c17a712b10b9a687bb99bcf7835d4e3ab9102",
+      "text_sha256": "a7cac15432acb2c7",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DER SPIEGEL",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 2
+    },
+    {
+      "article_id": "A073",
+      "paragraph_id": "A073_p17",
+      "digest": "006d83a400ab2851ff17f7119b1ffaa677c9c3c13696ad84e569b95e3d54eeb2",
+      "text_sha256": "006d83a400ab2851",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 3
+    },
+    {
+      "article_id": "A040",
+      "paragraph_id": "A040_p05",
+      "digest": "19fc91caeaec039c8632aa37ca1ff2f989c39ff265e3536a8719bef8f0ff93f1",
+      "text_sha256": "19fc91caeaec039c",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 4
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p02",
+      "digest": "facf5575726575fdc0f30a4d0c643a4e72c32ebb717823c51c1a824e5366df59",
+      "text_sha256": "facf5575726575fd",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 5
+    },
+    {
+      "article_id": "A073",
+      "paragraph_id": "A073_p04",
+      "digest": "f890f17af77bdea3da42fb5ef7c465f1a40ac7b9d3f19a173faa5c99fbee867f",
+      "text_sha256": "f890f17af77bdea3",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 6
+    },
+    {
+      "article_id": "A090",
+      "paragraph_id": "A090_p03",
+      "digest": "4d070b1c11cf45d21fd64c1755298cd83e703b6040ce19fd789cbc0e82e21edf",
+      "text_sha256": "4d070b1c11cf45d2",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|Süddeutsche Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 7
+    },
+    {
+      "article_id": "A073",
+      "paragraph_id": "A073_p12",
+      "digest": "c4ac9bdaa52a58172eea3e14fd922d0f49f85fe5d273f1d1d646d958289db84d",
+      "text_sha256": "c4ac9bdaa52a5817",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 8
+    },
+    {
+      "article_id": "A038",
+      "paragraph_id": "A038_p01",
+      "digest": "cd50f4a7605d2123ab9494f9d4aeb42037747f4ec5bf9374492ac70aa9bf0303",
+      "text_sha256": "cd50f4a7605d2123",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 9
+    },
+    {
+      "article_id": "A073",
+      "paragraph_id": "A073_p01",
+      "digest": "d7f5ceeea7853863925094953d1002d5ed932a04741f376cff90418b50650fe8",
+      "text_sha256": "d7f5ceeea7853863",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 10
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p09",
+      "digest": "5b685fcb7af113c0bf5ee7100f612cae79af8a7e8c4c1817c09651b1a1c4ca66",
+      "text_sha256": "5b685fcb7af113c0",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 11
+    },
+    {
+      "article_id": "A038",
+      "paragraph_id": "A038_p02",
+      "digest": "378ee3a81bb4e4b9a60bfea788a9acb9a81bb0189accf1d6490988abb54afe75",
+      "text_sha256": "378ee3a81bb4e4b9",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 12
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p18",
+      "digest": "1cb9aa6ccd9c158b4743a60e0b2b33d9ced1c9a35a84fcdda106b8ea7eb101ef",
+      "text_sha256": "1cb9aa6ccd9c158b",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 13
+    },
+    {
+      "article_id": "A040",
+      "paragraph_id": "A040_p03",
+      "digest": "b6e2ed7ba5a4cab5ee80e5383ac382a874b5e0160f524bdaea27aec080348b73",
+      "text_sha256": "b6e2ed7ba5a4cab5",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 14
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p16",
+      "digest": "9e96eec6f3b4d8d8c1f5dfc0ed8a623312d5e8bfb75cecceb6bd2cb5aa637ed7",
+      "text_sha256": "9e96eec6f3b4d8d8",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 15
+    },
+    {
+      "article_id": "A038",
+      "paragraph_id": "A038_p05",
+      "digest": "7b7067260272d187911eb4062cd407c460d31c732740cdca59c55f8c901b2e47",
+      "text_sha256": "7b7067260272d187",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 16
+    },
+    {
+      "article_id": "A040",
+      "paragraph_id": "A040_p04",
+      "digest": "482cfb6d541aa5b258e37e255aca5f8198350f93e0f0961505f51bdbcc43e4f8",
+      "text_sha256": "482cfb6d541aa5b2",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 17
+    },
+    {
+      "article_id": "A050",
+      "paragraph_id": "A050_p02",
+      "digest": "f763baf8c1ed1da6cbea3d8a98e71aacb120a0105cc18be086101f8d8d6a7f76",
+      "text_sha256": "f763baf8c1ed1da6",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Economist",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 18
+    },
+    {
+      "article_id": "A040",
+      "paragraph_id": "A040_p06",
+      "digest": "c38f5cea35b240000be88d9ed253f45064d8a4f3f2ddbacd991ced7608b95783",
+      "text_sha256": "c38f5cea35b24000",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 19
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p13",
+      "digest": "38d8b46b5f8baa451934107674c94c362b830a871743d732869547453df6cbd5",
+      "text_sha256": "38d8b46b5f8baa45",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 20
+    },
+    {
+      "article_id": "A045",
+      "paragraph_id": "A045_p04",
+      "digest": "4662c9d2246d29145877b1f92c529ac0164e3b3d6501674c2c50ca6b864c2ad2",
+      "text_sha256": "4662c9d2246d2914",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DIE ZEIT",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 21
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p08",
+      "digest": "cba29841944e94b266a1b708e2d281de31988aa047579202d60cbdb8ba4a9543",
+      "text_sha256": "cba29841944e94b2",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 22
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p02",
+      "digest": "93407f5dbbb8fef5754701e0bc937e76bf5f457ef18ecdd20c8edd409fd1e1ae",
+      "text_sha256": "93407f5dbbb8fef5",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 23
+    },
+    {
+      "article_id": "A081",
+      "paragraph_id": "A081_p03",
+      "digest": "2b8a47ac541ea539149b9d777414b23e5f63be3d1bdf289411124e3a27480986",
+      "text_sha256": "2b8a47ac541ea539",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DER SPIEGEL",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 24
+    },
+    {
+      "article_id": "A050",
+      "paragraph_id": "A050_p06",
+      "digest": "2b4ef0fbf6050adfcacb18e6964f2c2bc7eb771cd1a5ebfa8d419a0f144c0c2d",
+      "text_sha256": "2b4ef0fbf6050adf",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Economist",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 25
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p03",
+      "digest": "c5fae3a0f16057fc00d07ea8feb0a2f859059e796a93fa75586d6944167763bb",
+      "text_sha256": "c5fae3a0f16057fc",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 26
+    },
+    {
+      "article_id": "A045",
+      "paragraph_id": "A045_p02",
+      "digest": "f983b5c9655ca83077171ae2d9cbe20efd24a49ae0572620c065deafeb47a678",
+      "text_sha256": "f983b5c9655ca830",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DIE ZEIT",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 27
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p09",
+      "digest": "3132b785a4a72d75a2ff559c9f4b3a4fd4f9b0c070c261f7d6c51daae64c59d7",
+      "text_sha256": "3132b785a4a72d75",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 28
+    },
+    {
+      "article_id": "A050",
+      "paragraph_id": "A050_p03",
+      "digest": "1cb4b54899c346958bbceac932f00f68936baffbc6105030c963369bf08e5031",
+      "text_sha256": "1cb4b54899c34695",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Economist",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 29
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p03",
+      "digest": "b48f8203abe02269152a673fb4ad200c644baab415579748f11dca25c0e1dc53",
+      "text_sha256": "b48f8203abe02269",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 30
+    },
+    {
+      "article_id": "A081",
+      "paragraph_id": "A081_p05",
+      "digest": "f0b3cddcb73da5530123fdbbc7e873c509bbdbafdfdd382a35675b622a3e5180",
+      "text_sha256": "f0b3cddcb73da553",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DER SPIEGEL",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 31
+    },
+    {
+      "article_id": "A040",
+      "paragraph_id": "A040_p01",
+      "digest": "128deb7494753a3f6e7425cb392150f9f8d00d3279ac32f59d15cbeeb4580e4b",
+      "text_sha256": "128deb7494753a3f",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|BILD",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 32
+    },
+    {
+      "article_id": "A050",
+      "paragraph_id": "A050_p04",
+      "digest": "9a5ec1778a64d72c0b47a9764eaa54106b33a9588fe12d97afa2e08d99fa6329",
+      "text_sha256": "9a5ec1778a64d72c",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Economist",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 33
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p01",
+      "digest": "143da12c9ce86fb0c37fc67f13f5cc81f63921a0f658a929af3f2bb609f47c1e",
+      "text_sha256": "143da12c9ce86fb0",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 34
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p05",
+      "digest": "515c9671cf9cf9548bd31e80758c4ba3703a15390a3177863e12b704f8d13677",
+      "text_sha256": "515c9671cf9cf954",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 35
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p05",
+      "digest": "e29cb9706be0005864035609f53b11eb53cea8bfe0af636d6edc2445f0ea1cba",
+      "text_sha256": "e29cb9706be00058",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 36
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p03",
+      "digest": "5c881161db574f6987de89294dd9b25b36b07c3cb0665864342641be170357a9",
+      "text_sha256": "5c881161db574f69",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 37
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p04",
+      "digest": "7817f78c59970891192821d0e75b80cb2cad2e966fc55537390c03fb7930829a",
+      "text_sha256": "7817f78c59970891",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 38
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p19",
+      "digest": "3b99ac3aba01152a8b8a184c4a9e835835d5b24972d6a76ae35bd80b85607a3c",
+      "text_sha256": "3b99ac3aba01152a",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 39
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p14",
+      "digest": "af5d6ff22eea60f7a3a252d1747d5ca5ad20fbb73435bd45024b688a2adbb766",
+      "text_sha256": "af5d6ff22eea60f7",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 40
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p15",
+      "digest": "0156aa0937aeddfb92cb6a03b3883fd56e51773a808ffee327c50e09b3762324",
+      "text_sha256": "0156aa0937aeddfb",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 41
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p20",
+      "digest": "6210947d6a35572503b0b17214d51e3c8e5cb796362e2351ede53eae6af8821b",
+      "text_sha256": "6210947d6a355725",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 42
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p04",
+      "digest": "1b883dbd290c9af1e77c62002e948dfb812bb30960297e34150badf668486cc8",
+      "text_sha256": "1b883dbd290c9af1",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 43
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p07",
+      "digest": "2cac601d8491d0d737d663bf284213bd2a390e8dc68bf9e317cbcb344994c6b8",
+      "text_sha256": "2cac601d8491d0d7",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 44
+    },
+    {
+      "article_id": "A073",
+      "paragraph_id": "A073_p18",
+      "digest": "08b6861262d1913583c8236c5979e05195d6c533a43c0394197597f5c8bf0077",
+      "text_sha256": "08b6861262d19135",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 45
+    },
+    {
+      "article_id": "A062",
+      "paragraph_id": "A062_p05",
+      "digest": "5711d978b384785e4303cf1e4c5eb78c0c4eb724484d2995d4561f2064ec18b6",
+      "text_sha256": "5711d978b384785e",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article",
+      "stratum": "en|The Guardian",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 46
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p19",
+      "digest": "77a7ded248a48f7d0289124da2344c07451a28354a31cd5cd442d57911960e6e",
+      "text_sha256": "77a7ded248a48f7d",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 47
+    },
+    {
+      "article_id": "A073",
+      "paragraph_id": "A073_p05",
+      "digest": "41edaeb32f29c30028f2932f444690fe2b40815522dcbceefe2456f035431c4a",
+      "text_sha256": "41edaeb32f29c300",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 48
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p15",
+      "digest": "b77865f82da593f019c5035cc02138056f65f24705e9154609f4f1a2202ab7e1",
+      "text_sha256": "b77865f82da593f0",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 49
+    },
+    {
+      "article_id": "A045",
+      "paragraph_id": "A045_p01",
+      "digest": "8d2f60bc5fd6b1a74c1dd53898450c513a0fabbaed3881d14436ed7c1612bb58",
+      "text_sha256": "8d2f60bc5fd6b1a7",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DIE ZEIT",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 50
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p10",
+      "digest": "36574a0fa2336c1f6de7a771a9090dc561c1296c4df5c788786e86da1dd560cb",
+      "text_sha256": "36574a0fa2336c1f",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 51
+    },
+    {
+      "article_id": "A081",
+      "paragraph_id": "A081_p04",
+      "digest": "d326629a3b34fb05a84a04cfa59a596b5f051721c02395c28621f863af84f68e",
+      "text_sha256": "d326629a3b34fb05",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DER SPIEGEL",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 52
+    },
+    {
+      "article_id": "A045",
+      "paragraph_id": "A045_p03",
+      "digest": "e7ed3e7bee120a2f19fde8e709e755744981175aa55d8d1a969d7d6cc2becf32",
+      "text_sha256": "e7ed3e7bee120a2f",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article",
+      "stratum": "de|DIE ZEIT",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 53
+    },
+    {
+      "article_id": "A064",
+      "paragraph_id": "A064_p21",
+      "digest": "aa938308514ec6251dfe290a883c46c9d48dc17a6d521616a29271013e34de56",
+      "text_sha256": "aa938308514ec625",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article",
+      "stratum": "en|The New York Times",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 54
+    },
+    {
+      "article_id": "A084",
+      "paragraph_id": "A084_p04",
+      "digest": "230c5581c3d6a2803d9be4b120f0f86cfd1a4d1e71387f8cd8091b7dd2ca6c78",
+      "text_sha256": "230c5581c3d6a280",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article",
+      "stratum": "de|Neue Zürcher Zeitung",
+      "pi": 1.0,
+      "weight": 1.0,
+      "sitting_order": 55
+    }
+  ],
+  "generator": {
+    "file": "draw_a3.py",
+    "sha256": "bc8586d1d58ba61c8dd54f2c4e8155d301a54ced4eef522a67fc968feb9e1e35"
+  },
+  "note": "IDs, digests, strata and the sitting order only -- no text. A census of the unseen-article frame, listed once; never re-listed.",
+  "digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6"
+}

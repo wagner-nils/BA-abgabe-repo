@@ -1,0 +1,450 @@
+{
+  "session": "A1",
+  "sheet_kind": "reconstructed",
+  "sheet_schema": 1,
+  "generated_at": "2026-09-05",
+  "codebook_versions": [
+    "1.0"
+  ],
+  "passes": {
+    "pass1": {
+      "codebook_version": "1.0",
+      "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+      "labels_file": "A1_pass1_v1.0.csv",
+      "labels_sha256": "3119dd2c1485233e"
+    },
+    "pass2": {
+      "codebook_version": "1.0",
+      "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+      "labels_file": "A1_pass2_v1.0.csv",
+      "labels_sha256": "50ef4dd9934a4c34"
+    }
+  },
+  "registry_head_hash": "33cad517196b9596",
+  "generator": {
+    "file": "build_sheets.py",
+    "sha256": "a39402c14baa825d36d4761bb93b367c4907549a5f0f77f1c4666bce4271509d"
+  },
+  "n_paragraphs": 35,
+  "paragraphs": [
+    {
+      "paragraph_id": "A004_p01",
+      "article_id": "A004",
+      "text_sha256": "4e8669330602e412",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p02",
+      "article_id": "A004",
+      "text_sha256": "c1a407879c5867c1",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p03",
+      "article_id": "A004",
+      "text_sha256": "7a5782011b31696c",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p04",
+      "article_id": "A004",
+      "text_sha256": "807fccb1913d1fe8",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p05",
+      "article_id": "A004",
+      "text_sha256": "82f0af55ee4e18c7",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p06",
+      "article_id": "A004",
+      "text_sha256": "ecb7e542ac1aa7ba",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p07",
+      "article_id": "A004",
+      "text_sha256": "58685799f8f85c1b",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p08",
+      "article_id": "A004",
+      "text_sha256": "6b9494366c534406",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A006_p01",
+      "article_id": "A006",
+      "text_sha256": "33a8195bb6b1e60a",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p02",
+      "article_id": "A006",
+      "text_sha256": "9dab27695a045fa2",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p03",
+      "article_id": "A006",
+      "text_sha256": "213e011b5d7b723e",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p04",
+      "article_id": "A006",
+      "text_sha256": "bfbd361a0481f017",
+      "split": "A0b",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p05",
+      "article_id": "A006",
+      "text_sha256": "81d3c6d9f84b0f97",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p06",
+      "article_id": "A006",
+      "text_sha256": "b31d8e81013e4f8e",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p07",
+      "article_id": "A006",
+      "text_sha256": "2068385f865bbd8a",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p08",
+      "article_id": "A006",
+      "text_sha256": "05eae64649c9bed4",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p09",
+      "article_id": "A006",
+      "text_sha256": "f59a273403a25264",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p10",
+      "article_id": "A006",
+      "text_sha256": "78785513190983a0",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p11",
+      "article_id": "A006",
+      "text_sha256": "784a9f59d5f68758",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p12",
+      "article_id": "A006",
+      "text_sha256": "a08db181fbbd526a",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p13",
+      "article_id": "A006",
+      "text_sha256": "532e07cb11036685",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p14",
+      "article_id": "A006",
+      "text_sha256": "ef50d35028b88106",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p15",
+      "article_id": "A006",
+      "text_sha256": "cd34a167035e171a",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p16",
+      "article_id": "A006",
+      "text_sha256": "e55e48b247deff73",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p17",
+      "article_id": "A006",
+      "text_sha256": "644a04ecb8e49d39",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p18",
+      "article_id": "A006",
+      "text_sha256": "552c865ad0d574d8",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A006_p19",
+      "article_id": "A006",
+      "text_sha256": "662aba155b6d0b68",
+      "split": "A1",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A018_p01",
+      "article_id": "A018",
+      "text_sha256": "3844dd464fe03125",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p02",
+      "article_id": "A018",
+      "text_sha256": "bc5485b538fb728d",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p03",
+      "article_id": "A018",
+      "text_sha256": "97ca1b959c5859d0",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p04",
+      "article_id": "A018",
+      "text_sha256": "f86558d5710b52c8",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p05",
+      "article_id": "A018",
+      "text_sha256": "7c8b8cb058b6e00b",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p06",
+      "article_id": "A018",
+      "text_sha256": "bec1d93afca937a0",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p07",
+      "article_id": "A018",
+      "text_sha256": "6545300f636804ea",
+      "split": "A1",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A018_p08",
+      "article_id": "A018",
+      "text_sha256": "4d829f41ce8cd7af",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    }
+  ],
+  "note": "IDs and hashes only -- no article text. A label file of this session is valid only if every row's text hash is in this list; finalize.py checks that by recomputing the hash from the sheet, not by reading the cell.",
+  "reconstructed": true,
+  "reconstruction": {
+    "method": "paragraph_id from the committed label files, joined to the registry-validated identities in ALL_paragraphs.csv",
+    "evidence": {
+      "pass1": {
+        "labels_file": "A1_pass1_v1.0.csv",
+        "labels_sha256_recorded": "3119dd2c1485233e",
+        "labels_sha256_now": "3119dd2c1485233e",
+        "n_rows": 35
+      },
+      "pass2": {
+        "labels_file": "A1_pass2_v1.0.csv",
+        "labels_sha256_recorded": "50ef4dd9934a4c34",
+        "labels_sha256_now": "50ef4dd9934a4c34",
+        "n_rows": 53
+      }
+    },
+    "paragraphs_not_resolvable": [],
+    "splits_present": {
+      "A1": 32,
+      "A0b": 3
+    },
+    "pass1_keys": [
+      "A004_p01__nuclear",
+      "A004_p02__nuclear",
+      "A004_p03__nuclear",
+      "A004_p04__nuclear",
+      "A004_p04__solar",
+      "A004_p04__wind",
+      "A004_p05__general",
+      "A004_p05__nuclear",
+      "A004_p06__nuclear",
+      "A004_p07__nuclear",
+      "A004_p08__nuclear",
+      "A006_p01__general",
+      "A006_p01__solar",
+      "A006_p01__wind",
+      "A006_p02__general",
+      "A006_p02__solar",
+      "A006_p02__wind",
+      "A006_p03__general",
+      "A006_p04__general",
+      "A006_p04__other_renewable",
+      "A006_p04__solar",
+      "A006_p04__wind",
+      "A006_p06__general",
+      "A006_p07__general",
+      "A006_p08__general",
+      "A006_p09__general",
+      "A006_p10__general",
+      "A006_p11__general",
+      "A006_p14__general",
+      "A006_p15__general",
+      "A006_p17__general",
+      "A006_p19__solar",
+      "A006_p19__wind",
+      "A018_p01__general",
+      "A018_p01__hydrogen",
+      "A018_p01__storage",
+      "A018_p01__wind",
+      "A018_p02__hydrogen",
+      "A018_p03__general",
+      "A018_p03__hydrogen",
+      "A018_p05__hydrogen",
+      "A018_p05__wind",
+      "A018_p06__nuclear",
+      "A018_p06__wind",
+      "A018_p07__general",
+      "A018_p07__nuclear",
+      "A018_p07__wind",
+      "A018_p08__general",
+      "A018_p08__hydrogen",
+      "A018_p08__other_renewable",
+      "A018_p08__solar",
+      "A018_p08__storage",
+      "A018_p08__wind"
+    ],
+    "pass2_keys": [
+      "A004_p01__nuclear",
+      "A004_p02__nuclear",
+      "A004_p03__nuclear",
+      "A004_p04__nuclear",
+      "A004_p04__solar",
+      "A004_p04__wind",
+      "A004_p05__general",
+      "A004_p05__nuclear",
+      "A004_p06__nuclear",
+      "A004_p07__nuclear",
+      "A004_p08__nuclear",
+      "A006_p01__general",
+      "A006_p01__solar",
+      "A006_p01__wind",
+      "A006_p02__general",
+      "A006_p02__solar",
+      "A006_p02__wind",
+      "A006_p03__general",
+      "A006_p04__general",
+      "A006_p04__other_renewable",
+      "A006_p04__solar",
+      "A006_p04__wind",
+      "A006_p06__general",
+      "A006_p07__general",
+      "A006_p08__general",
+      "A006_p09__general",
+      "A006_p10__general",
+      "A006_p11__general",
+      "A006_p14__general",
+      "A006_p15__general",
+      "A006_p17__general",
+      "A006_p19__solar",
+      "A006_p19__wind",
+      "A018_p01__general",
+      "A018_p01__hydrogen",
+      "A018_p01__storage",
+      "A018_p01__wind",
+      "A018_p02__hydrogen",
+      "A018_p03__general",
+      "A018_p03__hydrogen",
+      "A018_p05__hydrogen",
+      "A018_p05__wind",
+      "A018_p06__nuclear",
+      "A018_p06__wind",
+      "A018_p07__general",
+      "A018_p07__nuclear",
+      "A018_p07__wind",
+      "A018_p08__general",
+      "A018_p08__hydrogen",
+      "A018_p08__other_renewable",
+      "A018_p08__solar",
+      "A018_p08__storage",
+      "A018_p08__wind"
+    ],
+    "key_check": {
+      "equal": true,
+      "only_in_pass1": [],
+      "only_in_pass2": []
+    }
+  }
+}

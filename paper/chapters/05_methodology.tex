@@ -1,0 +1,88 @@
+A pipeline's labels are useful only if they agree with human coding on paragraphs it was not tuned on. One primary evaluation tests this on a stratified probability sample of 120 paragraphs, 60 per language, labelled by one coder and coded in three identical model executions. Sections~\ref{subsec:research_design} to~\ref{subsec:added_methods} cover the design, the corpus and draw, the human reference, the metrics, the model setup and the later analyses. Chapter~\ref{sec:system_design} answers RQ1, and Section~\ref{subsec:metrics} defines the estimands for RQ2 to RQ4: element agreement per language, change rates per dimension and language, and prevalence displacement qualified by class support.
+
+\subsection{Research Design}\label{subsec:research_design}
+
+The pipeline codes zero-shot: a language model receives the codebook but no complete labelled example \parencite[p.~104]{feuerriegel2025nlptextdata}. Three reasons favour this over a trained classifier. First, one model codes German and English as written, unlike most framing studies reviewed in Section~\ref{subsec:stream_computational}. Second, each row carries seventeen binary elements, many of them rare, whereas feature- and embedding-based classifiers typically need over a thousand labelled examples \parencite[p.~104]{feuerriegel2025nlptextdata}. Avoiding such training reserves the single coder's labels for validation \parencite[p.~259]{ziems2024css}. Third, coder and model share one codebook's definitions (Section~\ref{subsec:codebook}).
+
+Dictionaries count word frequencies and cannot capture context \parencite[p.~103]{feuerriegel2025nlptextdata}, such as which evaluation belongs to which technology and frame. The case for the model therefore rests not on an established technology-naming advantage (Section~\ref{subsec:agreement}) but on joint relational extraction and evaluation. Zero-shot coding has known failure modes (Section~\ref{subsec:stream_llm}). The validation measures agreement and displacement but identifies none as a cause.
+
+The primary evaluation followed an internal pre-analysis specification recorded in the repository before evaluation coding and prediction. \emph{Registered} denotes this record, not a public registry or a hypothesis pre-registration (Appendix~\ref{app:protocol}). The supervisor endorsed the frozen design and the hand-built corpus on 10 September 2026. Calibration shaped the codebook, and development informed prompt decisions fixed before the draw. The reference and the registered 40-paragraph re-code were committed before the model run (Section~\ref{subsec:annotation}).
+
+The \emph{registered run} comprises three pipeline executions on the evaluation sample under an identical request. The \emph{first execution} is scored for agreement and displacement whatever its outcome, as the pipeline runs once per paragraph in use. A majority vote would be another, costlier instrument and is not computed. All three executions enter the stability measure. Neither agreement nor displacement establishes the human reference's validity.
+
+\subsection{A Purposive, Hand-Built Corpus and a Probability Sample}\label{subsec:data_collection}
+
+The corpus was hand-collected from online news editions (Table~\ref{tab:corpus_facts}). Factiva, the topic description's preferred source, was considered but not used, and its licence was later reported to bar automated queries. The alternative, the Global Database of Events, Language, and Tone (GDELT), may lack full text (Appendix~\ref{app:topic_requirements}).
+
+Purposive selection targeted six cases expected to strain the pipeline (Table~\ref{tab:corpus_facts}). Three are documented difficulties of target-dependent sentiment analysis. Coverage may evaluate two targets in opposite directions \parencites[p.~1669]{hamborg2021newsmtsc}[p.~3594]{xing2020arts} or quote other speakers' evaluations \parencite[p.~610]{bastan2020authorsentiment}. It may also be balanced or purely factual, with evaluation at most implicit \parencite[p.~1664]{hamborg2021newsmtsc}. Article-level case tags overlap, and no result is reported by case. The corpus is not a representative sample of energy coverage but an instrument test bed.
+
+Articles are split into paragraphs of at least 15 words, which drops fragments such as sub-heads. A recall-oriented keyword prefilter over the seven technologies marks \emph{candidates}. A candidate is \emph{eligible} unless it belongs to the calibration or development split, has a transcription gap or comes from the one article the prompt quotes (Figure~\ref{fig:sample_flow}). Every selection is drawn from this \emph{eligible frame}, a sampling frame in the survey sense, not a news frame (Chapter~\ref{sec:background}).
+
+\input{images/fig_sample_flow}
+
+The \emph{evaluation sample} was drawn at random, once, from the frozen eligible frame in 18 strata, one per outlet within a language (Table~\ref{tab:corpus}). One coder's resources for two passes per paragraph set its size at 120. Drawing 60 per language allows per-language figures. A proportional draw would have favoured English. Within a language, allocation is proportional to stratum size, capped at 24 per outlet. Paragraph $i$ of stratum $h$ has a known selection probability, as design-based estimation requires \parencite{egami2023dsl}. Its inverse is the design weight \parencite[p.~669]{horvitz1952generalization}
+\begin{equation}
+\pi_h = \frac{n_h}{N_h}, \qquad w_i = \frac{1}{\pi_{h(i)}},
+\label{eq:weights}
+\end{equation}
+where $N_h$ is the stratum size in the eligible frame and $n_h$ the allocated draw. The sample covers 56 articles.
+
+\input{tables/tab_corpus}
+
+\subsection{A Single Coder as the Human Reference}\label{subsec:annotation}
+
+The author, a native German speaker who reads English at academic level, produced all human labels alone (Table~\ref{tab:sessions}). Under the paragraph-only rule (Section~\ref{subsec:codebook}), the first pass marks technologies and the second marks each technology's \emph{frame elements}, evaluations and \emph{comparison target}. These labels are the \emph{first coding}, the registered reference. Only the coder records speaker attribution (Table~\ref{tab:checks_4p}) and a confidence rating. Neither enters a score. The coder never saw the keyword prefilter, except in a discarded first-pass attempt whose interface suggested keyword-derived technologies.
+
+The general category covers renewables or the energy transition as a bundle. The reference reads it per statement, so a bundle term beside named technologies adds a general row. The prompt's wording also admits a residual reading, general only where no single technology carries a statement. Its figures differ (Table~\ref{tab:disclosures}). A later check without general rows leaves the element score near the registered one (Table~\ref{tab:checks_4o}).
+
+The registered blind re-code (wave 1), a random 20 paragraphs per language, preceded the model run (Figure~\ref{fig:sample_flow}). It measures not agreement between coders but the \emph{temporal stability of the coder} \parencite[p.~215]{krippendorff2004contentanalysis}. Its washout was shortened from 14 planned to at least five realised days (Table~\ref{tab:deviations}).
+
+The \emph{coder's~$\alpha$} is unweighted nominal Krippendorff's $\alpha = 1 - D_o/D_e$, with observed and expected disagreement $D_o$ and $D_e$ \parencite[pp.~1, 3]{krippendorff2011computing}. It is computed on shared units, for elements on the technology rows both codings created (Tables~\ref{tab:conventions} and~\ref{tab:reliability}). A later full-grid analysis adds disagreement on row creation (Table~\ref{tab:alpha_full_grid}). The 0.667 and 0.800 benchmarks guide readings of temporal stability, not of validity \parencite[p.~241]{krippendorff2004contentanalysis}. Pooled-cell $\alpha$ cannot establish each element's stability, and the re-code's 50 shared technology rows say little about rare elements.
+
+The \emph{supplementary re-code} (wave 2) covered the other 80 paragraphs at least 33 days after the first coding. It was declared before coding but was outside the registered plan. The first labels were hidden, but the coder knew the results, including the model's lower element count. In 25 paragraphs, a non-blind re-reading had shown one row's first-coding and model elements (Section~\ref{subsec:missed_results}). Both waves form the \emph{second coding}. Analyses using the supplementary re-code, alone or pooled, are exploratory and do not replace registered results.
+
+\subsection{Evaluation Metrics}\label{subsec:metrics}
+
+The metrics run from single labels to aggregate shares.
+
+\paragraph{Precision, Recall and F1.} All agreement figures use one universe, the union of the (paragraph~$\times$~technology) rows of the reference and the first execution. Unmatched predicted rows are inventions whose marked elements are false positives. Unmatched reference rows are omissions whose marked elements are false negatives. A failed first execution yields only omissions, so headline figures count failures as errors. With $\mathrm{TP}_i$, $\mathrm{FP}_i$ and $\mathrm{FN}_i$ the tuple counts of paragraph $i$ (Figure~\ref{fig:anatomy}b), the design-weighted precision $P_w$, recall $R_w$ and F1 score $F_1^{w}$ are
+\begin{equation}
+P_w = \frac{\sum_i w_i\,\mathrm{TP}_i}{\sum_i w_i\,(\mathrm{TP}_i + \mathrm{FP}_i)}, \qquad
+R_w = \frac{\sum_i w_i\,\mathrm{TP}_i}{\sum_i w_i\,(\mathrm{TP}_i + \mathrm{FN}_i)}, \qquad
+F_1^{w} = \frac{2\,P_w R_w}{P_w + R_w}.
+\label{eq:microf1}
+\end{equation}
+Recall below precision, a \emph{recall deficit}, means that the model marks fewer element tuples than the reference, in weighted count. Technology detection is scored likewise, as micro-F1 over (paragraph~$\times$~technology) rows.
+
+\paragraph{Matched and End-to-End Scores.} Further scores separate value agreement from finding the frame or row. \emph{Matched-frame accuracy} scores evaluations on shared (paragraph, technology, frame) units, and \emph{matched-row accuracy} scores comparison targets on shared rows. \emph{End-to-end F1} compares (paragraph, technology, frame, evaluation) or (paragraph, technology, target) tuples as sets, so missed or invented frames and rows also count as errors.
+
+\paragraph{Cluster Bootstrap.} Paragraphs of one article are not independent, so a cluster bootstrap recomputes each statistic on 2{,}000 resamples of whole articles \parencite[p.~370]{field2007bootstrapping}. Its 2.5th and 97.5th percentiles form a descriptive 95\% interval showing how far a figure moves when articles are redrawn. The interval ignores the outlet strata and claims no finite-population coverage (Table~\ref{tab:conventions}). A per-class cell prints its value if the reference supports the class with at least $s = 5$ units, and its support otherwise. This sealed threshold is a display convention, not evidence of statistical adequacy.
+
+\paragraph{Run-to-Run Stability.} Stability is measured per dimension and language on executions ending with technologies present or off topic (Appendix~\ref{app:evaluator_conventions}). With $U_i$ the units of paragraph $i$, $E_i$ its successful executions and $v_{u,e}$ the value of unit $u$ in execution $e$,
+\begin{equation}
+\delta_i = \frac{1}{|U_i|\binom{|E_i|}{2}} \sum_{u \in U_i} \sum_{e < e'} \mathbb{1}\bigl[v_{u,e} \neq v_{u,e'}\bigr], \qquad
+\Delta = \frac{\sum_i w_i\, \delta_i}{\sum_i w_i}.
+\label{eq:stability}
+\end{equation}
+$\Delta$ is the weighted share of unit values, such as a row's element set, that change between two successful executions, and $\mathbb{1}[\cdot]$ is 1 if its condition holds and 0 otherwise.
+
+\paragraph{Prevalence Displacement.} Displacement compares class shares at paragraph level (bottom of Figure~\ref{fig:anatomy}b). For a class $c$, such as a technology, an element or a (frame, evaluation) pair, $y_i = 1$ if any reference row of paragraph $i$ carries $c$, and $\hat{y}_i$ likewise for the first execution. Over the sample paragraphs, pooled or within one language, the displacement of class $c$ in percentage points of the eligible frame is
+\begin{equation}
+D_c = 100 \cdot \frac{\sum_i w_i\,(\hat{y}_i - y_i)}{\sum_i w_i}.
+\label{eq:displacement}
+\end{equation}
+A negative $D_c$, a model prevalence below the reference, is a \emph{downward displacement}. As false positives and negatives can cancel, a small displacement does not establish accurate individual labels. The registered analysis applies no bias correction.
+
+\subsection{Experimental Setup}\label{subsec:experimental_setup}
+
+Claude Sonnet 4.6, the model the pipeline was built against, was kept without prior comparison, and the registered selection among four candidates lapsed (Table~\ref{tab:deviations}). Calls used Amazon Bedrock's Converse application programming interface (API) in \texttt{eu-central-1} under the European Union (EU) cross-region inference profile (Table~\ref{tab:model_config}). Decoding used temperature zero (Section~\ref{subsec:stream_llm}), which does not guarantee identical output. Truncated, malformed or rule-violating responses are retried once with the identical request, then recorded as parse failures. No label is edited afterwards, and no paragraph is resubmitted at the coder's discretion.
+
+\subsection{Analyses Added after the Registered Result}\label{subsec:added_methods}\label{subsec:procedure}
+
+The \emph{later analyses}, added after the registered result was known, ask whether its pattern recurs, how far it depends on the reference and how its prevalences can be adjusted (Table~\ref{tab:added_analyses}). They are descriptive, leave the registered figures unchanged and mostly reuse the inspected evaluation sample. Most were specified before their runs. Table~\ref{tab:deviations} dates the exceptions, including two configuration controls accepted afterwards. The \emph{fresh census} codes the 55 eligible-frame paragraphs of ten articles with no documented prior use in the study (Figure~\ref{fig:sample_flow}), but its reference was coded after the registered result was known.
+
+Three of the later analyses check the instrument itself (Table~\ref{tab:instrument_checks}). The \emph{perturbation battery} rewords single codebook definitions, and the \emph{mandatory form} asks for a yes or no on every element per technology, still in one call. The \emph{retry candidate}, otherwise the registered instrument, feeds the validator's messages back in its one retry.
+
+The \emph{design-based adjustment} turns the displacement of Section~\ref{subsec:metrics} into a correction (Figure~\ref{fig:dsl_scheme}). The design-based supervised learning estimator \parencite{egami2023dsl} adds the sample's design-weighted mean residual, reference minus model, which equals $-D_c$ in percentage points, to the model's share over the 618 eligible-frame paragraphs. The model's predictions, from three runs of the unchanged instrument (Figure~\ref{fig:sample_flow}), are assumed but not verified to be generated independently of sampling (Appendix~\ref{app:dsl_details}). The result estimates paragraph-level class prevalences under the reference's coding convention, not individual labels or element shares per technology.
+
+\input{images/fig_dsl_scheme}

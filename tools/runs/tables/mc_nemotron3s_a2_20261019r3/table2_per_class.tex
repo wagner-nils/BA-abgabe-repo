@@ -1,0 +1,775 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{61.2pt}>{\raggedright\arraybackslash}p{55.5pt}>{\raggedright\arraybackslash}p{49.1pt}>{\raggedright\arraybackslash}p{49.6pt}>{\raggedright\arraybackslash}p{61.4pt}>{\raggedright\arraybackslash}p{44.0pt}>{\raggedright\arraybackslash}p{50.3pt}}
+\caption{Per-class F1 with support in rows and articles and the resample-absence rate; no per-class interval is computed. Cells:\allowbreak{} value, or n$<$s below the sealed threshold s=\allowbreak{}5, or undefined when support and predictions are both zero; * marks a printed cell whose support comes from a single article (ROBUSTNESS MODEL COMPARISON -- v1.0 under nemotron3s, one execution, not the registered result (specification §4f)). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{class} & \textbf{F1 weighted} & \textbf{F1 unweighted} & \textbf{support rows} & \textbf{support articles} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{class} & \textbf{F1 weighted} & \textbf{F1 unweighted} & \textbf{support rows} & \textbf{support articles} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & element & F1a & 0.603 & 0.579 & 45 & 20 \\
+pooled & element & F1b & 0.491 & 0.465 & 30 & 16 \\
+pooled & element & F2a & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+pooled & element & F2b & 0.410 & 0.395 & 60 & 31 \\
+pooled & element & F2c & 0.528 & 0.541 & 35 & 25 \\
+pooled & element & F3a & 0.418 & 0.417 & 13 & 11 \\
+pooled & element & F3b & 0.397 & 0.379 & 38 & 19 \\
+pooled & element & F4a & 0.476 & 0.429 & 11 & 8 \\
+pooled & element & F4b & 0.065 & 0.100 & 13 & 6 \\
+pooled & element & F5a & 0.447 & 0.519 & 20 & 10 \\
+pooled & element & F5b & 0.458 & 0.444 & 17 & 12 \\
+pooled & element & F6a & 0.472 & 0.444 & 20 & 14 \\
+pooled & element & F6b & 0.374 & 0.348 & 15 & 7 \\
+pooled & element & F7a & 0.144 & 0.133 & 14 & 6 \\
+pooled & element & F7b & 0.384 & 0.444 & 12 & 6 \\
+pooled & element & F8a & 0.138 & 0.133 & 28 & 14 \\
+pooled & element & F9 & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+pooled & technology & general & 0.593 & 0.603 & 40 & 29 \\
+pooled & technology & hydrogen & 0.950 & 0.947 & 20 & 8 \\
+pooled & technology & nuclear & 0.935 & 0.933 & 22 & 11 \\
+pooled & technology & other\_\allowbreak{}renewable & 0.801 & 0.778 & 10 & 9 \\
+pooled & technology & solar & 0.824 & 0.844 & 37 & 24 \\
+pooled & technology & storage & 0.699 & 0.720 & 13 & 9 \\
+pooled & technology & wind & 0.855 & 0.875 & 36 & 22 \\
+pooled & evaluation\_\allowbreak{}A & mixed & 0.000 & 0.000 & 9 & 8 \\
+pooled & evaluation\_\allowbreak{}A & negative & 0.782 & 0.783 & 35 & 19 \\
+pooled & evaluation\_\allowbreak{}A & neutral & 0.194 & 0.235 & 5 & 4 \\
+pooled & evaluation\_\allowbreak{}A & positive & 0.863 & 0.859 & 85 & 40 \\
+pooled & evaluation\_\allowbreak{}B & mixed & 0.000 & 0.000 & 14 & 9 \\
+pooled & evaluation\_\allowbreak{}B & negative & 0.329 & 0.325 & 118 & 27 \\
+pooled & evaluation\_\allowbreak{}B & neutral & 0.114 & 0.143 & 19 & 14 \\
+pooled & evaluation\_\allowbreak{}B & positive & 0.471 & 0.475 & 189 & 45 \\
+pooled & comparison\_\allowbreak{}A & coal & 0.000 & 0.000 & 5 & 4 \\
+pooled & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.615 & 0.593 & 17 & 10 \\
+pooled & comparison\_\allowbreak{}A & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+pooled & comparison\_\allowbreak{}A & multiple & n$<$5 (2) & n$<$5 (2) & 2 & 1 \\
+pooled & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+pooled & comparison\_\allowbreak{}A & none & 0.898 & 0.903 & 104 & 45 \\
+pooled & comparison\_\allowbreak{}A & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & oil & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & other & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & solar & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & storage & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}A & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & coal & 0.000 & 0.000 & 5 & 4 \\
+pooled & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.422 & 0.410 & 28 & 13 \\
+pooled & comparison\_\allowbreak{}B & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+pooled & comparison\_\allowbreak{}B & multiple & n$<$5 (4) & n$<$5 (4) & 4 & 2 \\
+pooled & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.151 & 0.167 & 9 & 5 \\
+pooled & comparison\_\allowbreak{}B & none & 0.767 & 0.766 & 127 & 46 \\
+pooled & comparison\_\allowbreak{}B & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & oil & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & other & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+pooled & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+pooled & comparison\_\allowbreak{}B & solar & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & storage & undefined & undefined & 0 & 0 \\
+pooled & comparison\_\allowbreak{}B & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+de & element & F1a & 0.447 & 0.452 & 18 & 8 \\
+de & element & F1b & 0.415 & 0.421 & 13 & 8 \\
+de & element & F2a & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+de & element & F2b & 0.374 & 0.357 & 19 & 12 \\
+de & element & F2c & 0.624 & 0.619 & 17 & 13 \\
+de & element & F3a & 0.421 & 0.429 & 7 & 7 \\
+de & element & F3b & 0.284 & 0.286 & 13 & 7 \\
+de & element & F4a & 0.360 & 0.333 & 5 & 3 \\
+de & element & F4b & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+de & element & F5a & 0.599 & 0.615 & 9 & 5 \\
+de & element & F5b & 0.477 & 0.455 & 13 & 9 \\
+de & element & F6a & 0.406 & 0.400 & 8 & 5 \\
+de & element & F6b & 0.357 & 0.353 & 13 & 5 \\
+de & element & F7a & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+de & element & F7b & n$<$5 (4) & n$<$5 (4) & 4 & 3 \\
+de & element & F8a & 0.114 & 0.111 & 17 & 7 \\
+de & element & F9 & undefined & undefined & 0 & 0 \\
+de & technology & general & 0.600 & 0.595 & 17 & 14 \\
+de & technology & hydrogen & n$<$5 (3) & n$<$5 (3) & 3 & 3 \\
+de & technology & nuclear & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+de & technology & other\_\allowbreak{}renewable & 0.667 & 0.667 & 6 & 5 \\
+de & technology & solar & 0.904 & 0.905 & 23 & 13 \\
+de & technology & storage & 0.745 & 0.750 & 8 & 5 \\
+de & technology & wind & 0.935 & 0.933 & 24 & 13 \\
+de & evaluation\_\allowbreak{}A & mixed & n$<$5 (4) & n$<$5 (4) & 4 & 4 \\
+de & evaluation\_\allowbreak{}A & negative & 0.745 & 0.757 & 20 & 10 \\
+de & evaluation\_\allowbreak{}A & neutral & n$<$5 (4) & n$<$5 (4) & 4 & 3 \\
+de & evaluation\_\allowbreak{}A & positive & 0.814 & 0.818 & 37 & 19 \\
+de & evaluation\_\allowbreak{}B & mixed & 0.000 & 0.000 & 6 & 5 \\
+de & evaluation\_\allowbreak{}B & negative & 0.322 & 0.322 & 60 & 12 \\
+de & evaluation\_\allowbreak{}B & neutral & 0.236 & 0.235 & 10 & 7 \\
+de & evaluation\_\allowbreak{}B & positive & 0.488 & 0.486 & 69 & 22 \\
+de & comparison\_\allowbreak{}A & coal & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+de & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.764 & 0.750 & 5 & 3 \\
+de & comparison\_\allowbreak{}A & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+de & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & hydrogen & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & multiple & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & none & 0.927 & 0.923 & 58 & 23 \\
+de & comparison\_\allowbreak{}A & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+de & comparison\_\allowbreak{}A & oil & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & other & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & solar & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & storage & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}A & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+de & comparison\_\allowbreak{}B & coal & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+de & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.614 & 0.600 & 6 & 4 \\
+de & comparison\_\allowbreak{}B & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+de & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & hydrogen & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & multiple & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+de & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & none & 0.769 & 0.766 & 71 & 24 \\
+de & comparison\_\allowbreak{}B & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+de & comparison\_\allowbreak{}B & oil & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & other & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+de & comparison\_\allowbreak{}B & solar & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & storage & undefined & undefined & 0 & 0 \\
+de & comparison\_\allowbreak{}B & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+en & element & F1a & 0.662 & 0.667 & 27 & 12 \\
+en & element & F1b & 0.527 & 0.500 & 17 & 8 \\
+en & element & F2a & undefined & undefined & 0 & 0 \\
+en & element & F2b & 0.422 & 0.415 & 41 & 19 \\
+en & element & F2c & 0.451 & 0.438 & 18 & 12 \\
+en & element & F3a & 0.416 & 0.400 & 6 & 4 \\
+en & element & F3b & 0.436 & 0.432 & 25 & 12 \\
+en & element & F4a & 0.528 & 0.500 & 6 & 5 \\
+en & element & F4b & 0.000 & 0.000 & 10 & 4 \\
+en & element & F5a & 0.365 & 0.429 & 11 & 5 \\
+en & element & F5b & n$<$5 (4) & n$<$5 (4) & 4 & 3 \\
+en & element & F6a & 0.493 & 0.471 & 12 & 9 \\
+en & element & F6b & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+en & element & F7a & 0.158 & 0.154 & 12 & 4 \\
+en & element & F7b & 0.205 & 0.222 & 8 & 3 \\
+en & element & F8a & 0.159 & 0.167 & 11 & 7 \\
+en & element & F9 & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+en & technology & general & 0.589 & 0.611 & 23 & 15 \\
+en & technology & hydrogen & 0.945 & 0.938 & 17 & 5 \\
+en & technology & nuclear & 0.942 & 0.947 & 19 & 10 \\
+en & technology & other\_\allowbreak{}renewable & n$<$5 (4) & n$<$5 (4) & 4 & 4 \\
+en & technology & solar & 0.732 & 0.727 & 14 & 11 \\
+en & technology & storage & 0.647 & 0.667 & 5 & 4 \\
+en & technology & wind & 0.748 & 0.737 & 12 & 9 \\
+en & evaluation\_\allowbreak{}A & mixed & 0.000 & 0.000 & 5 & 4 \\
+en & evaluation\_\allowbreak{}A & negative & 0.808 & 0.812 & 15 & 9 \\
+en & evaluation\_\allowbreak{}A & neutral & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+en & evaluation\_\allowbreak{}A & positive & 0.885 & 0.889 & 48 & 21 \\
+en & evaluation\_\allowbreak{}B & mixed & 0.000 & 0.000 & 8 & 4 \\
+en & evaluation\_\allowbreak{}B & negative & 0.333 & 0.329 & 58 & 15 \\
+en & evaluation\_\allowbreak{}B & neutral & 0.000 & 0.000 & 9 & 7 \\
+en & evaluation\_\allowbreak{}B & positive & 0.465 & 0.468 & 120 & 23 \\
+en & comparison\_\allowbreak{}A & coal & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+en & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.582 & 0.526 & 12 & 7 \\
+en & comparison\_\allowbreak{}A & general & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+en & comparison\_\allowbreak{}A & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+en & comparison\_\allowbreak{}A & multiple & n$<$5 (2) & n$<$5 (2) & 2 & 1 \\
+en & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+en & comparison\_\allowbreak{}A & none & 0.879 & 0.880 & 46 & 22 \\
+en & comparison\_\allowbreak{}A & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+en & comparison\_\allowbreak{}A & oil & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}A & other & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}A & solar & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}A & storage & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}A & wind & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}B & coal & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+en & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.386 & 0.345 & 22 & 9 \\
+en & comparison\_\allowbreak{}B & general & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+en & comparison\_\allowbreak{}B & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+en & comparison\_\allowbreak{}B & multiple & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+en & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.151 & 0.167 & 9 & 5 \\
+en & comparison\_\allowbreak{}B & none & 0.765 & 0.765 & 56 & 22 \\
+en & comparison\_\allowbreak{}B & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+en & comparison\_\allowbreak{}B & oil & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}B & other & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+en & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}B & solar & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}B & storage & undefined & undefined & 0 & 0 \\
+en & comparison\_\allowbreak{}B & wind & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & element & F1a & 0.598 & 0.575 & 44 & 19 \\
+clean\_\allowbreak{}pooled & element & F1b & 0.357 & 0.276 & 22 & 12 \\
+clean\_\allowbreak{}pooled & element & F2a & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+clean\_\allowbreak{}pooled & element & F2b & 0.392 & 0.378 & 55 & 28 \\
+clean\_\allowbreak{}pooled & element & F2c & 0.543 & 0.554 & 31 & 22 \\
+clean\_\allowbreak{}pooled & element & F3a & 0.319 & 0.316 & 10 & 8 \\
+clean\_\allowbreak{}pooled & element & F3b & 0.382 & 0.367 & 33 & 16 \\
+clean\_\allowbreak{}pooled & element & F4a & 0.450 & 0.400 & 8 & 5 \\
+clean\_\allowbreak{}pooled & element & F4b & 0.000 & 0.000 & 11 & 4 \\
+clean\_\allowbreak{}pooled & element & F5a & 0.447 & 0.519 & 20 & 10 \\
+clean\_\allowbreak{}pooled & element & F5b & 0.458 & 0.444 & 17 & 12 \\
+clean\_\allowbreak{}pooled & element & F6a & 0.472 & 0.444 & 20 & 14 \\
+clean\_\allowbreak{}pooled & element & F6b & 0.389 & 0.364 & 14 & 6 \\
+clean\_\allowbreak{}pooled & element & F7a & 0.150 & 0.143 & 13 & 5 \\
+clean\_\allowbreak{}pooled & element & F7b & 0.274 & 0.308 & 9 & 4 \\
+clean\_\allowbreak{}pooled & element & F8a & 0.169 & 0.174 & 21 & 11 \\
+clean\_\allowbreak{}pooled & element & F9 & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+clean\_\allowbreak{}pooled & technology & general & 0.532 & 0.548 & 35 & 26 \\
+clean\_\allowbreak{}pooled & technology & hydrogen & 0.948 & 0.944 & 19 & 7 \\
+clean\_\allowbreak{}pooled & technology & nuclear & 0.935 & 0.933 & 22 & 11 \\
+clean\_\allowbreak{}pooled & technology & other\_\allowbreak{}renewable & 0.801 & 0.778 & 10 & 9 \\
+clean\_\allowbreak{}pooled & technology & solar & 0.767 & 0.783 & 28 & 20 \\
+clean\_\allowbreak{}pooled & technology & storage & 0.699 & 0.720 & 13 & 9 \\
+clean\_\allowbreak{}pooled & technology & wind & 0.847 & 0.867 & 34 & 21 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & mixed & 0.000 & 0.000 & 8 & 7 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & negative & 0.762 & 0.754 & 31 & 17 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & neutral & 0.218 & 0.267 & 5 & 4 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & positive & 0.858 & 0.850 & 69 & 35 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & mixed & 0.000 & 0.000 & 13 & 8 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & negative & 0.316 & 0.307 & 107 & 24 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & neutral & 0.124 & 0.157 & 18 & 13 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & positive & 0.447 & 0.448 & 163 & 40 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & coal & 0.000 & 0.000 & 5 & 4 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.637 & 0.615 & 16 & 9 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & multiple & n$<$5 (2) & n$<$5 (2) & 2 & 1 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & none & 0.889 & 0.891 & 88 & 39 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & oil & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & other & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & solar & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & storage & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & coal & 0.000 & 0.000 & 5 & 4 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.432 & 0.421 & 27 & 12 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & multiple & n$<$5 (4) & n$<$5 (4) & 4 & 2 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.151 & 0.167 & 9 & 5 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & none & 0.745 & 0.739 & 111 & 40 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & oil & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & other & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & solar & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & storage & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}de & element & F1a & 0.461 & 0.467 & 18 & 8 \\
+clean\_\allowbreak{}de & element & F1b & 0.000 & 0.000 & 8 & 5 \\
+clean\_\allowbreak{}de & element & F2a & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+clean\_\allowbreak{}de & element & F2b & 0.402 & 0.385 & 17 & 10 \\
+clean\_\allowbreak{}de & element & F2c & 0.634 & 0.629 & 15 & 12 \\
+clean\_\allowbreak{}de & element & F3a & 0.352 & 0.364 & 5 & 5 \\
+clean\_\allowbreak{}de & element & F3b & 0.283 & 0.286 & 9 & 5 \\
+clean\_\allowbreak{}de & element & F4a & n$<$5 (4) & n$<$5 (4) & 4 & 2 \\
+clean\_\allowbreak{}de & element & F4b & n$<$5 (2) & n$<$5 (2) & 2 & 1 \\
+clean\_\allowbreak{}de & element & F5a & 0.599 & 0.615 & 9 & 5 \\
+clean\_\allowbreak{}de & element & F5b & 0.477 & 0.455 & 13 & 9 \\
+clean\_\allowbreak{}de & element & F6a & 0.406 & 0.400 & 8 & 5 \\
+clean\_\allowbreak{}de & element & F6b & 0.379 & 0.375 & 12 & 4 \\
+clean\_\allowbreak{}de & element & F7a & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}de & element & F7b & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}de & element & F8a & 0.188 & 0.182 & 10 & 4 \\
+clean\_\allowbreak{}de & element & F9 & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & technology & general & 0.594 & 0.588 & 16 & 13 \\
+clean\_\allowbreak{}de & technology & hydrogen & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+clean\_\allowbreak{}de & technology & nuclear & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+clean\_\allowbreak{}de & technology & other\_\allowbreak{}renewable & 0.667 & 0.667 & 6 & 5 \\
+clean\_\allowbreak{}de & technology & solar & 0.844 & 0.846 & 15 & 10 \\
+clean\_\allowbreak{}de & technology & storage & 0.745 & 0.750 & 8 & 5 \\
+clean\_\allowbreak{}de & technology & wind & 0.928 & 0.927 & 22 & 12 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & mixed & n$<$5 (3) & n$<$5 (3) & 3 & 3 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & negative & 0.676 & 0.690 & 16 & 8 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & neutral & n$<$5 (4) & n$<$5 (4) & 4 & 3 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & positive & 0.779 & 0.784 & 29 & 16 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & mixed & 0.000 & 0.000 & 5 & 4 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & negative & 0.278 & 0.278 & 50 & 10 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & neutral & 0.257 & 0.258 & 9 & 6 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & positive & 0.456 & 0.455 & 55 & 19 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & coal & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.764 & 0.750 & 5 & 3 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & hydrogen & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & multiple & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & none & 0.908 & 0.903 & 46 & 19 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & oil & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & other & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & solar & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & storage & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & coal & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.614 & 0.600 & 6 & 4 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & general & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & hydrogen & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & multiple & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & none & 0.728 & 0.724 & 59 & 20 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & oil & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & other & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & solar & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & storage & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & wind & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}en & element & F1a & 0.650 & 0.651 & 26 & 11 \\
+clean\_\allowbreak{}en & element & F1b & 0.467 & 0.421 & 14 & 7 \\
+clean\_\allowbreak{}en & element & F2a & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & element & F2b & 0.388 & 0.375 & 38 & 18 \\
+clean\_\allowbreak{}en & element & F2c & 0.478 & 0.467 & 16 & 10 \\
+clean\_\allowbreak{}en & element & F3a & 0.293 & 0.250 & 5 & 3 \\
+clean\_\allowbreak{}en & element & F3b & 0.407 & 0.400 & 24 & 11 \\
+clean\_\allowbreak{}en & element & F4a & n$<$5 (4) & n$<$5 (4) & 4 & 3 \\
+clean\_\allowbreak{}en & element & F4b & 0.000 & 0.000 & 9 & 3 \\
+clean\_\allowbreak{}en & element & F5a & 0.365 & 0.429 & 11 & 5 \\
+clean\_\allowbreak{}en & element & F5b & n$<$5 (4) & n$<$5 (4) & 4 & 3 \\
+clean\_\allowbreak{}en & element & F6a & 0.493 & 0.471 & 12 & 9 \\
+clean\_\allowbreak{}en & element & F6b & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+clean\_\allowbreak{}en & element & F7a & 0.158 & 0.154 & 12 & 4 \\
+clean\_\allowbreak{}en & element & F7b & 0.205 & 0.222 & 8 & 3 \\
+clean\_\allowbreak{}en & element & F8a & 0.159 & 0.167 & 11 & 7 \\
+clean\_\allowbreak{}en & element & F9 & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+clean\_\allowbreak{}en & technology & general & 0.487 & 0.500 & 19 & 13 \\
+clean\_\allowbreak{}en & technology & hydrogen & 0.945 & 0.938 & 17 & 5 \\
+clean\_\allowbreak{}en & technology & nuclear & 0.942 & 0.947 & 19 & 10 \\
+clean\_\allowbreak{}en & technology & other\_\allowbreak{}renewable & n$<$5 (4) & n$<$5 (4) & 4 & 4 \\
+clean\_\allowbreak{}en & technology & solar & 0.709 & 0.700 & 13 & 10 \\
+clean\_\allowbreak{}en & technology & storage & 0.647 & 0.667 & 5 & 4 \\
+clean\_\allowbreak{}en & technology & wind & 0.748 & 0.737 & 12 & 9 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & mixed & 0.000 & 0.000 & 5 & 4 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & negative & 0.808 & 0.812 & 15 & 9 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & neutral & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & positive & 0.889 & 0.895 & 40 & 19 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & mixed & 0.000 & 0.000 & 8 & 4 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & negative & 0.337 & 0.333 & 57 & 14 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & neutral & 0.000 & 0.000 & 9 & 7 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & positive & 0.445 & 0.444 & 108 & 21 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & coal & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.607 & 0.556 & 11 & 6 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & general & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & multiple & n$<$5 (2) & n$<$5 (2) & 2 & 1 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & n$<$5 (3) & n$<$5 (3) & 3 & 2 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & none & 0.878 & 0.879 & 42 & 20 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & oil & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & other & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & solar & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & storage & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & wind & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & coal & n$<$5 (2) & n$<$5 (2) & 2 & 2 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.397 & 0.357 & 21 & 8 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & general & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & hydrogen & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & multiple & n$<$5 (3) & n$<$5 (3) & 3 & 1 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.151 & 0.167 & 9 & 5 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & none & 0.756 & 0.755 & 52 & 20 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & nuclear & n$<$5 (0) & n$<$5 (0) & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & oil & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & other & n$<$5 (1) & n$<$5 (1) & 1 & 1 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & solar & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & storage & undefined & undefined & 0 & 0 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & wind & undefined & undefined & 0 & 0 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{96.8pt}>{\raggedright\arraybackslash}p{91.0pt}>{\raggedright\arraybackslash}p{93.6pt}>{\raggedright\arraybackslash}p{125.6pt}}
+\caption{Per-class F1 with support in rows and articles and the resample-absence rate; no per-class interval is computed. Cells:\allowbreak{} value, or n$<$s below the sealed threshold s=\allowbreak{}5, or undefined when support and predictions are both zero; * marks a printed cell whose support comes from a single article (ROBUSTNESS MODEL COMPARISON -- v1.0 under nemotron3s, one execution, not the registered result (specification §4f)). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{class} & \textbf{resample absence} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{class} & \textbf{resample absence} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & element & F1a & 0.000 \\
+pooled & element & F1b & 0.000 \\
+pooled & element & F2a & 0.141 \\
+pooled & element & F2b & 0.000 \\
+pooled & element & F2c & 0.000 \\
+pooled & element & F3a & 0.000 \\
+pooled & element & F3b & 0.000 \\
+pooled & element & F4a & 0.001 \\
+pooled & element & F4b & 0.003 \\
+pooled & element & F5a & 0.000 \\
+pooled & element & F5b & 0.000 \\
+pooled & element & F6a & 0.000 \\
+pooled & element & F6b & 0.001 \\
+pooled & element & F7a & 0.004 \\
+pooled & element & F7b & 0.001 \\
+pooled & element & F8a & 0.000 \\
+pooled & element & F9 & 0.134 \\
+pooled & technology & general & 0.000 \\
+pooled & technology & hydrogen & 0.000 \\
+pooled & technology & nuclear & 0.000 \\
+pooled & technology & other\_\allowbreak{}renewable & 0.000 \\
+pooled & technology & solar & 0.000 \\
+pooled & technology & storage & 0.000 \\
+pooled & technology & wind & 0.000 \\
+pooled & evaluation\_\allowbreak{}A & mixed & 0.001 \\
+pooled & evaluation\_\allowbreak{}A & negative & 0.000 \\
+pooled & evaluation\_\allowbreak{}A & neutral & 0.015 \\
+pooled & evaluation\_\allowbreak{}A & positive & 0.000 \\
+pooled & evaluation\_\allowbreak{}B & mixed & 0.001 \\
+pooled & evaluation\_\allowbreak{}B & negative & 0.000 \\
+pooled & evaluation\_\allowbreak{}B & neutral & 0.000 \\
+pooled & evaluation\_\allowbreak{}B & positive & 0.000 \\
+pooled & comparison\_\allowbreak{}A & coal & 0.016 \\
+pooled & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.000 \\
+pooled & comparison\_\allowbreak{}A & general & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & hydrogen & 0.361 \\
+pooled & comparison\_\allowbreak{}A & multiple & 0.376 \\
+pooled & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & 0.142 \\
+pooled & comparison\_\allowbreak{}A & none & 0.000 \\
+pooled & comparison\_\allowbreak{}A & nuclear & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & oil & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & other & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & solar & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & storage & not measured (no support) \\
+pooled & comparison\_\allowbreak{}A & wind & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & coal & 0.016 \\
+pooled & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.000 \\
+pooled & comparison\_\allowbreak{}B & general & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & hydrogen & 0.361 \\
+pooled & comparison\_\allowbreak{}B & multiple & 0.149 \\
+pooled & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.007 \\
+pooled & comparison\_\allowbreak{}B & none & 0.000 \\
+pooled & comparison\_\allowbreak{}B & nuclear & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & oil & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & other & 0.350 \\
+pooled & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & 0.367 \\
+pooled & comparison\_\allowbreak{}B & solar & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & storage & not measured (no support) \\
+pooled & comparison\_\allowbreak{}B & wind & not measured (no support) \\
+de & element & F1a & 0.000 \\
+de & element & F1b & 0.000 \\
+de & element & F2a & 0.133 \\
+de & element & F2b & 0.000 \\
+de & element & F2c & 0.000 \\
+de & element & F3a & 0.001 \\
+de & element & F3b & 0.001 \\
+de & element & F4a & 0.045 \\
+de & element & F4b & 0.129 \\
+de & element & F5a & 0.005 \\
+de & element & F5b & 0.000 \\
+de & element & F6a & 0.005 \\
+de & element & F6b & 0.004 \\
+de & element & F7a & 0.128 \\
+de & element & F7b & 0.041 \\
+de & element & F8a & 0.001 \\
+de & element & F9 & not measured (no support) \\
+de & technology & general & 0.000 \\
+de & technology & hydrogen & 0.049 \\
+de & technology & nuclear & 0.365 \\
+de & technology & other\_\allowbreak{}renewable & 0.004 \\
+de & technology & solar & 0.000 \\
+de & technology & storage & 0.003 \\
+de & technology & wind & 0.000 \\
+de & evaluation\_\allowbreak{}A & mixed & 0.012 \\
+de & evaluation\_\allowbreak{}A & negative & 0.000 \\
+de & evaluation\_\allowbreak{}A & neutral & 0.039 \\
+de & evaluation\_\allowbreak{}A & positive & 0.000 \\
+de & evaluation\_\allowbreak{}B & mixed & 0.003 \\
+de & evaluation\_\allowbreak{}B & negative & 0.000 \\
+de & evaluation\_\allowbreak{}B & neutral & 0.000 \\
+de & evaluation\_\allowbreak{}B & positive & 0.000 \\
+de & comparison\_\allowbreak{}A & coal & 0.129 \\
+de & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.046 \\
+de & comparison\_\allowbreak{}A & general & not measured (no support) \\
+de & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+de & comparison\_\allowbreak{}A & hydrogen & not measured (no support) \\
+de & comparison\_\allowbreak{}A & multiple & not measured (no support) \\
+de & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & not measured (no support) \\
+de & comparison\_\allowbreak{}A & none & 0.000 \\
+de & comparison\_\allowbreak{}A & nuclear & not measured (no support) \\
+de & comparison\_\allowbreak{}A & oil & not measured (no support) \\
+de & comparison\_\allowbreak{}A & other & not measured (no support) \\
+de & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & not measured (no support) \\
+de & comparison\_\allowbreak{}A & solar & not measured (no support) \\
+de & comparison\_\allowbreak{}A & storage & not measured (no support) \\
+de & comparison\_\allowbreak{}A & wind & not measured (no support) \\
+de & comparison\_\allowbreak{}B & coal & 0.129 \\
+de & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.012 \\
+de & comparison\_\allowbreak{}B & general & not measured (no support) \\
+de & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+de & comparison\_\allowbreak{}B & hydrogen & not measured (no support) \\
+de & comparison\_\allowbreak{}B & multiple & 0.366 \\
+de & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & not measured (no support) \\
+de & comparison\_\allowbreak{}B & none & 0.000 \\
+de & comparison\_\allowbreak{}B & nuclear & not measured (no support) \\
+de & comparison\_\allowbreak{}B & oil & not measured (no support) \\
+de & comparison\_\allowbreak{}B & other & not measured (no support) \\
+de & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & 0.366 \\
+de & comparison\_\allowbreak{}B & solar & not measured (no support) \\
+de & comparison\_\allowbreak{}B & storage & not measured (no support) \\
+de & comparison\_\allowbreak{}B & wind & not measured (no support) \\
+en & element & F1a & 0.000 \\
+en & element & F1b & 0.000 \\
+en & element & F2a & not measured (no support) \\
+en & element & F2b & 0.000 \\
+en & element & F2c & 0.000 \\
+en & element & F3a & 0.016 \\
+en & element & F3b & 0.000 \\
+en & element & F4a & 0.004 \\
+en & element & F4b & 0.015 \\
+en & element & F5a & 0.003 \\
+en & element & F5b & 0.048 \\
+en & element & F6a & 0.000 \\
+en & element & F6b & 0.129 \\
+en & element & F7a & 0.014 \\
+en & element & F7b & 0.043 \\
+en & element & F8a & 0.000 \\
+en & element & F9 & 0.127 \\
+en & technology & general & 0.000 \\
+en & technology & hydrogen & 0.004 \\
+en & technology & nuclear & 0.000 \\
+en & technology & other\_\allowbreak{}renewable & 0.012 \\
+en & technology & solar & 0.000 \\
+en & technology & storage & 0.014 \\
+en & technology & wind & 0.000 \\
+en & evaluation\_\allowbreak{}A & mixed & 0.013 \\
+en & evaluation\_\allowbreak{}A & negative & 0.000 \\
+en & evaluation\_\allowbreak{}A & neutral & 0.367 \\
+en & evaluation\_\allowbreak{}A & positive & 0.000 \\
+en & evaluation\_\allowbreak{}B & mixed & 0.013 \\
+en & evaluation\_\allowbreak{}B & negative & 0.000 \\
+en & evaluation\_\allowbreak{}B & neutral & 0.001 \\
+en & evaluation\_\allowbreak{}B & positive & 0.000 \\
+en & comparison\_\allowbreak{}A & coal & 0.128 \\
+en & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.000 \\
+en & comparison\_\allowbreak{}A & general & not measured (no support) \\
+en & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+en & comparison\_\allowbreak{}A & hydrogen & 0.349 \\
+en & comparison\_\allowbreak{}A & multiple & 0.360 \\
+en & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & 0.134 \\
+en & comparison\_\allowbreak{}A & none & 0.000 \\
+en & comparison\_\allowbreak{}A & nuclear & not measured (no support) \\
+en & comparison\_\allowbreak{}A & oil & not measured (no support) \\
+en & comparison\_\allowbreak{}A & other & not measured (no support) \\
+en & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & not measured (no support) \\
+en & comparison\_\allowbreak{}A & solar & not measured (no support) \\
+en & comparison\_\allowbreak{}A & storage & not measured (no support) \\
+en & comparison\_\allowbreak{}A & wind & not measured (no support) \\
+en & comparison\_\allowbreak{}B & coal & 0.128 \\
+en & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.000 \\
+en & comparison\_\allowbreak{}B & general & not measured (no support) \\
+en & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+en & comparison\_\allowbreak{}B & hydrogen & 0.349 \\
+en & comparison\_\allowbreak{}B & multiple & 0.360 \\
+en & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.004 \\
+en & comparison\_\allowbreak{}B & none & 0.000 \\
+en & comparison\_\allowbreak{}B & nuclear & not measured (no support) \\
+en & comparison\_\allowbreak{}B & oil & not measured (no support) \\
+en & comparison\_\allowbreak{}B & other & 0.374 \\
+en & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & not measured (no support) \\
+en & comparison\_\allowbreak{}B & solar & not measured (no support) \\
+en & comparison\_\allowbreak{}B & storage & not measured (no support) \\
+en & comparison\_\allowbreak{}B & wind & not measured (no support) \\
+clean\_\allowbreak{}pooled & element & F1a & 0.000 \\
+clean\_\allowbreak{}pooled & element & F1b & 0.000 \\
+clean\_\allowbreak{}pooled & element & F2a & 0.129 \\
+clean\_\allowbreak{}pooled & element & F2b & 0.000 \\
+clean\_\allowbreak{}pooled & element & F2c & 0.000 \\
+clean\_\allowbreak{}pooled & element & F3a & 0.000 \\
+clean\_\allowbreak{}pooled & element & F3b & 0.000 \\
+clean\_\allowbreak{}pooled & element & F4a & 0.004 \\
+clean\_\allowbreak{}pooled & element & F4b & 0.015 \\
+clean\_\allowbreak{}pooled & element & F5a & 0.000 \\
+clean\_\allowbreak{}pooled & element & F5b & 0.000 \\
+clean\_\allowbreak{}pooled & element & F6a & 0.000 \\
+clean\_\allowbreak{}pooled & element & F6b & 0.001 \\
+clean\_\allowbreak{}pooled & element & F7a & 0.006 \\
+clean\_\allowbreak{}pooled & element & F7b & 0.015 \\
+clean\_\allowbreak{}pooled & element & F8a & 0.000 \\
+clean\_\allowbreak{}pooled & element & F9 & 0.134 \\
+clean\_\allowbreak{}pooled & technology & general & 0.000 \\
+clean\_\allowbreak{}pooled & technology & hydrogen & 0.001 \\
+clean\_\allowbreak{}pooled & technology & nuclear & 0.000 \\
+clean\_\allowbreak{}pooled & technology & other\_\allowbreak{}renewable & 0.000 \\
+clean\_\allowbreak{}pooled & technology & solar & 0.000 \\
+clean\_\allowbreak{}pooled & technology & storage & 0.000 \\
+clean\_\allowbreak{}pooled & technology & wind & 0.000 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & mixed & 0.001 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & negative & 0.000 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & neutral & 0.014 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & positive & 0.000 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & mixed & 0.001 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & negative & 0.000 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & neutral & 0.000 \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & positive & 0.000 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & coal & 0.015 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.000 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & general & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & hydrogen & 0.358 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & multiple & 0.346 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & 0.128 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & none & 0.000 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & nuclear & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & oil & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & other & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & solar & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & storage & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & wind & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & coal & 0.015 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.000 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & general & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & hydrogen & 0.358 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & multiple & 0.120 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.005 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & none & 0.000 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & nuclear & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & oil & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & other & 0.348 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & 0.346 \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & solar & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & storage & not measured (no support) \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & wind & not measured (no support) \\
+clean\_\allowbreak{}de & element & F1a & 0.000 \\
+clean\_\allowbreak{}de & element & F1b & 0.004 \\
+clean\_\allowbreak{}de & element & F2a & 0.136 \\
+clean\_\allowbreak{}de & element & F2b & 0.000 \\
+clean\_\allowbreak{}de & element & F2c & 0.000 \\
+clean\_\allowbreak{}de & element & F3a & 0.005 \\
+clean\_\allowbreak{}de & element & F3b & 0.004 \\
+clean\_\allowbreak{}de & element & F4a & 0.113 \\
+clean\_\allowbreak{}de & element & F4b & 0.350 \\
+clean\_\allowbreak{}de & element & F5a & 0.004 \\
+clean\_\allowbreak{}de & element & F5b & 0.000 \\
+clean\_\allowbreak{}de & element & F6a & 0.002 \\
+clean\_\allowbreak{}de & element & F6b & 0.011 \\
+clean\_\allowbreak{}de & element & F7a & 0.373 \\
+clean\_\allowbreak{}de & element & F7b & 0.373 \\
+clean\_\allowbreak{}de & element & F8a & 0.011 \\
+clean\_\allowbreak{}de & element & F9 & not measured (no support) \\
+clean\_\allowbreak{}de & technology & general & 0.000 \\
+clean\_\allowbreak{}de & technology & hydrogen & 0.121 \\
+clean\_\allowbreak{}de & technology & nuclear & 0.357 \\
+clean\_\allowbreak{}de & technology & other\_\allowbreak{}renewable & 0.005 \\
+clean\_\allowbreak{}de & technology & solar & 0.000 \\
+clean\_\allowbreak{}de & technology & storage & 0.003 \\
+clean\_\allowbreak{}de & technology & wind & 0.000 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & mixed & 0.043 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & negative & 0.000 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & neutral & 0.038 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & positive & 0.000 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & mixed & 0.013 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & negative & 0.000 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & neutral & 0.001 \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & positive & 0.000 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & coal & 0.124 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.031 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & general & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & hydrogen & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & multiple & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & none & 0.000 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & nuclear & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & oil & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & other & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & solar & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & storage & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & wind & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & coal & 0.124 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.006 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & general & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & hydrogen & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & multiple & 0.331 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & none & 0.000 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & nuclear & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & oil & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & other & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & 0.331 \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & solar & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & storage & not measured (no support) \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & wind & not measured (no support) \\
+clean\_\allowbreak{}en & element & F1a & 0.000 \\
+clean\_\allowbreak{}en & element & F1b & 0.000 \\
+clean\_\allowbreak{}en & element & F2a & not measured (no support) \\
+clean\_\allowbreak{}en & element & F2b & 0.000 \\
+clean\_\allowbreak{}en & element & F2c & 0.000 \\
+clean\_\allowbreak{}en & element & F3a & 0.041 \\
+clean\_\allowbreak{}en & element & F3b & 0.000 \\
+clean\_\allowbreak{}en & element & F4a & 0.038 \\
+clean\_\allowbreak{}en & element & F4b & 0.034 \\
+clean\_\allowbreak{}en & element & F5a & 0.004 \\
+clean\_\allowbreak{}en & element & F5b & 0.043 \\
+clean\_\allowbreak{}en & element & F6a & 0.000 \\
+clean\_\allowbreak{}en & element & F6b & 0.131 \\
+clean\_\allowbreak{}en & element & F7a & 0.018 \\
+clean\_\allowbreak{}en & element & F7b & 0.042 \\
+clean\_\allowbreak{}en & element & F8a & 0.000 \\
+clean\_\allowbreak{}en & element & F9 & 0.140 \\
+clean\_\allowbreak{}en & technology & general & 0.000 \\
+clean\_\allowbreak{}en & technology & hydrogen & 0.007 \\
+clean\_\allowbreak{}en & technology & nuclear & 0.000 \\
+clean\_\allowbreak{}en & technology & other\_\allowbreak{}renewable & 0.011 \\
+clean\_\allowbreak{}en & technology & solar & 0.000 \\
+clean\_\allowbreak{}en & technology & storage & 0.013 \\
+clean\_\allowbreak{}en & technology & wind & 0.000 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & mixed & 0.013 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & negative & 0.000 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & neutral & 0.376 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & positive & 0.000 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & mixed & 0.013 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & negative & 0.000 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & neutral & 0.001 \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & positive & 0.000 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & coal & 0.116 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & fossil\_\allowbreak{}generic & 0.002 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & general & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & hydrogen & 0.379 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & multiple & 0.357 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & natural\_\allowbreak{}gas & 0.120 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & none & 0.000 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & nuclear & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & oil & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & other & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & other\_\allowbreak{}renewable & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & solar & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & storage & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & wind & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & coal & 0.116 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & fossil\_\allowbreak{}generic & 0.000 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & general & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & grid\_\allowbreak{}status\_\allowbreak{}quo & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & hydrogen & 0.379 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & multiple & 0.357 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & natural\_\allowbreak{}gas & 0.003 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & none & 0.000 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & nuclear & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & oil & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & other & 0.388 \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & other\_\allowbreak{}renewable & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & solar & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & storage & not measured (no support) \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & wind & not measured (no support) \\
+\end{longtable}
+\endgroup

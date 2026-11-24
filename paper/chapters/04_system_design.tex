@@ -1,0 +1,29 @@
+RQ1 asks why each part of the pipeline is the way it is. Four decisions answer it, each guarding the validation against one threat. One frozen codebook supplies the definitions for the model's request and the coder's sheets, though the instructions each receives differ (Section~\ref{subsec:codebook}). A split registry keeps calibration and development paragraphs out of every evaluation figure. One stateless call codes each paragraph untranslated, so agreement is measured on source text. A pre-run gate and an append-only journal tie every prediction to its configuration. Sections~\ref{subsec:architecture},~\ref{subsec:codebook} and~\ref{subsec:extraction_call} cover the pipeline (Figure~\ref{fig:architecture}), the codebook (Table~\ref{tab:codebook_elements}) and the call.
+
+\subsection{Architecture Overview}\label{subsec:architecture}
+
+A split registry (Figure~\ref{fig:architecture}, centre) gives every corpus paragraph a permanent identity and a fixed role, such as calibration or evaluation.
+
+\input{images/architecture}
+
+One builder assembles every model request. A pre-run gate refuses any configuration whose codebook differs from its recorded digest, a cryptographic fingerprint, so no edited codebook reaches the model unnoticed. Every run records the digests of its prompt, tool configuration, codebook and sample manifest (Table~\ref{tab:electronic}). Raw responses enter an append-only journal before derivation, so a crash cannot lose a paid call.
+
+The coder's labels are checked against the codebook and stored without paragraph text as the scoring reference. As a precaution, complete paragraph texts, raw responses and coding sheets stay outside the repository, because no basis for storing the hand-collected texts was clarified (Table~\ref{tab:topic_requirements}).
+
+\subsection{The Codebook as Research Instrument}\label{subsec:codebook}
+
+The codebook, a single versioned file, defines technologies, elements with inclusion and exclusion rules, and derived frames (Table~\ref{tab:codebook_elements}). It was frozen as version~1.0 after two calibration sessions.
+
+The prompt, tool schema and coding-sheet entry fields are rendered from this file, and the prompt carries the full definitions motivated in Section~\ref{subsec:stream_llm} (Appendix~\ref{app:instrument}). Of the codebook's eleven exclusion rules, the renderer passes four to the model as written, rewords four and omits three, as decided on 2 September 2026 (Table~\ref{tab:rule_concordance}). Which documents the coder consulted was not logged.
+
+\input{tables/tab_codebook_elements}
+
+The source is shared, but history and context are not. The prompt omits the calibration history and category frequencies to avoid installing a label prior, whereas the coder ran the calibration and cannot unlearn its outcomes. Both instruments restrict coding to the paragraph, yet the coder saw more context (Section~\ref{subsec:limitations_future}).
+
+\subsection{The Extraction Call}\label{subsec:extraction_call}
+
+One stateless, history-free call returns all technology records of a paragraph. It carries only the system prompt, tool schema and paragraph, and forces one tool whose schema prescribes the answer format. One sentence may contrast two technologies, and in \textcite[p.~9]{lupo2024humanlevelcoding}, joint coding performed like separate runs at almost a third of their cost. Adding labelled examples worked best in that study but would have revised the frozen instrument.
+
+English instructions accompany paragraphs in their original language, as in \textcite[pp.~1184, 1186]{toernberg2025outperform}. The provider exposes no seed, so repeated byte-identical requests measure run-to-run variation (Section~\ref{subsec:metrics}).
+
+Responses are validated in a fixed order: first the stop reason, so that a truncated answer counts as a failure, not an abstention. The schema follows, then relational rules a schema cannot express, such as one evaluation per frame present.

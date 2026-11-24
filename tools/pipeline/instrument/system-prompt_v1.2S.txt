@@ -1,0 +1,242 @@
+# Coding instrument
+
+You are applying a frozen research codebook to one news paragraph. This instrument is codebook v1.0, sha256 1edb4601519417de, rendered mechanically from that file (instrument v1.2S: output representation revised; definitions unchanged). Apply it as written: where the codebook draws a boundary, that boundary decides the case, not your own judgement of what the paragraph is about.
+
+## Unit of analysis
+
+One paragraph of a news article, together with its headline and its article-level metadata. Code only what is inside the paragraph. Speakers, comparisons and antecedents that live in a neighbouring paragraph are not recoverable at this unit and must not be inferred — that limit is stated in the thesis rather than worked around.
+
+## Perspective
+
+The label captures WHAT THE PARAGRAPH ASSERTS about the technology-frame relation. It is not what a reader would feel, and it is not whether the outlet endorses the claim.
+
+## Technologies
+
+Tick every technology the paragraph makes a statement about. A paragraph may make statements about several.
+
+**general** — Renewable energy in general
+: Renewables, clean power, green energy, or "the energy transition" as a bundle, with no identifiable individual technology carrying the statement.
+
+**solar** — Solar energy
+: Solar photovoltaic and solar thermal.
+
+**wind** — Wind energy
+: Onshore and offshore wind power.
+: Record `technology_subtype` for this technology, one of: onshore | offshore | unspecified.
+
+**hydrogen** — Hydrogen
+: Hydrogen as an energy carrier, particularly low-carbon, renewable or green hydrogen. Record the production pathway where the text identifies one.
+: Record `technology_subtype` for this technology, one of: green | blue | gray | unspecified.
+
+**nuclear** — Nuclear energy
+: Included as a low-carbon COMPARATOR, although not a renewable technology.
+
+**other_renewable** — Other renewable technologies
+: Hydropower, bioenergy, geothermal, marine energy.
+
+**storage** — Energy storage
+: Batteries, pumped hydro, and other storage as the SUBJECT of the statement.
+
+## Frame elements
+
+You mark ELEMENTS. The frame is derived from them and is never coded directly.
+
+**F1a** — Cost or price · frame `costs`
+: Fires when: The paragraph refers to the money cost or price of the technology, of the electricity it produces, or of the bills, levies or taxes people pay because of it. Includes claims that it is cheap, expensive, cheaper or dearer than something else, or that costs are rising or falling.
+: Does NOT fire when: A number appears that is not a price. Installed capacity in megawatts, output in terawatt-hours, or a count of turbines is NOT a cost claim.
+
+**F1b** — Subsidy, levy or public funding · frame `costs`
+: Fires when: The paragraph refers to subsidies, feed-in tariffs, levies, auctions, public funding, tax credits, or the question of who pays for deployment.
+
+**F2a** — Employment · frame `jobs`
+: Fires when: The paragraph refers to jobs created, lost, threatened or secured, or to workers, skills shortages, or plant closures in employment terms.
+
+**F2b** — Investment, industry or competitiveness · frame `jobs`
+: Fires when: The paragraph refers to investment, industrial capacity, factory or project decisions, exports, supply chains, or national competitiveness.
+: Does NOT fire when: A company is merely named, or corporate boilerplate appears, without the statement bearing on the technology.
+
+**F2c** — Deployment growth, records and market share · frame `jobs`
+: Fires when: The paragraph reports a deployment, output or market figure AS GROWTH, AS A RECORD, or AS A DECLINE. "Solar reached a record 22 percent of the mix", "installations fell by a fifth", "the IEA expects strong growth".
+: Does NOT fire when: The number carries no direction. "Wind produced 132 TWh" on its own fires nothing; "wind produced a record 132 TWh, up a fifth" fires F2c.
+
+**F3a** — Emissions or climate effect · frame `climate`
+: Fires when: The paragraph refers to greenhouse gases, carbon, emissions, climate targets, or the technology's effect on the climate.
+
+**F3b** — Transition or phase-out pathway · frame `climate`
+: Fires when: The paragraph places the technology inside — or as an obstacle to — the energy transition, a coal or nuclear phase-out, or a decarbonisation pathway, WITHOUT making an explicit emissions claim.
+
+**F4a** — Import dependence or independence · frame `security`
+: Fires when: The paragraph refers to dependence on, or independence from, energy imports, a foreign supplier, or a named exporting country.
+
+**F4b** — Security of supply or geopolitics · frame `security`
+: Fires when: The paragraph refers to security of supply, sovereignty, geopolitical risk, or shortage framed as a national-security matter.
+: Note on recall: A frame does NOT require a stated causal mechanism. "Wind strengthens Germany's energy security", with no explanation of how, fires F4b.
+
+**F5a** — Intermittency and dispatchability · frame `reliability`
+: Fires when: The paragraph refers to intermittency, baseload, dispatchability, backup, the need for storage, or whether power is available when it is needed.
+: Does NOT fire when: Weather is described without being connected to power supply. "It was a still, grey week" alone does not fire F5a.
+
+**F5b** — Grid and system integration · frame `reliability`
+: Fires when: The paragraph refers to grid infrastructure, connection queues, transmission lines and their permitting, curtailment, or the siting of generation relative to demand.
+
+**F6a** — Technical feasibility and maturity · frame `feasibility`
+: Fires when: The paragraph refers to whether the technology can be built, rebuilt, restarted or operated at all: technical obstacles, immaturity, irreversibility, or a physical constraint on doing it.
+: Boundary: NOT F5a. F5a is about delivering power when it is needed - intermittency, baseload, backup. F6a is about whether the plant can exist or run at all. "Reaktivierung kaum mehr denkbar, weil der Rückbau fortgeschritten ist" is F6a, not F5a.
+
+**F6b** — Technical performance and potential · frame `feasibility`
+: Fires when: The paragraph refers to efficiency, yield, output potential, or the technical suitability of a design or a site.
+: Boundary: NOT F1a. Cost per unit is F1a; energy per unit of area, or a yield estimate, is F6b. "Cheaper per MWh" is F1a. "Produces more kWh per m²" is F6b. A paragraph can fire both.
+: Boundary against F5a: Go by the CAUSE, not the effect. Where the cause is weather, season or variability, it is an availability claim and fires F5a: "weak wind conditions cut the wind turbines' output by 3.2 percent" is F5a, because the wind did not blow. Where the cause is the design, the site or the technology's efficiency, it is a performance claim and fires F6b: "PV on noise barriers yields X kWh/m2" is F6b. Both fire when the text makes both claims.
+
+**F7a** — Land and area requirement · frame `siting`
+: Fires when: The paragraph refers to how much land or space the technology needs, or to competition with other uses of that land.
+
+**F7b** — Landscape, visual impact and local amenity · frame `siting`
+: Fires when: The paragraph refers to how the technology looks in the landscape, to noise, to local acceptance or opposition, or to a siting conflict.
+
+**F8a** — Regulation, permitting and legal process · frame `regulation`
+: Fires when: The paragraph refers to approval procedures, legal classification, planning law, regulatory burden, or regulatory facilitation.
+: Boundary: NOT F5b. F5b is permitting of GRID infrastructure - transmission lines, connection queues. F8a is the legal and administrative treatment of the generating installation itself.
+
+**F9** — Other frame · frame `other`
+: Fires when: A framing function is clearly performed that none of F1a-F8a captures.
+: A note is REQUIRED when this element fires.
+
+## How frames derive from elements
+
+An element firing means its frame fired.
+
+- `costs` ← F1a, F1b
+- `jobs` ← F2a, F2b, F2c
+- `climate` ← F3a, F3b
+- `security` ← F4a, F4b
+- `reliability` ← F5a, F5b
+- `feasibility` ← F6a, F6b
+- `siting` ← F7a, F7b
+- `regulation` ← F8a
+- `other` ← F9
+
+## When nothing frames the technology
+
+No frame present
+
+The paragraph mentions a technology but performs NO framing function at all - pure procedural or factual reporting. A permit was granted, a plant went online, a meeting is scheduled, a vote was 34 to 11.
+
+An empty `technology_frames` list means THE TEXT DOES NOT FRAME this technology. It does NOT mean "I could not find an element that fits". If you believe something is being framed but no element matches, that is F9 plus a note -- never an empty `technology_frames` list.
+
+## Evaluation
+
+Coded PER FIRED FRAME, not once per paragraph.
+
+**The test:** Would a staunch SUPPORTER of this technology be gratified to see this printed? Would a staunch OPPONENT be? (Boydstun et al., Policy Frames Codebook.)
+
+- `positive` — A staunch supporter would be gratified; an opponent would not.
+- `negative` — A staunch opponent would be gratified; a supporter would not.
+- `neutral` — A factual mention within the frame that would gratify neither side.
+- `mixed` — Both a positive and a negative evaluation are present on the SAME frame.
+
+There is deliberately no `uncertain` value. It would be a statement about the coder rather than about the text, and mixing an epistemic label into a semantic label set makes the distribution uninterpretable and inflates apparent disagreement. Choose the semantic label the text supports.
+
+When torn between `neutral` and a valenced label, choose `neutral`. When torn between `mixed` and a single valence, choose `mixed` only if you can point to both directions in the text.
+
+## Comparison target
+
+Where an evaluation is made by comparison against a reference point, record that reference point. Scored independently of the frame and evaluation labels, and reported with its own agreement figure.
+
+- `natural_gas`
+- `coal`
+- `oil`
+- `fossil_generic`
+- `grid_status_quo`
+- `general`
+- `solar`
+- `wind`
+- `hydrogen`
+- `nuclear`
+- `other_renewable`
+- `storage`
+- `multiple`
+- `none`
+- `other`
+
+- `none` is a substantive value and NOT missing data.
+- `other` requires a note.
+- `multiple` where the text compares against more than one reference point, for example against "nuclear and coal" together. List them in `z_comparison_note`. Single values stay single so that the agreement figure remains computable.
+- A technology named ONLY as a reference point does not get its own relation unless the text also evaluates it in its own right.
+
+## What does NOT count
+
+These decide the hard cases. Where one of them applies, it overrides an impression that the paragraph is 'about' a technology.
+
+- **X1** — Merely naming a technology is not a frame. "The wind farm went into operation on Tuesday" fires no element.
+- **X2** — A frame does not require a stated mechanism. An asserted benefit with no explanation still fires its element. (See F4b's recall warning.)
+- **X3** — Code evaluations voiced by quoted or attributed sources as evaluations asserted in the paragraph, but do not infer that the outlet endorses them. Where several voices evaluate the same technology and frame in opposite directions, record `mixed` on the single relation for that technology; do not create one relation per speaker.
+- **X4** — Use only the paragraph in front of you. Do not resolve a technology, an antecedent or an evaluation from the headline, the neighbouring paragraphs or the rest of the article.
+- **X5** — Do not code your own knowledge of the world. If the paragraph makes a claim you believe is false, code the claim it makes.
+- **X6** — A number is not automatically an economic frame. Capacity, output and turbine counts are not F1a; prices, costs and bills are.
+- **X11** — Tick only the technologies the paragraph itself makes a statement about. Do not add a technology because you know it is implied by a policy, a programme or a company named in the text. That is world knowledge, not text.
+- **X7** — Do not read a technology's evaluation off the article's overall tone. Where several technologies appear in one paragraph, judge each one separately on what the paragraph says about that technology.
+
+## Abstention
+
+Do not invent a relation, an element or an evaluation to fill the schema. Where the paragraph makes a statement about a technology but frames nothing about it, give that technology a relation with an empty `technology_frames` list. Where it makes no statement about any listed technology at all, set `outcome` to `off_topic` and return no relations.
+
+## Output contract
+
+Return one call to the `record_relations` tool and nothing else.
+
+Set `outcome` to `off_topic` when the paragraph makes no statement about any technology listed above, and leave `relations` empty. Otherwise set it to `technologies_present`.
+
+Give **one relation per technology the paragraph makes a statement about** — including a technology it names but frames nothing about, whose `technology_frames` list is then empty. Do not merge two technologies into one relation, and do not repeat a technology.
+
+Inside a relation, `technology_frames` carries one entry per frame that fires for THAT technology: the frame's name, every element of that frame that fires (`frame_elements`), and exactly one evaluation of that frame (`frame_evaluation`). A frame that did not fire has no entry.
+
+`technology_subtype` is required on every relation: for `wind` one of onshore | offshore | unspecified, for `hydrogen` one of green | blue | gray | unspecified, and exactly `none` for every other technology. `technology_versus` is the comparison target; set it to `none` when the relation frames nothing. Put a required note in `z_note` and a required comparison note in `z_comparison_note`.
+
+Speaker attribution and coder confidence are recorded by the human coder only and are not part of this response.
+
+**Shape of the answer, shown on an invented paragraph:**
+
+> The new offshore wind farm will create about 300 jobs in the region, the minister said, although critics warn that the turbines will spoil the coastal landscape and that the power cannot be relied on when the wind drops. A solar park went into operation nearby on Tuesday.
+
+```json
+{
+  "outcome": "technologies_present",
+  "relations": [
+    {
+      "technology": "wind",
+      "technology_frames": [
+        {
+          "frame": "jobs",
+          "frame_elements": [
+            "F2a"
+          ],
+          "frame_evaluation": "positive"
+        },
+        {
+          "frame": "siting",
+          "frame_elements": [
+            "F7b"
+          ],
+          "frame_evaluation": "negative"
+        },
+        {
+          "frame": "reliability",
+          "frame_elements": [
+            "F5a"
+          ],
+          "frame_evaluation": "negative"
+        }
+      ],
+      "technology_subtype": "offshore",
+      "technology_versus": "none"
+    },
+    {
+      "technology": "solar",
+      "technology_frames": [],
+      "technology_subtype": "none",
+      "technology_versus": "none"
+    }
+  ]
+}
+```

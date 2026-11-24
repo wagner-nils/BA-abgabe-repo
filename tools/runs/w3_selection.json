@@ -1,0 +1,82 @@
+{
+  "kind": "w3_selection",
+  "selected_at": "2026-10-14T09:54:56.308586+00:00",
+  "seal_digest": "a333c43bee1bdd86470a5dfff378e0d11a65f6062ac69a66d0e1b948142541c7",
+  "candidates": {
+    "v0": {
+      "run_id": "a1_w3_v10_20261014",
+      "slot": "v0",
+      "instrument": "v1.0",
+      "assessed": true,
+      "eligible": true,
+      "scoreable": true,
+      "problems": [],
+      "S": "638/963",
+      "S_float": 0.6625129802699896,
+      "I": 0,
+      "terminal_outcomes": {
+        "technologies_present": 78,
+        "off_topic": 18
+      },
+      "retries": 0,
+      "feedback_retries": 0,
+      "cost_usd": 0.50504,
+      "started_at": "2026-10-14T09:39:31.631749+00:00",
+      "first_returned_missing": 0
+    },
+    "v1": {
+      "run_id": "a1_w3_v11S_20261014",
+      "slot": "v1",
+      "instrument": "v1.1S",
+      "assessed": true,
+      "eligible": false,
+      "scoreable": true,
+      "problems": [
+        "4 terminal(s) not successful: {'technologies_present': 78, 'parse_failed': 4, 'off_topic': 14}"
+      ],
+      "S": "2418/3745",
+      "S_float": 0.6456608811748998,
+      "I": 20,
+      "terminal_outcomes": {
+        "technologies_present": 78,
+        "parse_failed": 4,
+        "off_topic": 14
+      },
+      "retries": 22,
+      "feedback_retries": 21,
+      "cost_usd": 0.609708,
+      "started_at": "2026-10-14T09:42:35.795749+00:00",
+      "first_returned_missing": 0
+    },
+    "v2": {
+      "run_id": "a1_w3_v11E_20261014",
+      "slot": "v2",
+      "instrument": "v1.1E",
+      "assessed": true,
+      "eligible": false,
+      "scoreable": true,
+      "problems": [
+        "1 terminal(s) not successful: {'technologies_present': 77, 'parse_failed': 1, 'off_topic': 18}"
+      ],
+      "S": "157645/240408",
+      "S_float": 0.6557394096702273,
+      "I": 9,
+      "terminal_outcomes": {
+        "technologies_present": 77,
+        "parse_failed": 1,
+        "off_topic": 18
+      },
+      "retries": 9,
+      "feedback_retries": 9,
+      "cost_usd": 0.735349,
+      "started_at": "2026-10-14T09:48:50.883154+00:00",
+      "first_returned_missing": 0
+    }
+  },
+  "decision": {
+    "outcome": "not_achieved",
+    "selected": "v1.0",
+    "baseline_guard": "not applied",
+    "reason": "V1 (v1.1S) is not eligible: 4 terminal(s) not successful: {'technologies_present': 78, 'parse_failed': 4, 'off_topic': 14}"
+  }
+}

@@ -1,0 +1,2982 @@
+{
+  "declared": "pre-analysis specification §4m (2026-11-08)",
+  "B": 2000,
+  "seed": 20260905,
+  "rule": "per sample: better / worse if the 95 % paired article-resampling interval of the element micro-F1 difference lies entirely above / below zero, otherwise no distinguishable difference; overall better / worse only if both samples agree, otherwise no consistent difference (§4k's rule, as §4m declares)",
+  "configs": {
+    "A2": {
+      "sonnet": {
+        "run_id": "a2_sonnet_20261013",
+        "model_key": "sonnet",
+        "repeats": 3,
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 339,
+          "contract_invalid": 29,
+          "schema_invalid": 3,
+          "ok_off_topic": 8
+        },
+        "output_tokens": 59296,
+        "calls": 379,
+        "cost_usd": 2.180693,
+        "execution1_failed": 5,
+        "element_f1_iv": [
+          0.5805066378278154,
+          0.7050337558087766
+        ],
+        "technology_f1": 0.934988770484702,
+        "gap_interval": {
+          "diff": 0.20188569137468626,
+          "lo": 0.13398242184344733,
+          "hi": 0.26242083203465644,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7591325333068862,
+            "recall": 0.5572468419322,
+            "f1": 0.642708651852619,
+            "gap": 0.20188569137468626,
+            "marked_w": 1440.4285714285718,
+            "reference_w": 1962.2833333333338
+          },
+          "de": {
+            "precision": 0.7097782408096444,
+            "recall": 0.5524386147139344,
+            "f1": 0.6213019678687827,
+            "gap": 0.15733962609570995,
+            "marked_w": 479.92857142857144,
+            "reference_w": 616.6166666666667
+          },
+          "en": {
+            "precision": 0.7837931632830123,
+            "recall": 0.559450086698043,
+            "f1": 0.6528871865288717,
+            "gap": 0.22434307658496933,
+            "marked_w": 960.4999999999999,
+            "reference_w": 1345.6666666666667
+          }
+        }
+      },
+      "opus": {
+        "run_id": "mc_opus46_a2_20261019",
+        "model_key": "opus",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 118,
+          "contract_invalid": 2,
+          "ok_off_topic": 1
+        },
+        "output_tokens": 15550,
+        "calls": 121,
+        "cost_usd": 1.065701,
+        "execution1_failed": 1,
+        "element_f1_iv": [
+          0.6257481244994211,
+          0.7227982003369945
+        ],
+        "technology_f1": 0.9454214397526838,
+        "gap_interval": {
+          "diff": 0.20803729103023338,
+          "lo": 0.15149097088873564,
+          "hi": 0.261123511028056,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7940783340813921,
+            "recall": 0.5860410430511589,
+            "f1": 0.6743800614353532,
+            "gap": 0.20803729103023316,
+            "marked_w": 1448.1928571428575,
+            "reference_w": 1962.2833333333338
+          },
+          "de": {
+            "precision": 0.7316595000023395,
+            "recall": 0.6037979913429274,
+            "f1": 0.6616077850645229,
+            "gap": 0.12786150865941204,
+            "marked_w": 508.8595238095238,
+            "reference_w": 616.6166666666667
+          },
+          "en": {
+            "precision": 0.8278921220723918,
+            "recall": 0.577904384443894,
+            "f1": 0.6806710430342816,
+            "gap": 0.2499877376284978,
+            "marked_w": 939.3333333333334,
+            "reference_w": 1345.6666666666667
+          }
+        }
+      },
+      "opus5": {
+        "run_id": "mc_opus5_a2_20261101",
+        "model_key": "opus5",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-5",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 120
+        },
+        "output_tokens": 20604,
+        "calls": 120,
+        "cost_usd": 1.198467,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.6981722359194049,
+          0.7793553234439433
+        ],
+        "technology_f1": 0.9662242883856224,
+        "gap_interval": {
+          "diff": 0.016449354379725167,
+          "lo": -0.045104842073288576,
+          "hi": 0.07557385198275568,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7478834587212418,
+            "recall": 0.7314341043415167,
+            "f1": 0.7395673267733658,
+            "gap": 0.016449354379725167,
+            "marked_w": 1919.1238095238095,
+            "reference_w": 1962.2833333333333
+          },
+          "de": {
+            "precision": 0.7040709427057974,
+            "recall": 0.7370018418481807,
+            "f1": 0.7201601294920869,
+            "gap": -0.03293089914238334,
+            "marked_w": 645.4571428571429,
+            "reference_w": 616.6166666666668
+          },
+          "en": {
+            "precision": 0.7700863648259618,
+            "recall": 0.728882833787466,
+            "f1": 0.7489182998218376,
+            "gap": 0.04120353103849583,
+            "marked_w": 1273.6666666666665,
+            "reference_w": 1345.6666666666665
+          }
+        }
+      },
+      "opus5_rep": {
+        "run_id": "mc_opus5_rep_a2_20261108",
+        "model_key": "opus5_rep",
+        "repeats": 3,
+        "model_id": "eu.anthropic.claude-opus-5",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 360,
+          "error": 1
+        },
+        "output_tokens": 61659,
+        "calls": 361,
+        "cost_usd": 3.591192,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.703443787158454,
+          0.7778668264707561
+        ],
+        "technology_f1": 0.9587330057968754,
+        "gap_interval": {
+          "diff": 0.01773221437777639,
+          "lo": -0.04009758319484591,
+          "hi": 0.06962440673913317,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7504063706995542,
+            "recall": 0.7326741563217778,
+            "f1": 0.741434257322529,
+            "gap": 0.01773221437777639,
+            "marked_w": 1915.9142857142856,
+            "reference_w": 1962.2833333333333
+          },
+          "de": {
+            "precision": 0.6992800363224919,
+            "recall": 0.7493271655230733,
+            "f1": 0.7234390756263361,
+            "gap": -0.05004712920058141,
+            "marked_w": 660.747619047619,
+            "reference_w": 616.6166666666667
+          },
+          "en": {
+            "precision": 0.7773204089762317,
+            "recall": 0.7250433490215508,
+            "f1": 0.750272348606216,
+            "gap": 0.052277059954680904,
+            "marked_w": 1255.1666666666665,
+            "reference_w": 1345.6666666666665
+          }
+        }
+      },
+      "opus5_req55": {
+        "run_id": "mc_opus5_req55_a2_20261108r2",
+        "model_key": "opus5_req55",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-5",
+        "inference_config": {
+          "maxTokens": 8192
+        },
+        "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=low in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 119,
+          "no_tool_use": 1,
+          "error": 1,
+          "contract_invalid": 3
+        },
+        "output_tokens": 30008,
+        "calls": 124,
+        "cost_usd": 1.388557,
+        "execution1_failed": 1,
+        "element_f1_iv": [
+          0.6989023905606168,
+          0.7834692390587578
+        ],
+        "technology_f1": 0.9610825318720645,
+        "gap_interval": {
+          "diff": 0.08595980198290909,
+          "lo": 0.024613201999734824,
+          "hi": 0.14276910678165644,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7890729148652531,
+            "recall": 0.7031131128823442,
+            "f1": 0.7436170868045395,
+            "gap": 0.08595980198290887,
+            "marked_w": 1748.5166666666667,
+            "reference_w": 1962.2833333333333
+          },
+          "de": {
+            "precision": 0.7278442290083232,
+            "recall": 0.6844454569675534,
+            "f1": 0.7054780345302438,
+            "gap": 0.043398772040769806,
+            "marked_w": 579.85,
+            "reference_w": 616.6166666666667
+          },
+          "en": {
+            "precision": 0.8194523673702225,
+            "recall": 0.711667079514491,
+            "f1": 0.7617658756462946,
+            "gap": 0.1077852878557315,
+            "marked_w": 1168.6666666666665,
+            "reference_w": 1345.6666666666665
+          }
+        }
+      },
+      "opus55": {
+        "run_id": "mc_opus55_a2_20261108r2",
+        "model_key": "opus55",
+        "repeats": 3,
+        "model_id": "eu.anthropic.claude-opus-5-5",
+        "inference_config": {
+          "maxTokens": 8192
+        },
+        "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=low in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 357,
+          "ok_off_topic": 3
+        },
+        "output_tokens": 116128,
+        "calls": 360,
+        "cost_usd": 3.39728,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.6854495293659524,
+          0.7696622294140342
+        ],
+        "technology_f1": 0.955523691931865,
+        "gap_interval": {
+          "diff": 0.14579456048755934,
+          "lo": 0.08558225943247266,
+          "hi": 0.1950419327249745,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.8061258800508958,
+            "recall": 0.6603313195633366,
+            "f1": 0.7259811827419089,
+            "gap": 0.14579456048755923,
+            "marked_w": 1607.388095238095,
+            "reference_w": 1962.283333333333
+          },
+          "de": {
+            "precision": 0.7314250470075769,
+            "recall": 0.6593893713389888,
+            "f1": 0.6935417055875497,
+            "gap": 0.07203567566858815,
+            "marked_w": 555.8880952380953,
+            "reference_w": 616.6166666666668
+          },
+          "en": {
+            "precision": 0.8456173720082422,
+            "recall": 0.6607629427792916,
+            "f1": 0.7418480150177292,
+            "gap": 0.18485442922895057,
+            "marked_w": 1051.5,
+            "reference_w": 1345.6666666666665
+          }
+        }
+      },
+      "opus55_high": {
+        "run_id": "mc_opus55_high_a2_20261108r2",
+        "model_key": "opus55_high",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-5-5",
+        "inference_config": {
+          "maxTokens": 8192
+        },
+        "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=high in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 120,
+          "error": 1
+        },
+        "output_tokens": 68995,
+        "calls": 121,
+        "cost_usd": 1.798711,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.6714565900465945,
+          0.7497643218003116
+        ],
+        "technology_f1": 0.9610932814226338,
+        "gap_interval": {
+          "diff": 0.19607786118661674,
+          "lo": 0.13182660961972625,
+          "hi": 0.2505505707784099,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.8203178440054658,
+            "recall": 0.6242399828188493,
+            "f1": 0.7089715445641973,
+            "gap": 0.19607786118661652,
+            "marked_w": 1493.2452380952382,
+            "reference_w": 1962.2833333333333
+          },
+          "de": {
+            "precision": 0.7246681011911834,
+            "recall": 0.6358932577544897,
+            "f1": 0.6773844584478192,
+            "gap": 0.08877484343669373,
+            "marked_w": 541.0785714285714,
+            "reference_w": 616.6166666666667
+          },
+          "en": {
+            "precision": 0.8746718011552599,
+            "recall": 0.6189001733960862,
+            "f1": 0.7248857619496628,
+            "gap": 0.2557716277591737,
+            "marked_w": 952.1666666666666,
+            "reference_w": 1345.6666666666665
+          }
+        }
+      }
+    },
+    "A3": {
+      "sonnet": {
+        "run_id": "a3_sonnet_20261019",
+        "model_key": "sonnet",
+        "repeats": 3,
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "contract_invalid": 42,
+          "ok_technologies_present": 142,
+          "schema_invalid": 5
+        },
+        "output_tokens": 29261,
+        "calls": 189,
+        "cost_usd": 1.087634,
+        "execution1_failed": 8,
+        "element_f1_iv": [
+          0.5106382978723404,
+          0.6218667233430336
+        ],
+        "technology_f1": 0.8648648648648649,
+        "gap_interval": {
+          "diff": 0.16428571428571426,
+          "lo": 0.07099391480730222,
+          "hi": 0.24500907441016334,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.6571428571428571,
+            "recall": 0.4928571428571429,
+            "f1": 0.563265306122449,
+            "gap": 0.16428571428571426,
+            "marked_w": 105.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.6779661016949152,
+            "recall": 0.47058823529411764,
+            "f1": 0.5555555555555556,
+            "gap": 0.20737786640079758,
+            "marked_w": 59.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.6304347826086957,
+            "recall": 0.5272727272727272,
+            "f1": 0.5742574257425742,
+            "gap": 0.10316205533596845,
+            "marked_w": 46.0,
+            "reference_w": 55.0
+          }
+        }
+      },
+      "opus": {
+        "run_id": "mc_opus46_a3_20261019",
+        "model_key": "opus",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 55
+        },
+        "output_tokens": 6929,
+        "calls": 55,
+        "cost_usd": 0.483068,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.6299958563535911,
+          0.7282186234817812
+        ],
+        "technology_f1": 0.9447852760736196,
+        "gap_interval": {
+          "diff": 0.11092436974789921,
+          "lo": 0.01276005547850212,
+          "hi": 0.18747474747474746,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7394957983193278,
+            "recall": 0.6285714285714286,
+            "f1": 0.6795366795366795,
+            "gap": 0.11092436974789921,
+            "marked_w": 119.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.7692307692307693,
+            "recall": 0.5882352941176471,
+            "f1": 0.6666666666666666,
+            "gap": 0.1809954751131222,
+            "marked_w": 65.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.7037037037037037,
+            "recall": 0.6909090909090909,
+            "f1": 0.6972477064220184,
+            "gap": 0.012794612794612803,
+            "marked_w": 54.0,
+            "reference_w": 55.0
+          }
+        }
+      },
+      "opus5": {
+        "run_id": "mc_opus5_a3_20261101",
+        "model_key": "opus5",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-5",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 55
+        },
+        "output_tokens": 9425,
+        "calls": 55,
+        "cost_usd": 0.552035,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.6,
+          0.7514792899408284
+        ],
+        "technology_f1": 0.9565217391304348,
+        "gap_interval": {
+          "diff": -0.09596273291925472,
+          "lo": -0.1909539735626692,
+          "hi": -0.0037358202443281696,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.639751552795031,
+            "recall": 0.7357142857142858,
+            "f1": 0.6843853820598007,
+            "gap": -0.09596273291925472,
+            "marked_w": 161.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.7191011235955056,
+            "recall": 0.7529411764705882,
+            "f1": 0.735632183908046,
+            "gap": -0.03384005287508263,
+            "marked_w": 89.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.5416666666666666,
+            "recall": 0.7090909090909091,
+            "f1": 0.6141732283464567,
+            "gap": -0.16742424242424248,
+            "marked_w": 72.0,
+            "reference_w": 55.0
+          }
+        }
+      },
+      "opus5_rep": {
+        "run_id": "mc_opus5_rep_a3_20261108",
+        "model_key": "opus5_rep",
+        "repeats": 3,
+        "model_id": "eu.anthropic.claude-opus-5",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 163,
+          "contract_invalid": 6
+        },
+        "output_tokens": 28894,
+        "calls": 169,
+        "cost_usd": 1.696271,
+        "execution1_failed": 1,
+        "element_f1_iv": [
+          0.6016887742569392,
+          0.7190398579530397
+        ],
+        "technology_f1": 0.9433962264150944,
+        "gap_interval": {
+          "diff": -0.08450134770889495,
+          "lo": -0.2010322692574601,
+          "hi": 0.033162962082491476,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.6226415094339622,
+            "recall": 0.7071428571428572,
+            "f1": 0.6622073578595318,
+            "gap": -0.08450134770889495,
+            "marked_w": 159.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.686046511627907,
+            "recall": 0.6941176470588235,
+            "f1": 0.6900584795321637,
+            "gap": -0.008071135430916532,
+            "marked_w": 86.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.547945205479452,
+            "recall": 0.7272727272727273,
+            "f1": 0.625,
+            "gap": -0.17932752179327527,
+            "marked_w": 73.0,
+            "reference_w": 55.0
+          }
+        }
+      },
+      "opus5_req55": {
+        "run_id": "mc_opus5_req55_a3_20261108r2",
+        "model_key": "opus5_req55",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-5",
+        "inference_config": {
+          "maxTokens": 8192
+        },
+        "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=low in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 55,
+          "no_tool_use": 2
+        },
+        "output_tokens": 15349,
+        "calls": 57,
+        "cost_usd": 0.686262,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.6466974587410544,
+          0.7555591748099891
+        ],
+        "technology_f1": 0.9629629629629629,
+        "gap_interval": {
+          "diff": -0.09375,
+          "lo": -0.20437806873977082,
+          "hi": 0.00796320874101053,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.65625,
+            "recall": 0.75,
+            "f1": 0.7,
+            "gap": -0.09375,
+            "marked_w": 160.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.7386363636363636,
+            "recall": 0.7647058823529411,
+            "f1": 0.7514450867052023,
+            "gap": -0.026069518716577478,
+            "marked_w": 88.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.5555555555555556,
+            "recall": 0.7272727272727273,
+            "f1": 0.6299212598425197,
+            "gap": -0.1717171717171717,
+            "marked_w": 72.0,
+            "reference_w": 55.0
+          }
+        }
+      },
+      "opus55": {
+        "run_id": "mc_opus55_a3_20261108r2",
+        "model_key": "opus55",
+        "repeats": 3,
+        "model_id": "eu.anthropic.claude-opus-5-5",
+        "inference_config": {
+          "maxTokens": 8192
+        },
+        "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=low in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 164,
+          "ok_off_topic": 1,
+          "error": 1
+        },
+        "output_tokens": 54806,
+        "calls": 166,
+        "cost_usd": 1.599653,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.716252512843422,
+          0.8354489808046591
+        ],
+        "technology_f1": 0.9685534591194969,
+        "gap_interval": {
+          "diff": 0.03390191897654582,
+          "lo": -0.039126050420168035,
+          "hi": 0.08253140871424758,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.7910447761194029,
+            "recall": 0.7571428571428571,
+            "f1": 0.7737226277372263,
+            "gap": 0.03390191897654582,
+            "marked_w": 134.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.8289473684210527,
+            "recall": 0.7411764705882353,
+            "f1": 0.782608695652174,
+            "gap": 0.08777089783281733,
+            "marked_w": 76.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.7413793103448276,
+            "recall": 0.7818181818181819,
+            "f1": 0.7610619469026548,
+            "gap": -0.04043887147335423,
+            "marked_w": 58.0,
+            "reference_w": 55.0
+          }
+        }
+      },
+      "opus55_high": {
+        "run_id": "mc_opus55_high_a3_20261108r2",
+        "model_key": "opus55_high",
+        "repeats": 1,
+        "model_id": "eu.anthropic.claude-opus-5-5",
+        "inference_config": {
+          "maxTokens": 8192
+        },
+        "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=high in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 54,
+          "ok_off_topic": 1
+        },
+        "output_tokens": 31621,
+        "calls": 55,
+        "cost_usd": 0.826969,
+        "execution1_failed": 0,
+        "element_f1_iv": [
+          0.7912046908315564,
+          0.8691606757728253
+        ],
+        "technology_f1": 0.9487179487179487,
+        "gap_interval": {
+          "diff": 0.11381733021077278,
+          "lo": 0.020870643339302886,
+          "hi": 0.16390576511211152,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "by_population": {
+          "pooled": {
+            "precision": 0.8852459016393442,
+            "recall": 0.7714285714285715,
+            "f1": 0.8244274809160306,
+            "gap": 0.11381733021077278,
+            "marked_w": 122.0,
+            "reference_w": 140.0
+          },
+          "de": {
+            "precision": 0.9,
+            "recall": 0.7411764705882353,
+            "f1": 0.8129032258064516,
+            "gap": 0.1588235294117647,
+            "marked_w": 70.0,
+            "reference_w": 85.0
+          },
+          "en": {
+            "precision": 0.8653846153846154,
+            "recall": 0.8181818181818182,
+            "f1": 0.8411214953271028,
+            "gap": 0.047202797202797186,
+            "marked_w": 52.0,
+            "reference_w": 55.0
+          }
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "family": "same_request",
+      "model_key": "opus55",
+      "reference": "opus5_req55",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.017635904062630603,
+            "lo": -0.05058600954076253,
+            "hi": 0.01914629053566741,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.005558839940199456,
+            "lo": -0.019208766230390917,
+            "hi": 0.007049692477603009,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.0170529651856427,
+            "lo": -0.020243919253865372,
+            "hi": 0.05787305193767556,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.042781793319007555,
+            "lo": -0.08789491749445455,
+            "hi": 0.000979279837607483,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.07372262773722638,
+            "lo": 0.00612953142136019,
+            "hi": 0.15564795564795564,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.005590496156533953,
+            "lo": -0.018855218855218903,
+            "hi": 0.044401544401544424,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.13479477611940294,
+            "lo": 0.03388601537197278,
+            "hi": 0.24150177574835108,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.0071428571428571175,
+            "lo": -0.0390625,
+            "hi": 0.05714285714285716,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "as_run",
+      "model_key": "opus55",
+      "reference": "opus5",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.01358614403145686,
+            "lo": -0.04889576850372268,
+            "hi": 0.028447659987821172,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.010700596453757316,
+            "lo": -0.028425495046868532,
+            "hi": 0.006158980997891916,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.05824242132965418,
+            "lo": 0.013471281144304736,
+            "hi": 0.10427470726569554,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.07110278477818,
+            "lo": -0.11902794131707817,
+            "hi": -0.025158003638128812,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.08933724567742563,
+            "lo": 0.003952070632751714,
+            "hi": 0.20429090033205444,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.01203171998906205,
+            "lo": -0.024970963995354256,
+            "hi": 0.06655610834715309,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.1512932233243719,
+            "lo": 0.044196048564132506,
+            "hi": 0.2737028899780294,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.021428571428571352,
+            "lo": -0.04054054054054057,
+            "hi": 0.11904761904761907,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "as_run",
+      "model_key": "opus55",
+      "reference": "sonnet",
+      "A2": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.0832725308892901,
+            "lo": 0.02996699723957108,
+            "hi": 0.1364417093361523,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.020534921447163068,
+            "lo": -0.003829457582134599,
+            "hi": 0.044816455951835366,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.04699334674400979,
+            "lo": -0.002191132918671901,
+            "hi": 0.10358405013696981,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.1030844776311367,
+            "lo": 0.03541339372419938,
+            "hi": 0.163282928377106,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.21045732161477737,
+            "lo": 0.152454979221179,
+            "hi": 0.28836261777438255,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.10368859425463195,
+            "lo": 0.02985074626865669,
+            "hi": 0.18928571428571428,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.1339019189765458,
+            "lo": 0.08165289256198349,
+            "hi": 0.21654411764705883,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.26428571428571423,
+            "lo": 0.19130434782608696,
+            "hi": 0.36111111111111105,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "better"
+    },
+    {
+      "family": "as_run",
+      "model_key": "opus55",
+      "reference": "opus",
+      "A2": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.0516011213065557,
+            "lo": 0.005624770407290813,
+            "hi": 0.0997979994319752,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.01010225217918126,
+            "lo": -0.010184687332036146,
+            "hi": 0.02885357204051031,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.012047545969503859,
+            "lo": -0.038177484737016876,
+            "hi": 0.06547402173901062,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.0742902765121779,
+            "lo": 0.024355697705845447,
+            "hi": 0.1252695348598417,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.09418594820054682,
+            "lo": 0.041398890179378034,
+            "hi": 0.1689736288225826,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.023768183045877245,
+            "lo": -0.017504862461794946,
+            "hi": 0.07765988800471557,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.05154897780007517,
+            "lo": -0.018440463645943095,
+            "hi": 0.15244225004408396,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.12857142857142856,
+            "lo": 0.08163265306122447,
+            "hi": 0.18493150684931503,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "better"
+    },
+    {
+      "family": "request",
+      "model_key": "opus5_req55",
+      "reference": "opus5",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.004049760031173744,
+            "lo": -0.031385343987846426,
+            "hi": 0.040300506263606595,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.00514175651355786,
+            "lo": -0.019760132474234915,
+            "hi": 0.008502695118170145,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.04118945614401148,
+            "lo": 0.01125869174048455,
+            "hi": 0.07322286257053234,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.02832099145917244,
+            "lo": -0.07493977096465465,
+            "hi": 0.017685073212813873,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.015614617940199249,
+            "lo": -0.03478150082813103,
+            "hi": 0.08769670958512166,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.006441223832528098,
+            "lo": -0.015226011102299708,
+            "hi": 0.02923780077967464,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.016498447204968958,
+            "lo": -0.03584667637069383,
+            "hi": 0.09205709349677105,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.014285714285714235,
+            "lo": -0.037234042553191404,
+            "hi": 0.09278350515463918,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "effort",
+      "model_key": "opus55_high",
+      "reference": "opus55",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.017009638177711728,
+            "lo": -0.03893555968300899,
+            "hi": 0.0046991745964616305,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0055695894907688,
+            "lo": -0.008723514440878044,
+            "hi": 0.019954527481880424,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.014191963954569897,
+            "lo": -0.014622363929178928,
+            "hi": 0.04522076470710257,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.0360913367444875,
+            "lo": -0.05990305963498843,
+            "hi": -0.011565454115649354,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.05070485317880424,
+            "lo": 0.011718534077718168,
+            "hi": 0.09699069062567656,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.019835510401548184,
+            "lo": -0.042804918577600604,
+            "hi": 0.0,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.09420112551994131,
+            "lo": 0.033473782771535565,
+            "hi": 0.14991492464754497,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.014285714285714346,
+            "lo": -0.023809523809523836,
+            "hi": 0.06201550387596899,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    }
+  ],
+  "repeats": {
+    "A2": {
+      "opus55": {
+        "k": 3,
+        "per_execution": {
+          "1": {
+            "precision": 0.8061258800508958,
+            "recall": 0.6603313195633366,
+            "f1": 0.7259811827419089,
+            "gap": 0.14579456048755923,
+            "marked_w": 1607.388095238095,
+            "reference_w": 1962.283333333333,
+            "gap_interval": {
+              "diff": 0.14579456048755934,
+              "lo": 0.08558225943247266,
+              "hi": 0.1950419327249745,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "2": {
+            "precision": 0.8236142236988512,
+            "recall": 0.6376682169338684,
+            "f1": 0.7188105445789329,
+            "gap": 0.18594600676498274,
+            "marked_w": 1519.261904761905,
+            "reference_w": 1962.2833333333333,
+            "gap_interval": {
+              "diff": 0.18594600676498307,
+              "lo": 0.12337643691355504,
+              "hi": 0.24012310571065676,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "3": {
+            "precision": 0.8061166440377132,
+            "recall": 0.644754228249646,
+            "f1": 0.716462263642149,
+            "gap": 0.1613624157880672,
+            "marked_w": 1569.4880952380954,
+            "reference_w": 1962.2833333333338,
+            "gap_interval": {
+              "diff": 0.16136241578806743,
+              "lo": 0.09742931229404206,
+              "hi": 0.21945662577439584,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          }
+        },
+        "vs_execution1": {
+          "2": {
+            "precision": 0.9378269523108025,
+            "recall": 0.8864099255965385,
+            "f1": 0.9113938316759226,
+            "gap": 0.05141702671426396,
+            "marked_w": 1519.2619047619032,
+            "reference_w": 1607.3880952380937
+          },
+          "3": {
+            "precision": 0.9231596592762275,
+            "recall": 0.9013928245023352,
+            "f1": 0.9121464031753265,
+            "gap": 0.021766834773892296,
+            "marked_w": 1569.4880952380938,
+            "reference_w": 1607.388095238094
+          }
+        },
+        "union": {
+          "precision": 0.7737910141001086,
+          "recall": 0.7034928939682753,
+          "f1": 0.736969348766146,
+          "gap": 0.07029812013183334,
+          "marked_w": 1784.0119047619037,
+          "reference_w": 1962.2833333333324
+        },
+        "intersection": {
+          "precision": 0.8446930715100268,
+          "recall": 0.5895804086347413,
+          "f1": 0.6944484342296412,
+          "gap": 0.25511266287528556,
+          "marked_w": 1369.6380952380941,
+          "reference_w": 1962.2833333333326
+        },
+        "all_succeeded": {
+          "paragraphs": 120,
+          "execution1": {
+            "precision": 0.8061258800508958,
+            "recall": 0.6603313195633362,
+            "f1": 0.7259811827419087,
+            "gap": 0.14579456048755957,
+            "marked_w": 1607.3880952380937,
+            "reference_w": 1962.2833333333324
+          },
+          "union": {
+            "precision": 0.7737910141001086,
+            "recall": 0.7034928939682753,
+            "f1": 0.736969348766146,
+            "gap": 0.07029812013183334,
+            "marked_w": 1784.0119047619037,
+            "reference_w": 1962.2833333333324
+          },
+          "intersection": {
+            "precision": 0.8446930715100268,
+            "recall": 0.5895804086347413,
+            "f1": 0.6944484342296412,
+            "gap": 0.25511266287528556,
+            "marked_w": 1369.6380952380941,
+            "reference_w": 1962.2833333333326
+          }
+        }
+      },
+      "opus5_rep": {
+        "k": 3,
+        "per_execution": {
+          "1": {
+            "precision": 0.7504063706995542,
+            "recall": 0.7326741563217778,
+            "f1": 0.741434257322529,
+            "gap": 0.01773221437777639,
+            "marked_w": 1915.9142857142856,
+            "reference_w": 1962.2833333333333,
+            "gap_interval": {
+              "diff": 0.01773221437777639,
+              "lo": -0.04009758319484591,
+              "hi": 0.06962440673913317,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "2": {
+            "precision": 0.7426687402175725,
+            "recall": 0.7190845455791904,
+            "f1": 0.7306863870453091,
+            "gap": 0.023584194638382017,
+            "marked_w": 1899.9690476190476,
+            "reference_w": 1962.2833333333333,
+            "gap_interval": {
+              "diff": 0.023584194638382017,
+              "lo": -0.031081268146965657,
+              "hi": 0.07536751658654983,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "3": {
+            "precision": 0.7663630554704839,
+            "recall": 0.7378066610933084,
+            "f1": 0.7518137892493113,
+            "gap": 0.028556394377175498,
+            "marked_w": 1889.1642857142856,
+            "reference_w": 1962.2833333333333,
+            "gap_interval": {
+              "diff": 0.028556394377175498,
+              "lo": -0.027407784432272875,
+              "hi": 0.08148880699050554,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 56,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          }
+        },
+        "vs_execution1": {
+          "2": {
+            "precision": 0.9292532334486652,
+            "recall": 0.9215195033081308,
+            "f1": 0.925370210105505,
+            "gap": 0.007733730140534356,
+            "marked_w": 1899.9690476190467,
+            "reference_w": 1915.9142857142847
+          },
+          "3": {
+            "precision": 0.9422017042053112,
+            "recall": 0.9290466816787708,
+            "f1": 0.9355779525233506,
+            "gap": 0.013155022526540439,
+            "marked_w": 1889.164285714285,
+            "reference_w": 1915.914285714285
+          }
+        },
+        "union": {
+          "precision": 0.7150727254219619,
+          "recall": 0.7756513002952101,
+          "f1": 0.7441311466250092,
+          "gap": -0.06057857487324825,
+          "marked_w": 2128.521428571429,
+          "reference_w": 1962.2833333333338
+        },
+        "intersection": {
+          "precision": 0.7800936761624537,
+          "recall": 0.6794138024337535,
+          "f1": 0.7262811853294948,
+          "gap": 0.10067987372870024,
+          "marked_w": 1709.0285714285715,
+          "reference_w": 1962.2833333333338
+        },
+        "all_succeeded": {
+          "paragraphs": 120,
+          "execution1": {
+            "precision": 0.7504063706995542,
+            "recall": 0.7326741563217777,
+            "f1": 0.7414342573225289,
+            "gap": 0.0177322143777765,
+            "marked_w": 1915.9142857142863,
+            "reference_w": 1962.2833333333342
+          },
+          "union": {
+            "precision": 0.7150727254219619,
+            "recall": 0.7756513002952101,
+            "f1": 0.7441311466250092,
+            "gap": -0.06057857487324825,
+            "marked_w": 2128.521428571429,
+            "reference_w": 1962.2833333333338
+          },
+          "intersection": {
+            "precision": 0.7800936761624537,
+            "recall": 0.6794138024337535,
+            "f1": 0.7262811853294948,
+            "gap": 0.10067987372870024,
+            "marked_w": 1709.0285714285715,
+            "reference_w": 1962.2833333333338
+          }
+        }
+      }
+    },
+    "A3": {
+      "opus55": {
+        "k": 3,
+        "per_execution": {
+          "1": {
+            "precision": 0.7910447761194029,
+            "recall": 0.7571428571428571,
+            "f1": 0.7737226277372263,
+            "gap": 0.03390191897654582,
+            "marked_w": 134.0,
+            "reference_w": 140.0,
+            "gap_interval": {
+              "diff": 0.03390191897654582,
+              "lo": -0.039126050420168035,
+              "hi": 0.08253140871424758,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "2": {
+            "precision": 0.8333333333333334,
+            "recall": 0.7857142857142857,
+            "f1": 0.8088235294117647,
+            "gap": 0.04761904761904767,
+            "marked_w": 132.0,
+            "reference_w": 140.0,
+            "gap_interval": {
+              "diff": 0.04761904761904767,
+              "lo": -0.04527604527604523,
+              "hi": 0.11727078891258003,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "3": {
+            "precision": 0.8181818181818182,
+            "recall": 0.7714285714285715,
+            "f1": 0.7941176470588235,
+            "gap": 0.04675324675324677,
+            "marked_w": 132.0,
+            "reference_w": 140.0,
+            "gap_interval": {
+              "diff": 0.04675324675324677,
+              "lo": -0.05265852409858851,
+              "hi": 0.11734693877551017,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          }
+        },
+        "vs_execution1": {
+          "2": {
+            "precision": 0.9166666666666666,
+            "recall": 0.9029850746268657,
+            "f1": 0.9097744360902256,
+            "gap": 0.013681592039800905,
+            "marked_w": 132.0,
+            "reference_w": 134.0
+          },
+          "3": {
+            "precision": 0.8939393939393939,
+            "recall": 0.8805970149253731,
+            "f1": 0.8872180451127819,
+            "gap": 0.0133423790140208,
+            "marked_w": 132.0,
+            "reference_w": 134.0
+          }
+        },
+        "union": {
+          "precision": 0.75,
+          "recall": 0.8142857142857143,
+          "f1": 0.7808219178082192,
+          "gap": -0.06428571428571428,
+          "marked_w": 152.0,
+          "reference_w": 140.0
+        },
+        "intersection": {
+          "precision": 0.8782608695652174,
+          "recall": 0.7214285714285714,
+          "f1": 0.792156862745098,
+          "gap": 0.156832298136646,
+          "marked_w": 115.0,
+          "reference_w": 140.0
+        },
+        "all_succeeded": {
+          "paragraphs": 55,
+          "execution1": {
+            "precision": 0.7910447761194029,
+            "recall": 0.7571428571428571,
+            "f1": 0.7737226277372263,
+            "gap": 0.03390191897654582,
+            "marked_w": 134.0,
+            "reference_w": 140.0
+          },
+          "union": {
+            "precision": 0.75,
+            "recall": 0.8142857142857143,
+            "f1": 0.7808219178082192,
+            "gap": -0.06428571428571428,
+            "marked_w": 152.0,
+            "reference_w": 140.0
+          },
+          "intersection": {
+            "precision": 0.8782608695652174,
+            "recall": 0.7214285714285714,
+            "f1": 0.792156862745098,
+            "gap": 0.156832298136646,
+            "marked_w": 115.0,
+            "reference_w": 140.0
+          }
+        }
+      },
+      "opus5_rep": {
+        "k": 3,
+        "per_execution": {
+          "1": {
+            "precision": 0.6226415094339622,
+            "recall": 0.7071428571428572,
+            "f1": 0.6622073578595318,
+            "gap": -0.08450134770889495,
+            "marked_w": 159.0,
+            "reference_w": 140.0,
+            "gap_interval": {
+              "diff": -0.08450134770889495,
+              "lo": -0.2010322692574601,
+              "hi": 0.033162962082491476,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "failed": 1
+          },
+          "2": {
+            "precision": 0.6463414634146342,
+            "recall": 0.7571428571428571,
+            "f1": 0.6973684210526315,
+            "gap": -0.11080139372822295,
+            "marked_w": 164.0,
+            "reference_w": 140.0,
+            "gap_interval": {
+              "diff": -0.11080139372822295,
+              "lo": -0.21915584415584421,
+              "hi": -0.008450799445627544,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "failed": 0
+          },
+          "3": {
+            "precision": 0.6289308176100629,
+            "recall": 0.7142857142857143,
+            "f1": 0.6688963210702341,
+            "gap": -0.08535489667565144,
+            "marked_w": 159.0,
+            "reference_w": 140.0,
+            "gap_interval": {
+              "diff": -0.08535489667565144,
+              "lo": -0.2194078947368422,
+              "hi": 0.05579766826833532,
+              "B": 2000,
+              "seed": 20260905,
+              "articles": 10,
+              "defined_draws": 2000
+            },
+            "failed": 1
+          }
+        },
+        "vs_execution1": {
+          "2": {
+            "precision": 0.9085365853658537,
+            "recall": 0.9371069182389937,
+            "f1": 0.9226006191950464,
+            "gap": -0.028570332873140036,
+            "marked_w": 164.0,
+            "reference_w": 159.0
+          },
+          "3": {
+            "precision": 0.9182389937106918,
+            "recall": 0.9182389937106918,
+            "f1": 0.9182389937106918,
+            "gap": 0.0,
+            "marked_w": 159.0,
+            "reference_w": 159.0
+          }
+        },
+        "union": {
+          "precision": 0.6132596685082873,
+          "recall": 0.7928571428571428,
+          "f1": 0.6915887850467289,
+          "gap": -0.17959747434885553,
+          "marked_w": 181.0,
+          "reference_w": 140.0
+        },
+        "intersection": {
+          "precision": 0.6573426573426573,
+          "recall": 0.6714285714285714,
+          "f1": 0.6643109540636042,
+          "gap": -0.014085914085914086,
+          "marked_w": 143.0,
+          "reference_w": 140.0
+        },
+        "all_succeeded": {
+          "paragraphs": 54,
+          "execution1": {
+            "precision": 0.6226415094339622,
+            "recall": 0.75,
+            "f1": 0.6804123711340206,
+            "gap": -0.12735849056603776,
+            "marked_w": 159.0,
+            "reference_w": 132.0
+          },
+          "union": {
+            "precision": 0.6022727272727273,
+            "recall": 0.803030303030303,
+            "f1": 0.6883116883116883,
+            "gap": -0.2007575757575757,
+            "marked_w": 176.0,
+            "reference_w": 132.0
+          },
+          "intersection": {
+            "precision": 0.6573426573426573,
+            "recall": 0.7121212121212122,
+            "f1": 0.6836363636363636,
+            "gap": -0.05477855477855487,
+            "marked_w": 143.0,
+            "reference_w": 132.0
+          }
+        }
+      }
+    }
+  },
+  "misses": {
+    "A2": {
+      "sonnet": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 140,
+            "row_missing": 15,
+            "failed_execution": 13
+          },
+          "fn_weighted": {
+            "failed_execution": 49.67857142857143,
+            "row_missing": 74.35714285714286,
+            "element_missing": 744.771428571428
+          },
+          "fn_weighted_total": 868.8071428571428,
+          "fn_total": 168,
+          "share_weighted": {
+            "failed_execution": 0.05718020602961368,
+            "row_missing": 0.08558532635057921,
+            "element_missing": 0.8572344676198065
+          },
+          "exec1_recall": 0.5572468419322001,
+          "exec1_precision": 0.7591325333068862,
+          "union_recall": 0.5962745052835676,
+          "union_precision": 0.7491463154364459
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 54,
+            "failed_execution": 13,
+            "row_missing": 6
+          },
+          "fn_weighted": {
+            "failed_execution": 49.67857142857143,
+            "row_missing": 23.857142857142854,
+            "element_missing": 202.4380952380951
+          },
+          "fn_weighted_total": 275.9738095238095,
+          "fn_total": 73,
+          "share_weighted": {
+            "failed_execution": 0.18001190589169092,
+            "row_missing": 0.08644712662519735,
+            "element_missing": 0.7335409674831113
+          },
+          "exec1_recall": 0.5524386147139344,
+          "exec1_precision": 0.7097782408096442,
+          "union_recall": 0.5706833372590053,
+          "union_precision": 0.7011813265015653
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 86,
+            "row_missing": 9
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 50.5,
+            "element_missing": 542.3333333333334
+          },
+          "fn_weighted_total": 592.8333333333334,
+          "fn_total": 95,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.08518414394152375,
+            "element_missing": 0.9148158560584763
+          },
+          "exec1_recall": 0.5594500866980431,
+          "exec1_precision": 0.7837931632830124,
+          "union_recall": 0.608000990834778,
+          "union_precision": 0.7718553459119496
+        }
+      },
+      "opus": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 140,
+            "row_missing": 15,
+            "failed_execution": 1
+          },
+          "fn_weighted": {
+            "failed_execution": 5.666666666666667,
+            "row_missing": 76.35714285714286,
+            "element_missing": 730.2809523809519
+          },
+          "fn_weighted_total": 812.3047619047619,
+          "fn_total": 156,
+          "share_weighted": {
+            "failed_execution": 0.0069760352670824935,
+            "row_missing": 0.09400060967030906,
+            "element_missing": 0.8990233550626079
+          },
+          "exec1_recall": 0.5860410430511589,
+          "exec1_precision": 0.7940783340813921,
+          "union_recall": 0.5860410430511582,
+          "union_precision": 0.7940783340813917
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 60,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 19.857142857142858,
+            "element_missing": 224.4476190476189
+          },
+          "fn_weighted_total": 244.3047619047619,
+          "fn_total": 65,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.08128021206923437,
+            "element_missing": 0.918719787930765
+          },
+          "exec1_recall": 0.6037979913429274,
+          "exec1_precision": 0.7316595000023395,
+          "union_recall": 0.6037979913429273,
+          "union_precision": 0.7316595000023394
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 80,
+            "failed_execution": 1,
+            "row_missing": 10
+          },
+          "fn_weighted": {
+            "failed_execution": 5.666666666666667,
+            "row_missing": 56.5,
+            "element_missing": 505.8333333333334
+          },
+          "fn_weighted_total": 568.0,
+          "fn_total": 91,
+          "share_weighted": {
+            "failed_execution": 0.009976525821596244,
+            "row_missing": 0.0994718309859155,
+            "element_missing": 0.8905516431924885
+          },
+          "exec1_recall": 0.577904384443894,
+          "exec1_precision": 0.8278921220723917,
+          "union_recall": 0.5779043844438937,
+          "union_precision": 0.8278921220723917
+        }
+      },
+      "opus5": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 91,
+            "row_missing": 10
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 47.5,
+            "element_missing": 479.5023809523813
+          },
+          "fn_weighted_total": 527.0023809523809,
+          "fn_total": 101,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.09013242011195396,
+            "element_missing": 0.9098675798880468
+          },
+          "exec1_recall": 0.7314341043415167,
+          "exec1_precision": 0.7478834587212418,
+          "union_recall": 0.7314341043415165,
+          "union_precision": 0.7478834587212416
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 37,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 20.0,
+            "element_missing": 142.1690476190476
+          },
+          "fn_weighted_total": 162.16904761904763,
+          "fn_total": 42,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.12332809678319213,
+            "element_missing": 0.8766719032168077
+          },
+          "exec1_recall": 0.7370018418481807,
+          "exec1_precision": 0.7040709427057973,
+          "union_recall": 0.7370018418481807,
+          "union_precision": 0.7040709427057973
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 54,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 27.5,
+            "element_missing": 337.33333333333337
+          },
+          "fn_weighted_total": 364.8333333333333,
+          "fn_total": 59,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.07537688442211056,
+            "element_missing": 0.9246231155778896
+          },
+          "exec1_recall": 0.728882833787466,
+          "exec1_precision": 0.7700863648259618,
+          "union_recall": 0.7288828337874657,
+          "union_precision": 0.7700863648259615
+        }
+      },
+      "opus5_rep": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 89,
+            "row_missing": 10
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 47.5,
+            "element_missing": 477.06904761904786
+          },
+          "fn_weighted_total": 524.5690476190476,
+          "fn_total": 99,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.09055051992792269,
+            "element_missing": 0.9094494800720777
+          },
+          "exec1_recall": 0.7326741563217778,
+          "exec1_precision": 0.7504063706995541,
+          "union_recall": 0.7756513002952099,
+          "union_precision": 0.7150727254219615
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 35,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 20.0,
+            "element_missing": 134.56904761904764
+          },
+          "fn_weighted_total": 154.5690476190476,
+          "fn_total": 40,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.1293920115836658,
+            "element_missing": 0.8706079884163344
+          },
+          "exec1_recall": 0.7493271655230733,
+          "exec1_precision": 0.6992800363224918,
+          "union_recall": 0.7939253761888029,
+          "union_precision": 0.6628753074837432
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 54,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 27.5,
+            "element_missing": 342.5
+          },
+          "fn_weighted_total": 370.0,
+          "fn_total": 59,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.07432432432432433,
+            "element_missing": 0.9256756756756757
+          },
+          "exec1_recall": 0.7250433490215508,
+          "exec1_precision": 0.7773204089762317,
+          "union_recall": 0.7672776814466185,
+          "union_precision": 0.742805755395683
+        }
+      },
+      "opus5_req55": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 98,
+            "row_missing": 12,
+            "failed_execution": 3
+          },
+          "fn_weighted": {
+            "failed_execution": 12.0,
+            "row_missing": 56.5,
+            "element_missing": 514.0761904761907
+          },
+          "fn_weighted_total": 582.5761904761905,
+          "fn_total": 113,
+          "share_weighted": {
+            "failed_execution": 0.020598164147750956,
+            "row_missing": 0.09698302286232742,
+            "element_missing": 0.882418812989922
+          },
+          "exec1_recall": 0.7031131128823442,
+          "exec1_precision": 0.7890729148652531,
+          "union_recall": 0.703113112882344,
+          "union_precision": 0.789072914865253
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 41,
+            "row_missing": 7,
+            "failed_execution": 3
+          },
+          "fn_weighted": {
+            "failed_execution": 12.0,
+            "row_missing": 29.0,
+            "element_missing": 153.57619047619045
+          },
+          "fn_weighted_total": 194.57619047619048,
+          "fn_total": 51,
+          "share_weighted": {
+            "failed_execution": 0.061672499449352686,
+            "row_missing": 0.149041873669269,
+            "element_missing": 0.7892856268813782
+          },
+          "exec1_recall": 0.6844454569675533,
+          "exec1_precision": 0.7278442290083231,
+          "union_recall": 0.6844454569675532,
+          "union_precision": 0.727844229008323
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 57,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 27.5,
+            "element_missing": 360.50000000000006
+          },
+          "fn_weighted_total": 388.0,
+          "fn_total": 62,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.07087628865979381,
+            "element_missing": 0.9291237113402063
+          },
+          "exec1_recall": 0.711667079514491,
+          "exec1_precision": 0.8194523673702225,
+          "union_recall": 0.7116670795144906,
+          "union_precision": 0.8194523673702222
+        }
+      },
+      "opus55": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 114,
+            "row_missing": 14
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 71.83333333333334,
+            "element_missing": 594.6928571428571
+          },
+          "fn_weighted_total": 666.5261904761904,
+          "fn_total": 128,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.10777270924944901,
+            "element_missing": 0.892227290750551
+          },
+          "exec1_recall": 0.6603313195633367,
+          "exec1_precision": 0.8061258800508959,
+          "union_recall": 0.7034928939682751,
+          "union_precision": 0.7737910141001085
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 48,
+            "row_missing": 7
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 29.0,
+            "element_missing": 181.0261904761904
+          },
+          "fn_weighted_total": 210.0261904761905,
+          "fn_total": 55,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.13807801748081303,
+            "element_missing": 0.8619219825191865
+          },
+          "exec1_recall": 0.6593893713389889,
+          "exec1_precision": 0.7314250470075768,
+          "union_recall": 0.7256572926762402,
+          "union_precision": 0.7164833489010466
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 66,
+            "row_missing": 7
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 42.833333333333336,
+            "element_missing": 413.66666666666674
+          },
+          "fn_weighted_total": 456.5,
+          "fn_total": 73,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.09382986491420227,
+            "element_missing": 0.9061701350857979
+          },
+          "exec1_recall": 0.6607629427792916,
+          "exec1_precision": 0.8456173720082422,
+          "union_recall": 0.6933366361159273,
+          "union_precision": 0.8046571798188873
+        }
+      },
+      "opus55_high": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 127,
+            "row_missing": 14
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 64.0,
+            "element_missing": 673.3476190476188
+          },
+          "fn_weighted_total": 737.3476190476191,
+          "fn_total": 141,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.08679759498330566,
+            "element_missing": 0.9132024050166939
+          },
+          "exec1_recall": 0.6242399828188492,
+          "exec1_precision": 0.8203178440054658,
+          "union_recall": 0.6242399828188487,
+          "union_precision": 0.8203178440054657
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 50,
+            "row_missing": 9
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 36.5,
+            "element_missing": 188.01428571428562
+          },
+          "fn_weighted_total": 224.51428571428573,
+          "fn_total": 59,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.16257317383558156,
+            "element_missing": 0.8374268261644179
+          },
+          "exec1_recall": 0.6358932577544897,
+          "exec1_precision": 0.7246681011911834,
+          "union_recall": 0.6358932577544897,
+          "union_precision": 0.7246681011911832
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 77,
+            "row_missing": 5
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 27.5,
+            "element_missing": 485.33333333333337
+          },
+          "fn_weighted_total": 512.8333333333334,
+          "fn_total": 82,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.05362365940851478,
+            "element_missing": 0.9463763405914852
+          },
+          "exec1_recall": 0.6189001733960862,
+          "exec1_precision": 0.8746718011552599,
+          "union_recall": 0.6189001733960858,
+          "union_precision": 0.8746718011552598
+        }
+      }
+    },
+    "A3": {
+      "sonnet": {
+        "pooled": {
+          "fn_rows": {
+            "failed_execution": 25,
+            "element_missing": 38,
+            "row_missing": 8
+          },
+          "fn_weighted": {
+            "failed_execution": 25.0,
+            "row_missing": 8.0,
+            "element_missing": 38.0
+          },
+          "fn_weighted_total": 71.0,
+          "fn_total": 71,
+          "share_weighted": {
+            "failed_execution": 0.352112676056338,
+            "row_missing": 0.11267605633802817,
+            "element_missing": 0.5352112676056338
+          },
+          "exec1_recall": 0.4928571428571429,
+          "exec1_precision": 0.6571428571428571,
+          "union_recall": 0.5142857142857142,
+          "union_precision": 0.6545454545454545
+        },
+        "de": {
+          "fn_rows": {
+            "failed_execution": 16,
+            "element_missing": 25,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 16.0,
+            "row_missing": 4.0,
+            "element_missing": 25.0
+          },
+          "fn_weighted_total": 45.0,
+          "fn_total": 45,
+          "share_weighted": {
+            "failed_execution": 0.35555555555555557,
+            "row_missing": 0.08888888888888889,
+            "element_missing": 0.5555555555555556
+          },
+          "exec1_recall": 0.47058823529411764,
+          "exec1_precision": 0.6779661016949152,
+          "union_recall": 0.47058823529411764,
+          "union_precision": 0.6779661016949152
+        },
+        "en": {
+          "fn_rows": {
+            "failed_execution": 9,
+            "element_missing": 13,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 9.0,
+            "row_missing": 4.0,
+            "element_missing": 13.0
+          },
+          "fn_weighted_total": 26.0,
+          "fn_total": 26,
+          "share_weighted": {
+            "failed_execution": 0.34615384615384615,
+            "row_missing": 0.15384615384615385,
+            "element_missing": 0.5
+          },
+          "exec1_recall": 0.5272727272727272,
+          "exec1_precision": 0.6304347826086957,
+          "union_recall": 0.5818181818181818,
+          "union_precision": 0.6274509803921569
+        }
+      },
+      "opus": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 44,
+            "row_missing": 8
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 8.0,
+            "element_missing": 44.0
+          },
+          "fn_weighted_total": 52.0,
+          "fn_total": 52,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.15384615384615385,
+            "element_missing": 0.8461538461538461
+          },
+          "exec1_recall": 0.6285714285714286,
+          "exec1_precision": 0.7394957983193278,
+          "union_recall": 0.6285714285714286,
+          "union_precision": 0.7394957983193278
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 31,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 31.0
+          },
+          "fn_weighted_total": 35.0,
+          "fn_total": 35,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.11428571428571428,
+            "element_missing": 0.8857142857142857
+          },
+          "exec1_recall": 0.5882352941176471,
+          "exec1_precision": 0.7692307692307693,
+          "union_recall": 0.5882352941176471,
+          "union_precision": 0.7692307692307693
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 13,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 13.0
+          },
+          "fn_weighted_total": 17.0,
+          "fn_total": 17,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.23529411764705882,
+            "element_missing": 0.7647058823529411
+          },
+          "exec1_recall": 0.6909090909090909,
+          "exec1_precision": 0.7037037037037037,
+          "union_recall": 0.6909090909090909,
+          "union_precision": 0.7037037037037037
+        }
+      },
+      "opus5": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 29,
+            "row_missing": 8
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 8.0,
+            "element_missing": 29.0
+          },
+          "fn_weighted_total": 37.0,
+          "fn_total": 37,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.21621621621621623,
+            "element_missing": 0.7837837837837838
+          },
+          "exec1_recall": 0.7357142857142858,
+          "exec1_precision": 0.639751552795031,
+          "union_recall": 0.7357142857142858,
+          "union_precision": 0.639751552795031
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 17,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 17.0
+          },
+          "fn_weighted_total": 21.0,
+          "fn_total": 21,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.19047619047619047,
+            "element_missing": 0.8095238095238095
+          },
+          "exec1_recall": 0.7529411764705882,
+          "exec1_precision": 0.7191011235955056,
+          "union_recall": 0.7529411764705882,
+          "union_precision": 0.7191011235955056
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 12,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 12.0
+          },
+          "fn_weighted_total": 16.0,
+          "fn_total": 16,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.25,
+            "element_missing": 0.75
+          },
+          "exec1_recall": 0.7090909090909091,
+          "exec1_precision": 0.5416666666666666,
+          "union_recall": 0.7090909090909091,
+          "union_precision": 0.5416666666666666
+        }
+      },
+      "opus5_rep": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 25,
+            "row_missing": 8,
+            "failed_execution": 8
+          },
+          "fn_weighted": {
+            "failed_execution": 8.0,
+            "row_missing": 8.0,
+            "element_missing": 25.0
+          },
+          "fn_weighted_total": 41.0,
+          "fn_total": 41,
+          "share_weighted": {
+            "failed_execution": 0.1951219512195122,
+            "row_missing": 0.1951219512195122,
+            "element_missing": 0.6097560975609756
+          },
+          "exec1_recall": 0.7071428571428572,
+          "exec1_precision": 0.6226415094339622,
+          "union_recall": 0.7928571428571428,
+          "union_precision": 0.6132596685082873
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 14,
+            "row_missing": 4,
+            "failed_execution": 8
+          },
+          "fn_weighted": {
+            "failed_execution": 8.0,
+            "row_missing": 4.0,
+            "element_missing": 14.0
+          },
+          "fn_weighted_total": 26.0,
+          "fn_total": 26,
+          "share_weighted": {
+            "failed_execution": 0.3076923076923077,
+            "row_missing": 0.15384615384615385,
+            "element_missing": 0.5384615384615384
+          },
+          "exec1_recall": 0.6941176470588235,
+          "exec1_precision": 0.686046511627907,
+          "union_recall": 0.788235294117647,
+          "union_precision": 0.7052631578947368
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 11,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 11.0
+          },
+          "fn_weighted_total": 15.0,
+          "fn_total": 15,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.26666666666666666,
+            "element_missing": 0.7333333333333333
+          },
+          "exec1_recall": 0.7272727272727273,
+          "exec1_precision": 0.547945205479452,
+          "union_recall": 0.8,
+          "union_precision": 0.5116279069767442
+        }
+      },
+      "opus5_req55": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 32,
+            "row_missing": 3
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 3.0,
+            "element_missing": 32.0
+          },
+          "fn_weighted_total": 35.0,
+          "fn_total": 35,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.08571428571428572,
+            "element_missing": 0.9142857142857143
+          },
+          "exec1_recall": 0.75,
+          "exec1_precision": 0.65625,
+          "union_recall": 0.75,
+          "union_precision": 0.65625
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 19,
+            "row_missing": 1
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 1.0,
+            "element_missing": 19.0
+          },
+          "fn_weighted_total": 20.0,
+          "fn_total": 20,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.05,
+            "element_missing": 0.95
+          },
+          "exec1_recall": 0.7647058823529411,
+          "exec1_precision": 0.7386363636363636,
+          "union_recall": 0.7647058823529411,
+          "union_precision": 0.7386363636363636
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 13,
+            "row_missing": 2
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 2.0,
+            "element_missing": 13.0
+          },
+          "fn_weighted_total": 15.0,
+          "fn_total": 15,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.13333333333333333,
+            "element_missing": 0.8666666666666667
+          },
+          "exec1_recall": 0.7272727272727273,
+          "exec1_precision": 0.5555555555555556,
+          "union_recall": 0.7272727272727273,
+          "union_precision": 0.5555555555555556
+        }
+      },
+      "opus55": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 28,
+            "row_missing": 6
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 6.0,
+            "element_missing": 28.0
+          },
+          "fn_weighted_total": 34.0,
+          "fn_total": 34,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.17647058823529413,
+            "element_missing": 0.8235294117647058
+          },
+          "exec1_recall": 0.7571428571428571,
+          "exec1_precision": 0.7910447761194029,
+          "union_recall": 0.8142857142857143,
+          "union_precision": 0.75
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 20,
+            "row_missing": 2
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 2.0,
+            "element_missing": 20.0
+          },
+          "fn_weighted_total": 22.0,
+          "fn_total": 22,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.09090909090909091,
+            "element_missing": 0.9090909090909091
+          },
+          "exec1_recall": 0.7411764705882353,
+          "exec1_precision": 0.8289473684210527,
+          "union_recall": 0.8,
+          "union_precision": 0.8
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 8,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 8.0
+          },
+          "fn_weighted_total": 12.0,
+          "fn_total": 12,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.3333333333333333,
+            "element_missing": 0.6666666666666666
+          },
+          "exec1_recall": 0.7818181818181819,
+          "exec1_precision": 0.7413793103448276,
+          "union_recall": 0.8363636363636363,
+          "union_precision": 0.6865671641791045
+        }
+      },
+      "opus55_high": {
+        "pooled": {
+          "fn_rows": {
+            "element_missing": 26,
+            "row_missing": 6
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 6.0,
+            "element_missing": 26.0
+          },
+          "fn_weighted_total": 32.0,
+          "fn_total": 32,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.1875,
+            "element_missing": 0.8125
+          },
+          "exec1_recall": 0.7714285714285715,
+          "exec1_precision": 0.8852459016393442,
+          "union_recall": 0.7714285714285715,
+          "union_precision": 0.8852459016393442
+        },
+        "de": {
+          "fn_rows": {
+            "element_missing": 20,
+            "row_missing": 2
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 2.0,
+            "element_missing": 20.0
+          },
+          "fn_weighted_total": 22.0,
+          "fn_total": 22,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.09090909090909091,
+            "element_missing": 0.9090909090909091
+          },
+          "exec1_recall": 0.7411764705882353,
+          "exec1_precision": 0.9,
+          "union_recall": 0.7411764705882353,
+          "union_precision": 0.9
+        },
+        "en": {
+          "fn_rows": {
+            "element_missing": 6,
+            "row_missing": 4
+          },
+          "fn_weighted": {
+            "failed_execution": 0,
+            "row_missing": 4.0,
+            "element_missing": 6.0
+          },
+          "fn_weighted_total": 10.0,
+          "fn_total": 10,
+          "share_weighted": {
+            "failed_execution": 0.0,
+            "row_missing": 0.4,
+            "element_missing": 0.6
+          },
+          "exec1_recall": 0.8181818181818182,
+          "exec1_precision": 0.8653846153846154,
+          "union_recall": 0.8181818181818182,
+          "union_precision": 0.8653846153846154
+        }
+      }
+    }
+  },
+  "drift_opus5": {
+    "A2": {
+      "element": {
+        "diff": 0.0018669305491630928,
+        "lo": -0.020499791946420487,
+        "hi": 0.020809274399672728,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 56,
+        "defined_draws": 2000
+      },
+      "technology": {
+        "diff": -0.007491282588746984,
+        "lo": -0.0200671284622852,
+        "hi": 0.0,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 56,
+        "defined_draws": 2000
+      },
+      "element_precision": {
+        "diff": 0.0025229119783123366,
+        "lo": -0.01790367770588519,
+        "hi": 0.020621802206433948,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 56,
+        "defined_draws": 2000
+      },
+      "element_recall": {
+        "diff": 0.0012400519802611143,
+        "lo": -0.028726829453794123,
+        "hi": 0.026092616515949518,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 56,
+        "defined_draws": 2000
+      }
+    },
+    "A3": {
+      "element": {
+        "diff": -0.02217802420026893,
+        "lo": -0.07279868469126782,
+        "hi": 0.027514858023332533,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 10,
+        "defined_draws": 2000
+      },
+      "technology": {
+        "diff": -0.01312551271534046,
+        "lo": -0.037405435696273526,
+        "hi": 0.0,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 10,
+        "defined_draws": 2000
+      },
+      "element_precision": {
+        "diff": -0.017110043361068805,
+        "lo": -0.05408601060774976,
+        "hi": 0.022727272727272707,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 10,
+        "defined_draws": 2000
+      },
+      "element_recall": {
+        "diff": -0.02857142857142858,
+        "lo": -0.09340659340659341,
+        "hi": 0.03809523809523807,
+        "B": 2000,
+        "seed": 20260905,
+        "articles": 10,
+        "defined_draws": 2000
+      }
+    }
+  },
+  "superseded": {
+    "mc_opus55_a3_20261108": "started 2026-11-08 under commit bffc44e; the runner's statement of the adaptive-thinking request was a str.format template with single braces, so every thinking configuration crashed while writing its run record after its last call (mc_opus5_req55_a3_20261108, 55 paragraphs complete) and the others were stopped before completion once the defect was found; no run record exists and no figure was computed; fixed in 5ed4cdc and re-run under r2, never resumed",
+    "mc_opus55_high_a3_20261108": "started 2026-11-08 under commit bffc44e; the runner's statement of the adaptive-thinking request was a str.format template with single braces, so every thinking configuration crashed while writing its run record after its last call (mc_opus5_req55_a3_20261108, 55 paragraphs complete) and the others were stopped before completion once the defect was found; no run record exists and no figure was computed; fixed in 5ed4cdc and re-run under r2, never resumed",
+    "mc_opus5_req55_a3_20261108": "started 2026-11-08 under commit bffc44e; the runner's statement of the adaptive-thinking request was a str.format template with single braces, so every thinking configuration crashed while writing its run record after its last call (mc_opus5_req55_a3_20261108, 55 paragraphs complete) and the others were stopped before completion once the defect was found; no run record exists and no figure was computed; fixed in 5ed4cdc and re-run under r2, never resumed",
+    "mc_opus5_req55_a2_20261108": "as the A3 runs of 2026-11-08 above: stopped after its first calls; re-run under r2"
+  },
+  "inputs": {
+    "compare_gen55_sha256": "40b5a28931736292963e1254a6e527f44719974bbf57482fed3712a04e1a077f",
+    "compare_models_sha256": "a491c5f986c48a2844837e6e65c838609dfc5e15fd6bb702e9b5d41f7147d8ed",
+    "evaluate_sha256": "6512d63191b939279a06202e10591d2d9133f282d8a7cfb16ca066735c4d0c14",
+    "runs": {
+      "A2": {
+        "sonnet": {
+          "run_id": "a2_sonnet_20261013",
+          "run_record_sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3",
+          "metrics_sha256": "9d69e490475a885f7216ceb5c49d295b9d7e55662b7092ca6faa1636e46c57f4"
+        },
+        "opus": {
+          "run_id": "mc_opus46_a2_20261019",
+          "run_record_sha256": "55fad9774ef9f675df843782a96f438e57d3bedec434e93266befeb7da2b8220",
+          "metrics_sha256": "704f099d74de07fcab26de9740a3d2da2782390285a7e65a28970f5bbb96a18a"
+        },
+        "opus5": {
+          "run_id": "mc_opus5_a2_20261101",
+          "run_record_sha256": "56527400538fef587223f039264ee1c0d26b40628d16b493e68daecae4be8e01",
+          "metrics_sha256": "218100ea5d3f739908fe7390e089db4e018446d039b1a95867524560affd562a"
+        },
+        "opus5_rep": {
+          "run_id": "mc_opus5_rep_a2_20261108",
+          "run_record_sha256": "1476b39497ddf19b0f70bc4b8f2ce68bf7c4e4fa8ead99cde9518d07623b9ade",
+          "metrics_sha256": "732e29be0791efbf6d691f581c5e7f7419022c806f4818d3cf7ddd985094c1a5"
+        },
+        "opus5_req55": {
+          "run_id": "mc_opus5_req55_a2_20261108r2",
+          "run_record_sha256": "d3c52abcc0a57d0cda02f29d091ba2dc82d6c50671a379254a24b7faebe43b15",
+          "metrics_sha256": "18c713b4d83b16d6a00dc55286a7030c06c721c7bb215114ef7fd9ece83a1509"
+        },
+        "opus55": {
+          "run_id": "mc_opus55_a2_20261108r2",
+          "run_record_sha256": "4bda7ad3db941207e947c05f41a450177ffb03860e1c58c779f4c383e573376e",
+          "metrics_sha256": "e36df7a66052f8c4fd94421bfd86f2f0783fca7000a43ed9d3648e55ac8bfb6f"
+        },
+        "opus55_high": {
+          "run_id": "mc_opus55_high_a2_20261108r2",
+          "run_record_sha256": "ea918dd41fcbf7636669b07a655a22272bc4c90e286fe264721212418eb019c8",
+          "metrics_sha256": "603aacd78c20523407d5a57cbabe12caccfa972021f6e865fac0c2388bfad275"
+        }
+      },
+      "A3": {
+        "sonnet": {
+          "run_id": "a3_sonnet_20261019",
+          "run_record_sha256": "d4aae3e1eb96b0d0470774d0727f690462480e0cc99e73627ced3c165b426062",
+          "metrics_sha256": "5e469e5e5a702466cf11223d7be1977b65bc105f4dc620c459a125de4b441805"
+        },
+        "opus": {
+          "run_id": "mc_opus46_a3_20261019",
+          "run_record_sha256": "4ab192ca9c3676e54e9110cac44f309b7b0565d26ed8b147ee3a37156eafa633",
+          "metrics_sha256": "44e045c7581286a1aa6bb166180fb0ea6ce106e46b21917848b518dbe6d8ab91"
+        },
+        "opus5": {
+          "run_id": "mc_opus5_a3_20261101",
+          "run_record_sha256": "ae0c65edf2c8374928287ef69177302a68250766423ba3bba0a7930cd885984a",
+          "metrics_sha256": "93ce5af2fd6dd7c51660b7d01704700f0cc5d5d4140af8b078936497f2bfea57"
+        },
+        "opus5_rep": {
+          "run_id": "mc_opus5_rep_a3_20261108",
+          "run_record_sha256": "7fee07b869eb851bcb96d997cb5657e91ce4b128ded6cb86c99e1988179e62aa",
+          "metrics_sha256": "8f4f33556d15b6a266f088527a2bf8d3b77e59ebc9793ff144c29799e182b0c0"
+        },
+        "opus5_req55": {
+          "run_id": "mc_opus5_req55_a3_20261108r2",
+          "run_record_sha256": "6ccda736dc7b6f0c343f1861716043074619dddc5797bcb0bf1bc9e8fdbe2edf",
+          "metrics_sha256": "af55a93a7bcec88f459ecd7d36cac9b9769ecb390a9eb139bb9b789c5f50bf45"
+        },
+        "opus55": {
+          "run_id": "mc_opus55_a3_20261108r2",
+          "run_record_sha256": "3ae15db0308b56ad1061f48f77ef7b3e716d18b0886f290f0cd706e72d49a507",
+          "metrics_sha256": "087aa65d2737f3164bdfcb838e4163d22c0028f0c6e69c604128116da7e43812"
+        },
+        "opus55_high": {
+          "run_id": "mc_opus55_high_a3_20261108r2",
+          "run_record_sha256": "9878ac81413bf14750a9a423c05deff2374d606b224a11cae9025857b71440a8",
+          "metrics_sha256": "0db54425a2dc7cfb9de4ab309d0d082bfac235385fc66433b10a3558f65c8a70"
+        }
+      }
+    }
+  }
+}

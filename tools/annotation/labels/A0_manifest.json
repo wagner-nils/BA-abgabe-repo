@@ -1,0 +1,278 @@
+{
+  "session": "A0",
+  "sheet_kind": "reconstructed",
+  "sheet_schema": 1,
+  "generated_at": "2026-09-05",
+  "codebook_versions": [
+    "0.1",
+    "0.3"
+  ],
+  "passes": {
+    "pass2": {
+      "codebook_version": "0.3",
+      "codebook_sha256": "612240bf7b6b1a46e41061e277989e31062fd635df016f7bc8979c3de3a99e97",
+      "labels_file": "A0_pass2_v0.3.csv",
+      "labels_sha256": "24e09e3893aa3104"
+    },
+    "pass1": {
+      "codebook_version": "0.1",
+      "codebook_sha256": "77cfb20c130f01b9c7bcbf4edf5fdb446a27624ce921a77946022ea2cb874285",
+      "labels_file": "A0_pass1_v0.1.csv",
+      "labels_sha256": "2d18c2e5446105d5"
+    }
+  },
+  "registry_head_hash": "33cad517196b9596",
+  "generator": {
+    "file": "build_sheets.py",
+    "sha256": "a39402c14baa825d36d4761bb93b367c4907549a5f0f77f1c4666bce4271509d"
+  },
+  "n_paragraphs": 20,
+  "paragraphs": [
+    {
+      "paragraph_id": "A002_p01",
+      "article_id": "A002",
+      "text_sha256": "cea540e9c7d00d99",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p02",
+      "article_id": "A002",
+      "text_sha256": "c97a45d4e11383ff",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p03",
+      "article_id": "A002",
+      "text_sha256": "e575998243e6bde8",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p04",
+      "article_id": "A002",
+      "text_sha256": "14ba6a46b7d7e141",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p05",
+      "article_id": "A002",
+      "text_sha256": "b2ef053a27144186",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p06",
+      "article_id": "A002",
+      "text_sha256": "8fd3d7ce5dda22c0",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p07",
+      "article_id": "A002",
+      "text_sha256": "fd108b74fe703f44",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A002_p08",
+      "article_id": "A002",
+      "text_sha256": "a6545eb04a3cfc80",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A019_p01",
+      "article_id": "A019",
+      "text_sha256": "3396cb00bf791cd8",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p02",
+      "article_id": "A019",
+      "text_sha256": "e6a433cb97ad7d68",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p03",
+      "article_id": "A019",
+      "text_sha256": "a7dab322f9f84115",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p04",
+      "article_id": "A019",
+      "text_sha256": "c0b1b832973f563c",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p05",
+      "article_id": "A019",
+      "text_sha256": "efab4dea68341c03",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p06",
+      "article_id": "A019",
+      "text_sha256": "a87137808b3aadf9",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p07",
+      "article_id": "A019",
+      "text_sha256": "23b347a0f9e480e4",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p08",
+      "article_id": "A019",
+      "text_sha256": "6b59f8b0374e95e1",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p09",
+      "article_id": "A019",
+      "text_sha256": "da036b4e9ca76922",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p10",
+      "article_id": "A019",
+      "text_sha256": "6cf6ae68f4c38ab8",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p11",
+      "article_id": "A019",
+      "text_sha256": "46e9fef03edef25e",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A019_p12",
+      "article_id": "A019",
+      "text_sha256": "2a7ec0359e7ec37c",
+      "split": "A0",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    }
+  ],
+  "note": "IDs and hashes only -- no article text. A label file of this session is valid only if every row's text hash is in this list; finalize.py checks that by recomputing the hash from the sheet, not by reading the cell.",
+  "reconstructed": true,
+  "reconstruction": {
+    "method": "paragraph_id from the committed label files, joined to the registry-validated identities in ALL_paragraphs.csv",
+    "evidence": {
+      "pass2": {
+        "labels_file": "A0_pass2_v0.3.csv",
+        "labels_sha256_recorded": "24e09e3893aa3104",
+        "labels_sha256_now": "24e09e3893aa3104",
+        "n_rows": 27
+      },
+      "pass1": {
+        "labels_file": "A0_pass1_v0.1.csv",
+        "labels_sha256_recorded": "2d18c2e5446105d5",
+        "labels_sha256_now": "2d18c2e5446105d5",
+        "n_rows": 20
+      }
+    },
+    "paragraphs_not_resolvable": [],
+    "splits_present": {
+      "A0": 20
+    },
+    "pass1_keys": [
+      "A002_p01__nuclear",
+      "A002_p02__nuclear",
+      "A002_p03__nuclear",
+      "A002_p04__nuclear",
+      "A002_p05__nuclear",
+      "A002_p06__nuclear",
+      "A002_p07__nuclear",
+      "A002_p08__general",
+      "A019_p01__solar",
+      "A019_p02__solar",
+      "A019_p03__general",
+      "A019_p04__general",
+      "A019_p04__other_renewable",
+      "A019_p04__solar",
+      "A019_p04__wind",
+      "A019_p05__solar",
+      "A019_p05__wind",
+      "A019_p06__general",
+      "A019_p06__solar",
+      "A019_p07__general",
+      "A019_p07__solar",
+      "A019_p08__solar",
+      "A019_p09__solar",
+      "A019_p09__wind",
+      "A019_p10__solar",
+      "A019_p11__solar",
+      "A019_p12__solar"
+    ],
+    "pass2_keys": [
+      "A002_p01__nuclear",
+      "A002_p02__nuclear",
+      "A002_p03__nuclear",
+      "A002_p04__nuclear",
+      "A002_p05__nuclear",
+      "A002_p06__nuclear",
+      "A002_p07__nuclear",
+      "A002_p08__general",
+      "A019_p01__solar",
+      "A019_p02__solar",
+      "A019_p03__general",
+      "A019_p04__general",
+      "A019_p04__other_renewable",
+      "A019_p04__solar",
+      "A019_p04__wind",
+      "A019_p05__solar",
+      "A019_p05__wind",
+      "A019_p06__general",
+      "A019_p06__solar",
+      "A019_p07__general",
+      "A019_p07__solar",
+      "A019_p08__solar",
+      "A019_p09__solar",
+      "A019_p09__wind",
+      "A019_p10__solar",
+      "A019_p11__solar",
+      "A019_p12__solar"
+    ],
+    "key_check": {
+      "equal": true,
+      "only_in_pass1": [],
+      "only_in_pass2": []
+    }
+  }
+}

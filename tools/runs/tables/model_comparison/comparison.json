@@ -1,0 +1,3663 @@
+{
+  "declared": "pre-analysis specification §4f (2026-10-19); pre-analysis specification §4g (2026-10-30) for mercury3_instant, mercury3_low; pre-analysis specification §4k (2026-11-01) for sonnet5, opus5, sonnet_req5, opus_req5; pre-analysis specification §4m (2026-11-08) for opus55, opus5_req55",
+  "B": 2000,
+  "seed": 20260905,
+  "rows": {
+    "A2": [
+      {
+        "run_id": "a2_sonnet_20261013",
+        "sample": "A2",
+        "model_key": "sonnet",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "registered primary",
+        "authority": null,
+        "repeats": 3,
+        "paragraphs": 120,
+        "technology_f1": 0.934988770484702,
+        "technology_iv": [
+          0.901342006560639,
+          0.9625696021653125
+        ],
+        "element_f1": 0.6427086518526188,
+        "element_iv": [
+          0.5805066378278154,
+          0.7050337558087766
+        ],
+        "element_precision": 0.7591325333068862,
+        "element_recall": 0.5572468419322,
+        "evaluation_A": 0.874132183380739,
+        "evaluation_A_units": 208,
+        "evaluation_A_iv": [
+          0.8124134201586347,
+          0.9239040388630184
+        ],
+        "evaluation_B": 0.6167173224171733,
+        "evaluation_B_iv": [
+          0.554612431040291,
+          0.6787402724614225
+        ],
+        "comparison_A": 0.7940354678679372,
+        "comparison_A_iv": [
+          0.6973607792748707,
+          0.8787128833219903
+        ],
+        "comparison_A_units": 158,
+        "comparison_B": 0.7424142458230868,
+        "comparison_B_iv": [
+          0.6471484114085603,
+          0.8314924434212915
+        ],
+        "exact": 0.21471283931767268,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 5,
+          "off_topic": 3
+        },
+        "displacement_down": 29,
+        "displacement_up": 6,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.7441123435877821,
+          "F1b": 0.7386694031127073,
+          "F2a": null,
+          "F2b": 0.6572951919083918,
+          "F2c": 0.6150911024945956,
+          "F3a": 0.5581068621855381,
+          "F3b": 0.5363014963975614,
+          "F4a": 0.712890625,
+          "F4b": 0.7286282306163022,
+          "F5a": 0.8299645759533236,
+          "F5b": 0.7386107742941279,
+          "F6a": 0.7229307326831708,
+          "F6b": 0.4328537170263789,
+          "F7a": 0.3336058871627146,
+          "F7b": 0.48443579766536965,
+          "F8a": 0.4550561797752809,
+          "F9": null
+        },
+        "cost_usd": 2.180693,
+        "billing_complete": true,
+        "executions": 360,
+        "usd_per_100_executions": 0.6057480555555557,
+        "paired_vs_sonnet46": null,
+        "metrics_sha256": "9d69e490475a885f7216ceb5c49d295b9d7e55662b7092ca6faa1636e46c57f4",
+        "run_record_sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3",
+        "element_pr_gap": {
+          "diff": 0.20188569137468626,
+          "lo": 0.13398242184344733,
+          "hi": 0.26242083203465644,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_opus46_a2_20261019",
+        "sample": "A2",
+        "model_key": "opus",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9454214397526838,
+        "technology_iv": [
+          0.9218523784492094,
+          0.9677819738851774
+        ],
+        "element_f1": 0.6743800614353532,
+        "element_iv": [
+          0.6257481244994211,
+          0.7227982003369945
+        ],
+        "element_precision": 0.7940783340813921,
+        "element_recall": 0.5860410430511589,
+        "evaluation_A": 0.8638522852881474,
+        "evaluation_A_units": 215,
+        "evaluation_A_iv": [
+          0.8103757008802294,
+          0.9114539724674926
+        ],
+        "evaluation_B": 0.6174508348428315,
+        "evaluation_B_iv": [
+          0.571469254776417,
+          0.66674837246633
+        ],
+        "comparison_A": 0.8331786125005204,
+        "comparison_A_iv": [
+          0.7438901152489156,
+          0.9169692666164763
+        ],
+        "comparison_A_units": 166,
+        "comparison_B": 0.7877049234013845,
+        "comparison_B_iv": [
+          0.6984227408554171,
+          0.8681344715259052
+        ],
+        "exact": 0.18728293543338384,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 118,
+          "parse_failed": 1,
+          "off_topic": 1
+        },
+        "displacement_down": 28,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8328967528295359,
+          "F1b": 0.7427369174985452,
+          "F2a": null,
+          "F2b": 0.6884006810914074,
+          "F2c": 0.6975909436046109,
+          "F3a": 0.7779397810641301,
+          "F3b": 0.5443019166955574,
+          "F4a": 0.45499999999999996,
+          "F4b": 0.4078374455732946,
+          "F5a": 0.7645575172716307,
+          "F5b": 0.6591357360588129,
+          "F6a": 0.7056578356533453,
+          "F6b": 0.3980154355016538,
+          "F7a": 0.71939477303989,
+          "F7b": 0.666095890410959,
+          "F8a": 0.6428952200438312,
+          "F9": null
+        },
+        "cost_usd": 1.065701,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.8880841666666667,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.0316714095827344,
+            "lo": -0.024139536023788932,
+            "hi": 0.09016749657881973,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010432669267981809,
+            "lo": -0.012437350727557694,
+            "hi": 0.037257757824536775,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "704f099d74de07fcab26de9740a3d2da2782390285a7e65a28970f5bbb96a18a",
+        "run_record_sha256": "55fad9774ef9f675df843782a96f438e57d3bedec434e93266befeb7da2b8220",
+        "element_pr_gap": {
+          "diff": 0.20803729103023338,
+          "lo": 0.15149097088873564,
+          "hi": 0.261123511028056,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_sonnet45_a2_20261019",
+        "sample": "A2",
+        "model_key": "sonnet45",
+        "model_id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "model": "Claude Sonnet 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8760024091656572,
+        "technology_iv": [
+          0.8184473415365564,
+          0.923322872158641
+        ],
+        "element_f1": 0.5784323250764271,
+        "element_iv": [
+          0.5145151388419367,
+          0.6430631954986386
+        ],
+        "element_precision": 0.7625491979395447,
+        "element_recall": 0.46593315124872753,
+        "evaluation_A": 0.8831617744382343,
+        "evaluation_A_units": 181,
+        "evaluation_A_iv": [
+          0.8345237564054583,
+          0.9290378357337418
+        ],
+        "evaluation_B": 0.563772216954958,
+        "evaluation_B_iv": [
+          0.5006463199537037,
+          0.6242962178749454
+        ],
+        "comparison_A": 0.8107318882004856,
+        "comparison_A_iv": [
+          0.7398165349576733,
+          0.8768629780303209
+        ],
+        "comparison_A_units": 150,
+        "comparison_B": 0.7102030872510474,
+        "comparison_B_iv": [
+          0.6285080628477282,
+          0.7910613323925433
+        ],
+        "exact": 0.13853045300195072,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 111,
+          "parse_failed": 5,
+          "off_topic": 4
+        },
+        "displacement_down": 32,
+        "displacement_up": 6,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.7446430437963835,
+          "F1b": 0.4504384638645298,
+          "F2a": null,
+          "F2b": 0.6224618940185991,
+          "F2c": 0.6231318898344645,
+          "F3a": 0.5970778375050321,
+          "F3b": 0.2275335898993991,
+          "F4a": 0.6324472960586618,
+          "F4b": 0.5408727719729564,
+          "F5a": 0.7710003485535029,
+          "F5b": 0.3959347872115181,
+          "F6a": 0.7298688361281753,
+          "F6b": 0.4819759679572764,
+          "F7a": 0.5127795527156549,
+          "F7b": 0.5836363636363637,
+          "F8a": 0.4715324461517355,
+          "F9": null
+        },
+        "cost_usd": 0.701333,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.5844441666666665,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.06427632677619177,
+            "lo": -0.13161288237669455,
+            "hi": 0.0037170174982794624,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.05898636131904478,
+            "lo": -0.11870893313933062,
+            "hi": -0.004158471184951051,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "ed02f9afc0da1c51ba683d70195f95ea0d2d4f271b7ae7488818711e1809ea65",
+        "run_record_sha256": "3f41adda4212e396adb2741f2c38586c9ba98c2b99348d08e292717354758c33",
+        "element_pr_gap": {
+          "diff": 0.29661604669081715,
+          "lo": 0.23286963259413318,
+          "hi": 0.36449951845493295,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_haiku45_a2_20261019",
+        "sample": "A2",
+        "model_key": "haiku45",
+        "model_id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model": "Claude Haiku 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8097502097531537,
+        "technology_iv": [
+          0.7336569796072732,
+          0.8740594844812948
+        ],
+        "element_f1": 0.4126694622415525,
+        "element_iv": [
+          0.3507713684070362,
+          0.4819357167240994
+        ],
+        "element_precision": 0.7208303204315585,
+        "element_recall": 0.28908378116358613,
+        "evaluation_A": 0.8191547450038216,
+        "evaluation_A_units": 118,
+        "evaluation_A_iv": [
+          0.7313313675705089,
+          0.8962229923842819
+        ],
+        "evaluation_B": 0.3840735957581171,
+        "evaluation_B_iv": [
+          0.31756273005978775,
+          0.45251383397197625
+        ],
+        "comparison_A": 0.7621609830582415,
+        "comparison_A_iv": [
+          0.6645383170180533,
+          0.853668619667625
+        ],
+        "comparison_A_units": 129,
+        "comparison_B": 0.6171600158970812,
+        "comparison_B_iv": [
+          0.516856493122636,
+          0.7193222253021179
+        ],
+        "exact": 0.0892928693329376,
+        "execution1_failed": 12,
+        "execution1_outcomes": {
+          "parse_failed": 12,
+          "off_topic": 10,
+          "technologies_present": 98
+        },
+        "displacement_down": 37,
+        "displacement_up": 1,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.48026026319649073,
+          "F1b": 0.5810154525386314,
+          "F2a": null,
+          "F2b": 0.3157976181265214,
+          "F2c": 0.6106519105060467,
+          "F3a": 0.48885540833961094,
+          "F3b": 0.3334111604015877,
+          "F4a": 0.3684820393974507,
+          "F4b": 0.20855614973262032,
+          "F5a": 0.35328986366330767,
+          "F5b": 0.5585085283617612,
+          "F6a": 0.21527171064127207,
+          "F6b": 0.47127937336814624,
+          "F7a": 0.3010948905109489,
+          "F7b": 0.5190114068441065,
+          "F8a": 0.2291981244536279,
+          "F9": null
+        },
+        "cost_usd": 0.241242,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.20103500000000002,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.23003918961106634,
+            "lo": -0.31695607289678357,
+            "hi": -0.14991585459500822,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.12523856073154827,
+            "lo": -0.2050285433017368,
+            "hi": -0.05343700333532664,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "d8b81db914c0bf9fc8fd605c113c165844cf88e61f7d21de943226a2d27de82f",
+        "run_record_sha256": "ac559b0eaa6c0faa1c1c959efacf4beebc190a020af7d01e025240ab3537a02c",
+        "element_pr_gap": {
+          "diff": 0.4317465392679722,
+          "lo": 0.3593939933617222,
+          "hi": 0.4986667899278735,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_novapro_a2_20261019",
+        "sample": "A2",
+        "model_key": "novapro",
+        "model_id": "eu.amazon.nova-pro-v1:0",
+        "model": "Amazon Nova Pro",
+        "provider": "Amazon, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.7596200164642875,
+        "technology_iv": [
+          0.6915286026524413,
+          0.8251805650979988
+        ],
+        "element_f1": 0.35012332755610875,
+        "element_iv": [
+          0.2812230568054685,
+          0.42863318642038856
+        ],
+        "element_precision": 0.49417960395207433,
+        "element_recall": 0.2710969606592903,
+        "evaluation_A": 0.7842368388279037,
+        "evaluation_A_units": 129,
+        "evaluation_A_iv": [
+          0.6925460028945133,
+          0.8781553318477924
+        ],
+        "evaluation_B": 0.3753052362707536,
+        "evaluation_B_iv": [
+          0.3165342496778493,
+          0.4380795896253331
+        ],
+        "comparison_A": 0.8922860432390948,
+        "comparison_A_iv": [
+          0.8235444732998224,
+          0.953297233575852
+        ],
+        "comparison_A_units": 128,
+        "comparison_B": 0.6777983388561347,
+        "comparison_B_iv": [
+          0.5917208636476892,
+          0.7583894960476585
+        ],
+        "exact": 0.040326624167323265,
+        "execution1_failed": 18,
+        "execution1_outcomes": {
+          "parse_failed": 18,
+          "technologies_present": 101,
+          "off_topic": 1
+        },
+        "displacement_down": 33,
+        "displacement_up": 5,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.5003579952267303,
+          "F1b": 0.4602890704307052,
+          "F2a": null,
+          "F2b": 0.22552194340755743,
+          "F2c": 0.4646468050687517,
+          "F3a": 0.39636132737010654,
+          "F3b": 0.19211384524162467,
+          "F4a": 0.3248587570621469,
+          "F4b": 0.08928571428571429,
+          "F5a": 0.5390275952693824,
+          "F5b": 0.5505573248407644,
+          "F6a": 0.38643687824015693,
+          "F6b": 0.0,
+          "F7a": 0.17462446351931332,
+          "F7b": 0.21330275229357798,
+          "F8a": 0.08656075568913699,
+          "F9": null
+        },
+        "cost_usd": 0.604717,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.5039308333333333,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.2925853242965101,
+            "lo": -0.39321168056105016,
+            "hi": -0.192233833005088,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.17536875402041452,
+            "lo": -0.25190720330051664,
+            "hi": -0.10244295118697166,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "9ac8b7053842c53f0f300051a4caa8e9243fe6fab53f065023d9390009904a08",
+        "run_record_sha256": "e131654278306e8e3a452f3149819560319e2f85175c5a672d9ef12a8b3f3161",
+        "element_pr_gap": {
+          "diff": 0.22308264329278393,
+          "lo": 0.16060840301325402,
+          "hi": 0.29298617001976085,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_nemotron3s_a2_20261019r3",
+        "sample": "A2",
+        "model_key": "nemotron3s",
+        "model_id": "nvidia.nemotron-super-3-120b",
+        "model": "NVIDIA Nemotron 3 Super",
+        "provider": "NVIDIA, open weights",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.805439642854604,
+        "technology_iv": [
+          0.7412368184147534,
+          0.8662920894182339
+        ],
+        "element_f1": 0.4253085238883825,
+        "element_iv": [
+          0.36583586754094555,
+          0.49332327945284965
+        ],
+        "element_precision": 0.6576845141664422,
+        "element_recall": 0.31426945528714734,
+        "evaluation_A": 0.7328105442953063,
+        "evaluation_A_units": 134,
+        "evaluation_A_iv": [
+          0.6488179474256602,
+          0.807209847625399
+        ],
+        "evaluation_B": 0.3762012446438778,
+        "evaluation_B_iv": [
+          0.3228733150108586,
+          0.4285780988681447
+        ],
+        "comparison_A": 0.8022629785881981,
+        "comparison_A_iv": [
+          0.7099308186791928,
+          0.8850817570657173
+        ],
+        "comparison_A_units": 132,
+        "comparison_B": 0.646174406949549,
+        "comparison_B_iv": [
+          0.5443265482965953,
+          0.7385957727172401
+        ],
+        "exact": 0.042989764341823375,
+        "execution1_failed": 12,
+        "execution1_outcomes": {
+          "technologies_present": 108,
+          "parse_failed": 12
+        },
+        "displacement_down": 36,
+        "displacement_up": 2,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.6027985865724381,
+          "F1b": 0.49122807017543857,
+          "F2a": null,
+          "F2b": 0.4102934953208951,
+          "F2c": 0.5284251915124398,
+          "F3a": 0.4181226553918216,
+          "F3b": 0.39655838067398375,
+          "F4a": 0.47630057803468207,
+          "F4b": 0.06512301013024602,
+          "F5a": 0.4468339307048984,
+          "F5b": 0.4581516095534786,
+          "F6a": 0.4722008316648698,
+          "F6b": 0.374340330714202,
+          "F7a": 0.14356929212362912,
+          "F7b": 0.3839701770736253,
+          "F8a": 0.1380462939750982,
+          "F9": null
+        },
+        "cost_usd": 0.123948,
+        "billing_complete": false,
+        "executions": 120,
+        "usd_per_100_executions": 0.10329,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.21740012796423636,
+            "lo": -0.3067405464273539,
+            "hi": -0.13461594399112747,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.12954912763009796,
+            "lo": -0.19842108920272594,
+            "hi": -0.06818531583484344,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "9027ff2a5adf4bfcc874039cb844e01476c51b3f8ea25ba66c20588cd402be97",
+        "run_record_sha256": "48b47c1cb2141e9304c1ab6630a77e87c9744b178b3f0ca65bca1c49915c8e80",
+        "element_pr_gap": {
+          "diff": 0.343415058879295,
+          "lo": 0.2723515495305545,
+          "hi": 0.4149469867364959,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_qwen3_235b_a2_20261019",
+        "sample": "A2",
+        "model_key": "qwen3_235b",
+        "model_id": "qwen.qwen3-235b-a22b-2507-v1:0",
+        "model": "Qwen3-235B-A22B",
+        "provider": "Alibaba, open weights",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8572974676174232,
+        "technology_iv": [
+          0.8060710578567808,
+          0.9051568784524304
+        ],
+        "element_f1": 0.5148697437431436,
+        "element_iv": [
+          0.4505815946994375,
+          0.5760623942910101
+        ],
+        "element_precision": 0.7060502645167019,
+        "element_recall": 0.4051621107092199,
+        "evaluation_A": 0.8328375273025126,
+        "evaluation_A_units": 164,
+        "evaluation_A_iv": [
+          0.7543086904125778,
+          0.9056427286205904
+        ],
+        "evaluation_B": 0.493195881150233,
+        "evaluation_B_iv": [
+          0.42613951743018263,
+          0.5589467467739297
+        ],
+        "comparison_A": 0.808047556649302,
+        "comparison_A_iv": [
+          0.7066540034844436,
+          0.8931741719064054
+        ],
+        "comparison_A_units": 144,
+        "comparison_B": 0.6927371240298926,
+        "comparison_B_iv": [
+          0.6030603044964981,
+          0.7802554852944885
+        ],
+        "exact": 0.12207982160626296,
+        "execution1_failed": 9,
+        "execution1_outcomes": {
+          "parse_failed": 9,
+          "technologies_present": 108,
+          "off_topic": 3
+        },
+        "displacement_down": 33,
+        "displacement_up": 5,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.5502214348981399,
+          "F1b": 0.6112535090931284,
+          "F2a": null,
+          "F2b": 0.4913447070996897,
+          "F2c": 0.5898769781127542,
+          "F3a": 0.41006031458193715,
+          "F3b": 0.6277344850248803,
+          "F4a": 0.5727069351230424,
+          "F4b": 0.07894736842105263,
+          "F5a": 0.655635987590486,
+          "F5b": 0.7258423122969043,
+          "F6a": 0.17503265534614668,
+          "F6b": 0.5027624309392266,
+          "F7a": 0.3255395683453237,
+          "F7b": 0.6089285714285714,
+          "F8a": 0.2042230818826563,
+          "F9": null
+        },
+        "cost_usd": 0.132677,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.11056416666666666,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.12783890810947518,
+            "lo": -0.19868303776393242,
+            "hi": -0.06569242245287399,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.07769130286727877,
+            "lo": -0.13657237439644587,
+            "hi": -0.014952400955352663,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "aec1f4314a2980674776300ec6e79d2de1e6792d36775216cdd891e0a178c7fb",
+        "run_record_sha256": "07efe653912b772dab6c7c8c72bf0408547c831030662863eed59c71416f2965",
+        "element_pr_gap": {
+          "diff": 0.300888153807482,
+          "lo": 0.244961451633939,
+          "hi": 0.35305910142403835,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_mercury3_instant_a2_20261030",
+        "sample": "A2",
+        "model_key": "mercury3_instant",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (instant)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4g (2026-10-30)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.7675588588451661,
+        "technology_iv": [
+          0.6849614754432259,
+          0.8395102819498385
+        ],
+        "element_f1": 0.42844068145781633,
+        "element_iv": [
+          0.34906301479845,
+          0.5144361677547422
+        ],
+        "element_precision": 0.7043107013876744,
+        "element_recall": 0.30785685771798893,
+        "evaluation_A": 0.8495299033178919,
+        "evaluation_A_units": 118,
+        "evaluation_A_iv": [
+          0.7750909279911845,
+          0.9108815608038808
+        ],
+        "evaluation_B": 0.4063065948245993,
+        "evaluation_B_iv": [
+          0.3228841484215294,
+          0.4953273124829188
+        ],
+        "comparison_A": 0.8362970297029698,
+        "comparison_A_iv": [
+          0.7293128832030984,
+          0.9313581428987915
+        ],
+        "comparison_A_units": 118,
+        "comparison_B": 0.6419071937744137,
+        "comparison_B_iv": [
+          0.545274997582487,
+          0.7338678064110308
+        ],
+        "exact": 0.11348444861011767,
+        "execution1_failed": 27,
+        "execution1_outcomes": {
+          "technologies_present": 91,
+          "parse_failed": 27,
+          "off_topic": 2
+        },
+        "displacement_down": 38,
+        "displacement_up": 0,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.6188460285976495,
+          "F1b": 0.46280991735537186,
+          "F2a": null,
+          "F2b": 0.3080666451089636,
+          "F2c": 0.6320264745960676,
+          "F3a": 0.5851211151217962,
+          "F3b": 0.16461792825821292,
+          "F4a": 0.4391634980988593,
+          "F4b": 0.4185714285714286,
+          "F5a": 0.5757952286282306,
+          "F5b": 0.47975486977456766,
+          "F6a": 0.38699186991869916,
+          "F6b": 0.2134831460674157,
+          "F7a": 0.14356929212362912,
+          "F7b": 0.2533632286995516,
+          "F8a": 0.3382802595271832,
+          "F9": null
+        },
+        "cost_usd": 0.075733,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.06311083333333332,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.2142679703948025,
+            "lo": -0.28453702746084186,
+            "hi": -0.1408869522335211,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.1674299116395359,
+            "lo": -0.2533077004324561,
+            "hi": -0.08997539765490359,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "96e1f6d950e75fb09f47a8cf7c112b56d8c2865d13e89ac3cd4b799ed7a0a329",
+        "run_record_sha256": "3a680314e610309bee1369ef10456b3c8cdca8faceba52215684efbf2a8bc749",
+        "paired_vs_opus46": {
+          "element": {
+            "diff": -0.2459393799775369,
+            "lo": -0.3219086761629154,
+            "hi": -0.1706077487074103,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.17786258090751772,
+            "lo": -0.2601756801789459,
+            "hi": -0.10779794067555293,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "element_pr_gap": {
+          "diff": 0.39645384366968534,
+          "lo": 0.2935776317227674,
+          "hi": 0.4951098684084099,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_mercury3_low_a2_20261030",
+        "sample": "A2",
+        "model_key": "mercury3_low",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (low)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4g (2026-10-30)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.8898280892070101,
+        "technology_iv": [
+          0.8308468445706095,
+          0.9385894283096023
+        ],
+        "element_f1": 0.5799753182896117,
+        "element_iv": [
+          0.5214523256346355,
+          0.6418142403016667
+        ],
+        "element_precision": 0.8003399559253122,
+        "element_recall": 0.45476176320345957,
+        "evaluation_A": 0.8450902469532712,
+        "evaluation_A_units": 171,
+        "evaluation_A_iv": [
+          0.7790246946054487,
+          0.9052356404429432
+        ],
+        "evaluation_B": 0.5307319109155058,
+        "evaluation_B_iv": [
+          0.46676650768623784,
+          0.5964370733927857
+        ],
+        "comparison_A": 0.778588084320569,
+        "comparison_A_iv": [
+          0.6913365401318573,
+          0.8571089357073931
+        ],
+        "comparison_A_units": 146,
+        "comparison_B": 0.6928095473503179,
+        "comparison_B_iv": [
+          0.6102426372056874,
+          0.7725602171465961
+        ],
+        "exact": 0.130809563232232,
+        "execution1_failed": 7,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 7,
+          "off_topic": 1
+        },
+        "displacement_down": 35,
+        "displacement_up": 1,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.7103222112331476,
+          "F1b": 0.6888191671420423,
+          "F2a": null,
+          "F2b": 0.6439590884077496,
+          "F2c": 0.5636141947514802,
+          "F3a": 0.6536484655583991,
+          "F3b": 0.36775559976894934,
+          "F4a": 0.29495472186287197,
+          "F4b": 0.3360927152317881,
+          "F5a": 0.6820839288034299,
+          "F5b": 0.6087122659533818,
+          "F6a": 0.6025715955581532,
+          "F6b": 0.5316642120765832,
+          "F7a": 0.5759087669280114,
+          "F7b": 0.5563258232235702,
+          "F8a": 0.39686308367508455,
+          "F9": null
+        },
+        "cost_usd": 0.152781,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.1273175,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.06273333356300714,
+            "lo": -0.14168554841086567,
+            "hi": 0.015196871381057409,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.045160681277691905,
+            "lo": -0.10359697183092398,
+            "hi": 0.0032215288745310877,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "08011440dd0dd0be619261626dd771c4de3865b1b9fce086816c3908fe5e7b74",
+        "run_record_sha256": "781590942a96bd0709cb29f31a3bb25c9e0afa9732198360478cfd4ee0998777",
+        "paired_vs_opus46": {
+          "element": {
+            "diff": -0.09440474314574154,
+            "lo": -0.1550210635752972,
+            "hi": -0.03900723183367849,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.055593350545673714,
+            "lo": -0.1154826453187009,
+            "hi": -0.006899230975847659,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "element_pr_gap": {
+          "diff": 0.34557819272185264,
+          "lo": 0.2724332933802697,
+          "hi": 0.41252219175972005,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_sonnet5_a2_20261101",
+        "sample": "A2",
+        "model_key": "sonnet5",
+        "model_id": "eu.anthropic.claude-sonnet-5",
+        "model": "Claude Sonnet 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9453921295744032,
+        "technology_iv": [
+          0.9233915369149392,
+          0.9674173412016305
+        ],
+        "element_f1": 0.6407015514175937,
+        "element_iv": [
+          0.5824088712927915,
+          0.6993567958560764
+        ],
+        "element_precision": 0.8110221733239914,
+        "element_recall": 0.5295021955714856,
+        "evaluation_A": 0.7897500340726133,
+        "evaluation_A_units": 199,
+        "evaluation_A_iv": [
+          0.7252388022315889,
+          0.8454522697395018
+        ],
+        "evaluation_B": 0.5454973357937054,
+        "evaluation_B_iv": [
+          0.4881648440451603,
+          0.6028589849914442
+        ],
+        "comparison_A": 0.7839808207270749,
+        "comparison_A_iv": [
+          0.6805991369032696,
+          0.8726973454090777
+        ],
+        "comparison_A_units": 165,
+        "comparison_B": 0.7411692976526568,
+        "comparison_B_iv": [
+          0.6404003036733837,
+          0.8330194980118524
+        ],
+        "exact": 0.1590986212877198,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 120
+        },
+        "displacement_down": 29,
+        "displacement_up": 5,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8318525830865416,
+          "F1b": 0.7504864673624625,
+          "F2a": null,
+          "F2b": 0.5832566428560995,
+          "F2c": 0.6758410721662104,
+          "F3a": 0.6163989710110465,
+          "F3b": 0.3339256173028614,
+          "F4a": 0.6397248495270851,
+          "F4b": 0.8313953488372093,
+          "F5a": 0.8130135465245393,
+          "F5b": 0.8058554437328455,
+          "F6a": 0.6165162808944684,
+          "F6b": 0.4039675383228133,
+          "F7a": 0.4863636363636364,
+          "F7b": 0.3770833333333333,
+          "F8a": 0.48751018191691564,
+          "F9": null
+        },
+        "cost_usd": 0.476098,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.3967483333333333,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.0020071004350251664,
+            "lo": -0.04538907235228473,
+            "hi": 0.04542968439745709,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010403359089701247,
+            "lo": -0.017545586957768977,
+            "hi": 0.0412370910813481,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "033ad00ab81863f48cb4d7ae630f2e503e54b2fd7852664515dd4a3d97c87063",
+        "run_record_sha256": "08b57afc790196192134a0db7b2636d8ffd2f2601fdc6992b274e6c1b2d51d0e",
+        "element_pr_gap": {
+          "diff": 0.2815199777525059,
+          "lo": 0.2209817503013416,
+          "hi": 0.3331250619368807,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "paired_vs_opus46": {
+          "element": {
+            "diff": -0.033678510017759566,
+            "lo": -0.08746594328130808,
+            "hi": 0.02457733736488177,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -2.9310178280561594e-05,
+            "lo": -0.020821317232410763,
+            "hi": 0.022026809772701328,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_control": {
+          "element": {
+            "diff": 0.018519501150860318,
+            "lo": -0.03695804977624029,
+            "hi": 0.0816126927916484,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.013598913636185372,
+            "lo": -0.013134066371101705,
+            "hi": 0.04583783029226862,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_sonnet46_without_failed": {
+          "element": {
+            "diff": -0.015511942905692022,
+            "lo": -0.056458912229741864,
+            "hi": 0.029514762001169204,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 55,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.00750470674236825,
+            "lo": -0.03097814088543238,
+            "hi": 0.016984714243987953,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 55,
+            "defined_draws": 2000
+          },
+          "paragraphs": 115
+        }
+      },
+      {
+        "run_id": "mc_opus5_a2_20261101",
+        "sample": "A2",
+        "model_key": "opus5",
+        "model_id": "eu.anthropic.claude-opus-5",
+        "model": "Claude Opus 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9662242883856224,
+        "technology_iv": [
+          0.9414735006357217,
+          0.9863807264376572
+        ],
+        "element_f1": 0.7395673267733658,
+        "element_iv": [
+          0.6981722359194049,
+          0.7793553234439433
+        ],
+        "element_precision": 0.7478834587212418,
+        "element_recall": 0.7314341043415167,
+        "evaluation_A": 0.8761398679255203,
+        "evaluation_A_units": 269,
+        "evaluation_A_iv": [
+          0.830674618738515,
+          0.9168423092414635
+        ],
+        "evaluation_B": 0.6962737170776446,
+        "evaluation_B_iv": [
+          0.6354612916004334,
+          0.751440023628843
+        ],
+        "comparison_A": 0.7607483166906354,
+        "comparison_A_iv": [
+          0.6746254344716583,
+          0.8415779337161817
+        ],
+        "comparison_A_units": 170,
+        "comparison_B": 0.7350535009349678,
+        "comparison_B_iv": [
+          0.6505466988767532,
+          0.8137582650706596
+        ],
+        "exact": 0.27408710070469416,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 120
+        },
+        "displacement_down": 22,
+        "displacement_up": 14,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8235648279070616,
+          "F1b": 0.8637169568020632,
+          "F2a": null,
+          "F2b": 0.8125591144000787,
+          "F2c": 0.5726780630982758,
+          "F3a": 0.6935985358001279,
+          "F3b": 0.6294875683133225,
+          "F4a": 0.7301841473178542,
+          "F4b": 0.8970133882595264,
+          "F5a": 0.8646498482152204,
+          "F5b": 0.6706505036708212,
+          "F6a": 0.704714640198511,
+          "F6b": 0.4499564838990427,
+          "F7a": 0.6277472527472527,
+          "F7b": 0.7847113884555382,
+          "F8a": 0.8532237206724552,
+          "F9": null
+        },
+        "cost_usd": 1.198467,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.9987225,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.09685867492074696,
+            "lo": 0.039246490457710226,
+            "hi": 0.15016211221117703,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.031235517900920384,
+            "lo": 0.008874488274276615,
+            "hi": 0.054821351702292964,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "218100ea5d3f739908fe7390e089db4e018446d039b1a95867524560affd562a",
+        "run_record_sha256": "56527400538fef587223f039264ee1c0d26b40628d16b493e68daecae4be8e01",
+        "element_pr_gap": {
+          "diff": 0.016449354379725167,
+          "lo": -0.045104842073288576,
+          "hi": 0.07557385198275568,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "paired_vs_opus46": {
+          "element": {
+            "diff": 0.06518726533801256,
+            "lo": 0.01935771322381974,
+            "hi": 0.10841173877868793,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.020802848632938575,
+            "lo": -0.0031849619993959966,
+            "hi": 0.04461953100833271,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_control": {
+          "element": {
+            "diff": 0.07218024279348934,
+            "lo": 0.026469182257217838,
+            "hi": 0.1174106227699977,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.02063698142670678,
+            "lo": -0.001855827272702948,
+            "hi": 0.041391721677340176,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_sonnet46_without_failed": {
+          "element": {
+            "diff": 0.08516910840141034,
+            "lo": 0.030294228002130552,
+            "hi": 0.13783210115410227,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 55,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.018729039875680642,
+            "lo": -0.002674065817112603,
+            "hi": 0.03911715482741207,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 55,
+            "defined_draws": 2000
+          },
+          "paragraphs": 115
+        }
+      },
+      {
+        "run_id": "mc_opus55_a2_20261108r2",
+        "sample": "A2",
+        "model_key": "opus55",
+        "model_id": "eu.anthropic.claude-opus-5-5",
+        "model": "Claude Opus 5.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4m (2026-11-08)",
+        "repeats": 3,
+        "paragraphs": 120,
+        "technology_f1": 0.955523691931865,
+        "technology_iv": [
+          0.927158683603902,
+          0.9788770729198129
+        ],
+        "element_f1": 0.7259811827419089,
+        "element_iv": [
+          0.6854495293659524,
+          0.7696622294140342
+        ],
+        "element_precision": 0.8061258800508958,
+        "element_recall": 0.6603313195633366,
+        "evaluation_A": 0.8529345264900596,
+        "evaluation_A_units": 244,
+        "evaluation_A_iv": [
+          0.8011250192017094,
+          0.8989542139267043
+        ],
+        "evaluation_B": 0.6682154848144821,
+        "evaluation_B_iv": [
+          0.6142096862506542,
+          0.71888916849884
+        ],
+        "comparison_A": 0.8327937641550079,
+        "comparison_A_iv": [
+          0.7492011215260511,
+          0.9058493882219575
+        ],
+        "comparison_A_units": 165,
+        "comparison_B": 0.795754172143227,
+        "comparison_B_iv": [
+          0.7149992166643009,
+          0.867377084711573
+        ],
+        "exact": 0.20142110815929629,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 119,
+          "off_topic": 1
+        },
+        "displacement_down": 27,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.7970176887087493,
+          "F1b": 0.8253145188711323,
+          "F2a": null,
+          "F2b": 0.8286001983017041,
+          "F2c": 0.5868575418994414,
+          "F3a": 0.6979076527102887,
+          "F3b": 0.6958060351011429,
+          "F4a": 0.9107438016528926,
+          "F4b": 0.6862210095497954,
+          "F5a": 0.7693933629253858,
+          "F5b": 0.7280815569972197,
+          "F6a": 0.7788737670121114,
+          "F6b": 0.46640826873385016,
+          "F7a": 0.39903846153846156,
+          "F7b": 0.7548579970104634,
+          "F8a": 0.6350817822899042,
+          "F9": null
+        },
+        "cost_usd": 3.39728,
+        "billing_complete": true,
+        "executions": 360,
+        "usd_per_100_executions": 0.9436888888888889,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.0832725308892901,
+            "lo": 0.02996699723957108,
+            "hi": 0.1364417093361523,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.020534921447163068,
+            "lo": -0.003829457582134599,
+            "hi": 0.044816455951835366,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "e36df7a66052f8c4fd94421bfd86f2f0783fca7000a43ed9d3648e55ac8bfb6f",
+        "run_record_sha256": "4bda7ad3db941207e947c05f41a450177ffb03860e1c58c779f4c383e573376e",
+        "element_pr_gap": {
+          "diff": 0.14579456048755934,
+          "lo": 0.08558225943247266,
+          "hi": 0.1950419327249745,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        },
+        "paired_vs_opus5": {
+          "element": {
+            "diff": -0.01358614403145686,
+            "lo": -0.04889576850372268,
+            "hi": 0.028447659987821172,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.010700596453757316,
+            "lo": -0.028425495046868532,
+            "hi": 0.006158980997891916,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_control": {
+          "element": {
+            "diff": -0.017635904062630603,
+            "lo": -0.05058600954076253,
+            "hi": 0.01914629053566741,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.005558839940199456,
+            "lo": -0.019208766230390917,
+            "hi": 0.007049692477603009,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      {
+        "run_id": "mc_sonnet_req5_a2_20261101",
+        "sample": "A2",
+        "model_key": "sonnet_req5",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9317932159382178,
+        "technology_iv": [
+          0.8947168844416855,
+          0.9610651702455048
+        ],
+        "element_f1": 0.6221820502667333,
+        "element_iv": [
+          0.5635790608433912,
+          0.6826151625715662
+        ],
+        "element_precision": 0.7474597906561145,
+        "element_recall": 0.532870477662684,
+        "evaluation_A": 0.8686134913987504,
+        "evaluation_A_units": 199,
+        "evaluation_A_iv": [
+          0.8031838901117652,
+          0.9207673591141734
+        ],
+        "evaluation_B": 0.5897261247693751,
+        "evaluation_B_iv": [
+          0.5283960365496472,
+          0.6500578262239094
+        ],
+        "comparison_A": 0.8073449557016297,
+        "comparison_A_iv": [
+          0.7186609505461851,
+          0.8863917011981027
+        ],
+        "comparison_A_units": 158,
+        "comparison_B": 0.7522785526447189,
+        "comparison_B_iv": [
+          0.6632990186097496,
+          0.8359610934214562
+        ],
+        "exact": 0.18565035836709257,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 5,
+          "off_topic": 3
+        },
+        "displacement_down": 29,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.6229704631238391,
+          "F1b": 0.7338659007270443,
+          "F2a": null,
+          "F2b": 0.6536964980544747,
+          "F2c": 0.6283731202019139,
+          "F3a": 0.5212613277565916,
+          "F3b": 0.5279736287885725,
+          "F4a": 0.712890625,
+          "F4b": 0.7627471383975026,
+          "F5a": 0.8299645759533236,
+          "F5b": 0.7386107742941279,
+          "F6a": 0.6690580884054617,
+          "F6b": 0.48749999999999993,
+          "F7a": 0.125114995400184,
+          "F7b": 0.48443579766536965,
+          "F8a": 0.48484848484848486,
+          "F9": null
+        },
+        "cost_usd": 0.720428,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.6003566666666666,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.020526601585885484,
+            "lo": -0.05111865566930596,
+            "hi": 0.003140852718109377,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.003195554546484125,
+            "lo": -0.021315821805975355,
+            "hi": 0.011554471136703492,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "767fb7ba7c5b11ee850f34e04d6a4e99e17527658a2fdde237bd61f230fea2e4",
+        "run_record_sha256": "f3879d36b4361b7a2f92048f21a5a05ac296875b4af350583376fce8fdaa0d13",
+        "element_pr_gap": {
+          "diff": 0.21458931299343054,
+          "lo": 0.14530759825135353,
+          "hi": 0.275674231834488,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_opus_req5_a2_20261101",
+        "sample": "A2",
+        "model_key": "opus_req5",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9455873069589156,
+        "technology_iv": [
+          0.9242048586582617,
+          0.9656740002717173
+        ],
+        "element_f1": 0.6673870839798764,
+        "element_iv": [
+          0.6204930552835232,
+          0.7135045693515237
+        ],
+        "element_precision": 0.7823551195733567,
+        "element_recall": 0.5818792247612414,
+        "evaluation_A": 0.8857876483218697,
+        "evaluation_A_units": 215,
+        "evaluation_A_iv": [
+          0.8327579836954592,
+          0.9310877267646888
+        ],
+        "evaluation_B": 0.630227733259996,
+        "evaluation_B_iv": [
+          0.5829034740122455,
+          0.678953754581635
+        ],
+        "comparison_A": 0.8273341683987401,
+        "comparison_A_iv": [
+          0.7384605510357488,
+          0.9104694790028708
+        ],
+        "comparison_A_units": 167,
+        "comparison_B": 0.7823166882512576,
+        "comparison_B_iv": [
+          0.698200667735541,
+          0.8625162722560394
+        ],
+        "exact": 0.2028811257869399,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 118,
+          "parse_failed": 1,
+          "off_topic": 1
+        },
+        "displacement_down": 28,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8396091457944378,
+          "F1b": 0.7403686594609141,
+          "F2a": null,
+          "F2b": 0.6423398773178893,
+          "F2c": 0.6854468585381293,
+          "F3a": 0.7779397810641301,
+          "F3b": 0.5537030232864462,
+          "F4a": 0.5156950672645739,
+          "F4b": 0.4078374455732946,
+          "F5a": 0.7327320199382863,
+          "F5b": 0.6591357360588129,
+          "F6a": 0.7106840022611645,
+          "F6b": 0.3980154355016538,
+          "F7a": 0.775,
+          "F7b": 0.6089285714285714,
+          "F8a": 0.655118300338001,
+          "F9": null
+        },
+        "cost_usd": 1.069276,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.8910633333333332,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.02467843212725762,
+            "lo": -0.03523543076370039,
+            "hi": 0.08369574295325444,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010598536474213605,
+            "lo": -0.013552749540445275,
+            "hi": 0.03783973674285346,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "aef3598462301bc87ab1e8148cea307473101fd494a7b2750aaff996ebe31a43",
+        "run_record_sha256": "0333ec5325df838d094dc10091b8947fd6645794800dcc739755daf8d64af8c7",
+        "element_pr_gap": {
+          "diff": 0.20047589481211514,
+          "lo": 0.1471335928194336,
+          "hi": 0.24871303530003153,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_opus5_req55_a2_20261108r2",
+        "sample": "A2",
+        "model_key": "opus5_req55",
+        "model_id": "eu.anthropic.claude-opus-5",
+        "model": "Claude Opus 5 (5.5 request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4m (2026-11-08)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9610825318720645,
+        "technology_iv": [
+          0.9324469452435556,
+          0.982561784994581
+        ],
+        "element_f1": 0.7436170868045395,
+        "element_iv": [
+          0.6989023905606168,
+          0.7834692390587578
+        ],
+        "element_precision": 0.7890729148652531,
+        "element_recall": 0.7031131128823442,
+        "evaluation_A": 0.8755475452127897,
+        "evaluation_A_units": 258,
+        "evaluation_A_iv": [
+          0.8289355588548873,
+          0.918632135178069
+        ],
+        "evaluation_B": 0.6992654581889769,
+        "evaluation_B_iv": [
+          0.6495352587007042,
+          0.7448238491368738
+        ],
+        "comparison_A": 0.7646237457049391,
+        "comparison_A_iv": [
+          0.6718289098448065,
+          0.8548554300373642
+        ],
+        "comparison_A_units": 167,
+        "comparison_B": 0.7348665254516031,
+        "comparison_B_iv": [
+          0.6442704539513177,
+          0.824263272201673
+        ],
+        "exact": 0.2740479959475717,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 119,
+          "parse_failed": 1
+        },
+        "displacement_down": 26,
+        "displacement_up": 9,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8174455998685477,
+          "F1b": 0.8867284461360251,
+          "F2a": null,
+          "F2b": 0.8156764798840607,
+          "F2c": 0.6669213244021227,
+          "F3a": 0.7917810726706938,
+          "F3b": 0.6123177071199888,
+          "F4a": 0.6497816593886463,
+          "F4b": 0.8783482142857143,
+          "F5a": 0.7537482962289869,
+          "F5b": 0.7116249197174053,
+          "F6a": 0.7704647322481718,
+          "F6b": 0.542747358309318,
+          "F7a": 0.5521739130434783,
+          "F7b": 0.8276899924755455,
+          "F8a": 0.6809113703259567,
+          "F9": null
+        },
+        "cost_usd": 1.388557,
+        "billing_complete": false,
+        "executions": 120,
+        "usd_per_100_executions": 1.1571308333333334,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.1009084349519207,
+            "lo": 0.05064150532274814,
+            "hi": 0.1507835745766649,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.026093761387362524,
+            "lo": 0.0016061749841905781,
+            "hi": 0.050829724552869604,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "18c713b4d83b16d6a00dc55286a7030c06c721c7bb215114ef7fd9ece83a1509",
+        "run_record_sha256": "d3c52abcc0a57d0cda02f29d091ba2dc82d6c50671a379254a24b7faebe43b15",
+        "element_pr_gap": {
+          "diff": 0.08595980198290909,
+          "lo": 0.024613201999734824,
+          "hi": 0.14276910678165644,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 56,
+          "defined_draws": 2000
+        }
+      }
+    ],
+    "A3": [
+      {
+        "run_id": "a3_sonnet_20261019",
+        "sample": "A3",
+        "model_key": "sonnet",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "fresh-sample evaluation",
+        "authority": null,
+        "repeats": 3,
+        "paragraphs": 55,
+        "technology_f1": 0.8648648648648649,
+        "technology_iv": [
+          0.7884469696969697,
+          0.9271578674756742
+        ],
+        "element_f1": 0.563265306122449,
+        "element_iv": [
+          0.5106382978723404,
+          0.6218667233430336
+        ],
+        "element_precision": 0.6571428571428571,
+        "element_recall": 0.4928571428571429,
+        "evaluation_A": 0.7424242424242424,
+        "evaluation_A_units": 66,
+        "evaluation_A_iv": [
+          0.6037654521795706,
+          0.8571428571428571
+        ],
+        "evaluation_B": 0.4474885844748858,
+        "evaluation_B_iv": [
+          0.37426711941143176,
+          0.5043538093338651
+        ],
+        "comparison_A": 0.890625,
+        "comparison_A_iv": [
+          0.826519520851819,
+          0.9743589743589743
+        ],
+        "comparison_A_units": 64,
+        "comparison_B": 0.7702702702702703,
+        "comparison_B_iv": [
+          0.7085714285714285,
+          0.8427695417789758
+        ],
+        "exact": 0.13095238095238096,
+        "execution1_failed": 8,
+        "execution1_outcomes": {
+          "parse_failed": 8,
+          "technologies_present": 47
+        },
+        "displacement_down": 19,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5,
+          "F1b": 0.5882352941176471,
+          "F2a": null,
+          "F2b": 0.5641025641025641,
+          "F2c": 0.42857142857142855,
+          "F3a": 0.75,
+          "F3b": 0.5882352941176471,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.6153846153846154,
+          "F5b": 0.35294117647058826,
+          "F6a": null,
+          "F6b": 0.5,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.8333333333333334,
+          "F9": 0.5454545454545454
+        },
+        "cost_usd": 1.087634,
+        "billing_complete": true,
+        "executions": 165,
+        "usd_per_100_executions": 0.6591721212121212,
+        "paired_vs_sonnet46": null,
+        "metrics_sha256": "5e469e5e5a702466cf11223d7be1977b65bc105f4dc620c459a125de4b441805",
+        "run_record_sha256": "d4aae3e1eb96b0d0470774d0727f690462480e0cc99e73627ced3c165b426062",
+        "element_pr_gap": {
+          "diff": 0.16428571428571426,
+          "lo": 0.07099391480730222,
+          "hi": 0.24500907441016334,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_opus46_a3_20261019",
+        "sample": "A3",
+        "model_key": "opus",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9447852760736196,
+        "technology_iv": [
+          0.8928520984665053,
+          0.9859203834115806
+        ],
+        "element_f1": 0.6795366795366795,
+        "element_iv": [
+          0.6299958563535911,
+          0.7282186234817812
+        ],
+        "element_precision": 0.7394957983193278,
+        "element_recall": 0.6285714285714286,
+        "evaluation_A": 0.8,
+        "evaluation_A_units": 80,
+        "evaluation_A_iv": [
+          0.6712073739434568,
+          0.8932071197411003
+        ],
+        "evaluation_B": 0.5517241379310345,
+        "evaluation_B_iv": [
+          0.4623093243997767,
+          0.6359678706588059
+        ],
+        "comparison_A": 0.8311688311688312,
+        "comparison_A_iv": [
+          0.7362599206349207,
+          0.9355010295126972
+        ],
+        "comparison_A_units": 77,
+        "comparison_B": 0.7852760736196319,
+        "comparison_B_iv": [
+          0.6923076923076923,
+          0.8920863309352518
+        ],
+        "exact": 0.22093023255813954,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 11,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5,
+          "F1b": 0.8636363636363636,
+          "F2a": null,
+          "F2b": 0.5263157894736842,
+          "F2c": 0.5714285714285714,
+          "F3a": 0.8333333333333334,
+          "F3b": 0.6206896551724138,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.875,
+          "F5b": 0.631578947368421,
+          "F6a": null,
+          "F6b": 0.8,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.7142857142857143,
+          "F9": 0.8
+        },
+        "cost_usd": 0.483068,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.8783054545454546,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.11627137341423055,
+            "lo": 0.06449705891046664,
+            "hi": 0.16519740807715488,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0799204112087547,
+            "lo": 0.019676884838442432,
+            "hi": 0.1502747252747253,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "44e045c7581286a1aa6bb166180fb0ea6ce106e46b21917848b518dbe6d8ab91",
+        "run_record_sha256": "4ab192ca9c3676e54e9110cac44f309b7b0565d26ed8b147ee3a37156eafa633",
+        "element_pr_gap": {
+          "diff": 0.11092436974789921,
+          "lo": 0.01276005547850212,
+          "hi": 0.18747474747474746,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_sonnet45_a3_20261019",
+        "sample": "A3",
+        "model_key": "sonnet45",
+        "model_id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "model": "Claude Sonnet 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8551724137931035,
+        "technology_iv": [
+          0.8059647804144744,
+          0.9155028300644991
+        ],
+        "element_f1": 0.6228070175438597,
+        "element_iv": [
+          0.5680461538461539,
+          0.6881946326917863
+        ],
+        "element_precision": 0.8068181818181818,
+        "element_recall": 0.5071428571428571,
+        "evaluation_A": 0.8382352941176471,
+        "evaluation_A_units": 68,
+        "evaluation_A_iv": [
+          0.7246376811594203,
+          0.9531340843023255
+        ],
+        "evaluation_B": 0.5480769230769231,
+        "evaluation_B_iv": [
+          0.46530137636449925,
+          0.6565694255992763
+        ],
+        "comparison_A": 0.8387096774193549,
+        "comparison_A_iv": [
+          0.7272727272727273,
+          0.9629629629629629
+        ],
+        "comparison_A_units": 62,
+        "comparison_B": 0.7172413793103448,
+        "comparison_B_iv": [
+          0.6025568181818182,
+          0.8593782283057851
+        ],
+        "exact": 0.18072289156626506,
+        "execution1_failed": 6,
+        "execution1_outcomes": {
+          "technologies_present": 47,
+          "parse_failed": 6,
+          "off_topic": 2
+        },
+        "displacement_down": 23,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.72,
+          "F1b": 0.7894736842105263,
+          "F2a": null,
+          "F2b": 0.5,
+          "F2c": 0.7692307692307693,
+          "F3a": 0.782608695652174,
+          "F3b": 0.3333333333333333,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.6666666666666666,
+          "F5b": 0.47058823529411764,
+          "F6a": null,
+          "F6b": 0.5714285714285714,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.4444444444444444,
+          "F9": 0.6666666666666666
+        },
+        "cost_usd": 0.349772,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.635949090909091,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.05954171142141074,
+            "lo": -0.0031520882584712417,
+            "hi": 0.13023255813953494,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.009692451071761421,
+            "lo": -0.07679051492382982,
+            "hi": 0.0829629629629629,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "ad39e01d58e29737e5fc286d4f02aa05e65bf2cd578f7904544eb390b9a751ab",
+        "run_record_sha256": "c4dd3275d6733c5cd3cbd403f59a4ff9f50f6889e3340c4ba68b58f708405df1",
+        "element_pr_gap": {
+          "diff": 0.29967532467532465,
+          "lo": 0.1724248754619958,
+          "hi": 0.40001909854851025,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_haiku45_a3_20261019",
+        "sample": "A3",
+        "model_key": "haiku45",
+        "model_id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model": "Claude Haiku 4.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8251748251748252,
+        "technology_iv": [
+          0.7356284760845384,
+          0.9245333739095151
+        ],
+        "element_f1": 0.5288461538461539,
+        "element_iv": [
+          0.4482689655172414,
+          0.6115248786025096
+        ],
+        "element_precision": 0.8088235294117647,
+        "element_recall": 0.39285714285714285,
+        "evaluation_A": 0.7843137254901961,
+        "evaluation_A_units": 51,
+        "evaluation_A_iv": [
+          0.6444444444444445,
+          0.9090909090909091
+        ],
+        "evaluation_B": 0.43243243243243246,
+        "evaluation_B_iv": [
+          0.36220472440944884,
+          0.48148824006488233
+        ],
+        "comparison_A": 0.9152542372881356,
+        "comparison_A_iv": [
+          0.8333333333333334,
+          1.0
+        ],
+        "comparison_A_units": 59,
+        "comparison_B": 0.7552447552447552,
+        "comparison_B_iv": [
+          0.6666666666666666,
+          0.8666814159292034
+        ],
+        "exact": 0.13095238095238096,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 47,
+          "off_topic": 3,
+          "parse_failed": 5
+        },
+        "displacement_down": 23,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5714285714285714,
+          "F1b": 0.6470588235294118,
+          "F2a": null,
+          "F2b": 0.4117647058823529,
+          "F2c": 0.6153846153846154,
+          "F3a": 0.6666666666666666,
+          "F3b": 0.6086956521739131,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.7692307692307693,
+          "F5b": 0.2857142857142857,
+          "F6a": null,
+          "F6b": 0.2857142857142857,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.2857142857142857,
+          "F9": 0.2857142857142857
+        },
+        "cost_usd": 0.107907,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.19619454545454548,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.034419152276295106,
+            "lo": -0.11555108765463129,
+            "hi": 0.04464285714285715,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.0396900396900397,
+            "lo": -0.11541081891265836,
+            "hi": 0.05981896890987792,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "a37a95950273c91a4571e0c14e45e9d208417c878ade29a65a47ae03617e3f89",
+        "run_record_sha256": "e37ab4901a6233212b028ab578a176c615604c2374997d9e1ed1480a6286eb39",
+        "element_pr_gap": {
+          "diff": 0.41596638655462187,
+          "lo": 0.29262171658022423,
+          "hi": 0.5190677966101696,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_novapro_a3_20261019",
+        "sample": "A3",
+        "model_key": "novapro",
+        "model_id": "eu.amazon.nova-pro-v1:0",
+        "model": "Amazon Nova Pro",
+        "provider": "Amazon, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.6973684210526315,
+        "technology_iv": [
+          0.5680397022332506,
+          0.8296516007532955
+        ],
+        "element_f1": 0.416,
+        "element_iv": [
+          0.33002960089823413,
+          0.5193406041472339
+        ],
+        "element_precision": 0.4727272727272727,
+        "element_recall": 0.37142857142857144,
+        "evaluation_A": 0.6862745098039216,
+        "evaluation_A_units": 51,
+        "evaluation_A_iv": [
+          0.5531914893617021,
+          0.8200357142857141
+        ],
+        "evaluation_B": 0.31390134529147984,
+        "evaluation_B_iv": [
+          0.2537295231161267,
+          0.37606837606837606
+        ],
+        "comparison_A": 0.8679245283018868,
+        "comparison_A_iv": [
+          0.7187160326086957,
+          0.9807692307692307
+        ],
+        "comparison_A_units": 53,
+        "comparison_B": 0.6052631578947368,
+        "comparison_B_iv": [
+          0.46994370926328266,
+          0.7377186709208934
+        ],
+        "exact": 0.030303030303030304,
+        "execution1_failed": 6,
+        "execution1_outcomes": {
+          "technologies_present": 46,
+          "parse_failed": 6,
+          "off_topic": 3
+        },
+        "displacement_down": 18,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.4,
+          "F1b": 0.5853658536585366,
+          "F2a": null,
+          "F2b": 0.3783783783783784,
+          "F2c": 0.3076923076923077,
+          "F3a": 0.5185185185185185,
+          "F3b": 0.5,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.16666666666666666,
+          "F5b": 0.4444444444444444,
+          "F6a": null,
+          "F6b": 0.0,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.25,
+          "F9": 0.0
+        },
+        "cost_usd": 0.26198,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.4763272727272727,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.14726530612244898,
+            "lo": -0.2274085637823372,
+            "hi": -0.04650446566060984,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.1674964438122334,
+            "lo": -0.28376068376068386,
+            "hi": -0.020879120879120916,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "c4ab27bcee6ff2c3e96f000e56e3f4c81601e84c6cd31fadb3f8c210243a3cd4",
+        "run_record_sha256": "7f1649b03eeee0633c7dc7817ec6b2e87f731b4333c22b56575d8fbeaea9c901",
+        "element_pr_gap": {
+          "diff": 0.10129870129870128,
+          "lo": -0.034591362835637685,
+          "hi": 0.22017477203647412,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_nemotron3s_a3_20261019",
+        "sample": "A3",
+        "model_key": "nemotron3s",
+        "model_id": "nvidia.nemotron-super-3-120b",
+        "model": "NVIDIA Nemotron 3 Super",
+        "provider": "NVIDIA, open weights",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.7586206896551724,
+        "technology_iv": [
+          0.6775869546361349,
+          0.8695818121473613
+        ],
+        "element_f1": 0.42201834862385323,
+        "element_iv": [
+          0.37450114435873527,
+          0.489089937749698
+        ],
+        "element_precision": 0.5897435897435898,
+        "element_recall": 0.32857142857142857,
+        "evaluation_A": 0.7441860465116279,
+        "evaluation_A_units": 43,
+        "evaluation_A_iv": [
+          0.5483137829912023,
+          0.9047991071428569
+        ],
+        "evaluation_B": 0.33507853403141363,
+        "evaluation_B_iv": [
+          0.2643558429118774,
+          0.4079067925048222
+        ],
+        "comparison_A": 0.8545454545454545,
+        "comparison_A_iv": [
+          0.75,
+          0.9531430288461538
+        ],
+        "comparison_A_units": 55,
+        "comparison_B": 0.6482758620689655,
+        "comparison_B_iv": [
+          0.5813765941485372,
+          0.7347025989883132
+        ],
+        "exact": 0.07777777777777778,
+        "execution1_failed": 10,
+        "execution1_outcomes": {
+          "technologies_present": 45,
+          "parse_failed": 10
+        },
+        "displacement_down": 20,
+        "displacement_up": 5,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.6086956521739131,
+          "F1b": 0.5,
+          "F2a": null,
+          "F2b": 0.42424242424242425,
+          "F2c": 0.5,
+          "F3a": 0.5454545454545454,
+          "F3b": 0.41379310344827586,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.4,
+          "F5b": 0.26666666666666666,
+          "F6a": null,
+          "F6b": 0.2857142857142857,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.0,
+          "F9": 0.0
+        },
+        "cost_usd": 0.063214,
+        "billing_complete": false,
+        "executions": 55,
+        "usd_per_100_executions": 0.11493454545454547,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.14124695749859573,
+            "lo": -0.21067821067821063,
+            "hi": -0.06137091607943629,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.10624417520969254,
+            "lo": -0.1895386538536662,
+            "hi": 0.01379310344827589,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "98945f3143695873e74bd0a2878ee00d6f209fde2fd7eb1619af4ed5c425cc95",
+        "run_record_sha256": "1b93955a9b9dfd2dd6698d49be43f25244fcae1e047959cbbc05b3f950e728b6",
+        "element_pr_gap": {
+          "diff": 0.2611721611721612,
+          "lo": 0.13506637168141594,
+          "hi": 0.39565217391304347,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_qwen3_235b_a3_20261019",
+        "sample": "A3",
+        "model_key": "qwen3_235b",
+        "model_id": "qwen.qwen3-235b-a22b-2507-v1:0",
+        "model": "Qwen3-235B-A22B",
+        "provider": "Alibaba, open weights",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.7862068965517242,
+        "technology_iv": [
+          0.6328780812791472,
+          0.9019607843137255
+        ],
+        "element_f1": 0.5361702127659574,
+        "element_iv": [
+          0.44932619931319157,
+          0.6343525021949077
+        ],
+        "element_precision": 0.6631578947368421,
+        "element_recall": 0.45,
+        "evaluation_A": 0.7288135593220338,
+        "evaluation_A_units": 59,
+        "evaluation_A_iv": [
+          0.6323335913312693,
+          0.8181818181818182
+        ],
+        "evaluation_B": 0.41346153846153844,
+        "evaluation_B_iv": [
+          0.3586057896977437,
+          0.4788732394366197
+        ],
+        "comparison_A": 0.7017543859649122,
+        "comparison_A_iv": [
+          0.5454146730462519,
+          0.8780803195962993
+        ],
+        "comparison_A_units": 57,
+        "comparison_B": 0.5517241379310345,
+        "comparison_B_iv": [
+          0.4152953912774513,
+          0.7007689307405136
+        ],
+        "exact": 0.056818181818181816,
+        "execution1_failed": 4,
+        "execution1_outcomes": {
+          "technologies_present": 50,
+          "parse_failed": 4,
+          "off_topic": 1
+        },
+        "displacement_down": 18,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.6086956521739131,
+          "F1b": 0.7368421052631579,
+          "F2a": null,
+          "F2b": 0.43243243243243246,
+          "F2c": 0.42857142857142855,
+          "F3a": 0.6666666666666666,
+          "F3b": 0.5185185185185185,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.8,
+          "F5b": 0.5,
+          "F6a": null,
+          "F6b": 0.5714285714285714,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.25,
+          "F9": 0.0
+        },
+        "cost_usd": 0.060231,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.1095109090909091,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.027095093356491518,
+            "lo": -0.1174618683167779,
+            "hi": 0.0746658746658746,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.07865796831314076,
+            "lo": -0.20302552789158534,
+            "hi": 0.041964285714285676,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "5319aea7e4c80ebb7903e5f20450611c7d3bf0e974f9e640e101f1ff2bc43259",
+        "run_record_sha256": "2445c6fe1f4d14a41d4dd4ae20877a53a9dfae1a59dbfb2035955f776d41d258",
+        "element_pr_gap": {
+          "diff": 0.21315789473684205,
+          "lo": 0.06647673314339986,
+          "hi": 0.3650980392156863,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_mercury3_instant_a3_20261030r3",
+        "sample": "A3",
+        "model_key": "mercury3_instant",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (instant)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4g (2026-10-30)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.7368421052631579,
+        "technology_iv": [
+          0.5651714635639926,
+          0.8979678312002767
+        ],
+        "element_f1": 0.44221105527638194,
+        "element_iv": [
+          0.2857142857142857,
+          0.5934199134199134
+        ],
+        "element_precision": 0.7457627118644068,
+        "element_recall": 0.3142857142857143,
+        "evaluation_A": 0.6923076923076923,
+        "evaluation_A_units": 39,
+        "evaluation_A_iv": [
+          0.5,
+          0.8928571428571429
+        ],
+        "evaluation_B": 0.3050847457627119,
+        "evaluation_B_iv": [
+          0.2,
+          0.4359154929577464
+        ],
+        "comparison_A": 0.8367346938775511,
+        "comparison_A_iv": [
+          0.7209216826265389,
+          0.9454545454545454
+        ],
+        "comparison_A_units": 49,
+        "comparison_B": 0.6165413533834586,
+        "comparison_B_iv": [
+          0.44274809160305345,
+          0.7826434782608694
+        ],
+        "exact": 0.10714285714285714,
+        "execution1_failed": 12,
+        "execution1_outcomes": {
+          "technologies_present": 42,
+          "parse_failed": 12,
+          "off_topic": 1
+        },
+        "displacement_down": 24,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5,
+          "F1b": 0.625,
+          "F2a": null,
+          "F2b": 0.46153846153846156,
+          "F2c": 0.4,
+          "F3a": 0.6,
+          "F3b": 0.3157894736842105,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.4,
+          "F5b": 0.15384615384615385,
+          "F6a": null,
+          "F6b": 0.4444444444444444,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.5714285714285714,
+          "F9": 0.0
+        },
+        "cost_usd": 0.033619,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.06112545454545455,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.12105425084606702,
+            "lo": -0.2829847289570819,
+            "hi": 0.047331608699817895,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.12802275960170706,
+            "lo": -0.28045886075949367,
+            "hi": 0.032581453634085156,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "8263ef5e682b8764af379d9e9142c70a8f3221cf687643bf655de9592a74bf83",
+        "run_record_sha256": "ab7ae9b6bd7ccaa2d851ca39bad6a0c37e09bf1a29d710cf4899c9e904117f25",
+        "paired_vs_opus46": {
+          "element": {
+            "diff": -0.23732562426029757,
+            "lo": -0.38050152062890913,
+            "hi": -0.09392841458058854,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.20794317081046176,
+            "lo": -0.3705610216980517,
+            "hi": -0.06405778225090275,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "element_pr_gap": {
+          "diff": 0.4314769975786925,
+          "lo": 0.27198817442719886,
+          "hi": 0.5588907947398514,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_mercury3_low_a3_20261030r2",
+        "sample": "A3",
+        "model_key": "mercury3_low",
+        "model_id": "mercury-3",
+        "model": "Inception Mercury 3 (low)",
+        "provider": "Inception, proprietary, diffusion",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4g (2026-10-30)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8551724137931035,
+        "technology_iv": [
+          0.7586206896551724,
+          0.9365129596142254
+        ],
+        "element_f1": 0.6842105263157895,
+        "element_iv": [
+          0.5555376344086022,
+          0.803509206320623
+        ],
+        "element_precision": 0.8863636363636364,
+        "element_recall": 0.5571428571428572,
+        "evaluation_A": 0.8428571428571429,
+        "evaluation_A_units": 70,
+        "evaluation_A_iv": [
+          0.7777777777777778,
+          0.9
+        ],
+        "evaluation_B": 0.5841584158415841,
+        "evaluation_B_iv": [
+          0.473085194375517,
+          0.6875
+        ],
+        "comparison_A": 0.8064516129032258,
+        "comparison_A_iv": [
+          0.6882913961038961,
+          0.9491737288135592
+        ],
+        "comparison_A_units": 62,
+        "comparison_B": 0.6896551724137931,
+        "comparison_B_iv": [
+          0.5696950517836594,
+          0.8430390378283944
+        ],
+        "exact": 0.2289156626506024,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 49,
+          "parse_failed": 5,
+          "off_topic": 1
+        },
+        "displacement_down": 21,
+        "displacement_up": 1,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.6956521739130435,
+          "F1b": 0.8205128205128205,
+          "F2a": null,
+          "F2b": 0.6666666666666666,
+          "F2c": 0.9230769230769231,
+          "F3a": 0.7619047619047619,
+          "F3b": 0.38095238095238093,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.7692307692307693,
+          "F5b": 0.5555555555555556,
+          "F6a": null,
+          "F6b": 0.8,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.75,
+          "F9": 0.6666666666666666
+        },
+        "cost_usd": 0.07869,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.14307272727272727,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.12094522019334053,
+            "lo": -0.02490852800450316,
+            "hi": 0.2532031726662599,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.009692451071761421,
+            "lo": -0.13888888888888884,
+            "hi": 0.11650717703349278,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "b7cb0c7904395b62e9425003345426731b71a61e596c7d6daf862913213f602e",
+        "run_record_sha256": "932c98bdb97a0a87f5751c05d3793a8aae0b4ca675f12c841f5461c9f0618619",
+        "paired_vs_opus46": {
+          "element": {
+            "diff": 0.00467384677910998,
+            "lo": -0.08975613734605659,
+            "hi": 0.0888054523935844,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.08961286228051613,
+            "lo": -0.17155979508920693,
+            "hi": -0.023005979527718656,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "element_pr_gap": {
+          "diff": 0.3292207792207792,
+          "lo": 0.21908909194745863,
+          "hi": 0.4223227752639518,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_sonnet5_a3_20261101",
+        "sample": "A3",
+        "model_key": "sonnet5",
+        "model_id": "eu.anthropic.claude-sonnet-5",
+        "model": "Claude Sonnet 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9433962264150944,
+        "technology_iv": [
+          0.8943089430894309,
+          0.9777777777777777
+        ],
+        "element_f1": 0.65,
+        "element_iv": [
+          0.5578817946505608,
+          0.7393364928909952
+        ],
+        "element_precision": 0.78,
+        "element_recall": 0.5571428571428572,
+        "evaluation_A": 0.7638888888888888,
+        "evaluation_A_units": 72,
+        "evaluation_A_iv": [
+          0.6176168412570507,
+          0.89876582278481
+        ],
+        "evaluation_B": 0.514018691588785,
+        "evaluation_B_iv": [
+          0.43164312586627945,
+          0.5816817386538502
+        ],
+        "comparison_A": 0.7733333333333333,
+        "comparison_A_iv": [
+          0.6867294760437097,
+          0.8824095022624431
+        ],
+        "comparison_A_units": 75,
+        "comparison_B": 0.7295597484276729,
+        "comparison_B_iv": [
+          0.6444444444444445,
+          0.8376068376068376
+        ],
+        "exact": 0.17857142857142858,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 17,
+        "displacement_up": 4,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.7407407407407407,
+          "F1b": 0.9047619047619048,
+          "F2a": null,
+          "F2b": 0.5789473684210527,
+          "F2c": 0.6666666666666666,
+          "F3a": 0.782608695652174,
+          "F3b": 0.48,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.8,
+          "F5b": 0.5,
+          "F6a": null,
+          "F6b": 0.3333333333333333,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.8,
+          "F9": 0.0
+        },
+        "cost_usd": 0.205962,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.3744763636363636,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.08673469387755106,
+            "lo": -0.008083543628567225,
+            "hi": 0.1764400958983996,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.07853136155022944,
+            "lo": 0.014045068669718663,
+            "hi": 0.1558572146807441,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "ca9fc5bfb2df28e3805a34c69086154d971ff14e15989af1f63c48e87267699b",
+        "run_record_sha256": "75ac61eb303909b3e8b54ca7c18c046569c5f369a1319c15a0976526b39fb091",
+        "element_pr_gap": {
+          "diff": 0.22285714285714286,
+          "lo": 0.1262845849802371,
+          "hi": 0.3061754021795537,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "paired_vs_opus46": {
+          "element": {
+            "diff": -0.02953667953667949,
+            "lo": -0.09887005649717506,
+            "hi": 0.0312965722801789,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.0013890496585252654,
+            "lo": -0.026422764227642337,
+            "hi": 0.020796407893182045,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_control": {
+          "element": {
+            "diff": 0.04607843137254908,
+            "lo": -0.028919471824437437,
+            "hi": 0.11620572017078978,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.045960328979196885,
+            "lo": 0.004767098937502601,
+            "hi": 0.10831253309129418,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_sonnet46_without_failed": {
+          "element": {
+            "diff": -0.0048237476808905555,
+            "lo": -0.10258538694336361,
+            "hi": 0.08306248952923434,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.015817321080479063,
+            "lo": -0.03352329869259141,
+            "hi": 0.0,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "paragraphs": 47
+        }
+      },
+      {
+        "run_id": "mc_opus5_a3_20261101",
+        "sample": "A3",
+        "model_key": "opus5",
+        "model_id": "eu.anthropic.claude-opus-5",
+        "model": "Claude Opus 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9565217391304348,
+        "technology_iv": [
+          0.9050844915508449,
+          0.991304347826087
+        ],
+        "element_f1": 0.6843853820598007,
+        "element_iv": [
+          0.6,
+          0.7514792899408284
+        ],
+        "element_precision": 0.639751552795031,
+        "element_recall": 0.7357142857142858,
+        "evaluation_A": 0.7575757575757576,
+        "evaluation_A_units": 99,
+        "evaluation_A_iv": [
+          0.680816966721222,
+          0.8384118967452299
+        ],
+        "evaluation_B": 0.5494505494505495,
+        "evaluation_B_iv": [
+          0.46153846153846156,
+          0.6161902665614184
+        ],
+        "comparison_A": 0.8051948051948052,
+        "comparison_A_iv": [
+          0.6291882742725439,
+          0.9411764705882353
+        ],
+        "comparison_A_units": 77,
+        "comparison_B": 0.7701863354037267,
+        "comparison_B_iv": [
+          0.6043695131683958,
+          0.9047705943691344
+        ],
+        "exact": 0.19047619047619047,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 11,
+        "displacement_up": 10,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.72,
+          "F1b": 0.9090909090909091,
+          "F2a": null,
+          "F2b": 0.6545454545454545,
+          "F2c": 0.3333333333333333,
+          "F3a": 0.7692307692307693,
+          "F3b": 0.7878787878787878,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.875,
+          "F5b": 0.7619047619047619,
+          "F6a": null,
+          "F6b": 0.6666666666666666,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.43478260869565216,
+          "F9": 0.6
+        },
+        "cost_usd": 0.552035,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 1.0037,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.12112007593735175,
+            "lo": 0.0319191919191919,
+            "hi": 0.19870687111703067,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0916568742655699,
+            "lo": 0.03263973888208893,
+            "hi": 0.15999999999999992,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "93ce5af2fd6dd7c51660b7d01704700f0cc5d5d4140af8b078936497f2bfea57",
+        "run_record_sha256": "ae0c65edf2c8374928287ef69177302a68250766423ba3bba0a7930cd885984a",
+        "element_pr_gap": {
+          "diff": -0.09596273291925472,
+          "lo": -0.1909539735626692,
+          "hi": -0.0037358202443281696,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "paired_vs_opus46": {
+          "element": {
+            "diff": 0.0048487025231211955,
+            "lo": -0.06727145472165397,
+            "hi": 0.08505074096613441,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.011736463056815194,
+            "lo": 0.0,
+            "hi": 0.022571325388226815,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_control": {
+          "element": {
+            "diff": 0.0020324408833301,
+            "lo": -0.06398443717393232,
+            "hi": 0.06999815430047984,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.03247110621904237,
+            "lo": 0.0,
+            "hi": 0.07880580957504035,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_sonnet46_without_failed": {
+          "element": {
+            "diff": 0.0313618108798831,
+            "lo": -0.05313964386129333,
+            "hi": 0.10675704955582377,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0,
+            "lo": 0.0,
+            "hi": 0.0,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "paragraphs": 47
+        }
+      },
+      {
+        "run_id": "mc_opus55_a3_20261108r2",
+        "sample": "A3",
+        "model_key": "opus55",
+        "model_id": "eu.anthropic.claude-opus-5-5",
+        "model": "Claude Opus 5.5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4m (2026-11-08)",
+        "repeats": 3,
+        "paragraphs": 55,
+        "technology_f1": 0.9685534591194969,
+        "technology_iv": [
+          0.9487142857142857,
+          0.9917355371900827
+        ],
+        "element_f1": 0.7737226277372263,
+        "element_iv": [
+          0.716252512843422,
+          0.8354489808046591
+        ],
+        "element_precision": 0.7910447761194029,
+        "element_recall": 0.7571428571428571,
+        "evaluation_A": 0.7777777777777778,
+        "evaluation_A_units": 99,
+        "evaluation_A_iv": [
+          0.6666666666666666,
+          0.8659965635738831
+        ],
+        "evaluation_B": 0.6260162601626016,
+        "evaluation_B_iv": [
+          0.541477010017981,
+          0.7142974238875878
+        ],
+        "comparison_A": 0.8831168831168831,
+        "comparison_A_iv": [
+          0.8076807228915663,
+          0.9787234042553191
+        ],
+        "comparison_A_units": 77,
+        "comparison_B": 0.8553459119496856,
+        "comparison_B_iv": [
+          0.784939805525544,
+          0.9420319798778296
+        ],
+        "exact": 0.2926829268292683,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 10,
+        "displacement_up": 8,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.6666666666666666,
+          "F1b": 0.9047619047619048,
+          "F2a": null,
+          "F2b": 0.75,
+          "F2c": 0.8,
+          "F3a": 0.8461538461538461,
+          "F3b": 0.5185185185185185,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.9333333333333333,
+          "F5b": 0.7368421052631579,
+          "F6a": null,
+          "F6b": 0.9090909090909091,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.6666666666666666,
+          "F9": 1.0
+        },
+        "cost_usd": 1.599653,
+        "billing_complete": false,
+        "executions": 165,
+        "usd_per_100_executions": 0.9694866666666667,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.21045732161477737,
+            "lo": 0.152454979221179,
+            "hi": 0.28836261777438255,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.10368859425463195,
+            "lo": 0.02985074626865669,
+            "hi": 0.18928571428571428,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "087aa65d2737f3164bdfcb838e4163d22c0028f0c6e69c604128116da7e43812",
+        "run_record_sha256": "3ae15db0308b56ad1061f48f77ef7b3e716d18b0886f290f0cd706e72d49a507",
+        "element_pr_gap": {
+          "diff": 0.03390191897654582,
+          "lo": -0.039126050420168035,
+          "hi": 0.08253140871424758,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        },
+        "paired_vs_opus5": {
+          "element": {
+            "diff": 0.08933724567742563,
+            "lo": 0.003952070632751714,
+            "hi": 0.20429090033205444,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.01203171998906205,
+            "lo": -0.024970963995354256,
+            "hi": 0.06655610834715309,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "paired_vs_control": {
+          "element": {
+            "diff": 0.07372262773722638,
+            "lo": 0.00612953142136019,
+            "hi": 0.15564795564795564,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.005590496156533953,
+            "lo": -0.018855218855218903,
+            "hi": 0.044401544401544424,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      {
+        "run_id": "mc_sonnet_req5_a3_20261101",
+        "sample": "A3",
+        "model_key": "sonnet_req5",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8974358974358975,
+        "technology_iv": [
+          0.8319964601769911,
+          0.9419378214118747
+        ],
+        "element_f1": 0.6039215686274509,
+        "element_iv": [
+          0.5466227956302051,
+          0.6729928206090751
+        ],
+        "element_precision": 0.6695652173913044,
+        "element_recall": 0.55,
+        "evaluation_A": 0.7222222222222222,
+        "evaluation_A_units": 72,
+        "evaluation_A_iv": [
+          0.5681664619164619,
+          0.8481012658227848
+        ],
+        "evaluation_B": 0.46017699115044247,
+        "evaluation_B_iv": [
+          0.35747929606625256,
+          0.5694570379965457
+        ],
+        "comparison_A": 0.8285714285714286,
+        "comparison_A_iv": [
+          0.7380803571428571,
+          0.9403204565408252
+        ],
+        "comparison_A_units": 70,
+        "comparison_B": 0.7435897435897436,
+        "comparison_B_iv": [
+          0.6666666666666666,
+          0.8313450883827279
+        ],
+        "exact": 0.13953488372093023,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "parse_failed": 5,
+          "technologies_present": 50
+        },
+        "displacement_down": 18,
+        "displacement_up": 7,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5714285714285714,
+          "F1b": 0.75,
+          "F2a": null,
+          "F2b": 0.5128205128205128,
+          "F2c": 0.42857142857142855,
+          "F3a": 0.75,
+          "F3b": 0.6060606060606061,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.6153846153846154,
+          "F5b": 0.3333333333333333,
+          "F6a": null,
+          "F6b": 0.6666666666666666,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.8333333333333334,
+          "F9": 0.5
+        },
+        "cost_usd": 0.358723,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.6522236363636364,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.04065626250500198,
+            "lo": -0.013120567375886516,
+            "hi": 0.10300746584025922,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.032571032571032554,
+            "lo": -0.024781954887218127,
+            "hi": 0.09031877213695394,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "11f8af4459eac5625977ef365e65ce2bae40a8b8e25ecb5930d82d02f86ac655",
+        "run_record_sha256": "6f864173b43b65c361fb539aa76ddb5cd0578d220ebd819030cd8cbb47e2560e",
+        "element_pr_gap": {
+          "diff": 0.11956521739130432,
+          "lo": 0.0306144448436938,
+          "hi": 0.1975271860569045,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_opus_req5_a3_20261101",
+        "sample": "A3",
+        "model_key": "opus_req5",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9240506329113924,
+        "technology_iv": [
+          0.8629900803023146,
+          0.9770992366412213
+        ],
+        "element_f1": 0.6823529411764706,
+        "element_iv": [
+          0.6341408972125435,
+          0.7237372614415416
+        ],
+        "element_precision": 0.7565217391304347,
+        "element_recall": 0.6214285714285714,
+        "evaluation_A": 0.8354430379746836,
+        "evaluation_A_units": 79,
+        "evaluation_A_iv": [
+          0.6956521739130435,
+          0.9250058411214953
+        ],
+        "evaluation_B": 0.5764192139737991,
+        "evaluation_B_iv": [
+          0.4743181818181818,
+          0.6573505323505322
+        ],
+        "comparison_A": 0.8493150684931506,
+        "comparison_A_iv": [
+          0.76,
+          0.9433962264150944
+        ],
+        "comparison_A_units": 73,
+        "comparison_B": 0.7848101265822784,
+        "comparison_B_iv": [
+          0.6666666666666666,
+          0.9009273979862213
+        ],
+        "exact": 0.17647058823529413,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 54,
+          "parse_failed": 1
+        },
+        "displacement_down": 16,
+        "displacement_up": 5,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5217391304347826,
+          "F1b": 0.9090909090909091,
+          "F2a": null,
+          "F2b": 0.5263157894736842,
+          "F2c": 0.6153846153846154,
+          "F3a": 0.8333333333333334,
+          "F3b": 0.6428571428571429,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.875,
+          "F5b": 0.5555555555555556,
+          "F6a": null,
+          "F6b": 0.7272727272727273,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.7142857142857143,
+          "F9": 0.6666666666666666
+        },
+        "cost_usd": 0.491273,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.8932236363636363,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.11908763505402165,
+            "lo": 0.056260575296108284,
+            "hi": 0.16981132075471694,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.05918576804652753,
+            "lo": 0.00414470423931157,
+            "hi": 0.1324324324324324,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "d2093f2a24978c99c9a862d5c753b10db280f74b0641a968055a1765a9461213",
+        "run_record_sha256": "adac75df29d43117b282ab1345f5ff40cfddaa02c3d53e0754c09e1407d139d4",
+        "element_pr_gap": {
+          "diff": 0.1350931677018633,
+          "lo": 0.03867243867243875,
+          "hi": 0.20920392584514724,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      },
+      {
+        "run_id": "mc_opus5_req55_a3_20261108r2",
+        "sample": "A3",
+        "model_key": "opus5_req55",
+        "model_id": "eu.anthropic.claude-opus-5",
+        "model": "Claude Opus 5 (5.5 request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4m (2026-11-08)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9629629629629629,
+        "technology_iv": [
+          0.9278275810548334,
+          0.9900119047619047
+        ],
+        "element_f1": 0.7,
+        "element_iv": [
+          0.6466974587410544,
+          0.7555591748099891
+        ],
+        "element_precision": 0.65625,
+        "element_recall": 0.75,
+        "evaluation_A": 0.7878787878787878,
+        "evaluation_A_units": 99,
+        "evaluation_A_iv": [
+          0.7083216292134832,
+          0.8412812607057211
+        ],
+        "evaluation_B": 0.5777777777777777,
+        "evaluation_B_iv": [
+          0.5,
+          0.6334207420380347
+        ],
+        "comparison_A": 0.782051282051282,
+        "comparison_A_iv": [
+          0.6285714285714286,
+          0.9594729729729728
+        ],
+        "comparison_A_units": 78,
+        "comparison_B": 0.7530864197530864,
+        "comparison_B_iv": [
+          0.6162567084078712,
+          0.9136089577950041
+        ],
+        "exact": 0.13095238095238096,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 7,
+        "displacement_up": 12,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.7692307692307693,
+          "F1b": 0.8695652173913043,
+          "F2a": null,
+          "F2b": 0.6415094339622641,
+          "F2c": 0.46153846153846156,
+          "F3a": 0.7692307692307693,
+          "F3b": 0.6111111111111112,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 1.0,
+          "F5b": 0.7619047619047619,
+          "F6a": null,
+          "F6b": 0.6666666666666666,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.5,
+          "F9": 0.6666666666666666
+        },
+        "cost_usd": 0.686262,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 1.247749090909091,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.136734693877551,
+            "lo": 0.05278315471413053,
+            "hi": 0.20996333546368862,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.098098098098098,
+            "lo": 0.02890390390390385,
+            "hi": 0.1701011614837018,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "af55a93a7bcec88f459ecd7d36cac9b9769ecb390a9eb139bb9b789c5f50bf45",
+        "run_record_sha256": "6ccda736dc7b6f0c343f1861716043074619dddc5797bcb0bf1bc9e8fdbe2edf",
+        "element_pr_gap": {
+          "diff": -0.09375,
+          "lo": -0.20437806873977082,
+          "hi": 0.00796320874101053,
+          "B": 2000,
+          "seed": 20260905,
+          "articles": 10,
+          "defined_draws": 2000
+        }
+      }
+    ]
+  },
+  "inputs": {
+    "compare_models_sha256": "a491c5f986c48a2844837e6e65c838609dfc5e15fd6bb702e9b5d41f7147d8ed",
+    "evaluate_sha256": "6512d63191b939279a06202e10591d2d9133f282d8a7cfb16ca066735c4d0c14"
+  },
+  "superseded": {
+    "mc_nemotron3s_a2_20261019r2": "completed and reportable at 18:59 UTC on 2026-10-19; at 19:00 UTC an erroneous agent resume appended an uncertified gate (no extraction call) to its journal, which the evaluator's every-gate-certified rule refuses; superseded by mc_nemotron3s_a2_20261019r3, run under a fresh identifier before any figure of r2 was computed"
+  }
+}

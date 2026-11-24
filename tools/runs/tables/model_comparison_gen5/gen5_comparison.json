@@ -1,0 +1,2000 @@
+{
+  "declared": "pre-analysis specification §4k (2026-11-01)",
+  "B": 2000,
+  "seed": 20260905,
+  "rule": "per sample: better / worse if the 95 % paired article-resampling interval of the element micro-F1 difference lies entirely above / below zero, otherwise no distinguishable difference; overall better / worse only if both samples agree, otherwise no consistent difference",
+  "families": {
+    "same_request": "the generation with decoding held equal (primary reading)",
+    "as_run": "against the 4.6 runs at temperature 0; generation and decoding confounded",
+    "decoding": "the 5-series request against the registered request, on the 4.6 models"
+  },
+  "rows": {
+    "A2": [
+      {
+        "run_id": "a2_sonnet_20261013",
+        "sample": "A2",
+        "model_key": "sonnet",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "registered primary",
+        "authority": null,
+        "repeats": 3,
+        "paragraphs": 120,
+        "technology_f1": 0.934988770484702,
+        "technology_iv": [
+          0.901342006560639,
+          0.9625696021653125
+        ],
+        "element_f1": 0.6427086518526188,
+        "element_iv": [
+          0.5805066378278154,
+          0.7050337558087766
+        ],
+        "element_precision": 0.7591325333068862,
+        "element_recall": 0.5572468419322,
+        "evaluation_A": 0.874132183380739,
+        "evaluation_A_units": 208,
+        "evaluation_A_iv": [
+          0.8124134201586347,
+          0.9239040388630184
+        ],
+        "evaluation_B": 0.6167173224171733,
+        "evaluation_B_iv": [
+          0.554612431040291,
+          0.6787402724614225
+        ],
+        "comparison_A": 0.7940354678679372,
+        "comparison_A_iv": [
+          0.6973607792748707,
+          0.8787128833219903
+        ],
+        "comparison_A_units": 158,
+        "comparison_B": 0.7424142458230868,
+        "comparison_B_iv": [
+          0.6471484114085603,
+          0.8314924434212915
+        ],
+        "exact": 0.21471283931767268,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 5,
+          "off_topic": 3
+        },
+        "displacement_down": 29,
+        "displacement_up": 6,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.7441123435877821,
+          "F1b": 0.7386694031127073,
+          "F2a": null,
+          "F2b": 0.6572951919083918,
+          "F2c": 0.6150911024945956,
+          "F3a": 0.5581068621855381,
+          "F3b": 0.5363014963975614,
+          "F4a": 0.712890625,
+          "F4b": 0.7286282306163022,
+          "F5a": 0.8299645759533236,
+          "F5b": 0.7386107742941279,
+          "F6a": 0.7229307326831708,
+          "F6b": 0.4328537170263789,
+          "F7a": 0.3336058871627146,
+          "F7b": 0.48443579766536965,
+          "F8a": 0.4550561797752809,
+          "F9": null
+        },
+        "cost_usd": 2.180693,
+        "billing_complete": true,
+        "executions": 360,
+        "usd_per_100_executions": 0.6057480555555557,
+        "paired_vs_sonnet46": null,
+        "metrics_sha256": "9d69e490475a885f7216ceb5c49d295b9d7e55662b7092ca6faa1636e46c57f4",
+        "run_record_sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 339,
+          "contract_invalid": 29,
+          "schema_invalid": 3,
+          "ok_off_topic": 8
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_opus46_a2_20261019",
+        "sample": "A2",
+        "model_key": "opus",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9454214397526838,
+        "technology_iv": [
+          0.9218523784492094,
+          0.9677819738851774
+        ],
+        "element_f1": 0.6743800614353532,
+        "element_iv": [
+          0.6257481244994211,
+          0.7227982003369945
+        ],
+        "element_precision": 0.7940783340813921,
+        "element_recall": 0.5860410430511589,
+        "evaluation_A": 0.8638522852881474,
+        "evaluation_A_units": 215,
+        "evaluation_A_iv": [
+          0.8103757008802294,
+          0.9114539724674926
+        ],
+        "evaluation_B": 0.6174508348428315,
+        "evaluation_B_iv": [
+          0.571469254776417,
+          0.66674837246633
+        ],
+        "comparison_A": 0.8331786125005204,
+        "comparison_A_iv": [
+          0.7438901152489156,
+          0.9169692666164763
+        ],
+        "comparison_A_units": 166,
+        "comparison_B": 0.7877049234013845,
+        "comparison_B_iv": [
+          0.6984227408554171,
+          0.8681344715259052
+        ],
+        "exact": 0.18728293543338384,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 118,
+          "parse_failed": 1,
+          "off_topic": 1
+        },
+        "displacement_down": 28,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8328967528295359,
+          "F1b": 0.7427369174985452,
+          "F2a": null,
+          "F2b": 0.6884006810914074,
+          "F2c": 0.6975909436046109,
+          "F3a": 0.7779397810641301,
+          "F3b": 0.5443019166955574,
+          "F4a": 0.45499999999999996,
+          "F4b": 0.4078374455732946,
+          "F5a": 0.7645575172716307,
+          "F5b": 0.6591357360588129,
+          "F6a": 0.7056578356533453,
+          "F6b": 0.3980154355016538,
+          "F7a": 0.71939477303989,
+          "F7b": 0.666095890410959,
+          "F8a": 0.6428952200438312,
+          "F9": null
+        },
+        "cost_usd": 1.065701,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.8880841666666667,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.0316714095827344,
+            "lo": -0.024139536023788932,
+            "hi": 0.09016749657881973,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010432669267981809,
+            "lo": -0.012437350727557694,
+            "hi": 0.037257757824536775,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "704f099d74de07fcab26de9740a3d2da2782390285a7e65a28970f5bbb96a18a",
+        "run_record_sha256": "55fad9774ef9f675df843782a96f438e57d3bedec434e93266befeb7da2b8220",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 118,
+          "contract_invalid": 2,
+          "ok_off_topic": 1
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_sonnet5_a2_20261101",
+        "sample": "A2",
+        "model_key": "sonnet5",
+        "model_id": "eu.anthropic.claude-sonnet-5",
+        "model": "Claude Sonnet 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9453921295744032,
+        "technology_iv": [
+          0.9233915369149392,
+          0.9674173412016305
+        ],
+        "element_f1": 0.6407015514175937,
+        "element_iv": [
+          0.5824088712927915,
+          0.6993567958560764
+        ],
+        "element_precision": 0.8110221733239914,
+        "element_recall": 0.5295021955714856,
+        "evaluation_A": 0.7897500340726133,
+        "evaluation_A_units": 199,
+        "evaluation_A_iv": [
+          0.7252388022315889,
+          0.8454522697395018
+        ],
+        "evaluation_B": 0.5454973357937054,
+        "evaluation_B_iv": [
+          0.4881648440451603,
+          0.6028589849914442
+        ],
+        "comparison_A": 0.7839808207270749,
+        "comparison_A_iv": [
+          0.6805991369032696,
+          0.8726973454090777
+        ],
+        "comparison_A_units": 165,
+        "comparison_B": 0.7411692976526568,
+        "comparison_B_iv": [
+          0.6404003036733837,
+          0.8330194980118524
+        ],
+        "exact": 0.1590986212877198,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 120
+        },
+        "displacement_down": 29,
+        "displacement_up": 5,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8318525830865416,
+          "F1b": 0.7504864673624625,
+          "F2a": null,
+          "F2b": 0.5832566428560995,
+          "F2c": 0.6758410721662104,
+          "F3a": 0.6163989710110465,
+          "F3b": 0.3339256173028614,
+          "F4a": 0.6397248495270851,
+          "F4b": 0.8313953488372093,
+          "F5a": 0.8130135465245393,
+          "F5b": 0.8058554437328455,
+          "F6a": 0.6165162808944684,
+          "F6b": 0.4039675383228133,
+          "F7a": 0.4863636363636364,
+          "F7b": 0.3770833333333333,
+          "F8a": 0.48751018191691564,
+          "F9": null
+        },
+        "cost_usd": 0.476098,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.3967483333333333,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.0020071004350251664,
+            "lo": -0.04538907235228473,
+            "hi": 0.04542968439745709,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010403359089701247,
+            "lo": -0.017545586957768977,
+            "hi": 0.0412370910813481,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "033ad00ab81863f48cb4d7ae630f2e503e54b2fd7852664515dd4a3d97c87063",
+        "run_record_sha256": "08b57afc790196192134a0db7b2636d8ffd2f2601fdc6992b274e6c1b2d51d0e",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 120,
+          "schema_invalid": 1,
+          "contract_invalid": 3
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_opus5_a2_20261101",
+        "sample": "A2",
+        "model_key": "opus5",
+        "model_id": "eu.anthropic.claude-opus-5",
+        "model": "Claude Opus 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9662242883856224,
+        "technology_iv": [
+          0.9414735006357217,
+          0.9863807264376572
+        ],
+        "element_f1": 0.7395673267733658,
+        "element_iv": [
+          0.6981722359194049,
+          0.7793553234439433
+        ],
+        "element_precision": 0.7478834587212418,
+        "element_recall": 0.7314341043415167,
+        "evaluation_A": 0.8761398679255203,
+        "evaluation_A_units": 269,
+        "evaluation_A_iv": [
+          0.830674618738515,
+          0.9168423092414635
+        ],
+        "evaluation_B": 0.6962737170776446,
+        "evaluation_B_iv": [
+          0.6354612916004334,
+          0.751440023628843
+        ],
+        "comparison_A": 0.7607483166906354,
+        "comparison_A_iv": [
+          0.6746254344716583,
+          0.8415779337161817
+        ],
+        "comparison_A_units": 170,
+        "comparison_B": 0.7350535009349678,
+        "comparison_B_iv": [
+          0.6505466988767532,
+          0.8137582650706596
+        ],
+        "exact": 0.27408710070469416,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 120
+        },
+        "displacement_down": 22,
+        "displacement_up": 14,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8235648279070616,
+          "F1b": 0.8637169568020632,
+          "F2a": null,
+          "F2b": 0.8125591144000787,
+          "F2c": 0.5726780630982758,
+          "F3a": 0.6935985358001279,
+          "F3b": 0.6294875683133225,
+          "F4a": 0.7301841473178542,
+          "F4b": 0.8970133882595264,
+          "F5a": 0.8646498482152204,
+          "F5b": 0.6706505036708212,
+          "F6a": 0.704714640198511,
+          "F6b": 0.4499564838990427,
+          "F7a": 0.6277472527472527,
+          "F7b": 0.7847113884555382,
+          "F8a": 0.8532237206724552,
+          "F9": null
+        },
+        "cost_usd": 1.198467,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.9987225,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.09685867492074696,
+            "lo": 0.039246490457710226,
+            "hi": 0.15016211221117703,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.031235517900920384,
+            "lo": 0.008874488274276615,
+            "hi": 0.054821351702292964,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "218100ea5d3f739908fe7390e089db4e018446d039b1a95867524560affd562a",
+        "run_record_sha256": "56527400538fef587223f039264ee1c0d26b40628d16b493e68daecae4be8e01",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 120
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_sonnet_req5_a2_20261101",
+        "sample": "A2",
+        "model_key": "sonnet_req5",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9317932159382178,
+        "technology_iv": [
+          0.8947168844416855,
+          0.9610651702455048
+        ],
+        "element_f1": 0.6221820502667333,
+        "element_iv": [
+          0.5635790608433912,
+          0.6826151625715662
+        ],
+        "element_precision": 0.7474597906561145,
+        "element_recall": 0.532870477662684,
+        "evaluation_A": 0.8686134913987504,
+        "evaluation_A_units": 199,
+        "evaluation_A_iv": [
+          0.8031838901117652,
+          0.9207673591141734
+        ],
+        "evaluation_B": 0.5897261247693751,
+        "evaluation_B_iv": [
+          0.5283960365496472,
+          0.6500578262239094
+        ],
+        "comparison_A": 0.8073449557016297,
+        "comparison_A_iv": [
+          0.7186609505461851,
+          0.8863917011981027
+        ],
+        "comparison_A_units": 158,
+        "comparison_B": 0.7522785526447189,
+        "comparison_B_iv": [
+          0.6632990186097496,
+          0.8359610934214562
+        ],
+        "exact": 0.18565035836709257,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "technologies_present": 112,
+          "parse_failed": 5,
+          "off_topic": 3
+        },
+        "displacement_down": 29,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.6229704631238391,
+          "F1b": 0.7338659007270443,
+          "F2a": null,
+          "F2b": 0.6536964980544747,
+          "F2c": 0.6283731202019139,
+          "F3a": 0.5212613277565916,
+          "F3b": 0.5279736287885725,
+          "F4a": 0.712890625,
+          "F4b": 0.7627471383975026,
+          "F5a": 0.8299645759533236,
+          "F5b": 0.7386107742941279,
+          "F6a": 0.6690580884054617,
+          "F6b": 0.48749999999999993,
+          "F7a": 0.125114995400184,
+          "F7b": 0.48443579766536965,
+          "F8a": 0.48484848484848486,
+          "F9": null
+        },
+        "cost_usd": 0.720428,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.6003566666666666,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": -0.020526601585885484,
+            "lo": -0.05111865566930596,
+            "hi": 0.003140852718109377,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.003195554546484125,
+            "lo": -0.021315821805975355,
+            "hi": 0.011554471136703492,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "767fb7ba7c5b11ee850f34e04d6a4e99e17527658a2fdde237bd61f230fea2e4",
+        "run_record_sha256": "f3879d36b4361b7a2f92048f21a5a05ac296875b4af350583376fce8fdaa0d13",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 112,
+          "contract_invalid": 11,
+          "ok_off_topic": 3
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_opus_req5_a2_20261101",
+        "sample": "A2",
+        "model_key": "opus_req5",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 120,
+        "technology_f1": 0.9455873069589156,
+        "technology_iv": [
+          0.9242048586582617,
+          0.9656740002717173
+        ],
+        "element_f1": 0.6673870839798764,
+        "element_iv": [
+          0.6204930552835232,
+          0.7135045693515237
+        ],
+        "element_precision": 0.7823551195733567,
+        "element_recall": 0.5818792247612414,
+        "evaluation_A": 0.8857876483218697,
+        "evaluation_A_units": 215,
+        "evaluation_A_iv": [
+          0.8327579836954592,
+          0.9310877267646888
+        ],
+        "evaluation_B": 0.630227733259996,
+        "evaluation_B_iv": [
+          0.5829034740122455,
+          0.678953754581635
+        ],
+        "comparison_A": 0.8273341683987401,
+        "comparison_A_iv": [
+          0.7384605510357488,
+          0.9104694790028708
+        ],
+        "comparison_A_units": 167,
+        "comparison_B": 0.7823166882512576,
+        "comparison_B_iv": [
+          0.698200667735541,
+          0.8625162722560394
+        ],
+        "exact": 0.2028811257869399,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 118,
+          "parse_failed": 1,
+          "off_topic": 1
+        },
+        "displacement_down": 28,
+        "displacement_up": 8,
+        "displacement_reportable": 38,
+        "per_element_f1": {
+          "F1a": 0.8396091457944378,
+          "F1b": 0.7403686594609141,
+          "F2a": null,
+          "F2b": 0.6423398773178893,
+          "F2c": 0.6854468585381293,
+          "F3a": 0.7779397810641301,
+          "F3b": 0.5537030232864462,
+          "F4a": 0.5156950672645739,
+          "F4b": 0.4078374455732946,
+          "F5a": 0.7327320199382863,
+          "F5b": 0.6591357360588129,
+          "F6a": 0.7106840022611645,
+          "F6b": 0.3980154355016538,
+          "F7a": 0.775,
+          "F7b": 0.6089285714285714,
+          "F8a": 0.655118300338001,
+          "F9": null
+        },
+        "cost_usd": 1.069276,
+        "billing_complete": true,
+        "executions": 120,
+        "usd_per_100_executions": 0.8910633333333332,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.02467843212725762,
+            "lo": -0.03523543076370039,
+            "hi": 0.08369574295325444,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010598536474213605,
+            "lo": -0.013552749540445275,
+            "hi": 0.03783973674285346,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "aef3598462301bc87ab1e8148cea307473101fd494a7b2750aaff996ebe31a43",
+        "run_record_sha256": "0333ec5325df838d094dc10091b8947fd6645794800dcc739755daf8d64af8c7",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 118,
+          "contract_invalid": 2,
+          "ok_off_topic": 1
+        },
+        "precision_exceeds_recall": true
+      }
+    ],
+    "A3": [
+      {
+        "run_id": "a3_sonnet_20261019",
+        "sample": "A3",
+        "model_key": "sonnet",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "fresh-sample evaluation",
+        "authority": null,
+        "repeats": 3,
+        "paragraphs": 55,
+        "technology_f1": 0.8648648648648649,
+        "technology_iv": [
+          0.7884469696969697,
+          0.9271578674756742
+        ],
+        "element_f1": 0.563265306122449,
+        "element_iv": [
+          0.5106382978723404,
+          0.6218667233430336
+        ],
+        "element_precision": 0.6571428571428571,
+        "element_recall": 0.4928571428571429,
+        "evaluation_A": 0.7424242424242424,
+        "evaluation_A_units": 66,
+        "evaluation_A_iv": [
+          0.6037654521795706,
+          0.8571428571428571
+        ],
+        "evaluation_B": 0.4474885844748858,
+        "evaluation_B_iv": [
+          0.37426711941143176,
+          0.5043538093338651
+        ],
+        "comparison_A": 0.890625,
+        "comparison_A_iv": [
+          0.826519520851819,
+          0.9743589743589743
+        ],
+        "comparison_A_units": 64,
+        "comparison_B": 0.7702702702702703,
+        "comparison_B_iv": [
+          0.7085714285714285,
+          0.8427695417789758
+        ],
+        "exact": 0.13095238095238096,
+        "execution1_failed": 8,
+        "execution1_outcomes": {
+          "parse_failed": 8,
+          "technologies_present": 47
+        },
+        "displacement_down": 19,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5,
+          "F1b": 0.5882352941176471,
+          "F2a": null,
+          "F2b": 0.5641025641025641,
+          "F2c": 0.42857142857142855,
+          "F3a": 0.75,
+          "F3b": 0.5882352941176471,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.6153846153846154,
+          "F5b": 0.35294117647058826,
+          "F6a": null,
+          "F6b": 0.5,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.8333333333333334,
+          "F9": 0.5454545454545454
+        },
+        "cost_usd": 1.087634,
+        "billing_complete": true,
+        "executions": 165,
+        "usd_per_100_executions": 0.6591721212121212,
+        "paired_vs_sonnet46": null,
+        "metrics_sha256": "5e469e5e5a702466cf11223d7be1977b65bc105f4dc620c459a125de4b441805",
+        "run_record_sha256": "d4aae3e1eb96b0d0470774d0727f690462480e0cc99e73627ced3c165b426062",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "contract_invalid": 42,
+          "ok_technologies_present": 142,
+          "schema_invalid": 5
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_opus46_a3_20261019",
+        "sample": "A3",
+        "model_key": "opus",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4f (2026-10-19)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9447852760736196,
+        "technology_iv": [
+          0.8928520984665053,
+          0.9859203834115806
+        ],
+        "element_f1": 0.6795366795366795,
+        "element_iv": [
+          0.6299958563535911,
+          0.7282186234817812
+        ],
+        "element_precision": 0.7394957983193278,
+        "element_recall": 0.6285714285714286,
+        "evaluation_A": 0.8,
+        "evaluation_A_units": 80,
+        "evaluation_A_iv": [
+          0.6712073739434568,
+          0.8932071197411003
+        ],
+        "evaluation_B": 0.5517241379310345,
+        "evaluation_B_iv": [
+          0.4623093243997767,
+          0.6359678706588059
+        ],
+        "comparison_A": 0.8311688311688312,
+        "comparison_A_iv": [
+          0.7362599206349207,
+          0.9355010295126972
+        ],
+        "comparison_A_units": 77,
+        "comparison_B": 0.7852760736196319,
+        "comparison_B_iv": [
+          0.6923076923076923,
+          0.8920863309352518
+        ],
+        "exact": 0.22093023255813954,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 11,
+        "displacement_up": 6,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5,
+          "F1b": 0.8636363636363636,
+          "F2a": null,
+          "F2b": 0.5263157894736842,
+          "F2c": 0.5714285714285714,
+          "F3a": 0.8333333333333334,
+          "F3b": 0.6206896551724138,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.875,
+          "F5b": 0.631578947368421,
+          "F6a": null,
+          "F6b": 0.8,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.7142857142857143,
+          "F9": 0.8
+        },
+        "cost_usd": 0.483068,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.8783054545454546,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.11627137341423055,
+            "lo": 0.06449705891046664,
+            "hi": 0.16519740807715488,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0799204112087547,
+            "lo": 0.019676884838442432,
+            "hi": 0.1502747252747253,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "44e045c7581286a1aa6bb166180fb0ea6ce106e46b21917848b518dbe6d8ab91",
+        "run_record_sha256": "4ab192ca9c3676e54e9110cac44f309b7b0565d26ed8b147ee3a37156eafa633",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 55
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_sonnet5_a3_20261101",
+        "sample": "A3",
+        "model_key": "sonnet5",
+        "model_id": "eu.anthropic.claude-sonnet-5",
+        "model": "Claude Sonnet 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9433962264150944,
+        "technology_iv": [
+          0.8943089430894309,
+          0.9777777777777777
+        ],
+        "element_f1": 0.65,
+        "element_iv": [
+          0.5578817946505608,
+          0.7393364928909952
+        ],
+        "element_precision": 0.78,
+        "element_recall": 0.5571428571428572,
+        "evaluation_A": 0.7638888888888888,
+        "evaluation_A_units": 72,
+        "evaluation_A_iv": [
+          0.6176168412570507,
+          0.89876582278481
+        ],
+        "evaluation_B": 0.514018691588785,
+        "evaluation_B_iv": [
+          0.43164312586627945,
+          0.5816817386538502
+        ],
+        "comparison_A": 0.7733333333333333,
+        "comparison_A_iv": [
+          0.6867294760437097,
+          0.8824095022624431
+        ],
+        "comparison_A_units": 75,
+        "comparison_B": 0.7295597484276729,
+        "comparison_B_iv": [
+          0.6444444444444445,
+          0.8376068376068376
+        ],
+        "exact": 0.17857142857142858,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 17,
+        "displacement_up": 4,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.7407407407407407,
+          "F1b": 0.9047619047619048,
+          "F2a": null,
+          "F2b": 0.5789473684210527,
+          "F2c": 0.6666666666666666,
+          "F3a": 0.782608695652174,
+          "F3b": 0.48,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.8,
+          "F5b": 0.5,
+          "F6a": null,
+          "F6b": 0.3333333333333333,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.8,
+          "F9": 0.0
+        },
+        "cost_usd": 0.205962,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.3744763636363636,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.08673469387755106,
+            "lo": -0.008083543628567225,
+            "hi": 0.1764400958983996,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.07853136155022944,
+            "lo": 0.014045068669718663,
+            "hi": 0.1558572146807441,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "ca9fc5bfb2df28e3805a34c69086154d971ff14e15989af1f63c48e87267699b",
+        "run_record_sha256": "75ac61eb303909b3e8b54ca7c18c046569c5f369a1319c15a0976526b39fb091",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 55
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_opus5_a3_20261101",
+        "sample": "A3",
+        "model_key": "opus5",
+        "model_id": "eu.anthropic.claude-opus-5",
+        "model": "Claude Opus 5",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9565217391304348,
+        "technology_iv": [
+          0.9050844915508449,
+          0.991304347826087
+        ],
+        "element_f1": 0.6843853820598007,
+        "element_iv": [
+          0.6,
+          0.7514792899408284
+        ],
+        "element_precision": 0.639751552795031,
+        "element_recall": 0.7357142857142858,
+        "evaluation_A": 0.7575757575757576,
+        "evaluation_A_units": 99,
+        "evaluation_A_iv": [
+          0.680816966721222,
+          0.8384118967452299
+        ],
+        "evaluation_B": 0.5494505494505495,
+        "evaluation_B_iv": [
+          0.46153846153846156,
+          0.6161902665614184
+        ],
+        "comparison_A": 0.8051948051948052,
+        "comparison_A_iv": [
+          0.6291882742725439,
+          0.9411764705882353
+        ],
+        "comparison_A_units": 77,
+        "comparison_B": 0.7701863354037267,
+        "comparison_B_iv": [
+          0.6043695131683958,
+          0.9047705943691344
+        ],
+        "exact": 0.19047619047619047,
+        "execution1_failed": 0,
+        "execution1_outcomes": {
+          "technologies_present": 55
+        },
+        "displacement_down": 11,
+        "displacement_up": 10,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.72,
+          "F1b": 0.9090909090909091,
+          "F2a": null,
+          "F2b": 0.6545454545454545,
+          "F2c": 0.3333333333333333,
+          "F3a": 0.7692307692307693,
+          "F3b": 0.7878787878787878,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.875,
+          "F5b": 0.7619047619047619,
+          "F6a": null,
+          "F6b": 0.6666666666666666,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.43478260869565216,
+          "F9": 0.6
+        },
+        "cost_usd": 0.552035,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 1.0037,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.12112007593735175,
+            "lo": 0.0319191919191919,
+            "hi": 0.19870687111703067,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0916568742655699,
+            "lo": 0.03263973888208893,
+            "hi": 0.15999999999999992,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "93ce5af2fd6dd7c51660b7d01704700f0cc5d5d4140af8b078936497f2bfea57",
+        "run_record_sha256": "ae0c65edf2c8374928287ef69177302a68250766423ba3bba0a7930cd885984a",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 55
+        },
+        "precision_exceeds_recall": false
+      },
+      {
+        "run_id": "mc_sonnet_req5_a3_20261101",
+        "sample": "A3",
+        "model_key": "sonnet_req5",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "model": "Claude Sonnet 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.8974358974358975,
+        "technology_iv": [
+          0.8319964601769911,
+          0.9419378214118747
+        ],
+        "element_f1": 0.6039215686274509,
+        "element_iv": [
+          0.5466227956302051,
+          0.6729928206090751
+        ],
+        "element_precision": 0.6695652173913044,
+        "element_recall": 0.55,
+        "evaluation_A": 0.7222222222222222,
+        "evaluation_A_units": 72,
+        "evaluation_A_iv": [
+          0.5681664619164619,
+          0.8481012658227848
+        ],
+        "evaluation_B": 0.46017699115044247,
+        "evaluation_B_iv": [
+          0.35747929606625256,
+          0.5694570379965457
+        ],
+        "comparison_A": 0.8285714285714286,
+        "comparison_A_iv": [
+          0.7380803571428571,
+          0.9403204565408252
+        ],
+        "comparison_A_units": 70,
+        "comparison_B": 0.7435897435897436,
+        "comparison_B_iv": [
+          0.6666666666666666,
+          0.8313450883827279
+        ],
+        "exact": 0.13953488372093023,
+        "execution1_failed": 5,
+        "execution1_outcomes": {
+          "parse_failed": 5,
+          "technologies_present": 50
+        },
+        "displacement_down": 18,
+        "displacement_up": 7,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5714285714285714,
+          "F1b": 0.75,
+          "F2a": null,
+          "F2b": 0.5128205128205128,
+          "F2c": 0.42857142857142855,
+          "F3a": 0.75,
+          "F3b": 0.6060606060606061,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.6153846153846154,
+          "F5b": 0.3333333333333333,
+          "F6a": null,
+          "F6b": 0.6666666666666666,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.8333333333333334,
+          "F9": 0.5
+        },
+        "cost_usd": 0.358723,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.6522236363636364,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.04065626250500198,
+            "lo": -0.013120567375886516,
+            "hi": 0.10300746584025922,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.032571032571032554,
+            "lo": -0.024781954887218127,
+            "hi": 0.09031877213695394,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "11f8af4459eac5625977ef365e65ce2bae40a8b8e25ecb5930d82d02f86ac655",
+        "run_record_sha256": "6f864173b43b65c361fb539aa76ddb5cd0578d220ebd819030cd8cbb47e2560e",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "contract_invalid": 11,
+          "ok_technologies_present": 50,
+          "schema_invalid": 1
+        },
+        "precision_exceeds_recall": true
+      },
+      {
+        "run_id": "mc_opus_req5_a3_20261101",
+        "sample": "A3",
+        "model_key": "opus_req5",
+        "model_id": "eu.anthropic.claude-opus-4-6-v1",
+        "model": "Claude Opus 4.6 (5-series request)",
+        "provider": "Anthropic, proprietary",
+        "status": "robustness model comparison",
+        "authority": "pre-analysis specification §4k (2026-11-01)",
+        "repeats": 1,
+        "paragraphs": 55,
+        "technology_f1": 0.9240506329113924,
+        "technology_iv": [
+          0.8629900803023146,
+          0.9770992366412213
+        ],
+        "element_f1": 0.6823529411764706,
+        "element_iv": [
+          0.6341408972125435,
+          0.7237372614415416
+        ],
+        "element_precision": 0.7565217391304347,
+        "element_recall": 0.6214285714285714,
+        "evaluation_A": 0.8354430379746836,
+        "evaluation_A_units": 79,
+        "evaluation_A_iv": [
+          0.6956521739130435,
+          0.9250058411214953
+        ],
+        "evaluation_B": 0.5764192139737991,
+        "evaluation_B_iv": [
+          0.4743181818181818,
+          0.6573505323505322
+        ],
+        "comparison_A": 0.8493150684931506,
+        "comparison_A_iv": [
+          0.76,
+          0.9433962264150944
+        ],
+        "comparison_A_units": 73,
+        "comparison_B": 0.7848101265822784,
+        "comparison_B_iv": [
+          0.6666666666666666,
+          0.9009273979862213
+        ],
+        "exact": 0.17647058823529413,
+        "execution1_failed": 1,
+        "execution1_outcomes": {
+          "technologies_present": 54,
+          "parse_failed": 1
+        },
+        "displacement_down": 16,
+        "displacement_up": 5,
+        "displacement_reportable": 25,
+        "per_element_f1": {
+          "F1a": 0.5217391304347826,
+          "F1b": 0.9090909090909091,
+          "F2a": null,
+          "F2b": 0.5263157894736842,
+          "F2c": 0.6153846153846154,
+          "F3a": 0.8333333333333334,
+          "F3b": 0.6428571428571429,
+          "F4a": null,
+          "F4b": null,
+          "F5a": 0.875,
+          "F5b": 0.5555555555555556,
+          "F6a": null,
+          "F6b": 0.7272727272727273,
+          "F7a": null,
+          "F7b": null,
+          "F8a": 0.7142857142857143,
+          "F9": 0.6666666666666666
+        },
+        "cost_usd": 0.491273,
+        "billing_complete": true,
+        "executions": 55,
+        "usd_per_100_executions": 0.8932236363636363,
+        "paired_vs_sonnet46": {
+          "element": {
+            "diff": 0.11908763505402165,
+            "lo": 0.056260575296108284,
+            "hi": 0.16981132075471694,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.05918576804652753,
+            "lo": 0.00414470423931157,
+            "hi": 0.1324324324324324,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        },
+        "metrics_sha256": "d2093f2a24978c99c9a862d5c753b10db280f74b0641a968055a1765a9461213",
+        "run_record_sha256": "adac75df29d43117b282ab1345f5ff40cfddaa02c3d53e0754c09e1407d139d4",
+        "inference_config": {
+          "maxTokens": 1024
+        },
+        "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+        "attempt_verdict_codes": {
+          "ok_technologies_present": 54,
+          "contract_invalid": 2
+        },
+        "precision_exceeds_recall": true
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "family": "same_request",
+      "model_key": "sonnet5",
+      "reference": "sonnet_req5",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.018519501150860318,
+            "lo": -0.03695804977624029,
+            "hi": 0.0816126927916484,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.013598913636185372,
+            "lo": -0.013134066371101705,
+            "hi": 0.04583783029226862,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.06356238266787695,
+            "lo": 0.006884579910197641,
+            "hi": 0.12365580065596116,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.003368282091198438,
+            "lo": -0.06130419913965335,
+            "hi": 0.06467256672526778,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.04607843137254908,
+            "lo": -0.028919471824437437,
+            "hi": 0.11620572017078978,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.045960328979196885,
+            "lo": 0.004767098937502601,
+            "hi": 0.10831253309129418,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.11043478260869566,
+            "lo": 0.022356953391436063,
+            "hi": 0.19255861365953109,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.0071428571428571175,
+            "lo": -0.06870229007633588,
+            "hi": 0.07051282051282048,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "same_request",
+      "model_key": "opus5",
+      "reference": "opus_req5",
+      "A2": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.07218024279348934,
+            "lo": 0.026469182257217838,
+            "hi": 0.1174106227699977,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.02063698142670678,
+            "lo": -0.001855827272702948,
+            "hi": 0.041391721677340176,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.03447166085211484,
+            "lo": -0.08145005254314108,
+            "hi": 0.01255423071921069,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.14955487958027514,
+            "lo": 0.09529272444674719,
+            "hi": 0.20723108516858701,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.0020324408833301,
+            "lo": -0.06398443717393232,
+            "hi": 0.06999815430047984,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.03247110621904237,
+            "lo": 0.0,
+            "hi": 0.07880580957504035,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.1167701863354037,
+            "lo": -0.1959183673469388,
+            "hi": -0.03558585555888527,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.11428571428571432,
+            "lo": 0.04807692307692313,
+            "hi": 0.16560509554140135,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "as_run",
+      "model_key": "sonnet5",
+      "reference": "sonnet",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.0020071004350251664,
+            "lo": -0.04538907235228473,
+            "hi": 0.04542968439745709,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.010403359089701247,
+            "lo": -0.017545586957768977,
+            "hi": 0.0412370910813481,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.051889640017105276,
+            "lo": 0.0010744846766476135,
+            "hi": 0.10050452415221545,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.027744646360714387,
+            "lo": -0.0752813296652296,
+            "hi": 0.023156504570693737,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.08673469387755106,
+            "lo": -0.008083543628567225,
+            "hi": 0.1764400958983996,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.07853136155022944,
+            "lo": 0.014045068669718663,
+            "hi": 0.1558572146807441,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.12285714285714289,
+            "lo": 0.03263009845288323,
+            "hi": 0.21313131313131306,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.06428571428571428,
+            "lo": -0.03649635036496346,
+            "hi": 0.1645569620253165,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "as_run",
+      "model_key": "sonnet5",
+      "reference": "opus",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.033678510017759566,
+            "lo": -0.08746594328130808,
+            "hi": 0.02457733736488177,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -2.9310178280561594e-05,
+            "lo": -0.020821317232410763,
+            "hi": 0.022026809772701328,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.016943839242599346,
+            "lo": -0.035252053985095344,
+            "hi": 0.07249459274965553,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.05653884747967319,
+            "lo": -0.11093090390929594,
+            "hi": 0.001785440938308458,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.02953667953667949,
+            "lo": -0.09887005649717506,
+            "hi": 0.0312965722801789,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.0013890496585252654,
+            "lo": -0.026422764227642337,
+            "hi": 0.020796407893182045,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.04050420168067226,
+            "lo": -0.02310924369747902,
+            "hi": 0.10408789327245482,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.0714285714285714,
+            "lo": -0.13939393939393935,
+            "hi": -0.007633587786259555,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "as_run",
+      "model_key": "opus5",
+      "reference": "sonnet",
+      "A2": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.09685867492074696,
+            "lo": 0.039246490457710226,
+            "hi": 0.15016211221117703,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.031235517900920384,
+            "lo": 0.008874488274276615,
+            "hi": 0.054821351702292964,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.011249074585644392,
+            "lo": -0.0657347417180838,
+            "hi": 0.04241529758770923,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.1741872624093167,
+            "lo": 0.10869928238151105,
+            "hi": 0.23349207298038666,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.12112007593735175,
+            "lo": 0.0319191919191919,
+            "hi": 0.19870687111703067,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.0916568742655699,
+            "lo": 0.03263973888208893,
+            "hi": 0.15999999999999992,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.017391304347826098,
+            "lo": -0.10236309929561471,
+            "hi": 0.06721289634958694,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.24285714285714288,
+            "lo": 0.1519999999999999,
+            "hi": 0.31250000000000006,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "better"
+    },
+    {
+      "family": "as_run",
+      "model_key": "opus5",
+      "reference": "opus",
+      "A2": {
+        "verdict": "better",
+        "paired": {
+          "element": {
+            "diff": 0.06518726533801256,
+            "lo": 0.01935771322381974,
+            "hi": 0.10841173877868793,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.020802848632938575,
+            "lo": -0.0031849619993959966,
+            "hi": 0.04461953100833271,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.04619487536015032,
+            "lo": -0.0932846933112389,
+            "hi": -0.001955411372378424,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.1453930612903579,
+            "lo": 0.09444494441344642,
+            "hi": 0.19585371103624682,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.0048487025231211955,
+            "lo": -0.06727145472165397,
+            "hi": 0.08505074096613441,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.011736463056815194,
+            "lo": 0.0,
+            "hi": 0.022571325388226815,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.09974424552429673,
+            "lo": -0.16807579300833486,
+            "hi": -0.015361687492835063,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.1071428571428572,
+            "lo": 0.030000000000000027,
+            "hi": 0.1719745222929937,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "decoding",
+      "model_key": "sonnet_req5",
+      "reference": "sonnet",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.020526601585885484,
+            "lo": -0.05111865566930596,
+            "hi": 0.003140852718109377,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.003195554546484125,
+            "lo": -0.021315821805975355,
+            "hi": 0.011554471136703492,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.011672742650771673,
+            "lo": -0.037779528362514525,
+            "hi": 0.009395497759780658,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.02437636426951595,
+            "lo": -0.06280879833251812,
+            "hi": 0.003138881226636747,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.04065626250500198,
+            "lo": -0.013120567375886516,
+            "hi": 0.10300746584025922,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.032571032571032554,
+            "lo": -0.024781954887218127,
+            "hi": 0.09031877213695394,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.012422360248447228,
+            "lo": -0.02540792540792547,
+            "hi": 0.050398167339369526,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": 0.05714285714285716,
+            "lo": -0.005208333333333259,
+            "hi": 0.13274336283185845,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    },
+    {
+      "family": "decoding",
+      "model_key": "opus_req5",
+      "reference": "opus",
+      "A2": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": -0.006992977455476779,
+            "lo": -0.02509974258078307,
+            "hi": 0.011061405494568799,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": 0.00016586720623179563,
+            "lo": -0.00895401327582901,
+            "hi": 0.010010247112945514,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": -0.011723214508035484,
+            "lo": -0.027408477920491947,
+            "hi": 0.004860908741354364,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.004161818289917241,
+            "lo": -0.02608074403740679,
+            "hi": 0.016839452431410717,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 56,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "A3": {
+        "verdict": "no distinguishable difference",
+        "paired": {
+          "element": {
+            "diff": 0.0028162616397910956,
+            "lo": -0.017254901960784386,
+            "hi": 0.019292604501607746,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "technology": {
+            "diff": -0.020734643162227173,
+            "lo": -0.06192865105908585,
+            "hi": 0.012612612612612595,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_precision": {
+            "diff": 0.017025940811106977,
+            "lo": -0.014261460101867574,
+            "hi": 0.04789938453304787,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          },
+          "element_recall": {
+            "diff": -0.0071428571428571175,
+            "lo": -0.03361344537815125,
+            "hi": 0.013698630136986356,
+            "B": 2000,
+            "seed": 20260905,
+            "articles": 10,
+            "defined_draws": 2000
+          }
+        }
+      },
+      "overall": "no consistent difference"
+    }
+  ]
+}

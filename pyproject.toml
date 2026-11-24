@@ -1,0 +1,40 @@
+# Dependency manifest for the extraction pipeline.
+#
+# The repository had none until 2026-09-02, which meant "PyYAML is pinned" was not
+# a true statement about anything: a package installed into one local .venv is not
+# a reproducible dependency, and GUIDE-LLM asks for the environment a reported run
+# was produced in.
+#
+# TWO INTERPRETERS, DELIBERATELY. The annotation tooling under tools/annotation/ is
+# stdlib-only and runs on the system interpreter; `split_registry` records that
+# runtime in every corpus version, because the containment check's word-class
+# matching resolves against the interpreter's Unicode database. The pipeline needs
+# PyYAML and boto3 and runs in this project's environment. Commands must therefore
+# name their interpreter rather than saying `python` -- running build_sheets.py
+# under the wrong one triggers the registry's runtime-drift refusal, which is the
+# guard working, not a bug.
+
+[project]
+name = "llm-energy-discourse-pipeline"
+version = "0.1.0"
+description = "Extraction pipeline for the bachelor's thesis on renewable-energy media discourse"
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    # Reads the frozen codebook. Needed because the instrument renderer must see
+    # the full prose definitions, not the enumeration lists a regex parser reaches.
+    # See tools/pipeline/INSTRUMENT-DESIGN.md, D9.
+    "PyYAML==6.0.2",
+    # Amazon Bedrock Converse. Pinned to the version the API contract suite in
+    # tools/pipeline/verifications/ was verified against.
+    "boto3==1.43.83",
+    "botocore==1.43.83",
+    # Validates model output against the rendered tool schema. The production
+    # parser in M4 needs it for the same job, so it is not premature here.
+    "jsonschema==4.25.1",
+]
+
+[tool.uv]
+# The environment is created with uv; the lock file next to this manifest is the
+# reproducible record and is committed.
+package = false

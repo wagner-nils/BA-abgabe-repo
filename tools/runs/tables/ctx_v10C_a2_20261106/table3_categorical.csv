@@ -1,0 +1,13 @@
+population;dimension;score A accuracy (weighted);matched units;excluded units (reason: n);score B micro-F1 (weighted);score A macro (supported classes);score B macro (supported classes)
+pooled;evaluation;0.860;197;"frame_not_predicted: 108; row_not_predicted: 35";0.593;0.711 over 4;0.494 over 4
+pooled;comparison target;0.794;154;row_not_predicted: 24;0.731;0.434 over 7;0.364 over 8
+de;evaluation;0.835;87;"frame_not_predicted: 39; row_not_predicted: 19";0.571;0.737 over 4;0.513 over 4
+de;comparison target;0.914;69;row_not_predicted: 15;0.803;0.919 over 3;0.502 over 5
+en;evaluation;0.871;110;"frame_not_predicted: 69; row_not_predicted: 16";0.603;0.685 over 4;0.475 over 4
+en;comparison target;0.738;85;row_not_predicted: 9;0.695;0.424 over 7;0.410 over 7
+clean_pooled;evaluation;0.853;180;"frame_not_predicted: 99; row_not_predicted: 22";0.596;0.695 over 4;0.486 over 4
+clean_pooled;comparison target;0.782;143;row_not_predicted: 18;0.729;0.432 over 7;0.364 over 8
+clean_de;evaluation;0.822;75;"frame_not_predicted: 33; row_not_predicted: 11";0.575;0.696 over 4;0.485 over 4
+clean_de;comparison target;0.902;61;row_not_predicted: 11;0.809;0.916 over 3;0.506 over 5
+clean_en;evaluation;0.866;105;"row_not_predicted: 11; frame_not_predicted: 66";0.605;0.683 over 4;0.478 over 4
+clean_en;comparison target;0.730;82;row_not_predicted: 7;0.693;0.422 over 7;0.409 over 7

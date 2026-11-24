@@ -1,0 +1,418 @@
+{
+ "kind": "A2_prefilter_matches",
+ "note": "Per-technology matches of the keyword prefilter (TECH_PATTERNS of tools/annotation/build_sheets.py, applied to the lower-cased paragraph text as matched_tech() applies them) on the 120 paragraphs of the registered evaluation sample. Identifiers and pattern names only, no text. Written once on 2026-11-11 for specification \u00a74p (1); the lexicon's class 'other' is its joint pattern for other renewables and storage.",
+ "patterns_sha256": "8ab718500e71c7395df1fdb1e098a9198977d7b565c272dd1c7cac13e590b3bc",
+ "sample_manifest_digest": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+ "matches": {
+  "A001_p09": [
+   "solar"
+  ],
+  "A001_p12": [
+   "hydrogen"
+  ],
+  "A003_p10": [
+   "wind"
+  ],
+  "A003_p11": [
+   "general"
+  ],
+  "A007_p04": [
+   "solar"
+  ],
+  "A007_p10": [
+   "solar"
+  ],
+  "A008_p02": [
+   "general",
+   "solar"
+  ],
+  "A008_p05": [
+   "solar"
+  ],
+  "A008_p06": [
+   "solar"
+  ],
+  "A008_p08": [
+   "general",
+   "solar"
+  ],
+  "A008_p09": [
+   "solar"
+  ],
+  "A010_p13": [
+   "general"
+  ],
+  "A010_p18": [
+   "general"
+  ],
+  "A012_p11": [
+   "general"
+  ],
+  "A012_p29": [
+   "general",
+   "solar"
+  ],
+  "A036_p05": [
+   "hydrogen",
+   "wind"
+  ],
+  "A037_p02": [
+   "solar",
+   "wind"
+  ],
+  "A037_p03": [
+   "general"
+  ],
+  "A037_p05": [
+   "general"
+  ],
+  "A039_p01": [
+   "nuclear"
+  ],
+  "A039_p02": [
+   "nuclear"
+  ],
+  "A039_p04": [
+   "nuclear"
+  ],
+  "A041_p02": [
+   "hydrogen"
+  ],
+  "A042_p01": [
+   "solar",
+   "wind"
+  ],
+  "A042_p02": [
+   "general"
+  ],
+  "A042_p06": [
+   "general"
+  ],
+  "A042_p10": [
+   "wind"
+  ],
+  "A042_p11": [
+   "other",
+   "wind"
+  ],
+  "A043_p04": [
+   "other"
+  ],
+  "A044_p04": [
+   "general",
+   "other",
+   "solar"
+  ],
+  "A046_p03": [
+   "general"
+  ],
+  "A046_p07": [
+   "general",
+   "solar",
+   "wind"
+  ],
+  "A047_p05": [
+   "solar"
+  ],
+  "A048_p02": [
+   "wind"
+  ],
+  "A049_p07": [
+   "general",
+   "nuclear",
+   "other",
+   "solar",
+   "wind"
+  ],
+  "A051_p02": [
+   "nuclear"
+  ],
+  "A051_p06": [
+   "other"
+  ],
+  "A052_p12": [
+   "nuclear"
+  ],
+  "A052_p13": [
+   "nuclear"
+  ],
+  "A053_p05": [
+   "general"
+  ],
+  "A053_p08": [
+   "other"
+  ],
+  "A053_p09": [
+   "general"
+  ],
+  "A054_p05": [
+   "general"
+  ],
+  "A054_p09": [
+   "general"
+  ],
+  "A054_p11": [
+   "solar",
+   "wind"
+  ],
+  "A054_p17": [
+   "solar",
+   "wind"
+  ],
+  "A055_p11": [
+   "nuclear"
+  ],
+  "A056_p02": [
+   "general",
+   "solar",
+   "wind"
+  ],
+  "A057_p03": [
+   "general",
+   "nuclear"
+  ],
+  "A058_p09": [
+   "solar"
+  ],
+  "A059_p04": [
+   "other",
+   "solar"
+  ],
+  "A060_p10": [
+   "hydrogen",
+   "other"
+  ],
+  "A060_p13": [
+   "hydrogen"
+  ],
+  "A060_p16": [
+   "hydrogen"
+  ],
+  "A060_p23": [
+   "general",
+   "hydrogen"
+  ],
+  "A060_p30": [
+   "general",
+   "hydrogen"
+  ],
+  "A061_p02": [
+   "hydrogen"
+  ],
+  "A061_p12": [
+   "hydrogen"
+  ],
+  "A063_p01": [
+   "hydrogen",
+   "wind"
+  ],
+  "A063_p03": [
+   "hydrogen",
+   "solar",
+   "wind"
+  ],
+  "A063_p19": [
+   "hydrogen"
+  ],
+  "A063_p20": [
+   "general",
+   "hydrogen"
+  ],
+  "A063_p32": [
+   "solar"
+  ],
+  "A065_p03": [
+   "general"
+  ],
+  "A066_p14": [
+   "hydrogen"
+  ],
+  "A066_p19": [
+   "general",
+   "hydrogen"
+  ],
+  "A066_p21": [
+   "hydrogen"
+  ],
+  "A067_p02": [
+   "hydrogen"
+  ],
+  "A067_p05": [
+   "hydrogen",
+   "wind"
+  ],
+  "A067_p19": [
+   "hydrogen"
+  ],
+  "A068_p20": [
+   "other"
+  ],
+  "A069_p28": [
+   "nuclear"
+  ],
+  "A069_p37": [
+   "nuclear"
+  ],
+  "A070_p10": [
+   "nuclear",
+   "solar",
+   "wind"
+  ],
+  "A070_p12": [
+   "general"
+  ],
+  "A070_p16": [
+   "general",
+   "nuclear"
+  ],
+  "A071_p04": [
+   "general",
+   "other",
+   "solar",
+   "wind"
+  ],
+  "A072_p01": [
+   "nuclear"
+  ],
+  "A072_p16": [
+   "nuclear"
+  ],
+  "A072_p18": [
+   "nuclear"
+  ],
+  "A072_p23": [
+   "nuclear"
+  ],
+  "A072_p36": [
+   "nuclear"
+  ],
+  "A074_p14": [
+   "nuclear"
+  ],
+  "A074_p15": [
+   "nuclear"
+  ],
+  "A075_p04": [
+   "solar"
+  ],
+  "A076_p01": [
+   "wind"
+  ],
+  "A076_p03": [
+   "wind"
+  ],
+  "A077_p01": [
+   "solar",
+   "wind"
+  ],
+  "A077_p15": [
+   "nuclear",
+   "other",
+   "solar"
+  ],
+  "A078_p01": [
+   "general"
+  ],
+  "A078_p03": [
+   "wind"
+  ],
+  "A079_p02": [
+   "wind"
+  ],
+  "A080_p01": [
+   "wind"
+  ],
+  "A080_p02": [
+   "wind"
+  ],
+  "A080_p10": [
+   "wind"
+  ],
+  "A082_p02": [
+   "general"
+  ],
+  "A082_p05": [
+   "general"
+  ],
+  "A083_p02": [
+   "other"
+  ],
+  "A083_p07": [
+   "general"
+  ],
+  "A085_p03": [
+   "solar",
+   "wind"
+  ],
+  "A085_p05": [
+   "solar"
+  ],
+  "A085_p07": [
+   "solar",
+   "wind"
+  ],
+  "A085_p09": [
+   "solar",
+   "wind"
+  ],
+  "A085_p10": [
+   "solar",
+   "wind"
+  ],
+  "A085_p11": [
+   "solar",
+   "wind"
+  ],
+  "A086_p03": [
+   "general",
+   "other",
+   "solar"
+  ],
+  "A087_p05": [
+   "general",
+   "other"
+  ],
+  "A088_p03": [
+   "other"
+  ],
+  "A088_p09": [
+   "general"
+  ],
+  "A088_p14": [
+   "other"
+  ],
+  "A089_p03": [
+   "other"
+  ],
+  "A091_p05": [
+   "general"
+  ],
+  "A091_p13": [
+   "other",
+   "wind"
+  ],
+  "A092_p03": [
+   "wind"
+  ],
+  "A092_p07": [
+   "general",
+   "wind"
+  ],
+  "A092_p09": [
+   "wind"
+  ],
+  "A093_p07": [
+   "solar",
+   "wind"
+  ],
+  "A093_p11": [
+   "general"
+  ],
+  "A094_p02": [
+   "general"
+  ],
+  "A095_p02": [
+   "wind"
+  ]
+ }
+}

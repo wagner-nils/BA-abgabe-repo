@@ -1,0 +1,54 @@
+﻿row_id;paragraph_id;technology;wind_siting;hydrogen_pathway;lang;outlet;F1a;F1b;F2a;F2b;F2c;F3a;F3b;F4a;F4b;F5a;F5b;F6a;F6b;F7a;F7b;F8a;F9;no_frame_for_this_tech;eval_costs;eval_jobs;eval_climate;eval_security;eval_reliability;eval_feasibility;eval_siting;eval_regulation;eval_other;comparison_target;comparison_note;speaker;confidence;note;annotator;annotator_type;coded_at;codebook_version;sitting
+A004_p01__nuclear;A004_p01;nuclear;;;de;taz;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;;;negative;;;;;;neutral;none;;outlet;2;Sicherheits-/Terrorrisiko, very seldomly mentioned so no category needed imo;NW;human;2026-09-01;1.0;1
+A004_p02__nuclear;A004_p02;nuclear;;;de;taz;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;0;;;;;negative;;;;negative;none;;expert;3;nuclear safety / reactor accident risk - ;NW;human;2026-09-01;1.0;1
+A004_p03__nuclear;A004_p03;nuclear;;;de;taz;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;;;;;;;;;negative;none;;outlet;3;safety;NW;human;2026-09-01;1.0;1
+A004_p04__solar;A004_p04;solar;;;de;taz;0;0;0;1;0;0;1;1;0;0;0;0;0;0;0;0;0;0;;positive;positive;positive;;;;;;multiple;coal and nuclear;outlet;3;;NW;human;2026-09-01;1.0;1
+A004_p04__wind;A004_p04;wind;unspecified;;de;taz;0;0;0;1;0;0;1;1;0;0;0;0;0;0;0;0;0;0;;positive;positive;positive;;;;;;multiple;coal and nuclear;outlet;3;;NW;human;2026-09-01;1.0;1
+A004_p04__nuclear;A004_p04;nuclear;;;de;taz;0;0;0;1;0;0;1;1;0;0;0;0;0;0;0;0;0;0;;negative;negative;negative;;;;;;multiple;wind and solar;outlet;3;;NW;human;2026-09-01;1.0;1
+A004_p05__general;A004_p05;general;;;de;taz;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;;;positive;;positive;;;;;multiple;coal and nuclear;outlet;2;;NW;human;2026-09-01;1.0;1
+A004_p05__nuclear;A004_p05;nuclear;;;de;taz;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;;;negative;;negative;;;;;general;;outlet;2;;NW;human;2026-09-01;1.0;1
+A004_p06__nuclear;A004_p06;nuclear;;;de;taz;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;;;;;;negative;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;1
+A004_p07__nuclear;A004_p07;nuclear;;;de;taz;0;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;;;negative;;;negative;;;;none;;industry;2;;NW;human;2026-09-01;1.0;1
+A004_p08__nuclear;A004_p08;nuclear;;;de;taz;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;negative;;;;;;;none;;outlet;2;;NW;human;2026-09-01;1.0;1
+A006_p01__general;A006_p01;general;;;en;Al Jazeera;1;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;positive;positive;;;;;;;none;;expert;2;;NW;human;2026-09-01;1.0;1
+A006_p01__solar;A006_p01;solar;;;en;Al Jazeera;1;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;positive;positive;;;;;;;none;;expert;2;;NW;human;2026-09-01;1.0;1
+A006_p01__wind;A006_p01;wind;;;en;Al Jazeera;1;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;positive;positive;;;;;;;none;;expert;2;;NW;human;2026-09-01;1.0;1
+A006_p02__general;A006_p02;general;;;en;Al Jazeera;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p02__solar;A006_p02;solar;;;en;Al Jazeera;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p02__wind;A006_p02;wind;;;en;Al Jazeera;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p03__general;A006_p03;general;;;en;Al Jazeera;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;expert;2;;NW;human;2026-09-01;1.0;1
+A006_p04__general;A006_p04;general;;;en;Al Jazeera;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p04__solar;A006_p04;solar;;;en;Al Jazeera;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p04__wind;A006_p04;wind;onshore;;en;Al Jazeera;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p04__other_renewable;A006_p04;other_renewable;;;en;Al Jazeera;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p06__general;A006_p06;general;;;en;Al Jazeera;1;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;positive;;positive;;;;;;;none;;ambiguous;2;outside context would show that speaker would be expert but with just this part hard to tell who said this;NW;human;2026-09-01;1.0;1
+A006_p07__general;A006_p07;general;;;en;Al Jazeera;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;fossil_generic;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p08__general;A006_p08;general;;;en;Al Jazeera;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;positive;;;;;;;;fossil_generic;;expert;2;;NW;human;2026-09-01;1.0;1
+A006_p09__general;A006_p09;general;;;en;Al Jazeera;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;;;;;;;;;fossil_generic;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p10__general;A006_p10;general;;;en;Al Jazeera;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;negative;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;1
+A006_p11__general;A006_p11;general;;;en;Al Jazeera;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;negative;;;;;;;fossil_generic;;expert;2;;NW;human;2026-09-01;1.0;1
+A006_p14__general;A006_p14;general;;;en;Al Jazeera;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;1
+A006_p15__general;A006_p15;general;;;en;Al Jazeera;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;negative;;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;2
+A006_p17__general;A006_p17;general;;;en;Al Jazeera;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;2
+A006_p19__solar;A006_p19;solar;;;en;Al Jazeera;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;2
+A006_p19__wind;A006_p19;wind;;;en;Al Jazeera;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;expert;3;;NW;human;2026-09-01;1.0;2
+A018_p01__general;A018_p01;general;;;de;DIE ZEIT;0;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;;;positive;;;positive;;;;none;;industry;2;"wind, h2, and storage are combined yet not compared; also no investment activity bc its more a biographic information";NW;human;2026-09-01;1.0;2
+A018_p01__wind;A018_p01;wind;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;;;;;;positive;;;;none;;industry;2;;NW;human;2026-09-01;1.0;2
+A018_p01__hydrogen;A018_p01;hydrogen;;green;de;DIE ZEIT;0;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;;;positive;;;positive;;;;none;;industry;3;;NW;human;2026-09-01;1.0;2
+A018_p01__storage;A018_p01;storage;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;;;;;;positive;;;;none;;industry;2;;NW;human;2026-09-01;1.0;2
+A018_p02__hydrogen;A018_p02;hydrogen;;;de;DIE ZEIT;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;2
+A018_p03__general;A018_p03;general;;;de;DIE ZEIT;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;2
+A018_p03__hydrogen;A018_p03;hydrogen;;;de;DIE ZEIT;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;2
+A018_p05__wind;A018_p05;wind;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;2
+A018_p05__hydrogen;A018_p05;hydrogen;;;de;DIE ZEIT;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;industry;3;;NW;human;2026-09-01;1.0;2
+A018_p06__wind;A018_p06;wind;;;de;DIE ZEIT;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;neutral;;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;2
+A018_p06__nuclear;A018_p06;nuclear;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;;NW;human;2026-09-01;1.0;2
+A018_p07__general;A018_p07;general;;;de;DIE ZEIT;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;nuclear;;industry;3;;NW;human;2026-09-01;1.0;2
+A018_p07__wind;A018_p07;wind;;;de;DIE ZEIT;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;;positive;;;;;;;nuclear;;industry;3;;NW;human;2026-09-01;1.0;2
+A018_p07__nuclear;A018_p07;nuclear;;;de;DIE ZEIT;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;1;0;;;negative;negative;;;;;negative;wind;;ambiguous;2;"nuclear safety and accident risk; feasability looks at nuclear fusion not conventional nuclear energy";NW;human;2026-09-01;1.0;2
+A018_p08__general;A018_p08;general;;;de;DIE ZEIT;0;0;0;1;0;0;0;0;0;1;1;0;0;0;0;0;0;0;;positive;;;positive;;;;;multiple;conventional power plant;outlet;2;;NW;human;2026-09-01;1.0;2
+A018_p08__solar;A018_p08;solar;;;de;DIE ZEIT;0;0;1;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;;positive;;;positive;;;;;multiple;conventional power plant;outlet;2;;NW;human;2026-09-01;1.0;2
+A018_p08__wind;A018_p08;wind;;;de;DIE ZEIT;0;0;0;1;0;0;0;0;0;1;1;0;0;0;0;0;0;0;;positive;;;positive;;;;;multiple;conventional power plant;outlet;2;;NW;human;2026-09-01;1.0;2
+A018_p08__hydrogen;A018_p08;hydrogen;;green;de;DIE ZEIT;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;positive;;;positive;;;;;multiple;conventional power plant;outlet;2;;NW;human;2026-09-01;1.0;2
+A018_p08__other_renewable;A018_p08;other_renewable;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;positive;;;;;multiple;conventional power plant;outlet;2;;NW;human;2026-09-01;1.0;2
+A018_p08__storage;A018_p08;storage;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;positive;;;;;multiple;conventional power plant;outlet;2;;NW;human;2026-09-01;1.0;2

@@ -1,0 +1,4864 @@
+{
+  "run_id": "mc_mercury3_instant_a3_20261030r3",
+  "dev": false,
+  "threshold": 5,
+  "k": 1,
+  "B": 2000,
+  "seed": 20260905,
+  "model_key": "mercury3_instant",
+  "model_id": "mercury-3",
+  "model_comparison_authority": "pre-analysis specification §4g (2026-10-30)",
+  "request_deviation": {
+    "temperature": 0.5,
+    "additional_model_request_fields": {
+      "reasoning_effort": "instant"
+    },
+    "cache_point": false
+  },
+  "instrument": {
+    "name": "v1.0",
+    "version": "1.0",
+    "variant": null,
+    "retry_policy_version": "2",
+    "instrument_v11_sha256": null,
+    "instrument_v10r3_sha256": null,
+    "instrument_v10f_sha256": null,
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt"
+  },
+  "analysis_status": "robustness model comparison",
+  "populations": {
+    "pooled": 55,
+    "de": 27,
+    "en": 28
+  },
+  "articles": {
+    "pooled": 10,
+    "de": 6,
+    "en": 4
+  },
+  "class_manifest": {
+    "technology": {
+      "pooled": {
+        "general": {
+          "rows": 21,
+          "articles": 8
+        },
+        "wind": {
+          "rows": 16,
+          "articles": 6
+        },
+        "solar": {
+          "rows": 22,
+          "articles": 6
+        },
+        "nuclear": {
+          "rows": 4,
+          "articles": 3
+        },
+        "other_renewable": {
+          "rows": 6,
+          "articles": 2
+        },
+        "hydrogen": {
+          "rows": 12,
+          "articles": 3
+        }
+      },
+      "de": {
+        "general": {
+          "rows": 15,
+          "articles": 5
+        },
+        "wind": {
+          "rows": 9,
+          "articles": 4
+        },
+        "solar": {
+          "rows": 11,
+          "articles": 3
+        },
+        "nuclear": {
+          "rows": 2,
+          "articles": 2
+        },
+        "hydrogen": {
+          "rows": 1,
+          "articles": 1
+        }
+      },
+      "en": {
+        "general": {
+          "rows": 6,
+          "articles": 3
+        },
+        "solar": {
+          "rows": 11,
+          "articles": 3
+        },
+        "wind": {
+          "rows": 7,
+          "articles": 2
+        },
+        "nuclear": {
+          "rows": 2,
+          "articles": 1
+        },
+        "other_renewable": {
+          "rows": 6,
+          "articles": 2
+        },
+        "hydrogen": {
+          "rows": 11,
+          "articles": 2
+        }
+      },
+      "common_support": [
+        "general",
+        "hydrogen",
+        "nuclear",
+        "solar",
+        "wind"
+      ]
+    },
+    "element": {
+      "pooled": {
+        "F2a": {
+          "rows": 4,
+          "articles": 2
+        },
+        "F2b": {
+          "rows": 25,
+          "articles": 7
+        },
+        "F5b": {
+          "rows": 12,
+          "articles": 5
+        },
+        "F1b": {
+          "rows": 22,
+          "articles": 5
+        },
+        "F1a": {
+          "rows": 14,
+          "articles": 3
+        },
+        "F6b": {
+          "rows": 5,
+          "articles": 4
+        },
+        "F3a": {
+          "rows": 13,
+          "articles": 5
+        },
+        "F3b": {
+          "rows": 14,
+          "articles": 6
+        },
+        "F2c": {
+          "rows": 7,
+          "articles": 5
+        },
+        "F6a": {
+          "rows": 3,
+          "articles": 1
+        },
+        "F8a": {
+          "rows": 5,
+          "articles": 4
+        },
+        "F9": {
+          "rows": 6,
+          "articles": 3
+        },
+        "F7a": {
+          "rows": 1,
+          "articles": 1
+        },
+        "F4a": {
+          "rows": 1,
+          "articles": 1
+        },
+        "F5a": {
+          "rows": 8,
+          "articles": 1
+        }
+      },
+      "de": {
+        "F2a": {
+          "rows": 4,
+          "articles": 2
+        },
+        "F2b": {
+          "rows": 14,
+          "articles": 4
+        },
+        "F5b": {
+          "rows": 7,
+          "articles": 4
+        },
+        "F1b": {
+          "rows": 10,
+          "articles": 3
+        },
+        "F1a": {
+          "rows": 12,
+          "articles": 2
+        },
+        "F6b": {
+          "rows": 3,
+          "articles": 2
+        },
+        "F3a": {
+          "rows": 5,
+          "articles": 3
+        },
+        "F3b": {
+          "rows": 11,
+          "articles": 4
+        },
+        "F2c": {
+          "rows": 4,
+          "articles": 3
+        },
+        "F8a": {
+          "rows": 2,
+          "articles": 2
+        },
+        "F4a": {
+          "rows": 1,
+          "articles": 1
+        },
+        "F5a": {
+          "rows": 8,
+          "articles": 1
+        },
+        "F9": {
+          "rows": 4,
+          "articles": 1
+        }
+      },
+      "en": {
+        "F1b": {
+          "rows": 12,
+          "articles": 2
+        },
+        "F2b": {
+          "rows": 11,
+          "articles": 3
+        },
+        "F2c": {
+          "rows": 3,
+          "articles": 2
+        },
+        "F3a": {
+          "rows": 8,
+          "articles": 2
+        },
+        "F5b": {
+          "rows": 5,
+          "articles": 1
+        },
+        "F6a": {
+          "rows": 3,
+          "articles": 1
+        },
+        "F3b": {
+          "rows": 3,
+          "articles": 2
+        },
+        "F6b": {
+          "rows": 2,
+          "articles": 2
+        },
+        "F8a": {
+          "rows": 3,
+          "articles": 2
+        },
+        "F9": {
+          "rows": 2,
+          "articles": 2
+        },
+        "F1a": {
+          "rows": 2,
+          "articles": 1
+        },
+        "F7a": {
+          "rows": 1,
+          "articles": 1
+        }
+      },
+      "common_support": [
+        "F1a",
+        "F1b",
+        "F2b",
+        "F2c",
+        "F3a",
+        "F3b",
+        "F5b",
+        "F6b",
+        "F8a",
+        "F9"
+      ]
+    },
+    "evaluation_A": {
+      "pooled": {
+        "neutral": {
+          "rows": 8,
+          "articles": 5
+        },
+        "positive": {
+          "rows": 16,
+          "articles": 7
+        },
+        "mixed": {
+          "rows": 4,
+          "articles": 2
+        },
+        "negative": {
+          "rows": 11,
+          "articles": 4
+        }
+      },
+      "de": {
+        "neutral": {
+          "rows": 2,
+          "articles": 2
+        },
+        "positive": {
+          "rows": 4,
+          "articles": 3
+        },
+        "mixed": {
+          "rows": 3,
+          "articles": 1
+        },
+        "negative": {
+          "rows": 10,
+          "articles": 3
+        }
+      },
+      "en": {
+        "mixed": {
+          "rows": 1,
+          "articles": 1
+        },
+        "positive": {
+          "rows": 12,
+          "articles": 4
+        },
+        "negative": {
+          "rows": 1,
+          "articles": 1
+        },
+        "neutral": {
+          "rows": 6,
+          "articles": 3
+        }
+      },
+      "common_support": [
+        "mixed",
+        "negative",
+        "neutral",
+        "positive"
+      ]
+    },
+    "evaluation_B": {
+      "pooled": {
+        "positive": {
+          "rows": 36,
+          "articles": 9
+        },
+        "neutral": {
+          "rows": 26,
+          "articles": 9
+        },
+        "mixed": {
+          "rows": 4,
+          "articles": 2
+        },
+        "negative": {
+          "rows": 58,
+          "articles": 8
+        }
+      },
+      "de": {
+        "positive": {
+          "rows": 10,
+          "articles": 5
+        },
+        "neutral": {
+          "rows": 12,
+          "articles": 6
+        },
+        "mixed": {
+          "rows": 3,
+          "articles": 1
+        },
+        "negative": {
+          "rows": 46,
+          "articles": 4
+        }
+      },
+      "en": {
+        "negative": {
+          "rows": 12,
+          "articles": 4
+        },
+        "mixed": {
+          "rows": 1,
+          "articles": 1
+        },
+        "positive": {
+          "rows": 26,
+          "articles": 4
+        },
+        "neutral": {
+          "rows": 14,
+          "articles": 3
+        }
+      },
+      "common_support": [
+        "mixed",
+        "negative",
+        "neutral",
+        "positive"
+      ]
+    },
+    "comparison_A": {
+      "pooled": {
+        "none": {
+          "rows": 42,
+          "articles": 9
+        },
+        "multiple": {
+          "rows": 2,
+          "articles": 2
+        },
+        "other": {
+          "rows": 2,
+          "articles": 1
+        },
+        "solar": {
+          "rows": 1,
+          "articles": 1
+        },
+        "grid_status_quo": {
+          "rows": 2,
+          "articles": 1
+        }
+      },
+      "de": {
+        "none": {
+          "rows": 19,
+          "articles": 5
+        },
+        "multiple": {
+          "rows": 1,
+          "articles": 1
+        },
+        "grid_status_quo": {
+          "rows": 2,
+          "articles": 1
+        }
+      },
+      "en": {
+        "multiple": {
+          "rows": 1,
+          "articles": 1
+        },
+        "none": {
+          "rows": 23,
+          "articles": 4
+        },
+        "other": {
+          "rows": 2,
+          "articles": 1
+        },
+        "solar": {
+          "rows": 1,
+          "articles": 1
+        }
+      },
+      "common_support": [
+        "multiple",
+        "none"
+      ]
+    },
+    "comparison_B": {
+      "pooled": {
+        "none": {
+          "rows": 67,
+          "articles": 10
+        },
+        "multiple": {
+          "rows": 6,
+          "articles": 2
+        },
+        "other": {
+          "rows": 2,
+          "articles": 1
+        },
+        "fossil_generic": {
+          "rows": 1,
+          "articles": 1
+        },
+        "other_renewable": {
+          "rows": 1,
+          "articles": 1
+        },
+        "solar": {
+          "rows": 1,
+          "articles": 1
+        },
+        "grid_status_quo": {
+          "rows": 2,
+          "articles": 1
+        },
+        "coal": {
+          "rows": 1,
+          "articles": 1
+        }
+      },
+      "de": {
+        "none": {
+          "rows": 34,
+          "articles": 6
+        },
+        "multiple": {
+          "rows": 1,
+          "articles": 1
+        },
+        "grid_status_quo": {
+          "rows": 2,
+          "articles": 1
+        },
+        "coal": {
+          "rows": 1,
+          "articles": 1
+        }
+      },
+      "en": {
+        "none": {
+          "rows": 33,
+          "articles": 4
+        },
+        "multiple": {
+          "rows": 5,
+          "articles": 1
+        },
+        "other": {
+          "rows": 2,
+          "articles": 1
+        },
+        "fossil_generic": {
+          "rows": 1,
+          "articles": 1
+        },
+        "other_renewable": {
+          "rows": 1,
+          "articles": 1
+        },
+        "solar": {
+          "rows": 1,
+          "articles": 1
+        }
+      },
+      "common_support": [
+        "multiple",
+        "none"
+      ]
+    }
+  },
+  "point": {
+    "pooled": {
+      "technology": {
+        "micro_f1_weighted": 0.7368421052631579,
+        "micro_f1_unweighted": 0.7368421052631579,
+        "per_class": {
+          "general": {
+            "f1_weighted": 0.6875,
+            "f1_unweighted": 0.6875,
+            "support_rows": 21,
+            "support_articles": 8,
+            "in_macro": true,
+            "reported": true
+          },
+          "hydrogen": {
+            "f1_weighted": 0.9090909090909091,
+            "f1_unweighted": 0.9090909090909091,
+            "support_rows": 12,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 4,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": 0.6,
+            "f1_unweighted": 0.6,
+            "support_rows": 6,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "solar": {
+            "f1_weighted": 0.8108108108108109,
+            "f1_unweighted": 0.8108108108108109,
+            "support_rows": 22,
+            "support_articles": 6,
+            "in_macro": true,
+            "reported": true
+          },
+          "storage": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": 0.6923076923076923,
+            "f1_unweighted": 0.6923076923076923,
+            "support_rows": 16,
+            "support_articles": 6,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.683284902034902,
+        "macro_f1_unweighted": 0.683284902034902,
+        "macro_classes": 6
+      },
+      "element": {
+        "micro_f1_weighted": 0.44221105527638194,
+        "micro_f1_unweighted": 0.44221105527638194,
+        "per_class": {
+          "F1a": {
+            "f1_weighted": 0.5,
+            "f1_unweighted": 0.5,
+            "support_rows": 14,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "F1b": {
+            "f1_weighted": 0.625,
+            "f1_unweighted": 0.625,
+            "support_rows": 22,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "F2a": {
+            "f1_weighted": 0.5714285714285714,
+            "f1_unweighted": 0.5714285714285714,
+            "support_rows": 4,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F2b": {
+            "f1_weighted": 0.46153846153846156,
+            "f1_unweighted": 0.46153846153846156,
+            "support_rows": 25,
+            "support_articles": 7,
+            "in_macro": true,
+            "reported": true
+          },
+          "F2c": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 7,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "F3a": {
+            "f1_weighted": 0.6,
+            "f1_unweighted": 0.6,
+            "support_rows": 13,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "F3b": {
+            "f1_weighted": 0.3157894736842105,
+            "f1_unweighted": 0.3157894736842105,
+            "support_rows": 14,
+            "support_articles": 6,
+            "in_macro": true,
+            "reported": true
+          },
+          "F4a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F4b": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F5a": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 8,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": true
+          },
+          "F5b": {
+            "f1_weighted": 0.15384615384615385,
+            "f1_unweighted": 0.15384615384615385,
+            "support_rows": 12,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "F6a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 3,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F6b": {
+            "f1_weighted": 0.4444444444444444,
+            "f1_unweighted": 0.4444444444444444,
+            "support_rows": 5,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "F7a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F7b": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F8a": {
+            "f1_weighted": 0.5714285714285714,
+            "f1_unweighted": 0.5714285714285714,
+            "support_rows": 5,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "F9": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 6,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.3362317117580275,
+        "macro_f1_unweighted": 0.3362317117580275,
+        "macro_classes": 15
+      },
+      "evaluation_B": {
+        "micro_f1_weighted": 0.3050847457627119,
+        "micro_f1_unweighted": 0.3050847457627119,
+        "per_class": {
+          "mixed": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 4,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "negative": {
+            "f1_weighted": 0.2571428571428571,
+            "f1_unweighted": 0.2571428571428571,
+            "support_rows": 58,
+            "support_articles": 8,
+            "in_macro": true,
+            "reported": true
+          },
+          "neutral": {
+            "f1_weighted": 0.2222222222222222,
+            "f1_unweighted": 0.2222222222222222,
+            "support_rows": 26,
+            "support_articles": 9,
+            "in_macro": true,
+            "reported": true
+          },
+          "positive": {
+            "f1_weighted": 0.42424242424242425,
+            "f1_unweighted": 0.42424242424242425,
+            "support_rows": 36,
+            "support_articles": 9,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.22590187590187588,
+        "macro_f1_unweighted": 0.22590187590187588,
+        "macro_classes": 4
+      },
+      "comparison_B": {
+        "micro_f1_weighted": 0.6165413533834586,
+        "micro_f1_unweighted": 0.6165413533834586,
+        "per_class": {
+          "coal": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "fossil_generic": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "general": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "grid_status_quo": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "hydrogen": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "multiple": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 6,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "natural_gas": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "none": {
+            "f1_weighted": 0.7130434782608696,
+            "f1_unweighted": 0.7130434782608696,
+            "support_rows": 67,
+            "support_articles": 10,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "oil": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.0891304347826087,
+        "macro_f1_unweighted": 0.0891304347826087,
+        "macro_classes": 8
+      },
+      "evaluation_A": {
+        "accuracy_weighted": 0.6923076923076923,
+        "accuracy_unweighted": 0.6923076923076923,
+        "units": 39,
+        "excluded": {
+          "evaluation_A:row_not_predicted": 56,
+          "evaluation_A:frame_not_predicted": 29
+        },
+        "per_class": {
+          "mixed": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 4,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "negative": {
+            "f1_weighted": 0.9,
+            "f1_unweighted": 0.9,
+            "support_rows": 11,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "neutral": {
+            "f1_weighted": 0.4444444444444444,
+            "f1_unweighted": 0.4444444444444444,
+            "support_rows": 8,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "positive": {
+            "f1_weighted": 0.8,
+            "f1_unweighted": 0.8,
+            "support_rows": 16,
+            "support_articles": 7,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.5361111111111111,
+        "macro_f1_unweighted": 0.5361111111111111,
+        "macro_classes": 4
+      },
+      "comparison_A": {
+        "accuracy_weighted": 0.8367346938775511,
+        "accuracy_unweighted": 0.8367346938775511,
+        "units": 49,
+        "excluded": {
+          "comparison_A:row_not_predicted": 32
+        },
+        "per_class": {
+          "coal": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "fossil_generic": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "general": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "grid_status_quo": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "hydrogen": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "multiple": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "natural_gas": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "none": {
+            "f1_weighted": 0.9425287356321839,
+            "f1_unweighted": 0.9425287356321839,
+            "support_rows": 42,
+            "support_articles": 9,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "oil": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.18850574712643678,
+        "macro_f1_unweighted": 0.18850574712643678,
+        "macro_classes": 5
+      },
+      "exact_match": {
+        "weighted": 0.10714285714285714,
+        "unweighted": 0.10714285714285714,
+        "rows": 84
+      }
+    },
+    "de": {
+      "technology": {
+        "micro_f1_weighted": 0.7096774193548387,
+        "micro_f1_unweighted": 0.7096774193548387,
+        "per_class": {
+          "general": {
+            "f1_weighted": 0.6363636363636364,
+            "f1_unweighted": 0.6363636363636364,
+            "support_rows": 15,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "hydrogen": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "nuclear": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": 0.8421052631578947,
+            "f1_unweighted": 0.8421052631578947,
+            "support_rows": 11,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "storage": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": 0.8235294117647058,
+            "f1_unweighted": 0.8235294117647058,
+            "support_rows": 9,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.4603996622572474,
+        "macro_f1_unweighted": 0.4603996622572474,
+        "macro_classes": 5,
+        "macro_common_support_weighted": 0.4603996622572474,
+        "macro_common_support_unweighted": 0.4603996622572474,
+        "common_support_classes": 5
+      },
+      "element": {
+        "micro_f1_weighted": 0.40350877192982454,
+        "micro_f1_unweighted": 0.40350877192982454,
+        "per_class": {
+          "F1a": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 12,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "F1b": {
+            "f1_weighted": 0.8235294117647058,
+            "f1_unweighted": 0.8235294117647058,
+            "support_rows": 10,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "F2a": {
+            "f1_weighted": 0.5714285714285714,
+            "f1_unweighted": 0.5714285714285714,
+            "support_rows": 4,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F2b": {
+            "f1_weighted": 0.38095238095238093,
+            "f1_unweighted": 0.38095238095238093,
+            "support_rows": 14,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "F2c": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 4,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": false
+          },
+          "F3a": {
+            "f1_weighted": 0.5714285714285714,
+            "f1_unweighted": 0.5714285714285714,
+            "support_rows": 5,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "F3b": {
+            "f1_weighted": 0.14285714285714285,
+            "f1_unweighted": 0.14285714285714285,
+            "support_rows": 11,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "F4a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F4b": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F5a": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 8,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": true
+          },
+          "F5b": {
+            "f1_weighted": 0.25,
+            "f1_unweighted": 0.25,
+            "support_rows": 7,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "F6a": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F6b": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 3,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F7a": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F7b": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F8a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F9": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 4,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.3030920060331825,
+        "macro_f1_unweighted": 0.3030920060331825,
+        "macro_classes": 13,
+        "macro_common_support_weighted": 0.29687675070028013,
+        "macro_common_support_unweighted": 0.29687675070028013,
+        "common_support_classes": 10
+      },
+      "evaluation_B": {
+        "micro_f1_weighted": 0.2736842105263158,
+        "micro_f1_unweighted": 0.2736842105263158,
+        "per_class": {
+          "mixed": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 3,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "negative": {
+            "f1_weighted": 0.32142857142857145,
+            "f1_unweighted": 0.32142857142857145,
+            "support_rows": 46,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "neutral": {
+            "f1_weighted": 0.21052631578947367,
+            "f1_unweighted": 0.21052631578947367,
+            "support_rows": 12,
+            "support_articles": 6,
+            "in_macro": true,
+            "reported": true
+          },
+          "positive": {
+            "f1_weighted": 0.25,
+            "f1_unweighted": 0.25,
+            "support_rows": 10,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.19548872180451127,
+        "macro_f1_unweighted": 0.19548872180451127,
+        "macro_classes": 4,
+        "macro_common_support_weighted": 0.19548872180451127,
+        "macro_common_support_unweighted": 0.19548872180451127,
+        "common_support_classes": 4
+      },
+      "comparison_B": {
+        "micro_f1_weighted": 0.6129032258064516,
+        "micro_f1_unweighted": 0.6129032258064516,
+        "per_class": {
+          "coal": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "fossil_generic": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "general": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "grid_status_quo": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "hydrogen": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "multiple": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "natural_gas": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "none": {
+            "f1_weighted": 0.6666666666666666,
+            "f1_unweighted": 0.6666666666666666,
+            "support_rows": 34,
+            "support_articles": 6,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "oil": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.16666666666666666,
+        "macro_f1_unweighted": 0.16666666666666666,
+        "macro_classes": 4,
+        "macro_common_support_weighted": 0.3333333333333333,
+        "macro_common_support_unweighted": 0.3333333333333333,
+        "common_support_classes": 2
+      },
+      "evaluation_A": {
+        "accuracy_weighted": 0.6842105263157895,
+        "accuracy_unweighted": 0.6842105263157895,
+        "units": 19,
+        "excluded": {
+          "evaluation_A:row_not_predicted": 38,
+          "evaluation_A:frame_not_predicted": 14
+        },
+        "per_class": {
+          "mixed": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 3,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "negative": {
+            "f1_weighted": 0.9473684210526315,
+            "f1_unweighted": 0.9473684210526315,
+            "support_rows": 10,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "neutral": {
+            "f1_weighted": 0.4444444444444444,
+            "f1_unweighted": 0.4444444444444444,
+            "support_rows": 2,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "positive": {
+            "f1_weighted": 0.6666666666666666,
+            "f1_unweighted": 0.6666666666666666,
+            "support_rows": 4,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.5146198830409356,
+        "macro_f1_unweighted": 0.5146198830409356,
+        "macro_classes": 4,
+        "macro_common_support_weighted": 0.5146198830409356,
+        "macro_common_support_unweighted": 0.5146198830409356,
+        "common_support_classes": 4
+      },
+      "comparison_A": {
+        "accuracy_weighted": 0.8636363636363636,
+        "accuracy_unweighted": 0.8636363636363636,
+        "units": 22,
+        "excluded": {
+          "comparison_A:row_not_predicted": 16
+        },
+        "per_class": {
+          "coal": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "fossil_generic": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "general": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "grid_status_quo": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "hydrogen": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "multiple": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "natural_gas": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "none": {
+            "f1_weighted": 0.95,
+            "f1_unweighted": 0.95,
+            "support_rows": 19,
+            "support_articles": 5,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "oil": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.31666666666666665,
+        "macro_f1_unweighted": 0.31666666666666665,
+        "macro_classes": 3,
+        "macro_common_support_weighted": 0.475,
+        "macro_common_support_unweighted": 0.475,
+        "common_support_classes": 2
+      },
+      "exact_match": {
+        "weighted": 0.05,
+        "unweighted": 0.05,
+        "rows": 40
+      }
+    },
+    "en": {
+      "technology": {
+        "micro_f1_weighted": 0.7605633802816901,
+        "micro_f1_unweighted": 0.7605633802816901,
+        "per_class": {
+          "general": {
+            "f1_weighted": 0.8,
+            "f1_unweighted": 0.8,
+            "support_rows": 6,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "hydrogen": {
+            "f1_weighted": 0.9523809523809523,
+            "f1_unweighted": 0.9523809523809523,
+            "support_rows": 11,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": 0.6666666666666666,
+            "f1_unweighted": 0.6666666666666666,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": 0.6,
+            "f1_unweighted": 0.6,
+            "support_rows": 6,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "solar": {
+            "f1_weighted": 0.7777777777777778,
+            "f1_unweighted": 0.7777777777777778,
+            "support_rows": 11,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": 0.4444444444444444,
+            "f1_unweighted": 0.4444444444444444,
+            "support_rows": 7,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.7068783068783069,
+        "macro_f1_unweighted": 0.7068783068783069,
+        "macro_classes": 6,
+        "macro_common_support_weighted": 0.7282539682539683,
+        "macro_common_support_unweighted": 0.7282539682539683,
+        "common_support_classes": 5
+      },
+      "element": {
+        "micro_f1_weighted": 0.49411764705882355,
+        "micro_f1_unweighted": 0.49411764705882355,
+        "per_class": {
+          "F1a": {
+            "f1_weighted": 0.8,
+            "f1_unweighted": 0.8,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F1b": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 12,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "F2a": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F2b": {
+            "f1_weighted": 0.5555555555555556,
+            "f1_unweighted": 0.5555555555555556,
+            "support_rows": 11,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "F2c": {
+            "f1_weighted": 0.4,
+            "f1_unweighted": 0.4,
+            "support_rows": 3,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F3a": {
+            "f1_weighted": 0.6153846153846154,
+            "f1_unweighted": 0.6153846153846154,
+            "support_rows": 8,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": true
+          },
+          "F3b": {
+            "f1_weighted": 0.8,
+            "f1_unweighted": 0.8,
+            "support_rows": 3,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F4a": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F4b": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F5a": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F5b": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 5,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": true
+          },
+          "F6a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 3,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F6b": {
+            "f1_weighted": 0.6666666666666666,
+            "f1_unweighted": 0.6666666666666666,
+            "support_rows": 2,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F7a": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "F7b": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "F8a": {
+            "f1_weighted": 0.8,
+            "f1_unweighted": 0.8,
+            "support_rows": 3,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          },
+          "F9": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 2,
+            "in_macro": true,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.4198005698005698,
+        "macro_f1_unweighted": 0.4198005698005698,
+        "macro_classes": 12,
+        "macro_common_support_weighted": 0.5037606837606837,
+        "macro_common_support_unweighted": 0.5037606837606837,
+        "common_support_classes": 10
+      },
+      "evaluation_B": {
+        "micro_f1_weighted": 0.34146341463414637,
+        "micro_f1_unweighted": 0.34146341463414637,
+        "per_class": {
+          "mixed": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "negative": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 12,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "neutral": {
+            "f1_weighted": 0.23529411764705882,
+            "f1_unweighted": 0.23529411764705882,
+            "support_rows": 14,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "positive": {
+            "f1_weighted": 0.48,
+            "f1_unweighted": 0.48,
+            "support_rows": 26,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.17882352941176471,
+        "macro_f1_unweighted": 0.17882352941176471,
+        "macro_classes": 4,
+        "macro_common_support_weighted": 0.17882352941176471,
+        "macro_common_support_unweighted": 0.17882352941176471,
+        "common_support_classes": 4
+      },
+      "comparison_B": {
+        "micro_f1_weighted": 0.6197183098591549,
+        "micro_f1_unweighted": 0.6197183098591549,
+        "per_class": {
+          "coal": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "fossil_generic": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "general": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "grid_status_quo": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "hydrogen": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "multiple": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 5,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": true
+          },
+          "natural_gas": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "none": {
+            "f1_weighted": 0.7586206896551724,
+            "f1_unweighted": 0.7586206896551724,
+            "support_rows": 33,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "oil": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.1264367816091954,
+        "macro_f1_unweighted": 0.1264367816091954,
+        "macro_classes": 6,
+        "macro_common_support_weighted": 0.3793103448275862,
+        "macro_common_support_unweighted": 0.3793103448275862,
+        "common_support_classes": 2
+      },
+      "evaluation_A": {
+        "accuracy_weighted": 0.7,
+        "accuracy_unweighted": 0.7,
+        "units": 20,
+        "excluded": {
+          "evaluation_A:row_not_predicted": 18,
+          "evaluation_A:frame_not_predicted": 15
+        },
+        "per_class": {
+          "mixed": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "negative": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "neutral": {
+            "f1_weighted": 0.4444444444444444,
+            "f1_unweighted": 0.4444444444444444,
+            "support_rows": 6,
+            "support_articles": 3,
+            "in_macro": true,
+            "reported": true
+          },
+          "positive": {
+            "f1_weighted": 0.8275862068965517,
+            "f1_unweighted": 0.8275862068965517,
+            "support_rows": 12,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          }
+        },
+        "macro_f1_weighted": 0.31800766283524906,
+        "macro_f1_unweighted": 0.31800766283524906,
+        "macro_classes": 4,
+        "macro_common_support_weighted": 0.31800766283524906,
+        "macro_common_support_unweighted": 0.31800766283524906,
+        "common_support_classes": 4
+      },
+      "comparison_A": {
+        "accuracy_weighted": 0.8148148148148148,
+        "accuracy_unweighted": 0.8148148148148148,
+        "units": 27,
+        "excluded": {
+          "comparison_A:row_not_predicted": 16
+        },
+        "per_class": {
+          "coal": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "fossil_generic": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "general": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "grid_status_quo": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "hydrogen": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "multiple": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "natural_gas": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "none": {
+            "f1_weighted": 0.9361702127659575,
+            "f1_unweighted": 0.9361702127659575,
+            "support_rows": 23,
+            "support_articles": 4,
+            "in_macro": true,
+            "reported": true
+          },
+          "nuclear": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "oil": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "other": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 2,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "other_renewable": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "solar": {
+            "f1_weighted": 0.0,
+            "f1_unweighted": 0.0,
+            "support_rows": 1,
+            "support_articles": 1,
+            "in_macro": true,
+            "reported": false
+          },
+          "storage": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          },
+          "wind": {
+            "f1_weighted": null,
+            "f1_unweighted": null,
+            "support_rows": 0,
+            "support_articles": 0,
+            "in_macro": false,
+            "reported": false
+          }
+        },
+        "macro_f1_weighted": 0.23404255319148937,
+        "macro_f1_unweighted": 0.23404255319148937,
+        "macro_classes": 4,
+        "macro_common_support_weighted": 0.46808510638297873,
+        "macro_common_support_unweighted": 0.46808510638297873,
+        "common_support_classes": 2
+      },
+      "exact_match": {
+        "weighted": 0.1590909090909091,
+        "unweighted": 0.1590909090909091,
+        "rows": 44
+      }
+    }
+  },
+  "per_execution": {
+    "pooled": {
+      "1": {
+        "element_counts_unweighted": {
+          "tp": 44,
+          "fp": 15,
+          "fn": 96
+        },
+        "element_micro_f1_unweighted": 0.44221105527638194,
+        "element_micro_f1_weighted": 0.44221105527638194,
+        "technology_micro_f1_unweighted": 0.7368421052631579,
+        "all_paragraphs_ok": false
+      },
+      "mean_element_micro_f1_unweighted": 0.44221105527638194
+    },
+    "de": {
+      "1": {
+        "element_counts_unweighted": {
+          "tp": 23,
+          "fp": 6,
+          "fn": 62
+        },
+        "element_micro_f1_unweighted": 0.40350877192982454,
+        "element_micro_f1_weighted": 0.40350877192982454,
+        "technology_micro_f1_unweighted": 0.7096774193548387,
+        "all_paragraphs_ok": false
+      },
+      "mean_element_micro_f1_unweighted": 0.40350877192982454
+    },
+    "en": {
+      "1": {
+        "element_counts_unweighted": {
+          "tp": 21,
+          "fp": 9,
+          "fn": 34
+        },
+        "element_micro_f1_unweighted": 0.49411764705882355,
+        "element_micro_f1_weighted": 0.49411764705882355,
+        "technology_micro_f1_unweighted": 0.7605633802816901,
+        "all_paragraphs_ok": false
+      },
+      "mean_element_micro_f1_unweighted": 0.49411764705882355
+    }
+  },
+  "resample": {
+    "pooled": {
+      "technology.micro_f1_weighted": {
+        "lo": 0.5651714635639926,
+        "hi": 0.8979678312002767,
+        "defined": 2000,
+        "B": 2000
+      },
+      "element.micro_f1_weighted": {
+        "lo": 0.2857142857142857,
+        "hi": 0.5934199134199134,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_B.micro_f1_weighted": {
+        "lo": 0.2,
+        "hi": 0.4359154929577464,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_B.micro_f1_weighted": {
+        "lo": 0.44274809160305345,
+        "hi": 0.7826434782608694,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_A.accuracy_weighted": {
+        "lo": 0.5,
+        "hi": 0.8928571428571429,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_A.accuracy_weighted": {
+        "lo": 0.7209216826265389,
+        "hi": 0.9454545454545454,
+        "defined": 2000,
+        "B": 2000
+      },
+      "technology.available_class_macro_f1_weighted": {
+        "lo": 0.39525506475164013,
+        "hi": 0.8250028507571612,
+        "defined": 2000,
+        "B": 2000
+      },
+      "element.available_class_macro_f1_weighted": {
+        "lo": 0.22853135141490977,
+        "hi": 0.4726423888822469,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_A.available_class_macro_f1_weighted": {
+        "lo": 0.26942160087719297,
+        "hi": 0.8079677419354836,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_B.available_class_macro_f1_weighted": {
+        "lo": 0.13559767657062824,
+        "hi": 0.3643635604161919,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_A.available_class_macro_f1_weighted": {
+        "lo": 0.17894736842105263,
+        "hi": 0.4865118243243242,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_B.available_class_macro_f1_weighted": {
+        "lo": 0.07916666666666666,
+        "hi": 0.16861717716014363,
+        "defined": 2000,
+        "B": 2000
+      },
+      "stability.tech": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.elements": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.evaluations": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.comparison": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.subtype": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.any": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "displacement.element:F1a": {
+        "lo": -23.4375,
+        "hi": 3.6363636363636362,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F1b": {
+        "lo": -23.21532392026578,
+        "hi": -4.47678275290216,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2b": {
+        "lo": -33.333333333333336,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2c": {
+        "lo": -13.890503875968992,
+        "hi": 1.8181818181818181,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F3a": {
+        "lo": -22.22636815920398,
+        "hi": 2.3284174702211984,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F3b": {
+        "lo": -15.789473684210526,
+        "hi": -3.5072595281306795,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F4a": {
+        "lo": -5.172413793103448,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F5a": {
+        "lo": -15.517241379310345,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F5b": {
+        "lo": -37.77777777777778,
+        "hi": -4.3478260869565215,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F6a": {
+        "lo": -16.071428571428573,
+        "hi": 5.555555555555555,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F6b": {
+        "lo": -14.000877192982456,
+        "hi": 4.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F7a": {
+        "lo": -6.122448979591836,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F7b": {
+        "lo": 0.0,
+        "hi": 5.002118644067785,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F8a": {
+        "lo": -11.290322580645162,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F9": {
+        "lo": -22.810612597066438,
+        "hi": -1.6922249125639102,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=mixed": {
+        "lo": -5.882352941176471,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=negative": {
+        "lo": -20.517241379310345,
+        "hi": -1.282894736842285,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=neutral": {
+        "lo": -8.774853801169591,
+        "hi": 4.081632653061225,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=positive": {
+        "lo": -16.666666666666668,
+        "hi": 4.168882978723392,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=mixed": {
+        "lo": -5.882352941176471,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=negative": {
+        "lo": -25.374399190488237,
+        "hi": -5.084745762711864,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=neutral": {
+        "lo": -20.514705882352942,
+        "hi": 14.292207792207758,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=positive": {
+        "lo": -8.474576271186441,
+        "hi": 17.85847547974413,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=negative": {
+        "lo": -5.0,
+        "hi": 5.555555555555555,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=neutral": {
+        "lo": -9.260335917312661,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=positive": {
+        "lo": -8.620689655172415,
+        "hi": 4.3478260869565215,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=mixed": {
+        "lo": -6.382978723404255,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=negative": {
+        "lo": -29.578768909754828,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=neutral": {
+        "lo": -5.172413793103448,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=positive": {
+        "lo": -15.876190476190477,
+        "hi": 8.51063829787234,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:other=negative": {
+        "lo": -22.810612597066438,
+        "hi": -1.6922249125639102,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=negative": {
+        "lo": -6.666666666666667,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=neutral": {
+        "lo": -7.575757575757576,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=positive": {
+        "lo": -5.555555555555555,
+        "hi": 5.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=negative": {
+        "lo": -20.517241379310345,
+        "hi": -1.282894736842285,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=neutral": {
+        "lo": -26.31578947368421,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=positive": {
+        "lo": -5.5581761006289305,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:security=negative": {
+        "lo": -5.172413793103448,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:siting=negative": {
+        "lo": 0.0,
+        "hi": 5.002118644067785,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:siting=neutral": {
+        "lo": -6.122448979591836,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:general": {
+        "lo": -32.825520833333336,
+        "hi": -6.578408110440037,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:hydrogen": {
+        "lo": -9.433962264150944,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:nuclear": {
+        "lo": -12.820512820512821,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:other_renewable": {
+        "lo": -10.004237288135593,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:solar": {
+        "lo": -31.377708978328172,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:storage": {
+        "lo": 0.0,
+        "hi": 6.82014106583071,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:wind": {
+        "lo": -28.8143741851369,
+        "hi": 2.3255813953488373,
+        "defined": 2000,
+        "B": 2000
+      },
+      "defined_class_counts": {
+        "technology": {
+          "6": 1715,
+          "5": 267,
+          "4": 17,
+          "3": 1
+        },
+        "element": {
+          "14": 437,
+          "10": 25,
+          "13": 648,
+          "15": 641,
+          "11": 85,
+          "12": 162,
+          "9": 1,
+          "7": 1
+        },
+        "evaluation_A": {
+          "4": 1781,
+          "3": 217,
+          "2": 2
+        },
+        "evaluation_B": {
+          "4": 1789,
+          "3": 211
+        },
+        "comparison_A": {
+          "4": 849,
+          "3": 399,
+          "5": 674,
+          "2": 77,
+          "1": 1
+        },
+        "comparison_B": {
+          "7": 717,
+          "6": 639,
+          "8": 335,
+          "4": 57,
+          "5": 244,
+          "3": 8
+        }
+      }
+    },
+    "de": {
+      "technology.micro_f1_weighted": {
+        "lo": 0.5,
+        "hi": 0.9117647058823529,
+        "defined": 2000,
+        "B": 2000
+      },
+      "element.micro_f1_weighted": {
+        "lo": 0.175,
+        "hi": 0.65,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_B.micro_f1_weighted": {
+        "lo": 0.13697073474470733,
+        "hi": 0.4897959183673469,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_B.micro_f1_weighted": {
+        "lo": 0.36666666666666664,
+        "hi": 0.857380952380951,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_A.accuracy_weighted": {
+        "lo": 0.3333333333333333,
+        "hi": 1.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_A.accuracy_weighted": {
+        "lo": 0.6923076923076923,
+        "hi": 1.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "technology.available_class_macro_f1_weighted": {
+        "lo": 0.3353846153846154,
+        "hi": 0.8814814814814814,
+        "defined": 2000,
+        "B": 2000
+      },
+      "element.available_class_macro_f1_weighted": {
+        "lo": 0.15702075702075702,
+        "hi": 0.4994957983193277,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_A.available_class_macro_f1_weighted": {
+        "lo": 0.24475524475524477,
+        "hi": 1.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_B.available_class_macro_f1_weighted": {
+        "lo": 0.08571428571428572,
+        "hi": 0.3562629489569138,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_A.available_class_macro_f1_weighted": {
+        "lo": 0.2888888888888889,
+        "hi": 1.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_B.available_class_macro_f1_weighted": {
+        "lo": 0.11206896551724138,
+        "hi": 0.4642857142857143,
+        "defined": 2000,
+        "B": 2000
+      },
+      "stability.tech": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.elements": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.evaluations": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.comparison": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.subtype": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.any": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "displacement.element:F1a": {
+        "lo": -37.5,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F1b": {
+        "lo": -23.80952380952381,
+        "hi": -2.7777777777777777,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2b": {
+        "lo": -43.6,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2c": {
+        "lo": -20.0,
+        "hi": -3.225806451612903,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F3a": {
+        "lo": -21.05263157894737,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F3b": {
+        "lo": -30.0,
+        "hi": -6.451612903225806,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F4a": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F5a": {
+        "lo": -25.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F5b": {
+        "lo": -42.857142857142854,
+        "hi": -5.555555555555555,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F6a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F6b": {
+        "lo": -29.166666666666668,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F7a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F7b": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F8a": {
+        "lo": -15.789473684210526,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F9": {
+        "lo": -33.333333333333336,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=mixed": {
+        "lo": -11.11111111111111,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=negative": {
+        "lo": -35.0,
+        "hi": -3.3333333333333335,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=neutral": {
+        "lo": -15.789473684210526,
+        "hi": 8.823529411764707,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=positive": {
+        "lo": -20.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=mixed": {
+        "lo": -11.11111111111111,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=negative": {
+        "lo": -28.26863354037267,
+        "hi": -4.545454545454546,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=neutral": {
+        "lo": -13.043478260869565,
+        "hi": 30.76923076923077,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=positive": {
+        "lo": -11.11111111111111,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=negative": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=neutral": {
+        "lo": -16.666666666666668,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=positive": {
+        "lo": -13.043478260869565,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=mixed": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=negative": {
+        "lo": -44.11764705882353,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=neutral": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=positive": {
+        "lo": -26.08695652173913,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:other=negative": {
+        "lo": -33.333333333333336,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=negative": {
+        "lo": -13.636363636363637,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=neutral": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=positive": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=negative": {
+        "lo": -35.0,
+        "hi": -3.3333333333333335,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=neutral": {
+        "lo": -21.05263157894737,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=positive": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:security=negative": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:siting=negative": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:siting=neutral": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:general": {
+        "lo": -52.38095238095238,
+        "hi": -8.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:hydrogen": {
+        "lo": -20.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:nuclear": {
+        "lo": -21.05263157894737,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:other_renewable": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:solar": {
+        "lo": -20.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:storage": {
+        "lo": 0.0,
+        "hi": 15.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:wind": {
+        "lo": -15.384615384615385,
+        "hi": 15.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "defined_class_counts": {
+        "technology": {
+          "5": 1280,
+          "4": 539,
+          "3": 177,
+          "2": 4
+        },
+        "element": {
+          "13": 1049,
+          "10": 349,
+          "12": 253,
+          "8": 130,
+          "9": 178,
+          "11": 20,
+          "7": 5,
+          "6": 16
+        },
+        "evaluation_A": {
+          "4": 1298,
+          "3": 629,
+          "2": 38,
+          "1": 35
+        },
+        "evaluation_B": {
+          "4": 1298,
+          "3": 698,
+          "2": 4
+        },
+        "comparison_A": {
+          "2": 973,
+          "3": 838,
+          "1": 189
+        },
+        "comparison_B": {
+          "3": 1029,
+          "4": 482,
+          "2": 463,
+          "1": 26
+        }
+      }
+    },
+    "en": {
+      "technology.micro_f1_weighted": {
+        "lo": 0.4675324675324675,
+        "hi": 1.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "element.micro_f1_weighted": {
+        "lo": 0.3448275862068966,
+        "hi": 0.6,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_B.micro_f1_weighted": {
+        "lo": 0.22727272727272727,
+        "hi": 0.4838709677419355,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_B.micro_f1_weighted": {
+        "lo": 0.3333333333333333,
+        "hi": 0.8,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_A.accuracy_weighted": {
+        "lo": 0.5555555555555556,
+        "hi": 0.8947368421052632,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_A.accuracy_weighted": {
+        "lo": 0.6666666666666666,
+        "hi": 0.9666666666666667,
+        "defined": 2000,
+        "B": 2000
+      },
+      "technology.available_class_macro_f1_weighted": {
+        "lo": 0.4150326797385621,
+        "hi": 1.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "element.available_class_macro_f1_weighted": {
+        "lo": 0.24557823129251702,
+        "hi": 0.4867063492063492,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_A.available_class_macro_f1_weighted": {
+        "lo": 0.19117647058823528,
+        "hi": 0.6703296703296704,
+        "defined": 2000,
+        "B": 2000
+      },
+      "evaluation_B.available_class_macro_f1_weighted": {
+        "lo": 0.09259259259259259,
+        "hi": 0.38181818181818183,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_A.available_class_macro_f1_weighted": {
+        "lo": 0.22058823529411764,
+        "hi": 0.5,
+        "defined": 2000,
+        "B": 2000
+      },
+      "comparison_B.available_class_macro_f1_weighted": {
+        "lo": 0.12,
+        "hi": 0.2635658914728682,
+        "defined": 2000,
+        "B": 2000
+      },
+      "stability.tech": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.elements": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.evaluations": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.comparison": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.subtype": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "stability.any": {
+        "lo": null,
+        "hi": null,
+        "defined": 0,
+        "B": 2000
+      },
+      "displacement.element:F1a": {
+        "lo": 0.0,
+        "hi": 8.333333333333334,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F1b": {
+        "lo": -33.333333333333336,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2b": {
+        "lo": -33.333333333333336,
+        "hi": 7.142857142857143,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F2c": {
+        "lo": -13.636363636363637,
+        "hi": 8.823529411764707,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F3a": {
+        "lo": -32.35294117647059,
+        "hi": 15.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F3b": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F4a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F5a": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F5b": {
+        "lo": -50.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F6a": {
+        "lo": -26.666666666666668,
+        "hi": 10.714285714285714,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F6b": {
+        "lo": 0.0,
+        "hi": 11.538461538461538,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F7a": {
+        "lo": -11.538461538461538,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F7b": {
+        "lo": 0.0,
+        "hi": 8.333333333333334,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F8a": {
+        "lo": -11.538461538461538,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.element:F9": {
+        "lo": -13.636363636363637,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=mixed": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=negative": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=neutral": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:climate=positive": {
+        "lo": -23.68421052631579,
+        "hi": 15.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=mixed": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=negative": {
+        "lo": -31.818181818181817,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=neutral": {
+        "lo": -33.333333333333336,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:costs=positive": {
+        "lo": -15.0,
+        "hi": 32.35294117647059,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=negative": {
+        "lo": -8.823529411764707,
+        "hi": 10.714285714285714,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=neutral": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:feasibility=positive": {
+        "lo": -8.823529411764707,
+        "hi": 10.714285714285714,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=mixed": {
+        "lo": -15.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=negative": {
+        "lo": -15.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=neutral": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:jobs=positive": {
+        "lo": -16.666666666666668,
+        "hi": 20.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:other=negative": {
+        "lo": -13.636363636363637,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=negative": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=neutral": {
+        "lo": -10.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:regulation=positive": {
+        "lo": -10.714285714285714,
+        "hi": 8.823529411764707,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=negative": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=neutral": {
+        "lo": -40.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:reliability=positive": {
+        "lo": -10.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:security=negative": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:siting=negative": {
+        "lo": 0.0,
+        "hi": 8.333333333333334,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.eval:siting=neutral": {
+        "lo": -11.538461538461538,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:general": {
+        "lo": -16.666666666666668,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:hydrogen": {
+        "lo": -8.333333333333334,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:nuclear": {
+        "lo": -15.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:other_renewable": {
+        "lo": -16.666666666666668,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:solar": {
+        "lo": -60.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:storage": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "displacement.technology:wind": {
+        "lo": -60.0,
+        "hi": 0.0,
+        "defined": 2000,
+        "B": 2000
+      },
+      "defined_class_counts": {
+        "technology": {
+          "6": 1257,
+          "5": 628,
+          "3": 103,
+          "1": 8,
+          "2": 4
+        },
+        "element": {
+          "11": 907,
+          "12": 742,
+          "7": 89,
+          "9": 115,
+          "10": 125,
+          "6": 8,
+          "8": 4,
+          "4": 10
+        },
+        "evaluation_A": {
+          "3": 992,
+          "4": 877,
+          "2": 131
+        },
+        "evaluation_B": {
+          "4": 1382,
+          "3": 618
+        },
+        "comparison_A": {
+          "3": 1201,
+          "2": 317,
+          "4": 473,
+          "1": 9
+        },
+        "comparison_B": {
+          "5": 1147,
+          "4": 513,
+          "3": 138,
+          "6": 184,
+          "2": 18
+        }
+      }
+    }
+  },
+  "inputs": {
+    "run_record_sha256": "ab7ae9b6bd7ccaa2d851ca39bad6a0c37e09bf1a29d710cf4899c9e904117f25",
+    "run_record_files": {
+      "mc_mercury3_instant_a3_20261030r3_calls.jsonl": {
+        "path": "tools/runs/mc_mercury3_instant_a3_20261030r3_calls.jsonl",
+        "sha256": "aa17edf3df292c5a7ecaf9e63e538caf5f3d3a609ac5f611f7c7847a786ec25c"
+      },
+      "mc_mercury3_instant_a3_20261030r3_terminal.csv": {
+        "path": "tools/runs/mc_mercury3_instant_a3_20261030r3_terminal.csv",
+        "sha256": "e48df73a343f6184db30bd460f32b091c84848661f3d6728aa4b71a895a52a62"
+      },
+      "mc_mercury3_instant_a3_20261030r3_predictions.csv": {
+        "path": "tools/runs/mc_mercury3_instant_a3_20261030r3_predictions.csv",
+        "sha256": "9275e5dedfd8cdfb3f9089c9d11bdd0f98d1254178d639408bca4e9a2189b1c0"
+      }
+    },
+    "reference": {
+      "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+      "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+    },
+    "evaluate_sha256": "b8c2e0934cabe53ea94788215f69315af6255df27e1078f68d9e2d129678f9a0",
+    "threshold_declaration": {
+      "s": 5,
+      "authority": "pre-analysis specification §4b (2026-10-14)",
+      "note": "declared before any A3 label existed; the A2 seal covers the A2 sample only"
+    },
+    "a3_evidence": {
+      "finalised": {
+        "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+        "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+      },
+      "first_call_at": "2026-10-30T10:18:56.849522+00:00",
+      "committed": {
+        "A3_pass1_v1.0.csv": "2026-10-14T19:51:49+02:00",
+        "A3_pass2_v1.0.csv": "2026-10-19T19:22:36+02:00"
+      }
+    },
+    "sample_kind": "A3_sample_manifest"
+  },
+  "stability": {
+    "pooled": {
+      "paragraphs": 55,
+      "paragraphs_without_pairs": 55,
+      "empty_union": 0,
+      "failure_rate": 0.21818181818181817,
+      "tech": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "elements": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "evaluations": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "comparison": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "subtype": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "any": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      }
+    },
+    "de": {
+      "paragraphs": 27,
+      "paragraphs_without_pairs": 27,
+      "empty_union": 0,
+      "failure_rate": 0.2222222222222222,
+      "tech": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "elements": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "evaluations": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "comparison": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "subtype": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "any": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      }
+    },
+    "en": {
+      "paragraphs": 28,
+      "paragraphs_without_pairs": 28,
+      "empty_union": 0,
+      "failure_rate": 0.21428571428571427,
+      "tech": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "elements": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "evaluations": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "comparison": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "subtype": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      },
+      "any": {
+        "weighted": null,
+        "unweighted": null,
+        "paragraphs": 0
+      }
+    }
+  },
+  "displacement": {
+    "pooled": {
+      "element:F1a": {
+        "weighted_pp": -9.090909090909092,
+        "unweighted_pp": -9.090909090909092,
+        "gold_paragraphs": 11,
+        "pred_paragraphs": 6
+      },
+      "element:F1b": {
+        "weighted_pp": -12.727272727272727,
+        "unweighted_pp": -12.727272727272727,
+        "gold_paragraphs": 16,
+        "pred_paragraphs": 9
+      },
+      "element:F2a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 3
+      },
+      "element:F2b": {
+        "weighted_pp": -16.363636363636363,
+        "unweighted_pp": -16.363636363636363,
+        "gold_paragraphs": 19,
+        "pred_paragraphs": 10
+      },
+      "element:F2c": {
+        "weighted_pp": -5.454545454545454,
+        "unweighted_pp": -5.454545454545454,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 3
+      },
+      "element:F3a": {
+        "weighted_pp": -9.090909090909092,
+        "unweighted_pp": -9.090909090909092,
+        "gold_paragraphs": 12,
+        "pred_paragraphs": 7
+      },
+      "element:F3b": {
+        "weighted_pp": -9.090909090909092,
+        "unweighted_pp": -9.090909090909092,
+        "gold_paragraphs": 10,
+        "pred_paragraphs": 5
+      },
+      "element:F4a": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "element:F5a": {
+        "weighted_pp": -5.454545454545454,
+        "unweighted_pp": -5.454545454545454,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 1
+      },
+      "element:F5b": {
+        "weighted_pp": -18.181818181818183,
+        "unweighted_pp": -18.181818181818183,
+        "gold_paragraphs": 11,
+        "pred_paragraphs": 1
+      },
+      "element:F6a": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 1
+      },
+      "element:F6b": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 5,
+        "pred_paragraphs": 3
+      },
+      "element:F7a": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "element:F7b": {
+        "weighted_pp": 1.8181818181818181,
+        "unweighted_pp": 1.8181818181818181,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 1
+      },
+      "element:F8a": {
+        "weighted_pp": -5.454545454545454,
+        "unweighted_pp": -5.454545454545454,
+        "gold_paragraphs": 5,
+        "pred_paragraphs": 2
+      },
+      "element:F9": {
+        "weighted_pp": -10.909090909090908,
+        "unweighted_pp": -10.909090909090908,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=mixed": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=negative": {
+        "weighted_pp": -9.090909090909092,
+        "unweighted_pp": -9.090909090909092,
+        "gold_paragraphs": 8,
+        "pred_paragraphs": 3
+      },
+      "eval:climate=neutral": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:climate=positive": {
+        "weighted_pp": -5.454545454545454,
+        "unweighted_pp": -5.454545454545454,
+        "gold_paragraphs": 10,
+        "pred_paragraphs": 7
+      },
+      "eval:costs=mixed": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:costs=negative": {
+        "weighted_pp": -14.545454545454545,
+        "unweighted_pp": -14.545454545454545,
+        "gold_paragraphs": 9,
+        "pred_paragraphs": 1
+      },
+      "eval:costs=neutral": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 4
+      },
+      "eval:costs=positive": {
+        "weighted_pp": 3.6363636363636362,
+        "unweighted_pp": 3.6363636363636362,
+        "gold_paragraphs": 5,
+        "pred_paragraphs": 7
+      },
+      "eval:feasibility=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 1
+      },
+      "eval:feasibility=neutral": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 2
+      },
+      "eval:feasibility=positive": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 2
+      },
+      "eval:jobs=mixed": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:jobs=negative": {
+        "weighted_pp": -12.727272727272727,
+        "unweighted_pp": -12.727272727272727,
+        "gold_paragraphs": 9,
+        "pred_paragraphs": 2
+      },
+      "eval:jobs=neutral": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:jobs=positive": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 12,
+        "pred_paragraphs": 10
+      },
+      "eval:other=negative": {
+        "weighted_pp": -10.909090909090908,
+        "unweighted_pp": -10.909090909090908,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=negative": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=neutral": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 1
+      },
+      "eval:regulation=positive": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 1
+      },
+      "eval:reliability=negative": {
+        "weighted_pp": -9.090909090909092,
+        "unweighted_pp": -9.090909090909092,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 1
+      },
+      "eval:reliability=neutral": {
+        "weighted_pp": -10.909090909090908,
+        "unweighted_pp": -10.909090909090908,
+        "gold_paragraphs": 7,
+        "pred_paragraphs": 1
+      },
+      "eval:reliability=positive": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:security=negative": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:siting=negative": {
+        "weighted_pp": 1.8181818181818181,
+        "unweighted_pp": 1.8181818181818181,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 1
+      },
+      "eval:siting=neutral": {
+        "weighted_pp": -1.8181818181818181,
+        "unweighted_pp": -1.8181818181818181,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "technology:general": {
+        "weighted_pp": -18.181818181818183,
+        "unweighted_pp": -18.181818181818183,
+        "gold_paragraphs": 21,
+        "pred_paragraphs": 11
+      },
+      "technology:hydrogen": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 12,
+        "pred_paragraphs": 10
+      },
+      "technology:nuclear": {
+        "weighted_pp": -5.454545454545454,
+        "unweighted_pp": -5.454545454545454,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 1
+      },
+      "technology:other_renewable": {
+        "weighted_pp": -3.6363636363636362,
+        "unweighted_pp": -3.6363636363636362,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 4
+      },
+      "technology:solar": {
+        "weighted_pp": -12.727272727272727,
+        "unweighted_pp": -12.727272727272727,
+        "gold_paragraphs": 22,
+        "pred_paragraphs": 15
+      },
+      "technology:storage": {
+        "weighted_pp": 1.8181818181818181,
+        "unweighted_pp": 1.8181818181818181,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 1
+      },
+      "technology:wind": {
+        "weighted_pp": -10.909090909090908,
+        "unweighted_pp": -10.909090909090908,
+        "gold_paragraphs": 16,
+        "pred_paragraphs": 10
+      }
+    },
+    "de": {
+      "element:F1a": {
+        "weighted_pp": -22.22222222222222,
+        "unweighted_pp": -22.22222222222222,
+        "gold_paragraphs": 9,
+        "pred_paragraphs": 3
+      },
+      "element:F1b": {
+        "weighted_pp": -11.11111111111111,
+        "unweighted_pp": -11.11111111111111,
+        "gold_paragraphs": 9,
+        "pred_paragraphs": 6
+      },
+      "element:F2a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 3
+      },
+      "element:F2b": {
+        "weighted_pp": -22.22222222222222,
+        "unweighted_pp": -22.22222222222222,
+        "gold_paragraphs": 11,
+        "pred_paragraphs": 5
+      },
+      "element:F2c": {
+        "weighted_pp": -11.11111111111111,
+        "unweighted_pp": -11.11111111111111,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 1
+      },
+      "element:F3a": {
+        "weighted_pp": -7.407407407407407,
+        "unweighted_pp": -7.407407407407407,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 2
+      },
+      "element:F3b": {
+        "weighted_pp": -14.814814814814815,
+        "unweighted_pp": -14.814814814814815,
+        "gold_paragraphs": 7,
+        "pred_paragraphs": 3
+      },
+      "element:F4a": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "element:F5a": {
+        "weighted_pp": -11.11111111111111,
+        "unweighted_pp": -11.11111111111111,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 1
+      },
+      "element:F5b": {
+        "weighted_pp": -18.51851851851852,
+        "unweighted_pp": -18.51851851851852,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 1
+      },
+      "element:F6a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "element:F6b": {
+        "weighted_pp": -11.11111111111111,
+        "unweighted_pp": -11.11111111111111,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 0
+      },
+      "element:F7a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "element:F7b": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "element:F8a": {
+        "weighted_pp": -7.407407407407407,
+        "unweighted_pp": -7.407407407407407,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 0
+      },
+      "element:F9": {
+        "weighted_pp": -14.814814814814815,
+        "unweighted_pp": -14.814814814814815,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=mixed": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=negative": {
+        "weighted_pp": -18.51851851851852,
+        "unweighted_pp": -18.51851851851852,
+        "gold_paragraphs": 8,
+        "pred_paragraphs": 3
+      },
+      "eval:climate=neutral": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 1
+      },
+      "eval:climate=positive": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:costs=mixed": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:costs=negative": {
+        "weighted_pp": -18.51851851851852,
+        "unweighted_pp": -18.51851851851852,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 1
+      },
+      "eval:costs=neutral": {
+        "weighted_pp": 7.407407407407407,
+        "unweighted_pp": 7.407407407407407,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 4
+      },
+      "eval:costs=positive": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:feasibility=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:feasibility=neutral": {
+        "weighted_pp": -7.407407407407407,
+        "unweighted_pp": -7.407407407407407,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 0
+      },
+      "eval:feasibility=positive": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:jobs=mixed": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:jobs=negative": {
+        "weighted_pp": -22.22222222222222,
+        "unweighted_pp": -22.22222222222222,
+        "gold_paragraphs": 8,
+        "pred_paragraphs": 2
+      },
+      "eval:jobs=neutral": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:jobs=positive": {
+        "weighted_pp": -7.407407407407407,
+        "unweighted_pp": -7.407407407407407,
+        "gold_paragraphs": 5,
+        "pred_paragraphs": 3
+      },
+      "eval:other=negative": {
+        "weighted_pp": -14.814814814814815,
+        "unweighted_pp": -14.814814814814815,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=negative": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=neutral": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=positive": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:reliability=negative": {
+        "weighted_pp": -18.51851851851852,
+        "unweighted_pp": -18.51851851851852,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 1
+      },
+      "eval:reliability=neutral": {
+        "weighted_pp": -7.407407407407407,
+        "unweighted_pp": -7.407407407407407,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 1
+      },
+      "eval:reliability=positive": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:security=negative": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:siting=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:siting=neutral": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "technology:general": {
+        "weighted_pp": -29.62962962962963,
+        "unweighted_pp": -29.62962962962963,
+        "gold_paragraphs": 15,
+        "pred_paragraphs": 7
+      },
+      "technology:hydrogen": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "technology:nuclear": {
+        "weighted_pp": -7.407407407407407,
+        "unweighted_pp": -7.407407407407407,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 0
+      },
+      "technology:other_renewable": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "technology:solar": {
+        "weighted_pp": -11.11111111111111,
+        "unweighted_pp": -11.11111111111111,
+        "gold_paragraphs": 11,
+        "pred_paragraphs": 8
+      },
+      "technology:storage": {
+        "weighted_pp": 3.7037037037037037,
+        "unweighted_pp": 3.7037037037037037,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 1
+      },
+      "technology:wind": {
+        "weighted_pp": -3.7037037037037037,
+        "unweighted_pp": -3.7037037037037037,
+        "gold_paragraphs": 9,
+        "pred_paragraphs": 8
+      }
+    },
+    "en": {
+      "element:F1a": {
+        "weighted_pp": 3.5714285714285716,
+        "unweighted_pp": 3.5714285714285716,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 3
+      },
+      "element:F1b": {
+        "weighted_pp": -14.285714285714286,
+        "unweighted_pp": -14.285714285714286,
+        "gold_paragraphs": 7,
+        "pred_paragraphs": 3
+      },
+      "element:F2a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "element:F2b": {
+        "weighted_pp": -10.714285714285714,
+        "unweighted_pp": -10.714285714285714,
+        "gold_paragraphs": 8,
+        "pred_paragraphs": 5
+      },
+      "element:F2c": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 2
+      },
+      "element:F3a": {
+        "weighted_pp": -10.714285714285714,
+        "unweighted_pp": -10.714285714285714,
+        "gold_paragraphs": 8,
+        "pred_paragraphs": 5
+      },
+      "element:F3b": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 2
+      },
+      "element:F4a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "element:F5a": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "element:F5b": {
+        "weighted_pp": -17.857142857142858,
+        "unweighted_pp": -17.857142857142858,
+        "gold_paragraphs": 5,
+        "pred_paragraphs": 0
+      },
+      "element:F6a": {
+        "weighted_pp": -7.142857142857143,
+        "unweighted_pp": -7.142857142857143,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 1
+      },
+      "element:F6b": {
+        "weighted_pp": 3.5714285714285716,
+        "unweighted_pp": 3.5714285714285716,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 3
+      },
+      "element:F7a": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "element:F7b": {
+        "weighted_pp": 3.5714285714285716,
+        "unweighted_pp": 3.5714285714285716,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 1
+      },
+      "element:F8a": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 2
+      },
+      "element:F9": {
+        "weighted_pp": -7.142857142857143,
+        "unweighted_pp": -7.142857142857143,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=mixed": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=neutral": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:climate=positive": {
+        "weighted_pp": -7.142857142857143,
+        "unweighted_pp": -7.142857142857143,
+        "gold_paragraphs": 8,
+        "pred_paragraphs": 6
+      },
+      "eval:costs=mixed": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:costs=negative": {
+        "weighted_pp": -10.714285714285714,
+        "unweighted_pp": -10.714285714285714,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 0
+      },
+      "eval:costs=neutral": {
+        "weighted_pp": -14.285714285714286,
+        "unweighted_pp": -14.285714285714286,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 0
+      },
+      "eval:costs=positive": {
+        "weighted_pp": 10.714285714285714,
+        "unweighted_pp": 10.714285714285714,
+        "gold_paragraphs": 3,
+        "pred_paragraphs": 6
+      },
+      "eval:feasibility=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 1
+      },
+      "eval:feasibility=neutral": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 2
+      },
+      "eval:feasibility=positive": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 2
+      },
+      "eval:jobs=mixed": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:jobs=negative": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:jobs=neutral": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:jobs=positive": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 7,
+        "pred_paragraphs": 7
+      },
+      "eval:other=negative": {
+        "weighted_pp": -7.142857142857143,
+        "unweighted_pp": -7.142857142857143,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:regulation=neutral": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "eval:regulation=positive": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 1
+      },
+      "eval:reliability=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:reliability=neutral": {
+        "weighted_pp": -14.285714285714286,
+        "unweighted_pp": -14.285714285714286,
+        "gold_paragraphs": 4,
+        "pred_paragraphs": 0
+      },
+      "eval:reliability=positive": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "eval:security=negative": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "eval:siting=negative": {
+        "weighted_pp": 3.5714285714285716,
+        "unweighted_pp": 3.5714285714285716,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 1
+      },
+      "eval:siting=neutral": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 1,
+        "pred_paragraphs": 0
+      },
+      "technology:general": {
+        "weighted_pp": -7.142857142857143,
+        "unweighted_pp": -7.142857142857143,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 4
+      },
+      "technology:hydrogen": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 11,
+        "pred_paragraphs": 10
+      },
+      "technology:nuclear": {
+        "weighted_pp": -3.5714285714285716,
+        "unweighted_pp": -3.5714285714285716,
+        "gold_paragraphs": 2,
+        "pred_paragraphs": 1
+      },
+      "technology:other_renewable": {
+        "weighted_pp": -7.142857142857143,
+        "unweighted_pp": -7.142857142857143,
+        "gold_paragraphs": 6,
+        "pred_paragraphs": 4
+      },
+      "technology:solar": {
+        "weighted_pp": -14.285714285714286,
+        "unweighted_pp": -14.285714285714286,
+        "gold_paragraphs": 11,
+        "pred_paragraphs": 7
+      },
+      "technology:storage": {
+        "weighted_pp": 0.0,
+        "unweighted_pp": 0.0,
+        "gold_paragraphs": 0,
+        "pred_paragraphs": 0
+      },
+      "technology:wind": {
+        "weighted_pp": -17.857142857142858,
+        "unweighted_pp": -17.857142857142858,
+        "gold_paragraphs": 7,
+        "pred_paragraphs": 2
+      }
+    }
+  },
+  "resample_absence": {
+    "pooled": {
+      "technology:general": 0.0,
+      "technology:wind": 0.0,
+      "technology:solar": 0.0,
+      "technology:nuclear": 0.031,
+      "technology:other_renewable": 0.0955,
+      "technology:hydrogen": 0.0255,
+      "element:F2a": 0.116,
+      "element:F2b": 0.0,
+      "element:F5b": 0.0015,
+      "element:F1b": 0.001,
+      "element:F1a": 0.022,
+      "element:F6b": 0.007,
+      "element:F3a": 0.0005,
+      "element:F3b": 0.0,
+      "element:F2c": 0.002,
+      "element:F6a": 0.3535,
+      "element:F8a": 0.0055,
+      "element:F9": 0.023,
+      "element:F7a": 0.3695,
+      "element:F4a": 0.351,
+      "element:F5a": 0.351,
+      "evaluation_A:neutral": 0.002,
+      "evaluation_A:positive": 0.0,
+      "evaluation_A:mixed": 0.1055,
+      "evaluation_A:negative": 0.005,
+      "evaluation_B:positive": 0.0,
+      "evaluation_B:neutral": 0.0,
+      "evaluation_B:mixed": 0.1055,
+      "evaluation_B:negative": 0.0,
+      "comparison_A:none": 0.0,
+      "comparison_A:multiple": 0.115,
+      "comparison_A:other": 0.3535,
+      "comparison_A:solar": 0.3695,
+      "comparison_A:grid_status_quo": 0.351,
+      "comparison_B:none": 0.0,
+      "comparison_B:multiple": 0.115,
+      "comparison_B:other": 0.3535,
+      "comparison_B:fossil_generic": 0.3395,
+      "comparison_B:other_renewable": 0.3395,
+      "comparison_B:solar": 0.3695,
+      "comparison_B:grid_status_quo": 0.351,
+      "comparison_B:coal": 0.351
+    },
+    "de": {
+      "technology:general": 0.0,
+      "technology:wind": 0.002,
+      "technology:solar": 0.019,
+      "technology:nuclear": 0.0905,
+      "technology:hydrogen": 0.341,
+      "element:F2a": 0.0795,
+      "element:F2b": 0.002,
+      "element:F5b": 0.0015,
+      "element:F1b": 0.0125,
+      "element:F1a": 0.088,
+      "element:F6b": 0.0935,
+      "element:F3a": 0.014,
+      "element:F3b": 0.002,
+      "element:F2c": 0.0195,
+      "element:F8a": 0.0955,
+      "element:F4a": 0.338,
+      "element:F5a": 0.338,
+      "element:F9": 0.338,
+      "evaluation_A:neutral": 0.089,
+      "evaluation_A:positive": 0.0175,
+      "evaluation_A:mixed": 0.351,
+      "evaluation_A:negative": 0.019,
+      "evaluation_B:positive": 0.0,
+      "evaluation_B:neutral": 0.0,
+      "evaluation_B:mixed": 0.351,
+      "evaluation_B:negative": 0.002,
+      "comparison_A:none": 0.0,
+      "comparison_A:multiple": 0.3375,
+      "comparison_A:grid_status_quo": 0.338,
+      "comparison_B:none": 0.0,
+      "comparison_B:multiple": 0.3375,
+      "comparison_B:grid_status_quo": 0.338,
+      "comparison_B:coal": 0.341
+    },
+    "en": {
+      "technology:general": 0.004,
+      "technology:solar": 0.002,
+      "technology:wind": 0.0575,
+      "technology:nuclear": 0.304,
+      "technology:other_renewable": 0.0575,
+      "technology:hydrogen": 0.0715,
+      "element:F1b": 0.0575,
+      "element:F2b": 0.004,
+      "element:F2c": 0.0575,
+      "element:F3a": 0.0715,
+      "element:F5b": 0.318,
+      "element:F6a": 0.318,
+      "element:F3b": 0.0715,
+      "element:F6b": 0.0495,
+      "element:F8a": 0.0495,
+      "element:F9": 0.0645,
+      "element:F1a": 0.309,
+      "element:F7a": 0.309,
+      "evaluation_A:mixed": 0.304,
+      "evaluation_A:positive": 0.0,
+      "evaluation_A:negative": 0.318,
+      "evaluation_A:neutral": 0.005,
+      "evaluation_B:negative": 0.0,
+      "evaluation_B:mixed": 0.304,
+      "evaluation_B:positive": 0.0,
+      "evaluation_B:neutral": 0.005,
+      "comparison_A:multiple": 0.304,
+      "comparison_A:none": 0.0,
+      "comparison_A:other": 0.318,
+      "comparison_A:solar": 0.309,
+      "comparison_B:none": 0.0,
+      "comparison_B:multiple": 0.304,
+      "comparison_B:other": 0.318,
+      "comparison_B:fossil_generic": 0.327,
+      "comparison_B:other_renewable": 0.327,
+      "comparison_B:solar": 0.309
+    }
+  },
+  "illustration": {
+    "element": {
+      "K": 17,
+      "n_de": 13,
+      "n_en": 12,
+      "f": 0.6,
+      "gap_zero_convention": 0.03529411764705882,
+      "gap_one_convention": -0.023529411764705882,
+      "gap_positive_support_convention": 0.0,
+      "note": "constructed illustration: an instrument scoring f on every supported class; the sign flips between conventions iff the supported-class counts differ"
+    }
+  },
+  "attrition": {
+    "pooled": {
+      "paragraphs": 55,
+      "gold_off_topic": 0,
+      "execution_1": {
+        "technologies_present": 42,
+        "parse_failed": 12,
+        "off_topic": 1
+      },
+      "execution_1_both_sides_technologies_present": 42
+    },
+    "de": {
+      "paragraphs": 27,
+      "gold_off_topic": 0,
+      "execution_1": {
+        "technologies_present": 20,
+        "parse_failed": 6,
+        "off_topic": 1
+      },
+      "execution_1_both_sides_technologies_present": 20
+    },
+    "en": {
+      "paragraphs": 28,
+      "gold_off_topic": 0,
+      "execution_1": {
+        "technologies_present": 22,
+        "parse_failed": 6
+      },
+      "execution_1_both_sides_technologies_present": 22
+    }
+  },
+  "clean_domain_sensitivity": null,
+  "conventions": {
+    "universe": "outer join over every manifest paragraph; gold off-topic = empty gold set",
+    "weights": "design weights 1/pi per paragraph on every count; unweighted beside it",
+    "macro": "point estimate over classes with positive gold support in the population; resampled statistic = available-class macro-F1",
+    "reportability": "per-class cell printed when support_rows >= 5; suppression does not change aggregates or macro membership",
+    "undefined": "TP+FP+FN = 0 or an empty denominator stays undefined",
+    "stability": "conditional on successful executions; empty technology union has no relation-level score",
+    "displacement": "design-weighted, reference-relative, for the eligible frame; no bias-correction estimator; failed execution 1 counts as absence"
+  }
+}

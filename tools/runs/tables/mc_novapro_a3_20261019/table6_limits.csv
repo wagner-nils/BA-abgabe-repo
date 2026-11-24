@@ -1,0 +1,13 @@
+population;table;supported classes;of inventory;common-support classes;articles;macro-sign illustration;defined-class counts over resamples (count: resamples)
+pooled;technology;6;7;5;10;;"6: 1888; 5: 111; 4: 1"
+pooled;element;15;17;10;10;K=17, n_de=13, n_en=12, f=0.6: gap 0.035 (zero) / -0.024 (one) / 0.000 (positive-support);"15: 755; 14: 785; 13: 390; 12: 17; 11: 35; 10: 16; 9: 1; 8: 1"
+pooled;evaluation_B;4;4;4;10;;"4: 1789; 3: 211"
+pooled;comparison_B;8;15;2;10;;"8: 335; 7: 748; 6: 582; 5: 259; 4: 66; 3: 9; 2: 1"
+de;technology;5;7;;6;;"5: 1280; 4: 539; 3: 177; 2: 4"
+de;element;13;17;;6;;"13: 1049; 12: 253; 11: 20; 10: 349; 9: 208; 8: 104; 7: 10; 6: 7"
+de;evaluation_B;4;4;;6;;"4: 1298; 3: 698; 2: 4"
+de;comparison_B;4;15;;6;;"4: 482; 3: 1029; 2: 463; 1: 26"
+en;technology;6;7;;4;;"6: 1257; 5: 628; 4: 103; 3: 4; 2: 8"
+en;element;12;17;;4;;"12: 845; 11: 400; 10: 519; 9: 4; 8: 125; 7: 97; 3: 10"
+en;evaluation_B;4;4;;4;;"4: 1382; 3: 618"
+en;comparison_B;6;15;;4;;"6: 184; 5: 1147; 4: 513; 3: 138; 2: 18"

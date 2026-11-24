@@ -1,0 +1,139 @@
+population;class;displacement pp weighted;unweighted;interval;gold paragraphs;predicted paragraphs
+pooled;element:F1a;-3.636;-3.6;[-16.7, 4.4];11;9
+pooled;element:F1b;-1.818;-1.8;[-6.8, 0.0];16;15
+pooled;element:F2a;n<5 (3);n<5 (3);;3;3
+pooled;element:F2b;-1.818;-1.8;[-9.8, 5.1];19;18
+pooled;element:F2c;0.000;0.0;[-5.8, 5.3];6;6
+pooled;element:F3a;0.000;0.0;[-4.7, 4.9];12;12
+pooled;element:F3b;-10.909;-10.9;[-16.4, -5.0];10;4
+pooled;element:F4a;n<5 (1);n<5 (1);;1;1
+pooled;element:F5a;n<5 (4);n<5 (4);;4;4
+pooled;element:F5b;-7.273;-7.3;[-22.2, 0.0];11;7
+pooled;element:F6a;n<5 (3);n<5 (3);;3;5
+pooled;element:F6b;-1.818;-1.8;[-6.3, 0.0];5;4
+pooled;element:F7a;n<5 (1);n<5 (1);;1;1
+pooled;element:F8a;3.636;3.6;[0.0, 8.7];5;7
+pooled;element:F9;0.000;0.0;[0.0, 0.0];6;6
+pooled;eval:climate=mixed;n<5 (1);n<5 (1);;1;0
+pooled;eval:climate=negative;-7.273;-7.3;[-15.9, -1.3];8;4
+pooled;eval:climate=neutral;n<5 (2);n<5 (2);;2;2
+pooled;eval:climate=positive;1.818;1.8;[0.0, 5.9];10;11
+pooled;eval:costs=mixed;n<5 (2);n<5 (2);;2;4
+pooled;eval:costs=negative;-5.455;-5.5;[-10.4, 0.0];9;6
+pooled;eval:costs=neutral;-5.455;-5.5;[-15.9, 4.5];6;3
+pooled;eval:costs=positive;7.273;7.3;[-5.3, 24.2];5;9
+pooled;eval:feasibility=negative;n<5 (1);n<5 (1);;1;1
+pooled;eval:feasibility=neutral;n<5 (4);n<5 (4);;4;3
+pooled;eval:feasibility=positive;n<5 (3);n<5 (3);;3;5
+pooled;eval:jobs=mixed;n<5 (1);n<5 (1);;1;1
+pooled;eval:jobs=negative;-7.273;-7.3;[-17.2, 0.0];9;5
+pooled;eval:jobs=neutral;n<5 (2);n<5 (2);;2;1
+pooled;eval:jobs=positive;7.273;7.3;[1.9, 12.7];12;16
+pooled;eval:other=negative;0.000;0.0;[0.0, 0.0];6;6
+pooled;eval:regulation=negative;n<5 (1);n<5 (1);;1;1
+pooled;eval:regulation=neutral;n<5 (3);n<5 (3);;3;3
+pooled;eval:regulation=positive;n<5 (1);n<5 (1);;1;3
+pooled;eval:reliability=negative;1.818;1.8;[0.0, 6.7];6;7
+pooled;eval:reliability=neutral;-9.091;-9.1;[-24.4, 0.0];7;2
+pooled;eval:reliability=positive;n<5 (1);n<5 (1);;1;1
+pooled;eval:security=negative;n<5 (1);n<5 (1);;1;1
+pooled;eval:siting=neutral;n<5 (1);n<5 (1);;1;0
+pooled;eval:siting=positive;n<5 (0);n<5 (0);;0;1
+pooled;technology:general;-3.636;-3.6;[-11.1, 2.8];21;19
+pooled;technology:hydrogen;-1.818;-1.8;[-5.0, 0.0];12;11
+pooled;technology:nuclear;n<5 (4);n<5 (4);;4;4
+pooled;technology:other_renewable;-1.818;-1.8;[-5.0, 0.0];6;5
+pooled;technology:solar;-1.818;-1.8;[-6.4, 0.0];22;21
+pooled;technology:wind;-1.818;-1.8;[-6.4, 0.0];16;15
+de;element:F1a;-11.111;-11.1;[-33.3, 0.0];9;6
+de;element:F1b;-3.704;-3.7;[-15.0, 0.0];9;8
+de;element:F2a;n<5 (3);n<5 (3);;3;3
+de;element:F2b;-7.407;-7.4;[-16.7, 0.0];11;9
+de;element:F2c;n<5 (4);n<5 (4);;4;3
+de;element:F3a;n<5 (4);n<5 (4);;4;5
+de;element:F3b;-14.815;-14.8;[-21.2, -4.5];7;3
+de;element:F4a;n<5 (1);n<5 (1);;1;1
+de;element:F5a;n<5 (4);n<5 (4);;4;4
+de;element:F5b;0.000;0.0;[0.0, 0.0];6;6
+de;element:F6a;n<5 (0);n<5 (0);;0;0
+de;element:F6b;n<5 (3);n<5 (3);;3;2
+de;element:F7a;n<5 (0);n<5 (0);;0;0
+de;element:F8a;n<5 (2);n<5 (2);;2;3
+de;element:F9;n<5 (4);n<5 (4);;4;4
+de;eval:climate=mixed;n<5 (1);n<5 (1);;1;0
+de;eval:climate=negative;-14.815;-14.8;[-30.0, -3.3];8;4
+de;eval:climate=neutral;n<5 (1);n<5 (1);;1;2
+de;eval:climate=positive;n<5 (2);n<5 (2);;2;3
+de;eval:costs=mixed;n<5 (2);n<5 (2);;2;4
+de;eval:costs=negative;-7.407;-7.4;[-15.8, 0.0];6;4
+de;eval:costs=neutral;n<5 (2);n<5 (2);;2;2
+de;eval:costs=positive;n<5 (2);n<5 (2);;2;1
+de;eval:feasibility=negative;n<5 (0);n<5 (0);;0;0
+de;eval:feasibility=neutral;n<5 (2);n<5 (2);;2;1
+de;eval:feasibility=positive;n<5 (1);n<5 (1);;1;1
+de;eval:jobs=mixed;n<5 (0);n<5 (0);;0;1
+de;eval:jobs=negative;-14.815;-14.8;[-31.6, 0.0];8;4
+de;eval:jobs=neutral;n<5 (2);n<5 (2);;2;1
+de;eval:jobs=positive;3.704;3.7;[0.0, 8.3];5;6
+de;eval:other=negative;n<5 (4);n<5 (4);;4;4
+de;eval:regulation=negative;n<5 (1);n<5 (1);;1;1
+de;eval:regulation=neutral;n<5 (1);n<5 (1);;1;1
+de;eval:regulation=positive;n<5 (0);n<5 (0);;0;1
+de;eval:reliability=negative;3.704;3.7;[0.0, 13.6];6;7
+de;eval:reliability=neutral;n<5 (3);n<5 (3);;3;2
+de;eval:reliability=positive;n<5 (0);n<5 (0);;0;0
+de;eval:security=negative;n<5 (1);n<5 (1);;1;1
+de;eval:siting=neutral;n<5 (0);n<5 (0);;0;0
+de;eval:siting=positive;n<5 (0);n<5 (0);;0;0
+de;technology:general;-3.704;-3.7;[-13.6, 0.0];15;14
+de;technology:hydrogen;n<5 (1);n<5 (1);;1;1
+de;technology:nuclear;n<5 (2);n<5 (2);;2;2
+de;technology:other_renewable;n<5 (0);n<5 (0);;0;0
+de;technology:solar;0.000;0.0;[0.0, 0.0];11;11
+de;technology:wind;0.000;0.0;[0.0, 0.0];9;9
+en;element:F1a;n<5 (2);n<5 (2);;2;3
+en;element:F1b;0.000;0.0;[0.0, 0.0];7;7
+en;element:F2a;n<5 (0);n<5 (0);;0;0
+en;element:F2b;3.571;3.6;[0.0, 10.0];8;9
+en;element:F2c;n<5 (2);n<5 (2);;2;3
+en;element:F3a;-3.571;-3.6;[-8.3, 0.0];8;7
+en;element:F3b;n<5 (3);n<5 (3);;3;1
+en;element:F4a;n<5 (0);n<5 (0);;0;0
+en;element:F5a;n<5 (0);n<5 (0);;0;0
+en;element:F5b;-14.286;-14.3;[-40.0, 0.0];5;1
+en;element:F6a;n<5 (3);n<5 (3);;3;5
+en;element:F6b;n<5 (2);n<5 (2);;2;2
+en;element:F7a;n<5 (1);n<5 (1);;1;1
+en;element:F8a;n<5 (3);n<5 (3);;3;4
+en;element:F9;n<5 (2);n<5 (2);;2;2
+en;eval:climate=mixed;n<5 (0);n<5 (0);;0;0
+en;eval:climate=negative;n<5 (0);n<5 (0);;0;0
+en;eval:climate=neutral;n<5 (1);n<5 (1);;1;0
+en;eval:climate=positive;0.000;0.0;[0.0, 0.0];8;8
+en;eval:costs=mixed;n<5 (0);n<5 (0);;0;0
+en;eval:costs=negative;n<5 (3);n<5 (3);;3;2
+en;eval:costs=neutral;n<5 (4);n<5 (4);;4;1
+en;eval:costs=positive;n<5 (3);n<5 (3);;3;8
+en;eval:feasibility=negative;n<5 (1);n<5 (1);;1;1
+en;eval:feasibility=neutral;n<5 (2);n<5 (2);;2;2
+en;eval:feasibility=positive;n<5 (2);n<5 (2);;2;4
+en;eval:jobs=mixed;n<5 (1);n<5 (1);;1;0
+en;eval:jobs=negative;n<5 (1);n<5 (1);;1;1
+en;eval:jobs=neutral;n<5 (0);n<5 (0);;0;0
+en;eval:jobs=positive;10.714;10.7;[2.6, 20.0];7;10
+en;eval:other=negative;n<5 (2);n<5 (2);;2;2
+en;eval:regulation=negative;n<5 (0);n<5 (0);;0;0
+en;eval:regulation=neutral;n<5 (2);n<5 (2);;2;2
+en;eval:regulation=positive;n<5 (1);n<5 (1);;1;2
+en;eval:reliability=negative;n<5 (0);n<5 (0);;0;0
+en;eval:reliability=neutral;n<5 (4);n<5 (4);;4;0
+en;eval:reliability=positive;n<5 (1);n<5 (1);;1;1
+en;eval:security=negative;n<5 (0);n<5 (0);;0;0
+en;eval:siting=neutral;n<5 (1);n<5 (1);;1;0
+en;eval:siting=positive;n<5 (0);n<5 (0);;0;1
+en;technology:general;-3.571;-3.6;[-16.7, 6.2];6;5
+en;technology:hydrogen;-3.571;-3.6;[-8.3, 0.0];11;10
+en;technology:nuclear;n<5 (2);n<5 (2);;2;2
+en;technology:other_renewable;-3.571;-3.6;[-8.3, 0.0];6;5
+en;technology:solar;-3.571;-3.6;[-15.0, 0.0];11;10
+en;technology:wind;-3.571;-3.6;[-15.0, 0.0];7;6

@@ -1,0 +1,40 @@
+{
+  "_comment": [
+    "Hashes of the artifacts a reported run must not silently change.",
+    "EVERY pin needs a `path`. The pin check resolves that path, requires it to be the",
+    "expected one, reads the file and hashes THOSE bytes -- not merely what was just",
+    "rendered. An earlier version compared only the fresh render and ignored the path, so",
+    "a missing or substituted artifact still reported a match.",
+    "A pin whose sha256 is null is NOT asserted.",
+    "system_prompt and tool_config are produced by instrument.py from the frozen codebook.",
+    "instrument.py never updates a pin as a side effect: --update-pins is explicit, so a",
+    "renderer change cannot redefine its own approved baseline and certify itself.",
+    "preflight.py loads these artifacts and assembles every probe with build_request(),",
+    "so a CERTIFIED preflight certifies this configuration. What is still owed is one",
+    "credentialed live run: the offline checks pass, but nothing is known about caching",
+    "or forced tool use until an artifact in tools/runs/ says so.",
+    "Paths are relative to tools/. Both roots were in use once, so preflight reported",
+    "'file does not exist' for artifacts it had just loaded.",
+    "Update a pin only deliberately, in the same commit as the change."
+  ],
+  "codebook": {
+    "path": "annotation/codebook/codebook-v1.0.yaml",
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-08-31"
+  },
+  "system_prompt": {
+    "path": "pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "codebook_version": "1.0",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-09-02"
+  },
+  "tool_config": {
+    "path": "pipeline/instrument/tool-config_v1.0.json",
+    "sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_version": "1.0",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-09-02"
+  }
+}

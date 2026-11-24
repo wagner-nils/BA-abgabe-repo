@@ -1,0 +1,686 @@
+{
+  "technology": {
+    "pooled": {
+      "solar": {
+        "rows": 23,
+        "articles": 13
+      },
+      "hydrogen": {
+        "rows": 3,
+        "articles": 3
+      },
+      "wind": {
+        "rows": 24,
+        "articles": 13
+      },
+      "general": {
+        "rows": 17,
+        "articles": 14
+      },
+      "nuclear": {
+        "rows": 3,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 8,
+        "articles": 5
+      },
+      "other_renewable": {
+        "rows": 6,
+        "articles": 5
+      }
+    },
+    "de": {
+      "solar": {
+        "rows": 23,
+        "articles": 13
+      },
+      "hydrogen": {
+        "rows": 3,
+        "articles": 3
+      },
+      "wind": {
+        "rows": 24,
+        "articles": 13
+      },
+      "general": {
+        "rows": 17,
+        "articles": 14
+      },
+      "nuclear": {
+        "rows": 3,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 8,
+        "articles": 5
+      },
+      "other_renewable": {
+        "rows": 6,
+        "articles": 5
+      }
+    },
+    "clean_pooled": {
+      "hydrogen": {
+        "rows": 2,
+        "articles": 2
+      },
+      "solar": {
+        "rows": 15,
+        "articles": 10
+      },
+      "wind": {
+        "rows": 22,
+        "articles": 12
+      },
+      "general": {
+        "rows": 16,
+        "articles": 13
+      },
+      "nuclear": {
+        "rows": 3,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 8,
+        "articles": 5
+      },
+      "other_renewable": {
+        "rows": 6,
+        "articles": 5
+      }
+    },
+    "clean_de": {
+      "hydrogen": {
+        "rows": 2,
+        "articles": 2
+      },
+      "solar": {
+        "rows": 15,
+        "articles": 10
+      },
+      "wind": {
+        "rows": 22,
+        "articles": 12
+      },
+      "general": {
+        "rows": 16,
+        "articles": 13
+      },
+      "nuclear": {
+        "rows": 3,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 8,
+        "articles": 5
+      },
+      "other_renewable": {
+        "rows": 6,
+        "articles": 5
+      }
+    }
+  },
+  "element": {
+    "pooled": {
+      "F7a": {
+        "rows": 2,
+        "articles": 2
+      },
+      "F7b": {
+        "rows": 4,
+        "articles": 3
+      },
+      "F8a": {
+        "rows": 17,
+        "articles": 7
+      },
+      "F3a": {
+        "rows": 7,
+        "articles": 7
+      },
+      "F4a": {
+        "rows": 5,
+        "articles": 3
+      },
+      "F4b": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F1b": {
+        "rows": 13,
+        "articles": 8
+      },
+      "F2b": {
+        "rows": 19,
+        "articles": 12
+      },
+      "F3b": {
+        "rows": 13,
+        "articles": 7
+      },
+      "F2c": {
+        "rows": 17,
+        "articles": 13
+      },
+      "F6b": {
+        "rows": 13,
+        "articles": 5
+      },
+      "F1a": {
+        "rows": 18,
+        "articles": 8
+      },
+      "F6a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F5b": {
+        "rows": 13,
+        "articles": 9
+      },
+      "F5a": {
+        "rows": 9,
+        "articles": 5
+      }
+    },
+    "de": {
+      "F7a": {
+        "rows": 2,
+        "articles": 2
+      },
+      "F7b": {
+        "rows": 4,
+        "articles": 3
+      },
+      "F8a": {
+        "rows": 17,
+        "articles": 7
+      },
+      "F3a": {
+        "rows": 7,
+        "articles": 7
+      },
+      "F4a": {
+        "rows": 5,
+        "articles": 3
+      },
+      "F4b": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F1b": {
+        "rows": 13,
+        "articles": 8
+      },
+      "F2b": {
+        "rows": 19,
+        "articles": 12
+      },
+      "F3b": {
+        "rows": 13,
+        "articles": 7
+      },
+      "F2c": {
+        "rows": 17,
+        "articles": 13
+      },
+      "F6b": {
+        "rows": 13,
+        "articles": 5
+      },
+      "F1a": {
+        "rows": 18,
+        "articles": 8
+      },
+      "F6a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F5b": {
+        "rows": 13,
+        "articles": 9
+      },
+      "F5a": {
+        "rows": 9,
+        "articles": 5
+      }
+    },
+    "clean_pooled": {
+      "F1a": {
+        "rows": 18,
+        "articles": 8
+      },
+      "F3a": {
+        "rows": 5,
+        "articles": 5
+      },
+      "F6a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F1b": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F2b": {
+        "rows": 17,
+        "articles": 10
+      },
+      "F5b": {
+        "rows": 13,
+        "articles": 9
+      },
+      "F3b": {
+        "rows": 9,
+        "articles": 5
+      },
+      "F5a": {
+        "rows": 9,
+        "articles": 5
+      },
+      "F8a": {
+        "rows": 10,
+        "articles": 4
+      },
+      "F2c": {
+        "rows": 15,
+        "articles": 12
+      },
+      "F4a": {
+        "rows": 4,
+        "articles": 2
+      },
+      "F6b": {
+        "rows": 12,
+        "articles": 4
+      },
+      "F4b": {
+        "rows": 2,
+        "articles": 1
+      },
+      "F7a": {
+        "rows": 1,
+        "articles": 1
+      },
+      "F7b": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "clean_de": {
+      "F1a": {
+        "rows": 18,
+        "articles": 8
+      },
+      "F3a": {
+        "rows": 5,
+        "articles": 5
+      },
+      "F6a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F1b": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F2b": {
+        "rows": 17,
+        "articles": 10
+      },
+      "F5b": {
+        "rows": 13,
+        "articles": 9
+      },
+      "F3b": {
+        "rows": 9,
+        "articles": 5
+      },
+      "F5a": {
+        "rows": 9,
+        "articles": 5
+      },
+      "F8a": {
+        "rows": 10,
+        "articles": 4
+      },
+      "F2c": {
+        "rows": 15,
+        "articles": 12
+      },
+      "F4a": {
+        "rows": 4,
+        "articles": 2
+      },
+      "F6b": {
+        "rows": 12,
+        "articles": 4
+      },
+      "F4b": {
+        "rows": 2,
+        "articles": 1
+      },
+      "F7a": {
+        "rows": 1,
+        "articles": 1
+      },
+      "F7b": {
+        "rows": 1,
+        "articles": 1
+      }
+    }
+  },
+  "evaluation_A": {
+    "pooled": {
+      "neutral": {
+        "rows": 7,
+        "articles": 5
+      },
+      "mixed": {
+        "rows": 4,
+        "articles": 4
+      },
+      "positive": {
+        "rows": 44,
+        "articles": 20
+      },
+      "negative": {
+        "rows": 35,
+        "articles": 12
+      }
+    },
+    "de": {
+      "neutral": {
+        "rows": 7,
+        "articles": 5
+      },
+      "mixed": {
+        "rows": 4,
+        "articles": 4
+      },
+      "positive": {
+        "rows": 44,
+        "articles": 20
+      },
+      "negative": {
+        "rows": 35,
+        "articles": 12
+      }
+    },
+    "clean_pooled": {
+      "positive": {
+        "rows": 33,
+        "articles": 17
+      },
+      "negative": {
+        "rows": 30,
+        "articles": 10
+      },
+      "mixed": {
+        "rows": 3,
+        "articles": 3
+      },
+      "neutral": {
+        "rows": 6,
+        "articles": 4
+      }
+    },
+    "clean_de": {
+      "positive": {
+        "rows": 33,
+        "articles": 17
+      },
+      "negative": {
+        "rows": 30,
+        "articles": 10
+      },
+      "mixed": {
+        "rows": 3,
+        "articles": 3
+      },
+      "neutral": {
+        "rows": 6,
+        "articles": 4
+      }
+    }
+  },
+  "evaluation_B": {
+    "pooled": {
+      "mixed": {
+        "rows": 6,
+        "articles": 5
+      },
+      "neutral": {
+        "rows": 10,
+        "articles": 7
+      },
+      "positive": {
+        "rows": 69,
+        "articles": 22
+      },
+      "negative": {
+        "rows": 60,
+        "articles": 12
+      }
+    },
+    "de": {
+      "mixed": {
+        "rows": 6,
+        "articles": 5
+      },
+      "neutral": {
+        "rows": 10,
+        "articles": 7
+      },
+      "positive": {
+        "rows": 69,
+        "articles": 22
+      },
+      "negative": {
+        "rows": 60,
+        "articles": 12
+      }
+    },
+    "clean_pooled": {
+      "negative": {
+        "rows": 50,
+        "articles": 10
+      },
+      "positive": {
+        "rows": 55,
+        "articles": 19
+      },
+      "mixed": {
+        "rows": 5,
+        "articles": 4
+      },
+      "neutral": {
+        "rows": 9,
+        "articles": 6
+      }
+    },
+    "clean_de": {
+      "negative": {
+        "rows": 50,
+        "articles": 10
+      },
+      "positive": {
+        "rows": 55,
+        "articles": 19
+      },
+      "mixed": {
+        "rows": 5,
+        "articles": 4
+      },
+      "neutral": {
+        "rows": 9,
+        "articles": 6
+      }
+    }
+  },
+  "comparison_A": {
+    "pooled": {
+      "none": {
+        "rows": 64,
+        "articles": 23
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 5,
+        "articles": 3
+      }
+    },
+    "de": {
+      "none": {
+        "rows": 64,
+        "articles": 23
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 5,
+        "articles": 3
+      }
+    },
+    "clean_pooled": {
+      "none": {
+        "rows": 53,
+        "articles": 19
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 5,
+        "articles": 3
+      }
+    },
+    "clean_de": {
+      "none": {
+        "rows": 53,
+        "articles": 19
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 5,
+        "articles": 3
+      }
+    }
+  },
+  "comparison_B": {
+    "pooled": {
+      "none": {
+        "rows": 71,
+        "articles": 24
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 6,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "de": {
+      "none": {
+        "rows": 71,
+        "articles": 24
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 6,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "clean_pooled": {
+      "none": {
+        "rows": 59,
+        "articles": 20
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 6,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "clean_de": {
+      "none": {
+        "rows": 59,
+        "articles": 20
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 6,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      }
+    }
+  }
+}

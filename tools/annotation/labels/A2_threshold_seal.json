@@ -1,0 +1,27 @@
+{
+  "kind": "A2_threshold_seal",
+  "s": 5,
+  "rule": "a per-class cell prints its value only if the reference support in that population is >= s units; otherwise n<s with the support; a statistic whose own denominator is empty prints undefined; suppression changes no aggregate and no macro membership",
+  "support_units": {
+    "agreement_tables": "unweighted reference rows in the population: (paragraph x technology) units for technologies and elements; frame-bearing reference units for evaluation values (score B); matched units for score A",
+    "displacement_table": "distinct paragraphs of the population on which the reference carries the class",
+    "reliability_table": "aligned units on which the first coding is positive (technology ticks, element flags); units inside the applicability mask for evaluation and comparison target"
+  },
+  "applies_to": [
+    "table2_per_class",
+    "table5_displacement",
+    "table9_reliability"
+  ],
+  "sample_manifest_digest": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+  "frame_manifest_digest": "a5eccabd1bf6ef64a4583d74b5276a20ad6fbd176fe2224174f20a0727bea425",
+  "freeze_event_hash": "24167d3a65b99f06",
+  "git_head": "1870c0262340023599250f670311508e11f339a4",
+  "git_tree_dirty": false,
+  "created_at": "2026-09-07T17:50:04+00:00",
+  "author_confirmation": "I fixed s = 5 on 2026-09-07 blind to every A2 label; no A2 paragraph had been coded or predicted.",
+  "generator": {
+    "file": "sample_contract.py",
+    "sha256": "fc901a371e2b9a97e11aaeb886b0eeb9c16993cc97ec4859b6a8e86b10f2027b"
+  },
+  "digest": "4d4fbd87421c0bdee902dd77fb818a29884565543e0f8255a478cab0ef20b790"
+}

@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{llllllll}
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason: n)} & \textbf{score B micro-F1 (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+pooled & evaluation & 0.914 & 35 & frame\_not\_predicted: 23; row\_not\_predicted: 2 & 0.621 & 0.939 over 2 & 0.420 over 3 \\
+pooled & comparison target & 0.949 & 39 & row\_not\_predicted: 1 & 0.937 & 0.719 over 6 & 0.717 over 6 \\
+de & evaluation & 0.867 & 15 & frame\_not\_predicted: 16; row\_not\_predicted: 2 & 0.464 & 0.925 over 2 & 0.329 over 3 \\
+de & comparison target & 0.905 & 21 & row\_not\_predicted: 1 & 0.884 & 0.661 over 5 & 0.655 over 5 \\
+en & evaluation & 0.950 & 20 & frame\_not\_predicted: 7 & 0.809 & 0.944 over 2 & 0.850 over 2 \\
+en & comparison target & 1.000 & 18 & none & 1.000 & 1.000 over 2 & 1.000 over 2 \\
+\bottomrule
+\end{tabular}
+\caption{Categorical layers: score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (DEVELOPMENT -- not reportable).}
+\end{table}

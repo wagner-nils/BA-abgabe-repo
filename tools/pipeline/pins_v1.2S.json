@@ -1,0 +1,25 @@
+{
+  "_comment": [
+    "Pins of instrument v1.2S (W3, post-registration development). Same rules as pins.json: every pin has a path and a sha256 of the bytes on disk; --update-pins is the explicit acceptance; the v1.0 pins in pins.json are not touched."
+  ],
+  "codebook": {
+    "path": "annotation/codebook/codebook-v1.0.yaml",
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-08-31"
+  },
+  "system_prompt": {
+    "path": "pipeline/instrument/system-prompt_v1.2S.txt",
+    "sha256": "bf796df44959102b00f3d1eaf7fbd49e01d0e5dc6b2b2a5d1add3970ee1b4e26",
+    "codebook_version": "1.0",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-10-14"
+  },
+  "tool_config": {
+    "path": "pipeline/instrument/tool-config_v1.2S.json",
+    "sha256": "80a923052f1c143e0b33d5efd902a01e27a873a9cca96405cff0113dc836fa78",
+    "codebook_version": "1.0",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-10-14"
+  }
+}

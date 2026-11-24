@@ -1,0 +1,450 @@
+{
+  "tools": [
+    {
+      "toolSpec": {
+        "name": "record_relations",
+        "description": "Record the technology-frame-evaluation relations asserted in one news paragraph, exactly as the coding instrument defines them.",
+        "strict": true,
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "outcome",
+              "relations"
+            ],
+            "properties": {
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "off_topic",
+                  "technologies_present"
+                ],
+                "description": "`off_topic` when the paragraph makes no statement about any listed technology; `technologies_present` otherwise."
+              },
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "technology",
+                    "technology_frames",
+                    "technology_subtype",
+                    "technology_versus"
+                  ],
+                  "properties": {
+                    "technology": {
+                      "type": "string",
+                      "enum": [
+                        "general",
+                        "solar",
+                        "wind",
+                        "hydrogen",
+                        "nuclear",
+                        "other_renewable",
+                        "storage"
+                      ]
+                    },
+                    "technology_frames": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/$defs/frame"
+                      },
+                      "description": "One entry per frame that fires for this technology, each with its fired elements and its evaluation. An empty list means the paragraph makes a statement about this technology but frames nothing about it."
+                    },
+                    "technology_subtype": {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "onshore",
+                        "offshore",
+                        "unspecified",
+                        "green",
+                        "blue",
+                        "gray"
+                      ],
+                      "description": "wind: onshore | offshore | unspecified; hydrogen: green | blue | gray | unspecified; every other technology: none."
+                    },
+                    "technology_versus": {
+                      "type": "string",
+                      "enum": [
+                        "natural_gas",
+                        "coal",
+                        "oil",
+                        "fossil_generic",
+                        "grid_status_quo",
+                        "general",
+                        "solar",
+                        "wind",
+                        "hydrogen",
+                        "nuclear",
+                        "other_renewable",
+                        "storage",
+                        "multiple",
+                        "none",
+                        "other"
+                      ],
+                      "description": "The comparison target of this relation; `none` when it frames nothing."
+                    },
+                    "z_comparison_note": {
+                      "type": "string",
+                      "description": "Required when technology_versus is `other` or `multiple`."
+                    },
+                    "z_note": {
+                      "type": "string",
+                      "description": "Required when any of `F9` fires."
+                    }
+                  }
+                }
+              }
+            },
+            "$defs": {
+              "frame": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "costs"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F1a",
+                            "F1b"
+                          ]
+                        },
+                        "description": "Every element of frame `costs` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "jobs"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F2a",
+                            "F2b",
+                            "F2c"
+                          ]
+                        },
+                        "description": "Every element of frame `jobs` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "climate"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F3a",
+                            "F3b"
+                          ]
+                        },
+                        "description": "Every element of frame `climate` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "security"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F4a",
+                            "F4b"
+                          ]
+                        },
+                        "description": "Every element of frame `security` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "reliability"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F5a",
+                            "F5b"
+                          ]
+                        },
+                        "description": "Every element of frame `reliability` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "feasibility"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F6a",
+                            "F6b"
+                          ]
+                        },
+                        "description": "Every element of frame `feasibility` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "siting"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F7a",
+                            "F7b"
+                          ]
+                        },
+                        "description": "Every element of frame `siting` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "regulation"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F8a"
+                          ]
+                        },
+                        "description": "Every element of frame `regulation` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "frame",
+                      "frame_elements",
+                      "frame_evaluation"
+                    ],
+                    "properties": {
+                      "frame": {
+                        "type": "string",
+                        "const": "other"
+                      },
+                      "frame_elements": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "F9"
+                          ]
+                        },
+                        "description": "Every element of frame `other` that fires for this technology."
+                      },
+                      "frame_evaluation": {
+                        "type": "string",
+                        "enum": [
+                          "positive",
+                          "negative",
+                          "neutral",
+                          "mixed"
+                        ],
+                        "description": "The evaluation of THIS frame for THIS technology."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "toolChoice": {
+    "tool": {
+      "name": "record_relations"
+    }
+  }
+}

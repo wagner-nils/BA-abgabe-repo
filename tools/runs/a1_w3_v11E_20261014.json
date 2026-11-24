@@ -1,0 +1,249 @@
+{
+  "run_id": "a1_w3_v11E_20261014",
+  "started_at": "2026-10-14T09:48:50.883154+00:00",
+  "ended_at": "2026-10-14T09:54:34.689618+00:00",
+  "first_call_at": "2026-10-14T09:49:22.813179+00:00",
+  "reportable": false,
+  "dev": true,
+  "arm": "main",
+  "analysis_status": "development",
+  "w3_authorisation": null,
+  "manifest": {
+    "path": "tools/annotation/labels/A1_manifest.json",
+    "sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+    "restrict_split": "A1",
+    "n_paragraphs": 32
+  },
+  "repeats": 3,
+  "execution_fingerprint": "245951db08c526e1040106910df54ac683467a98e9fe9b4e4c864f74fbc45b1e",
+  "execution_contract": {
+    "manifest_sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+    "restrict_split": "A1",
+    "dev": true,
+    "prompt_sha256": "97657900e0d30376e57321d09e634d60c42805c899eddf46202534301be4d6a8",
+    "tool_config_sha256": "74e8e9cac03bc0adb13beb9597a88fca93621ef976b7298f7ab4b71db0f7e264",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 3,
+    "retry_policy_version": "3",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "5d3bb0fbe1a4a23a534ae5018e0bc9293ba62de69a488c59eb75c1c6b2c47e68",
+    "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+    "instrument_version": "1.1E",
+    "instrument_v11_sha256": "e03f75abe7ce90e16c2eb3fc3ffa3e658b866787b9fe51f45c58456b2f88ff5a",
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.1E.txt",
+    "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+    "preflight_sha256": "78f72d50d8d416ed176e3585cf8a57acaf6fba848bc16cb6b4473481e80e39a4",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null
+  },
+  "git_commit": "aadafbef711208533fd661c4ec8f34633e2bdad5",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/runs/a1_w3_v10_20261014.json",
+      "tools/runs/a1_w3_v10_20261014_calls.jsonl",
+      "tools/runs/a1_w3_v10_20261014_predictions.csv",
+      "tools/runs/a1_w3_v10_20261014_terminal.csv",
+      "tools/runs/a1_w3_v11S_20261014.json",
+      "tools/runs/a1_w3_v11S_20261014_calls.jsonl",
+      "tools/runs/a1_w3_v11S_20261014_predictions.csv",
+      "tools/runs/a1_w3_v11S_20261014_terminal.csv",
+      "tools/runs/preflight_a1_w3_v10_20261014.json",
+      "tools/runs/preflight_a1_w3_v11S_20261014.json",
+      "tools/runs/tables/dev/a1_w3_v10_20261014/",
+      "tools/runs/tables/dev/a1_w3_v11S_20261014/"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/runs/a1_w3_v10_20261014.json",
+      "tools/runs/a1_w3_v10_20261014_calls.jsonl",
+      "tools/runs/a1_w3_v10_20261014_predictions.csv",
+      "tools/runs/a1_w3_v10_20261014_terminal.csv",
+      "tools/runs/a1_w3_v11S_20261014.json",
+      "tools/runs/a1_w3_v11S_20261014_calls.jsonl",
+      "tools/runs/a1_w3_v11S_20261014_predictions.csv",
+      "tools/runs/a1_w3_v11S_20261014_terminal.csv",
+      "tools/runs/preflight_a1_w3_v10_20261014.json",
+      "tools/runs/preflight_a1_w3_v11S_20261014.json",
+      "tools/runs/tables/dev/a1_w3_v10_20261014/",
+      "tools/runs/tables/dev/a1_w3_v11S_20261014/"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.1E.txt",
+    "sha256": "97657900e0d30376e57321d09e634d60c42805c899eddf46202534301be4d6a8",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "74e8e9cac03bc0adb13beb9597a88fca93621ef976b7298f7ab4b71db0f7e264",
+  "instrument": {
+    "name": "v1.1E",
+    "version": "1.1E",
+    "variant": "E",
+    "retry_policy_version": "3",
+    "pins": "tools/pipeline/pins_v1.1E.json",
+    "module_sha256": {
+      "instrument.py": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+      "instrument_v11.py": "e03f75abe7ce90e16c2eb3fc3ffa3e658b866787b9fe51f45c58456b2f88ff5a"
+    }
+  },
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_a1_w3_v11E_20261014.json",
+    "sha256": "f241803b750acafd07809e1e6c9224e92bc22643667bb1c9509449640c524a17",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_a1_w3_v11E_20261014.json",
+        "sha256": "f241803b750acafd07809e1e6c9224e92bc22643667bb1c9509449640c524a17",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-14T09:48:50.912632+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 105,
+    "input_tokens": 57137,
+    "output_tokens": 23076,
+    "cache_read_tokens": 503160,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "contract_invalid": 10,
+      "ok_technologies_present": 77,
+      "ok_off_topic": 18
+    },
+    "billable_tokens": 583373,
+    "quota_tokens": 57137
+  },
+  "cost": {
+    "estimated_usd": 0.735349,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "a1_w3_v11E_20261014_calls.jsonl": {
+      "path": "tools/runs/a1_w3_v11E_20261014_calls.jsonl",
+      "sha256": "5b90cfac8b1b73ba4efacbc76eb2219cdb904f6b6c65e023a81876f389a9f360"
+    },
+    "a1_w3_v11E_20261014_terminal.csv": {
+      "path": "tools/runs/a1_w3_v11E_20261014_terminal.csv",
+      "sha256": "9a98ce98a549dda517428dd432019e938bf023543cefe92611e2c4f1a1ac477e"
+    },
+    "a1_w3_v11E_20261014_predictions.csv": {
+      "path": "tools/runs/a1_w3_v11E_20261014_predictions.csv",
+      "sha256": "6598f3cf89433c59324d9367d6197fd350497057bd8103bb78cafffbe824770c"
+    }
+  },
+  "raw_private": "tools/runs/raw/a1_w3_v11E_20261014.jsonl"
+}

@@ -1,0 +1,13 @@
+population;paragraphs;gold off-topic;execution;outcomes (partition);technologies present on both sides (subset)
+pooled;60;1;1;"{""technologies_present"": 55, ""off_topic"": 3, ""parse_failed"": 2}";54
+pooled;60;1;2;"{""technologies_present"": 55, ""off_topic"": 3, ""parse_failed"": 2}";54
+pooled;60;1;3;"{""technologies_present"": 55, ""parse_failed"": 3, ""off_topic"": 2}";54
+de;60;1;1;"{""technologies_present"": 55, ""off_topic"": 3, ""parse_failed"": 2}";54
+de;60;1;2;"{""technologies_present"": 55, ""off_topic"": 3, ""parse_failed"": 2}";54
+de;60;1;3;"{""technologies_present"": 55, ""parse_failed"": 3, ""off_topic"": 2}";54
+clean_pooled;49;1;1;"{""technologies_present"": 45, ""off_topic"": 3, ""parse_failed"": 1}";44
+clean_pooled;49;1;2;"{""technologies_present"": 45, ""off_topic"": 3, ""parse_failed"": 1}";44
+clean_pooled;49;1;3;"{""technologies_present"": 45, ""parse_failed"": 2, ""off_topic"": 2}";44
+clean_de;49;1;1;"{""technologies_present"": 45, ""off_topic"": 3, ""parse_failed"": 1}";44
+clean_de;49;1;2;"{""technologies_present"": 45, ""off_topic"": 3, ""parse_failed"": 1}";44
+clean_de;49;1;3;"{""technologies_present"": 45, ""parse_failed"": 2, ""off_topic"": 2}";44

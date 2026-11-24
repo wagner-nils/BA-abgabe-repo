@@ -1,0 +1,42 @@
+quantity;translated;original;difference;lo;hi;outcome_or_note
+element_f1_execution1 (primary);0.5991;0.6213;-0.0222;-0.0835;0.0325;inconclusive
+technology_f1;0.9002;0.8835;0.0167;-0.0270;0.0693;descriptive
+element_precision;0.6757;0.7098;-0.0341;-0.1199;0.0434;descriptive
+element_recall;0.5382;0.5524;-0.0142;-0.0680;0.0405;descriptive
+execution1_failures;2;5;;;;count
+relation_change_rate_execution1 (translated vs original);0.5429;;;;;38/70 matched units
+relation_change_rate_native_repeat_1_vs_2;;0.0986;;;;7/71 matched units
+relation_change_rate_native_repeat_1_vs_3;;0.0833;;;;6/72 matched units
+relation_change_rate_translated_repeat_1_vs_2;0.0400;;;;;3/75 matched units
+relation_change_rate_translated_repeat_1_vs_3;0.1216;;;;;9/74 matched units
+element_f1_executions_range (max minus min);0.0016;0.0113;;;;over the executions of each run
+element_f1_F1a;0.7276;0.7337;;;;support 18 rows (no test)
+element_f1_F1b;0.5623;0.7511;;;;support 13 rows (no test)
+element_f1_F2a;n<s;n<s;;;;support 3 rows (no test)
+element_f1_F2b;0.4627;0.4748;;;;support 19 rows (no test)
+element_f1_F2c;0.7018;0.5938;;;;support 17 rows (no test)
+element_f1_F3a;0.3539;0.5398;;;;support 7 rows (no test)
+element_f1_F3b;0.5361;0.6036;;;;support 13 rows (no test)
+element_f1_F4a;0.8939;0.7627;;;;support 5 rows (no test)
+element_f1_F4b;n<s;n<s;;;;support 3 rows (no test)
+element_f1_F5a;0.6092;0.6581;;;;support 9 rows (no test)
+element_f1_F5b;0.7072;0.7616;;;;support 13 rows (no test)
+element_f1_F6a;0.6114;0.6114;;;;support 8 rows (no test)
+element_f1_F6b;0.5462;0.5925;;;;support 13 rows (no test)
+element_f1_F7a;n<s;n<s;;;;support 2 rows (no test)
+element_f1_F7b;n<s;n<s;;;;support 4 rows (no test)
+element_f1_F8a;0.5965;0.5078;;;;support 17 rows (no test)
+element_f1_F9;n<s;n<s;;;;support 0 rows (no test)
+element_f1_execution1_without_major (sensitivity);0.5991;0.6213;-0.0222;-0.0835;0.0325;inconclusive
+check_severity_none;60;;;;;pairs
+check_severity_minor;0;;;;;pairs
+check_severity_major;0;;;;;pairs
+check_category_omission_or_addition;0;;;;;pairs flagged
+check_category_technology_referent;0;;;;;pairs flagged
+check_category_negation;0;;;;;pairs flagged
+check_category_modality_or_hedging;0;;;;;pairs flagged
+check_category_quantities_units;0;;;;;pairs flagged
+check_category_time_reference;0;;;;;pairs flagged
+check_category_attribution_reported_speech;0;;;;;pairs flagged
+check_category_ambiguity_resolved;0;;;;;pairs flagged
+check_category_other;0;;;;;pairs flagged

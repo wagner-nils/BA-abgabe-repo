@@ -1,0 +1,114 @@
+﻿row_id;paragraph_id;technology;wind_siting;hydrogen_pathway;lang;outlet;F1a;F1b;F2a;F2b;F2c;F3a;F3b;F4a;F4b;F5a;F5b;F6a;F6b;F7a;F7b;F8a;F9;no_frame_for_this_tech;eval_costs;eval_jobs;eval_climate;eval_security;eval_reliability;eval_feasibility;eval_siting;eval_regulation;eval_other;comparison_target;comparison_note;speaker;confidence;note;annotator;annotator_type;coded_at;codebook_version;sitting;text_sha256
+A080_p10__wind;A080_p10;wind;offshore;;de;DER SPIEGEL;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;ngo;2;[private: 131 chars];NW;human;2026-11-10;1.0;2;46b4ef07965fa5b0
+A053_p08__storage;A053_p08;storage;;;en;The Economist;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;[private: 87 chars];NW;human;2026-11-10;1.0;2;7ca38586115e9b49
+A047_p05__solar;A047_p05;solar;;;de;Handelsblatt;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;negative;;;;;;;;none;;outlet;3;[private: 53 chars];NW;human;2026-11-10;1.0;2;e0fe49cabc074fc7
+A041_p02__hydrogen;A041_p02;hydrogen;;unspecified;de;BILD;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;[private: 108 chars];NW;human;2026-11-10;1.0;2;a4daae5404342360
+A046_p03__other_renewable;A046_p03;other_renewable;;;de;Handelsblatt;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;;;;positive;;negative;;;;none;;outlet;2;[private: 100 chars];NW;human;2026-11-10;1.0;2;ea87540a77153c86
+A085_p07__solar;A085_p07;solar;;;de;Neue Zürcher Zeitung;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;mixed;;;;;;;;none;;outlet;2;[private: 135 chars];NW;human;2026-11-10;1.0;2;0de49372340623b1
+A085_p07__wind;A085_p07;wind;unspecified;;de;Neue Zürcher Zeitung;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;mixed;;;;;;;;none;;outlet;2;[private: 62 chars];NW;human;2026-11-10;1.0;2;0de49372340623b1
+A057_p03__general;A057_p03;general;;;en;The Economist;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;;;positive;positive;;;;;;natural_gas;;political;2;[private: 64 chars];NW;human;2026-11-10;1.0;2;8b820b9a1301a9cf
+A057_p03__nuclear;A057_p03;nuclear;;;en;The Economist;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;natural_gas;;ambiguous;2;[private: 101 chars];NW;human;2026-11-10;1.0;2;8b820b9a1301a9cf
+A082_p02__general;A082_p02;general;;;de;DER SPIEGEL;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;political;2;[private: 52 chars];NW;human;2026-11-10;1.0;2;1ef847ac76eac331
+A092_p09__wind;A092_p09;wind;unspecified;;de;tagesschau.de;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;mixed;;;;;;;;none;;outlet;2;[private: 64 chars];NW;human;2026-11-10;1.0;2;d5aadb15472738ef
+A068_p20__other_renewable;A068_p20;other_renewable;;;en;The New York Times;0;0;0;1;0;0;0;0;0;1;0;0;1;0;0;0;0;0;;neutral;;;negative;neutral;;;;none;;outlet;2;[private: 79 chars];NW;human;2026-11-10;1.0;2;12fc1bdfd97622ab
+A010_p13__general;A010_p13;general;;;en;Al Jazeera;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;outlet;2;[private: 95 chars];NW;human;2026-11-10;1.0;2;7d675ebaf421ee12
+A093_p11__general;A093_p11;general;;;de;tagesschau.de;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;;;;;neutral;;;;;none;;expert;1;[private: 119 chars];NW;human;2026-11-10;1.0;2;105d3f6929227da5
+A056_p02__general;A056_p02;general;;;en;The Economist;1;0;0;0;0;0;1;1;1;0;0;0;0;0;0;0;0;0;positive;;positive;positive;;;;;;natural_gas;;expert;3;[private: 66 chars];NW;human;2026-11-10;1.0;2;9ad825ff19ab07f8
+A056_p02__solar;A056_p02;solar;;;en;The Economist;1;0;0;1;1;0;0;1;0;0;0;0;0;0;0;0;0;0;positive;positive;;positive;;;;;;natural_gas;;expert;3;[private: 60 chars];NW;human;2026-11-10;1.0;2;9ad825ff19ab07f8
+A056_p02__wind;A056_p02;wind;unspecified;;en;The Economist;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;positive;;;;;;;;natural_gas;;expert;3;[private: 56 chars];NW;human;2026-11-10;1.0;2;9ad825ff19ab07f8
+A072_p18__nuclear;A072_p18;nuclear;;;en;The New York Times;0;1;0;0;0;0;0;0;0;0;0;1;0;0;1;0;1;0;negative;;;;;negative;negative;;negative;none;;ambiguous;3;[private: 84 chars];NW;human;2026-11-10;1.0;2;3a4d360ddba67be0
+A078_p03__solar;A078_p03;solar;;;de;BR24;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;;;;positive;;;;;;fossil_generic;;ngo;2;[private: 93 chars];NW;human;2026-11-10;1.0;3;1cfa4deda1aaed1a
+A078_p03__wind;A078_p03;wind;unspecified;;de;BR24;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;;;;positive;;;;;;fossil_generic;;ngo;2;[private: 18 chars];NW;human;2026-11-10;1.0;3;1cfa4deda1aaed1a
+A060_p23__hydrogen;A060_p23;hydrogen;;green;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;;;;;;positive;;;;natural_gas;;expert;2;[private: 118 chars];NW;human;2026-11-10;1.0;3;bf6bfa17386abd08
+A048_p02__wind;A048_p02;wind;offshore;;en;The Economist;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;[private: 79 chars];NW;human;2026-11-10;1.0;3;fa316918dc582af2
+A001_p12__hydrogen;A001_p12;hydrogen;;green;de;taz;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;;;;positive;;;;;;none;;political;3;[private: 80 chars];NW;human;2026-11-10;1.0;3;afbe88dde24b4fb5
+A086_p03__general;A086_p03;general;;;de;Salzburger Nachrichten (SN.at);1;0;0;1;0;0;0;0;0;1;1;0;0;0;0;0;0;0;negative;negative;;;negative;;;;;none;;expert;2;[private: 87 chars];NW;human;2026-11-10;1.0;3;003cae87b09d3747
+A086_p03__storage;A086_p03;storage;;;de;Salzburger Nachrichten (SN.at);0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;neutral;;;neutral;;;;;none;;expert;2;[private: 80 chars];NW;human;2026-11-10;1.0;3;003cae87b09d3747
+A054_p05__general;A054_p05;general;;;en;The Economist;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;none;;outlet;3;[private: 61 chars];NW;human;2026-11-10;1.0;3;2da25c233c90ca2c
+A065_p03__general;A065_p03;general;;;en;The New York Times;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;neutral;;;;;;;coal;;outlet;2;[private: 54 chars];NW;human;2026-11-10;1.0;3;cf56bb2e27e77012
+A074_p14__nuclear;A074_p14;nuclear;;;en;The New York Times;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;mixed;;;;;positive;;;;nuclear;;outlet;2;[private: 31 chars];NW;human;2026-11-10;1.0;3;9e264cd2cd68c23b
+A092_p03__wind;A092_p03;wind;unspecified;;de;tagesschau.de;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;;positive;;;;;;positive;;none;;outlet;3;[private: 54 chars];NW;human;2026-11-10;1.0;3;369adfa2eaccaca0
+A091_p13__wind;A091_p13;wind;unspecified;;de;Süddeutsche Zeitung;1;0;0;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;neutral;neutral;;;negative;;;;;none;;outlet;2;[private: 78 chars];NW;human;2026-11-10;1.0;3;a5d488cc8e546e64
+A091_p13__other_renewable;A091_p13;other_renewable;;;de;Süddeutsche Zeitung;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;neutral;;;;negative;;;;;none;;outlet;2;[private: 38 chars];NW;human;2026-11-10;1.0;3;a5d488cc8e546e64
+A008_p09__solar;A008_p09;solar;;;de;taz;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;0;positive;;;;;positive;;neutral;;none;;unattributed;2;[private: 89 chars];NW;human;2026-11-10;1.0;3;c20673f7ef7b6188
+A072_p16__nuclear;A072_p16;nuclear;;;en;The New York Times;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;;positive;;;;positive;;;;none;;industry;2;[private: 51 chars];NW;human;2026-11-10;1.0;3;f3830ae9b024816f
+A094_p02__general;A094_p02;general;;;de;tagesschau.de;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;;;neutral;;;;;;;none;;industry;2;[private: 67 chars];NW;human;2026-11-10;1.0;3;dc54f76784c632d9
+A077_p01__general;A077_p01;general;;;en;The Washington Post;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;negative;;negative;;;;;;;none;;outlet;3;[private: 57 chars];NW;human;2026-11-10;1.0;3;458bde50429c9121
+A077_p01__solar;A077_p01;solar;;;en;The Washington Post;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;negative;;negative;;;;;;;none;;outlet;3;[private: 57 chars];NW;human;2026-11-10;1.0;3;458bde50429c9121
+A077_p01__wind;A077_p01;wind;unspecified;;en;The Washington Post;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;negative;;negative;;;;;;;none;;outlet;3;[private: 18 chars];NW;human;2026-11-10;1.0;3;458bde50429c9121
+A003_p10__wind;A003_p10;wind;unspecified;;de;taz;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;positive;;;;;;positive;positive;;none;;industry;1;[private: 85 chars];NW;human;2026-11-10;1.0;3;4ca3fad7b68ba9a3
+A001_p09__solar;A001_p09;solar;;;de;taz;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;0;;;;;;;neutral;neutral;neutral;none;;industry;2;[private: 106 chars];NW;human;2026-11-10;1.0;3;694af258975a03b5
+A053_p05__general;A053_p05;general;;;en;The Economist;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;;;;neutral;neutral;;;;;none;;outlet;2;[private: 78 chars];NW;human;2026-11-10;1.0;3;fec550a1910850f0
+A012_p11__general;A012_p11;general;;;en;Al Jazeera;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;[private: 118 chars];NW;human;2026-11-10;1.0;3;c362bedfca4dae52
+A063_p20__general;A063_p20;general;;;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;;;;;;;;;negative;none;;ngo;2;[private: 106 chars];NW;human;2026-11-10;1.0;3;a39acf99f9087b82
+A063_p20__hydrogen;A063_p20;hydrogen;;green;en;The Guardian;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;unattributed;2;[private: 111 chars];NW;human;2026-11-10;1.0;3;a39acf99f9087b82
+A053_p09__storage;A053_p09;storage;;;en;The Economist;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0;;;;;negative;;;neutral;;none;;industry;3;[private: 76 chars];NW;human;2026-11-10;1.0;3;c350174abd4722ae
+A087_p05__general;A087_p05;general;;;de;STERN.de;0;0;0;1;0;0;0;0;0;1;1;0;0;0;0;0;0;0;;negative;;;negative;;;;;none;;expert;2;[private: 56 chars];NW;human;2026-11-10;1.0;3;ad83ab087afcd2cf
+A087_p05__storage;A087_p05;storage;;;de;STERN.de;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;neutral;;;neutral;;;;;none;;expert;2;[private: 50 chars];NW;human;2026-11-10;1.0;3;ad83ab087afcd2cf
+A076_p03__wind;A076_p03;wind;offshore;;en;The New York Times;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;negative;;;;;;;;none;;outlet;2;[private: 76 chars];NW;human;2026-11-10;1.0;3;30fa6298e32fe341
+A082_p05__general;A082_p05;general;;;de;DER SPIEGEL;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;unattributed;3;[private: 72 chars];NW;human;2026-11-10;1.0;3;1256ad38a139a9b2
+A083_p02__storage;A083_p02;storage;;;de;Hamburger Abendblatt;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;neutral;;;;;;;;none;;outlet;1;[private: 98 chars];NW;human;2026-11-10;1.0;3;a75f1d24698b2c8f
+A066_p21__hydrogen;A066_p21;hydrogen;;unspecified;en;The New York Times;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;neutral;;;;;;;;other;[private: 52 chars];industry;1;[private: 82 chars];NW;human;2026-11-10;1.0;3;ad599235aca92547
+A085_p05__solar;A085_p05;solar;;;de;Neue Zürcher Zeitung;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;[private: 59 chars];NW;human;2026-11-10;1.0;3;874f170e3e879597
+A042_p10__wind;A042_p10;wind;unspecified;;de;DIE ZEIT;1;0;0;0;0;0;0;0;0;1;1;0;0;0;0;1;0;0;positive;;;;neutral;;;negative;;none;;industry;2;[private: 114 chars];NW;human;2026-11-10;1.0;3;fe3f7880078d113c
+A042_p10__storage;A042_p10;storage;;;de;DIE ZEIT;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;positive;;;;positive;;;negative;;none;;industry;2;[private: 75 chars];NW;human;2026-11-10;1.0;3;fe3f7880078d113c
+A051_p06__nuclear;A051_p06;nuclear;;;en;The Economist;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;0;;;;;;neutral;;;positive;none;;outlet;2;[private: 71 chars];NW;human;2026-11-10;1.0;3;7b1e807012c328aa
+A079_p02__wind;A079_p02;wind;unspecified;;de;Berliner Morgenpost;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;;;;;;positive;;;positive;wind;;outlet;2;[private: 81 chars];NW;human;2026-11-10;1.0;3;7fdb6d7bed03332d
+A008_p08__solar;A008_p08;solar;;;de;taz;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;1;0;;negative;positive;;;;;;negative;none;;political;2;[private: 106 chars];NW;human;2026-11-10;1.0;3;866df040efe00d30
+A008_p02__general;A008_p02;general;;;de;taz;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;neutral;;;;;;;none;;outlet;3;[private: 35 chars];NW;human;2026-11-10;1.0;3;918898bcbed8b2fd
+A008_p02__solar;A008_p02;solar;;;de;taz;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;outlet;3;[private: 75 chars];NW;human;2026-11-10;1.0;3;918898bcbed8b2fd
+A054_p11__solar;A054_p11;solar;;;en;The Economist;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;fossil_generic;;outlet;2;[private: 36 chars];NW;human;2026-11-10;1.0;3;6ef2014f3a0ec2e4
+A054_p11__wind;A054_p11;wind;unspecified;;en;The Economist;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;fossil_generic;;outlet;3;[private: 68 chars];NW;human;2026-11-10;1.0;3;6ef2014f3a0ec2e4
+A046_p07__other_renewable;A046_p07;other_renewable;;;de;Handelsblatt;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;mixed;;;;;negative;;;;multiple;[private: 34 chars];outlet;3;[private: 64 chars];NW;human;2026-11-10;1.0;3;1c0a047237132e22
+A071_p04__general;A071_p04;general;;;en;The New York Times;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;positive;;;;positive;;;;;fossil_generic;;expert;3;[private: 46 chars];NW;human;2026-11-10;1.0;3;4fd9d2512ccb504f
+A071_p04__solar;A071_p04;solar;;;en;The New York Times;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;positive;;;;positive;;;;;fossil_generic;;expert;2;[private: 82 chars];NW;human;2026-11-10;1.0;3;4fd9d2512ccb504f
+A071_p04__wind;A071_p04;wind;unspecified;;en;The New York Times;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;positive;;;;positive;;;;;fossil_generic;;expert;2;[private: 82 chars];NW;human;2026-11-10;1.0;3;4fd9d2512ccb504f
+A008_p06__solar;A008_p06;solar;;;de;taz;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;;;;;;;;;none;;outlet;3;[private: 76 chars];NW;human;2026-11-10;1.0;3;1c0edf324f77f896
+A092_p07__general;A092_p07;general;;;de;tagesschau.de;1;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;negative;;;;neutral;;;;;none;;political;2;[private: 69 chars];NW;human;2026-11-10;1.0;3;fa50436f079a65a0
+A092_p07__wind;A092_p07;wind;unspecified;;de;tagesschau.de;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;negative;;;;;;;;neutral;none;;industry;2;[private: 129 chars];NW;human;2026-11-10;1.0;3;fa50436f079a65a0
+A043_p04__other_renewable;A043_p04;other_renewable;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;[private: 65 chars];NW;human;2026-11-10;1.0;3;50c4edc32ea23bce
+A076_p01__wind;A076_p01;wind;offshore;;en;The New York Times;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;;;;;;;;mixed;;none;;outlet;2;[private: 65 chars];NW;human;2026-11-10;1.0;3;1cf8d431a35f6033
+A037_p02__solar;A037_p02;solar;;;de;BILD;1;1;1;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;negative;negative;;;negative;;;;;none;;industry;3;;NW;human;2026-11-10;1.0;3;f8eae6d0e7eb9b92
+A037_p02__wind;A037_p02;wind;unspecified;;de;BILD;1;1;1;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;negative;negative;;;negative;;;;;none;;industry;3;;NW;human;2026-11-10;1.0;3;f8eae6d0e7eb9b92
+A012_p29__general;A012_p29;general;;;en;Al Jazeera;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;positive;;;;;;;;none;;expert;3;;NW;human;2026-11-10;1.0;3;54be2dc4399e81e1
+A012_p29__solar;A012_p29;solar;;;en;Al Jazeera;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;positive;;;;;;;;none;;expert;3;;NW;human;2026-11-10;1.0;3;54be2dc4399e81e1
+A042_p02__general;A042_p02;general;;;de;DIE ZEIT;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;neutral;;;;;;;neutral;;none;;outlet;2;[private: 55 chars];NW;human;2026-11-10;1.0;3;63ad89206dd959ce
+A060_p16__hydrogen;A060_p16;hydrogen;;unspecified;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;;;;;;;;;negative;other;[private: 35 chars];expert;2;[private: 113 chars];NW;human;2026-11-10;1.0;3;e38fec4ffdd4d9f0
+A054_p17__general;A054_p17;general;;;en;The Economist;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;none;;outlet;3;;NW;human;2026-11-10;1.0;3;a9fa1d2c470fcfb5
+A054_p17__solar;A054_p17;solar;;;en;The Economist;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;[private: 39 chars];NW;human;2026-11-10;1.0;3;a9fa1d2c470fcfb5
+A054_p17__wind;A054_p17;wind;unspecified;;en;The Economist;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;3;[private: 39 chars];NW;human;2026-11-10;1.0;3;a9fa1d2c470fcfb5
+A054_p17__storage;A054_p17;storage;;;en;The Economist;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;2;[private: 74 chars];NW;human;2026-11-10;1.0;3;a9fa1d2c470fcfb5
+A067_p05__hydrogen;A067_p05;hydrogen;;unspecified;en;The New York Times;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;negative;;;;;;;;none;;outlet;3;;NW;human;2026-11-10;1.0;3;c63f11aee60f9038
+A063_p01__wind;A063_p01;wind;onshore;;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;;;;;;;negative;;;none;;outlet;2;[private: 78 chars];NW;human;2026-11-10;1.0;3;24864d72a0a80aa0
+A063_p01__hydrogen;A063_p01;hydrogen;;unspecified;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;;;;;;;negative;;;none;;outlet;2;[private: 58 chars];NW;human;2026-11-10;1.0;3;24864d72a0a80aa0
+A037_p05__general;A037_p05;general;;;de;BILD;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;[private: 63 chars];NW;human;2026-11-10;1.0;3;454373b533c02e44
+A042_p06__general;A042_p06;general;;;de;DIE ZEIT;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;negative;;;;;;;;none;;outlet;3;[private: 37 chars];NW;human;2026-11-10;1.0;3;4eab7f6c80c19896
+A069_p37__nuclear;A069_p37;nuclear;;;en;The New York Times;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;mixed;;;;;;;;none;;outlet;2;[private: 60 chars];NW;human;2026-11-10;1.0;3;5e015146d64af8c8
+A072_p36__nuclear;A072_p36;nuclear;;;en;The New York Times;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;[private: 53 chars];NW;human;2026-11-10;1.0;3;700c121a7f130871
+A085_p09__solar;A085_p09;solar;;;de;Neue Zürcher Zeitung;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;;;negative;;negative;;;;;coal;;outlet;3;;NW;human;2026-11-10;1.0;3;4a09f29576b2049a
+A085_p09__wind;A085_p09;wind;unspecified;;de;Neue Zürcher Zeitung;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;;;negative;;negative;;;;;coal;;outlet;3;;NW;human;2026-11-10;1.0;3;4a09f29576b2049a
+A077_p15__solar;A077_p15;solar;;;en;The Washington Post;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;;;negative;;negative;;;;;multiple;[private: 61 chars];outlet;2;[private: 66 chars];NW;human;2026-11-10;1.0;3;5740055ff86e85b3
+A077_p15__nuclear;A077_p15;nuclear;;;en;The Washington Post;1;0;0;1;0;0;1;0;0;1;0;0;0;0;0;0;0;0;positive;positive;positive;;positive;;;;;solar;;outlet;2;[private: 106 chars];NW;human;2026-11-10;1.0;3;5740055ff86e85b3
+A077_p15__other_renewable;A077_p15;other_renewable;;;en;The Washington Post;1;0;0;1;0;0;1;0;0;1;0;0;0;0;0;0;0;0;positive;positive;positive;;positive;;;;;solar;;outlet;2;[private: 36 chars];NW;human;2026-11-10;1.0;3;5740055ff86e85b3
+A069_p28__nuclear;A069_p28;nuclear;;;en;The New York Times;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;positive;;;;;;;;none;;outlet;2;[private: 71 chars];NW;human;2026-11-10;1.0;3;f3a726b58bfb0357
+A044_p04__solar;A044_p04;solar;;;de;DIE ZEIT;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;;positive;;;neutral;;;;;none;;outlet;2;[private: 45 chars];NW;human;2026-11-10;1.0;3;202242db3fa3ea19
+A044_p04__other_renewable;A044_p04;other_renewable;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;[private: 35 chars];NW;human;2026-11-10;1.0;3;202242db3fa3ea19
+A072_p23__nuclear;A072_p23;nuclear;;;en;The New York Times;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;1;0;;;positive;;positive;;;;positive;none;;outlet;2;[private: 107 chars];NW;human;2026-11-10;1.0;3;cb8fc05e228198b9
+A085_p10__solar;A085_p10;solar;;;de;Neue Zürcher Zeitung;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;;;negative;;;negative;;;;none;;outlet;3;[private: 64 chars];NW;human;2026-11-10;1.0;3;26f9c9286bed9a8b
+A085_p10__wind;A085_p10;wind;onshore;;de;Neue Zürcher Zeitung;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;;;negative;;;negative;;;;none;;outlet;3;[private: 56 chars];NW;human;2026-11-10;1.0;3;26f9c9286bed9a8b
+A054_p09__general;A054_p09;general;;;en;The Economist;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;coal;;expert;3;;NW;human;2026-11-10;1.0;3;8633481b6bf4f193
+A066_p19__hydrogen;A066_p19;hydrogen;;unspecified;en;The New York Times;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;;;;;;;;;hydrogen;;outlet;2;;NW;human;2026-11-10;1.0;3;ed95324f1882b455
+A088_p03__storage;A088_p03;storage;;;de;Süddeutsche Zeitung;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;;positive;;;neutral;;;;;none;;industry;3;;NW;human;2026-11-10;1.0;3;9d15e318568f62b2
+A051_p02__nuclear;A051_p02;nuclear;;;en;The Economist;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;[private: 75 chars];NW;human;2026-11-10;1.0;3;89d439d2aefcdf79
+A066_p14__hydrogen;A066_p14;hydrogen;;unspecified;en;The New York Times;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;industry;2;[private: 44 chars];NW;human;2026-11-10;1.0;3;99280bc69be6bc6e
+A070_p10__solar;A070_p10;solar;;;en;The New York Times;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;outlet;2;[private: 72 chars];NW;human;2026-11-10;1.0;3;947ca196303e7aa7
+A070_p10__wind;A070_p10;wind;unspecified;;en;The New York Times;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;outlet;2;;NW;human;2026-11-10;1.0;3;947ca196303e7aa7
+A070_p10__nuclear;A070_p10;nuclear;;;en;The New York Times;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;outlet;2;;NW;human;2026-11-10;1.0;3;947ca196303e7aa7
+A070_p10__other_renewable;A070_p10;other_renewable;;;en;The New York Times;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;positive;;;;;;;;;fossil_generic;;outlet;2;;NW;human;2026-11-10;1.0;3;947ca196303e7aa7
+A080_p02__wind;A080_p02;wind;unspecified;;de;DER SPIEGEL;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;neutral;;;;;;;;none;;industry;3;[private: 28 chars];NW;human;2026-11-10;1.0;3;1d50a7f5dab5fc17
+A088_p09__general;A088_p09;general;;;de;Süddeutsche Zeitung;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;negative;;;;;none;;unattributed;2;[private: 93 chars];NW;human;2026-11-10;1.0;3;6b414869ee56fcee
+A088_p09__storage;A088_p09;storage;;;de;Süddeutsche Zeitung;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;positive;;;;;none;;unattributed;3;[private: 43 chars];NW;human;2026-11-10;1.0;3;6b414869ee56fcee
+A049_p07__general;A049_p07;general;;;en;The Economist;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;none;;outlet;2;[private: 79 chars];NW;human;2026-11-10;1.0;3;4334dfd18b73ff00
+A049_p07__nuclear;A049_p07;nuclear;;;en;The Economist;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;;positive;;;;;;;none;;outlet;3;[private: 62 chars];NW;human;2026-11-10;1.0;3;4334dfd18b73ff00
+A049_p07__other_renewable;A049_p07;other_renewable;;;en;The Economist;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;;positive;;;;;;;none;;outlet;3;[private: 36 chars];NW;human;2026-11-10;1.0;3;4334dfd18b73ff00
+A063_p32__solar;A063_p32;solar;;;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;1;0;;;;;;;negative;;negative;none;;ngo;3;[private: 101 chars];NW;human;2026-11-10;1.0;3;3c33a8e15027807d

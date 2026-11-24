@@ -1,0 +1,36 @@
+﻿paragraph_id;article_id;lang;outlet;country;pub_date;tech_general;tech_solar;tech_wind;tech_hydrogen;tech_nuclear;tech_other_renewable;tech_storage;wind_siting;hydrogen_pathway;no_frame_present;confidence;note;annotator;annotator_type;coded_at;codebook_version;sitting;text_sha256
+A004_p01;A004;de;taz;DE;2025-02-11;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;4e8669330602e412
+A004_p02;A004;de;taz;DE;2025-02-11;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;c1a407879c5867c1
+A004_p03;A004;de;taz;DE;2025-02-11;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;7a5782011b31696c
+A004_p04;A004;de;taz;DE;2025-02-11;0;1;1;0;1;0;0;unspecified;;0;3;"Text names both onshore and offshore; frozen v1.0 vocabulary (onshore|offshore|unspecified) has no `both` value.";NW;human;2026-09-01;1.0;1;807fccb1913d1fe8
+A004_p05;A004;de;taz;DE;2025-02-11;1;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;82f0af55ee4e18c7
+A004_p06;A004;de;taz;DE;2025-02-11;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;ecb7e542ac1aa7ba
+A004_p07;A004;de;taz;DE;2025-02-11;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;58685799f8f85c1b
+A004_p08;A004;de;taz;DE;2025-02-11;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;6b9494366c534406
+A006_p01;A006;en;Al Jazeera;QA;2025-07-22;1;1;1;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;33a8195bb6b1e60a
+A006_p02;A006;en;Al Jazeera;QA;2025-07-22;1;1;1;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;9dab27695a045fa2
+A006_p03;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;213e011b5d7b723e
+A006_p04;A006;en;Al Jazeera;QA;2025-07-22;1;1;1;0;0;1;0;onshore;;0;3;;NW;human;2026-09-01;1.0;1;bfbd361a0481f017
+A006_p05;A006;en;Al Jazeera;QA;2025-07-22;0;0;0;0;0;0;0;;;;3;;NW;human;2026-09-01;1.0;1;81d3c6d9f84b0f97
+A006_p06;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;2;;NW;human;2026-09-01;1.0;1;b31d8e81013e4f8e
+A006_p07;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;2;;NW;human;2026-09-01;1.0;1;2068385f865bbd8a
+A006_p08;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;05eae64649c9bed4
+A006_p09;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;f59a273403a25264
+A006_p10;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;78785513190983a0
+A006_p11;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;784a9f59d5f68758
+A006_p12;A006;en;Al Jazeera;QA;2025-07-22;0;0;0;0;0;0;0;;;;2;It frames fossil fuels negatively and doesnt frame any study technology.;NW;human;2026-09-01;1.0;1;a08db181fbbd526a
+A006_p13;A006;en;Al Jazeera;QA;2025-07-22;0;0;0;0;0;0;0;;;;2;;NW;human;2026-09-01;1.0;1;532e07cb11036685
+A006_p14;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;ef50d35028b88106
+A006_p15;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;cd34a167035e171a
+A006_p16;A006;en;Al Jazeera;QA;2025-07-22;0;0;0;0;0;0;0;;;;2;;NW;human;2026-09-01;1.0;1;e55e48b247deff73
+A006_p17;A006;en;Al Jazeera;QA;2025-07-22;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;644a04ecb8e49d39
+A006_p18;A006;en;Al Jazeera;QA;2025-07-22;0;0;0;0;0;0;0;;;;3;;NW;human;2026-09-01;1.0;1;552c865ad0d574d8
+A006_p19;A006;en;Al Jazeera;QA;2025-07-22;0;1;1;0;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;662aba155b6d0b68
+A018_p01;A018;de;DIE ZEIT;DE;2023-03-12;1;0;1;1;0;0;1;;green;0;2;;NW;human;2026-09-01;1.0;1;3844dd464fe03125
+A018_p02;A018;de;DIE ZEIT;DE;2023-03-12;0;0;0;1;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;bc5485b538fb728d
+A018_p03;A018;de;DIE ZEIT;DE;2023-03-12;1;0;0;1;0;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;97ca1b959c5859d0
+A018_p04;A018;de;DIE ZEIT;DE;2023-03-12;0;0;0;0;0;0;0;;;;2;;NW;human;2026-09-01;1.0;1;f86558d5710b52c8
+A018_p05;A018;de;DIE ZEIT;DE;2023-03-12;0;0;1;1;0;0;0;;;0;3;That the hydrogen is green follows only from the context, so nothing is selected here.;NW;human;2026-09-01;1.0;1;7c8b8cb058b6e00b
+A018_p06;A018;de;DIE ZEIT;DE;2023-03-12;0;0;1;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;bec1d93afca937a0
+A018_p07;A018;de;DIE ZEIT;DE;2023-03-12;1;0;1;0;1;0;0;;;0;3;;NW;human;2026-09-01;1.0;1;6545300f636804ea
+A018_p08;A018;de;DIE ZEIT;DE;2023-03-12;1;1;1;1;0;1;1;;green;0;3;;NW;human;2026-09-01;1.0;1;4d829f41ce8cd7af

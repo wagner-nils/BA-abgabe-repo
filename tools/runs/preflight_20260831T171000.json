@@ -1,0 +1,283 @@
+{
+  "started_at": "2026-08-31T17:10:00.049833+00:00",
+  "ended_at": "2026-08-31T17:10:07.965318+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "sonnet": "eu.anthropic.claude-sonnet-4-6"
+  },
+  "schema_sha256": "3eb644f1fc28747a2fae8daecaef0861ba516a25ed9827599ad940e6344c2da3",
+  "cache_ttl": "1h",
+  "certified": false,
+  "n_failed": 0,
+  "n_unasserted": 2,
+  "checks": [
+    {
+      "id": "11",
+      "name": "codebook is frozen and matches its pinned hash",
+      "silent": true,
+      "ok": true,
+      "detail": "annotation/codebook/codebook-v1.0.yaml sha256=1edb4601519417de == pin",
+      "skipped": ""
+    },
+    {
+      "id": "7",
+      "name": "tool schema matches its pin and is the schema sent",
+      "silent": true,
+      "ok": null,
+      "detail": "",
+      "skipped": "`tool_schema` has no pinned sha256 in pins.json, so nothing is compared. Set both `path` and `sha256` to make this an assertion; until then the run is not certified. The stand-in schema the probe is sending hashes to 3eb644f1fc28747a."
+    },
+    {
+      "id": "12",
+      "name": "the prompt under test IS the pinned production prompt",
+      "silent": true,
+      "ok": null,
+      "detail": "",
+      "skipped": "`rendered_prompt` has no pinned sha256 in pins.json, so nothing is compared. Set both `path` and `sha256` to make this an assertion; until then the run is not certified. The codebook->prompt renderer does not exist yet (GUIDE-LLM C.1 OPEN), so everything below tests the API contract against a STAND-IN prompt and schema, not the request a reported run will send. Note that filling in a hash is not enough to turn this green: the digest must match a loadable artifact AND match what the probe actually sent."
+    },
+    {
+      "id": "1",
+      "name": "[sonnet] inference profile resolves and returns a completion",
+      "silent": false,
+      "ok": true,
+      "detail": "eu.anthropic.claude-sonnet-4-6  stopReason=end_turn",
+      "skipped": ""
+    },
+    {
+      "id": "2",
+      "name": "[sonnet] forced tool use returns a schema-valid toolUse",
+      "silent": false,
+      "ok": true,
+      "detail": "got {'technology': 'wind', 'frame_fired': True, 'evaluation': 'negative'}",
+      "skipped": ""
+    },
+    {
+      "id": "3",
+      "name": "[sonnet] stopReason is tool_use, never max_tokens",
+      "silent": true,
+      "ok": true,
+      "detail": "stopReason=tool_use",
+      "skipped": ""
+    },
+    {
+      "id": "5",
+      "name": "[sonnet] call 1 writes and call 2 reads back the SAME count",
+      "silent": true,
+      "ok": true,
+      "detail": "write == read == 10131 (ttl=1h)",
+      "skipped": ""
+    },
+    {
+      "id": "6",
+      "name": "[sonnet] cached prefix exceeds 4096 tokens",
+      "silent": true,
+      "ok": true,
+      "detail": "measured 10131 tokens -- CountTokens is not callable, so this is the only way to know",
+      "skipped": ""
+    },
+    {
+      "id": "8",
+      "name": "[sonnet] usage complete; two accountings recorded",
+      "silent": true,
+      "ok": true,
+      "detail": "{'inputTokens': 473, 'outputTokens': 69, 'cacheReadInputTokens': 10131, 'cacheWriteInputTokens': 0}  |  billable=10673 quota=473 (22.6x divergence)",
+      "skipped": ""
+    }
+  ],
+  "raw_responses": [
+    {
+      "model": "sonnet",
+      "label": "reachability",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "38d001b1-5973-4c9e-b7d5-84ab0d261bfb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 31 Aug 2026 17:10:03 GMT",
+            "content-type": "application/json",
+            "content-length": "313",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "38d001b1-5973-4c9e-b7d5-84ab0d261bfb"
+          },
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "text": "OK"
+              }
+            ]
+          }
+        },
+        "stopReason": "end_turn",
+        "usage": {
+          "inputTokens": 14,
+          "outputTokens": 4,
+          "totalTokens": 18,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 983
+        }
+      }
+    },
+    {
+      "model": "sonnet",
+      "label": "forced-tool-use",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "76dda3fd-4ab2-414d-bc9f-251e9de682c0",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 31 Aug 2026 17:10:05 GMT",
+            "content-type": "application/json",
+            "content-length": "483",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "76dda3fd-4ab2-414d-bc9f-251e9de682c0"
+          },
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_5KFA3osbW6VEf4GS36mIcZ",
+                  "name": "record_relations",
+                  "input": {
+                    "technology": "wind",
+                    "frame_fired": true,
+                    "evaluation": "negative"
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 10590,
+          "outputTokens": 69,
+          "totalTokens": 10659,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 1515
+        }
+      }
+    },
+    {
+      "model": "sonnet",
+      "label": "cache-write",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "e04a7d39-9dbf-4f7e-8c9f-b530d35e6f82",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 31 Aug 2026 17:10:06 GMT",
+            "content-type": "application/json",
+            "content-length": "539",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "e04a7d39-9dbf-4f7e-8c9f-b530d35e6f82"
+          },
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_2fVgNKc3Ro2DxZqsRF837R",
+                  "name": "record_relations",
+                  "input": {
+                    "technology": "wind",
+                    "frame_fired": true,
+                    "evaluation": "negative"
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 473,
+          "outputTokens": 69,
+          "totalTokens": 10673,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 10131,
+          "cacheDetails": [
+            {
+              "ttl": "1h",
+              "inputTokens": 10131
+            }
+          ]
+        },
+        "metrics": {
+          "latencyMs": 1495
+        }
+      }
+    },
+    {
+      "model": "sonnet",
+      "label": "cache-read",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "7ee40c98-ae6c-4de8-9e28-234e4f8d84f1",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 31 Aug 2026 17:10:07 GMT",
+            "content-type": "application/json",
+            "content-length": "489",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "7ee40c98-ae6c-4de8-9e28-234e4f8d84f1"
+          },
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_ZPdtoGY7FPF9lNCyU5KBvU",
+                  "name": "record_relations",
+                  "input": {
+                    "technology": "wind",
+                    "frame_fired": true,
+                    "evaluation": "negative"
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 473,
+          "outputTokens": 69,
+          "totalTokens": 10673,
+          "cacheReadInputTokens": 10131,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 1372
+        }
+      }
+    }
+  ],
+  "persisted_to": "/Users/nilswagner/Documents/0-University LMU/8) SoSe 2026/g) BA/llm-energy-discourse-analysis/tools/runs/preflight_20260831T171000.json"
+}

@@ -1,0 +1,285 @@
+{
+  "run_id": "ctx_v10C_a3_20261106",
+  "started_at": "2026-11-06T18:42:46.078449+00:00",
+  "ended_at": "2026-11-06T18:44:33.300295+00:00",
+  "first_call_at": "2026-11-06T18:42:50.229706+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "analysis_status": "post-review context variant",
+  "w3_authorisation": null,
+  "a3_embargo": {
+    "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+    "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "touches_a3": true,
+    "paragraphs_touched": 55,
+    "finalised": {
+      "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+      "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+    },
+    "session_manifest_sha256": "2b06db189b360ba227d5352e34b31c1d17411bc18fbba62b822105cc15965e99",
+    "committed": "tracked and clean"
+  },
+  "context_variant": {
+    "configuration": "v1.0C",
+    "decision": "Author (Nils Wagner), 2026-11-06, decision sheet D37 (context-parity run), ticked Accept against the recommendation; note, verbatim: 'das finde ich tatsächlich eine super Idee, da er im Prinzip hypothesized wird in der conclusio, dass das einer der Gründe sein könnte, weshalb [der Unterschied] stattgefunden hat. Implementiere das unbedingt.'",
+    "decision_sha256": "d665d619ad95def00f76cbaa1e9711caa5b3f08f49cf16536c2b43f4f31703ab",
+    "authority": "pre-analysis specification §4l (2026-11-06)",
+    "sample": "A3",
+    "retry_policy_version": "2",
+    "comparator": "a3_sonnet_20261019",
+    "fields": [
+      "headline",
+      "outlet",
+      "lang"
+    ],
+    "context_digest": "beeba145a171b5e0bcbc91d41927c4e95aacfa97c8aaa483cc983a173401a805",
+    "paragraphs": 55
+  },
+  "manifest": {
+    "path": "tools/annotation/labels/A3_sample_manifest.json",
+    "sha256": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "restrict_split": null,
+    "n_paragraphs": 55
+  },
+  "repeats": 1,
+  "execution_fingerprint": "4473179fad7b3910ed6819c094d75488277570d8bc12b97a50a0d6bd2836b9d0",
+  "execution_contract": {
+    "manifest_sha256": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "restrict_split": null,
+    "dev": false,
+    "a3_embargo": {
+      "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+      "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+      "touches_a3": true,
+      "paragraphs_touched": 55,
+      "finalised": {
+        "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+        "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+      },
+      "session_manifest_sha256": "2b06db189b360ba227d5352e34b31c1d17411bc18fbba62b822105cc15965e99",
+      "committed": "tracked and clean"
+    },
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 1,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "5c6f061fe370339dc7d48a61169520aace8f39b2f05fd8d63a4f4283d731e92c",
+    "instrument_sha256": "5de6db6fb2fae0e686163e0a7ed7297d4e02d2ee87b0de0bbb8ed1a755b754b1",
+    "instrument_version": "1.0C",
+    "instrument_v11_sha256": "441fe99a946e03eddea05b3134ec12168c802feca7e07ab7c816b7be869d8681",
+    "instrument_v10r3_sha256": null,
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sample_contract_sha256": "de56b57d46302fa66979a1fd7e4288a6cc154e79c1fb0ccda906fc8a833ee022",
+    "preflight_sha256": "ce9dd947ebd324b31bd737cd12d3e04c519f991bcf553073fe010936e2b00e64",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null,
+    "context_variant": {
+      "configuration": "v1.0C",
+      "decision": "Author (Nils Wagner), 2026-11-06, decision sheet D37 (context-parity run), ticked Accept against the recommendation; note, verbatim: 'das finde ich tatsächlich eine super Idee, da er im Prinzip hypothesized wird in der conclusio, dass das einer der Gründe sein könnte, weshalb [der Unterschied] stattgefunden hat. Implementiere das unbedingt.'",
+      "decision_sha256": "d665d619ad95def00f76cbaa1e9711caa5b3f08f49cf16536c2b43f4f31703ab",
+      "authority": "pre-analysis specification §4l (2026-11-06)",
+      "sample": "A3",
+      "retry_policy_version": "2",
+      "comparator": "a3_sonnet_20261019",
+      "fields": [
+        "headline",
+        "outlet",
+        "lang"
+      ],
+      "context_digest": "beeba145a171b5e0bcbc91d41927c4e95aacfa97c8aaa483cc983a173401a805",
+      "paragraphs": 55
+    },
+    "instrument_v10c_sha256": "5c1a9c0ed93005e4cb17d5ae66d7542b035e1c6359e33a1dce0166bbad86a363"
+  },
+  "git_commit": "d17af52db39a5174336e98759327c861b0d0e545",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/pipeline/compare_context.py"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/pipeline/compare_context.py"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "instrument": {
+    "name": "v1.0C",
+    "version": "1.0C",
+    "variant": null,
+    "retry_policy_version": "2",
+    "pins": "tools/pipeline/pins.json",
+    "module_sha256": {
+      "instrument.py": "5de6db6fb2fae0e686163e0a7ed7297d4e02d2ee87b0de0bbb8ed1a755b754b1",
+      "instrument_v10c.py": "5c1a9c0ed93005e4cb17d5ae66d7542b035e1c6359e33a1dce0166bbad86a363"
+    }
+  },
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_ctx_v10C_a3_20261106.json",
+    "sha256": "9a485fb24e7c362987bf760f87ce3002e0b627f6ac22fb0395c5cf8fdb4e867f",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_ctx_v10C_a3_20261106.json",
+        "sha256": "9a485fb24e7c362987bf760f87ce3002e0b627f6ac22fb0395c5cf8fdb4e867f",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-11-06T18:42:46.095761+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 59,
+    "input_tokens": 34076,
+    "output_tokens": 8319,
+    "cache_read_tokens": 254821,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "contract_invalid": 7,
+      "ok_technologies_present": 49,
+      "ok_off_topic": 3
+    },
+    "billable_tokens": 297216,
+    "quota_tokens": 34076
+  },
+  "cost": {
+    "estimated_usd": 0.333805,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5; §4k controls sonnet_req5, opus_req5 at the sonnet, opus rows); §4f 2026-10-19 provisional rows (haiku45, sonnet45, novapro, qwen3_235b, nemotron3s); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "ctx_v10C_a3_20261106_calls.jsonl": {
+      "path": "tools/runs/ctx_v10C_a3_20261106_calls.jsonl",
+      "sha256": "8349f0f49d9378e528407381f56b3e0baf288fe7f264ab669d95e612c82375a1"
+    },
+    "ctx_v10C_a3_20261106_terminal.csv": {
+      "path": "tools/runs/ctx_v10C_a3_20261106_terminal.csv",
+      "sha256": "e1fc9aa9f53827ed4fa1d048802e3d1ea0ebd5f0e9a1b623459c3e3e9042af56"
+    },
+    "ctx_v10C_a3_20261106_predictions.csv": {
+      "path": "tools/runs/ctx_v10C_a3_20261106_predictions.csv",
+      "sha256": "407811ac059c37a0d1cb3b8edb0140e69cf854426fe1f78ff9dce6a23db7b66e"
+    }
+  },
+  "raw_private": "tools/runs/raw/ctx_v10C_a3_20261106.jsonl"
+}

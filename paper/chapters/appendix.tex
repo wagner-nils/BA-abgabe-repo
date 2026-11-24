@@ -1,0 +1,719 @@
+
+\makeatletter
+\newcommand{\appfloatbarrier}{\par\begingroup\let\@elt\relax\edef\@tempa{\@botlist\@deferlist\@dbldeferlist}%
+  \ifx\@tempa\@empty\endgroup\else\endgroup\clearpage\fi}
+\newcommand{\appcaption}[2]{\let\app@origcaption\caption
+  \def\caption{\let\caption\app@origcaption\@ifnextchar[{\app@capopt{#1}{#2}}{\app@capopt{#1}{#2}[]}}}
+\long\def\app@capopt#1#2[#3]#4{\if\relax\detokenize{#2}\relax\caption[#1]{#4}\else\caption[#1]{#2}\fi}
+\long\def\app@grabto#1\app@eof{\long\gdef\app@content{#1}}
+\newcommand{\appgrab}[1]{\begingroup\everyeof{\app@eof}\expandafter\app@grabto\@@input #1 \endgroup}
+\newcommand{\appcontains}[1]{\long\def\app@test##1#1##2\app@end{\if\relax\detokenize{##2}\relax\in@false\else\in@true\fi}%
+  \expandafter\app@test\app@content#1\app@end}
+\newcommand{\appLTcaption}[2]{\let\app@origLTc@ption\LT@c@ption
+  \long\def\LT@c@ption##1[##2]##3{\app@origLTc@ption##1[#1]{#2}}}
+\long\def\app@ifcontains#1#2{\begingroup\edef\x{\endgroup\noexpand\in@{\detokenize{#2}}{\detokenize{#1}}}\x
+  \ifin@\expandafter\@firstoftwo\else\expandafter\@secondoftwo\fi}
+\newtoks\app@keep
+\long\def\app@rowloop#1\\{\app@ifcontains{#1}{app@rowend}{}{%
+  \app@ifdrop{#1}{}{\app@keep\expandafter{\the\app@keep#1\\}}\app@rowloop}}
+\long\def\app@ifdrop#1{\begingroup\edef\x{\endgroup\noexpand\in@{\app@droppattern}{\detokenize{#1}}}\x
+  \ifin@\expandafter\@firstoftwo\else\expandafter\@secondoftwo\fi}
+\long\def\app@ltsplit#1\endlastfoot#2\end#3\app@stop{\app@keep{}\app@rowloop#2\app@rowend\\%
+  \expandafter\app@ltout\expandafter{\the\app@keep}{#1}{#3}}
+\long\def\app@ltout#1#2#3{#2\endlastfoot#1\end#3}
+\newcommand{\appdroprows}[1]{\edef\app@droppattern{\detokenize{#1}}\expandafter\app@ltsplit\app@content\app@stop}
+\ExplSyntaxOn
+\cs_new_protected:Npn \appreplace #1#2 { \regex_replace_all:nnN {#1} {#2} \app@content }
+\ExplSyntaxOff
+\newcommand{\appthousands}{\appreplace{over\ 2000\ }{over\ 2\cB\{,\cE\}000\ }}
+\newcommand{\appinput}[1]{\appgrab{#1}\appthousands\app@content}
+\newcommand{\appkeepheads}{\appreplace{\cE\}\cE\}\ *\c{\\}}{\cE\}\cE\}\c{\\}*}\appreplace{\c{\\}\ *\c{midrule}}{\c{\\}*\c{noalign}\cB\{\c{nobreak}\c{vskip}2pt\c{hrule}\ height\ 0.5pt\c{nobreak}\c{vskip}2pt\c{nobreak}\cE\}}}
+\newcommand{\appout}{\app@content}
+\newcommand{\appneedspace}[1]{\par\begingroup\setlength{\dimen@}{#1}\vskip\z@\@plus\dimen@\penalty-100
+  \vskip\z@\@plus-\dimen@\vskip\dimen@\penalty9999\vskip-\dimen@\vskip\z@skip\endgroup}
+\begingroup
+\renewenvironment{table}[1][]{\par\addvspace{\intextsep}\noindent\begin{minipage}{\linewidth}\def\@captype{table}%
+  \let\footnotesize\scriptsize\let\small\footnotesize}%
+  {\end{minipage}\par\addvspace{\intextsep}}
+\makeatother
+
+\noindent Several generated tables below keep the short labels of the analysis code. Table~\ref{tab:label_key} gives the term of the main text for each.
+
+\begin{table}[htbp]\centering\footnotesize
+\caption[Key to the labels of the analysis code]{Key to the short labels of the analysis code and their terms in the main text.}\label{tab:label_key}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{36mm}>{\raggedright\arraybackslash}p{112mm}@{}}
+\toprule
+\textbf{Label in a table} & \textbf{Term in the main text} \\
+\midrule
+A0, A0b; A1 & calibration sessions; development split \\
+A2; A2R; A2R2 & evaluation sample (120 paragraphs); the coder's registered blind re-code of 40 of them (wave 1); the supplementary re-code of the other 80 (wave 2) \\
+A3; fresh sample & fresh census (55 paragraphs of ten articles) \\
+score~A & matched-frame accuracy (evaluation) or matched-row accuracy (comparison target) \\
+score~B & end-to-end F1 \\
+DSL estimate & adjusted prevalence (design-based supervised learning, Equation~\eqref{eq:dsl_estimator}) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Studies That Shaped the Design}\label{app:literature}
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{26mm}>{\raggedright\arraybackslash}p{38mm}>{\raggedright\arraybackslash}p{48mm}>{\raggedright\arraybackslash}p{38mm}@{}}
+\caption[Studies that shaped the design]{Studies that shaped the design, by stream: the material and method, the finding this thesis relies on, and what was taken from it.}\label{tab:literature} \\
+\toprule
+\textbf{Study} & \textbf{Material and method} & \textbf{Finding relied on} & \textbf{Taken into this thesis} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Study} & \textbf{Material and method} & \textbf{Finding relied on} & \textbf{Taken into this thesis} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{4}{@{}l}{\emph{Media framing of energy technologies}} \\
+\textcite{stephens2009windmedia} & 678 wind-power articles, three United States newspapers, 1990--2007; manual framing & aesthetic-risk frame in 44, 14 and 6\% of the papers' articles; the political frame dropped for failing reliability; 129 of 678 articles (19\%) link wind to climate & frames differ by place; evaluation coded separately from the frame; reliability reported per element, not used to drop one \\
+\textcite{rochyadireetz2019framing} & 1{,}772 articles, eleven democracies; Entman's frame elements; cluster analysis & positive frame dominant in every country, Germany least positive; reliability described only procedurally & element-based coding; storage and transmission as subjects in their own right \\
+\textcite{ali2025hydrogenframing} & 2{,}292 hydrogen articles, four countries; 61 frame components; factor analysis & agreement reported only as one average over all elements; 25.3\% of variance explained; rare elements excluded & a fixed element-to-frame mapping instead of factor analysis \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Computational analysis of energy and climate discourse}} \\
+\textcite{toetzke2022energydiscourse} & about five million articles, fourteen outlets, seven countries; planned translation to English; paragraph-level classifiers & design only (workshop slides); 27 context labels from the literature and an expert study & the paragraph as coding unit; keyword matching to technologies; its labels related to the frames (Table~\ref{tab:frame_crosswalk}) \\
+\textcite{guo2023openframing} & 1{,}300 English and 350 German headlines; one classifier per language & precision 0.83 and 0.73; frame distributions compared across languages without a bilingual test & one instrument validated per language on a bilingual sample \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Large language models as annotators}} \\
+\textcite{gilardi2023chatgpt} & 6{,}183 texts; zero-shot ChatGPT against crowd workers and trained annotators & on average about 25 points more accurate than the crowd; raw agreement only; human coding of the 14 policy frames in news articles unsuccessful & the codebook as the prompt; agreement reported beyond raw percentages \\
+\textcite{alizadeh2025opensource} & the same group's tweets and news articles; GPT-3.5, LLaMA and FLAN fine-tuned on 50--1{,}500 texts, GPT-4 zero-shot as comparison & fine-tuned open-weight models match or surpass zero-shot GPT-3.5 and GPT-4, FLAN and LLaMA-1 coming close to zero-shot GPT-3.5 at about 250 texts; few-shot prompting inconsistent; recommend at least two runs with reported agreement and decoding at zero or low temperature & the labels spent on measurement rather than fine-tuning; repeated executions with an agreement statistic \\
+\textcite{ziems2024css} & 25 English benchmarks, thirteen models & rarely beat fine-tuned RoBERTa baselines; in four analysed tasks, many errors from preferring the most generic label; results averaged over paraphrased prompts & one fixed prompt; per-class reporting \\
+\textcite{reif2024labelbias} & 279 classification tasks, ten open-weight models; bias measured directly & a preference for certain labels regardless of the input, substantial after standard calibration and few-shot fine-tuning; anti-correlated with performance across demonstration sets & label bias as one possible, untested mechanism of the recall deficit; the aggregate corrected, not the instrument \\
+\textcite{lupo2024humanlevelcoding} & Swedish policy documents; three hierarchical codebook tasks & full definitions with fifteen examples best; joint coding of interdependent labels at almost a third of the cost; the model's codes close to those of an average human coder & full definitions rendered into the prompt; one joint call per paragraph \\
+\textcite{toernberg2025outperform} & social-media posts, eleven countries; one English prompt & highest accuracy in every country in point estimate, not significantly so in all; lower accuracy in multi-party systems, not fully explained by language & one untranslated instrument; no claim about a language effect \\
+\textcite{pangakis2025humansintheloop} & 27 tasks from eleven datasets; GPT-4 & median F1 0.707, a third of the tasks below 0.5 on precision or recall; a 250-item development subset and 1{,}000 held-out items; temperature without notable effect in the seven tasks tested & a development split and one evaluation sample; stability measured, not tuned \\
+\textcite{atreja2025whatsinaprompt} & four tasks including news frames; sixteen prompts, four models & definitions raise news-frame accuracy (GPT-3.5, GPT-4o, PaLM 2); asking for an explanation has a mixed effect; news frames 0.75 accuracy, 0.71 macro-F1 for GPT-4o & definitions rendered; the explanation field tested as a variant, not assumed \\
+\textcite{hohenwalde2025chatgptactors} & German news, actor categories; GPT-3.5 and GPT-4 models at temperature 0 & the human codebook alone insufficient, decomposition helped; 100 development and 200 test articles; team $\alpha = .63$ (.77 after merging the science categories) & the German benchmark for a single reference; the split precedent \\
+\textcite{baumann2025llmhacking} & 37 tasks, eighteen models, 2{,}361 hypotheses & wrong conclusions in about 31\% of hypotheses for state-of-the-art models and about half for small ones; a frame task among the riskiest for some models; for controlling false positives, 100 human labels beat 100{,}000 model labels & a configuration fixed in advance, one reported run, a human reference \\
+\textcite{enomoto2025fairtranslationese} & instructions with translationese removed & which instruction language works better varies with the task and the language of the labels & no claim from the German--English difference \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Validation and aggregates}} \\
+\textcite{song2020validations} & review of validation practice; simulation & less reliable human labels distort estimated performance, mostly downward; more than 1{,}300 items (1\% of a simulated 130{,}000-article corpus) advised at $\alpha \geq 0.7$ & the reference's temporal stability measured and reported; the sample size named as a limit \\
+\textcite{egami2023dsl} & design-based supervised learning estimator & predicted-label estimates valid only under restrictive error assumptions; correction from a human-coded probability sample & a probability sample with design weights; the correction as a declared exploratory analysis only \\
+\textcite{angelopoulos2023ppi} & prediction-powered inference; seven applications in six scientific domains & valid intervals from predictions plus a small gold set, for any predictor; no gain when predictions are poor or the unlabelled set is small relative to the gold set & the design-based interval of the exploratory estimate; the expected gain stated per class \\
+\textcite{linder2026multicalibrated} & one language model against expert-coded topic labels; four countries, four languages & per-language AUC 0.983--0.994 of the probability scores, yet biased prevalences from standard estimators; counted binary labels (AUC 0.960) biased by 1.6 to 4.8 points; about 13{,}400 calibration labels & aggregate displacement as a registered quantity \\
+\textcite{pontiki2014semeval,pontiki2016semeval} & SemEval aspect-based sentiment tasks & set-valued scoring: precision over returned, recall over gold annotations; polarity scored on gold aspects & matched-frame accuracy and end-to-end F1; the value \emph{mixed} (from the 2014 task) \\
+\textcite{card2020littlepower} & power analysis for NLP evaluation & on a 147-item test set with a 94.5\% baseline, the smallest gain detectable at 80\% power is about 5.3 points & no small-difference claims from 32 or 55 paragraphs \\
+\textcite{halterman2026codebookllms} & three political-science codebooks; label-free behavioural tests & label-set compliance and category-order sensitivity tested before accuracy & instrument checks named for a later version \\
+\addlinespace
+\multicolumn{4}{@{}p{156mm}@{}}{\scriptsize Read as preprints \parencite{gilardi2023chatgpt,jumle2024findingframes,lupo2024humanlevelcoding,nemkova2025annotationskills,xing2024crosslingualinconsistency,hasan2026englishrewrites,liang2025multilingualbehaviour,linder2026multicalibrated,baumann2025llmhacking,reif2024labelbias}; \textcite{toetzke2022energydiscourse} was consulted as workshop slides; its design, its planned steps and its corpus figures are taken from them.} \\
+\end{longtable}
+\endgroup
+
+\subsection{Corpus and Registry}\label{app:corpus_details}
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{30mm}>{\raggedright\arraybackslash}p{124mm}@{}}
+\caption[Corpus collection, exclusions and registry]{Corpus collection, exclusions and registry. The frame and sample counts are in Table~\ref{tab:corpus} and Figure~\ref{fig:sample_flow}.}\label{tab:corpus_facts} \\
+\toprule
+\textbf{Item} & \textbf{Record} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Item} & \textbf{Record} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Collection & Without a database, assisted by Claude Code (overview of tools used, part~B), 3 August to 2 September 2026. Batches 1--4: 35 articles retrieved on 3 and 4 August through web search and the author's browser sessions (paywalled outlets through the author's subscriptions, The Economist through the university's licence). Batch 5: 60 browser prints supplied by the author and transcribed on 1 and 2 September, with optical character recognition for raster prints; each print is kept beside its transcript. \\
+Database route & Factiva explored, not used (Table~\ref{tab:topic_requirements}). The licence position relayed on 1 October 2026 (ETH Zurich library: automated queries under the academic Factiva licence are not permissible) closes that route. \\
+Selection cases & The collection brief asked for at least one article per case that breaks an extraction pipeline; articles per case (an article may serve several): evaluation voiced by a quoted source 35; mixed or neutral evaluation 29; several technologies with conflicting evaluations 23; procedural reporting without a frame 20; nuclear energy against renewables 5; energy security without a stated mechanism 3. \\
+Manifest & Outlet, country, language, publication date, headline, canonical URL and retrieval date for each of the 95 articles; publication dates from 28 February 2023 to 2 September 2026, 57 articles from 2026. \\
+Segmentation & Body prose split into paragraphs of at least 15 words: 1,047 paragraphs (686 English, 361 German) from the 74 articles with body prose. \\
+Exclusions & 21 articles without body prose (19 extracts, 2 metadata only). Article A011, one paragraph of which is quoted in the prompt, is excluded from the frame. Reserve candidates with a marked transcription gap (18) are excluded from the frame; all 26 paragraphs with a gap stay in the registry, flagged. \\
+Prefilter & A keyword prefilter over the seven technologies, tuned for recall, marks 696 paragraphs (66\%) as candidates; it decides frame membership only and was hidden from the coder, with one exception (Table~\ref{tab:disclosures}). \\
+Registry & Each paragraph has an immutable identity (article, paragraph, hash of the segmented text). Three closed corpus versions: 198 identities (29 August), 679 and 170 (2 September); each binds the hashes of its input files, generator code and interpreter, so later drift is detected. Splits are read from an append-only, hash-chained assignment log, never recomputed. A containment check with eight-word shingles at a threshold of 0.15 guards against re-entry under a new identity; its quarantine is empty. \\
+Splits & Calibration 20 (A0) and 12 (A0b), development 32 (A1), reserve 983. The development session coded 35 paragraphs: the 32 of its split and three that the registry assigns to A0b. \\
+Freeze and draw & Freezing the frame appended a terminal registry event whose reference is the frame manifest's digest; nothing can enter the reserve afterwards. Allocation proportional to stratum size within language, largest remainder, cap of 24 per outlet (binding only for The New York Times, 24 of 184); within a stratum, paragraphs sorted by text digest and drawn with seed 20260905. The registered re-code drew 20 paragraphs per language with seed 20260906. \\
+Sample dates & Paragraphs from 2026, 2025, 2024 and 2023: 70, 36, 8 and 6 (articles 35, 13, 5 and 3 of 56); time is not a stratum, and no per-period figure is reported. \\
+\end{longtable}
+\endgroup
+
+\input{tables/tab_corpus_outlets}
+
+\subsection{Requirements of the Topic Description}\label{app:topic_requirements}
+
+Table~\ref{tab:topic_requirements} traces each requirement of the topic description to its status in this thesis, with the reason and the place where the thesis documents it.
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{32mm}>{\raggedright\arraybackslash}p{14mm}>{\raggedright\arraybackslash}p{106mm}@{}}
+\caption[Requirements of the topic description]{Requirements of the topic description: delivered, changed or not done, with the reason and where the thesis documents it.}\label{tab:topic_requirements} \\
+\toprule
+\textbf{Requirement} & \textbf{Status} & \textbf{Reason; where} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Requirement} & \textbf{Status} & \textbf{Reason; where} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{3}{@{}l}{\emph{Data source and retrieval}} \\
+Multilingual retrieval; Factiva preferred, otherwise e.g.\ GDELT & changed & Hand collection by keyword search instead of a database route: 95 articles, 3 August to 2 September 2026 (Table~\ref{tab:corpus_facts}). Kept on the supervisor's advice of 10 September 2026. Factiva was explored but could not be used: the licence excluded automated queries (bulk retrieval, below). GDELT was not used: it may provide only links, headlines or excerpts, as the topic description notes, whereas the coding unit is the body paragraph. \\
+Coverage: countries, outlets, languages, years & changed & Set by the hand collection, not by a database: outlet, country, language and publication date are recorded for each article (Appendix~\ref{app:data_dictionary}). \\
+Reproducible bulk retrieval & not done & Clarified on 1 October 2026, after the frame freeze: automated queries under the academic licence are not permissible. A comparison of six aggregator databases reports a 100-article download limit for Factiva and Nexis Uni and extra cost for APIs where offered \parencite{gilbert2024newsaggregators}. Instead, the registry's closed corpus versions make the hand-collected corpus reproducible, not its retrieval. \\
+Full-text storage & not clarified & Not clarified, for a database or for the texts collected by hand: the study records document no basis for storing them. As a precaution they are kept outside the repository, which withholds article and paragraph text (Appendix~\ref{app:electronic}). \\
+Processing by an external LLM & not clarified & No basis for processing the hand-collected texts with an external provider is documented in the study records; the author's routing approvals do not establish copyright or contractual permission. Under the author's own data rule, article text stays on the EU route of Amazon Bedrock, which the registered run used (Table~\ref{tab:model_config}). Later steps outside that route, each authorised by the author, are listed in Section~\ref{subsec:limitations_future}, Tables~\ref{tab:disclosures} and~\ref{tab:deviations} and Item D.1 of the checklist (Appendix~\ref{app:guide_llm}). \\
+Redistribution restrictions & not clarified & Complete articles and paragraphs are not shared; the repository holds identifiers, labels and metadata. The frozen codebook files and the prompt carry short quotations from calibration paragraphs (Appendix~\ref{app:instrument}); whether these may be redistributed was not clarified. \\
+\multicolumn{3}{@{}l}{\emph{Corpus preparation}} \\
+Cleaning & delivered & Body prose kept, with optical character recognition for raster prints; 21 articles without body prose excluded; 26 paragraphs with a marked transcription gap flagged in the registry (Table~\ref{tab:corpus_facts}). \\
+Deduplication & delivered & A containment check with eight-word shingles at a threshold of 0.15 guards against a duplicate re-entering under a new identity; its quarantine is empty (Table~\ref{tab:corpus_facts}). \\
+Metadata & delivered & Outlet, country, language, publication date, headline, canonical URL and retrieval date for each article (Appendix~\ref{app:data_dictionary}). \\
+Segmentation: paragraphs, possibly with headline and limited context & changed & Paragraphs of body prose with at least 15 words: 1,047. The coder saw headline, outlet and language, the model the paragraph alone; giving the model these lines was tested later (Appendix~\ref{app:later_checks}). \\
+\multicolumn{3}{@{}l}{\emph{Extraction}} \\
+Relevant passages & delivered & A keyword prefilter over the seven technologies marks 696 candidate paragraphs for the frame, and the model can return a paragraph as off topic. Screening was not evaluated, because every sampled paragraph passed the prefilter. \\
+Technologies & changed & Seven categories: those of the topic description plus storage (Table~\ref{tab:literature}); the hydrogen production pathway is retained in its own field (Appendix~\ref{app:data_dictionary}). \\
+Frames & changed & Nine frames instead of five: the five of the topic description, three added after the first calibration session (technical feasibility, siting, regulation) and a residual, built from 17 elements by a fixed mapping (Table~\ref{tab:codebook_elements}). \\
+Evaluation: positive, negative, neutral, mixed or uncertain & changed & Positive, negative, neutral and mixed (Table~\ref{tab:literature}); ``uncertain'' is replaced by the coder's confidence rating, recorded on every row but not analysed. \\
+Multilingual LLM extraction; prompt and output structure & delivered & One untranslated instrument for both languages: the frozen codebook rendered as the system prompt, the paragraph as the only user message and one forced tool call with a pinned schema (Appendix~\ref{app:instrument}). \\
+Handling of uncertainty & changed & No uncertainty value and no abstention for doubt: off topic and a technology without a frame are negative classifications. Refusals and failed outputs are recorded as such, three executions measure instability, and the coder's confidence rating is recorded as above. \\
+\multicolumn{3}{@{}l}{\emph{Validation}} \\
+Manually annotated sample of suitable size & delivered & A probability sample of 120 paragraphs from 56 articles coded by one coder (the first coding) and re-coded with the first labels hidden, 40 before the model run (the registered re-code) and 80 after the results were known (together the second coding), and a fresh census of 55 paragraphs (Figure~\ref{fig:sample_flow}); the single coder and the sample size are limits. \\
+Across languages and technologies & delivered & Agreement reported per language as well as pooled, and F1 per technology (Table~\ref{tab:per_value}). \\
+Across countries and periods & not done & Outlets are nested in countries, and time is not a stratum; the 120 paragraphs give too few per country or period for a figure (8 and 6 from 2024 and 2023; Table~\ref{tab:corpus_facts}). A sample stratified by country or period would allow it. \\
+\multicolumn{3}{@{}l}{\emph{Time frame, data structure and scope}} \\
+Time frame from 1 January 2023 & changed & Publication dates from 28 February 2023 to 2 September 2026, as found by the purposive hand collection; later months can be added as new corpus versions of the registry (Appendix~\ref{app:data_dictionary}). \\
+Structure for added countries and months; aggregation by country, outlet, technology, frame and month & delivered & The records carry every key (Appendix~\ref{app:data_dictionary}). No aggregate by these keys is reported, because the corpus is a purposive collection; the adjusted prevalences describe the frozen frame only (Appendix~\ref{app:dsl_details}). \\
+Prototype that can be scaled & delivered & One registered run of 360 executions took 12.5 minutes at an estimated USD 2.18 (Appendix~\ref{app:detailed_results}); scaling is discussed in Section~\ref{subsec:managerial_implications}. \\
+Effect of the 2024 United States election & not done & Out of scope, as the topic description states. \\
+\end{longtable}
+\endgroup
+
+Table~\ref{tab:frame_crosswalk} gives the origin of each frame. The five frames of the topic description were related to the two inventories of Section~\ref{subsec:framing} before calibration. The other three were added after the first calibration session, in which 9 of 20 paragraphs fitted no element; no category-level derivation from the inventories was recorded for them.
+
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption[Origin of the nine frames]{Origin of the nine frames: the topic description's wording, the context labels of \textcite{toetzke2022energydiscourse} and the dimension of the Policy Frames Codebook \parencite{boydstun2020policyframes} to which each of its five frames was related, and the frames added later.}\label{tab:frame_crosswalk}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{18mm}>{\raggedright\arraybackslash}p{38mm}>{\raggedright\arraybackslash}p{52mm}>{\raggedright\arraybackslash}p{38mm}@{}}
+\toprule
+\textbf{Frame} & \textbf{Origin} & \textbf{Context labels of Toetzke et al.} & \textbf{Policy Frames Codebook} \\
+\midrule
+Costs & topic description: costs and affordability & technology cost and price & Economics \\
+Jobs & topic description: jobs, investment, and the economy & employment; private investment; public finance and investment & Economics; Capacity and Resources \\
+Climate & topic description: climate and emissions & greenhouse gas emissions; climate change & no counterpart \\
+Security & topic description: energy security and independence & energy security; trade & Security and Defense \\
+Reliability & topic description: reliability and system integration & technology efficiency; technology characteristics; infrastructure & Capacity and Resources \\
+Feasibility, Siting, Regulation & added after the first calibration session (codebook v0.2) & none recorded; the three recur in manual studies (Section~\ref{subsec:stream_framing}) & none recorded \\
+Other & residual, with a required note & --- & its residual category \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Output Records and Aggregation Keys}\label{app:data_dictionary}
+
+Table~\ref{tab:data_dictionary} lists the output files and their fields. Joining \texttt{paragraph\_id} and its \texttt{article\_id} with the corpus manifest gives every record its outlet, country, language and publication date. Frames are derived from the element indicators by the fixed element-to-frame mapping, and the month from the publication date.
+
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption[Output records and aggregation keys]{Output records and their fields: the prediction and terminal files of every run and the corpus manifest, with the unit of one row in parentheses.}\label{tab:data_dictionary}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{38mm}>{\raggedright\arraybackslash}p{114mm}@{}}
+\toprule
+\textbf{File (one row per)} & \textbf{Fields} \\
+\midrule
+Predictions, \modelid{<run_id>_predictions.csv} (technology record of an execution) & \texttt{run\_id}; \texttt{run\_index}; \texttt{paragraph\_id}; \texttt{technology}; \texttt{wind\_siting}; \texttt{hydrogen\_pathway}; \texttt{F1a} \ldots{} \texttt{F9} (the 17 element indicators); \texttt{no\_frame\_for\_this\_tech}; \texttt{eval\_costs} \ldots{} \texttt{eval\_other} (one evaluation value per frame); \texttt{comparison\_target} \\
+Terminal outcomes, \modelid{<run_id>_terminal.csv} (execution of a paragraph) & \texttt{run\_id}; \texttt{run\_index}; \texttt{paragraph\_id}; \texttt{lang}; \texttt{outcome}; \texttt{n\_attempts}; \texttt{codes}; \texttt{resolved\_from\_attempt}; \texttt{episode}; \texttt{gate} \\
+Corpus manifest, \modelid{manifest.csv} (article) & outlet, country, language, publication date, headline, canonical URL, retrieval date \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A new month is appended through the registry: its articles enter as a new closed corpus version, with immutable paragraph identities and an append-only, hash-chained assignment log, so earlier records stay unchanged. The frozen frame and samples do not change; prevalences for new months therefore need their own frame and a fresh human-coded sample.
+
+\subsection{Disclosures about the Reference}\label{app:reference_disclosures}
+
+\begingroup\appcaption{Annotation sessions}{}\input{tables/tab_sessions}\endgroup
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{36mm}>{\raggedright\arraybackslash}p{64mm}>{\raggedright\arraybackslash}p{52mm}@{}}
+\caption[Disclosures about the reference]{Disclosures about the reference: what happened, how it was handled, and what it means for the reported figures. The labels are recorded with the label files.}\label{tab:disclosures} \\
+\toprule
+\textbf{What happened} & \textbf{How it was handled} & \textbf{Consequence for the figures} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{What happened} & \textbf{How it was handled} & \textbf{Consequence for the figures} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Discarded first attempt (week before 25 September 2026): the build of the coding interface then in use displayed keyword-derived technology suggestions, the prefilter's lexicon, beside the paragraph & Attempt discarded; no label used or carried over; its export opened by the coder only. Interface rebuilt without any suggestion, highlighting, default or pre-selection; first pass coded anew from blank sheets & The exposure on the paragraphs seen cannot be undone; it could raise technology agreement; treated as a limitation \\
+Shortened washout: registered 14 days, so the re-code was admissible from 22 October 2026 & Author's decision of 12 October to recover schedule; re-coded on 13 October, five days after the last first-coding date; the evaluator applied a minimum of four days and records both values & The coder's $\alpha$ may be inflated by recall; limited evidence of temporal stability, not a bound on a 14-day result \\
+One exported first-pass row carried a screening value on a paragraph naming no studied technology, where the value is undefined & Cleared before finalisation; correction recorded with the label file & None \\
+Six paragraphs screened as framed while every one of their second-pass rows is unframed & The second pass governs frames and evaluations; the screening flag enters no metric; cases not re-read & None \\
+The general category admits two readings: per statement (a bundle term beside named technologies yields an extra row) or as a residual & The first coding follows the per-statement reading (40 of 120 paragraphs, 22 of them beside an individual technology); the prompt carries the same definition; codebook unchanged & Under the residual reading the general category's F1 (0.827) and displacement ($-4.7$ points) would shift \\
+Fresh census (14 October): after setting first-pass labels, the author put a consistency question about the general category to a language-model assistant outside the pipeline & The assistant read the working sheet and the finalised evaluation labels, reported counts and recommended no label; no label was changed & None on the labels; census text reached the assistant's provider outside the Bedrock EU route \\
+Fresh census, second pass (19 October): the export left the comparison target blank on ten rows, all marked as carrying no frame & Set to none by the coding agent on the author's written instruction that the blanks mean none; checked cell by cell against the export, which is kept & None on technologies, elements or evaluations; the census comparison-target figures use the completed cells \\
+Re-reading of 45 sampled missed elements (returned 9 November): the coder saw the model's output beside each missed element & The coder judged every item alone, in a separate sheet with fixed categories (\S4l (6)). Afterwards, on the author's instruction, the coding agent set two categories that contradicted the coder's own note to borderline; no reference label changed & None on the labels or any registered figure; the counts are a non-blind judgement (Appendix~\ref{app:later_checks}) \\
+A development-set sheet exported by the coding interface with a model's labels in the human slot & Quarantined outside the annotation flow; never entered a label file & None \\
+The coding assistant handled exported sheets that carry paragraph text (census second pass, supplementary re-code) and, in the checks of November, local files with paragraph text & What exactly was read, and over which route, was not recorded for the label edits; the assistant's provider lies outside the Bedrock EU route & None on the labels; further exposure of paragraph text to that provider is likely and is not itemised \\
+The coding interface is not archived in any build & Its written specification (no suggestion, highlighting, default or pre-selection) is kept with the label files & Its behaviour and data flow cannot be reconstructed independently \\
+Supplementary re-code (wave 2, 10 November): coded after the registered results and the re-reading of misses, 25 of whose paragraphs it contains; its declaration (\S4n) and labels entered the repository in one commit (\texttt{6fe59fe}), so their order rests on the specification's record & Declared beforehand (\S4n); the 25 kept by the author's decision and reported with and without; on eight unframed rows the blank comparison target set to none by the agent, as in the first wave; no reference label changed & None on the registered figures; analyses using this re-code are exploratory; it may lean towards the model's reading \\
+\end{longtable}
+\endgroup
+
+\subsection{Evaluator Conventions}\label{app:evaluator_conventions}
+
+Table~\ref{tab:conventions} lists the conventions the evaluator applies. Macro averages are taken over the classes $C^{+}$ with positive reference support in the population scored, pooled or one language; with design-weighted per-class scores $F_{1,c}^{w}$, the macro-F1 is
+\begin{equation}
+F_1^{\mathrm{macro}} = \frac{1}{|C^{+}|} \sum_{c \in C^{+}} F_{1,c}^{w}.
+\label{eq:macrof1}
+\end{equation}
+For the registered model comparisons, intervals recompute the statistic $T$ on article resamples drawn with replacement. Article multiplicities $m_a^{(b)}$ multiply the paragraph design weights $w_i$, so that
+\begin{equation}
+\begin{aligned}
+T^{(b)} &= T\bigl(\{\,m_{a(i)}^{(b)}\, w_i\,\}\bigr), \qquad B = 2{,}000, \\
+\mathrm{CI}_{95} &= \bigl[\,q_{0.025}(T^{(1)}, \dots, T^{(B)}),\; q_{0.975}(T^{(1)}, \dots, T^{(B)})\,\bigr],
+\end{aligned}
+\label{eq:resample}
+\end{equation}
+where $a(i)$ is the article of paragraph $i$ and $q_p$ the $p$-quantile of the $B$ resampled values.
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{27mm}>{\raggedright\arraybackslash}p{80mm}>{\raggedright\arraybackslash}p{45mm}@{}}
+\caption[Evaluator conventions]{Evaluator conventions: the situation, the rule the evaluator applies, and its effect on the reported figures.}\label{tab:conventions} \\
+\toprule
+\textbf{Situation} & \textbf{Rule} & \textbf{Effect} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Situation} & \textbf{Rule} & \textbf{Effect} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Weighting & Model agreement and displacement use paragraph design weights $w_i = 1/\pi_i$; unweighted figures are also retained. The coder's $\alpha$, raw agreement and reported support counts are unweighted. On the 40-paragraph re-code, the common one-third selection probability within each language cancels in the design-weighted ratios & Full-sample weighted estimates target the 618-paragraph eligible frame, not the 1{,}047-paragraph corpus \\
+Technologies and elements & Micro-F1 over (paragraph $\times$ technology) units and (paragraph $\times$ technology $\times$ element) tuples on the outer join over every sample paragraph & The headline quantities \\
+Matched units (matched-frame and matched-row accuracy; score~A) & Evaluation: accuracy and per-value F1 over (paragraph, technology, frame) units both sides fired; comparison target: over (paragraph, technology) rows both sides named; excluded rows and frames are counted & Conditional on detection; post hoc, because a stateless call cannot be handed the reference frames \\
+End to end (end-to-end F1; score~B) & (paragraph, technology, frame, value) and (paragraph, technology, target) tuples compared as sets: a true positive only if identical, a missing row or frame a false negative, an invented one a false positive & A missed frame lowers end-to-end F1 but not matched-frame accuracy \\
+Exact match & The whole relation row agrees in every field; point estimate & Secondary \\
+Macro averages & Equation~\eqref{eq:macrof1}; class sets frozen once from the final reference labels in a class manifest per dimension, language and table; undefined over fewer than two supported classes. A per-language macro uses that language's own set: for the elements, 16 classes each, 15 of them shared, so the two macros are not on one class set & Unstable over rare classes; the defined-class counts over the resamples are electronic (Appendix~\ref{app:electronic}) \\
+Macro inside a resample & A class with zero support and zero predictions drops out (available-class macro-F1, with the count of defined classes); zero support with predictions gives F1 = 0 and stays; false positives always enter the micro counts & The macro interval is over available classes \\
+Intervals & Equation~\eqref{eq:resample}: articles resampled within language for a per-language figure, over all sampled articles for a pooled one, never within outlet & Descriptive; no finite-population coverage guarantee is claimed \\
+Reportability & Sealed threshold $s = 5$, fixed blind on 7 September 2026 (commit \texttt{7c61b3d}). Support unit: agreement tables, the unweighted reference row (an evaluation value: the frame-bearing reference unit; matched accuracy: the matched unit); displacement, the paragraph carrying the class; reliability, the aligned unit the first coding marks positive (categorical items: the unit inside the applicability mask) & A cell below $s$ prints $n<s$ with its support; the class stays in the macro set; single-article support is marked \\
+Seal & The evaluator refuses a threshold that differs from the seal, a seal rewritten after its first commit, or one not committed before the first coded reference row, and records the seal's digest & The threshold could not follow the labels; the digest was also sent to the supervisor on 15 September \\
+Undefined values & Per-class F1 with zero support and zero predictions; $\alpha$ when all ratings agree without variation; an empty matched intersection, a macro set without a defined class, a resample without a unit at a level & Printed as undefined, never as a number \\
+Key-set check & The (paragraph, technology) keys of the second pass must equal those implied by the first-pass ticks, and every sample paragraph needs a first-pass row & A mismatch refuses the evaluation \\
+Execution stability & Pairs of successful executions of a paragraph; paragraph level: the sorted technology set; relation level: element set, evaluation map keyed by frame, comparison target and subtype for each technology in the union over the successful executions, an absent relation counting as a value & Paragraphs with fewer than two successful executions have no pair and are counted \\
+Coder's temporal stability & Krippendorff's $\alpha$ on aligned units: the technology tick per paragraph; the element flag on rows both codings created; the evaluation where both fired the frame; the comparison target on all aligned rows; a technology ticked once only is a disagreement, not a missing rating & Non-aligned rows are counted; registered washout 14 days, applied minimum four, realised five (Table~\ref{tab:disclosures}) \\
+Displacement & Model minus reference prevalence in percentage points over every sample paragraph, with reference and predicted paragraph counts; occurrences of an element under several technologies are not prevalences & The interval carries no uncertainty from the reference \\
+Clean domain & The headline recomputed on the 105 paragraphs from articles no part of which was used in calibration or development & A sensitivity, not a contamination effect \\
+\end{longtable}
+\endgroup
+
+\subsection{Registration Record and Deviations}\label{app:protocol}
+
+\emph{Registered} means fixed in the internal pre-analysis specification, recorded in the repository before the evaluation sample was coded or predicted; it is not a public or a hypothesis pre-registration. The specification holds the questions, estimands and reporting rules; the metric layer is written out in the pipeline's completion plan, and the frozen frame and sample manifests document the draw. The specification was committed on 5, 6 and 7 September 2026 (commits \texttt{607a89e}, \texttt{5af3778}, \texttt{1870c02}, \texttt{400dbc8}), the completion plan on 6 and 7 September, all before the discarded first coding attempt and before the first label file of 30 September. The threshold seal was committed on 7 September (commit \texttt{7c61b3d}). A comparison of the committed files bounds later changes. Sections 1 and 2 of the completion plan, which hold the research questions, estimands and metric layer, are byte-identical at \texttt{400dbc8}, at the evaluation commit \texttt{460b344} of 13 October and on 15 November 2026. Sections 1 to 3 of the specification differ only in one file path. Its other changes before the run are dated in place, between 10 September and 12 October 2026. The run record's starting state is commit \texttt{07e1f8d}, which finalised the blind re-code three seconds before the run started, and its \texttt{git\_at\_start} field records a clean working tree. The specification is still headed as a draft, and its sign-off block was never filled in. Table~\ref{tab:deviations} lists each departure from the specification with its handling.
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{16mm}>{\raggedright\arraybackslash}p{54mm}>{\raggedright\arraybackslash}p{42mm}>{\raggedright\arraybackslash}p{38mm}@{}}
+\caption[Amendments and deviations]{Amendments of and deviations from the pre-analysis specification, with their handling and consequence for the reading. Amendments are struck in place with a date and a reason.}\label{tab:deviations} \\
+\toprule
+\textbf{Date} & \textbf{Departure} & \textbf{Handling} & \textbf{Consequence} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Date} & \textbf{Departure} & \textbf{Handling} & \textbf{Consequence} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+6 and 15 Sep & The production model was to be chosen among four candidates by a development analysis. Claude Sonnet 4.6 was kept by the author's choice on 6 September, and the selection deadline passed on 15 September & Selection not run; the registered model is Claude Sonnet 4.6 & None on the registered run \\
+24 Sep & Conditional Opus 4.6 comparison closed by the slippage rule & Reopened on 19 October only as a robustness analysis (\S4f) & Enters no registered figure \\
+before 25 Sep & First-pass attempt in a build with technology suggestions & Discarded; interface rebuilt (Table~\ref{tab:disclosures}) & Exposure is a limitation \\
+12 Oct & Washout shortened from 14 planned to five realised days & Minimum of four days written into the metrics & Coder's $\alpha$ possibly inflated \\
+14 Oct & Development iterations after the registered tables had been inspected, as dated departures from the adaptation firewall & Sealed before their runs; development split only & No revised instrument authorised (Table~\ref{tab:development_review}) \\
+19 Oct & Adjusted prevalences, closed on 5 September, reopened at the supervisor's request & Declared exploratory (\S4d) & Not a registered figure \\
+19 Oct & Nemotron 3 Super: a completed run on the evaluation sample was extended by an erroneous resume & Replaced by a fresh run; the replaced run scores 0.431 against 0.425 & Descriptive row only \\
+30 Oct & Firewall amended to allow the mandatory-form runs on the inspected samples (\S4j) & Dated amendment before any call & Descriptive comparison \\
+30 Oct & Battery: the EU route's daily token quota was exhausted; 62\% of executions ran on the global profile, which may process requests outside the EU & Within-route computation fixed after a smoke test had printed interim contrasts, before any variant result was read & Planted-gap contrast on the edge between the two computations (Table~\ref{tab:battery_primary}) \\
+30 Oct & Mercury 3 runs and the codebook review's second arm sent paragraphs to the developer's API outside Bedrock EU & Transfer cleared by the author as compliant with data protection & Rows differ from the registered request in more than the model \\
+1 Nov & Configuration controls for Sonnet 4.6 and Opus 4.6 added to the author's request & Ratified by the author after the runs & Controls read as added \\
+5 Nov & Language comparison run with three executions instead of the one declared on 19 October; extraction began before the translation check was sealed & Amendment before any translation; no agreement figure before the seal & Exploratory; inconclusive for agreement (Appendix~\ref{app:language}) \\
+8 Nov & Opus 5.5 rejects the forced tool choice and disabled reasoning; a control, a high-effort run and an Opus 5 repeat added to the author's request & Smallest accepted request declared before any run (\S4m); additions declared as the agent's & Rows differ from the registered request in tool choice and reasoning \\
+10 Nov & The paired change of the precision--recall gap and the per-element directions were added after the second-wave results had been inspected (\S4n (3)), then extended to the registered wave & Declared before their computation & Descriptive; marked as later in Section~\ref{subsec:reliability_results} \\
+\end{longtable}
+\endgroup
+
+\subsection{Detailed Results of the Registered Run}\label{app:detailed_results}
+
+The tables below back the registered figures of run \texttt{a2\_sonnet\_20261013} that Chapter~\ref{sec:results} summarises. The run made 379 attempts for its 360 executions on 13 October 2026, took 12.5 minutes and cost an estimated USD 2.18; its request is the first row of Table~\ref{tab:model_config}. In execution one, 168 of the 376 first-coding element tuples were missed and 68 tuples were invented (unweighted counts). Excluding the 15 paragraphs from articles used in calibration or development changes no pooled headline score by more than 0.01; on the remaining 105 paragraphs from 50 articles, the element micro-F1 is 0.640 [0.575, 0.706]. This clean-domain table, the run record with tokens, gate and environment, and the evaluator's complete tables with the unweighted figures, the comparison-target classes and the classes defined across resamples, are electronic (Appendix~\ref{app:electronic}).
+
+\input{tables/tab_primary_full}
+
+\begingroup\let\footnotesize\scriptsize\input{tables/tab_reliability}\endgroup
+
+\input{tables/tab_element_prf}
+
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{threeparttable}
+\caption[Per-class F1 of technologies and evaluation values]{Per-class F1 of the technologies and the evaluation values, first execution against the first coding (Run \texttt{a2\_sonnet\_20261013}): design-weighted, reference support in parentheses; $n<5$: fewer than five supporting units. The per-element F1 is in Table~\ref{tab:element_prf}.}\label{tab:per_value}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{58mm}>{\raggedright\arraybackslash}p{28mm}>{\raggedright\arraybackslash}p{28mm}>{\raggedright\arraybackslash}p{28mm}@{}}
+\toprule
+\textbf{Class} & \textbf{Pooled} & \textbf{German} & \textbf{English} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Technology (support: reference rows)}} \\
+general & 0.827 (40) & 0.750 (17) & 0.862 (23) \\
+solar & 0.930 (37) & 0.847 (23) & 1.000 (14) \\
+wind & 0.988 (36) & 0.977 (24) & 1.000 (12) \\
+hydrogen & 1.000 (20) & $n<5$ (3) & 1.000 (17) \\
+other\_renewable & 0.820 (10) & 0.682 (6) & $n<5$ (4) \\
+storage & 0.957 (13) & 1.000 (8) & 0.918 (5) \\
+nuclear & 1.000 (22) & $n<5$ (3) & 1.000 (19) \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Evaluation value on matched frames (support: matched units)}} \\
+positive & 0.916 (126) & 0.857 (48) & 0.934 (78) \\
+negative & 0.933 (62) & 0.919 (37) & 0.946 (25) \\
+neutral & 0.558 (11) & 0.588 (6) & 0.530 (5) \\
+mixed & 0.571 (9) & $n<5$ (3) & 0.571 (6) \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Evaluation value end to end (support: frame-bearing reference units)}} \\
+positive & 0.703 (189) & 0.648 (69) & 0.720 (120) \\
+negative & 0.560 (118) & 0.612 (60) & 0.523 (58) \\
+neutral & 0.370 (19) & 0.436 (10) & 0.320 (9) \\
+mixed & 0.460 (14) & 0.356 (6) & 0.500 (8) \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item The matched evaluation units exclude 132 frame-bearing reference units the model did not predict, which with the 208 matched units make 340. Of the 132, 27 are carried by 20 missing technology rows and 105 are missing frames within matched rows (German 18 and 33, English 9 and 72). Per-class cells carry no resampling interval.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\input{tables/tab_attrition}
+
+The change rates of Table~\ref{tab:stability} describe the instrument; they are not evidence about language.
+
+\appinput{tables/tab_stability.tex}
+
+\input{tables/tab_frame_prf}
+
+\appinput{tables/tab_displacement.tex}
+
+\subsection{Adjusted Prevalences: Estimator and Standard Error}\label{app:dsl_details}
+
+The design-based supervised learning estimator \parencite{egami2023dsl} is used here with the model's first-execution indicator as a fixed prediction, in place of the cross-fitted outcome model of the original estimator. Treating the prediction as fixed assumes that it was generated independently of whether a paragraph was sampled. It estimates the share of the $N = 618$ eligible-frame paragraphs on which a class $c$ is present as
+\begin{equation}
+\hat{\theta}_{\mathrm{DSL}}(c) = \frac{1}{N} \sum_{i=1}^{N} \Bigl[\, \hat{y}_i(c) + \frac{S_i}{\pi_i}\,\bigl(y_i(c) - \hat{y}_i(c)\bigr) \Bigr],
+\label{eq:dsl_estimator}
+\end{equation}
+with $\hat{y}_i$ the model's first-execution indicator, 0 after a failed execution, $y_i$ the reference indicator, $S_i = 1$ for the 120 sampled paragraphs and $S_i = 0$ otherwise, and $\pi_i$ their registered inclusion probability. The second term is the bias-correction term of \textcite{egami2023dsl}, a design-weighted counterpart of the rectifier in prediction-powered inference \parencite[p.~669]{angelopoulos2023ppi}. Because the eligible frame is a census for the model's indicator, the only design variance under that assumption is that of this term. Under the registered stratified draw its standard error is
+\begin{equation}
+\widehat{\mathrm{SE}}\bigl(\hat{\theta}_{\mathrm{DSL}}\bigr) = \frac{1}{N} \sqrt{\sum_{g} \bigl(1 - f_g\bigr) \frac{n_g}{n_g - 1} \sum_{i \in g} \bigl(v_i - \bar{v}_g\bigr)^2 }, \qquad v_i = w_i \bigl(y_i(c) - \hat{y}_i(c)\bigr),
+\label{eq:dsl_se}
+\end{equation}
+with $w_i = 1/\pi_i$, $\bar{v}_g$ the mean of $v_i$ in variance group $g$, $f_g = n_g/N_g$ for a group that is a single stratum and $f_g = 0$ for a pooled group. The eighteen strata form sixteen groups: the three single-draw strata are pooled with a neighbouring stratum of their language in allocation order (Berliner Morgenpost with DER SPIEGEL; STERN.de with Salzburger Nachrichten). A pooled group keeps the with-replacement form, which overstates its variance in expectation; pooling strata carries no such guarantee. The design-based interval is the estimate $\pm 1.96\,\widehat{\mathrm{SE}}$, so a class's standard error is the half-width of its design interval in Table~\ref{tab:dsl} divided by 1.96 (for investment, F2b, 3.4 points). It is derived for this draw, treats the predictor as fixed and has no guaranteed nominal coverage. The predictions come from three runs of the unchanged instrument, and the run followed the sample status. The registered run of 13 October 2026 covers the 120 sampled paragraphs and the fresh-census run of 19 October its 55. One execution on the same day covers the other 443 eligible-frame paragraphs (479 calls, USD 2.76). First executions without a valid record number 5 of 120 (4.2\%), 8 of 55 (14.5\%) and 30 of 443 (6.8\%), and count as zero indicators. The assumption of a prediction generated independently of sampling is therefore not verified: run date and paragraph composition differ together, and the residual is estimated on the registered run alone. If failures were more frequent outside the sample for reasons of the run, not of the paragraphs, the adjusted shares would lean downward. A class without any sampled coder--model difference has a zero-width interval, a plug-in artefact that says nothing about unsampled paragraphs. Table~\ref{tab:dsl} prints every class that reaches the reporting threshold. Of the 35 frame--evaluation pairs that either side marks anywhere in the eligible frame, nineteen fall below it; on the evaluation sample alone, either side marks 31 pairs, of which 15 fall below it (Section~\ref{subsec:displacement_results}). These pairs and two elements are in the electronic table.
+
+Under the first coding, the coded sample alone puts investment at 40.1\%, close to the adjusted 37.7\% (Table~\ref{tab:dsl}). The model's labels lower the standard error from 4.3 to 3.4 percentage points. For hydrogen and nuclear, no sampled paragraph shows a coder--model difference, so their design-based intervals have zero width, an artefact of the variance estimate rather than precision.
+
+\begingroup\let\footnotesize\scriptsize\renewcommand{\arraystretch}{0.9}
+\appLTcaption{Adjusted prevalences of every reportable class}{Adjusted (DSL) prevalences of every reportable class in the frozen eligible frame (618 paragraphs), in \% of its paragraphs, beside the model-only share, the sample-only estimate of the first coding and the registered displacement.}%
+\appgrab{tables/tab_dsl.tex}%
+\appthousands%
+\appreplace{is\ not\ reported;\ its\ support\ is\ in\ the\ last\ column\.}{is\ not\ printed;\ its\ estimate\ and\ support\ are\ in\ the\ electronic\ table\ (Appendix\c{nobreakspace}\c{ref}\cB\{app:electronic\cE\}).}%
+\appdroprows{not reported}%
+\endgroup
+
+\subsection{Fresh Census}\label{app:fresh}
+
+The census holds the 55 eligible-frame paragraphs of ten articles that no study record named when it was declared on 14 October 2026 (Section~\ref{subsec:added_methods}). The author coded it in two passes, on 14 and 19 October 2026, blind to the model's output on these paragraphs but after the registered result of 13 October was known; the census is therefore fresh in its articles, not in the coder's knowledge. The registered instrument ran on it on 19 October with three executions (run \texttt{a3\_sonnet\_20261019}, USD 1.09). Its figures are unweighted and describe the census itself; their intervals over ten articles are indicative, and the reference's reliability on the census is unmeasured. The registered instrument's agreement on the census is the v1.0 column of Table~\ref{tab:a3_candidate}; agreement by dimension and language is electronic.
+
+\begingroup\appcaption{Retry candidate on the fresh census}{The registered instrument v1.0 against the frozen candidate v1.0r3, the registered request whose one retry returns the validator's messages to the model, on the fresh census (55 paragraphs, three executions, unweighted). Decided on 26 October 2026 after the v1.0 figure; descriptive only. Brackets: percentile intervals over 2{,}000 resamples of the ten articles; differences paired.}\input{tables/tab_a3_candidate}\endgroup
+
+\begingroup\appcaption{Prevalence displacement on the fresh census}{}\appinput{tables/fresh_sample/tab_displacement.tex}\endgroup
+
+\subsection{Model Comparison}\label{app:model_comparison}
+
+The comparisons report each configuration's first execution on both samples; repeated executions are identified separately. No model was selected. Gaps include invalid outputs counted as omissions: Mercury~3 instant failed on 27 of 120 first executions on the evaluation sample, and its gap is $+0.245$ on the 93 valid ones against $+0.396$ end to end (Table~\ref{tab:checks_4o}). In the registered request, output is capped at 1{,}024 tokens, with no extended reasoning, and a one-hour cache point follows the constant prefix. Table~\ref{tab:model_config} lists how each request differed from the registered one, and Table~\ref{tab:pr_gaps} gives the precision--recall gap of every configuration with its interval. Figure~\ref{fig:model_comparison} plots each configuration's precision and recall; the complete results table with the configuration controls is electronic (Appendix~\ref{app:electronic}).
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{27mm}>{\raggedright\arraybackslash}p{41mm}>{\raggedright\arraybackslash}p{26mm}>{\raggedright\arraybackslash}p{40mm}>{\raggedright\arraybackslash}p{14mm}@{}}
+\caption[Model-comparison configurations]{Configurations of the model comparison. Every request carries the pinned prompt and tool schema, and every request outside \S4m the forced tool choice; the output cap is 1,024 tokens unless stated. Route: Amazon Bedrock from eu-central-1, through an EU inference profile (\texttt{eu.} prefix) or in-region; date: the runs on both samples.}\label{tab:model_config} \\
+\toprule
+\textbf{Configuration} & \textbf{Model identifier} & \textbf{Route} & \textbf{Difference from the registered request} & \textbf{Date; \S} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Configuration} & \textbf{Model identifier} & \textbf{Route} & \textbf{Difference from the registered request} & \textbf{Date; \S} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Claude Sonnet 4.6 (registered) & \modelid{eu.anthropic.claude-sonnet-4-6} & Bedrock, EU profile & --- (temperature 0, cache point, extended reasoning off) & 13 Oct (census 19 Oct); registered \\
+Claude Opus 4.6 & \modelid{eu.anthropic.claude-opus-4-6-v1} & Bedrock, EU profile & none & 19 Oct; \S4f \\
+Claude Sonnet 4.5 & \modelid{eu.anthropic.claude-sonnet-4-5-20250929-v1:0} & Bedrock, EU profile & none & 19 Oct; \S4f \\
+Claude Haiku 4.5 & \modelid{eu.anthropic.claude-haiku-4-5-20251001-v1:0} & Bedrock, EU profile & none & 19 Oct; \S4f \\
+Amazon Nova Pro & \modelid{eu.amazon.nova-pro-v1:0} & Bedrock, EU profile & no cache point (not supported) & 19 Oct; \S4f \\
+NVIDIA Nemotron 3 Super & \modelid{nvidia.nemotron-super-3-120b} & Bedrock, in-region & no cache point & 19 Oct; \S4f \\
+Qwen3-235B-A22B & \modelid{qwen.qwen3-235b-a22b-2507-v1:0} & Bedrock, in-region & no cache point & 19 Oct; \S4f \\
+Mercury 3, instant & \modelid{mercury-3} & developer's API, hosting region not stated & no cache point; temperature 0.5 (the API's minimum); no reasoning; request translated by an adapter & 30 Oct; \S4g \\
+Mercury 3, low & \modelid{mercury-3} & as above & as above, low reasoning, 8,192 completion tokens & 30 Oct; \S4g \\
+Claude Sonnet 5 & \modelid{eu.anthropic.claude-sonnet-5} & Bedrock, EU profile & temperature omitted (rejects 0; provider's default sampling); extended thinking disabled & 1 Nov; \S4k \\
+Claude Opus 5 & \modelid{eu.anthropic.claude-opus-5} & Bedrock, EU profile & as Sonnet 5 & 1 Nov; \S4k \\
+Controls: Sonnet 4.6, Opus 4.6 & as above & Bedrock, EU profile & as Sonnet 5 & 1 Nov; \S4k \\
+Claude Opus 5.5 & \modelid{eu.anthropic.claude-opus-5-5} & Bedrock, EU profile & tool chosen freely (rejects a forced choice); adaptive thinking at effort low (rejects disabled thinking); temperature omitted; 8,192 tokens; three executions & 8 Nov; \S4m \\
+Opus 5.5, effort high & as above & Bedrock, EU profile & as Opus 5.5, effort high; one execution & 8 Nov; \S4m \\
+Control: Opus 5, 5.5 request & \modelid{eu.anthropic.claude-opus-5} & Bedrock, EU profile & as Opus 5.5; one execution & 8 Nov; \S4m \\
+Opus 5, repeated & \modelid{eu.anthropic.claude-opus-5} & Bedrock, EU profile & as Sonnet 5; three executions & 8 Nov; \S4m \\
+\end{longtable}
+\endgroup
+
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{threeparttable}
+\caption[Precision minus recall per configuration]{Element precision minus element recall of the first execution per configuration against each sample's first coding, with its 2.5--97.5 percentile interval over 2{,}000 article resamples: design-weighted on the evaluation sample, unweighted on the fresh census.}\label{tab:pr_gaps}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{50mm}>{\raggedright\arraybackslash}p{42mm}>{\raggedright\arraybackslash}p{42mm}@{}}
+\toprule
+\textbf{Configuration} & \textbf{Evaluation sample (120)} & \textbf{Fresh census (55)} \\
+\midrule
+Claude Sonnet 4.6 (registered) & $+0.202$ [$+0.134$, $+0.262$] & $+0.164$ [$+0.071$, $+0.245$] \\
+Claude Opus 4.6 & $+0.208$ [$+0.151$, $+0.261$] & $+0.111$ [$+0.013$, $+0.187$] \\
+Claude Sonnet 4.5 & $+0.297$ [$+0.233$, $+0.364$] & $+0.300$ [$+0.172$, $+0.400$] \\
+Claude Haiku 4.5 & $+0.432$ [$+0.359$, $+0.499$] & $+0.416$ [$+0.293$, $+0.519$] \\
+Amazon Nova Pro & $+0.223$ [$+0.161$, $+0.293$] & $+0.101$ [$-0.035$, $+0.220$] \\
+NVIDIA Nemotron 3 Super & $+0.343$ [$+0.272$, $+0.415$] & $+0.261$ [$+0.135$, $+0.396$] \\
+Qwen3-235B-A22B & $+0.301$ [$+0.245$, $+0.353$] & $+0.213$ [$+0.066$, $+0.365$] \\
+Mercury 3, instant & $+0.396$ [$+0.294$, $+0.495$] & $+0.431$ [$+0.272$, $+0.559$] \\
+Mercury 3, low & $+0.346$ [$+0.272$, $+0.413$] & $+0.329$ [$+0.219$, $+0.422$] \\
+Claude Sonnet 5 & $+0.282$ [$+0.221$, $+0.333$] & $+0.223$ [$+0.126$, $+0.306$] \\
+Claude Opus 5 & $+0.016$ [$-0.045$, $+0.076$] & $-0.096$ [$-0.191$, $-0.004$] \\
+Claude Opus 5.5 & $+0.146$ [$+0.086$, $+0.195$] & $+0.034$ [$-0.039$, $+0.083$] \\
+\addlinespace
+Control: Sonnet 4.6, Claude~5 request & $+0.215$ [$+0.145$, $+0.276$] & $+0.120$ [$+0.031$, $+0.198$] \\
+Control: Opus 4.6, Claude~5 request & $+0.200$ [$+0.147$, $+0.249$] & $+0.135$ [$+0.039$, $+0.209$] \\
+Control: Opus 5, Opus~5.5 request & $+0.086$ [$+0.025$, $+0.143$] & $-0.094$ [$-0.204$, $+0.008$] \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Point estimates are positive for 11 of the 12 configurations (request controls aside) on both samples. The interval includes zero for Opus~5 on the evaluation sample and for Nova Pro and Opus~5.5 on the census, and lies below zero for Opus~5 on the census.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+Opus~5.5 rejects the registered request twice, so it ran with the tool chosen freely and reasoning at the lowest effort; Opus~5 under this same request is its control (Table~\ref{tab:model_config}; the results table is electronic, Appendix~\ref{app:electronic}). Against the control, Opus~5.5 shows no consistent difference in element F1, $-0.018$ [$-0.051$, $+0.019$] and $+0.074$ [$+0.006$, $+0.156$], nor against Opus~5 as run; against Sonnet~4.6 and Opus~4.6 it is better on both samples. Its three executions keep precision above recall on the evaluation sample ($+0.146$ to $+0.186$). Opus~5's balance also recurs in three executions a week later, so neither gap is a draw of one execution. At high instead of low effort, Opus~5.5 shows no consistent difference in element F1, lower recall on the evaluation sample ($-0.036$ [$-0.060$, $-0.012$]) and higher precision on the census ($+0.094$ [$+0.033$, $+0.150$]).
+
+\subsection{Translated Input}\label{app:language}\label{subsec:language_results}
+
+The comparison was declared on 19 October 2026 and amended on 5 November 2026 before any paragraph was translated. It sets the original German input against its machine translation into English, both scored against the unchanged first coding. It isolates no language effect, because translation also changes wording, explicitness and length. Translation cost USD 0.02; the extraction run \modelid{a2de_translated_sonnet_20261105} made 188 calls at USD 1.04. The detailed table is electronic (Appendix~\ref{app:electronic}).
+
+Translation leaves agreement inconclusive under the rule declared before the run, showing neither a difference nor equivalence. The 60 German evaluation paragraphs were translated into English once with gpt-oss-120b. The coder checked each and flagged none. Against the first coding, translated minus original is $-0.022$ [$-0.084$, $+0.032$] for first-execution element micro-F1. The paired differences in technology micro-F1 ($+0.017$ [$-0.027$, $+0.069$]), element precision ($-0.034$ [$-0.120$, $+0.043$]) and element recall ($-0.014$ [$-0.068$, $+0.040$]) are descriptive, and their intervals also include zero. On the 55 paragraphs where both first executions succeeded, the element set changed in 30 of 70 technology rows predicted from both inputs. This rate of 43\% compares with 6\% and 3\% between the original's first and repeated executions (all unweighted). The translated input, however, ran 23 days after the original.
+
+Future studies should report precision and recall per label dimension and language, on source text and against a reference whose stability they report.
+
+\appfloatbarrier
+
+\subsection{Instrument Checks: Perturbation Battery and Mandatory Form}\label{app:battery}
+
+Table~\ref{tab:instrument_checks} summarises four descriptive instrument checks and points to their detailed tables across the appendix. The battery rewords single codebook definitions on the 443 frame-completion paragraphs and asks where the wording rather than the content drives the labels (Table~\ref{tab:battery_primary}; its design and conduct record is electronic, Appendix~\ref{app:electronic}). Table~\ref{tab:battery_sharpen} lists the codebook rules it recommends settling. Section~\ref{app:form_variant} reports the mandatory form, which asks for a yes or no on every element.
+
+\input{tables/tab_instrument_checks}
+
+\begingroup\appcaption{Battery: planted and documented gaps}{Primary readings of the battery, route-stratified and as declared; the battery finds gaps of known position only if the intervals of the PR1 mean and the PR2 contrast both lie above zero. The rules were fixed before any call, the route stratification before any variant result was read but after a smoke test had printed interim contrasts.}\input{tables/tab_battery_primary}\endgroup
+
+The battery's one validation on labelled units is weak. On the evaluation sample, the number of variants whose label for a paragraph and element differs from the baseline separates units where model and first coding disagree from the others with an area under the curve (AUC) of 0.62 [0.59, 0.66]. For units where the first coding and the registered re-code disagree, it is 0.56 [0.52, 0.61]. The rules of Table~\ref{tab:battery_sharpen} are therefore candidates for review by coders, not validated diagnoses.
+
+Route stratification was fixed on 30 October 2026, after a smoke test had printed interim contrasts but before any variant result was read. Under it, the mean planted-gap contrast PR1 is $+0.043$ [$-0.002$, $+0.090$] and includes zero. As first declared, it is $+0.045$ [$+0.002$, $+0.090$], just above zero (Table~\ref{tab:battery_primary}). As the two computations disagree, the battery is not shown to find gaps of known position, and the specification makes no gap-detector claim. The documented gap of the general category shows sensitivity under both. This sensitivity is not specific to definitions. Under route stratification, reversing the frame order moves 14 of 24 reported classes beyond repetition noise. Neutral element labels move 13 of 23, and even the negative-control sentence on hydrogen and nuclear moves 6 of 23 (as first declared: 15, 16 and 9).
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{14mm}>{\raggedright\arraybackslash}p{84mm}>{\raggedright\arraybackslash}p{50mm}@{}}
+\caption[Battery: rules to settle before the next freeze]{Codebook rules to settle before the next freeze, from the flips of the perturbation battery (specification §4i), in the order of what they do for comparable frame shares; condensed from the full texts in \texttt{sharpening\_recommendations.json}. Cases decided: of the flipping cases in the unit's packet, those the rule decides, as counted by the verifying agent.}\label{tab:battery_sharpen} \\
+\toprule
+\textbf{Units} & \textbf{Rule (condensed)} & \textbf{Evidence} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Units} & \textbf{Rule (condensed)} & \textbf{Evidence} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\texttt{general} & Tick \texttt{general} for every bundle term, also beside named technologies. Bundle terms include renewables, green or clean power or energy, the energy transition, and collective clean-technology terms. Assign elements from claims whose subject is the bundle. Without a bundle term in the paragraph, create no \texttt{general} row; it is never a residual for fossil, grid or energy-system statements. & PR2 $+0.108$; the residual sentence removed 2 of 58 rows; 7 of 8 rewordings resolved the reading; 37 of 46 cases decided. \\
+F3b & F3b requires an anchor in the statement: a named shift of the energy system, a coal, nuclear or fossil phase-out named as such (or its reversal), or a stated substitution between the technology and coal, oil or gas. Subsidies, laws, investments, policy turns, growth figures and ``green'' in a technology's name are not anchors and go to their own elements. & Swap occurrences into F3b 54, 42, 34, 31 (8, 6, 8, 3 relations); the only element displaced upward on both samples ($+12.7$ points on the census, $+3.4$ on the evaluation sample); 116 of 126 cases. \\
+F6a, F2b & F6a only for technical possibility or maturity; a decision or commitment about an identified project (announced, planned, financed, construction started, postponed, shelved, cancelled) is F2b, the stated reason fires its own element, and a milestone without decision content (completion, commissioning, grid connection) fires neither. & F6a planted contrast $+0.076$ [$+0.007$, $+0.170$]; swap occurrences F6a--F2b 38 and 33 (8 and 6 relations); 70 of 75 cases. \\
+F1a, F2b & What buyers and users pay is F1a; producers' revenue, profit, financing and capital are F2b; F1a and F1b never displace F2b, each firing where its own definition is met. & F2b underdetermined (both admitted one-unit rewordings raise its rate, $+2.4$ and $+2.6$ points) and displaced most on the evaluation sample ($-18.3$); swap occurrences F2b--F1a 31 (8 relations); 22 of 28 cases. \\
+\texttt{general} & A bundle term with no claim of its own (a reference quantity, a label for a firm, the power source of something else such as renewable hydrogen) is \texttt{general} without a frame and inherits no element. & 10 flips on two paragraphs under five families; 14 cases. \\
+F2c & F2c is a change in the amount deployed, produced or sold, with or without a number; targets, plans, stated needs and static shares do not fire it; aggregate cancellations are a decline. & Coder $\alpha$ 0.37; three of four rewordings move it; 31 of 34 and 14 of 14 cases. \\
+F2c, F6b & F2c is the technology's own deployment, production, sales or project pipeline and its change, including a forecast of where deployment is heading; F6b is potential per unit, site or resource, and an aggregate quantity is never F6b. & Swap occurrences F6b--F2c 36 (5 relations); neutral labels shift F6b by $+0.341$; F6b's F1 0.43 on the evaluation sample. \\
+F5a & F5a needs a listed trigger or a stated time dimension (power missing or in surplus at hours, days or seasons); overall quantities, capacity factors and supply lost to shutdowns do not fire it unless the text names variability. & Three of four rewordings move it; swap occurrences F5a--F6b 18, F5a--F5b 23 (3 and 6 relations); 63 of 84 cases. \\
+\end{longtable}
+\endgroup
+
+\subsubsection{Mandatory Form Variant}\label{app:form_variant}
+
+The variant v1.0F mechanically transforms v1.0r3, the registered request under the feedback retry. The list of fired elements becomes seventeen required yes-or-no fields per technology, and four prompt sentences are replaced by their counterparts. A normaliser maps the answers back before the registered validator and evaluator apply. Its output cap of 2,048 tokens instead of 1,024 was set from the longest journalled answers re-encoded in the form, about 1,000 tokens. The comparator is v1.0r3, run beside it on the evaluation sample and, on the census, its run of 26 October.
+
+Table~\ref{tab:form_variant} compares both configurations on the two samples.
+
+\input{tables/tab_form_variant}
+
+A unary breakdown into one question per frame or element \parencite[pp.~2479--2480]{ma2025multilabel} would test a remedy, not the deficit's mechanism: prompts and inference budget also change.
+
+\subsection{Checks of the Reference, the Misses and the Context}\label{app:later_checks}
+
+Five computed checks, one of them a comparison-target baseline, and a later-coded re-reading of sampled misses examine the reference, the missed elements and the input context of the registered run. They were declared in the pre-analysis specification (\S4l) on 6 November 2026, before any of them was computed or, for the re-reading of misses, coded. Intervals for the coder's $\alpha$ and a second re-code wave followed on 10 November (\S4n), seven further checks the same day (\S4o) and a last set on 11 November (\S4p), likewise declared before computation and coding. They are descriptive and reuse samples whose results had already been inspected; nothing is selected.
+
+Table~\ref{tab:recode_comparison} scores the model and the first coding against the coder's blind re-code of 40 paragraphs from 28 articles. With the second coding as reference, the model reaches precision 0.662, recall 0.584 and F1 0.620, and the first coding 0.602, 0.720 and 0.656, so the first coding marks more elements than the second. On the same paragraphs, the model's recall against the second coding exceeds that against the first (0.496) by $+0.088$ [$+0.002$, $+0.178$]. The comparison measures one coder's temporal stability after a minimum five-day interval instead of the registered 14 (Table~\ref{tab:deviations}), not an intercoder ceiling.
+
+\input{tables/tab_recode_comparison}
+
+Table~\ref{tab:alpha_full_grid} recomputes Krippendorff's $\alpha$ of the re-code on the full grid of 55 rows that either coding created, a missing row counting as unmarked. Pooled over element cells, $\alpha$ is 0.619 on this grid against 0.641 on the 50 rows both codings created, and per element the two grids differ little.
+
+\input{tables/tab_alpha_full_grid}
+
+The table adds 95\,\% intervals over 2{,}000 resamples of the 28 articles, together with $q$, the fraction of defined resamples below 0.667 or 0.800 \parencite[pp.~237--238]{krippendorff2004contentanalysis}. For a smallest category share of 10\,\%, Krippendorff's planning table lists 86 units, compared with 41 at 25\,\% ($\alpha_{\min}=0.667$, 5\,\% level) \parencite[p.~240]{krippendorff2004contentanalysis}; these planning examples do not account for article clustering. Undefined resamples are excluded from the intervals and $q$, and their counts are reported. Resampling whole articles preserves dependence among their paragraphs and technology rows; it does not guarantee wider intervals. These analyses were declared on 10 November 2026 (\S4n), before computation. All eight reportable element intervals extend below 0.667, as do both pooled-cell intervals. Technical performance lacks variation in 267 resamples. Intervals and $q$ exclude undefined draws and therefore condition on $\alpha$ being defined, not merely on the element occurring. Perfect observed agreement can produce an interval of [1.000, 1.000]; resampling cannot introduce disagreements absent from the observed pairs.
+
+The supplementary re-code (wave 2) covered the remaining 80 paragraphs on 10 November 2026, at least 33 days after the first coding, with the first labels hidden (\S4n). Analyses using it, alone or pooled, are exploratory. Its pooled shared-row $\alpha$ is 0.739 [0.680, 0.792] (Table~\ref{tab:alpha_waves}). Pooling both waves gives 0.711 [0.655, 0.762], mixing different intervals and exposures rather than replacing the registered estimate. Deployment growth, technical performance and regulation have point estimates below 0.667 in both waves. Before the second wave, the coder knew the results and had seen first-coding and model elements for one row in each of 25 paragraphs. Excluding those paragraphs leaves the combined shared-row point estimate at 0.711 after rounding.
+
+\appgrab{tables/tab_alpha_waves.tex}\appkeepheads\appout
+
+Table~\ref{tab:recode_waves} scores the model and the first coding against the second coding of all 120 paragraphs. The model reaches precision 0.695 and recall 0.666, against 0.759 and 0.557 with the first coding as reference; its recall rises by $+0.109$ [$+0.056$, $+0.161$]. The rise appears in German ($+0.135$) and English ($+0.096$) and without the 25 re-read paragraphs ($+0.062$ [$+0.012$, $+0.119$]). The first coding against the second reaches precision 0.640 and recall 0.835, so it marks more elements than the second, as it did in the registered wave.
+
+\begingroup\let\footnotesize\scriptsize\input{tables/tab_recode_waves}\endgroup
+
+Table~\ref{tab:recode_elements} shows that the nearly balanced pooled point estimates mix two directions. Against the second coding, investment, regulation and both siting elements retain recall below precision. Recall exceeds precision for several others, including deployment growth, supply security and technical performance.
+
+\input{tables/tab_recode_elements}
+
+Table~\ref{tab:fn_causes} splits by cause the 168 first-coding elements that execution one of the registered run missed. Of these, 140 fall within a matched technology row, 15 in technology rows the model did not create and 13 in executions without a valid record, with design-weighted shares of 86\%, 9\% and 6\%. The shares are 73\%, 9\% and 18\% in German and 91\%, 9\% and 0\% in English. Counting an element as marked when any of the three executions marks it raises recall from 0.557 to 0.596 (precision 0.749 against 0.759), so the misses are largely systematic rather than draws of one execution.
+
+\input{tables/tab_fn_causes}
+
+A further check re-reads misses of the third cause. From the 140 elements missed within matched rows, 45 were drawn at random with the seed fixed in \S4l; they come from 35 paragraphs of 25 articles. For each, the coder read the paragraph, the missed element's codebook definition and the elements both sides had marked on the row, and assigned one of six categories fixed in advance (Table~\ref{tab:missed_elements}). Two categories contradicted the coder's own note; on the author's instruction, the coding agent set both to borderline, following the note and the codebook text (as returned: 17 clear misses, 8 borderline, 16 possible over-marks). No reference label was changed. The model's output was visible and the coder judged their own reference. The counts are therefore non-blind judgements, not error rates; category (c) establishes neither the prevalence of reference over-marking nor a bound on it.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{threeparttable}
+\caption[Re-reading of sampled missed elements]{The coder's re-reading of 45 elements that execution 1 of the registered run missed within matched rows (specification \S4l (6)): one category per element, fixed before coding; two categories reconciled with the coder's note. Not blind to the model's output; one coder's judgement of their own first coding; shares rounded.}
+\label{tab:missed_elements}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{36mm}>{\raggedright\arraybackslash}p{56mm}>{\raggedright\arraybackslash}p{17mm}>{\raggedright\arraybackslash}p{40mm}@{}}
+\toprule
+\textbf{Category} & \textbf{Reading} & \textbf{Elements} & \textbf{Most frequent elements} \\
+\midrule
+(a) Clear miss & the paragraph states the element's cue explicitly & 16 (36\%) & transition pathway 5, investment 3 \\
+(b) Borderline & the cue supports the element only under a generous reading of the codebook & 10 (22\%) & investment 5 \\
+(c) Coder possibly over-marked & on re-reading, the paragraph does not support the element & 15 (33\%) & investment 5, regulation 2, technical performance 2 \\
+(d) Cue outside the paragraph & the element rests on the headline, the outlet or another paragraph & 2 (4\%) & subsidies 1, landscape 1 \\
+(e) Assigned elsewhere & the model expressed the content through another element or row & 1 (2\%) & emissions, climate 1 \\
+(f) Other & with a note; here ecological harm that neither emissions nor landscape covers & 1 (2\%) & landscape 1 \\
+\midrule
+All & & 45 (100\%) & investment 13, transition pathway 6 \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{table}
+
+Clear misses and possible over-marks occur about equally often, 16 and 15 of the 45. In every clear miss the model marked another element on the same row. Investment is the most frequent missed element, with 3 clear misses, 5 borderline cases and 5 possible over-marks. Four of these over-marks report deployment growth or decline, which codebook version 1.0 had moved out of investment, and the model marked deployment growth on each. Transition pathway accounts for 5 of the clear misses. Possible over-marks are more frequent among the German elements (8 of 18) than among the English ones (7 of 27), a split the declaration did not fix.
+
+The topic description suggested the paragraph ``potentially combined with the headline and limited surrounding context'' as a starting point, and the context-parity run tests that suggestion for the model. Instrument v1.0C places the headline, outlet and language the coder saw before the unchanged paragraph; it ran once on both samples on 6 November 2026, compared with execution one of the runs of 13 and 19 October. Element recall is 0.539 against 0.557 on the evaluation sample ($-0.019$ [$-0.067$, $+0.026$]) and 0.500 against 0.493 on the census ($+0.007$ [$-0.065$, $+0.113$]), no consistent difference under the declared rule (Table~\ref{tab:context_variant}). Only precision on the census is higher ($+0.065$ [$+0.013$, $+0.111$]), and the precision--recall gap does not narrow (0.238 against 0.202; 0.222 against 0.164). The run tests only the model's side of the asymmetry, because the coder also met other paragraphs of an article, and it is a single execution, made weeks after its comparators.
+
+\input{tables/tab_context_variant}
+
+For the comparison target, the constant guess ``none'' reaches a matched-row accuracy of 0.674 on the 158 matched rows, against the model's 0.794 (German 0.887 against 0.881; English 0.579 against 0.755).
+
+Seven further checks on existing data were declared on 10 November 2026 (\S4o) before computation (Table~\ref{tab:checks_4o}). (1) The German--English difference in element micro-F1 is $-0.032$ [$-0.145$, $+0.091$], too wide to show a difference or its absence; for technology detection it is $-0.077$ [$-0.189$, $-0.002$]. (2) Terminal failures are almost all violations of the relational rules after two attempts (\texttt{contract\_invalid}; 12 of 13 in the registered run), not truncations. They fall on German paragraphs in the registered run (11 of 13) but split evenly on the fresh census (12 and 11). (3) On paragraphs with a valid first execution, the registered model's precision exceeds its recall by $0.187$ [$+0.119$, $+0.252$] on the evaluation sample and by $0.057$ [$-0.006$, $+0.108$] on the census, against $0.202$ and $0.164$ end to end. Failed outputs thus explain little of the gap on the evaluation sample and most of it on the census. The point estimate stays positive in the same eleven of twelve configurations. Over the 575 eligible-frame paragraphs with a valid record, the model marks investment on 20.9\%, against 19.4\% over all 618. (4) Without the rows of the general category, the element micro-F1 is 0.658 [0.589, 0.727], against the registered 0.643. (5) Per-element intervals are wide: that of technical feasibility, [0.491, 0.878], overlaps that of technical performance, [0.087, 0.681]. (6) With the second coding of all 120 paragraphs as reference, the adjusted investment share is 33.1\% [27.1, 39.0] instead of 37.7\% [31.1, 44.3]. The adjusted shares of technical feasibility, regulation, transition pathway and land requirement fall by 5 to 9 points. The second coding mixes two waves with different intervals and exposures, so this is a sensitivity, not a better estimate. (7) The per-language element macros use 16 classes each, 15 of them shared (Table~\ref{tab:conventions}).
+
+\appgrab{tables/tab_checks_4o.tex}\appreplace{p\cB\{50mm\cE\}}{p\cB\{46mm\cE\}}\appreplace{p\cB\{24mm\cE\}}{p\cB\{28mm\cE\}}\appkeepheads\appout
+
+A last set of checks was declared on 11 November 2026 (\S4p), before computation, and is likewise descriptive. Table~\ref{tab:checks_4p} gathers eight separate checks in nine panels, each with its own column headings, so it is best read one panel at a time. The main text cites it mainly for panels (a1), (a2), (b), (c) and (e) in Sections~\ref{subsec:agreement} to~\ref{subsubsec:categorical}, (f) in Section~\ref{subsec:displacement_results}, (d) in Section~\ref{subsec:recurrence}, (g) in Section~\ref{subsec:mechanisms} and the speaker counts of (h) in Section~\ref{subsec:annotation}. (a1), (a2) The coder's first coding is scored against the second coding in the model's own metrics, first on the 40 paragraphs re-coded before the run, then on all 120. (b) The model's hits and misses are split by whether the second coding keeps the tuple: of 168 missed tuples, 102 are absent from the second coding, against 36 of 208 found ones. (c) The prefilter's keyword matches serve as a comparator for technology detection, and the modal value as one for evaluation. The keyword pattern for other renewables and storage is joint, so the comparison is given on five and on seven technologies; every sampled paragraph was selected by these keywords. (d) The twelve configurations are scored against the second coding. (e) Technology detection by language is repeated on paragraphs with a valid first execution, a selected subset. (f) The share differences are given against both codings and with both interval schemes; a cell below five supporting paragraphs is suppressed. The first-coding article intervals are recomputed for this table; for intermittency the upper limit prints $+5.2$ where the registered Table~\ref{tab:displacement} prints 5.3. (g) and (h) report the no-frame decision and margins of the codings. The second coding mixes a wave coded before the run with one coded after the results were known (Section~\ref{subsec:annotation}), so none of these figures replaces a registered one. Agreement between the coder's two codings is neither an intercoder ceiling nor evidence of validity.
+
+\appgrab{tables/tab_checks_4p.tex}\appkeepheads\appout
+
+\subsection{Development Iterations and Codebook Review}\label{app:development}\label{app:codebook_review}
+
+Two development iterations tested changes to the instrument after the registered result, and a retrospective codebook review asked whether a model would have found the codebook's documented gaps. Table~\ref{tab:development_review} records what was tried, the outcome and whether it was adopted. Both iterations were declared on 14 October 2026, after the registered tables had been inspected. They were sealed before their runs and ran on the 32 development paragraphs only, with three executions per candidate. The review replayed each coding session before the evaluation sample: a model received the codebook version the coder had, in a second arm with that session's paragraphs, and named at most 15 issues per run. None of these modifications entered the registered instrument or result.
+
+\appneedspace{0.15\textheight}
+\begingroup\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{24mm}>{\raggedright\arraybackslash}p{62mm}>{\raggedright\arraybackslash}p{46mm}>{\raggedright\arraybackslash}p{18mm}@{}}
+\caption[Development iterations and codebook review]{Development iterations and the retrospective codebook review: what was tried, the outcome, and whether it was adopted; $\bar{F}$ is the mean unweighted element micro-F1 over the executions.}\label{tab:development_review} \\
+\toprule
+\textbf{Candidate} & \textbf{What was tried} & \textbf{Outcome} & \textbf{Adopted} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Candidate} & \textbf{What was tried} & \textbf{Outcome} & \textbf{Adopted} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{4}{@{}l}{\emph{First development iteration (W3, specification \S4); 96 executions per candidate}} \\
+v1.0 & The registered instrument as contemporaneous comparator & $\bar{F} = 0.663$; 0 invalid first responses; 0 executions lost & retained \\
+v1.1S & Strict structured-output mode; one object per fired frame; one labelled demonstration; feedback retry & $\bar{F} = 0.646$; 20 invalid first responses; 4 executions lost & no (not eligible) \\
+v1.1E & As v1.1S, plus a required short explanation before the labels & $\bar{F} = 0.656$; 9 invalid first responses; 1 execution lost & no (not eligible) \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Second development iteration (W4, \S4a), designed after W3}} \\
+v1.2S & An element only under its own frame; a required subtype field; field order as the keys reach the client & $\bar{F} = 0.591$ against 0.663; 2 invalid first responses (recovered) against 1 & no \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Retrospective codebook review (\S4h, 30 October); 18 runs per configuration, 84 documented-gap slots}} \\
+Opus 4.6 & Temperature 0, Bedrock & 38 of 84 gaps found (45\%); 16\% of issues matched a gap; USD 2.42 & no change \\
+Sonnet 4.6 & Temperature 0, Bedrock & 29 (35\%); 10\%; USD 1.44 & no change \\
+Mercury 3, low & Temperature 0.5, developer's API & 25 (30\%); 11\%; USD 0.08 & no change \\
+Mercury 3, instant & Temperature 0.5, developer's API & 18 (21\%); 7\%; USD 0.03 & no change \\
+\multicolumn{4}{@{}p{154mm}@{}}{\scriptsize A documented gap counts as found only if two blinded judges (Codex and a Claude judge) agree; they agreed on 95\% of the 336 run--gap pairs ($\kappa = 0.88$). The review is retrospective and descriptive: an unmatched issue may be a gap nobody documented, and the models may know common frame typologies.} \\
+\end{longtable}
+\endgroup
+
+\appfloatbarrier
+\subsection{The Rendered Instrument}\label{app:instrument}
+
+{\emergencystretch=3em The system prompt of the registered instrument v1.0, rendered from the frozen codebook (sha256 \texttt{1edb4601}\ldots), is reproduced verbatim from the pinned file (\modelid{system-prompt_v1.0.txt}, sha256 \texttt{138cade3}\ldots), as every run of that instrument sent it. The paragraph itself is the only user message. The tool configuration that forces the single extraction tool (\modelid{tool-config_v1.0.json}, sha256 \texttt{a1e82607}\ldots) is in the electronic appendix (Table~\ref{tab:electronic}). Three sources of its sixteen quoted illustrations are established. The phrase on weak wind conditions and the figure of 132 TWh follow calibration paragraph A011\_p02; article A011 is excluded from the eligible frame for that reason. The illustration of deployment growth follows calibration paragraph A010\_p15; article A010 was not excluded and has four paragraphs in the eligible frame, two of them in the evaluation sample. Both are among the 15 paragraphs that the sensitivity check of Section~\ref{subsec:agreement} removes; the first coding marks deployment growth on one of them and the model on neither, which does not measure the illustration's influence. The one German illustration paraphrases article A002, all of whose paragraphs belong to the calibration split. The origin of the other illustrations was not traced.\par}
+
+The prompt is not a verbatim copy of the codebook file. The renderer keeps every technology, element and evaluation definition and the frame mapping word for word, and treats the eleven exclusion rules of the codebook as its decision record of 2 September 2026 prescribes (Table~\ref{tab:rule_concordance}). The coder worked with the coding sheets generated from the codebook, the codebook file and a hand-written one-page summary of version 1.0; which of these was open in a given sitting was not recorded. Model and coder therefore share the definitions, not every rule text. One difference is substantive: only the prompt tells the model to record \emph{mixed} on a single relation when several voices evaluate in opposite directions. The first coding marks an attributed speaker on 77 of its 178 rows (Table~\ref{tab:checks_4p}); no field records opposing voices, so the effect of this difference on the evaluation figures is unknown.
+
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption[Exclusion rules in the codebook and in the prompt]{The codebook's exclusion rules and their treatment by the renderer of the prompt (decision record of 2 September 2026). The coder's summary sheet gives every rule in one line, as in the codebook.}\label{tab:rule_concordance}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{15mm}>{\raggedright\arraybackslash}p{20mm}>{\raggedright\arraybackslash}p{117mm}@{}}
+\toprule
+\textbf{Rule} & \textbf{Treatment} & \textbf{What differs for the model} \\
+\midrule
+X1, X2, X5, X6 & as written & Nothing. \\
+X3 & transformed & Codebook: code an evaluation voiced by a quoted source, mark the speaker field, and do not average the source's and the outlet's evaluation into one row. Prompt: code quoted evaluations as asserted in the paragraph without inferring the outlet's endorsement; where voices oppose each other on one frame, record \emph{mixed} on the single relation. The speaker field is not asked of the model. \\
+X4 & transformed & Codebook: use the paragraph only; if a referent is resolvable only outside it, set the lowest confidence and say so in the note. Prompt: use the paragraph only; the confidence field is not asked of the model. \\
+X7, X11 & transformed & The operative rule is kept; a literature figure, a prevalence from calibration and an anecdote are dropped. \\
+X8 & excluded & Spreadsheet hygiene; the output schema enforces the types. \\
+X9 & excluded & A cost of rule X4 measured in calibration, not a rule. \\
+X10 & excluded & Superseded history of the deployment-growth element, whose own definition carries the rule; the codebook's clause that a growth figure tied to the transition also fires the transition-pathway element is not in the prompt. \\
+Abstention & adapted & Codebook: an empty relation list when no technology--frame relation is present. Prompt and coding sheet alike keep a row for a technology that is stated but not framed. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\makeatletter
+\long\def\app@instparse#1\subsubsection#2\subsubsection#3\app@stop{\subsubsection#2}
+\appgrab{tables/instrument_appendix.tex}
+\begingroup\let\footnotesize\scriptsize
+\expandafter\app@instparse\app@content\subsubsection\app@stop
+\endgroup
+\makeatother
+
+\subsection{GUIDE-LLM Reporting Checklist}\label{app:guide_llm}
+
+The GUIDE-LLM checklist \parencite{feuerriegel2026guidellm} reports how large language models were used in this thesis, separately for the five uses U1 to U5 named at its head.
+
+\begingroup\renewcommand{\theHtable}{guidellm.\arabic{table}}
+\input{GUIDE-LLM}
+\endgroup
+\addtocounter{table}{-1}
+\endgroup

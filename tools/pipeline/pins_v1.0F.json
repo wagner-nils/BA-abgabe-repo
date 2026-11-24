@@ -1,0 +1,25 @@
+{
+  "_comment": [
+    "Pins of the \u00a74j form variant v1.0F; the codebook pin is the registered one, copied."
+  ],
+  "codebook": {
+    "path": "annotation/codebook/codebook-v1.0.yaml",
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-08-31"
+  },
+  "system_prompt": {
+    "path": "pipeline/instrument/system-prompt_v1.0F.txt",
+    "sha256": "5b4b246ec271495e7bb8f0b690ce2ed8c04faa7f9789c30112f2990af7c6b597",
+    "codebook_version": "1.0",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-10-30"
+  },
+  "tool_config": {
+    "path": "pipeline/instrument/tool-config_v1.0F.json",
+    "sha256": "5b6d0cdba2b19ed3e53c69a55bae531a2e1821e4d57b4cfa20e43a6832c1f275",
+    "codebook_version": "1.0",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "pinned_on": "2026-10-30"
+  }
+}

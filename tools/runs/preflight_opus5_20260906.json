@@ -1,0 +1,140 @@
+{
+  "started_at": "2026-09-06T13:14:31.748069+00:00",
+  "ended_at": "2026-09-06T13:14:32.223282+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "opus5": "eu.anthropic.claude-opus-5"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "system_prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+  "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+  "provenance": {
+    "git_commit": "5af3778a504aa8b32906c1a3d12d1a54906524db",
+    "git_dirty": true,
+    "git_dirty_files": 18,
+    "preflight_sha256": "733a9519e1a0dd27c41cc6539856ab2abc958ecb2e09ab2a524b6621acc2f24b",
+    "instrument_sha256": "69c017f60208197e31844c92b3465b89ae28aacedf866b11ed9e45bfc7a39053",
+    "uv_lock_sha256": "ee09c5c794c8d08f6423ddaa0573e04f43416c6fb26e1aae668e5ac41f0d10e8",
+    "python": "3.13.12",
+    "botocore": "1.43.83"
+  },
+  "execution_mode": "live",
+  "live_attempted": true,
+  "skip_reason": "",
+  "cache_initial_state": {},
+  "cache_prefix_tokens": {},
+  "cache_ttl": "1h",
+  "checks": [
+    {
+      "id": "14",
+      "name": "the pinned instrument loads and matches its pins",
+      "silent": true,
+      "ok": true,
+      "detail": "prompt 13,260 chars sha=138cade3add5dcc4; tool config sha=a1e82607f50e8c04; codebook v1.0",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "11",
+      "name": "codebook is frozen and matches its pinned hash",
+      "silent": true,
+      "ok": true,
+      "detail": "annotation/codebook/codebook-v1.0.yaml sha256=1edb4601519417de == pin",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "7",
+      "name": "tool config matches its pin and is the config the builder loads",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/tool-config_v1.0.json sha256=a1e82607f50e8c04 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "12",
+      "name": "the prompt under test IS the pinned production prompt",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/system-prompt_v1.0.txt sha256=138cade3add5dcc4 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "13",
+      "name": "the request comes from instrument.build_request()",
+      "silent": true,
+      "ok": true,
+      "detail": "6/6 clauses hold. No topP (the API rejects it beside temperature), no thinking block, no extra system instruction. Converse caches tools then system then messages, so the cached prefix is the pinned config plus the pinned prompt.",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "1",
+      "name": "[opus5] inference profile resolves and returns a completion",
+      "silent": false,
+      "ok": false,
+      "detail": "AccessDeniedException: An error occurred (AccessDeniedException) when calling the Converse operation: anthropic.claude-opus-5 is not available for this account. You can explore other available models on Amazon Bedrock. For additional access options, contact AWS Sales at https://aws.amazon.com/contact-us/sales-support/",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "--",
+      "name": "[opus5] remaining checks not run",
+      "silent": false,
+      "ok": null,
+      "detail": "",
+      "skipped": "model unreachable; nothing downstream is meaningful",
+      "phase": "live"
+    },
+    {
+      "id": "13b",
+      "name": "every submitted envelope is canonically identical to the one the builder produced",
+      "silent": true,
+      "ok": null,
+      "detail": "",
+      "skipped": "no production request was submitted, so there is nothing to compare.",
+      "phase": "live"
+    }
+  ],
+  "raw_responses": [
+    {
+      "model": "opus5",
+      "label": "reachability",
+      "outcome": "exception",
+      "error_code": "AccessDeniedException",
+      "error_class": "AccessDeniedException",
+      "error": "An error occurred (AccessDeniedException) when calling the Converse operation: anthropic.claude-opus-5 is not available for this account. You can explore other available models on Amazon Bedrock. For additional access options, contact AWS Sales at https://aws.amazon.com/contact-us/sales-support/",
+      "provider_response": {
+        "Error": {
+          "Message": "anthropic.claude-opus-5 is not available for this account. You can explore other available models on Amazon Bedrock. For additional access options, contact AWS Sales at https://aws.amazon.com/contact-us/sales-support/",
+          "Code": "AccessDeniedException"
+        },
+        "ResponseMetadata": {
+          "RequestId": "76c6217e-56b8-48af-8c42-111c716ac45b",
+          "HTTPStatusCode": 403,
+          "HTTPHeaders": {
+            "date": "Sun, 06 Sep 2026 13:14:32 GMT",
+            "content-type": "application/json",
+            "content-length": "231",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "76c6217e-56b8-48af-8c42-111c716ac45b",
+            "x-amzn-errortype": "AccessDeniedException:http://internal.amazon.com/coral/com.amazon.bedrock/"
+          },
+          "RetryAttempts": 0
+        },
+        "message": "anthropic.claude-opus-5 is not available for this account. You can explore other available models on Amazon Bedrock. For additional access options, contact AWS Sales at https://aws.amazon.com/contact-us/sales-support/"
+      }
+    }
+  ],
+  "persisted_to": "tools/runs/preflight_opus5_20260906.json",
+  "certification_status": "NOT_CERTIFIED_ASSERTION_FAILED",
+  "certified": false,
+  "offline_checks": "passed",
+  "live_checks": "failed",
+  "n_failed": 1,
+  "n_failed_offline": 0,
+  "n_failed_live": 1,
+  "n_unasserted": 2
+}

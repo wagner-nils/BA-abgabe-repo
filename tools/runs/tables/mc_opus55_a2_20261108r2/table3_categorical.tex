@@ -1,0 +1,55 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{64.6pt}>{\raggedright\arraybackslash}p{61.0pt}>{\raggedright\arraybackslash}p{71.0pt}>{\raggedright\arraybackslash}p{47.8pt}>{\raggedright\arraybackslash}p{67.6pt}>{\raggedright\arraybackslash}p{71.0pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (ROBUSTNESS MODEL COMPARISON -- v1.0 under opus55 (no temperature, adaptive thinking, effort low, tool choice auto, 8192 tokens), 3 executions, not the registered result (specification §4m)). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.853 & 244 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 82; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 14 & 0.668 \\
+pooled & comparison target & 0.833 & 165 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 13 & 0.796 \\
+de & evaluation & 0.834 & 108 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 30; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 7 & 0.640 \\
+de & comparison target & 0.923 & 76 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 8 & 0.852 \\
+en & evaluation & 0.862 & 136 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 52; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 7 & 0.681 \\
+en & comparison target & 0.788 & 89 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 5 & 0.766 \\
+clean\_\allowbreak{}pooled & evaluation & 0.852 & 214 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 14; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 73 & 0.665 \\
+clean\_\allowbreak{}pooled & comparison target & 0.824 & 148 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 13 & 0.784 \\
+clean\_\allowbreak{}de & evaluation & 0.818 & 88 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 7; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 24 & 0.626 \\
+clean\_\allowbreak{}de & comparison target & 0.909 & 64 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 8 & 0.827 \\
+clean\_\allowbreak{}en & evaluation & 0.866 & 126 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 49; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 7 & 0.681 \\
+clean\_\allowbreak{}en & comparison target & 0.787 & 84 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 5 & 0.765 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{69.7pt}>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{82.4pt}>{\raggedright\arraybackslash}p{87.4pt}>{\raggedright\arraybackslash}p{87.4pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (ROBUSTNESS MODEL COMPARISON -- v1.0 under opus55 (no temperature, adaptive thinking, effort low, tool choice auto, 8192 tokens), 3 executions, not the registered result (specification §4m)). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.853 & 0.692 over 4 & 0.546 over 4 \\
+pooled & comparison target & 0.833 & 0.616 over 7 & 0.519 over 8 \\
+de & evaluation & 0.834 & 0.715 over 4 & 0.558 over 4 \\
+de & comparison target & 0.923 & 0.846 over 4 & 0.649 over 5 \\
+en & evaluation & 0.862 & 0.665 over 4 & 0.528 over 4 \\
+en & comparison target & 0.788 & 0.629 over 7 & 0.603 over 7 \\
+clean\_\allowbreak{}pooled & evaluation & 0.852 & 0.691 over 4 & 0.542 over 4 \\
+clean\_\allowbreak{}pooled & comparison target & 0.824 & 0.617 over 7 & 0.519 over 8 \\
+clean\_\allowbreak{}de & evaluation & 0.818 & 0.695 over 4 & 0.534 over 4 \\
+clean\_\allowbreak{}de & comparison target & 0.909 & 0.844 over 4 & 0.645 over 5 \\
+clean\_\allowbreak{}en & evaluation & 0.866 & 0.674 over 4 & 0.532 over 4 \\
+clean\_\allowbreak{}en & comparison target & 0.787 & 0.632 over 7 & 0.606 over 7 \\
+\end{longtable}
+\endgroup

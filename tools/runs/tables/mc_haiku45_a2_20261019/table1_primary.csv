@@ -1,0 +1,47 @@
+population;dimension;score;weighted;unweighted;interval (2.5-97.5, weighted)
+pooled;elements (tuples);micro-F1;0.413;0.430;[0.351, 0.482]
+pooled;technology detection;micro-F1;0.810;0.816;[0.734, 0.874]
+pooled;evaluation, score B;micro-F1;0.384;0.386;[0.318, 0.453]
+pooled;comparison target, score B;micro-F1;0.617;0.633;[0.517, 0.719]
+pooled;evaluation, score A;accuracy on 118 matched units;0.819;0.797;[0.731, 0.896]
+pooled;comparison target, score A;accuracy on 129 matched units;0.762;0.775;[0.665, 0.854]
+pooled;element;"macro-F1 over 17 supported classes (resampled: available-class; defined-class counts {17: 1635, 16: 352, 15: 13})";0.355;0.369;[0.289, 0.440]
+pooled;evaluation_A;"macro-F1 over 4 supported classes (resampled: available-class; defined-class counts {4: 1998, 3: 2})";0.642;0.616;[0.441, 0.761]
+pooled;evaluation_B;"macro-F1 over 4 supported classes (resampled: available-class; defined-class counts {4: 2000})";0.309;0.300;[0.197, 0.394]
+pooled;comparison_A;"macro-F1 over 5 supported classes (resampled: available-class; defined-class counts {5: 1092, 4: 805, 3: 100, 2: 3})";0.517;0.495;[0.299, 0.743]
+pooled;comparison_B;"macro-F1 over 8 supported classes (resampled: available-class; defined-class counts {8: 774, 7: 916, 6: 284, 5: 26})";0.216;0.211;[0.140, 0.353]
+pooled;row exact match;187 rows;0.089;0.091;
+de;elements (tuples);micro-F1;0.485;0.488;[0.387, 0.580]
+de;technology detection;micro-F1;0.833;0.831;[0.744, 0.904]
+de;evaluation, score B;micro-F1;0.385;0.386;[0.293, 0.495]
+de;comparison target, score B;micro-F1;0.694;0.688;[0.572, 0.803]
+de;evaluation, score A;accuracy on 62 matched units;0.711;0.710;[0.580, 0.855]
+de;comparison target, score A;accuracy on 64 matched units;0.834;0.828;[0.718, 0.932]
+de;element;"macro-F1 over 16 supported classes (resampled: available-class; defined-class counts {16: 1353, 15: 441, 14: 163, 13: 42, 12: 1})";0.464;0.465;[0.312, 0.574]
+de;evaluation_A;"macro-F1 over 4 supported classes (resampled: available-class; defined-class counts {4: 1904, 3: 96})";0.465;0.461;[0.358, 0.644]
+de;evaluation_B;"macro-F1 over 4 supported classes (resampled: available-class; defined-class counts {4: 1999, 3: 1})";0.252;0.251;[0.173, 0.341]
+de;comparison_A;"macro-F1 over 3 supported classes (resampled: available-class; defined-class counts {3: 1204, 2: 765, 1: 31})";0.502;0.491;[0.295, 0.978]
+de;comparison_B;"macro-F1 over 5 supported classes (resampled: available-class; defined-class counts {5: 1089, 4: 635, 3: 191, 2: 82, 1: 3})";0.245;0.239;[0.190, 0.512]
+de;element;"macro-F1 over 15 common-support classes (sensitivity, point estimate; L21)";0.495;0.496;
+de;evaluation_A;"macro-F1 over 4 common-support classes (sensitivity, point estimate; L21)";0.465;0.461;
+de;evaluation_B;"macro-F1 over 4 common-support classes (sensitivity, point estimate; L21)";0.252;0.251;
+de;comparison_A;"macro-F1 over 3 common-support classes (sensitivity, point estimate; L21)";0.502;0.491;
+de;comparison_B;"macro-F1 over 4 common-support classes (sensitivity, point estimate; L21)";0.306;0.299;
+de;row exact match;90 rows;0.087;0.089;
+en;elements (tuples);micro-F1;0.375;0.379;[0.291, 0.461]
+en;technology detection;micro-F1;0.797;0.802;[0.687, 0.890]
+en;evaluation, score B;micro-F1;0.383;0.386;[0.291, 0.477]
+en;comparison target, score B;micro-F1;0.574;0.580;[0.419, 0.712]
+en;evaluation, score A;accuracy on 56 matched units;0.890;0.893;[0.797, 0.961]
+en;comparison target, score A;accuracy on 65 matched units;0.721;0.723;[0.576, 0.840]
+en;element;"macro-F1 over 16 supported classes (resampled: available-class; defined-class counts {16: 1533, 15: 415, 14: 49, 13: 3})";0.329;0.328;[0.224, 0.428]
+en;evaluation_A;"macro-F1 over 4 supported classes (resampled: available-class; defined-class counts {4: 1924, 3: 76})";0.676;0.681;[0.453, 0.738]
+en;evaluation_B;"macro-F1 over 4 supported classes (resampled: available-class; defined-class counts {4: 1999, 3: 1})";0.321;0.323;[0.178, 0.425]
+en;comparison_A;"macro-F1 over 5 supported classes (resampled: available-class; defined-class counts {5: 808, 4: 953, 3: 235, 2: 4})";0.562;0.563;[0.354, 0.770]
+en;comparison_B;"macro-F1 over 7 supported classes (resampled: available-class; defined-class counts {7: 927, 6: 852, 5: 205, 4: 16})";0.278;0.291;[0.149, 0.442]
+en;element;"macro-F1 over 15 common-support classes (sensitivity, point estimate; L21)";0.351;0.350;
+en;evaluation_A;"macro-F1 over 4 common-support classes (sensitivity, point estimate; L21)";0.676;0.681;
+en;evaluation_B;"macro-F1 over 4 common-support classes (sensitivity, point estimate; L21)";0.321;0.323;
+en;comparison_A;"macro-F1 over 3 common-support classes (sensitivity, point estimate; L21)";0.866;0.865;
+en;comparison_B;"macro-F1 over 4 common-support classes (sensitivity, point estimate; L21)";0.439;0.459;
+en;row exact match;97 rows;0.090;0.093;

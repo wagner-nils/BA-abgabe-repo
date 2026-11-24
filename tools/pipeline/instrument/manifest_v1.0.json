@@ -1,0 +1,133 @@
+{
+  "module": "M5a",
+  "renders": [
+    "system prompt",
+    "tool config"
+  ],
+  "does_not_render": "the human annotation sheet — see INSTRUMENT-DESIGN.md, scope",
+  "codebook": {
+    "path": "tools/annotation/codebook/codebook-v1.0.yaml",
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "artifacts": {
+    "system_prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b"
+  },
+  "provenance": {
+    "code_input_commit": "67497606b01a9cb1555f58851a69d3b0826ae62a",
+    "renderer_sha256": "e2e37a7769459f25",
+    "python": "3.13.12",
+    "pyyaml": "6.0.2"
+  },
+  "excluded_top_level": [
+    "calibration_evidence",
+    "confidence",
+    "created",
+    "frozen",
+    "frozen_after",
+    "frozen_on",
+    "speaker",
+    "status",
+    "supersedes"
+  ],
+  "exclusion_rule_treatment": {
+    "X1": "include",
+    "X2": "include",
+    "X3": "transform",
+    "X4": "transform",
+    "X5": "include",
+    "X6": "include",
+    "X7": "transform",
+    "X8": "exclude",
+    "X9": "exclude",
+    "X10": "exclude",
+    "X11": "transform"
+  },
+  "transformations": {
+    "perspective": {
+      "reason": "ends with \"is recorded separately in the `speaker` field\" -- a field the model is not asked for (D7).",
+      "authority": "D7; the plan's fourth-entry decision dropped speaker from the quantitative output.",
+      "replacement": "The label captures WHAT THE PARAGRAPH ASSERTS about the technology-frame relation. It is not what a reader would feel, and it is not whether the outlet endorses the claim."
+    },
+    "evaluation.excluded_value": {
+      "reason": "ends with \"Annotator uncertainty goes in `confidence`\" -- a field the model is not asked for (D7).",
+      "authority": "D7; human confidence records coder uncertainty, which is a different quantity from a model self-report and has no stated analysis.",
+      "replacement": "There is deliberately no `uncertain` value. It would be a statement about the coder rather than about the text, and mixing an epistemic label into a semantic label set makes the distribution uninterpretable and inflates apparent disagreement. Choose the semantic label the text supports."
+    },
+    "frame_elements.F4b.recall_warning": {
+      "reason": "the operative rule -- no stated causal mechanism is required -- is followed by two label priors: P034's \"single largest code in energy opinion writing\" and \"expect this to be the hardest element for humans too\". Telling the model an element is common, or hard, is exactly the prior D8 excludes. Found by reading the rendered prompt, not by the tests.",
+      "authority": "D8: exclude aggregate prevalence and difficulty claims. The rule and its example are kept.",
+      "replacement": "A frame does NOT require a stated causal mechanism. \"Wind strengthens Germany's energy security\", with no explanation of how, fires F4b."
+    },
+    "evaluation.values.neutral.definition": {
+      "reason": "ends with \"News prose is overwhelmingly factual in register, so this class will be large, and how you define it will drive the numbers\" -- a direct statement that one label should be frequent.",
+      "authority": "D8: exclude prevalence claims.",
+      "replacement": "A factual mention within the frame that would gratify neither side."
+    },
+    "evaluation.values.mixed.definition": {
+      "reason": "the operative sentence is followed by SemEval provenance explaining where the value was inherited from. Not a prior, but not an instruction either.",
+      "authority": "D8: exclude decision provenance; the operative sentence is kept.",
+      "replacement": "Both a positive and a negative evaluation are present on the SAME frame."
+    },
+    "prompt.abstention_instruction": {
+      "reason": "reads \"return an empty relation list and set no_frame_present\" -- but `no_frame_present` is no longer an outcome value after D12 collapsed three states into two. Rendered verbatim it contradicts the output contract two sections later. My own simplification created this; the verbatim-appearance test blessed it.",
+      "authority": "D12: the outcome vocabulary is off_topic | technologies_present, and a technology named but unframed is a relation with empty `elements`.",
+      "replacement": "Do not invent a relation, an element or an evaluation to fill the schema. Where the paragraph makes a statement about a technology but frames nothing about it, give that technology a relation with an empty `elements` list. Where it makes no statement about any listed technology at all, set `outcome` to `off_topic` and return no relations."
+    },
+    "no_frame_present.hard_rule": {
+      "reason": "names the retired `no_frame_present` field three times. Its operative content -- an unmatched element is F9 plus a note, never a claim that nothing was framed -- must survive in the new vocabulary.",
+      "authority": "D12, as above.",
+      "replacement": "An empty `elements` list means THE TEXT DOES NOT FRAME this technology. It does NOT mean \"I could not find an element that fits\". If you believe something is being framed but no element matches, that is F9 plus a note -- never an empty `elements` list."
+    },
+    "comparison_target.rules": {
+      "reason": "the `multiple` rule illustrates itself with a calibration paragraph id (A004_p04) -- which is also one of the three paragraphs coded in both A0b and A1. The example text is what defines the boundary; the id is provenance.",
+      "authority": "D8: keep a calibration-derived example where it defines the operative boundary, drop the identifier.",
+      "replacement": [
+        "`none` is a substantive value and NOT missing data.",
+        "`other` requires a note.",
+        "`multiple` where the text compares against more than one reference point, for example against \"nuclear and coal\" together. List them in `comparison_note`. Single values stay single so that the agreement figure remains computable.",
+        "A technology named ONLY as a reference point does not get its own relation unless the text also evaluates it in its own right."
+      ]
+    },
+    "frame_elements.F6b.boundary_vs_F5a": {
+      "reason": "the operative rule -- go by the CAUSE, not the effect -- is wrapped in version narrative (\"ADDED IN v0.3, from A0b\") and in who said it (\"The annotator wrote ...\").",
+      "authority": "D8: include a calibration-derived example where it defines the operative boundary; exclude the version narrative and the attribution. The example itself is kept.",
+      "replacement": "Go by the CAUSE, not the effect. Where the cause is weather, season or variability, it is an availability claim and fires F5a: \"weak wind conditions cut the wind turbines' output by 3.2 percent\" is F5a, because the wind did not blow. Where the cause is the design, the site or the technology's efficiency, it is a performance claim and fires F6b: \"PV on noise barriers yields X kWh/m2\" is F6b. Both fire when the text makes both claims."
+    },
+    "exclusion_principles.X3": {
+      "reason": "instructs `set speaker`, a field the model is not asked for (D7). The first sentence is load-bearing and must survive.",
+      "authority": "PROTOTYPE-PLAN.md fourth-entry decision: speaker dropped from the quantitative output; the human field survives as a note-taking aid.",
+      "replacement": "Code evaluations voiced by quoted or attributed sources as evaluations asserted in the paragraph, but do not infer that the outlet endorses them. Where several voices evaluate the same technology and frame in opposite directions, record `mixed` on the single relation for that technology; do not create one relation per speaker."
+    },
+    "exclusion_principles.X4": {
+      "reason": "instructs `set confidence: 1`, a field the model is not asked for (D7). The paragraph-is-the-unit rule must survive.",
+      "authority": "D7; the human confidence field records coder uncertainty, which is not the same quantity as a model's self-report and has no stated analysis.",
+      "replacement": "Use only the paragraph in front of you. Do not resolve a technology, an antecedent or an evaluation from the headline, the neighbouring paragraphs or the rest of the article."
+    },
+    "exclusion_principles.X7": {
+      "reason": "the operative per-technology rule is buried under a literature statistic (25-69 accuracy points, P040) and a corpus prevalence figure (41 % multi-technology). Prevalence is excluded by D8.",
+      "authority": "D8: exclude aggregate prevalence and article-frequency claims.",
+      "replacement": "Do not read a technology's evaluation off the article's overall tone. Where several technologies appear in one paragraph, judge each one separately on what the paragraph says about that technology."
+    },
+    "exclusion_principles.X11": {
+      "reason": "the operative rule is followed by an A0 anecdote naming a calibration paragraph and the annotator's note.",
+      "authority": "D8: include a calibration-derived example only where it defines the operative boundary; this one does not, the rule is already explicit.",
+      "replacement": "Tick only the technologies the paragraph itself makes a statement about. Do not add a technology because you know it is implied by a policy, a programme or a company named in the text. That is world knowledge, not text."
+    }
+  },
+  "relational_invariants": {
+    "enforced_by": "validate_response() in this module. M4 MUST call it on every response before anything is written; M4 does not exist yet.",
+    "not_expressible_in_json_schema": [
+      "off_topic implies no relations, and technologies_present implies at least one",
+      "one relation per technology, never repeated",
+      "exactly one evaluation per fired frame, none for an unfired frame",
+      "a note where a note-requiring element fires",
+      "a comparison_note where comparison_target is other or multiple",
+      "a subtype field only on the technology that owns it",
+      "the owning subtype field REQUIRED on wind and hydrogen relations -- the instrument says to record it and offers `unspecified`, so absence is a missing value, not an inapplicable one",
+      "comparison_target `none` where `elements` is empty -- a comparison target attaches to an evaluation, which attaches to a fired frame"
+    ]
+  },
+  "consumed_by": "preflight.py loads these artifacts by pin; build_request() submits them unchanged. Verification status is recorded per run in tools/runs/, not here."
+}

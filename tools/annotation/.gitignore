@@ -1,0 +1,14 @@
+# Annotation sheets carry verbatim paragraph text and headlines from the
+# licensed pilot corpus. Same rule as corpus: the text
+# stays on the machine, only the instruments and the split record are tracked.
+# The split is recoverable from split-assignment.json, which records immutable corpus
+# versions keyed by the identity triple (article_id, paragraph_id, sha256) plus an
+# append-only assignment log. The seed no longer determines membership.
+# and each paragraph carries a text_sha256 for verification.
+sheets/
+
+# Quarantined files: model-prefilled sheets and anything else that must not
+# reach the annotation flow. Kept on the machine, never committed.
+_quarantine/
+# The coder's free-text notes of schema-2 sessions: may quote licensed text.
+labels/private/

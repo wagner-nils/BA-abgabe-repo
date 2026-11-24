@@ -1,0 +1,185 @@
+{
+  "tools": [
+    {
+      "toolSpec": {
+        "name": "record_relations",
+        "description": "Record the technology-frame-evaluation relations asserted in one news paragraph, exactly as the coding instrument defines them.",
+        "strict": true,
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "explanation",
+              "outcome",
+              "relations"
+            ],
+            "properties": {
+              "explanation": {
+                "type": "string",
+                "description": "One to three sentences, written before the record: which technologies the paragraph makes a statement about, which elements fire for each, and which codebook rule decides any hard case. Quote no more than a few words of the paragraph."
+              },
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "off_topic",
+                  "technologies_present"
+                ],
+                "description": "`off_topic` when the paragraph makes no statement about any listed technology; `technologies_present` otherwise."
+              },
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "technology",
+                    "frames",
+                    "comparison_target"
+                  ],
+                  "properties": {
+                    "technology": {
+                      "type": "string",
+                      "enum": [
+                        "general",
+                        "solar",
+                        "wind",
+                        "hydrogen",
+                        "nuclear",
+                        "other_renewable",
+                        "storage"
+                      ]
+                    },
+                    "wind_siting": {
+                      "type": "string",
+                      "enum": [
+                        "onshore",
+                        "offshore",
+                        "unspecified"
+                      ],
+                      "description": "Only for technology `wind`, where it is required; `unspecified` where the text does not say."
+                    },
+                    "hydrogen_pathway": {
+                      "type": "string",
+                      "enum": [
+                        "green",
+                        "blue",
+                        "gray",
+                        "unspecified"
+                      ],
+                      "description": "Only for technology `hydrogen`, where it is required; `unspecified` where the text does not say."
+                    },
+                    "frames": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/$defs/frame"
+                      },
+                      "description": "One entry per frame that fires for this technology, each with its fired elements and its evaluation. An empty list means the paragraph makes a statement about this technology but frames nothing about it."
+                    },
+                    "comparison_target": {
+                      "type": "string",
+                      "enum": [
+                        "natural_gas",
+                        "coal",
+                        "oil",
+                        "fossil_generic",
+                        "grid_status_quo",
+                        "general",
+                        "solar",
+                        "wind",
+                        "hydrogen",
+                        "nuclear",
+                        "other_renewable",
+                        "storage",
+                        "multiple",
+                        "none",
+                        "other"
+                      ]
+                    },
+                    "comparison_note": {
+                      "type": "string",
+                      "description": "Required when comparison_target is `other` or `multiple`."
+                    },
+                    "note": {
+                      "type": "string",
+                      "description": "Required when any of `F9` fires."
+                    }
+                  }
+                }
+              }
+            },
+            "$defs": {
+              "frame": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "frame",
+                  "elements",
+                  "evaluation"
+                ],
+                "properties": {
+                  "frame": {
+                    "type": "string",
+                    "enum": [
+                      "costs",
+                      "jobs",
+                      "climate",
+                      "security",
+                      "reliability",
+                      "feasibility",
+                      "siting",
+                      "regulation",
+                      "other"
+                    ]
+                  },
+                  "elements": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "F1a",
+                        "F1b",
+                        "F2a",
+                        "F2b",
+                        "F2c",
+                        "F3a",
+                        "F3b",
+                        "F4a",
+                        "F4b",
+                        "F5a",
+                        "F5b",
+                        "F6a",
+                        "F6b",
+                        "F7a",
+                        "F7b",
+                        "F8a",
+                        "F9"
+                      ]
+                    },
+                    "description": "Every element of THIS frame that fires for this technology; only elements that belong to the named frame."
+                  },
+                  "evaluation": {
+                    "type": "string",
+                    "enum": [
+                      "positive",
+                      "negative",
+                      "neutral",
+                      "mixed"
+                    ],
+                    "description": "The evaluation of THIS frame for THIS technology."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "toolChoice": {
+    "tool": {
+      "name": "record_relations"
+    }
+  }
+}

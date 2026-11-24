@@ -1,0 +1,43 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{63.8pt}>{\raggedright\arraybackslash}p{61.1pt}>{\raggedright\arraybackslash}p{71.2pt}>{\raggedright\arraybackslash}p{47.9pt}>{\raggedright\arraybackslash}p{67.9pt}>{\raggedright\arraybackslash}p{71.2pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (ROBUSTNESS MODEL COMPARISON -- v1.0 under novapro, one execution, not the registered result (specification §4f)). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.686 & 51 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 39; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 34 & 0.314 \\
+pooled & comparison target & 0.868 & 53 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 28 & 0.605 \\
+de & evaluation & 0.607 & 28 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 25; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 18 & 0.279 \\
+de & comparison target & 0.963 & 27 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 11 & 0.684 \\
+en & evaluation & 0.783 & 23 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 14; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 16 & 0.356 \\
+en & comparison target & 0.769 & 26 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 17 & 0.526 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{68.4pt}>{\raggedright\arraybackslash}p{82.7pt}>{\raggedright\arraybackslash}p{87.9pt}>{\raggedright\arraybackslash}p{87.9pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (ROBUSTNESS MODEL COMPARISON -- v1.0 under novapro, one execution, not the registered result (specification §4f)). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.686 & 0.520 over 4 & 0.237 over 4 \\
+pooled & comparison target & 0.868 & 0.435 over 6 & 0.292 over 8 \\
+de & evaluation & 0.607 & 0.453 over 4 & 0.226 over 4 \\
+de & comparison target & 0.963 & 0.667 over 3 & 0.429 over 4 \\
+en & evaluation & 0.783 & 0.620 over 4 & 0.262 over 4 \\
+en & comparison target & 0.769 & 0.377 over 5 & 0.270 over 6 \\
+\end{longtable}
+\endgroup

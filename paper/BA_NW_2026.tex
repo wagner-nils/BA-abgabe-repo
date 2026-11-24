@@ -1,0 +1,574 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel} % English is the main language; ngerman for the statutory declaration
+\usepackage[a4paper, width=160mm, top=35mm, bottom=30mm, bindingoffset=0mm]{geometry}
+\usepackage{graphicx}
+\usepackage[table]{xcolor} % table: row colours in the included GUIDE-LLM checklist (app:guide_llm)
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\allsectionsfont{\raggedright}
+\usepackage{etoolbox}
+\preto{\section}{\clearpage}
+\usepackage{needspace} % keeps the Results block of the table of contents on one page (see \addtocontents before \section{Results})
+\usepackage{csquotes}
+\usepackage[backend=biber, style=apa, sorting=nyt]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{bibliography.bib}
+\addbibresource{literature.bib}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{chngcntr}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,patterns,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{dateplot}
+\usepackage[scaled=0.92]{helvet}
+\usepackage[eulergreek]{sansmath}
+\captionsetup{labelsep=period, labelfont=bf}
+\definecolor{figInk}{HTML}{000000}
+\definecolor{figModel}{HTML}{0072B2}
+\definecolor{figAbove}{HTML}{E69F00}
+\definecolor{figChanged}{HTML}{D55E00}
+\definecolor{figAdjusted}{HTML}{009E73}
+\definecolor{figModelLight}{HTML}{56B4E9}
+\definecolor{figGerman}{HTML}{CC79A7}
+\definecolor{figEnglish}{HTML}{F0E442}
+\definecolor{figGreyA}{HTML}{666666}
+\definecolor{figGreyB}{HTML}{A6A6A6}
+\definecolor{figGreyC}{HTML}{E0E0E0}
+\colorlet{figBlue}{figModel}
+\colorlet{figVermillion}{figChanged}
+\colorlet{figBelow}{figModel}
+\colorlet{figHighlight}{figChanged}
+\colorlet{figContext}{figGreyB}
+\newcommand{\figfont}{\sffamily\sansmath\fontsize{9.8}{12}\selectfont\frenchspacing}
+\newcommand{\figfontsmall}{\sffamily\sansmath\fontsize{8.7}{10.5}\selectfont\frenchspacing}
+\pgfplotsset{
+  thesisfig/.style={
+    font=\figfont, label style={font=\figfont}, title style={font=\figfont},
+    every tick label/.append style={font=\figfontsmall},
+    legend style={font=\figfontsmall, draw=none, fill=none, at={(0.5,0)}, anchor=north, yshift=-13mm,
+      /tikz/every even column/.append style={column sep=10pt}},
+    legend cell align=left,
+    axis lines*=left, axis line style={line width=0.5pt}, grid=none,
+    tick style={line width=0.5pt, black}, tick align=outside, major tick length=3pt,
+    every axis plot/.append style={line width=0.8pt},
+    error bars/error bar style={line width=0.8pt},
+    error bars/error mark options={rotate=90, mark size=1.6pt, line width=0.8pt},
+    mark size=2.2pt,
+    /pgf/number format/use period, /pgf/number format/1000 sep={,},
+    clip=false,
+  },
+  rowaxis/.style={y axis line style={draw=none}, ytick style={draw=none}},
+  pooled/.style={only marks, mark=*, draw=figModel, fill=figModel, mark options={draw=figModel, fill=figModel}},
+  german/.style={only marks, mark=square*, draw=figGerman, mark options={draw=figGerman, fill=figGerman}, mark size=2.0pt,
+    error bars/error mark options={rotate=90, mark size=1.6pt, line width=0.8pt, draw=figGerman}},
+  english/.style={only marks, mark=triangle*, draw=figGreyA, mark options={draw=figGreyA, fill=figEnglish, line width=0.5pt}, mark size=2.7pt,
+    error bars/error mark options={rotate=90, mark size=1.6pt, line width=0.8pt, draw=figGreyA}},
+  registered/.style={only marks, mark=diamond*, draw=figModel, mark options={draw=figModel, fill=figModel}, mark size=3.0pt},
+  highlight/.style={only marks, mark=pentagon*, draw=figHighlight, mark options={draw=figHighlight, fill=figHighlight}, mark size=2.5pt},
+  highlightb/.style={only marks, mark=triangle*, draw=figHighlight, mark options={draw=figHighlight, fill=figHighlight}, mark size=2.9pt},
+  context/.style={only marks, mark=*, draw=figContext, mark options={draw=figContext, fill=figContext}},
+  open/.append style={mark options={fill=white, line width=0.8pt}},
+  precisionmark/.style={only marks, mark=square*, mark size=1.9pt, draw=figModel, mark options={draw=figModel, fill=white, line width=0.7pt}},
+  recallmark/.style={only marks, mark=triangle*, mark size=2.4pt, draw=figModel, mark options={draw=figModel, fill=white, line width=0.7pt, yshift=0.6pt, rotate=180}},
+}
+\tikzset{
+  refline/.style={figGreyB, dashed, line width=0.5pt},
+  guideline/.style={figGreyC, line width=0.5pt},
+  panellabel/.style={anchor=base west, inner sep=0pt, font=\sffamily\bfseries\fontsize{11}{13}\selectfont},
+  figtext/.style={font=\figfontsmall},
+}
+\usepackage{pifont}
+\usepackage{docmute}
+\providecommand{\checked}{\ding{110}}   % filled box
+\providecommand{\unchecked}{\ding{111}} % empty box
+\newcommand{\inthesis}{}
+\usepackage{hyperref}
+\DeclareUrlCommand\modelid{\urlstyle{tt}\def\UrlBreaks{\do\.\do\-\do\:\do\/\do\_}}
+\makeatletter\renewcommand{\@pnumwidth}{4.4em}\makeatother
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \pertype{misc}
+      \step[fieldsource=note, matchi=\regexp{preprint|peer.reviewed|arxiv}, final]
+      \step[fieldsource=eprinttype, matchi=\regexp{\Aarxiv\Z}, final]
+      \step[fieldset=organization, fieldvalue={arXiv}]
+    }
+    \map[overwrite]{
+      \pertype{misc}
+      \step[fieldsource=note, matchi=\regexp{preprint|peer.reviewed|arxiv}, final]
+      \step[fieldset=titleaddon, fieldvalue={Preprint}]
+      \step[fieldset=eprint, null]
+      \step[fieldset=eprinttype, null]
+      \step[fieldset=eprintclass, null]
+      \step[typesource=misc, typetarget=online]
+    }
+    \map[overwrite]{
+      \step[fieldsource=note, final]
+      \step[fieldset=note, null]
+    }
+  }
+}
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.6}
+\renewcommand{\textfraction}{.12}
+\renewcommand{\floatpagefraction}{.8}
+\makeatletter\setlength{\@fptop}{0pt}\setlength{\@fpsep}{\floatsep}\makeatother
+
+\graphicspath{{images/}}
+
+\newcommand{\mytitle}{Extracting Technology Frames from Renewable Energy News with Large Language Models}
+\newcommand{\myname}{Nils Wagner}
+\newcommand{\authorfix}[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand{\myexaminer}{Prof.\ Dr.\ Stefan Feuerriegel}
+\newcommand{\mysupervisor}{Kerstin Forster}
+\newcommand{\mymatriculation}{12554615}
+\newcommand{\mycompletiondate}{\iflanguage{ngerman}{25.11.2026}{25 November 2026}}
+\newcommand{\guideref}{\ifcsname r@app:guide_llm\endcsname Appendix~\ref{app:guide_llm}\else\authorfix{[TODO: GUIDE-LLM appendix not yet embedded]}\fi}
+
+\newcommand{\changefont}{\fontsize{8}{8}\selectfont}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{\changefont{\mytitle}}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{14.5pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\interfootnotelinepenalty=10000
+\counterwithout{footnote}{section}
+
+\makeatletter
+\renewcommand\@makefntext[1]{\parindent 1em\noindent\scriptsize\@makefnmark#1}
+\makeatother
+
+\hypersetup{
+    pdftitle={\mytitle},
+    pdfauthor={\myname},
+    pdfsubject={Bachelor's thesis, Munich School of Management, Ludwig-Maximilians-Universität München},
+    pdfkeywords={technology frames, framing analysis, large language models, automated content analysis, validation, renewable energy, news media},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=blue,
+    bookmarksdepth=2
+}
+
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{gray}\itshape,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=8pt,
+    backgroundcolor=\color{gray!5},
+    frame=single,
+    rulecolor=\color{black!30},
+    breaklines=true,
+    breakatwhitespace=true,
+    showstringspaces=false,
+    tabsize=4,
+    captionpos=b,
+    aboveskip=10pt,
+    belowskip=10pt
+}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\pkg}[1]{\textsf{#1}}
+\newcommand{\file}[1]{\texttt{#1}}
+
+\begin{document}
+
+\pagenumbering{Roman} % Roman from the title page on: avoids a second page.1 anchor (the titlepage environment resets the counter)
+\begin{titlepage}
+\begin{center}
+
+\rule{\textwidth}{1.5pt}\par
+\vspace{0.3cm}
+{\LARGE\textbf{\mytitle}\par}
+\vspace{0.3cm}
+\rule{\textwidth}{1.5pt}
+
+\vspace{0.8cm}
+
+{\Large\textbf{Bachelor's Thesis}\par}
+
+\vspace{0.6cm}
+
+{\large submitted for the degree of Bachelor of Science\\
+at the Munich School of Management of\\
+Ludwig-Maximilians-Universität München\par}
+
+\vfill
+
+\includegraphics[width=0.24\textwidth]{sigillum.png}
+
+\vfill
+
+\end{center}
+
+{\large
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Author:}\\[0.25cm]
+\myname\\[0.25cm]
+Student Number: \mymatriculation
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Examiner:}\\[0.25cm]
+\myexaminer\\[0.4cm]
+\textbf{Supervisor:}\\[0.25cm]
+\mysupervisor
+\end{minipage}
+
+\vspace{0.7cm}
+
+\noindent\hfill
+\begin{minipage}[t]{0.47\textwidth}
+Munich, \mycompletiondate
+\end{minipage}\par}
+
+\vfill
+
+\begin{center}
+\vspace*{-\topsep}\footnotesize
+\textbf{Document Statistics:} This thesis contains 69,537 characters (including spaces, counted over Chapters 1--8: running text and headings, footnotes, tables, and figure and table captions).
+\end{center}
+\end{titlepage}
+
+\pagenumbering{Roman}
+\setcounter{page}{2}
+
+\newpage
+\begin{abstract}
+\noindent
+Firms and agencies monitoring energy-technology news could use language-model frame shares, but accuracy-validated labels can bias them. No reviewed study validates one such instrument at frame-element level, per language and on shares. Pre-specified rules compare a frozen-codebook pipeline with one coder on 120 German and English paragraphs, probability-sampled from a keyword-prefiltered, purposive corpus. Against the first coding, technology detection (micro-F1 0.935) and shared-frame evaluations (accuracy 0.874) agree closely, frame elements less (micro-F1 0.643). The model marks fewer elements. Most shares lie lower, investment's by 18.3 percentage points. Against 40 paragraphs re-coded before the results, later checks find this recall deficit smaller but persisting in point estimate. In exploratory checks against the full, mostly post-result re-code, investment's share differs by $-13.6$ [$-20.4$, $-7.6$] points. Neither coding is established as correct. Projects with their own frames can reuse the validation workflow. Shares need a human-coded probability sample and a defended coding convention.
+\end{abstract}
+
+\newpage
+\makeatletter\renewcommand{\@tocrmarg}{2.55em plus1fil}\makeatother
+\tableofcontents
+
+\newpage
+\phantomsection\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\newpage
+\phantomsection\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+
+\newpage
+\section*{List of Abbreviations}
+\addcontentsline{toc}{section}{List of Abbreviations}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{118mm}@{}}
+API & application programming interface \\
+AUC & area under the receiver operating characteristic curve \\
+CI & confidence interval \\
+DSL & design-based supervised learning \parencite{egami2023dsl} \\
+EU & European Union \\
+F1 & harmonic mean of precision and recall \\
+FN, FP, TP & false negative, false positive, true positive \\
+GDELT & Global Database of Events, Language, and Tone \\
+GPT & generative pre-trained transformer (OpenAI model family) \\
+GUIDE-LLM & guidelines for the use of LLMs in behavioural and social science, a reporting checklist \parencite{feuerriegel2026guidellm} \\
+LLM & large language model \\
+NLP & natural language processing \\
+RQ & research question \\
+SE & standard error \\
+SHA-256 & Secure Hash Algorithm with a 256-bit digest (file fingerprints) \\
+SemEval & International Workshop on Semantic Evaluation (shared tasks) \\
+USD & United States dollar \\
+\end{tabular}
+
+\newpage
+\newcounter{frontmatterpages}\setcounter{frontmatterpages}{\value{page}}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introduction}\label{sec:introduction}
+\input{chapters/01_introduction}
+
+\section{Theoretical Background}\label{sec:background}
+\input{chapters/02_theoretical_background}
+
+\section{Related Work}\label{sec:related_work}
+\input{chapters/03_related_work}
+
+\section{System Design}\label{sec:system_design}
+\input{chapters/04_system_design}
+
+\section{Methodology}\label{sec:methodology}
+\input{chapters/05_methodology}
+
+\addtocontents{toc}{\protect\needspace{11\baselineskip}}
+\section{Results}\label{sec:results}
+\input{chapters/06_results}
+
+\section{Discussion}\label{sec:discussion}
+\input{chapters/07_discussion}
+
+\section{Conclusion}\label{sec:conclusion}
+\input{chapters/08_conclusion}
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{\value{frontmatterpages}} % continues the front matter's Roman numbering
+\begingroup
+\raggedright
+\setlength{\emergencystretch}{3em} % long URLs and compound words: no line into the margin
+\printbibliography[title={References}, heading=bibintoc]
+\endgroup
+
+\appendix
+\section{Appendix}\label{app:main}
+\input{chapters/appendix}
+
+\newpage
+\section{Electronic Appendix}\label{app:electronic}
+The electronic appendix is the submission repository, a copy of the project repository at the commit named below without its version history. It holds the material behind every figure of this thesis and the tables not printed in Appendix~A. Table~\ref{tab:electronic} maps each retained claim to its files; paths are relative to the repository root, and the README describes the set-up, the pipeline and the reproduction check.
+
+The files support two levels of reproduction. Every reported figure can be recomputed from the committed run records, labels and manifests without a model call; most generators re-render and compare their floats in a \texttt{-{}-check} mode. Re-running an extraction needs the article text, which is not in the repository, and access to Amazon Bedrock, and it may return different outputs, because the provider offers no seed.
+
+\begin{description}
+\item[Commit] {\small\texttt{0b77ebdc831508fe8c5cd4ab1b517899841c4643}} of the private project repository. The submitted PDF is built from this state; only this identifier was added afterwards.
+\item[Withheld] Article and paragraph text, raw model responses, private journals and coding sheets, the stored translations, credentials. The texts are withheld as a precaution: the basis for storing, externally processing and redistributing the hand-collected articles was not clarified. The coding interface, a browser tool built outside the repository, is not archived in any build; its behaviour is documented by its written specification only.
+\end{description}
+
+\begingroup\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{48mm}>{\raggedright\arraybackslash}p{26mm}>{\raggedright\arraybackslash}p{78mm}@{}}
+\caption[Index of the electronic appendix]{Index of the electronic appendix: retained claims and material, where the thesis uses them, and the repository files that back them.}\label{tab:electronic} \\
+\toprule
+\textbf{Claim or material} & \textbf{In the thesis} & \textbf{Repository files} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Claim or material} & \textbf{In the thesis} & \textbf{Repository files} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Pipeline: gate, runner, validator, evaluator, estimators and tests; plans and review logs & Chapters~\ref{sec:system_design} and~\ref{sec:methodology} & \modelid{tools/pipeline/}, \modelid{tools/README.md}, \modelid{tools/docs/} \\
+Codebook versions v0.1 to v1.0 & Table~\ref{tab:codebook_elements} & \modelid{tools/annotation/codebook/} \\
+Rendered instrument: system prompt (printed), tool configuration and pins (not printed; tool configuration sha256 \texttt{a1e82607}\ldots) & Appendix~\ref{app:instrument} & \modelid{tools/pipeline/instrument/system-prompt_v1.0.txt}, \modelid{tools/pipeline/instrument/tool-config_v1.0.json}, \modelid{tools/pipeline/pins.json}, \modelid{paper/tables/instrument_appendix.tex} \\
+Corpus metadata (no text) & Table~\ref{tab:corpus_facts} & \modelid{corpus/manifest.csv} \\
+Figures not printed: corpus paragraphs by publication month; element support in the sessions before the evaluation sample & Appendices~\ref{app:corpus_details}, \ref{app:reference_disclosures} & \modelid{paper/images/corpus_timeline.tex}, \modelid{paper/images/element_support.tex}, generated by \modelid{tools/annotation/descriptives.py} \\
+Registry and split assignments & Table~\ref{tab:corpus_facts} & \modelid{tools/annotation/split-assignment.json} \\
+Requirements of the topic description: status, reason and place & Appendix~\ref{app:topic_requirements} & the files indexed for the tables it cites \\
+Output records and aggregation keys; registry corpus versions & Appendix~\ref{app:data_dictionary} & \modelid{tools/runs/<run_id>_predictions.csv}, \modelid{<run_id>_terminal.csv}, \modelid{corpus/manifest.csv}, \modelid{tools/annotation/archive-manifest.json} \\
+Frame, sample, re-code, census and completion manifests; threshold seal & Figure~\ref{fig:sample_flow}, Table~\ref{tab:corpus} & \modelid{tools/annotation/labels/A2_frame_manifest.json}, \modelid{A2_sample_manifest.json}, \modelid{A2R_manifest.json}, \modelid{A3_sample_manifest.json}, \modelid{A2_frame_completion_manifest.json}, \modelid{A2_threshold_seal.json} \\
+First coding: registered evaluation reference, 120 paragraphs (identifiers and labels only) & Table~\ref{tab:primary} & \modelid{tools/annotation/labels/A2_pass1_v1.0.csv}, \modelid{A2_pass2_v1.0.csv} \\
+Registered re-code: 40 paragraphs, wave 1 & Table~\ref{tab:reliability} & \modelid{tools/annotation/labels/A2R_pass1_v1.0.csv}, \modelid{A2R_pass2_v1.0.csv}, \modelid{A2R_manifest.json} \\
+Supplementary re-code: 80 paragraphs, wave 2; exploratory analyses & Tables~\ref{tab:alpha_waves} and~\ref{tab:recode_waves} & \modelid{tools/annotation/labels/A2R2_pass1_v1.0.csv}, \modelid{A2R2_pass2_v1.0.csv}, \modelid{A2R2_manifest.json} \\
+Other reference labels (identifiers and labels only), sessions and deviation records & Table~\ref{tab:disclosures} & \modelid{tools/annotation/labels/} (\modelid{*_pass1_*.csv}, \modelid{*_pass2_*.csv}, \modelid{sessions.csv}, \modelid{README.md}) \\
+Run records, gate records, per-call, terminal and prediction files & all results & \modelid{tools/runs/<run_id>.json}, \modelid{preflight_<run_id>.json}, \modelid{<run_id>_calls.jsonl}, \modelid{_terminal.csv}, \modelid{_predictions.csv} \\
+Registered metrics, unweighted figures and all evaluator tables & Table~\ref{tab:primary}, Appendix~\ref{app:detailed_results} & \modelid{tools/runs/tables/a2_sonnet_20261013/} \\
+Registered tables not printed: run record (tokens, gate, environment); per-class F1 of every dimension, incl.\ comparison-target classes; both categorical scores with excluded units; classes defined across resamples; clean-domain sensitivity & Appendix~\ref{app:detailed_results} & \modelid{paper/tables/tab_run_record.tex}, \modelid{tab_per_class.tex}, \modelid{tab_categorical.tex}, \modelid{tab_limits.tex}, \modelid{tab_clean_domain.tex}; the evaluator's output files \modelid{table2_per_class.csv}, \modelid{table3_categorical.csv}, \modelid{table6_limits.csv} and \modelid{table7_clean_domain.csv} in \modelid{tools/runs/tables/a2_sonnet_20261013/} \\
+Adjusted prevalences, incl.\ the classes below the reporting threshold & Figure~\ref{fig:dsl}, Appendix~\ref{app:dsl_details} & \modelid{tools/runs/tables/dsl/}, \modelid{paper/tables/tab_dsl.tex} \\
+Fresh census and candidate, incl.\ the replicate tables not printed and the agreement by dimension and language & Appendix~\ref{app:fresh} & \modelid{tools/runs/tables/a3_sonnet_20261019/}, \modelid{a3_candidate/}, \modelid{paper/tables/fresh_sample/} (\modelid{tab_primary.tex} and the replicates), \modelid{paper/images/fresh_sample/} \\
+Model comparison: results table with the configuration controls, Opus~5.5 table, complete and per-element tables (not printed) & Appendix~\ref{app:model_comparison} & \modelid{tools/runs/tables/model_comparison/}, \modelid{model_comparison_diffusion/}, \modelid{model_comparison_gen5/}, \modelid{paper/tables/tab_model_comparison.tex}, \modelid{tab_opus55.tex}, \modelid{tab_model_comparison_full.tex}, \modelid{tab_model_comparison_elements.tex} \\
+Translated input: comparison, translation record and check seal; detailed table and figure of the four differences (not printed) & Appendix~\ref{app:language} & \modelid{tools/runs/tables/language_arm/}, \modelid{tools/runs/language_arm/}, \modelid{paper/tables/tab_language_arm.tex}, \modelid{paper/images/fig_language_arm.tex} \\
+Perturbation battery: analysis, accepted paraphrases, sharpening rules; design and conduct record, results by variant and paraphrase reading per unit (not printed) & Appendix~\ref{app:battery} & \modelid{tools/runs/battery/}, \modelid{paper/tables/tab_battery_design.tex}, \modelid{tab_battery_families.tex}, \modelid{tab_battery_units.tex} \\
+Mandatory form variant & Appendix~\ref{app:form_variant} & \modelid{tools/runs/tables/form_variant/} \\
+Checks of 10 and 11 November (\S4o, \S4p): language contrast, failures by code, valid-output agreement, per-element intervals, adjustment under the second coding; the coder's retest, keyword and majority comparators, configurations against the second coding, the no-frame decision & Appendix~\ref{app:later_checks} & \modelid{tools/runs/tables/review_checks_4o/}, \modelid{review_checks_4p/}; \modelid{tools/pipeline/review_checks_4o.py}, \modelid{review_checks_4p.py}; \modelid{tools/annotation/labels/A2_prefilter_matches.json} (keyword matches, no text) \\
+Later checks: blind re-code comparison, $\alpha$ on the full grid, the coder's $\alpha$ without the 25 re-read paragraphs (key \modelid{recode\_wave2}, not printed), missed elements by cause, comparison-target baseline; context-parity run (instrument v1.0C) & Appendix~\ref{app:later_checks} & \modelid{tools/runs/tables/review_analyses/}, \modelid{tools/runs/tables/context_variant/}; \modelid{tools/pipeline/review_analyses.py}, \modelid{compare_context.py}, \modelid{instrument_v10c.py}, \modelid{missed_elements_sheet.py} \\
+Development iterations: seals, selections, full table & Appendix~\ref{app:development} & \modelid{tools/runs/w3_seal.json}, \modelid{w3_selection.json}, \modelid{w4_seal.json}, \modelid{w4_selection.json}, \modelid{paper/tables/tab_development.tex} \\
+Codebook review: documented gaps, runs, judge matches, full table & Appendix~\ref{app:codebook_review} & \modelid{tools/runs/codebook_review/}, \modelid{paper/tables/tab_codebook_review.tex} \\
+Headline by dimension and language as a figure; former allocation table & --- & \modelid{paper/images/fig_primary.tex}, \modelid{paper/tables/tab_a2_allocation.tex} \\
+Pre-analysis specification with dated amendments & Appendix~\ref{app:protocol} & \modelid{tools/docs/pre-analysis-specification.md} \\
+GUIDE-LLM source & Appendix~\ref{app:guide_llm} & \modelid{paper/GUIDE-LLM.tex} \\
+Generators of the tables and figures (most with a \texttt{-{}-check} mode that re-renders and compares) & all floats & \modelid{tools/pipeline/figures.py}, \modelid{compare_models.py}, \modelid{error_breakdown.py}, \modelid{dsl.py}, \modelid{language_arm.py}, \modelid{battery_analyse.py}, \modelid{compare_form.py}, \modelid{codebook_review.py}, \modelid{render_instrument_appendix.py}, \modelid{review_analyses.py}, \modelid{compare_context.py}; \modelid{tools/annotation/descriptives.py} \\
+\end{longtable}
+\endgroup
+
+\newpage
+\section*{Übersicht verwendeter Hilfsmittel}
+\addcontentsline{toc}{section}{Übersicht verwendeter Hilfsmittel}
+\RaggedRight
+This is the overview of tools used (\foreignlanguage{ngerman}{Übersicht verwendeter Hilfsmittel}) to which the statutory declaration at the end of this thesis refers. It names all generative models used for this thesis by product name and version, and states how, to what extent and for what purpose each was used. Generated wording is not marked passage by passage in the text. Its origin is declared here, and the author's statement after the table says how adopted passages were checked. Part~A lists the models that served as research instruments in the extraction pipeline; their configuration, prompts, data handling and validation are reported in the GUIDE-LLM checklist (\guideref) and in Chapters~\ref{sec:system_design} to~\ref{sec:results}. Part~B lists the AI assistants used in producing the thesis text, the code and the corpus; the author's own statement follows the table.
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{0.15\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.14\textwidth}>{\RaggedRight\arraybackslash}p{0.405\textwidth}@{}}
+\toprule
+\textbf{Tool} & \textbf{Version} & \textbf{Provider} & \textbf{Purpose and extent} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Tool} & \textbf{Version} & \textbf{Provider} & \textbf{Purpose and extent} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r@{}}{\textit{continued on the next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{4}{@{}l}{\textbf{A. Research instruments in the extraction pipeline}} \\*
+Registered extraction model &
+Claude Sonnet 4.6, \modelid{eu.anthropic.claude-sonnet-4-6}; Amazon Bedrock &
+Anthropic &
+The measuring instrument: codes technologies, frame elements, evaluations and comparison targets per paragraph under the frozen codebook v1.0 (Section~\ref{subsec:extraction_call}, Chapter~\ref{sec:methodology}). 360 registered executions on the 120 evaluation paragraphs; further runs on 443 and 55 paragraphs and in the later analyses (Section~\ref{subsec:added_methods}). \\
+\addlinespace
+Comparison models (Anthropic) &
+Claude Opus 4.6 (\modelid{eu.anthropic.claude-opus-4-6-v1}), Claude Sonnet 4.5 (\modelid{eu.anthropic.claude-sonnet-4-5-20250929-v1:0}), Claude Haiku 4.5 (\modelid{eu.anthropic.claude-haiku-4-5-20251001-v1:0}); Amazon Bedrock &
+Anthropic &
+Robustness comparison of the extraction (Section~\ref{subsec:recurrence}, Appendix~\ref{app:model_comparison}); no model was selected and no registered figure comes from them. One execution per paragraph on the 120 evaluation and the 55 fresh-census paragraphs. \\
+\addlinespace
+Comparison models (other providers) &
+Amazon Nova Pro (\modelid{eu.amazon.nova-pro-v1:0}); Qwen3-235B-A22B-Instruct-2507 (\modelid{qwen.qwen3-235b-a22b-2507-v1:0}); NVIDIA Nemotron 3 Super (\modelid{nvidia.nemotron-super-3-120b}); Amazon Bedrock &
+Amazon; Alibaba (open weights); NVIDIA (open weights) &
+As in the previous row. \\
+\addlinespace
+Claude 5 models &
+Claude Sonnet 5 (\modelid{eu.anthropic.claude-sonnet-5}), Claude Opus 5 (\modelid{eu.anthropic.claude-opus-5}), Claude Opus 5.5 (\modelid{eu.anthropic.claude-opus-5-5}); Amazon Bedrock &
+Anthropic &
+Robustness comparison with Claude Sonnet 4.6 and Claude Opus 4.6 as configuration controls, and Opus 5.5 with Opus 5 under its request as control (Section~\ref{subsec:recurrence}, Appendix~\ref{app:model_comparison}); one execution per paragraph on the evaluation sample and the fresh census, three for Opus 5.5 and an Opus 5 repeat. \\
+\addlinespace
+Diffusion model &
+Mercury 3 (\modelid{mercury-3}), configurations \emph{instant} and \emph{low}; Inception API &
+Inception Labs &
+Robustness comparison of the extraction and, second, the codebook review (next row); 439 extraction calls, one execution per paragraph and configuration on the evaluation sample and the fresh census. \\
+\addlinespace
+Codebook review &
+Claude Opus 4.6, Claude Sonnet 4.6 and Mercury 3 as above &
+Anthropic; Inception Labs &
+Retrospective benchmark: finding gaps in the codebook versions v0.1, v0.2 and v1.0 (Appendix~\ref{app:codebook_review}); 72 review runs. No label of any reported figure comes from this use. \\
+\addlinespace
+Paraphrasers &
+Kimi K3 (\modelid{global.moonshotai.kimi-k3}); Qwen3-235B-A22B-Instruct-2507 as above; Amazon Bedrock &
+Moonshot AI; Alibaba &
+Rewording the codebook definitions for the perturbation battery (Appendix~\ref{app:battery}); one call per definition text and set, at most three draws per text. Codebook text only; corpus quotations masked for Kimi K3. \\
+\addlinespace
+Perturbation battery and form variant &
+Claude Sonnet 4.6 as above; later through the global profile \modelid{global.anthropic.claude-sonnet-4-6} &
+Anthropic &
+The registered request with one declared change at a time, and the mandatory-form variant v1.0F (Appendices~\ref{app:battery} and~\ref{app:form_variant}); 19,206 battery executions. No label of any registered figure comes from either. \\
+\addlinespace
+Judges &
+Codex CLI 0.158.0, model \modelid{gpt-6-astra} (part~B); Claude Code workflow subagents, model Claude Opus 5.5 &
+OpenAI; Anthropic &
+Blinded matching of model-reported issues to documented codebook gaps (Appendix~\ref{app:codebook_review}) and blinded judgement of whether a paraphrase keeps a definition's meaning (Appendix~\ref{app:battery}); 336 run--gap pairs judged by both ($\kappa = 0.88$) and 90 paraphrase candidates. \\
+\addlinespace
+Sharpening agents &
+Claude Code workflow subagents, model Claude Opus 5.5 &
+Anthropic &
+Deriving candidate rules for sharpening the codebook from the battery's results (Appendix~\ref{app:battery}); one reader, one adversarial verifier and one merging agent per unit. The rules are not validated on new labels. \\
+\addlinespace
+Translator (language comparison) &
+gpt-oss-120b (\modelid{openai.gpt-oss-120b-1:0}); Amazon Bedrock &
+OpenAI (open weights) &
+Translating the 60 German paragraphs of the evaluation sample into English (Appendix~\ref{app:language}); one translation per paragraph, followed by three executions of the registered extraction model on the stored translations (188 calls). \\
+\addlinespace
+Access probes &
+MiniMax M2.5 and Mistral Pixtral Large; Amazon Bedrock &
+MiniMax; Mistral AI &
+Compatibility probes on invented paragraphs, without article text, on 19 October 2026. MiniMax M2.5 always returned a reasoning block that the registered response contract refuses, and Pixtral Large rejected the forced tool choice, so both were excluded from the model comparison. No reported figure comes from this use. \\
+\addlinespace[4pt]
+\multicolumn{4}{@{}l}{\textbf{B. AI assistants used in producing the thesis, the code and the corpus}} \\*
+Claude Code &
+Models Claude Fable 5, Claude Opus 5, Claude Fable 5.1, Claude Opus 5.5 and Claude Fable 5.2 &
+Anthropic &
+Writing and revising the pipeline and annotation code and its tests; drafting and revising the thesis text, tables and figure code; literature search and organisation; corpus collection: searching for, selecting and retrieving the 35 articles of batches 1--4 against the collection brief, and screening and transcribing the author's browser prints of batch 5; review workflows with subagents; drafting this overview. One consistency question during the first coding pass of the fresh sample. \\
+\addlinespace
+OpenAI Codex &
+Codex CLI 0.151.0 to 0.158.0; models GPT-5.6 Sol (\modelid{gpt-5.6-sol}) until 2026-09-02, then \modelid{gpt-6-astra} &
+OpenAI &
+Adversarial review of the prototype plan, research-design decisions, plans, code and thesis text in a read-only sandbox; blinded judge (part~A). \\
+\addlinespace
+OpenAI GPT on Amazon Bedrock &
+GPT-6 Astra (\modelid{global.openai.gpt-6-astra}), reasoning effort xhigh, read-only repository tools; Amazon Bedrock, global inference profile &
+OpenAI &
+Critical review in debates with Claude Code, on the author's decisions: the proposals for shortening the main text, the integration of the coder's second re-code and the $\alpha$ intervals, and the changes following the supervisor's final feedback. Reviews of the whole thesis: first-reader and expert passes, cross-checks of the Claude models' findings and proposals, grading passes on a pre-set scheme and a check of every cited source against its PDF. Independent proposals for wording and cuts, and consistency checks. Claude Code checked every finding against the files, measured the cuts in the built PDF and alone edited the files. No corpus text was sent. \\
+\addlinespace
+Claude on Amazon Bedrock &
+Claude Opus 5.5 (\modelid{eu.anthropic.claude-opus-5-5}), effort high or xhigh; Amazon Bedrock, EU inference profile. Claude Fable 5.2 (\modelid{global.anthropic.claude-fable-5-2}), effort high; Amazon Bedrock, global inference profile &
+Anthropic &
+Opus 5.5: independent reviews of the whole thesis (first-reader, expert, cross-check, grading and source passes); the register of findings; proposals on form, style and cuts; reader and consistency checks; the final optimisation pass of the thesis text under the author's brief, in Claude Code workflows of subagents. Fable 5.2: proposals on method, statistics and theory, the Claude side of cross-reviews and debates, grading passes, and drafts of revised chapters. Fable 5.2 received no corpus text. The findings were checked against the files before any change. \\
+\addlinespace
+Perplexity &
+Perplexity web search (perplexity.ai) &
+Perplexity AI &
+Online research. No corpus text was sent. \\
+\addlinespace
+Coding interface &
+Web coding interface built as a claude.ai Artifact; built with Claude Opus~5 on claude.ai; source outside the repository &
+Anthropic &
+Displaying the paragraphs and recording the reference codes (Section~\ref{subsec:annotation}). The build used has no suggestion, highlighting, default or pre-selection function. An earlier build with keyword-derived technology suggestions was withdrawn and its attempt discarded; a development-set sheet carrying model labels was quarantined and enters no figure (Appendix~\ref{app:reference_disclosures}). \\
+\addlinespace
+Other software (not generative) &
+TeX Live 2025 (pdfLaTeX, biber, biblatex-apa, TikZ/pgfplots); Python 3.13 (pipeline) and 3.14 (annotation scripts); Git &
+Open-source projects &
+Typesetting, figures, pipeline and analysis code, version control; own scripts for checking citations against the source PDFs. Grammarly occasionally for spelling. No reference manager or translation tool was used for writing the thesis. \\
+\end{longtable}
+}
+
+\textbf{Statement of extent by the author.} I wrote the basis of the thesis text largely myself, partly as full drafts and partly as bullet points. In several iterations, the assistants in part~B shortened passages, formulated bullet points as prose and helped me explore lines of argument. The final text was written almost exclusively by me and Claude. I checked every adopted passage by proofreading it directly, had GPT-6 Astra cross-check it, and read revised versions as comparison documents showing removed text in red and new text in blue.
+
+\textbf{How, why and with what experience.} I used the assistants to brainstorm the structure of the thesis and its methods, to formulate and check text, to implement changes and correct errors, to analyse parts of the thesis, to aggregate information from the literature research and to organise it in an LLM-maintained wiki. I chose them because they let me check results quickly and rebuild the thesis quickly when results came in. Keeping information consistent was difficult despite the wiki, small tasks sometimes used many tokens, and the generated wording was at times too mechanical and hard to read.
+
+\newpage
+\section*{Eidesstattliche Erklärung}
+\addcontentsline{toc}{section}{Eidesstattliche Erklärung}
+\begin{otherlanguage}{ngerman}
+\emergencystretch=3em
+\noindent
+Hiermit versichere ich, dass ich die vorliegende Arbeit selbständig und ohne Benutzung anderer als der angegebenen Hilfsmittel angefertigt, noch nicht einer anderen Prüfungsbehörde vorgelegt und noch nicht veröffentlicht habe.
+
+\noindent
+Im Falle der Nutzung von generativen Modellen zur Erstellung von Texten, Abbildungen, Berechnungen und anderen Leistungen verantworte ich die Auswahl, Übernahme und sämtliche Ergebnisse des von mir verwendeten generierten Outputs vollumfänglich selbst. Im Verzeichnis \glqq Übersicht verwendeter Hilfsmittel\grqq{} habe ich alle verwendeten generativen Modelle mit ihrem Produktnamen benannt und angegeben, wie, in welchem Umfang und zu welchem Zweck diese benutzt wurden.
+
+\noindent
+\foreignlanguage{english}{I am aware that this thesis in digital form can be examined for the use of unauthorised aid and in order to determine whether the thesis as a whole or parts incorporated in it may be deemed to constitute plagiarism. For the comparison of my work with existing sources, I agree that it shall be entered in a database where it shall also remain after examination, to enable comparison with future theses submitted. Further rights of reproduction and usage, however, are not granted here.}
+
+\vspace{2cm}
+
+\noindent
+\begin{minipage}[t]{0.42\textwidth}
+München, den \mycompletiondate\par
+\vspace{0.1cm}
+\rule{\linewidth}{0.4pt}\par
+(Datum)
+\end{minipage}\hfill
+\begin{minipage}[t]{0.42\textwidth}
+\mbox{}\par
+\vspace{0.1cm}
+\rule{\linewidth}{0.4pt}\par
+(Unterschrift)\\
+\myname
+\end{minipage}
+\end{otherlanguage}
+
+\vspace{2.5cm}
+
+\noindent
+{\small
+\textit{English translation as printed on the ISC form:}
+
+\noindent
+I hereby declare that I have prepared this thesis independently and without the use of aids other than those specified, that I have not yet submitted it to another examination authority and that it has not yet been published.
+
+\noindent
+In the case of the use of generative models for the creation of texts, illustrations, calculations and other services, I am fully responsible for the selection, adoption and all results of the generated output used by me. In the list ``Overview of tools used'' I have named all generative models used with their product name and indicated how, to what extent and for what purpose they were used.
+}
+
+\end{document}

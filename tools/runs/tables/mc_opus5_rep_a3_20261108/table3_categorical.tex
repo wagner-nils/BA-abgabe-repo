@@ -1,0 +1,43 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{63.8pt}>{\raggedright\arraybackslash}p{61.1pt}>{\raggedright\arraybackslash}p{71.2pt}>{\raggedright\arraybackslash}p{47.9pt}>{\raggedright\arraybackslash}p{67.9pt}>{\raggedright\arraybackslash}p{71.2pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (ROBUSTNESS MODEL COMPARISON -- v1.0 under opus5\_\allowbreak{}rep (no temperature, thinking disabled), 3 executions, not the registered result (specification §4m)). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.774 & 93 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 14; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 17 & 0.535 \\
+pooled & comparison target & 0.827 & 75 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 6 & 0.780 \\
+de & evaluation & 0.750 & 52 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 10; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 9 & 0.527 \\
+de & comparison target & 0.765 & 34 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 4 & 0.703 \\
+en & evaluation & 0.805 & 41 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 4; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 8 & 0.545 \\
+en & comparison target & 0.878 & 41 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 2 & 0.847 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{68.4pt}>{\raggedright\arraybackslash}p{82.7pt}>{\raggedright\arraybackslash}p{87.9pt}>{\raggedright\arraybackslash}p{87.9pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (ROBUSTNESS MODEL COMPARISON -- v1.0 under opus5\_\allowbreak{}rep (no temperature, thinking disabled), 3 executions, not the registered result (specification §4m)). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.774 & 0.556 over 4 & 0.376 over 4 \\
+pooled & comparison target & 0.827 & 0.683 over 8 & 0.667 over 8 \\
+de & evaluation & 0.750 & 0.517 over 4 & 0.350 over 4 \\
+de & comparison target & 0.765 & 0.714 over 4 & 0.697 over 4 \\
+en & evaluation & 0.805 & 0.566 over 4 & 0.335 over 4 \\
+en & comparison target & 0.878 & 0.789 over 6 & 0.781 over 6 \\
+\end{longtable}
+\endgroup

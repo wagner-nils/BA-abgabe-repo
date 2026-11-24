@@ -1,0 +1,346 @@
+{
+  "started_at": "2026-11-08T10:52:58.036535+00:00",
+  "ended_at": "2026-11-08T10:53:12.124013+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "opus55_high": "eu.anthropic.claude-opus-5-5"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "system_prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+  "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+  "instrument": "v1.0",
+  "provenance": {
+    "git_commit": "bffc44e6770ac7470ee71b90098ca58a882c0a8c",
+    "git_dirty": true,
+    "git_dirty_files": 58,
+    "preflight_sha256": "6eab7ecefa219b47f5d93f3dc9597497699fb0b69bd0dc87a5ef9aeb424cd6e7",
+    "instrument_sha256": "0a9a90596ee9996c9519f7699df860edf4e2a44f6209804435fcf19a9cfc2846",
+    "adapter_sha256": "ad7f0cc44f4006c940f0f2a3055d097851d72b14fe803698b440c63ba36a0f6e",
+    "instrument_version": "v1.0",
+    "instrument_v11_sha256": null,
+    "instrument_v10r3_sha256": null,
+    "instrument_v10f_sha256": null,
+    "instrument_v10c_sha256": null,
+    "uv_lock_sha256": "ee09c5c794c8d08f6423ddaa0573e04f43416c6fb26e1aae668e5ac41f0d10e8",
+    "python": "3.13.12",
+    "botocore": "1.43.83"
+  },
+  "execution_mode": "live",
+  "live_attempted": true,
+  "skip_reason": "",
+  "cache_initial_state": {
+    "opus55_high": "warm"
+  },
+  "cache_prefix_tokens": {
+    "opus55_high": 6030
+  },
+  "cache_ttl": "1h",
+  "checks": [
+    {
+      "id": "14",
+      "name": "the pinned instrument loads and matches its pins",
+      "silent": true,
+      "ok": true,
+      "detail": "prompt 13,260 chars sha=138cade3add5dcc4; tool config sha=a1e82607f50e8c04; codebook v1.0",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "11",
+      "name": "codebook is frozen and matches its pinned hash",
+      "silent": true,
+      "ok": true,
+      "detail": "annotation/codebook/codebook-v1.0.yaml sha256=1edb4601519417de == pin",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "7",
+      "name": "tool config matches its pin and is the config the builder loads",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/tool-config_v1.0.json sha256=a1e82607f50e8c04 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "12",
+      "name": "the prompt under test IS the pinned production prompt",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/system-prompt_v1.0.txt sha256=138cade3add5dcc4 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "13",
+      "name": "the request comes from instrument.build_request()",
+      "silent": true,
+      "ok": true,
+      "detail": "8/8 clauses hold. No topP (the API rejects it beside temperature); thinking: thinking {type: adaptive}, effort high (\u00a74m); no extra system instruction. Converse caches tools then system then messages, so the cached prefix is the pinned config plus the pinned prompt.",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "1",
+      "name": "[opus55_high] inference profile resolves and returns a completion",
+      "silent": false,
+      "ok": true,
+      "detail": "eu.anthropic.claude-opus-5-5  stopReason=end_turn",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "2",
+      "name": "[opus55_high] the pinned tool, chosen freely under the declared adaptive thinking (\u00a74m), is called exactly once with a schema-valid toolUse on both production calls",
+      "silent": false,
+      "ok": true,
+      "detail": "call 1: schema-valid and contract-valid: {\"outcome\": \"technologies_present\", \"relations\": [{\"technology\": \"wind\", \"wind_siting\": \"onshore\", \"elements\": [\"F2c\", \"F8a\", \"F7b\"], \"evaluations\": {\"jobs\": \"negative\", \"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\"}]}  |  call 2: schema-valid and contract-valid: {\"outcome\": \"technologies_present\", \"relations\": [{\"technology\": \"wind\", \"wind_siting\": \"onshore\", \"elements\": [\"F2c\", \"F8a\", \"F7b\"], \"evaluations\": {\"jobs\": \"negative\", \"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\"}]}",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "3",
+      "name": "[opus55_high] stopReason is tool_use on both production calls, never max_tokens",
+      "silent": true,
+      "ok": true,
+      "detail": "call 1 stopReason=tool_use, call 2 stopReason=tool_use",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "5",
+      "name": "[opus55_high] the production prefix caches, and reads back whole",
+      "silent": true,
+      "ok": true,
+      "detail": "warm start: 6030 tokens read and read back whole (requested ttl=1h); stored TTL not observable here (warm start, no write)",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "6",
+      "name": "[opus55_high] cached prefix clears this model's minimum (512 tokens)",
+      "silent": true,
+      "ok": true,
+      "detail": "cached_prefix_tokens=6030  model_minimum=512  margin=+5518. CountTokens is not callable on this credential, so a live call is the only way to know. The cached prefix is the pinned tool config plus the pinned system prompt.",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "8",
+      "name": "[opus55_high] usage complete; two accountings recorded",
+      "silent": true,
+      "ok": true,
+      "detail": "{'inputTokens': 151, 'outputTokens': 456, 'cacheReadInputTokens': 6030, 'cacheWriteInputTokens': 0}  |  billable=6637 quota=151 (44.0x divergence)",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "13b",
+      "name": "every submitted envelope is canonically identical to the one the builder produced",
+      "silent": true,
+      "ok": true,
+      "detail": "2 production call(s), 1 distinct request digest(s): 44c46fe555da. Every one matched the digest taken when it was built.",
+      "skipped": "",
+      "phase": "live"
+    }
+  ],
+  "raw_responses": [
+    {
+      "model": "opus55_high",
+      "label": "reachability",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "f737759d-d480-4e42-96c8-4a46f7796bec",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Sun, 08 Nov 2026 10:53:01 GMT",
+            "content-type": "application/json",
+            "content-length": "314",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f737759d-d480-4e42-96c8-4a46f7796bec"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "text": "OK"
+              }
+            ]
+          }
+        },
+        "stopReason": "end_turn",
+        "usage": {
+          "inputTokens": 18,
+          "outputTokens": 4,
+          "totalTokens": 22,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 1210
+        }
+      }
+    },
+    {
+      "model": "opus55_high",
+      "label": "production-call-1",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "f21e352f-9d2a-4ff9-a41a-c5f3027c1edb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Sun, 08 Nov 2026 10:53:07 GMT",
+            "content-type": "application/json",
+            "content-length": "2511",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f21e352f-9d2a-4ff9-a41a-c5f3027c1edb"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "reasoningContent": {
+                  "reasoningText": {
+                    "text": "",
+                    "signature": "CAQSuQoKEggTEAEYAjgBQgh0aGlua2luZxIMfv2T4jluYTxb2AwYGgzgzonJLEqmfwY2G6AiMDpmq+dnntlNKZfsNxwaaQih5G4WU0dqiKV1eSktPIyetVYCOLgYXXx1vm95hs2JmirUCR6+eEafYv/TIfo1sncPxjwI/0o/3Gz3anyoNXndodHhJm46HZYj41jltbaemKraItffjLW1M1d+IyAGIlDurQOciCiFz533ec7nCYE/SGij8DJudO+snMRj8Z/2vTXgtoLe8YyDRtR69AabC3yGXprqoDDO+kwPwbh6lVXuoiq1GrSuYVOsiW6IS6osLx0kf6bXXYJhj/TR+oyvyBuavzKqwd29tDcmWGLkPJzkomV22L34JQC4s62mPISxxkW79LCWicN6DdBRYFFTl1vXv40cZYtos/UrGT5Gj09WlmP6sf+Rb0RSijlx7MgAzaWyHG7iawnjZvAKJ8VlGwYOZ9duigFvAEMZsZZaWNoKfrV28B/tlxGZh/F86/iI8P5/DPrBH7FRm2bgKSx2UbbOFxx3TJOS4R0UVEgHxoCyggmCDzZHC6BVD+ysHQZ2x9AzYIOE53isz0jjqd5zFsGEwUBKz19J5GVNj41X9dEuax14Opo2Wry6+9Zl6OrJPjdx+N3aaEkAYJDFSP5PMqFM8OLqVi6a2VtrNGD0qEQDCSBe5tel2l3jQh48OQ048hciAM8jZN86PqQziPqcImvA/KGSmtDk+jBQpV0j3j9liPXaDEPvyf9A0gs7AFHqdnrrOJD0ixq/0WDMf/UVJwxffXd6U5o7MKy0Dni92zmrVWB+/mFusfxJv4G4Nd0V3w0bPjQQfKgHEPtZ6zeTVBJDwR3xyh0FsdWsBA3LQWfYATTL7N7h76BOfu78VY5pkQqewHKq91R+OOK4D3YEucLjuLqnITrt8vOVEZqWDIgeYicPdcd6YXPOxUOYtRKCRFRkUcH32l7XAtbTyOv+HQJ5A5F7z72g5CIR4Lx2nyJXC9ia+a6e5zRbeKp13AgddxUBo7MNej/mQ5L0LZKkuAnnQMGjuSmeBQHko+NySm14IBpqYT313jAdZY4KL0K6Hu9WuwCFGkLFGkhGwCBTRlTK+dJtUDvSt+zGeSwyfJ6eNWeAkFfp046sjYikumfmZmOT+QfFIyhLC4E5zFuuFZm5UfoIBArEwIAgmbNQ90LtBN8ZAczPFDm5xDXm3sKIxApaAU6SM2TTkCFUhx2fHiYK7sXPqH1uNpmtKRbyZ9jfkBsxtj96GBkElA2hrpcM0lzrzCMP4KCBHZYlDDKaN0NuioVHTDhZf2Nu0Jou30Klu7e8l17RYg4QJUNcUwwRYzh6YMKf89D5xY+eUCoZiTBx8ryb1hDA7N9RrgjQHOpxeuK6R8J04SCyHBbYQYMq0CzGzd5WUQvAyrhXHvfQnbC1NhOOumi4so6LV2b/pFdbxFFzLKWy2vRK+oW+aCUFLjmrYIOafE3oM1HyYhgZCbuSwMKS9bXMgMGs0Q9pNuYYIGdIeGUSwFm+ezy7NBfSZpcUI2rFllS2oBQj4bsO0F2e/I6GUpvxABaXsru5Am2LXTZ4YB4Tg20n8i62MJbRLiNYXVt8VMCwwL5JruYqduI1z2tiXfkSTnV20z7YSAJQcqlLmYVwYAyleZEoUBjcrLUwg8Oal/BaGMPIo+sjaNwe6tkP5127Vri+XcAWRYdwA+ZwgKqv690OqNIlDzO/mgN1/s/KQAM3Pku754L0guG4gz1kxGaQw++ONPuQO3xCYudm6lbZOBgB"
+                  }
+                }
+              },
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_qNaFcCgcZ6po0PHfNvc53L",
+                  "name": "record_relations",
+                  "input": {
+                    "outcome": "technologies_present",
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "wind_siting": "onshore",
+                        "elements": [
+                          "F2c",
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "jobs": "negative",
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none"
+                      }
+                    ]
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 151,
+          "outputTokens": 479,
+          "totalTokens": 6660,
+          "cacheReadInputTokens": 6030,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 5488
+        }
+      }
+    },
+    {
+      "model": "opus55_high",
+      "label": "production-call-2",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "0664f090-67b5-485c-9a61-8acd5fe9793b",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Sun, 08 Nov 2026 10:53:12 GMT",
+            "content-type": "application/json",
+            "content-length": "2427",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0664f090-67b5-485c-9a61-8acd5fe9793b"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "reasoningContent": {
+                  "reasoningText": {
+                    "text": "",
+                    "signature": "CAQS+AkKEggTEAEYAjgBQgh0aGlua2luZxIM7xCpdXdU0MG6+xOgGgwQuIhmUQ5bN/n2aeMiMMSwkIqS2F2gHhNzP7+rw1+M/6gqKL96M/6jNCyrJUHyWoyvgjaeO07mkiQbnT3QuiqTCbK7iRVegPwSc5EmsxVFh0NLl4Ru8HDwLABtz5zPcQm/hrq3CQT8rdx5CeqDqYphHCL4O7jULAwaf0psZTM8VABeryW8E3aNJQfPb67S5t2n7mKwriTwuVs0gWqZ8GffE17hCZTYEcsrpmhqx+zDEOKFQQVsgp8JJsDDbbinkj7F6lHhVIoZpoPTV3pZXQUByzaEdBOKU9D9G1RaOYJmm6MBVbtyuks6Q0RXR3lGWfhx8AAFhoRMv8mjKh8dDMB0n3ZwiUlPy+8FXYNH99b+4vdEVAMcL4u2ZNZOd2YLNbZhwjSrzmkRgXa58CRduXkaewarEJhvpfxcv5SttotQgbsgWtUBFgQJeD0id9eo1l9XKKGWsbX6tJQAKygnEhj5sAioEr0RALzAxb9yO24asPwEuxOeZp+WhygMpHIoUaNZwMl0F7Sex3ulE19TBQvWiMjPTmTyIG9wIQqVM2O+JWxRA+YXiYm6/soj0lvS7Rz9nnoohYmPvJQqVbQr3EdbDw8w7H2YUtVhjX9onI9HdrA1faAqzzpM7H0A3qNo3MOjY/7wGzN2QZ98gWKyF6EK7JAVKvXN2Z0lKndhQi3Gm8RirKWsSJIDefpg1hdPO8YEd9576+26Zx1gxAfj8Gpoj6kBI18oGZUsqyGY06f69cD9jUPHa6K71PeqebyxOrJtTib2TmFSzPcLAXLmpqSkh57iYyYFAljuRvtB5gjZqo38gb/8aALIKAjHPGub+RXQ9GaWgP9JTrn43BfFUMxG6u/8jeqIF+gV4mtbYKDKabpz9DXHhuETfOkuYWFKJZYbHTktfR8Z1hkKcnFhFqKWDEMuqgBKBRMuTrUuqUfo1s+Zsb2/2FBbA57oPX9XX6WUOyU1p7RWZJLvVmQjIuLHN5wJ+ry7bKD5hE9ZumNx5562NA/c75WFLnOL84vnKzXQYhpecbtykPtmTpOfvM7vBqaea7fQaGUgKGEv8XnmzCjB6NsKRqa1qF+MqMCx0wVJuKAIzfIjSrLjF2TjLk/8WVx1YC4DNcjoLhYkcb4LpqxBzlClYtIAZl68F5bllImbAIiv6kDdxyuSWg71ormSBkZkMdvytoAlQZm4QtqYQP9msErxIqd/BoaDQWot05BlFoTPElvZKxRxpOFqkCptd9QgLcac/5Mn8WkmSiPY/8JrhDkt62SreqnlTeEYvLYbVTbYIGdggCvoMqkBZXfkW9ln3RSIsw00P4DDW2ww0ZyJ/kgmuNKalVXJlePkvH/2hbSPW8pPPyg2a/oyuNcL6W0R/gSoaswWuq8TftOSZ9ZlYDLUi/3rgaryNqX5r36uEVy9Gcs7pRrk1ARljqV0rHijsDvdVKNf0CUXxda68LWvwbDollMH23Zu4LLqvOvjHFTbRRjiFpljfQ22K/8tXp7nAohCz71vcFM9w05qkefQ+bFUri9q6jDrvajGkRvR6/0XRiNXWXzINGSwoC9/6kT3Bo6py3ZuTFKA+YByLJjoLsJu1yFH7M+Fw+LM+b+CF5rrfc/zbv7uhAcOMKjpKfiOdULd/PZL/IgWPlhbUC+bkbEYAQ=="
+                  }
+                }
+              },
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_pPYMila7gaRk9eUb6tJZn7",
+                  "name": "record_relations",
+                  "input": {
+                    "outcome": "technologies_present",
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "wind_siting": "onshore",
+                        "elements": [
+                          "F2c",
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "jobs": "negative",
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none"
+                      }
+                    ]
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 151,
+          "outputTokens": 456,
+          "totalTokens": 6637,
+          "cacheReadInputTokens": 6030,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 4868
+        }
+      }
+    }
+  ],
+  "persisted_to": "/Users/nilswagner/Entwicklung/llm-energy-discourse-analysis/tools/runs/preflight_mc_opus55_high_a3_20261108.json",
+  "certification_status": "CERTIFIED",
+  "certified": true,
+  "offline_checks": "passed",
+  "live_checks": "passed",
+  "n_failed": 0,
+  "n_failed_offline": 0,
+  "n_failed_live": 0,
+  "n_unasserted": 0
+}

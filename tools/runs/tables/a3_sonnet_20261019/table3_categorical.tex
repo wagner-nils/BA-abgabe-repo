@@ -1,0 +1,43 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{63.8pt}>{\raggedright\arraybackslash}p{61.1pt}>{\raggedright\arraybackslash}p{71.2pt}>{\raggedright\arraybackslash}p{47.9pt}>{\raggedright\arraybackslash}p{67.9pt}>{\raggedright\arraybackslash}p{71.2pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (FRESH-SAMPLE EVALUATION -- A3 census (v1.0), not the registered result; intervals indicative). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.742 & 66 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 29; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 29 & 0.447 \\
+pooled & comparison target & 0.891 & 64 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 17 & 0.770 \\
+de & evaluation & 0.757 & 37 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 16; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 18 & 0.448 \\
+de & comparison target & 0.900 & 30 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 8 & 0.771 \\
+en & evaluation & 0.724 & 29 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 13; frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 11 & 0.447 \\
+en & comparison target & 0.882 & 34 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 9 & 0.769 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{68.4pt}>{\raggedright\arraybackslash}p{82.7pt}>{\raggedright\arraybackslash}p{87.9pt}>{\raggedright\arraybackslash}p{87.9pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (FRESH-SAMPLE EVALUATION -- A3 census (v1.0), not the registered result; intervals indicative). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.742 & 0.601 over 4 & 0.367 over 4 \\
+pooled & comparison target & 0.891 & 0.492 over 7 & 0.387 over 8 \\
+de & evaluation & 0.757 & 0.516 over 4 & 0.296 over 4 \\
+de & comparison target & 0.900 & 0.653 over 4 & 0.618 over 4 \\
+en & evaluation & 0.724 & 0.672 over 4 & 0.409 over 4 \\
+en & comparison target & 0.882 & 0.390 over 5 & 0.313 over 6 \\
+\end{longtable}
+\endgroup

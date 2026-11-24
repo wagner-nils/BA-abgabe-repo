@@ -1,0 +1,248 @@
+{
+  "run_id": "mc_novapro_a2_20261019",
+  "started_at": "2026-10-19T18:52:56.468679+00:00",
+  "ended_at": "2026-10-19T18:55:47.835246+00:00",
+  "first_call_at": "2026-10-19T18:53:02.014422+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "analysis_status": "robustness model comparison",
+  "w3_authorisation": null,
+  "a3_embargo": {
+    "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+    "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "touches_a3": false,
+    "paragraphs_touched": 0
+  },
+  "model_comparison": {
+    "decision": "Nils Wagner (author), 2026-10-19: run the complete evaluation with Opus 4.6 instead of Sonnet, compare the results briefly, try further models and present each model's results in the thesis (German message, paraphrased; specification §4f)",
+    "decision_sha256": "a124b5bac7be268a89af210a501f537d527b425c0e100ff57f25439152289024",
+    "authority": "pre-analysis specification §4f (2026-10-19)",
+    "registered_model": "sonnet",
+    "sample": "registered A2 sample"
+  },
+  "manifest": {
+    "path": "tools/annotation/labels/A2_sample_manifest.json",
+    "sha256": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+    "restrict_split": null,
+    "n_paragraphs": 120
+  },
+  "repeats": 1,
+  "execution_fingerprint": "d75551d61875598ad9ff267ae21461febac8bdac0768a479f54eda9094cb6d19",
+  "execution_contract": {
+    "manifest_sha256": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+    "restrict_split": null,
+    "dev": false,
+    "a3_embargo": {
+      "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+      "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+      "touches_a3": false,
+      "paragraphs_touched": 0
+    },
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.amazon.nova-pro-v1:0",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 1,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "7c08dd1c09c018c89907cab6b0905d97af688ca784ade3dd4868b31f0c000b1a",
+    "instrument_sha256": "cd5679b1e8856d7681ee0d434b9048dfde06985df6d34f366cedbc5da3cae128",
+    "instrument_version": "1.0",
+    "instrument_v11_sha256": null,
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sample_contract_sha256": "b5f96e851f969eabc226cc35c3886a8f82dc0c1ad24957b66dc2123cde1ca6a4",
+    "preflight_sha256": "2c7b45e9a1d14339eb6458cbd8be7d339f2896ab62196856a62927b8a3d2d0af",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null,
+    "model_comparison": {
+      "decision": "Nils Wagner (author), 2026-10-19: run the complete evaluation with Opus 4.6 instead of Sonnet, compare the results briefly, try further models and present each model's results in the thesis (German message, paraphrased; specification §4f)",
+      "decision_sha256": "a124b5bac7be268a89af210a501f537d527b425c0e100ff57f25439152289024",
+      "authority": "pre-analysis specification §4f (2026-10-19)",
+      "registered_model": "sonnet",
+      "sample": "registered A2 sample"
+    },
+    "cache_point": false
+  },
+  "git_commit": "62a080340c743997da89f210e5d6658f81a5c987",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "paper/BA_NW_2026.tex"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "paper/BA_NW_2026.tex"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "instrument": {
+    "name": "v1.0",
+    "version": "1.0",
+    "variant": null,
+    "retry_policy_version": "2",
+    "pins": "tools/pipeline/pins.json",
+    "module_sha256": {
+      "instrument.py": "cd5679b1e8856d7681ee0d434b9048dfde06985df6d34f366cedbc5da3cae128"
+    }
+  },
+  "model_id": "eu.amazon.nova-pro-v1:0",
+  "model_key": "novapro",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_mc_novapro_a2_20261019.json",
+    "sha256": "01423983441d22b31a3a941ba282c302f2d0433284b8a1a0d9c7d97cf1a94cd8",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_mc_novapro_a2_20261019.json",
+        "sha256": "01423983441d22b31a3a941ba282c302f2d0433284b8a1a0d9c7d97cf1a94cd8",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-19T18:52:56.500186+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5n",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 145,
+    "input_tokens": 626510,
+    "output_tokens": 15167,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "contract_invalid": 43,
+      "ok_technologies_present": 101,
+      "ok_off_topic": 1
+    },
+    "billable_tokens": 641677,
+    "quota_tokens": 626510
+  },
+  "cost": {
+    "estimated_usd": 0.604717,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 0.88,
+      "output": 3.52,
+      "cache_write_1h": 0.0,
+      "cache_read": 0.0
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); §4f 2026-10-19 provisional rows (haiku45, sonnet45, novapro, qwen3_235b, nemotron3s); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "mc_novapro_a2_20261019_calls.jsonl": {
+      "path": "tools/runs/mc_novapro_a2_20261019_calls.jsonl",
+      "sha256": "a579f6dd5b21dd87a46006748279237aebced433d28e3974456b03a1eaa0fa71"
+    },
+    "mc_novapro_a2_20261019_terminal.csv": {
+      "path": "tools/runs/mc_novapro_a2_20261019_terminal.csv",
+      "sha256": "e2e4c64b9ae232563cbfbc4571e11725c58dfcbb3a10084f32a44188151db089"
+    },
+    "mc_novapro_a2_20261019_predictions.csv": {
+      "path": "tools/runs/mc_novapro_a2_20261019_predictions.csv",
+      "sha256": "1ad7a9e2e4c697008a1af4c2966a703a1bc7e4f76132968fbafdf66a7e7ba04d"
+    }
+  },
+  "raw_private": "tools/runs/raw/mc_novapro_a2_20261019.jsonl"
+}

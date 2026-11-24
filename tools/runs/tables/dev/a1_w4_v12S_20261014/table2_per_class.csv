@@ -1,0 +1,187 @@
+population;dimension;class;F1 weighted;F1 unweighted;support rows;support articles;resample absence
+pooled;element;F1a;0.889;0.889;5;2;0.041
+pooled;element;F1b;n<5 (2);n<5 (2);2;1;0.299
+pooled;element;F2a;undefined;undefined;0;0;not measured (no support)
+pooled;element;F2b;0.667;0.667;7;2;0.041
+pooled;element;F2c;0.857*;0.857*;11;1;0.299
+pooled;element;F3a;n<5 (1);n<5 (1);1;1;0.299
+pooled;element;F3b;0.308;0.308;22;3;0.000
+pooled;element;F4a;undefined;undefined;0;0;not measured (no support)
+pooled;element;F4b;n<5 (1);n<5 (1);1;1;0.293
+pooled;element;F5a;undefined;undefined;0;0;not measured (no support)
+pooled;element;F5b;n<5 (3);n<5 (3);3;1;0.302
+pooled;element;F6a;0.333;0.333;6;2;0.039
+pooled;element;F6b;undefined;undefined;0;0;not measured (no support)
+pooled;element;F7a;undefined;undefined;0;0;not measured (no support)
+pooled;element;F7b;undefined;undefined;0;0;not measured (no support)
+pooled;element;F8a;undefined;undefined;0;0;not measured (no support)
+pooled;element;F9;n<5 (4);n<5 (4);4;2;0.039
+pooled;technology;general;0.968;0.968;16;3;0.000
+pooled;technology;hydrogen;n<5 (4);n<5 (4);4;1;0.293
+pooled;technology;nuclear;1.000;1.000;9;2;0.039
+pooled;technology;other_renewable;undefined;undefined;0;0;not measured (no support)
+pooled;technology;solar;n<5 (3);n<5 (3);3;1;0.299
+pooled;technology;storage;n<5 (1);n<5 (1);1;1;0.293
+pooled;technology;wind;1.000;1.000;7;2;0.041
+pooled;evaluation_A;mixed;undefined;undefined;0;0;not measured (no support)
+pooled;evaluation_A;negative;0.957;0.957;11;3;0.000
+pooled;evaluation_A;neutral;n<5 (1);n<5 (1);1;1;0.302
+pooled;evaluation_A;positive;1.000;1.000;18;3;0.000
+pooled;evaluation_B;mixed;undefined;undefined;0;0;not measured (no support)
+pooled;evaluation_B;negative;0.629;0.629;18;3;0.000
+pooled;evaluation_B;neutral;n<5 (2);n<5 (2);2;2;0.039
+pooled;evaluation_B;positive;0.554;0.554;40;3;0.000
+pooled;comparison_A;coal;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;fossil_generic;n<5 (4);n<5 (4);4;1;0.299
+pooled;comparison_A;general;n<5 (1);n<5 (1);1;1;0.302
+pooled;comparison_A;grid_status_quo;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;hydrogen;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;multiple;n<5 (1);n<5 (1);1;1;0.302
+pooled;comparison_A;natural_gas;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;none;0.952;0.952;30;3;0.000
+pooled;comparison_A;nuclear;n<5 (2);n<5 (2);2;1;0.293
+pooled;comparison_A;oil;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;other;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;other_renewable;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;solar;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;storage;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_A;wind;n<5 (1);n<5 (1);1;1;0.293
+pooled;comparison_B;coal;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;fossil_generic;n<5 (4);n<5 (4);4;1;0.299
+pooled;comparison_B;general;n<5 (1);n<5 (1);1;1;0.302
+pooled;comparison_B;grid_status_quo;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;hydrogen;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;multiple;n<5 (1);n<5 (1);1;1;0.302
+pooled;comparison_B;natural_gas;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;none;0.938;0.938;31;3;0.000
+pooled;comparison_B;nuclear;n<5 (2);n<5 (2);2;1;0.293
+pooled;comparison_B;oil;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;other;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;other_renewable;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;solar;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;storage;undefined;undefined;0;0;not measured (no support)
+pooled;comparison_B;wind;n<5 (1);n<5 (1);1;1;0.293
+de;element;F1a;n<5 (1);n<5 (1);1;1;0.247
+de;element;F1b;undefined;undefined;0;0;not measured (no support)
+de;element;F2a;undefined;undefined;0;0;not measured (no support)
+de;element;F2b;0.571*;0.571*;5;1;0.247
+de;element;F2c;n<5 (0);n<5 (0);0;0;not measured (no support)
+de;element;F3a;n<5 (0);n<5 (0);0;0;not measured (no support)
+de;element;F3b;0.143;0.143;13;2;0.000
+de;element;F4a;undefined;undefined;0;0;not measured (no support)
+de;element;F4b;n<5 (1);n<5 (1);1;1;0.247
+de;element;F5a;undefined;undefined;0;0;not measured (no support)
+de;element;F5b;n<5 (3);n<5 (3);3;1;0.237
+de;element;F6a;0.333;0.333;6;2;0.000
+de;element;F6b;undefined;undefined;0;0;not measured (no support)
+de;element;F7a;undefined;undefined;0;0;not measured (no support)
+de;element;F7b;undefined;undefined;0;0;not measured (no support)
+de;element;F8a;undefined;undefined;0;0;not measured (no support)
+de;element;F9;n<5 (4);n<5 (4);4;2;0.000
+de;technology;general;n<5 (4);n<5 (4);4;2;0.000
+de;technology;hydrogen;n<5 (4);n<5 (4);4;1;0.247
+de;technology;nuclear;1.000;1.000;9;2;0.000
+de;technology;other_renewable;undefined;undefined;0;0;not measured (no support)
+de;technology;solar;undefined;undefined;0;0;not measured (no support)
+de;technology;storage;n<5 (1);n<5 (1);1;1;0.247
+de;technology;wind;n<5 (4);n<5 (4);4;1;0.247
+de;evaluation_A;mixed;undefined;undefined;0;0;not measured (no support)
+de;evaluation_A;negative;0.923;0.923;6;2;0.000
+de;evaluation_A;neutral;n<5 (1);n<5 (1);1;1;0.237
+de;evaluation_A;positive;1.000;1.000;5;2;0.000
+de;evaluation_B;mixed;undefined;undefined;0;0;not measured (no support)
+de;evaluation_B;negative;0.480;0.480;13;2;0.000
+de;evaluation_B;neutral;n<5 (2);n<5 (2);2;2;0.000
+de;evaluation_B;positive;0.370;0.370;18;2;0.000
+de;comparison_A;coal;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;fossil_generic;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;general;n<5 (1);n<5 (1);1;1;0.237
+de;comparison_A;grid_status_quo;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;hydrogen;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;multiple;n<5 (1);n<5 (1);1;1;0.237
+de;comparison_A;natural_gas;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;none;0.914;0.914;16;2;0.000
+de;comparison_A;nuclear;n<5 (2);n<5 (2);2;1;0.247
+de;comparison_A;oil;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;other;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;other_renewable;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;solar;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;storage;undefined;undefined;0;0;not measured (no support)
+de;comparison_A;wind;n<5 (1);n<5 (1);1;1;0.247
+de;comparison_B;coal;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;fossil_generic;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;general;n<5 (1);n<5 (1);1;1;0.237
+de;comparison_B;grid_status_quo;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;hydrogen;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;multiple;n<5 (1);n<5 (1);1;1;0.237
+de;comparison_B;natural_gas;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;none;0.889;0.889;17;2;0.000
+de;comparison_B;nuclear;n<5 (2);n<5 (2);2;1;0.247
+de;comparison_B;oil;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;other;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;other_renewable;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;solar;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;storage;undefined;undefined;0;0;not measured (no support)
+de;comparison_B;wind;n<5 (1);n<5 (1);1;1;0.247
+en;element;F1a;n<5 (4);n<5 (4);4;1;0.000
+en;element;F1b;n<5 (2);n<5 (2);2;1;0.000
+en;element;F2a;undefined;undefined;0;0;not measured (no support)
+en;element;F2b;n<5 (2);n<5 (2);2;1;0.000
+en;element;F2c;0.900*;0.900*;11;1;0.000
+en;element;F3a;n<5 (1);n<5 (1);1;1;0.000
+en;element;F3b;0.500*;0.500*;9;1;0.000
+en;element;F4a;undefined;undefined;0;0;not measured (no support)
+en;element;F4b;undefined;undefined;0;0;not measured (no support)
+en;element;F5a;undefined;undefined;0;0;not measured (no support)
+en;element;F5b;undefined;undefined;0;0;not measured (no support)
+en;element;F6a;undefined;undefined;0;0;not measured (no support)
+en;element;F6b;undefined;undefined;0;0;not measured (no support)
+en;element;F7a;undefined;undefined;0;0;not measured (no support)
+en;element;F7b;undefined;undefined;0;0;not measured (no support)
+en;element;F8a;undefined;undefined;0;0;not measured (no support)
+en;element;F9;n<5 (0);n<5 (0);0;0;not measured (no support)
+en;technology;general;1.000*;1.000*;12;1;0.000
+en;technology;hydrogen;undefined;undefined;0;0;not measured (no support)
+en;technology;nuclear;undefined;undefined;0;0;not measured (no support)
+en;technology;other_renewable;undefined;undefined;0;0;not measured (no support)
+en;technology;solar;n<5 (3);n<5 (3);3;1;0.000
+en;technology;storage;undefined;undefined;0;0;not measured (no support)
+en;technology;wind;n<5 (3);n<5 (3);3;1;0.000
+en;evaluation_A;mixed;undefined;undefined;0;0;not measured (no support)
+en;evaluation_A;negative;1.000*;1.000*;5;1;0.000
+en;evaluation_A;neutral;undefined;undefined;0;0;not measured (no support)
+en;evaluation_A;positive;1.000*;1.000*;13;1;0.000
+en;evaluation_B;mixed;undefined;undefined;0;0;not measured (no support)
+en;evaluation_B;negative;1.000*;1.000*;5;1;0.000
+en;evaluation_B;neutral;undefined;undefined;0;0;not measured (no support)
+en;evaluation_B;positive;0.684*;0.684*;22;1;0.000
+en;comparison_A;coal;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;fossil_generic;n<5 (4);n<5 (4);4;1;0.000
+en;comparison_A;general;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;grid_status_quo;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;hydrogen;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;multiple;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;natural_gas;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;none;1.000*;1.000*;14;1;0.000
+en;comparison_A;nuclear;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;oil;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;other;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;other_renewable;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;solar;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;storage;undefined;undefined;0;0;not measured (no support)
+en;comparison_A;wind;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;coal;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;fossil_generic;n<5 (4);n<5 (4);4;1;0.000
+en;comparison_B;general;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;grid_status_quo;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;hydrogen;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;multiple;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;natural_gas;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;none;1.000*;1.000*;14;1;0.000
+en;comparison_B;nuclear;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;oil;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;other;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;other_renewable;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;solar;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;storage;undefined;undefined;0;0;not measured (no support)
+en;comparison_B;wind;undefined;undefined;0;0;not measured (no support)

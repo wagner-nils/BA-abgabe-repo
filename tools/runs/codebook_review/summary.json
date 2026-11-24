@@ -1,0 +1,1023 @@
+{
+  "declared": "pre-analysis specification §4h (2026-10-30)",
+  "ground_truth_sha256": "6a9d9abad4124f8390210ad54d1969046abe5e9d975a69298a844b8d20fee233",
+  "judge_agreement": {
+    "n": 336,
+    "raw": 0.9464285714285714,
+    "kappa": 0.8829132303403414
+  },
+  "cells": [
+    {
+      "session": "S1",
+      "arm": "A",
+      "config": "opus",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        3,
+        4,
+        5
+      ],
+      "found_liberal_per_run": [
+        3,
+        5,
+        6
+      ],
+      "mean_recall_strict": 0.5,
+      "union_strict": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G02",
+        "G03",
+        "G09",
+        "G10"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "A",
+      "config": "sonnet",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        4,
+        3,
+        1
+      ],
+      "found_liberal_per_run": [
+        4,
+        3,
+        2
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G02",
+        "G03",
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G02",
+        "G03",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "A",
+      "config": "mercury3_low",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        2,
+        2,
+        2
+      ],
+      "found_liberal_per_run": [
+        2,
+        2,
+        2
+      ],
+      "mean_recall_strict": 0.25,
+      "union_strict": [
+        "G02",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G02",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "A",
+      "config": "mercury3_instant",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        2,
+        2
+      ],
+      "found_liberal_per_run": [
+        1,
+        2,
+        2
+      ],
+      "mean_recall_strict": 0.20833333333333334,
+      "union_strict": [
+        "G04",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G04",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "B",
+      "config": "opus",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        4,
+        4,
+        5
+      ],
+      "found_liberal_per_run": [
+        4,
+        5,
+        5
+      ],
+      "mean_recall_strict": 0.5416666666666666,
+      "union_strict": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G01",
+        "G02",
+        "G03",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "B",
+      "config": "sonnet",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        4,
+        3,
+        3
+      ],
+      "found_liberal_per_run": [
+        4,
+        3,
+        4
+      ],
+      "mean_recall_strict": 0.4166666666666667,
+      "union_strict": [
+        "G01",
+        "G02",
+        "G03",
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G02",
+        "G03",
+        "G09",
+        "G10"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "B",
+      "config": "mercury3_low",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        4,
+        3,
+        3
+      ],
+      "found_liberal_per_run": [
+        5,
+        3,
+        3
+      ],
+      "mean_recall_strict": 0.4166666666666667,
+      "union_strict": [
+        "G02",
+        "G03",
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G02",
+        "G04",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        12
+      ]
+    },
+    {
+      "session": "S1",
+      "arm": "B",
+      "config": "mercury3_instant",
+      "items": 8,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        2,
+        3,
+        1
+      ],
+      "found_liberal_per_run": [
+        2,
+        3,
+        1
+      ],
+      "mean_recall_strict": 0.25,
+      "union_strict": [
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G04",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "A",
+      "config": "opus",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        1,
+        3
+      ],
+      "found_liberal_per_run": [
+        2,
+        1,
+        3
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G05",
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G09",
+        "G10"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "A",
+      "config": "sonnet",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        1,
+        1
+      ],
+      "found_liberal_per_run": [
+        1,
+        2,
+        2
+      ],
+      "mean_recall_strict": 0.2,
+      "union_strict": [
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "A",
+      "config": "mercury3_low",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        2,
+        1
+      ],
+      "found_liberal_per_run": [
+        1,
+        2,
+        1
+      ],
+      "mean_recall_strict": 0.26666666666666666,
+      "union_strict": [
+        "G09",
+        "G10"
+      ],
+      "in_2_of_3_strict": [
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "A",
+      "config": "mercury3_instant",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        1,
+        1
+      ],
+      "found_liberal_per_run": [
+        1,
+        1,
+        1
+      ],
+      "mean_recall_strict": 0.2,
+      "union_strict": [
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "B",
+      "config": "opus",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        2,
+        2,
+        2
+      ],
+      "found_liberal_per_run": [
+        3,
+        3,
+        3
+      ],
+      "mean_recall_strict": 0.4,
+      "union_strict": [
+        "G06",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G06",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "B",
+      "config": "sonnet",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        3,
+        2,
+        2
+      ],
+      "found_liberal_per_run": [
+        3,
+        2,
+        3
+      ],
+      "mean_recall_strict": 0.4666666666666667,
+      "union_strict": [
+        "G05",
+        "G06",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G05",
+        "G06",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "B",
+      "config": "mercury3_low",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        2,
+        1
+      ],
+      "found_liberal_per_run": [
+        1,
+        3,
+        1
+      ],
+      "mean_recall_strict": 0.26666666666666666,
+      "union_strict": [
+        "G05",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G05",
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        13,
+        15
+      ]
+    },
+    {
+      "session": "S2",
+      "arm": "B",
+      "config": "mercury3_instant",
+      "items": 5,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        2,
+        0,
+        1
+      ],
+      "found_liberal_per_run": [
+        2,
+        0,
+        2
+      ],
+      "mean_recall_strict": 0.2,
+      "union_strict": [
+        "G05",
+        "G09"
+      ],
+      "in_2_of_3_strict": [
+        "G09"
+      ],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "A",
+      "config": "opus",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        1,
+        0,
+        0
+      ],
+      "found_liberal_per_run": [
+        1,
+        1,
+        0
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G10"
+      ],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "A",
+      "config": "sonnet",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        1
+      ],
+      "found_liberal_per_run": [
+        0,
+        1,
+        1
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G10"
+      ],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "A",
+      "config": "mercury3_low",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        1
+      ],
+      "found_liberal_per_run": [
+        0,
+        1,
+        1
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G10"
+      ],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "A",
+      "config": "mercury3_instant",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        0
+      ],
+      "found_liberal_per_run": [
+        0,
+        0,
+        0
+      ],
+      "mean_recall_strict": 0.0,
+      "union_strict": [],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "B",
+      "config": "opus",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        1
+      ],
+      "found_liberal_per_run": [
+        0,
+        0,
+        1
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G10"
+      ],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "B",
+      "config": "sonnet",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        0
+      ],
+      "found_liberal_per_run": [
+        0,
+        0,
+        0
+      ],
+      "mean_recall_strict": 0.0,
+      "union_strict": [],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "B",
+      "config": "mercury3_low",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        0
+      ],
+      "found_liberal_per_run": [
+        0,
+        0,
+        0
+      ],
+      "mean_recall_strict": 0.0,
+      "union_strict": [],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        14,
+        15,
+        15
+      ]
+    },
+    {
+      "session": "S3",
+      "arm": "B",
+      "config": "mercury3_instant",
+      "items": 1,
+      "valid_runs": 3,
+      "found_strict_per_run": [
+        0,
+        0,
+        1
+      ],
+      "found_liberal_per_run": [
+        0,
+        0,
+        1
+      ],
+      "mean_recall_strict": 0.3333333333333333,
+      "union_strict": [
+        "G10"
+      ],
+      "in_2_of_3_strict": [],
+      "issues_per_run": [
+        15,
+        15,
+        15
+      ]
+    }
+  ],
+  "diffusion_rule": {
+    "unique_findings": [],
+    "mercury_only_in_any_run": [],
+    "verdict": "no diffusion-unique documented gap under the §4h rule"
+  },
+  "s3_elements_named_per_3_runs": {
+    "opus_A": {
+      "F1b": 2,
+      "F2b": 3,
+      "F2c": 3,
+      "F3b": 3,
+      "F4a": 2,
+      "F4b": 3,
+      "F5a": 3,
+      "F6a": 3,
+      "F6b": 2,
+      "F7a": 1,
+      "F7b": 3,
+      "F8a": 3,
+      "F9": 2,
+      "comparison_target": 3,
+      "evaluation": 2,
+      "general": 2,
+      "hydrogen": 2,
+      "neutral": 1,
+      "no_frame_present": 2,
+      "positive": 1,
+      "solar": 2,
+      "speaker": 3,
+      "storage": 2,
+      "technologies": 2,
+      "wind": 2
+    },
+    "opus_B": {
+      "F1a": 3,
+      "F1b": 3,
+      "F2b": 3,
+      "F2c": 3,
+      "F3b": 3,
+      "F4a": 3,
+      "F4b": 3,
+      "F5a": 3,
+      "F5b": 2,
+      "F6a": 3,
+      "F8a": 1,
+      "comparison_target": 1,
+      "evaluation": 1,
+      "general": 3,
+      "hydrogen": 3,
+      "no_frame_present": 2,
+      "nuclear": 3,
+      "solar": 3,
+      "storage": 1,
+      "wind": 3
+    },
+    "sonnet_A": {
+      "F1a": 3,
+      "F1b": 1,
+      "F2a": 1,
+      "F2b": 3,
+      "F2c": 3,
+      "F3b": 3,
+      "F4a": 3,
+      "F4b": 3,
+      "F5a": 3,
+      "F5b": 3,
+      "F6a": 3,
+      "F6b": 2,
+      "F8a": 3,
+      "F9": 3,
+      "ambiguous": 1,
+      "comparison_target": 3,
+      "evaluation": 3,
+      "general": 2,
+      "neutral": 1,
+      "no_frame_present": 3,
+      "nuclear": 2,
+      "outlet": 1,
+      "speaker": 3,
+      "storage": 3,
+      "technologies": 1
+    },
+    "sonnet_B": {
+      "F1a": 1,
+      "F1b": 3,
+      "F2b": 3,
+      "F2c": 3,
+      "F3b": 3,
+      "F4a": 3,
+      "F4b": 3,
+      "F5a": 3,
+      "F6a": 3,
+      "F6b": 2,
+      "F8a": 2,
+      "F9": 2,
+      "evaluation": 3,
+      "general": 1,
+      "hydrogen": 1,
+      "no_frame_present": 1,
+      "nuclear": 3,
+      "other_renewable": 1,
+      "solar": 1,
+      "speaker": 3,
+      "storage": 2,
+      "technologies": 1,
+      "wind": 1
+    },
+    "mercury3_low_A": {
+      "F1a": 2,
+      "F1b": 2,
+      "F2a": 3,
+      "F2b": 3,
+      "F2c": 3,
+      "F3a": 1,
+      "F3b": 2,
+      "F4a": 2,
+      "F4b": 2,
+      "F5a": 3,
+      "F5b": 1,
+      "F6a": 3,
+      "F6b": 3,
+      "F7a": 3,
+      "F7b": 3,
+      "F8a": 2,
+      "F9": 1,
+      "comparison_target": 2,
+      "evaluation": 1,
+      "fossil_generic": 1,
+      "general": 2,
+      "grid_status_quo": 1,
+      "hydrogen": 3,
+      "no_frame_present": 2,
+      "nuclear": 1,
+      "other_renewable": 2,
+      "outlet": 1,
+      "solar": 1,
+      "speaker": 2,
+      "storage": 2,
+      "unattributed": 1,
+      "wind": 1
+    },
+    "mercury3_low_B": {
+      "F1a": 2,
+      "F1b": 1,
+      "F2a": 2,
+      "F2b": 3,
+      "F2c": 3,
+      "F3a": 3,
+      "F3b": 3,
+      "F4a": 3,
+      "F4b": 3,
+      "F5a": 3,
+      "F5b": 2,
+      "F6a": 3,
+      "F6b": 1,
+      "F7a": 2,
+      "F7b": 2,
+      "F8a": 2,
+      "comparison_target": 3,
+      "no_frame_present": 1,
+      "nuclear": 1,
+      "other_renewable": 1,
+      "speaker": 3,
+      "storage": 1,
+      "technologies": 1
+    },
+    "mercury3_instant_A": {
+      "F1a": 3,
+      "F1b": 3,
+      "F2a": 3,
+      "F2b": 3,
+      "F2c": 3,
+      "F3a": 2,
+      "F3b": 3,
+      "F4a": 3,
+      "F4b": 3,
+      "F5a": 3,
+      "F5b": 3,
+      "F6a": 3,
+      "F6b": 3,
+      "F7a": 3,
+      "F7b": 3,
+      "F8a": 3,
+      "F9": 3,
+      "X4": 1,
+      "comparison_target": 2,
+      "no_frame_present": 1
+    },
+    "mercury3_instant_B": {
+      "F1a": 3,
+      "F1b": 3,
+      "F2a": 3,
+      "F2b": 3,
+      "F2c": 3,
+      "F3a": 2,
+      "F3b": 3,
+      "F4a": 2,
+      "F4b": 3,
+      "F5a": 2,
+      "F5b": 3,
+      "F6a": 3,
+      "F6b": 3,
+      "F7a": 3,
+      "F7b": 3,
+      "F8a": 3,
+      "F9": 3,
+      "X4": 1,
+      "comparison_target": 2,
+      "general": 1,
+      "speaker": 1
+    }
+  },
+  "overall": {
+    "opus": {
+      "gap_slots": 84,
+      "found_strict": 38,
+      "share_found": 0.4523809523809524,
+      "runs_finding_item": {
+        "G01": 4,
+        "G02": 6,
+        "G03": 6,
+        "G04": 2,
+        "G05": 1,
+        "G06": 3,
+        "G09": 10,
+        "G10": 6
+      },
+      "issues": 270,
+      "issues_matched_by_both": 43,
+      "share_issues_matched": 0.15925925925925927
+    },
+    "sonnet": {
+      "gap_slots": 84,
+      "found_strict": 29,
+      "share_found": 0.34523809523809523,
+      "runs_finding_item": {
+        "G01": 1,
+        "G02": 6,
+        "G03": 4,
+        "G05": 3,
+        "G06": 2,
+        "G09": 9,
+        "G10": 4
+      },
+      "issues": 270,
+      "issues_matched_by_both": 28,
+      "share_issues_matched": 0.1037037037037037
+    },
+    "mercury3_low": {
+      "gap_slots": 84,
+      "found_strict": 25,
+      "share_found": 0.2976190476190476,
+      "runs_finding_item": {
+        "G02": 5,
+        "G03": 1,
+        "G04": 3,
+        "G05": 2,
+        "G09": 11,
+        "G10": 3
+      },
+      "issues": 264,
+      "issues_matched_by_both": 28,
+      "share_issues_matched": 0.10606060606060606
+    },
+    "mercury3_instant": {
+      "gap_slots": 84,
+      "found_strict": 18,
+      "share_found": 0.21428571428571427,
+      "runs_finding_item": {
+        "G04": 4,
+        "G05": 1,
+        "G09": 11,
+        "G10": 2
+      },
+      "issues": 270,
+      "issues_matched_by_both": 20,
+      "share_issues_matched": 0.07407407407407407
+    }
+  },
+  "cost_usd_by_config": {
+    "opus": 2.4236,
+    "mercury3_low": 0.0809,
+    "mercury3_instant": 0.0263,
+    "sonnet": 1.4388
+  }
+}

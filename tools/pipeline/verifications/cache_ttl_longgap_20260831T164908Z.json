@@ -1,0 +1,58 @@
+{
+  "started_at": "2026-08-31T16:49:08.936112+00:00",
+  "region": "eu-central-1",
+  "gap_seconds": 410,
+  "models": {
+    "sonnet": "eu.anthropic.claude-sonnet-4-6",
+    "opus": "eu.anthropic.claude-opus-4-6-v1"
+  },
+  "arms": {
+    "sonnet/1h": {
+      "t0": {
+        "write": 6624,
+        "read": 0
+      },
+      "t_gap": {
+        "write": 0,
+        "read": 6624
+      },
+      "verdict": "survived"
+    },
+    "sonnet/5m": {
+      "t0": {
+        "write": 6626,
+        "read": 0
+      },
+      "t_gap": {
+        "write": 6626,
+        "read": 0
+      },
+      "verdict": "expired (control behaved)"
+    },
+    "opus/1h": {
+      "t0": {
+        "write": 6625,
+        "read": 0
+      },
+      "t_gap": {
+        "write": 0,
+        "read": 6625
+      },
+      "verdict": "survived"
+    },
+    "opus/5m": {
+      "t0": {
+        "write": 6620,
+        "read": 0
+      },
+      "t_gap": {
+        "write": 6620,
+        "read": 0
+      },
+      "verdict": "expired (control behaved)"
+    }
+  },
+  "failures": [],
+  "ended_at": "2026-08-31T16:56:14.389192+00:00",
+  "passed": true
+}

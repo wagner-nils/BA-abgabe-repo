@@ -1,0 +1,43 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{63.9pt}>{\raggedright\arraybackslash}p{61.1pt}>{\raggedright\arraybackslash}p{71.3pt}>{\raggedright\arraybackslash}p{47.9pt}>{\raggedright\arraybackslash}p{67.6pt}>{\raggedright\arraybackslash}p{71.3pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (DEVELOPMENT -- not reportable). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.943 & 35 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 23; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 2 & 0.641 \\
+pooled & comparison target & 0.949 & 39 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 1 & 0.937 \\
+de & evaluation & 0.867 & 15 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 16; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 2 & 0.464 \\
+de & comparison target & 0.905 & 21 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 1 & 0.884 \\
+en & evaluation & 1.000 & 20 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 7 & 0.851 \\
+en & comparison target & 1.000 & 18 & none & 1.000 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{68.4pt}>{\raggedright\arraybackslash}p{82.7pt}>{\raggedright\arraybackslash}p{87.9pt}>{\raggedright\arraybackslash}p{87.9pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (DEVELOPMENT -- not reportable). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 0.943 & 0.963 over 2 & 0.426 over 3 \\
+pooled & comparison target & 0.949 & 0.667 over 6 & 0.664 over 6 \\
+de & evaluation & 0.867 & 0.925 over 2 & 0.329 over 3 \\
+de & comparison target & 0.905 & 0.600 over 5 & 0.594 over 5 \\
+en & evaluation & 1.000 & 1.000 over 2 & 0.865 over 2 \\
+en & comparison target & 1.000 & 1.000 over 2 & 1.000 over 2 \\
+\end{longtable}
+\endgroup

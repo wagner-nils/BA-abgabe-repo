@@ -1,0 +1,55 @@
+﻿row_id;paragraph_id;technology;wind_siting;hydrogen_pathway;lang;outlet;F1a;F1b;F2a;F2b;F2c;F3a;F3b;F4a;F4b;F5a;F5b;F6a;F6b;F7a;F7b;F8a;F9;no_frame_for_this_tech;eval_costs;eval_jobs;eval_climate;eval_security;eval_reliability;eval_feasibility;eval_siting;eval_regulation;eval_other;comparison_target;comparison_note;speaker;confidence;note;annotator;annotator_type;coded_at;codebook_version;sitting;text_sha256
+A039_p02__nuclear;A039_p02;nuclear;;;de;BILD;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;;positive;;;;positive;;;;none;;expert;3;[private: 33 chars];NW;human;2026-10-13;1.0;1;a49725c17a17e896
+A067_p02__hydrogen;A067_p02;hydrogen;;unspecified;en;The New York Times;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;[private: 13 chars];NW;human;2026-10-13;1.0;1;19ee22a2a81ffa29
+A060_p30__general;A060_p30;general;;;en;The Guardian;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;expert;2;;NW;human;2026-10-13;1.0;1;104f5b048eac77ce
+A060_p30__hydrogen;A060_p30;hydrogen;;unspecified;en;The Guardian;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;;;negative;;;negative;;;;none;;expert;3;[private: 36 chars];NW;human;2026-10-13;1.0;1;104f5b048eac77ce
+A042_p01__solar;A042_p01;solar;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;;NW;human;2026-10-13;1.0;1;1d4b9a95dba4c623
+A042_p01__wind;A042_p01;wind;unspecified;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;;NW;human;2026-10-13;1.0;1;1d4b9a95dba4c623
+A070_p12__general;A070_p12;general;;;en;The New York Times;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;;;;positive;;;;;;fossil_generic;;expert;3;[private: 25 chars];NW;human;2026-10-13;1.0;1;f02677001161ac99
+A080_p01__wind;A080_p01;wind;offshore;;de;DER SPIEGEL;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;outlet;2;;NW;human;2026-10-13;1.0;1;6e4a66cc6c0955ee
+A058_p09__solar;A058_p09;solar;;;en;The Economist;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;negative;;;;;;;;none;;outlet;3;[private: 32 chars];NW;human;2026-10-13;1.0;1;8391138dfb5fb090
+A075_p04__solar;A075_p04;solar;;;en;The New York Times;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;;;;;;;;neutral;;none;;political;2;;NW;human;2026-10-13;1.0;1;768414253b271b81
+A061_p12__hydrogen;A061_p12;hydrogen;;green;en;The Guardian;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;positive;positive;;;;;;;none;;ambiguous;3;;NW;human;2026-10-13;1.0;1;6de404c4d2f70e24
+A007_p10__solar;A007_p10;solar;;;de;taz;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;;negative;negative;;;;;;;none;;expert;3;[private: 26 chars];NW;human;2026-10-13;1.0;1;529a4a8d2c69aa67
+A059_p04__solar;A059_p04;solar;;;en;The Economist;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;;positive;;;;;;positive;;none;;industry;3;;NW;human;2026-10-13;1.0;1;1c2d2fd32d89821a
+A059_p04__storage;A059_p04;storage;;;en;The Economist;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;;positive;;;;;;positive;;none;;industry;3;[private: 48 chars];NW;human;2026-10-13;1.0;1;1c2d2fd32d89821a
+A074_p15__nuclear;A074_p15;nuclear;;;en;The New York Times;1;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;positive;;;positive;positive;;;;;fossil_generic;;ambiguous;2;[private: 20 chars];NW;human;2026-10-13;1.0;1;d1ca1ce60303431d
+A091_p05__general;A091_p05;general;;;de;Süddeutsche Zeitung;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;neutral;positive;;;;;;;;none;;expert;3;;NW;human;2026-10-13;1.0;1;2fa1c6e8d7a40e47
+A070_p16__general;A070_p16;general;;;en;The New York Times;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;;NW;human;2026-10-13;1.0;1;4bb3651c3017280b
+A070_p16__nuclear;A070_p16;nuclear;;;en;The New York Times;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;positive;;positive;;;;;;;natural_gas;;outlet;3;[private: 27 chars];NW;human;2026-10-13;1.0;1;4bb3651c3017280b
+A078_p01__general;A078_p01;general;;;de;BR24;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;;;positive;positive;;;;;;fossil_generic;;ngo;2;[private: 16 chars];NW;human;2026-10-13;1.0;1;d4b46921a11c59b1
+A088_p14__storage;A088_p14;storage;;;de;Süddeutsche Zeitung;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0;;;;;positive;;;positive;;none;;ambiguous;1;[private: 61 chars];NW;human;2026-10-13;1.0;1;1303fd026b8be953
+A042_p11__wind;A042_p11;wind;onshore;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;;NW;human;2026-10-13;1.0;1;d6503261f0603919
+A042_p11__storage;A042_p11;storage;;;de;DIE ZEIT;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;2;;NW;human;2026-10-13;1.0;1;d6503261f0603919
+A010_p18__general;A010_p18;general;;;en;Al Jazeera;1;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;positive;;positive;positive;;;;;;fossil_generic;;outlet;2;;NW;human;2026-10-13;1.0;1;04d7547167cf1c3a
+A003_p11__wind;A003_p11;wind;onshore;;de;taz;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;industry;2;[private: 44 chars];NW;human;2026-10-13;1.0;1;1957907579756f45
+A039_p01__nuclear;A039_p01;nuclear;;;de;BILD;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;;positive;;;;positive;;;;none;;expert;2;;NW;human;2026-10-13;1.0;1;c2a820b129dc32f5
+A052_p12__nuclear;A052_p12;nuclear;;;en;The Economist;1;0;1;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;mixed;positive;;;;positive;;;;grid_status_quo;;ambiguous;3;[private: 15 chars];NW;human;2026-10-13;1.0;1;37903aaa225414be
+A089_p03__general;A089_p03;general;;;de;Süddeutsche Zeitung;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;natural_gas;;political;2;[private: 67 chars];NW;human;2026-10-13;1.0;1;cbd65e559c5c6e17
+A089_p03__other_renewable;A089_p03;other_renewable;;;de;Süddeutsche Zeitung;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;;;positive;;;;;;;fossil_generic;;outlet;3;[private: 20 chars];NW;human;2026-10-13;1.0;1;cbd65e559c5c6e17
+A052_p13__nuclear;A052_p13;nuclear;;;en;The Economist;1;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;mixed;positive;;;positive;;;;;grid_status_quo;;expert;3;[private: 25 chars];NW;human;2026-10-13;1.0;1;44397b13dd862370
+A061_p02__hydrogen;A061_p02;hydrogen;;unspecified;en;The Guardian;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;;negative;positive;;;;;;;none;;outlet;3;[private: 17 chars];NW;human;2026-10-13;1.0;1;d992617a9730948e
+A055_p11__nuclear;A055_p11;nuclear;;;en;The Economist;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;1;0;0;;mixed;;;;;negative;negative;;grid_status_quo;;outlet;3;[private: 20 chars];NW;human;2026-10-13;1.0;1;26deacdb1827c7e0
+A063_p19__hydrogen;A063_p19;hydrogen;;green;en;The Guardian;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;neutral;;;;;;;;none;;ambiguous;3;[private: 20 chars];NW;human;2026-10-13;1.0;1;11f6264afc178fba
+A072_p01__nuclear;A072_p01;nuclear;;;en;The New York Times;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;;negative;;;;;;;;none;;outlet;2;[private: 19 chars];NW;human;2026-10-13;1.0;1;ec8225e9e48b9166
+A095_p02__wind;A095_p02;wind;unspecified;;de;taz;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;expert;2;[private: 15 chars];NW;human;2026-10-13;1.0;1;0ede6468fa0f4650
+A085_p11__solar;A085_p11;solar;;;de;Neue Zürcher Zeitung;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;negative;;;;;negative;;;;none;;outlet;3;[private: 28 chars];NW;human;2026-10-13;1.0;1;d163be496bda1a6a
+A085_p11__wind;A085_p11;wind;unspecified;;de;Neue Zürcher Zeitung;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;negative;;;;;negative;;;;none;;outlet;3;[private: 28 chars];NW;human;2026-10-13;1.0;1;d163be496bda1a6a
+A063_p03__solar;A063_p03;solar;;;en;The Guardian;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;;positive;;;;;neutral;;;none;;outlet;3;[private: 15 chars];NW;human;2026-10-13;1.0;1;ffedd6ba1d346d73
+A063_p03__wind;A063_p03;wind;onshore;;en;The Guardian;0;0;0;1;1;0;0;0;0;0;0;0;0;1;0;0;0;0;;positive;;;;;positive;;;none;;outlet;3;[private: 34 chars];NW;human;2026-10-13;1.0;1;ffedd6ba1d346d73
+A063_p03__hydrogen;A063_p03;hydrogen;;green;en;The Guardian;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;;positive;;;;;neutral;;;none;;outlet;3;[private: 22 chars];NW;human;2026-10-13;1.0;1;ffedd6ba1d346d73
+A008_p05__solar;A008_p05;solar;;;de;taz;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;1;0;0;negative;negative;;;;;;negative;;none;;industry;3;[private: 24 chars];NW;human;2026-10-13;1.0;1;5c15103778a9f9c9
+A036_p05__solar;A036_p05;solar;;;de;BILD;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;negative;;;;;none;;outlet;3;[private: 20 chars];NW;human;2026-10-13;1.0;2;b392528ef6472ccc
+A036_p05__wind;A036_p05;wind;unspecified;;de;BILD;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;negative;;;;;none;;outlet;3;[private: 20 chars];NW;human;2026-10-13;1.0;2;b392528ef6472ccc
+A036_p05__hydrogen;A036_p05;hydrogen;;green;de;BILD;1;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;negative;;positive;;negative;;;;;none;;outlet;3;[private: 14 chars];NW;human;2026-10-13;1.0;2;b392528ef6472ccc
+A007_p04__solar;A007_p04;solar;;;de;taz;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;;;;;;;;;none;;political;3;[private: 19 chars];NW;human;2026-10-13;1.0;2;ff70740be9d7836e
+A083_p07__general;A083_p07;general;;;de;Hamburger Abendblatt;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;outlet;3;[private: 19 chars];NW;human;2026-10-13;1.0;2;7d93674fd6ee753f
+A083_p07__storage;A083_p07;storage;;;de;Hamburger Abendblatt;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;positive;;;;;none;;outlet;3;[private: 57 chars];NW;human;2026-10-13;1.0;2;7d93674fd6ee753f
+A037_p03__general;A037_p03;general;;;de;BILD;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;mixed;;;;;;;;none;;industry;2;[private: 6 chars];NW;human;2026-10-13;1.0;2;70bf6ebbaee0cc34
+A039_p04__nuclear;A039_p04;nuclear;;;de;BILD;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;positive;;;;;positive;;;;nuclear;;expert;3;[private: 20 chars];NW;human;2026-10-13;1.0;2;1a504dc76554ac77
+A067_p19__hydrogen;A067_p19;hydrogen;;blue;en;The New York Times;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;negative;;;;;;;;none;;expert;3;[private: 19 chars];NW;human;2026-10-13;1.0;2;3f36e431997160c6
+A060_p13__hydrogen;A060_p13;hydrogen;;green;en;The Guardian;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;negative;;;;;;;;;none;;expert;3;[private: 21 chars];NW;human;2026-10-13;1.0;2;aa329bbcc38e19a0
+A085_p03__solar;A085_p03;solar;;;de;Neue Zürcher Zeitung;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;negative;;;;;none;;outlet;3;[private: 16 chars];NW;human;2026-10-13;1.0;2;71e9437f6b4d06de
+A085_p03__wind;A085_p03;wind;unspecified;;de;Neue Zürcher Zeitung;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;;;;;negative;;;;;none;;outlet;3;[private: 16 chars];NW;human;2026-10-13;1.0;2;71e9437f6b4d06de
+A060_p10__hydrogen;A060_p10;hydrogen;;unspecified;en;The Guardian;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;;positive;;;;;;;;none;;political;3;[private: 24 chars];NW;human;2026-10-13;1.0;2;7aaa18d5c293068f
+A060_p10__storage;A060_p10;storage;;;en;The Guardian;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;none;;political;3;[private: 13 chars];NW;human;2026-10-13;1.0;2;7aaa18d5c293068f

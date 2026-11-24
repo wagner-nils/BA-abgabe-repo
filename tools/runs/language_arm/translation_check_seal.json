@@ -1,0 +1,57 @@
+{
+  "kind": "translation_check_seal",
+  "authority": "pre-analysis specification §4e(a), amendment of 2026-11-05",
+  "check_file": "tools/annotation/sheets/A2_translation_check.csv",
+  "check_sha256": "10ef6acc6306c9d44d5c9a41ac04da57c35ebcab468eaa2c27ccebcb84887e65",
+  "translation_file_sha256": "b273def3a27552f8f708529f2dc3a73c1657077e36da0b39ea66905b8bab3a66",
+  "rubric": {
+    "categories": [
+      "omission_or_addition",
+      "technology_referent",
+      "negation",
+      "modality_or_hedging",
+      "quantities_units",
+      "time_reference",
+      "attribution_reported_speech",
+      "ambiguity_resolved",
+      "other"
+    ],
+    "severities": [
+      "none",
+      "minor",
+      "major"
+    ]
+  },
+  "summary": {
+    "rows": 60,
+    "checked": 60,
+    "not_translated": 0,
+    "severity": {
+      "none": 60,
+      "minor": 0,
+      "major": 0
+    },
+    "categories": {
+      "omission_or_addition": 0,
+      "technology_referent": 0,
+      "negation": 0,
+      "modality_or_hedging": 0,
+      "quantities_units": 0,
+      "time_reference": 0,
+      "attribution_reported_speech": 0,
+      "ambiguity_resolved": 0,
+      "other": 0
+    },
+    "minor_or_major_without_category": 0,
+    "none_with_category": 0
+  },
+  "sealed_at": "2026-11-05T13:25:00.580546+00:00",
+  "translated_runs_before_seal": [
+    {
+      "run_id": "a2de_translated_sonnet_20261105",
+      "first_call_at": "2026-11-05T09:25:20.587290+00:00"
+    }
+  ],
+  "rule": "no agreement figure of the language arm is computed before this seal, naming the check file's digest, is committed (specification §4e(a), amendment item 6)",
+  "digest": "9f5d272cc379c51dc452d31f38032cfd2b58a0aeeb6690e07c39c31c8ed106dc"
+}

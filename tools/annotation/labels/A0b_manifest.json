@@ -1,0 +1,234 @@
+{
+  "session": "A0b",
+  "sheet_kind": "reconstructed",
+  "sheet_schema": 1,
+  "generated_at": "2026-09-05",
+  "codebook_versions": [
+    "0.2",
+    "0.3"
+  ],
+  "passes": {
+    "pass2": {
+      "codebook_version": "0.3",
+      "codebook_sha256": "612240bf7b6b1a46e41061e277989e31062fd635df016f7bc8979c3de3a99e97",
+      "labels_file": "A0b_pass2_v0.3.csv",
+      "labels_sha256": "3fe08cb6c885d7fa"
+    },
+    "pass1": {
+      "codebook_version": "0.2",
+      "codebook_sha256": "f51645edb5b6ec18f08a9e09ac256eb6ee19aa83265b5ab8dc4cd437caa2e1b8",
+      "labels_file": "A0b_pass1_v0.2.csv",
+      "labels_sha256": "714ee9369ce32a71"
+    }
+  },
+  "registry_head_hash": "33cad517196b9596",
+  "generator": {
+    "file": "build_sheets.py",
+    "sha256": "a39402c14baa825d36d4761bb93b367c4907549a5f0f77f1c4666bce4271509d"
+  },
+  "n_paragraphs": 12,
+  "paragraphs": [
+    {
+      "paragraph_id": "A001_p05",
+      "article_id": "A001",
+      "text_sha256": "97288eab3013a13f",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A003_p01",
+      "article_id": "A003",
+      "text_sha256": "838d181e03b7b819",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A004_p04",
+      "article_id": "A004",
+      "text_sha256": "807fccb1913d1fe8",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A005_p01",
+      "article_id": "A005",
+      "text_sha256": "867cb19fa1931eda",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A006_p04",
+      "article_id": "A006",
+      "text_sha256": "bfbd361a0481f017",
+      "split": "A0b",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A007_p03",
+      "article_id": "A007",
+      "text_sha256": "8ca5818360e30886",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A008_p10",
+      "article_id": "A008",
+      "text_sha256": "0ef3b98abbe5265e",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "taz"
+    },
+    {
+      "paragraph_id": "A010_p15",
+      "article_id": "A010",
+      "text_sha256": "71631abf95cceff4",
+      "split": "A0b",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A011_p02",
+      "article_id": "A011",
+      "text_sha256": "e8f6cb5b3fab86b2",
+      "split": "A0b",
+      "lang": "en",
+      "outlet": "Clean Energy Wire"
+    },
+    {
+      "paragraph_id": "A012_p04",
+      "article_id": "A012",
+      "text_sha256": "820a276bf398fc10",
+      "split": "A0b",
+      "lang": "en",
+      "outlet": "Al Jazeera"
+    },
+    {
+      "paragraph_id": "A018_p08",
+      "article_id": "A018",
+      "text_sha256": "4d829f41ce8cd7af",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A024_p02",
+      "article_id": "A024",
+      "text_sha256": "9d745cdd6d65a489",
+      "split": "A0b",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    }
+  ],
+  "note": "IDs and hashes only -- no article text. A label file of this session is valid only if every row's text hash is in this list; finalize.py checks that by recomputing the hash from the sheet, not by reading the cell.",
+  "reconstructed": true,
+  "reconstruction": {
+    "method": "paragraph_id from the committed label files, joined to the registry-validated identities in ALL_paragraphs.csv",
+    "evidence": {
+      "pass2": {
+        "labels_file": "A0b_pass2_v0.3.csv",
+        "labels_sha256_recorded": "3fe08cb6c885d7fa",
+        "labels_sha256_now": "3fe08cb6c885d7fa",
+        "n_rows": 37
+      },
+      "pass1": {
+        "labels_file": "A0b_pass1_v0.2.csv",
+        "labels_sha256_recorded": "714ee9369ce32a71",
+        "labels_sha256_now": "714ee9369ce32a71",
+        "n_rows": 12
+      }
+    },
+    "paragraphs_not_resolvable": [],
+    "splits_present": {
+      "A0b": 12
+    },
+    "pass1_keys": [
+      "A001_p05__hydrogen",
+      "A001_p05__other_renewable",
+      "A001_p05__solar",
+      "A001_p05__storage",
+      "A001_p05__wind",
+      "A003_p01__wind",
+      "A004_p04__nuclear",
+      "A004_p04__other_renewable",
+      "A004_p04__solar",
+      "A004_p04__wind",
+      "A005_p01__solar",
+      "A006_p04__other_renewable",
+      "A006_p04__solar",
+      "A006_p04__wind",
+      "A007_p03__general",
+      "A007_p03__solar",
+      "A007_p03__wind",
+      "A008_p10__general",
+      "A008_p10__solar",
+      "A008_p10__wind",
+      "A010_p15__other_renewable",
+      "A010_p15__solar",
+      "A010_p15__wind",
+      "A011_p02__general",
+      "A011_p02__other_renewable",
+      "A012_p04__general",
+      "A012_p04__hydrogen",
+      "A012_p04__solar",
+      "A012_p04__wind",
+      "A018_p08__general",
+      "A018_p08__hydrogen",
+      "A018_p08__other_renewable",
+      "A018_p08__solar",
+      "A018_p08__storage",
+      "A018_p08__wind",
+      "A024_p02__solar",
+      "A024_p02__wind"
+    ],
+    "pass2_keys": [
+      "A001_p05__hydrogen",
+      "A001_p05__other_renewable",
+      "A001_p05__solar",
+      "A001_p05__storage",
+      "A001_p05__wind",
+      "A003_p01__wind",
+      "A004_p04__nuclear",
+      "A004_p04__other_renewable",
+      "A004_p04__solar",
+      "A004_p04__wind",
+      "A005_p01__solar",
+      "A006_p04__other_renewable",
+      "A006_p04__solar",
+      "A006_p04__wind",
+      "A007_p03__general",
+      "A007_p03__solar",
+      "A007_p03__wind",
+      "A008_p10__general",
+      "A008_p10__solar",
+      "A008_p10__wind",
+      "A010_p15__other_renewable",
+      "A010_p15__solar",
+      "A010_p15__wind",
+      "A011_p02__general",
+      "A011_p02__other_renewable",
+      "A012_p04__general",
+      "A012_p04__hydrogen",
+      "A012_p04__solar",
+      "A012_p04__wind",
+      "A018_p08__general",
+      "A018_p08__hydrogen",
+      "A018_p08__other_renewable",
+      "A018_p08__solar",
+      "A018_p08__storage",
+      "A018_p08__wind",
+      "A024_p02__solar",
+      "A024_p02__wind"
+    ],
+    "key_check": {
+      "equal": true,
+      "only_in_pass1": [],
+      "only_in_pass2": []
+    }
+  }
+}

@@ -1,0 +1,90 @@
+% 2026-11-09, second slimming pass (G-55): legend wording tightened; no count or key removed.
+% 2026-11-09: caption tightened (consensus N-01).
+% Figure (Chapter 5, Data Collection) -- from the collected corpus to the samples. Drawn by hand in TikZ in the thesis
+% figure style (preamble): sans-serif text, no hatching, colours from the preamble palette. Every number was checked on 2026-11-05
+% against tools/annotation/split-assignment.json (articles with and without prose, assignment log, counts), the
+% candidate and gap flags of build_sheets.collect(), and the manifests in tools/annotation/labels/:
+% A2_frame_manifest.json (618; 225 de / 393 en; 67 articles; 18 strata; exemplar article excluded),
+% A2_sample_manifest.json (120; 60 / 60; drawn 2026-09-06; 40 re-code flags, 20 / 20), A3_sample_manifest.json
+% (55; 27 de / 28 en; ten articles; created 2026-10-14) and A2_frame_completion_manifest.json (443; created
+% 2026-10-19). The three selections are disjoint and their union is the frame (120 + 55 + 443 = 618).
+% Lower part: the bar widths are proportional to paragraph counts, 150 mm for the 618 paragraphs of the frame
+% (0.2427 mm per paragraph): 120 -> 29.13 mm, 40 -> 9.71 mm, 55 -> 13.35 mm, 443 -> 107.52 mm.
+% Palette 2026-11-06: the lower bars carry the preamble palette, one meaning per colour. Evaluation sample: thick figInk
+% outline, white fill (was figGreyB fill); re-code: figInk fill (was figGreyA); fresh census: figChanged outline 1pt,
+% white fill (was figInk 0.5pt); frame completion: figModel outline 0.5pt, figModelLight fill (was figGreyA / figGreyC).
+% The remaining-frame bar, the guides and the upper flow stay black and grey. Greyscale cues: outline weight (thick =
+% evaluation sample), fill lightness (black = re-code, white = coder-labelled, light = model only) and the bar's level.
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  x=1mm, y=1mm,
+  font=\figfontsmall,
+  sfstep/.style={draw=figInk, line width=0.5pt, rectangle, rounded corners=1.5pt, fill=white, align=center,
+    text width=70mm, minimum height=6.5mm, inner sep=1.5pt,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  sfframe/.style={sfstep, line width=1pt},
+  sfsplit/.style={sfstep, draw=figGreyA, fill=figGreyC, text=figInk, text width=68mm, align=left, inner sep=2pt},
+  sfexit/.style={anchor=west, align=left, text width=66mm, text=figGreyA, inner sep=1pt},
+  arr/.style={-{Latex[length=1.8mm]}, line width=0.6pt},
+  xarr/.style={-{Latex[length=1.5mm]}, line width=0.5pt, figGreyA},
+  sfseg/.style={line width=0.5pt, draw=figInk},
+  sfnote/.style={anchor=north west, align=left, inner sep=0pt,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  sflead/.style={line width=0.4pt, figGreyA},
+]
+% ------------------------------------------------------------------ upper part: corpus to eligible frame
+\node[sfstep] (collected) at (40,0) {\textbf{95} articles collected\\ from 25 outlets in six countries};
+\node[sfstep] (corpus) at (40,-14) {\textbf{1{,}047} paragraphs in \textbf{74} articles with body prose\\ 361 German, 686 English};
+\node[sfstep] (reserve) at (40,-29) {Reserve split: \textbf{983} paragraphs in 69 articles};
+\node[sfstep] (cand) at (40,-40) {\textbf{641} prefilter candidates in the reserve};
+\node[sfstep] (gapfree) at (40,-51) {\textbf{623} candidates without a transcription gap};
+\node[sfframe] (frame) at (40,-63) {Eligible frame: \textbf{618} paragraphs in 67 articles\\ 18 strata; 225 German, 393 English};
+
+\draw[arr] (collected) -- (corpus);
+\draw[arr] (corpus) -- (reserve) node[midway, left=1.5mm, font=\figfontsmall\itshape, text=figGreyA] {split registry};
+\draw[arr] (reserve) -- (cand);
+\draw[arr] (cand) -- (gapfree);
+\draw[arr] (gapfree) -- (frame);
+
+% exits and the other registry splits, to the right of the main column
+\draw[xarr] (40,-7) -- (80,-7) node[sfexit] {21 articles without body prose};
+\draw[xarr] (40,-21.75) -- (80,-21.75) node[sfsplit, anchor=west] {Other registry splits, used before the draw:\\
+  calibration: 32 paragraphs in sessions of 20 and 12\\ development: 32 paragraphs};
+\draw[xarr] (40,-34.5) -- (80,-34.5) node[sfexit] {342 not marked by the keyword prefilter};
+\draw[xarr] (40,-45.5) -- (80,-45.5) node[sfexit] {18 with a transcription gap};
+\draw[xarr] (40,-56.5) -- (80,-56.5) node[sfexit] {5 from the article quoted in the prompt};
+
+% ------------------------------------------------------------------ lower part: the frame and its three selections
+% level 1: the registered evaluation sample and the remaining frame
+% guide lines from the frame box to the ends of the bar: the bar is the frame, partitioned
+\draw[sflead, figGreyB] (frame.south west) -- (0,-74) (frame.south east) -- (150,-74);
+\draw[sfseg, line width=1pt, fill=white] (0,-74) rectangle (29.13,-82);
+\node[align=center, inner sep=0pt] at (14.565,-78) {Evaluation\\ sample \textbf{120}};
+\draw[sfseg, draw=figGreyA, fill=white] (29.13,-74) rectangle (150,-82);
+\node[text=figGreyA] at (89.565,-78) {Remaining frame: \textbf{498} paragraphs, selections from it made later};
+% level 2: the re-code nested in the evaluation sample; the fresh census and the completion from the remaining frame
+\draw[sflead, figGreyB] (0,-82) -- (0,-84) (29.13,-82) -- (29.13,-84) (150,-82) -- (150,-84);
+\draw[sfseg, fill=figInk] (0,-84) rectangle (9.71,-92);
+\node[text=white] at (4.855,-88) {\textbf{40}};
+\node[anchor=west, inner sep=0pt, text=figInk] at (10.9,-88) {re-code};
+\draw[sfseg, draw=figChanged, line width=1pt, fill=white] (29.13,-84) rectangle (42.48,-92);
+\node at (35.805,-88) {\textbf{55}};
+\draw[sfseg, draw=figModel, line width=0.5pt, fill=figModelLight] (42.48,-84) rectangle (150,-92);
+\node at (96.24,-88) {Frame completion: \textbf{443} paragraphs};
+
+% annotations: one column per selection, joined to its bar by a leader
+\node[sfnote, text width=44mm] (a2) at (0,-96) {\textbf{Evaluation sample} (registered):\\ 60 German, 60 English;
+  stratified probability draw on 6~Sep~2026, coded and scored.\\ \textbf{Re-code}: 40 of the 120 (20 per language),
+  flagged at the draw and coded again, blind, before the model run. The other 80 formed the supplementary re-code after the results.};
+\draw[sflead] (35.805,-92) -- (35.805,-94) -| (54,-96);
+\node[sfnote, text width=44mm] (a3) at (54,-96) {\textbf{Fresh census} (added): all 55 paragraphs, 27 German and
+  28 English, of ten articles with no documented prior use in the study: none of their paragraphs had been used in calibration, development or the evaluation sample;
+  selected on 14~Oct~2026; coded; unweighted.};
+\draw[sflead] (110,-92) -- (110,-96);
+\node[sfnote, text width=40mm] (fc) at (110,-96) {\textbf{Frame completion} (added): all remaining frame paragraphs (443),
+  listed on 19~Oct~2026; model predictions only, never coded; completes the frame for the prevalence adjustment.};
+\end{tikzpicture}
+\caption[From the corpus to the samples]{\textbf{The evaluation sample was drawn first from the frozen sampling frame of 618 paragraphs; the fresh census and frame completion followed from the remaining 498.} Bars: disjoint selections, count-proportional widths. Black: coder-labelled. Vermillion: later fresh census, same coder. Blue: model predictions only.}
+\label{fig:sample_flow}
+\end{figure}

@@ -1,0 +1,369 @@
+{
+ "declared": "pre-analysis specification §4i (2026-10-30): where and how to sharpen",
+ "method": "For nine units -- five flagged by the declared readings (general: PR2; F2b, F1a, F4a: underdetermined; F6a: planted-sensitive) and four examined beyond them (F2c: negative planted contrast and lowest coder alpha; F3b: sink of cross-frame swaps; F5a and F6b: the codebook's named boundary) -- a private packet of flips on paragraphs whose route-matched baseline executions all agree (battery_sharpen.py) was read by one model agent per unit, whose proposed rules were tested against the packet's cases by a second, adversarial agent (keep / revise / drop, cases decided), and a third agent merged and ranked the kept rules by what they do for comparable frame aggregates. No paragraph text: no five-word run of this file occurs in any of the 563 frame-completion or A2 paragraphs (checked). Quotations marked 'invented' are invented.",
+ "terminals": {
+  "n": 19206,
+  "sha256": "8501e34db31af2e6dce8d7b1000f6453fc2b8c8889f366f4c8ad94e1743988f6"
+ },
+ "analysis_sha_note": "computed from tools/runs/battery/analysis.json of the same terminal set",
+ "recommendations": [
+  {
+   "rank": 1,
+   "units": [
+    "general"
+   ],
+   "title": "general: decided per bundle term, a bundle term is required, never a residual",
+   "evidence": "K1 (per-statement sentence): shift 0.103 [0.049, 0.157], rate +3.3 pp, the only family that moves general's rate. K2 (residual sentence) removed general from 2 of 58 rows beside another technology. 7 of 8 paraphrase candidates for the definition were rejected because they settled the reading. Pu_general_P3 shift 0.004 (no move). Coder alpha 0.779; baseline rate 0.295. Verifier: the presence rule decides 37 of 46 flipping cases. The bundle-term requirement (verdict keep) decides all 11 on-flips in 5 paragraphs that contain no bundle term; these are costs, security and reliability relations with no renewable referent, and K1 itself created 2 of them. Reference: every A2 (40) and A3 (21) general row contains a bundle term. 22 of the 40 A2 rows sit beside another technology, and 10 of those carry the same element set as a named technology. O2 (list position) shift 0.098 [0.055, 0.149]; no rule addresses it.",
+   "rule": "Decide `general` per bundle term, not per paragraph. Bundle terms are: renewables / erneuerbare Energien; Ökostrom; clean or green power; clean or green energy; green electricity; the energy transition / Energiewende; and a collective clean-, green- or climate-technology term (clean or green technologies, green tech, climate tech, clean-energy industries or investment) when the claim is about the collective, even if the collective includes electric vehicles, heat pumps or efficiency. Tick `general` whenever the paragraph contains a bundle term, even if individual technologies are named beside it. `general` receives the elements of each claim whose subject is the bundle term; a bundle term that carries no claim follows the mention-only rule. `general` requires a bundle term in the paragraph itself. It is never the residual for statements that no listed technology carries: fossil fuels and their prices or imports, gas or coal plants, the grid as such, electricity prices, or 'energy' and the energy system at large. A fossil-fuel problem (price rise, import dependence, supply shock) gives `general` a row only if the paragraph itself ties renewables to it (X5, X11). These are not bundle terms: a list of named technologies ('wind and solar'); decarbonisation, net-zero, climate-neutrality or 'carbon-free future' goals. Such goals never create a `general` row or element by themselves; they fire F3b only on the listed technology placed in them. Non-listed members of a collective term (electric vehicles, heat pumps) get no row. Listed members named inside it get rows only for claims made about them. Invented example: 'Without storage, renewables leave the grid short on still winter nights; solar output also collapses in December' → general: F5a negative (not F3b); storage: F5a; solar: F5a negative from its own clause. OPEN for the author before adoption: whether a claim stated about the bundle is also coded on the technologies named beside it, or the reverse. The A2 reference does both, and either choice shifts per-technology frame shares.",
+   "why_it_matters": "Category-level and cross-frame. `general` is one of the aggregation units, and the topic description defines it as references without an identifiable individual technology. The residual reading creates costs, security and reliability relations that have no renewable referent. The per-statement reading decides presence the way the A2/A3 reference already codes. Without the bundle-term requirement, the per-statement sentence alone adds spurious rows. The copy question changes per-technology frame shares, so the author must decide it explicitly rather than let it change silently.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G10 (two readings of general): settles presence in favour of the per-statement reading already used in the reference coding; the copy/no-copy question stays OPEN. G07 (named versus implied technologies): a list of named technologies is not a bundle term, and a bundle term must appear, so implied renewables are not inferred. The collective clean-technology clause follows the A2/A3 reference. Adopting the supervisor's narrower 'renewables, clean power, or green energy' instead would be a declared construct change, and the affected reference rows would have to be re-coded."
+  },
+  {
+   "rank": 2,
+   "units": [
+    "F3b",
+    "F8a",
+    "F1b",
+    "F2b",
+    "F6a"
+   ],
+   "title": "F3b: an anchor in the text is required; mechanisms, policy turns, growth and name attributes are not anchors",
+   "evidence": "F3b shifts beyond noise under G 0.200 [0.126, 0.272], O1 0.180, E2 0.120, Pa1 0.115 (+1.9 pp), O2 0.106 (+2.6 pp), E1 0.095. Its four one-unit paraphrase sets do not move it (0.02 to 0.044, all intervals include 0). It is the main sink of cross-frame swaps: F8a→F3b 54, F1b→F3b 42, F2b→F3b 34, F6a→F3b 31, with F3b→F1a 31 and F3b→F8a 25 back. Coder alpha 0.562; A2 F1 0.536. A3 census: F3b displacement +12.7 pp (17 predicted vs 10 reference paragraphs). Verifier: the anchor rule decides 116 of 126 flipping cases (it agrees with the baseline on 57 of 70 on-turns and with the variant on 46 of 56 off-turns). The not-an-anchor list decides all 35 policy-turn cases, the name-attribute clause all 24 cases, and the growth/target/revival clause all 19 cases. 22 cases involve rows whose only element was F3b.",
+   "rule": "F3b fires on a row only when the statement about that row's technology contains an anchor. An anchor is one of three things. (a) A named society-wide shift of the energy system: the energy transition, Energiewende or a sectoral Wende, the clean-energy or net-zero transition, the switch to renewables, decarbonisation, a decarbonised or low-carbon economy, including a demonstrative in the paragraph that refers to one ('that transition'). (b) A coal, nuclear or fossil phase-out named as such (Kohleausstieg, Atomausstieg), or its reversal. (c) A stated substitution: the technology replaces coal, oil or gas as fuel, feedstock or power generation, or is being replaced by coal, oil or gas. A substitution between two low-carbon technologies (renewables versus nuclear) is not an anchor unless (b) is named. The following are not anchors, however clearly they help or hurt the transition: a subsidy, tax credit or public funding granted, cut or withdrawn; a law or reform changed; an investment made; a project cancelled or put on hold; a political stance or turn ('a turn away from renewables', 'less green ambition', invented); deployment growth or decline, a record or a share of the mix; a national build-out programme or a statutory capacity target set, met or missed; a nuclear revival; the restart, life extension, closure or dismantling of a single plant; an attribute inside a technology's name (green, clean, renewable, low-carbon or zero-carbon hydrogen; green energy; green industry). For hydrogen such an attribute sets hydrogen_pathway, which is the production pathway, not F3b's decarbonisation pathway. Code these statements under whichever element's own fires_when they meet; this rule assigns no element. 'As an obstacle to' means the technology itself is presented as hindering the transition or a phase-out ('critics say the hydrogen push delays the electrification the transition needs', invented → hydrogen: F3b). It does not mean that a policy or market hinders the technology. When an anchor is present, F3b fires in addition to the content elements. Removing F3b never by itself licenses F9: a row on which no other element meets its own fires_when is not coded (X1), and F9 still requires a framing function that F1a–F8a cannot capture, plus a note. Invented: 'the firm shelved its green hydrogen plans' → F2b only; 'the restart reverses the nuclear exit' → F3b in addition; 'renewables at 60 percent show the Energiewende works' → general: F3b.",
+   "why_it_matters": "Cross-frame. F3b absorbs statements whose mechanism belongs to costs, jobs/investment, regulation or feasibility. As a result, climate-frame shares rise whenever a policy turn, a growth figure or a 'green' label is reported, and the A3 census confirms this inflation against the reference. A textual anchor survives label removal and reordering; a better wording would not, because F3b's own paraphrases do not move it. The cost is lower recall on implicit transition framing. Because the anchor list is partly lexical (Energiewende), climate-frame shares should be reported by language before any cross-country comparison.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "Not among the documented gaps; the battery and the A3 census add it. It applies the principle behind G07 (code what the text names, not what it implies) to the transition. It also completes G03 from the climate side: law changes and statutory targets stay with their own elements instead of drifting into F3b. It brings F3b's own text into line with X10."
+  },
+  {
+   "rank": 3,
+   "units": [
+    "F6a",
+    "F2b"
+   ],
+   "title": "F6a is technical possibility; decisions about identified projects are F2b",
+   "evidence": "F6a planted contrast: +0.076 [+0.007, +0.170] route-stratified, +0.093 [+0.016, +0.186] as declared. O1 shifts F6a 0.156 with rate +4.4 pp; E2 0.174; G 0.159, but G's rate change is +0.9 pp with an interval spanning 0. F6a coder alpha 0.625; A2 F1 0.723. F2b: both one-unit paraphrase sets raise its rate (+0.024 [+0.011, +0.039], +0.026 [+0.008, +0.042]); G shift 0.212 with rate −3.2 pp; coder alpha 0.788; A2 F1 0.657. Swaps: F6a→F2b 38, F2b→F6a 33. Verifier counts: F6a scope rule 70 of 75 (61 of 62 claimed cases together with the companion rules); non-technical stops (verdict keep) 19 of 26, where the baseline had F6a in 12 of 19; lifecycle reporting 26 of 27, where the baseline had F6a in 16 of 25; F2b project decisions 32 of 42; F6a/F2b boundary 36 of 42.",
+   "rule": "F6a fires only on a claim about TECHNICAL possibility or maturity. Such a claim says that the technology or a given plant can or cannot be built, restarted or operated for technical or physical reasons of the plant itself (a technical obstacle; irreversibility such as advanced dismantling; a physical constraint of the plant), or that it is or is not technically proven ('has never run', 'still at laboratory stage', 'proved it works'). 'First of its kind', 'new generation' or a pilot or testing programme fires F6a only when the paragraph ties it to technical uncertainty or proof. Tied to capital, subsidy or market ramp-up, it is commercial immaturity, not F6a. NOT F6a: (1) A plant or project that is cancelled, paused, abandoned, shut down, not restarted or slow to scale for an economic, financial, political, legal or social reason. Code the stated reason under its own element: a cost increase F1a, withdrawn public money F1b, an approval or legal obstacle F8a, local opposition F7b, an explicit retreat from transition goals F3b under the anchor rule. General policy uncertainty fires no extra element. (2) Reporting that a plant is planned, financed, under construction, being tested or licensed, scheduled to start, restarted or life-extended, with no statement of technical proof or obstacle (X1). F2b fires when the paragraph reports a decision or commitment about an IDENTIFIED plant, factory or project of the technology (a named developer, site or plant): announced, planned, partnered on, awaiting or taking a final investment decision, construction started, restart agreed, postponed, shelved, public or private funding withdrawn, or cancelled, whoever decides and for whatever reason. A milestone with no decision content (completion, commissioning, grid connection, a permit granted, a plant going online) fires nothing (X1, no_frame_present). Projects reported only in aggregate follow the F2c decline rule. F2b and F6a fire together when a decision report also states technical proof or a technical obstacle. Invented: 'The consortium dropped the electrolyser project after costs doubled' → F2b + F1a, not F6a. 'The operator plans to restart the reactor next year' → F2b, not F6a. 'A restart is technically ruled out because the steam generators were cut up' → F6a. Declared construct decision: project-pipeline news belongs to the jobs/investment frame. This widens F2b again after the v1.0 split and lowers the F6a rate against the registered run.",
+   "why_it_matters": "Cross-frame. Project fates (cancelled, shelved, restarted, under construction) swing between feasibility and jobs/investment depending on labels, removed rules and block order. As a result, the feasibility and investment shares are not comparable across outlets that word the same news differently. The label does not do the limiting either: the registered baseline already fires F6a on non-technical stops under the 'Technical feasibility' label, so the scope has to be written into the text. The change is declared, and it lowers the nuclear feasibility share in particular, because the registered run coded restart and construction news as F6a.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G01 (feasibility frame added after the first draft): writes the frame's technical scope into F6a's own text instead of leaving it to the label. G06 (breadth of F2b): gives 'factory or project decisions' explicit event types and an identified-project test, and this widens again the element that the v1.0 split narrowed. The line between construction start (F2b) and commissioning (nothing) is a stipulation and must be declared."
+  },
+  {
+   "rank": 4,
+   "units": [
+    "F1a",
+    "F2b",
+    "F1b"
+   ],
+   "title": "Costs vs jobs/investment: buyer-side cost is F1a; producer economics and capital are F2b; neither displaces the other",
+   "evidence": "F1a swaps: F2b→F1a 31, F3b→F1a 31, F5a→F1a 21. F1a moves under G 0.083 (+1.8 pp), Pa1 0.080 (+1.8 pp), K1c 0.073 (+1.6 pp). F1a coder alpha 0.678; A2 F1 0.744. F2b swaps: F2b→F1a 31, F2b→F1b 25. In the F2b packet, F2b is replaced by F1a in 18 relation-level flips (its most frequent partner), and 40 F2b-off flips sit on the five paragraphs where F1a substitutes for it. Producer-side pattern: 5 paragraphs carry 78 of F1a's 164 stable-paragraph flips. Verifier counts: producer side 22 of 28, investment sums 5 of 8, F2b investment rule 25 of 35, competitiveness 7 of 7.",
+   "rule": "Mirror this rule in both F1a and F2b. F1a is what the technology, its parts or its electricity cost those who buy, use or pay for them: a price, cost, bill or charge, its level or its movement. The producer side of the same money is F2b, not F1a: a producer's or asset owner's revenue or earnings, profit or loss, whether a business built on the technology pays off, insolvency, and the financing conditions of projects. Capital committed, spent, raised, withdrawn or withheld for building, expanding, restarting, modernising or manufacturing the technology fires F2b, whoever provides it. So do statements that such capital can or cannot be raised (financeability, investor confidence). Such a sum fires F1a only when the paragraph presents it as what the technology costs: a cost per unit, an overrun, a comparison, a rising or falling cost, or a total stated as a cost or burden ('has cost', 'costs consumers or taxpayers X'). F1b fires in addition whenever public money or a public instrument is involved. F1a and F1b never displace F2b; each fires when its own text is met. A price war, price collapse or price competition is a stated fall in the technology's price (F1a); the losses it causes are F2b. When the paragraph ties cheap or expensive electricity from the technology to the competitiveness or location advantage of an economy, region or country, or of the industries that use the power, F2b fires in addition to F1a. The technology's own price competition against other generation is F1a only. Invented: 'turbine prices have fallen by a third and two makers have filed for insolvency' → F1a + F2b; 'the firm raised 200 million to build a battery factory' → F2b only; 'wind farms now undercut gas plants on price' → wind: F1a only. Declared consequence: public funding for building the technology fires both the costs frame and the jobs/investment frame.",
+   "why_it_matters": "Cross-frame between two of the supervisor's five preliminary frames, 'costs and affordability' and 'jobs, investment and the economy'. Today an investment sum or a firm's losses lands in either frame depending on wording and labels. When F1a enters, it usually replaces F2b rather than joining it. The non-displacement clause and the mirrored F2b text address that substitution; rules written only into F1a would not stop it.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G06 (breadth of F2b): writes revenue, profit, insolvency and financing into F2b's own text instead of leaving them to the label 'Investment, industry or competitiveness'. This widening of F2b must be declared together with the F2b project-decision rule."
+  },
+  {
+   "rank": 5,
+   "units": [
+    "general",
+    "hydrogen"
+   ],
+   "title": "general: mention-only bundle terms are present without a frame and inherit no elements",
+   "evidence": "Pathway pattern: 2 paragraphs, 10 flips. The single most unstable paragraph flips 8 times under 5 families (E2, G, Pa1, Pa2, Pu_general_P3), each time adding or dropping a copy of hydrogen's climate claim (F3a/F3b) on general. A fiction paragraph with the same power-source construction adds 4 flips (a copied F9). Across the packet, mention-only constructions cover 4 paragraphs and 13 flips. Verifier counts: pathway rule 14 cases, denominator/label rule 5. Reference: 8 of 40 A2 general rows (and 1 in A3) are present without a frame, and every one is a mention-only construction.",
+   "rule": "A bundle term that carries no claim of its own is recorded as `general` present without a frame (no_frame_for_this_tech) and receives no element. This applies when the bundle term is only: (a) the reference quantity of a named technology's figure ('solar supplied a fifth of renewable electricity', invented); (b) a label for a person, company or sector ('a renewables developer', invented); or (c) the power source, input or production pathway of something else, listed or not ('hydrogen made with green power', 'renewable hydrogen', 'a ferry charged with green power', invented). In case (c) the claim and its elements belong to that other thing, and the pathway goes into hydrogen_pathway. A statement of how much renewable power the other thing needs is part of that thing's claim. `general` receives elements only from a separate claim whose subject is the renewables themselves (their cost, availability or pace of expansion). This rule takes precedence over the element clause of the presence rule. A bundle term that states its own total, record, growth or decline beside named technologies is not mention-only: it gets the elements of that claim (F2c for a record, growth or decline). OPEN before adoption: which element, if any, a renewables-share target receives, since F3a covers only climate targets.",
+   "why_it_matters": "Cross-frame on the general row. Without the rule, the bundle term inherits whatever frame the neighbouring technology carries (climate for hydrogen, 'other' for fiction), so general's frame profile duplicates other rows. Presence counts stay as the reference codes them. The rule therefore keeps general aligned with the registered reference while removing the copied elements.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G10: the reference coding already settled the mention-only case, and this rule writes that practice into the definition. G07: the claim goes to the named technology the text is about, not to an implied bundle. The reader's original 'no row' version would have silently removed reference-coded general ticks; the revised version keeps them."
+  },
+  {
+   "rank": 6,
+   "units": [
+    "F2c"
+   ],
+   "title": "F2c: a change in the amount deployed, with or without a number; not targets, needs or static shares",
+   "evidence": "F2c coder alpha 0.369, the lowest of all elements; A2 F1 0.615. It moves beyond noise under G 0.154, O1 0.148, E2 0.141 (+3.4 pp), Pa1 0.100, Pa2 0.073 (+1.4 pp). 3 of 4 one-unit paraphrase sets move it without a net rate change (P1 0.120, P2 0.053, P4 0.083). F2c-only paraphrases that only change the verb 'reports' flip one paragraph type (warning of an expansion halt) off in 4 of 4. 90 of 104 F2c flips change whether the jobs frame is present. Verifier counts: no-figure trends 31 of 34, targets and plans 14 of 14, static shares and records 7 of 10.",
+   "rule": "No number is required. F2c fires when the paragraph reports, forecasts or warns of a change in the AMOUNT of the technology deployed, produced, sold or in the project pipeline (growth, a record, a slowdown, a halt, a decline), whether in literal words or in a conventional figure of speech for that amount ('installations are booming', 'the levy will choke off rooftop installations', 'the build-out has stalled', invented). F2c does not fire when the change concerns something other than that amount: attitudes, enthusiasm, attention, interest, exploration, ideas or designs, policy ambition, or 'momentum' with nothing said about what is built, produced or sold. It does not fire for a denial that a change will happen ('the reform will not stop the build-out', invented). A target, plan, goal, hope or stated need for deployment does not fire F2c, whatever verb carries it ('the strategy foresees a doubling of capacity by 2035', 'the region will need three times today's battery capacity', invented). A projection fires F2c only when it is presented as an estimate of where deployment is actually heading: an agency's or analyst's forecast, or a statement that actual deployment will miss or meet a target. A single named project's construction or start-up schedule is not a trend and does not fire F2c. A share, count, stock or ranking with no stated change does not fire F2c ('the province hosts a quarter of national hydro capacity', invented). A superlative is a RECORD only against the technology's own past ('highest ever', 'never before', 'first time since'). A ranking against other places or firms is not a record; whether it fires F2b is decided by F2b's own text. Other elements fire only on their own definitions. Optional, and only with a re-run: relabel F2c 'Deployment growth, decline and records'.",
+   "why_it_matters": "Cross-frame. Whether a row carries a jobs/investment relation depends today on whether a trend is stated with a number, and on the label. No-figure trend statements usually sit beside a climate or subsidy claim, so including or excluding them changes frame shares by month and outlet. Targets and stated needs belong to the policy discourse and should not inflate the jobs frame. The no-figure part is a declared broadening that codifies the baseline's majority reading; it is not a mere clarification.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G06 (growth statistics): defines growth, record and decline, and separates forecasts from targets and needs. The relabel is optional and needs its own re-run, because labels demonstrably move F2c (G)."
+  },
+  {
+   "rank": 7,
+   "units": [
+    "F2c",
+    "F6b",
+    "F5a"
+   ],
+   "title": "F2c vs F6b: the technology's own realised deployment vs per-unit or resource potential",
+   "evidence": "Swaps: F6b→F2c 36, F2b→F2c 19. F6b: G shift 0.341 [0.159, 0.524] with rate −2.7 pp, the only family that lowers its rate beyond noise (12 of its 13 G cases are off-flips); E2 0.262; Pa1 0.182; Pa2 0.198 (+1.3 pp). F6b coder alpha 0.462; A2 F1 0.433, the lowest A2 F1 among the examined units. F2c coder alpha 0.369. Verifier counts: whose-figure rule 23 of 41, potential vs realised 14 of 32, resource size 23, aggregate quantity 18. Caveat: the resource-estimate paragraph (11 flips) also flips under families that never touch F2c or F6b (K1c, O1, O2), and all resource-size evidence comes from one natural-hydrogen article.",
+   "rule": "F2c concerns only the coded technology's own deployment: its installed capacity or additions, generation, share of the electricity mix or of a market, sales, or project pipeline. A system-wide figure counts for a technology only where the paragraph attributes the change to that technology. A directional quantity about anything else does not fire F2c: demand for electricity (as opposed to demand for the technology itself), a competing fuel's share or build-out, prices or bills, the share of output curtailed, a resource or reserve estimate, or the pace of technical improvement. Such a quantity fires only the element whose own definition covers it (F1a, F5b, F6b), or nothing. F6b's 'output potential' is a quantity per unit, per area, or of a technology, site or resource: what an installation, design, technology, site or resource can yield in principle. It includes the size or quality of a natural resource at a site or in a region (a deposit; a site's long-run wind speed, irradiation, hydro or geothermal potential) when the paragraph states how much or how good it is, in numbers or in evaluative words ('one of Europe's largest geothermal reservoirs', invented). Setting such an estimate beside current production or demand does not by itself fire F2c, and F9 does not fire for it. F6b does not fire for a plan to explore, drill or test a resource whose size is not stated, nor for a claim that a find is significant or that further finds may exist, without a size or quality. An AGGREGATE quantity is never F6b: how much of a technology is installed, planned in a project or fleet, projected, targeted, needed, supplied or sold, or how much demand it will meet ('the planned park will add 2 GW of offshore wind', invented). Such statements are coded only under F2b, F2c or nothing, by those elements' own texts. 'Yield estimate' in F6b.boundary means a per-unit, per-area or site yield, not a project or fleet total. Where realised capacity growth is contrasted with falling or lagging generation, F2c fires for the growth, and the contrast fires F6b or F5a according to the cause test in F6b.boundary_vs_F5a. A site's long-run resource is F6b; a change in output over a period caused by weather stays F5a.",
+   "why_it_matters": "Cross-frame between feasibility and jobs/investment. The same quantity currently lands in F6b, F2c, F2b or F9, depending on the label word 'potential' and on wording. The rule settles whose quantity it is and whether it is a per-unit potential or an aggregate deployment. Resource and performance claims then stay in feasibility and deployment volumes in jobs/investment, which is what aggregation by frame needs. The rule also moves 'potential' from the label into F6b's fires_when.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G06 (growth statistics): fixes whose figure counts as growth. G05 (the F5a/F6b boundary): the capacity-versus-generation contrast is routed by the existing cause test instead of a fixed element. F2c and F6b are two of the three least stable elements named in §4h."
+  },
+  {
+   "rank": 8,
+   "units": [
+    "F5a",
+    "F6b"
+   ],
+   "title": "F5a needs a listed trigger or a time dimension; overall quantity and lost supply shares are not F5a",
+   "evidence": "F5a: E1 0.280 [0.128, 0.457]; O1 0.257 (rate −1.4 pp); 3 of 4 one-unit paraphrase sets move it beyond noise (P1 0.199 with rate −1.2 pp, P2 0.160, P3 0.093). Swaps: F5a↔F6b 18, F5a↔F6a 13, F5a→F5b 23, F5a→F1a 21. A2 F1 0.830; baseline rate 0.079; planted contrast +0.129 [−0.032, +0.348]. Verifier: the time-dimension rule decides 63 of 84 flipping cases; the remedies clause 7; the worked examples 23. Caveat: two F5a-only paraphrase sets that keep fires_when verbatim produce 9 of the 84 flips, which marks those paragraphs as borderline cases at noise level.",
+   "rule": "F5a fires on its listed triggers: intermittency or variable/fluctuating output; baseload, dispatchable or firm capacity; backup; a need for or shortage of storage. It also fires when the paragraph says power is missing or in surplus at particular hours, days or seasons. It also fires on remedies whose stated purpose is to match supply to demand over time: demand shifting to sunny or windy hours, prices that rise when renewable output is scarce, storage or backup for scarce hours, interconnection against local weather. Interconnection and grid expansion fire F5b as well. A bare assertion that a technology is unreliable or weather-dependent fires F5a without a stated time window (X2). A statement about how much a technology produces or could produce overall does not fire F5a unless the paragraph itself names weather, season, time of day or variability as the cause (F6b.boundary_vs_F5a). This covers installed capacity against generation, a capacity factor, 'enough for X homes', and a share of supply lost or restored. Do not supply that cause yourself (X5). Whether such a statement fires F6b, F2c or nothing is decided by those elements' own texts and X10. Which row carries the statement follows the technology rules, not this rule. Invented: 'Capacity has grown fourfold in a decade, yet output has barely moved' → F2c for the growth; not F5a, because no cause is named. '... because still winter weeks leave the turbines idle' → F5a (and F2c). 'Wind power is unreliable' → F5a. 'The battery covers the evening peak after sunset' → F5a. 'Midday solar output exceeds what the lines can carry' → F5a and F5b.",
+   "why_it_matters": "Cross-frame between reliability and feasibility or security. Overall quantity statements and lost supply shares currently enter the reliability frame whenever a variant tips the model into inferring variability. Requiring a stated time dimension or a listed trigger keeps the reliability share a measure of the supply-timing argument. The X2 guard preserves recall on bare 'unreliable' claims.",
+   "priority": "1 before the next freeze",
+   "relation_to_documented_gaps": "G05 (the F5a/F6b boundary): states the cause rule from F5a's side as well, so that F5a's decisions no longer rest only on F6b's boundary sentence (when E2 removed that sentence, F5a moved). The rule does not settle which row a timing statement goes on when several rows are present; that depends on the general-category decision (G10)."
+  },
+  {
+   "rank": 9,
+   "units": [
+    "general",
+    "F3b"
+   ],
+   "title": "Transition vocabulary: which row receives F3b, and the transition named only as a purpose",
+   "evidence": "General pattern on transition vocabulary: 1 paragraph, 3 on-flips, all under Pa1 and Pa2. General's own definition stayed unparaphrased in those runs, so the evidence that the general text causes the flips is weak. Decarbonisation-derived general:F3b appears in two baseline paragraphs (4 cases). F3b pattern 'transition named as backdrop or subject': 20 cases, and one of these paragraphs has a route-dependent baseline. Verifier counts: F3b row rule 21 of 23; general transition rule 4. Reference: A3 codes general (with jobs and regulation elements) on two transition-as-purpose paragraphs and uses general:F3b on two others.",
+   "rule": "Row assignment when an F3b anchor is present, following the per-statement reading of `general`. When the transition as a bundle carries a statement of its own (its success, its cost, its weak point), code a `general` row with F3b plus the content element(s) ('the Energiewende's weak point is its reliance on imported components', invented → general: F3b, F4a). When a statement places a named study technology in the transition (its backbone, its bottleneck), F3b goes on that technology's row ('offshore wind is the backbone of the transition', invented → wind: F3b). When both happen, both rows carry F3b. F3b on `general` is not excluded as circular. 'The energy transition' / Energiewende remains a bundle term when it is named only as the purpose or setting of something else (a gas plant, a grid upgrade, a law), so `general` is ticked. Which element `general` receives in that case is OPEN for the author. Decarbonisation and net-zero goals follow the presence rule: they are not bundle terms.",
+   "why_it_matters": "Cross-frame and category-level. The rule decides whether a climate relation lands on the general row, on the named technology, or on both, which changes per-technology climate shares. The reference keeps the transition as a general bundle term even when only its purpose is named, so the competing 'no row' proposal is not adopted. The element for that case is left to the author instead of silently removing climate and jobs relations.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G10 (two readings of general): applies the per-statement reading to transition vocabulary. Proposals from both sides said that a transition named only as a purpose creates no general row (the F3b reader's 'no row and no F3b', the general reader's 'no general row'); both contradict the A3 reference coding and are not adopted."
+  },
+  {
+   "rank": 10,
+   "units": [
+    "F2b",
+    "F4a",
+    "F1a",
+    "F1b"
+   ],
+   "title": "Supply chains and trade: F2b always, F4a in addition when foreign reliance is stated, F1a only for a stated price effect",
+   "evidence": "F4a moves under E1 0.248 [0.082, 0.501], E2 0.213, O1 0.308 [0.092, 0.612]; Pa1 −1.2 pp, Pa2 −0.9 pp. F4a A2 F1 0.713; baseline rate 0.033 (rare). F2b→F4a: 8 relation-level flips. A tariff paragraph flips into F1b 4 times and loses F2b 11 times across variants. F4a supply-chain pattern: 3 paragraphs, 7 cases, always in the on direction. Verifier counts: F2b supply-chain rule 13 of 13, F4a supply-chain rule 7, trade measures 2 of 5, worked examples 10. Of the 20 F4b→F4a swaps, 19 come from one storage row with a stated component dependence, which this rule decides as F4a.",
+   "rule": "A statement about the supply chain of the technology's materials, components, fuel or manufacturing inputs, or about trade in them, fires F2b. This covers domestic build-up, reliance, shrinkage, tariffs, export controls and sourcing restrictions. F4a fires IN ADDITION, never instead, when the paragraph presents the supply of the technology's fuel, components or raw materials as coming largely or critically from a named foreign country or supplier, or states import dependence explicitly. A single contract with a foreign manufacturer is not enough. Foreign reliance is never inferred from the word 'domestic', from the headline, from other paragraphs or from world knowledge (X4, X5). Building or securing a domestic supply chain, factories or 'own capacities' therefore fires F2b only, unless the same paragraph names the foreign source it is meant to replace. Imports of energy or of the energy carrier itself (gas, electricity, hydrogen) are F4a only; exports remain F2b. A tariff, duty or trade barrier on the technology or its components fires F1a only when the paragraph says it raises, or will raise, the technology's cost or price. A trade tariff is not a feed-in tariff or levy and does not fire F1b. Invented: 'Europe still buys nine in ten solar wafers from Country X' → solar: F2b + F4a. 'The government funds a domestic battery-cell factory' → storage: F1b + F2b, not F4a. 'New tariffs threaten the module industry' → F2b; F1a only if the paragraph says module prices will rise.",
+   "why_it_matters": "Cross-frame between jobs/investment, energy security and costs. Today a dependence on foreign components moves a statement out of jobs into security, or a tariff into costs, depending on wording. Fixed co-firing keeps jobs on every supply-chain statement and adds security only where the paragraph states the foreign reliance. Neither share shrinks silently, and outlets that word the dependence differently stay comparable.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G06 (breadth of F2b): settles F2b's 'supply chains' against F4a's 'foreign supplier'. G07 (named versus implied): foreign reliance must be named in the paragraph, not inferred. The rule agrees with the A2 reference rows that code F2b + F4a on component dependence on a named country."
+  },
+  {
+   "rank": 11,
+   "units": [
+    "F5a",
+    "storage"
+   ],
+   "title": "Storage mentions fire F5a only for a stated need or a timing function",
+   "evidence": "Pattern: 5–6 paragraphs, 24 cases, each flipping in the same direction under unrelated families (E, G, Pa, Pu). One battery-trading paragraph flips 10 times. Swaps F5a→F1a 21. Verifier: 31 cases decided; the rule as proposed missed a general-row case, which the revision covers.",
+   "rule": "Wherever storage is mentioned (on any row, not only `storage`), F5a fires only when the paragraph says storage is needed, lacking or a bottleneck, or links it to the timing of supply and demand: covering hours or seasons of low generation, absorbing output at high-generation hours for later use, backup, or peaks. A mention of storage does not fire F5a when storage is named only as a business, a trading or scheduling service, an investment, an import or a dependence, or as something that advances the transition. Nor does it fire F5a when storage is described only by how it works, its efficiency or its lifetime. Those statements fire whatever element their own text satisfies. If storage is said to be needed for the transition, fire F5a and F3b (subject to the F3b anchor rule). If it is only said to advance the transition, fire F3b alone. Storage barred from absorbing power the grid cannot take is F5b.",
+   "why_it_matters": "Cross-frame between reliability and costs, feasibility, climate, jobs or security. Nearly every storage statement mentions storage, so 'the need for storage' turns the storage row into a reliability row by default. The rule keeps reliability for statements about supply timing and need, which makes storage's frame profile comparable across outlets.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "Not among the documented gaps. It is adjacent to G05: it sharpens F5a's own trigger list rather than its edge with F6b."
+  },
+  {
+   "rank": 12,
+   "units": [
+    "F6a",
+    "F6b"
+   ],
+   "title": "Technical explainers fire no feasibility element; design descriptions fire F6b only with a stated consequence or contrast",
+   "evidence": "F6a explainer pattern: 34 cases, 16 of which switch the feasibility frame on or off. F6b neutral-description pattern: 18 cases, 12 of which switch between feasibility and no relation. The top swap overall, F6b→F6a 42, is within the frame. Verifier counts: F6a explainer rule 36 of 42; F6b description rule 19 (the 18 claimed cases plus one siting case routed to F5b).",
+   "rule": "A passage that only explains how a technology or process works, or what a fuel or component consists of, with no comparison and no judgement, fires no F6 element. If nothing else fires for that technology, the row is no_frame_present (factual reporting, not F9). A design description (materials, dimensions, components, coolant, layout) fires F6b when the paragraph does one of four things: (a) states a consequence for output, efficiency or yield; (b) asserts that the design is well or badly suited to its technical job (a quoted 'just right' counts); (c) presents a physical property of the site as matching what the design needs ('the valley's steep drop gives the turbines the head they need', invented); (d) presents the design as a technical advantage or drawback, or states a difference from conventional designs ('unlike conventional turbines it has no gearbox', invented). F6a fires only when the text says that the design is or is not yet technically proven, or that a feature makes building or running possible or impossible ('no turbine of this type has yet run at sea', invented). 'Site' in F6b means the physical properties of the location. Siting relative to the grid, to demand or to other plants is F5b.",
+   "why_it_matters": "Cross-frame between feasibility and no frame. Whether a technical explainer counts as framing changes both the feasibility share and the no-frame share. Clause (d) keeps the feasibility frame on which the baseline and all variants already agree for contrasts with conventional designs, so the rule creates no new frame flip. The F6a/F6b split itself stays inside feasibility and matters only at element level.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G01 (feasibility frame): separates the two feasibility elements and draws the frame's lower edge. G05: limits F6b's 'site' to physical properties, so grid siting stays in the reliability frame. One verifier would have sent contrasts with conventional designs to no frame; the merged text follows the other verifier's clause (d) to avoid a new frame flip."
+  },
+  {
+   "rank": 13,
+   "units": [
+    "F2b",
+    "F6a",
+    "F6b",
+    "F9"
+   ],
+   "title": "F2b: commercial and industrial activity in, firm identity and design properties out",
+   "evidence": "F2b loses 3.2 pp of its firing rate under G. Swaps: F9→F2b 44 (battery-wide; 10 relation-level in the packet), plus 13 G-driven F6a/F6b↔F2b relation flips on industry-versus-design paragraphs. Commercial-activity pattern: 5 cases; industry/design pattern: 12 cases. Verifier counts: commercial activity 21 of 22; industry not design 13 of 13.",
+   "rule": "F2b fires for: a firm founded to exploit the technology; a firm's strategic decision to enter, leave or refocus within it; a statement that a business model built on it works, pays, fails or is emerging; firms or a national industry reported as developing, racing to build, manufacturing or commercialising the technology; existing or planned manufacturing capacity. A firm's identity is boilerplate and fires nothing on its own: founders, founding year, headcount, slogan, rankings such as 'leading firm' or 'pioneer', countries of activity. A design property stated without any firm, factory or industry doing it (modular, smaller, factory-built, mass-producible) fires no F2b; F6a and F6b decide it under their own texts. A need for scale or economies of scale fires no F2b; F1a decides whether it is a cost claim. A sector's growth, boom or collapse is F2c (see the aggregate rule). F9 is used for an economic claim only when the claim meets none of F1a, F1b, F2a, F2b, F2c.",
+   "why_it_matters": "Cross-frame between jobs/investment and 'other' or feasibility. The label 'Investment, industry or competitiveness' currently carries this breadth, and when the label is neutralised (G) business claims drop out of the jobs frame. Writing activity versus identity into the definition keeps the economy frame stable under any label wording, and keeps design properties in feasibility.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G06 (breadth of F2b): defines what 'industrial capacity' and commercial activity include and exclude."
+  },
+  {
+   "rank": 14,
+   "units": [
+    "F6a",
+    "F5a",
+    "F5b",
+    "F4a",
+    "F4b",
+    "F7a",
+    "F6b"
+   ],
+   "title": "Locate the limit: system, supply, land and weather limits are not F6a; shutdowns are not F5a without a stated shortage",
+   "evidence": "F6a system-limit pattern: 18 cases; a grid-operator paragraph gains F6a in 8 of 8 sampled variants. F5a weather-as-construction-obstacle: 6 cases (E2, Pa1 and all four F5a one-unit sets drop F5a). Shutdown and supply loss: 4 cases on one paragraph (G, Pa2, Pu_F5a_P2, E2) plus 1 more. Verifier counts: system-limit rule 18 of 20; weather-obstacle rule 8; shutdown rule 5.",
+   "rule": "F6a's 'physical constraint' is a limit of the plant or technology itself. A limit that lies elsewhere goes to that element, even when the text calls it technically impossible: grid capacity, peak load or connection limits are F5b; domestic production too small, so that imports are needed, is F4a; a fuel or energy carrier not available at an affordable price is F1a. Difficult site conditions that complicate installation (terrain, water depth, ground) are F6b ('technical suitability of a site'), and F6a only if the text says they make building impossible. F7a applies only to the amount of land or space needed, or to competing land use. Weather, climate or terrain named as an obstacle to building or siting installations (storms, a typhoon season, mountains, deep water) does not fire F5a; weather fires F5a only when it is said to change how much power is delivered or when. A shutdown, restart or outage of a plant or fleet, and the share of supply it removes or restores, does not fire F6a unless a technical obstacle is stated. Nor does it by itself fire F5a. F5a fires only if the paragraph says demand could not be met, or was not met, at some time (shortages, blackouts, rationing), or appeals to baseload, backup or dispatchable capacity. If such a shortage is framed as a national-security matter, F4b fires as well. The shutdown itself fires F8a or F3b only where their own texts apply.",
+   "why_it_matters": "Cross-frame between feasibility, reliability, security and siting. Limits that lie in the grid, in supply or in land currently also fire feasibility, and shutdown paragraphs swing between feasibility and reliability. Locating the limit decides the frame by a textual test.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G01 (feasibility) and G02 (siting): draws F6a's outer edge against the reliability, security and siting frames. Reconciliation: the F6a verifier routed lost supply to F5a. The merged text follows the F5a verifier's narrower test (a stated shortage, or an appeal to baseload or backup), and the author should confirm this choice. Coding terrain as F6b moves rows that the baseline coded F7a into feasibility; if the author prefers siting, name F7a for terrain instead."
+  },
+  {
+   "rank": 15,
+   "units": [
+    "F2c",
+    "F2b"
+   ],
+   "title": "Aggregate project cancellations and sector momentum are an F2c decline; identified decisions are F2b",
+   "evidence": "Swaps F2b→F2c 19. F2c aggregate-cancellation pattern: 13 cross-frame cases (towards F2b, F9, F6a, F3b, F7b). 3 of the 12 turn-ons from F2b's one-unit paraphrases are aggregate cancellations (the wording 'decisions about projects' drifts towards F2b here). Verifier counts: F2b side 16 of 16; F2c side 16 of 19.",
+   "rule": "Several projects cancelled, shelved, closed or put in doubt, or a block of planned or existing capacity scrapped, presented together as a movement in the technology's pipeline or fleet without identifying the projects, is a DECLINE and fires F2c, with or without a number ('dozens of wind projects were scrapped last year', invented). The decline itself is F2c, not F2b, F9 or F6a; F6a fires as well only where a technical obstacle is named. A sector's growth, boom or collapse is likewise F2c, not F2b. A decision by an identified company, or about an identified project, fires F2b under the project-decision rule, not F2c. A paragraph containing both fires both. Mirror this in F2c, whose text now names only deployment, output or market figures.",
+   "why_it_matters": "The F2b/F2c part stays within the jobs/investment frame, so frame shares are unaffected there. The cross-frame gain is that aggregate cancellations stop leaking into 'other', feasibility, climate or siting. The rule also settles the F2b/F2c split that the v1.0 freeze note asked to watch, which matters for element-level comparison of investment decisions versus deployment trends.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G06 (growth statistics and the breadth of F2b): gives the F2b/F2c split an explicit criterion, an identified decision versus an aggregate movement. The F2c reader's 'construction start fires nothing' is narrowed to 'not F2c', to agree with the F2b project rule."
+  },
+  {
+   "rank": 16,
+   "units": [
+    "F4a",
+    "F1a",
+    "F4b",
+    "general"
+   ],
+   "title": "F4a: stated fossil dependence counts, fossil price movements do not; attach F4a only to the connected row",
+   "evidence": "F4a→F9: 33 swaps, the eighth most common swap in the battery. 22 of them come from one general row where a fossil price rise is linked to renewables politically with no import stated. Import facts not tied to the coded technology: 3 paragraphs, 4 on-flips under E2 (reliability→security, costs→security). Verifier counts: fossil-price rule 5 packet cases (plus the out-of-packet row behind 22 swaps); row rule 5. Reference: A2 codes F4a on fossil-independence statements without import wording on 4 rows, which this rule keeps.",
+   "rule": "Dependence on, or independence from, fossil fuels fires F4a when the paragraph states it as dependence, independence, reliance or breaking free ('renewables free us from fossil fuels', 'we must end our dependence on gas', invented), even without the word 'import'. The level, rise or volatility of oil, gas or coal prices, or their influence on energy prices, does NOT fire F4a unless the same paragraph also states such a dependence, an import, or a named foreign supplier. Such a price statement fires F1a or F4b only where their own texts are met. F4a attaches to a technology row only when the paragraph connects that technology to the import relation, in one of three ways: the technology is said to reduce, end or deepen the dependence; its own fuel or components (for hydrogen, the hydrogen itself) are said to come from abroad; or the imports are said to cover its shortfall. Imported electricity goes on the row of the technology whose shortfall it covers, not on the row of the foreign technology that generated it. An import fact elsewhere in the paragraph attaches F4a to no other row and does not by itself create a `general` row (see `general` and X11). Invented: 'Gas prices rose 40 percent last winter' → no F4a. 'Country Y imports nearly all its gas; wind output rose 8 percent' → wind: F2c only; no F4a and no `general` row.",
+   "why_it_matters": "Cross-frame between energy security and costs or 'other'. Fossil-price statements currently fall into security, costs or the residual by chance, and import facts get attached to whichever technology shares the paragraph. Tying F4a to a stated dependence and to the connected row stops security shares from rising merely because a paragraph mentions imported fossil fuels.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G07 (named versus implied): the dependence must be stated, and the text must connect it to the row. Consistent with the general bundle-term requirement (G10): an import fact never opens a general row."
+  },
+  {
+   "rank": 17,
+   "units": [
+    "F4a",
+    "F2b"
+   ],
+   "title": "F4a is coded from the importing side; import relations count without the word 'dependence'",
+   "evidence": "Exporter-side paragraphs: the baseline fires F4a in 5/5, 5/5 and 4/5 executions, and almost every family (K1, O2, Pa1, Pa2, and 9–12 one-unit paraphrases of other units) pushes them off. 11 of the F4a→F9 swaps come from one exporter-side hydrogen row. A supplier cut-off paired with an investment pledge flips off under the control K1c and O1, mostly to F2b. Verifier counts: exporter rule 5; import-relation rule 3.",
+   "rule": "F4a is coded from the side that receives the supply: 'a named exporting country' in F4a is the country an importer depends on. A paragraph about a country's or company's plans, ambitions or difficulties in exporting energy, or goods made with it, fires F2b ('exports') and not F4a when it names no country or bloc that would receive the supply. When it names the receiving country or bloc, F4a fires in addition to F2b. F4a does not require the words 'dependence' or 'independence'. It also fires in two further cases. (a) The paragraph reports an import target, an import strategy or a supply agreement of the country or bloc in focus with a named supplier country, or reports imports rising or falling; a bare import volume with no direction fires nothing on its own. (b) The paragraph presents domestic production by the technology as a response to a cut-off, threat or price shock from a named foreign supplier. An investment claim in the same paragraph fires F2b in addition; it never replaces F4a. Invented: 'Country A wants to become an exporter of green hydrogen' → F2b, not F4a. 'Country A plans to ship green hydrogen to Country B' → F2b + F4a. 'Country B plans to cover a tenth of its hydrogen demand with imports from Country A' → F4a.",
+   "why_it_matters": "Cross-frame between security and jobs/investment. When exporter ambitions are read as import dependence, the security frame is inflated for producing countries, and investment wording displaces genuine import relations. A checkable test (is the receiving country named?) makes security shares comparable between importing and exporting countries, which matters for aggregation by country.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "G07: the import relation must be named. The rule largely restates F4a's existing grammar, which the model consistently misreads; that consistency, not an open wording, is what justifies an explicit boundary."
+  },
+  {
+   "rank": 18,
+   "units": [
+    "F1a",
+    "F9",
+    "F4b",
+    "F6b",
+    "F2b"
+   ],
+   "title": "F1a scope: price effects on consumers, low-cost aims and cost-effectiveness verdicts in; inferred savings out",
+   "evidence": "Market-wide price effects: 4 paragraphs, 11 cases, mostly under E2, G and Pa2 (verifier decides 11 of 16). Low-cost aim: one paragraph, 20 flips across all variants; every variant found the F1a that the baseline missed (6 of 12 decided). Waste verdict: 11 flips on one paragraph, F1a→F9 (8 of 8 decided). Non-monetary savings: 3 of 9 (largely restates existing text). F1a planted contrast −0.003 [−0.083, +0.091]; Pa1 and Pa2 raise F1a's rate (+1.8 pp, +1.3 pp).",
+   "rule": "(1) A paragraph asserting that the technology lowers, raises or stabilises the energy prices or bills that consumers or the economy pay, or shields them from fossil-fuel price spikes or volatility, fires F1a for that technology; no mechanism is needed (X2). A price that the paragraph does not attribute to the technology as cause or remedy does not fire F1a for it: not when it is merely set beside the technology's growth, not when it is attributed only to a fuel, a war or a policy, and not when it is presented only as an incentive to invest in the technology (F2b). When the stabilising measure is a reform of how the technology is paid for, F1b fires; F1a fires as well only if the paragraph says the technology itself lowers or stabilises the price. (2) A stated aim, strategy, target, forecast or product promise that the technology or its output will be cheap or cheaper refers to its cost and fires F1a. A generic mission slogan tied to no stated decision, product or figure does not. (3) A verdict without a figure that the technology, or a way of operating, curtailing or using it, is uneconomic, wasteful, poor value for money or economically pointless fires F1a, not F9. If the paragraph says the loss falls on the operating firm, F2b fires instead. If it does not say on whom the loss falls, F1a fires. (4) A saving of material, land, time, energy or maintenance, a higher efficiency or a longer service life is not F1a unless the paragraph itself states the money consequence (cheaper, lower cost, lower price, lower bills). Do not infer a cost advantage (X5). Such statements fire only the element their own content meets, for example F6b for efficiency or lifetime and F7a for land.",
+   "why_it_matters": "Cross-frame. Price-shield claims belong to 'costs and affordability' and should not depend on wording. Cost-effectiveness verdicts should not leave the costs frame for 'other'. Inferred savings should not move feasibility claims into costs. Each clause fixes one edge of the costs frame. The verdict clause widens F1a, and that widening must be declared in F1a's own text.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "Not among the documented gaps. The verdict clause narrows the residual F9, consistently with F9's own definition."
+  },
+  {
+   "rank": 19,
+   "units": [
+    "F6a",
+    "F6b",
+    "F9",
+    "hydrogen"
+   ],
+   "title": "End-use fit is not feasibility: code by the stated reason, otherwise F9 with a note",
+   "evidence": "F6a end-use pattern: 4 cases; the baseline codes F9, and one paragraph flips in 11 variant executions, including O1, O2 and K1c. F6b end-use pattern: 5 cases, with the identical move F9→F6b across E2, Pa2 and Pu_F6b_P3. Swaps: F6a→F9 22, F9→F6a 15. Verifiers: 4 of 4 and 5 of 5 decided. The evidence is essentially one article.",
+   "rule": "A judgement that a technology is unsuited to an end use, is overhyped, or is beaten there by an alternative is not F6a: the use is possible, and the claim is about fit. Code the reason the text gives. A technical reason (efficiency, conversion losses, physical properties) fires F6b. A price reason fires F1a only. An emissions reason fires F3a only. With no stated reason, code F9 with the note 'end-use fit'. Invented: 'Hydrogen makes little sense for heating homes' → F9 (note 'end-use fit'). '... because heat pumps are three times as efficient' → F6b.",
+   "why_it_matters": "Cross-frame between 'other' and feasibility. Hydrogen end-use debates are substantive in this corpus, and today they split three ways (F9, F6a, F6b). Giving each reason one home keeps them comparable. Keeping the no-reason default in F9 with a note leaves the registered coding unchanged and makes the class countable for a later decision about a missing element.",
+   "priority": "2 with the next revision",
+   "relation_to_documented_gaps": "Not among the documented gaps. The two verifiers disagreed on the no-reason default. The F6b verifier proposed F6b, as a declared extension of 'technical suitability' from a design or site to a use. The merged rule keeps F9 with a note, which matches the registered run and changes no definition. If the author prefers the extension, it must be declared and checked against A1/A2."
+  },
+  {
+   "rank": 20,
+   "units": [
+    "F6b",
+    "F6a"
+   ],
+   "title": "Safety, waste and maturity are not F6b; F6b improvements must raise output, efficiency or service life",
+   "evidence": "Pattern: 11 cases. F6a is present on both sides in 8 of 11, so the feasibility frame mostly survives. Two variants add F9 for a safety concern, and one G case adds F2c. None of the 11 cases comes from a one-unit F6b paraphrase. Verifier decides 11 of 11 for F6b presence.",
+   "rule": "Safety (accident, leak, fire or radiation risk), waste handling, and maturity or track record ('a proven design', 'not yet commercial', invented) do not fire F6b. Maturity and track record fire F6a (its 'immaturity'), under the technical-possibility rule. F6b covers efficiency, yield, output, and service life or degradation. An improvement fires F6b only when it raises one of these ('an uprate added 8 percent output', 'the new cells degrade under 0.3 percent a year', invented). A cost decline through learning is F1a only. OPEN for the author: whether a safety or waste claim fires F6a (only where it is presented as a physical constraint on building or operating, for example a hazard that requires a containment structure) or F9 with a note.",
+   "why_it_matters": "Mostly within the feasibility frame, so the effect is at element level. The open safety question is cross-frame (F9 versus feasibility), but v1.0 has no element for it, and an F6b rule should not decide it silently.",
+   "priority": "3 optional",
+   "relation_to_documented_gaps": "G01 (feasibility frame). Nuclear safety has no element in v1.0; it is a candidate for the frame inventory rather than an F6b boundary."
+  },
+  {
+   "rank": 21,
+   "units": [
+    "F5a",
+    "F5b"
+   ],
+   "title": "F5a vs F5b: decide by where the stated limit lies",
+   "evidence": "Pattern: 7 paragraphs, 40 cases. Swaps F5a→F5b 23. The verifier decides 33 cases. The reliability frame persists in all cases, although F5b is absent on one side in several.",
+   "rule": "Decide by where the stated limit lies. Output that is absent, scarce or excessive at named hours, days or seasons, or a need for firm, dispatchable or backup capacity, is F5a. The following are F5b: network capacity, congestion, connection, interconnection; curtailment because the grid cannot take the power or other plants have priority (including a grid operator switching plants off, and storage barred from absorbing that power); system-stability services such as inertia, reactive power or frequency control. Fire both only when the text names both (a midday solar surplus that the lines cannot carry). A statement that the system must become more flexible or better able to integrate renewables is F5b unless the text names variable output. The system-service and system-flexibility clauses are additions to F5b's fires_when and must be declared there.",
+   "why_it_matters": "Within the reliability frame, so frame shares are unchanged and only element-level agreement improves. Lower priority than the cross-frame rules.",
+   "priority": "3 optional",
+   "relation_to_documented_gaps": "Not among the documented gaps. Calibration had already flagged F5a and F5b as possibly inseparable."
+  },
+  {
+   "rank": 22,
+   "units": [
+    "F3b",
+    "F3a"
+   ],
+   "title": "F3a and F3b are exclusive on a row; an emissions claim or target takes precedence",
+   "evidence": "Pattern: 18 cases, flipping in both directions; the verifier decides 22 of 24.",
+   "rule": "On a given row F3a and F3b are exclusive, and F3a takes precedence. When the statement about that row's technology contains an explicit emissions claim (emissions, CO2, greenhouse gases, the technology's effect on the climate) or an emissions target (net zero, carbon or climate neutrality, an emissions-cut target), code F3a, not F3b, on that row. 'Decarbonisation', 'decarbonised' and 'low-carbon' used to name the transition are transition vocabulary (F3b anchor), not emissions claims. A name attribute (low-carbon hydrogen) is neither. A target stated for a country or economy elsewhere in the paragraph does not move other rows.",
+   "why_it_matters": "Within the climate frame, so frame shares are untouched. The F3a/F3b split becomes partly lexical (climate neutrality versus decarbonisation), so F3a and F3b should be compared across countries only at frame level.",
+   "priority": "3 optional",
+   "relation_to_documented_gaps": "Not among the documented gaps."
+  },
+  {
+   "rank": 23,
+   "units": [
+    "F1a",
+    "F1b"
+   ],
+   "title": "Levies: the amount is F1a, the instrument is F1b; figurative 'tax' is not F1b",
+   "evidence": "2 paragraphs, 3 F1a cases. The figurative-tax paragraph flips into F1b 11 times across all variants. The verifier decides 3 of 8.",
+   "rule": "Levies are named in both F1a and F1b. The amount is F1a: what the technology or the transition costs or has cost (in total, per unit, or to bill payers), and whether that is rising or falling. The instrument itself, or who bears it, is F1b (levy, subsidy, feed-in tariff, tax credit, auction, compensation scheme). Both fire when both are stated. A word such as 'tax' used figuratively for a burden that is not a fiscal instrument does not fire F1b.",
+   "why_it_matters": "Within the costs frame, so frame shares are unaffected. The rule stabilises element-level F1a/F1b agreement on total-cost statements and tax-like statements.",
+   "priority": "3 optional",
+   "relation_to_documented_gaps": "Not among the documented gaps. It corrects the overlap the reader assumed: only 'levies' is named in both definitions."
+  }
+ ],
+ "not_warranted": [
+  {
+   "unit": "general: bundle term mentioned in passing, where what flips is whether any frame exists",
+   "reason": "X1, F9 and no_frame_present govern this pattern, not general's definition. The fiction case has the same power-source construction that the mention-only rule already covers."
+  },
+  {
+   "unit": "F2b: company portrait and boilerplate",
+   "reason": "The existing does_not_fire_when rule decides these cases. The flips come mainly from E2, which removed that rule (a planted removal). F2b's planted contrast is +0.044 [−0.065, +0.157], not distinguishable from zero."
+  },
+  {
+   "unit": "F2b: a listed object absorbed by a co-firing element",
+   "reason": "F2b's existing 'refers to' already decides every claimed case, so the proposed rule was dropped as a restatement. The underlying substitution behaviour is handled by the 'in addition, never instead' clauses of the costs/jobs, supply-chain and import-side rules."
+  },
+  {
+   "unit": "F2c: directional figure missed because it is subordinate or historical",
+   "reason": "The current fires_when decides these cases. The baseline misses them under clear text: on one paragraph 11 of 14 families add F2c, controls included. That is model fragility, and the battery shows that added prompt text itself moves classes."
+  },
+  {
+   "unit": "F4a vs F4b (inside the security frame)",
+   "reason": "The frame does not change. The proposed boundary contradicts A2 reference rows that code F4a on fossil-independence statements, and 19 of the 20 F4b→F4a swaps come from one storage row that the supply-chain rule already decides."
+  },
+  {
+   "unit": "F5a: a separate positive rule for weather-caused output loss",
+   "reason": "F6b.boundary_vs_F5a already decides these cases. The flip appears only under E2, which deleted that sentence (a planted gap). A cross-reference is enough."
+  },
+  {
+   "unit": "F6a residual single cases; F6b isolated label or attention effects",
+   "reason": "These are one-off flips under G, E2 or Pa2 that do not recur, so they give no pattern to write a rule against."
+  },
+  {
+   "unit": "hydrogen and nuclear (technology definitions)",
+   "reason": "The parallel control sentence K1c moved them far less than K1 moved general (PR2 passes). The hydrogen definition already covers renewable hydrogen through hydrogen_pathway. No recurring pattern was found in their own definitions."
+  },
+  {
+   "unit": "F8a (separate rule)",
+   "reason": "F8a was not examined in a packet. Its largest swap (F8a→F3b, 54) is removed from the F3b side by the anchor rule, and the verifiers struck the proposals that would have routed policy uncertainty or statutory targets into F8a beyond its own text."
+  }
+ ],
+ "method_limits": "The battery has no labels: a flip shows that Sonnet 4.6's output moves under a declared prompt change, not that either output is wrong. Every direction recommended above therefore rests on the current text, on the A2/A3 reference where the verifiers checked it, or on an explicit author decision. The battery used one model under one registered request, and almost any change (including the control sentence K1c and both reorderings) moves many classes beyond repetition noise. Flips are therefore triage for recurring, directional patterns, not proof of a definition gap, and several large clusters flip under families that never touched the unit, which points to model fragility under clear text. The paraphrasers resolved the per-statement/residual question for `general` themselves (7 of 8 candidates rejected; Pa1 and Pa2 left general's text unchanged; the one accepted one-unit set does not move it), so the general rules rest on K1, K2 and the human reference, not on paraphrase. All packet paragraphs are frame-completion paragraphs in the RESERVED_A2 split, so the rules were derived in-sample: a v1.1 validation must exclude those paragraphs, no rule has yet been re-run, and the rules belong in a new codebook version rather than in edits to v1.0.",
+ "note_on_swaps": "Swap counts quoted in the evidence are occurrences across variant executions (execution 1 of each variant against the route-matched baseline), not distinct relations: F8a->F3b 54 occurrences on 8 distinct paragraph-technology relations, F1b->F3b 42 on 6, F2b->F3b 34 on 8, F6a->F3b 31 on 3, F6a->F2b 38 on 8, F2b->F6a 33 on 6, F2b->F1a 31 on 8, F6b->F2c 36 on 5, F2b<->F2c 30 on 7, F5a<->F6b 18 on 3, F5a->F5b 23 on 6 (analysis.json, swaps)."
+}

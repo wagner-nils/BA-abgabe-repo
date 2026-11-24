@@ -1,0 +1,1628 @@
+{
+ "specification": "§4o, declared 2026-11-10 before computation",
+ "B": 2000,
+ "seed": 20260905,
+ "language_contrast": {
+  "element": {
+   "de": 0.6213019678687827,
+   "en": 0.6528871865288718,
+   "diff_de_minus_en": -0.03158521866008912,
+   "iv": [
+    -0.14542712045964956,
+    0.09067144027619278
+   ],
+   "articles": {
+    "de": 28,
+    "en": 28
+   }
+  },
+  "technology": {
+   "de": 0.883534463460795,
+   "en": 0.9600443951165372,
+   "diff_de_minus_en": -0.07650993165574216,
+   "iv": [
+    -0.1886763759145017,
+    -0.0023625657447460258
+   ],
+   "articles": {
+    "de": 28,
+    "en": 28
+   }
+  }
+ },
+ "failures": {
+  "a2_sonnet_20261013": {
+   "executions": 360,
+   "all_executions": {
+    "n": 360,
+    "failed": 13,
+    "by_lang": {
+     "de": 11,
+     "en": 2
+    },
+    "by_lang_outcome_terminal_code": [
+     {
+      "lang": "de",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 10
+     },
+     {
+      "lang": "de",
+      "outcome": "parse_failed",
+      "terminal_code": "schema_invalid",
+      "n": 1
+     },
+     {
+      "lang": "en",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 2
+     }
+    ],
+    "by_lang_code_sequence": [
+     {
+      "lang": "de",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 10
+     },
+     {
+      "lang": "de",
+      "codes": "schema_invalid|schema_invalid",
+      "n": 1
+     },
+     {
+      "lang": "en",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 2
+     }
+    ],
+    "paragraphs_by_lang": {
+     "de": 180,
+     "en": 180
+    }
+   },
+   "execution_1": {
+    "n": 120,
+    "failed": 5,
+    "by_lang": {
+     "de": 5
+    },
+    "by_lang_outcome_terminal_code": [
+     {
+      "lang": "de",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 4
+     },
+     {
+      "lang": "de",
+      "outcome": "parse_failed",
+      "terminal_code": "schema_invalid",
+      "n": 1
+     }
+    ],
+    "by_lang_code_sequence": [
+     {
+      "lang": "de",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 4
+     },
+     {
+      "lang": "de",
+      "codes": "schema_invalid|schema_invalid",
+      "n": 1
+     }
+    ],
+    "paragraphs_by_lang": {
+     "de": 60,
+     "en": 60
+    }
+   }
+  },
+  "a3_sonnet_20261019": {
+   "executions": 165,
+   "all_executions": {
+    "n": 165,
+    "failed": 23,
+    "by_lang": {
+     "de": 12,
+     "en": 11
+    },
+    "by_lang_outcome_terminal_code": [
+     {
+      "lang": "de",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 12
+     },
+     {
+      "lang": "en",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 9
+     },
+     {
+      "lang": "en",
+      "outcome": "parse_failed",
+      "terminal_code": "schema_invalid",
+      "n": 2
+     }
+    ],
+    "by_lang_code_sequence": [
+     {
+      "lang": "de",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 12
+     },
+     {
+      "lang": "en",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 9
+     },
+     {
+      "lang": "en",
+      "codes": "schema_invalid|schema_invalid",
+      "n": 2
+     }
+    ],
+    "paragraphs_by_lang": {
+     "de": 81,
+     "en": 84
+    }
+   },
+   "execution_1": {
+    "n": 55,
+    "failed": 8,
+    "by_lang": {
+     "de": 4,
+     "en": 4
+    },
+    "by_lang_outcome_terminal_code": [
+     {
+      "lang": "de",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 4
+     },
+     {
+      "lang": "en",
+      "outcome": "parse_failed",
+      "terminal_code": "contract_invalid",
+      "n": 3
+     },
+     {
+      "lang": "en",
+      "outcome": "parse_failed",
+      "terminal_code": "schema_invalid",
+      "n": 1
+     }
+    ],
+    "by_lang_code_sequence": [
+     {
+      "lang": "de",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 4
+     },
+     {
+      "lang": "en",
+      "codes": "contract_invalid|contract_invalid",
+      "n": 3
+     },
+     {
+      "lang": "en",
+      "codes": "schema_invalid|schema_invalid",
+      "n": 1
+     }
+    ],
+    "paragraphs_by_lang": {
+     "de": 27,
+     "en": 28
+    }
+   }
+  }
+ },
+ "valid_only": [
+  {
+   "run_id": "a2_sonnet_20261013",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 115,
+   "end_to_end": {
+    "precision": 0.7591325333068861,
+    "recall": 0.5572468419321999,
+    "f1": 0.6427086518526188,
+    "gap": 0.20188569137468626,
+    "articles": 56,
+    "precision_iv": [
+     0.6910984540276647,
+     0.8242113264918283
+    ],
+    "recall_iv": [
+     0.4912237983595495,
+     0.6310273631840796
+    ],
+    "f1_iv": [
+     0.5805156023837157,
+     0.7050320095624425
+    ],
+    "gap_iv": [
+     0.13398242184344733,
+     0.26242083203465644
+    ]
+   },
+   "valid_only": {
+    "precision": 0.7591325333068861,
+    "recall": 0.5717209390335292,
+    "f1": 0.6522310289048862,
+    "gap": 0.18741159427335696,
+    "articles": 55,
+    "precision_iv": [
+     0.6880028425674475,
+     0.82268182965135
+    ],
+    "recall_iv": [
+     0.5051503356461894,
+     0.6458999505054615
+    ],
+    "f1_iv": [
+     0.5887982679509417,
+     0.7131259520464088
+    ],
+    "gap_iv": [
+     0.1186555472276446,
+     0.2520902087862099
+    ]
+   },
+   "name": "Claude Sonnet 4.6",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_opus46_a2_20261019",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 119,
+   "end_to_end": {
+    "precision": 0.7940783340813921,
+    "recall": 0.5860410430511587,
+    "f1": 0.6743800614353532,
+    "gap": 0.20803729103023338,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.7940783340813921,
+    "recall": 0.5877383092047861,
+    "f1": 0.6755024405253073,
+    "gap": 0.20634002487660597,
+    "articles": 56
+   },
+   "name": "Claude Opus 4.6",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_sonnet45_a2_20261019",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 115,
+   "end_to_end": {
+    "precision": 0.7625491979395447,
+    "recall": 0.46593315124872753,
+    "f1": 0.5784323250764271,
+    "gap": 0.29661604669081715,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.7625491979395447,
+    "recall": 0.4992180278701887,
+    "f1": 0.6034049687811079,
+    "gap": 0.26333117006935597,
+    "articles": 55
+   },
+   "name": "Claude Sonnet 4.5",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_haiku45_a2_20261019",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 108,
+   "end_to_end": {
+    "precision": 0.7208303204315586,
+    "recall": 0.2890837811635864,
+    "f1": 0.4126694622415525,
+    "gap": 0.4317465392679722,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.7208303204315586,
+    "recall": 0.37073270167696537,
+    "f1": 0.48963800849181865,
+    "gap": 0.3500976187545932,
+    "articles": 53
+   },
+   "name": "Claude Haiku 4.5",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_novapro_a2_20261019",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 102,
+   "end_to_end": {
+    "precision": 0.49417960395207444,
+    "recall": 0.2710969606592905,
+    "f1": 0.35012332755610875,
+    "gap": 0.22308264329278393,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.49417960395207444,
+    "recall": 0.34679686275240257,
+    "f1": 0.4075736791027897,
+    "gap": 0.14738274119967187,
+    "articles": 52
+   },
+   "name": "Amazon Nova Pro",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_nemotron3s_a2_20261019r3",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 108,
+   "end_to_end": {
+    "precision": 0.6576845141664426,
+    "recall": 0.31426945528714756,
+    "f1": 0.4253085238883825,
+    "gap": 0.343415058879295,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.6576845141664426,
+    "recall": 0.3849193551982573,
+    "f1": 0.4856216374318349,
+    "gap": 0.27276515896818526,
+    "articles": 54
+   },
+   "name": "NVIDIA Nemotron 3 Super",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_qwen3_235b_a2_20261019",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 111,
+   "end_to_end": {
+    "precision": 0.7060502645167022,
+    "recall": 0.40516211070922015,
+    "f1": 0.5148697437431436,
+    "gap": 0.300888153807482,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.7060502645167022,
+    "recall": 0.4346424838498477,
+    "f1": 0.5380580197986301,
+    "gap": 0.27140778066685445,
+    "articles": 56
+   },
+   "name": "Qwen3-235B-A22B",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_mercury3_instant_a2_20261030",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 93,
+   "end_to_end": {
+    "precision": 0.7043107013876747,
+    "recall": 0.3078568577179894,
+    "f1": 0.42844068145781633,
+    "gap": 0.39645384366968534,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.7043107013876747,
+    "recall": 0.45939011848547184,
+    "f1": 0.5560765637276767,
+    "gap": 0.24492058290220287,
+    "articles": 49
+   },
+   "name": "Mercury 3 (instant)",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_mercury3_low_a2_20261030",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 113,
+   "end_to_end": {
+    "precision": 0.8003399559253122,
+    "recall": 0.4547617632034595,
+    "f1": 0.5799753182896117,
+    "gap": 0.34557819272185264,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.8003399559253122,
+    "recall": 0.506085103682389,
+    "f1": 0.6200740357770654,
+    "gap": 0.29425485224292314,
+    "articles": 54
+   },
+   "name": "Mercury 3 (low)",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_sonnet5_a2_20261101",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 120,
+   "end_to_end": {
+    "precision": 0.8110221733239914,
+    "recall": 0.5295021955714855,
+    "f1": 0.6407015514175937,
+    "gap": 0.2815199777525059,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.8110221733239914,
+    "recall": 0.5295021955714855,
+    "f1": 0.6407015514175937,
+    "gap": 0.2815199777525059,
+    "articles": 56
+   },
+   "name": "Claude Sonnet 5",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_opus5_a2_20261101",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 120,
+   "end_to_end": {
+    "precision": 0.7478834587212417,
+    "recall": 0.7314341043415166,
+    "f1": 0.7395673267733658,
+    "gap": 0.016449354379725167,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.7478834587212417,
+    "recall": 0.7314341043415166,
+    "f1": 0.7395673267733658,
+    "gap": 0.016449354379725167,
+    "articles": 56
+   },
+   "name": "Claude Opus 5",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "mc_opus55_a2_20261108r2",
+   "weighting": "design-weighted",
+   "paragraphs": 120,
+   "valid_first_execution": 120,
+   "end_to_end": {
+    "precision": 0.8061258800508959,
+    "recall": 0.6603313195633366,
+    "f1": 0.7259811827419089,
+    "gap": 0.14579456048755934,
+    "articles": 56
+   },
+   "valid_only": {
+    "precision": 0.8061258800508959,
+    "recall": 0.6603313195633366,
+    "f1": 0.7259811827419089,
+    "gap": 0.14579456048755934,
+    "articles": 56
+   },
+   "name": "Claude Opus 5.5",
+   "sample": "A2",
+   "sample_label": "evaluation"
+  },
+  {
+   "run_id": "a3_sonnet_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 47,
+   "end_to_end": {
+    "precision": 0.6571428571428571,
+    "recall": 0.4928571428571429,
+    "f1": 0.563265306122449,
+    "gap": 0.16428571428571426,
+    "articles": 10,
+    "precision_iv": [
+     0.5855855855855856,
+     0.71875
+    ],
+    "recall_iv": [
+     0.4380165289256198,
+     0.5748502994011976
+    ],
+    "f1_iv": [
+     0.5106382978723404,
+     0.6218487394957983
+    ],
+    "gap_iv": [
+     0.07099391480730222,
+     0.24500907441016334
+    ]
+   },
+   "valid_only": {
+    "precision": 0.6571428571428571,
+    "recall": 0.6,
+    "f1": 0.6272727272727273,
+    "gap": 0.05714285714285716,
+    "articles": 10,
+    "precision_iv": [
+     0.5855855855855856,
+     0.71875
+    ],
+    "recall_iv": [
+     0.5256410256410257,
+     0.6785714285714286
+    ],
+    "f1_iv": [
+     0.5577689243027888,
+     0.6889952153110048
+    ],
+    "gap_iv": [
+     -0.006161314413741681,
+     0.1081759344868577
+    ]
+   },
+   "name": "Claude Sonnet 4.6",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_opus46_a3_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 55,
+   "end_to_end": {
+    "precision": 0.7394957983193278,
+    "recall": 0.6285714285714286,
+    "f1": 0.6795366795366795,
+    "gap": 0.11092436974789921,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.7394957983193278,
+    "recall": 0.6285714285714286,
+    "f1": 0.6795366795366795,
+    "gap": 0.11092436974789921,
+    "articles": 10
+   },
+   "name": "Claude Opus 4.6",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_sonnet45_a3_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 49,
+   "end_to_end": {
+    "precision": 0.8068181818181818,
+    "recall": 0.5071428571428571,
+    "f1": 0.6228070175438597,
+    "gap": 0.29967532467532465,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.8068181818181818,
+    "recall": 0.5725806451612904,
+    "f1": 0.6698113207547169,
+    "gap": 0.2342375366568914,
+    "articles": 10
+   },
+   "name": "Claude Sonnet 4.5",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_haiku45_a3_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 50,
+   "end_to_end": {
+    "precision": 0.8088235294117647,
+    "recall": 0.39285714285714285,
+    "f1": 0.5288461538461539,
+    "gap": 0.41596638655462187,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.8088235294117647,
+    "recall": 0.45081967213114754,
+    "f1": 0.5789473684210527,
+    "gap": 0.3580038572806172,
+    "articles": 10
+   },
+   "name": "Claude Haiku 4.5",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_novapro_a3_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 49,
+   "end_to_end": {
+    "precision": 0.4727272727272727,
+    "recall": 0.37142857142857144,
+    "f1": 0.416,
+    "gap": 0.10129870129870128,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.4727272727272727,
+    "recall": 0.46017699115044247,
+    "f1": 0.4663677130044843,
+    "gap": 0.012550281576830247,
+    "articles": 10
+   },
+   "name": "Amazon Nova Pro",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_nemotron3s_a3_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 45,
+   "end_to_end": {
+    "precision": 0.5897435897435898,
+    "recall": 0.32857142857142857,
+    "f1": 0.42201834862385323,
+    "gap": 0.2611721611721612,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.5897435897435898,
+    "recall": 0.42990654205607476,
+    "f1": 0.4972972972972973,
+    "gap": 0.159837047687515,
+    "articles": 10
+   },
+   "name": "NVIDIA Nemotron 3 Super",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_qwen3_235b_a3_20261019",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 51,
+   "end_to_end": {
+    "precision": 0.6631578947368421,
+    "recall": 0.45,
+    "f1": 0.5361702127659574,
+    "gap": 0.21315789473684205,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.6631578947368421,
+    "recall": 0.4846153846153846,
+    "f1": 0.56,
+    "gap": 0.17854251012145744,
+    "articles": 10
+   },
+   "name": "Qwen3-235B-A22B",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_mercury3_instant_a3_20261030r3",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 43,
+   "end_to_end": {
+    "precision": 0.7457627118644068,
+    "recall": 0.3142857142857143,
+    "f1": 0.44221105527638194,
+    "gap": 0.4314769975786925,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.7457627118644068,
+    "recall": 0.5057471264367817,
+    "f1": 0.6027397260273972,
+    "gap": 0.24001558542762513,
+    "articles": 9
+   },
+   "name": "Mercury 3 (instant)",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_mercury3_low_a3_20261030r2",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 50,
+   "end_to_end": {
+    "precision": 0.8863636363636364,
+    "recall": 0.5571428571428572,
+    "f1": 0.6842105263157895,
+    "gap": 0.3292207792207792,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.8863636363636364,
+    "recall": 0.6666666666666666,
+    "f1": 0.7609756097560976,
+    "gap": 0.21969696969696972,
+    "articles": 9
+   },
+   "name": "Mercury 3 (low)",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_sonnet5_a3_20261101",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 55,
+   "end_to_end": {
+    "precision": 0.78,
+    "recall": 0.5571428571428572,
+    "f1": 0.65,
+    "gap": 0.22285714285714286,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.78,
+    "recall": 0.5571428571428572,
+    "f1": 0.65,
+    "gap": 0.22285714285714286,
+    "articles": 10
+   },
+   "name": "Claude Sonnet 5",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_opus5_a3_20261101",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 55,
+   "end_to_end": {
+    "precision": 0.639751552795031,
+    "recall": 0.7357142857142858,
+    "f1": 0.6843853820598007,
+    "gap": -0.09596273291925472,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.639751552795031,
+    "recall": 0.7357142857142858,
+    "f1": 0.6843853820598007,
+    "gap": -0.09596273291925472,
+    "articles": 10
+   },
+   "name": "Claude Opus 5",
+   "sample": "A3",
+   "sample_label": "census"
+  },
+  {
+   "run_id": "mc_opus55_a3_20261108r2",
+   "weighting": "unweighted",
+   "paragraphs": 55,
+   "valid_first_execution": 55,
+   "end_to_end": {
+    "precision": 0.7910447761194029,
+    "recall": 0.7571428571428571,
+    "f1": 0.7737226277372263,
+    "gap": 0.03390191897654582,
+    "articles": 10
+   },
+   "valid_only": {
+    "precision": 0.7910447761194029,
+    "recall": 0.7571428571428571,
+    "f1": 0.7737226277372263,
+    "gap": 0.03390191897654582,
+    "articles": 10
+   },
+   "name": "Claude Opus 5.5",
+   "sample": "A3",
+   "sample_label": "census"
+  }
+ ],
+ "without_general": {
+  "pooled": {
+   "without_general": {
+    "precision": 0.7837126516289037,
+    "recall": 0.5674575846741374,
+    "f1": 0.6582792847609152,
+    "gap": 0.21625506695476626,
+    "articles": 56,
+    "precision_iv": [
+     0.7091425502607696,
+     0.8539592630735782
+    ],
+    "recall_iv": [
+     0.49833662596091843,
+     0.6434459857326268
+    ],
+    "f1_iv": [
+     0.5890173120557597,
+     0.7268865426528895
+    ],
+    "gap_iv": [
+     0.15352687576662605,
+     0.27367671965687845
+    ]
+   },
+   "registered": {
+    "precision": 0.7591325333068861,
+    "recall": 0.5572468419321999,
+    "f1": 0.6427086518526188,
+    "gap": 0.20188569137468626,
+    "articles": 56,
+    "precision_iv": [
+     0.6910984540276647,
+     0.8242113264918283
+    ],
+    "recall_iv": [
+     0.4912237983595495,
+     0.6310273631840796
+    ],
+    "f1_iv": [
+     0.5805156023837157,
+     0.7050320095624425
+    ],
+    "gap_iv": [
+     0.13398242184344733,
+     0.26242083203465644
+    ]
+   },
+   "general_rows_reference": 40,
+   "general_rows_model": 34
+  },
+  "de": {
+   "without_general": {
+    "precision": 0.7838112969982721,
+    "recall": 0.5413153379000292,
+    "f1": 0.6403751398703753,
+    "gap": 0.24249595909824295,
+    "articles": 28,
+    "precision_iv": [
+     0.6838304368248004,
+     0.8829227788541378
+    ],
+    "recall_iv": [
+     0.44628361942485445,
+     0.6444239743291258
+    ],
+    "f1_iv": [
+     0.5455618270471031,
+     0.7392753352707496
+    ],
+    "gap_iv": [
+     0.18204878004840985,
+     0.30655778604394845
+    ]
+   },
+   "registered": {
+    "precision": 0.7097782408096442,
+    "recall": 0.5524386147139343,
+    "f1": 0.6213019678687827,
+    "gap": 0.15733962609570995,
+    "articles": 28,
+    "precision_iv": [
+     0.6083388148702273,
+     0.8173958712075304
+    ],
+    "recall_iv": [
+     0.4656423979576143,
+     0.6471948604779694
+    ],
+    "f1_iv": [
+     0.5331727174145646,
+     0.7098853317363819
+    ],
+    "gap_iv": [
+     0.07030100093762726,
+     0.23985839005240978
+    ]
+   },
+   "general_rows_reference": 17,
+   "general_rows_model": 15
+  },
+  "en": {
+   "without_general": {
+    "precision": 0.7836673130790778,
+    "recall": 0.5803414711983406,
+    "f1": 0.6668500183351669,
+    "gap": 0.2033258418807372,
+    "articles": 28,
+    "precision_iv": [
+     0.6830294530154277,
+     0.8745043153720551
+    ],
+    "recall_iv": [
+     0.484340456890199,
+     0.6727162734422262
+    ],
+    "f1_iv": [
+     0.5754768392370573,
+     0.7513304810602108
+    ],
+    "gap_iv": [
+     0.1195843602988782,
+     0.28393874785156903
+    ]
+   },
+   "registered": {
+    "precision": 0.7837931632830124,
+    "recall": 0.559450086698043,
+    "f1": 0.6528871865288718,
+    "gap": 0.22434307658496944,
+    "articles": 28,
+    "precision_iv": [
+     0.6950386891215294,
+     0.8619485877499206
+    ],
+    "recall_iv": [
+     0.4728260869565219,
+     0.6513038204972711
+    ],
+    "f1_iv": [
+     0.572583252505658,
+     0.7298160255435608
+    ],
+    "gap_iv": [
+     0.13455709009650973,
+     0.30815552684915026
+    ]
+   },
+   "general_rows_reference": 23,
+   "general_rows_model": 19
+  }
+ },
+ "element_intervals": {
+  "F1a": {
+   "f1": 0.7441123435877821,
+   "iv": [
+    0.5670374549948949,
+    0.8684893844508935
+   ],
+   "reference_tuples": 45,
+   "undefined_draws": 0
+  },
+  "F1b": {
+   "f1": 0.7386694031127073,
+   "iv": [
+    0.5977452626529143,
+    0.8702455987828732
+   ],
+   "reference_tuples": 30,
+   "undefined_draws": 0
+  },
+  "F2a": {
+   "f1": 0.6222222222222222,
+   "iv": [
+    0.0,
+    0.8
+   ],
+   "reference_tuples": 3,
+   "undefined_draws": 281
+  },
+  "F2b": {
+   "f1": 0.6572951919083918,
+   "iv": [
+    0.49863244266778883,
+    0.7929713899526921
+   ],
+   "reference_tuples": 60,
+   "undefined_draws": 0
+  },
+  "F2c": {
+   "f1": 0.6150911024945956,
+   "iv": [
+    0.3775258748151799,
+    0.7795481816043659
+   ],
+   "reference_tuples": 35,
+   "undefined_draws": 0
+  },
+  "F3a": {
+   "f1": 0.5581068621855381,
+   "iv": [
+    0.266318158716329,
+    0.8111723052714398
+   ],
+   "reference_tuples": 13,
+   "undefined_draws": 0
+  },
+  "F3b": {
+   "f1": 0.5363014963975614,
+   "iv": [
+    0.35428980834676693,
+    0.712015257469803
+   ],
+   "reference_tuples": 38,
+   "undefined_draws": 0
+  },
+  "F4a": {
+   "f1": 0.712890625,
+   "iv": [
+    0.44776119402985076,
+    0.9232409381663113
+   ],
+   "reference_tuples": 11,
+   "undefined_draws": 1
+  },
+  "F4b": {
+   "f1": 0.7286282306163022,
+   "iv": [
+    0.3471074380165289,
+    0.8571428571428571
+   ],
+   "reference_tuples": 13,
+   "undefined_draws": 1
+  },
+  "F5a": {
+   "f1": 0.8299645759533236,
+   "iv": [
+    0.6021863117870723,
+    0.9378769163699775
+   ],
+   "reference_tuples": 20,
+   "undefined_draws": 0
+  },
+  "F5b": {
+   "f1": 0.7386107742941279,
+   "iv": [
+    0.4946908182386009,
+    0.8983050847457628
+   ],
+   "reference_tuples": 17,
+   "undefined_draws": 0
+  },
+  "F6a": {
+   "f1": 0.7229307326831708,
+   "iv": [
+    0.4905716406829993,
+    0.8779378316906747
+   ],
+   "reference_tuples": 20,
+   "undefined_draws": 0
+  },
+  "F6b": {
+   "f1": 0.4328537170263789,
+   "iv": [
+    0.08704061895551259,
+    0.6812313803376366
+   ],
+   "reference_tuples": 15,
+   "undefined_draws": 0
+  },
+  "F7a": {
+   "f1": 0.3336058871627146,
+   "iv": [
+    0.0,
+    0.5282693137678033
+   ],
+   "reference_tuples": 14,
+   "undefined_draws": 2
+  },
+  "F7b": {
+   "f1": 0.48443579766536965,
+   "iv": [
+    0.0,
+    0.7108013937282229
+   ],
+   "reference_tuples": 12,
+   "undefined_draws": 2
+  },
+  "F8a": {
+   "f1": 0.4550561797752809,
+   "iv": [
+    0.2477602718566574,
+    0.6267757210503659
+   ],
+   "reference_tuples": 28,
+   "undefined_draws": 0
+  },
+  "F9": {
+   "f1": 0.5380116959064327,
+   "iv": [
+    0.0,
+    1.0
+   ],
+   "reference_tuples": 2,
+   "undefined_draws": 34
+  }
+ },
+ "adjustment_second_coding": {
+  "F1a": {
+   "model_only_pp": 20.550161812297734,
+   "first": {
+    "adjusted_pp": 26.240560949298814,
+    "ci": [
+     19.760153643591355,
+     32.72096825500627
+    ],
+    "sample_only_pp": 25.300508552935735,
+    "support": 28
+   },
+   "second": {
+    "adjusted_pp": 23.705501618122977,
+    "ci": [
+     17.956410045642905,
+     29.454593190603052
+    ],
+    "sample_only_pp": 22.765449221759905,
+    "support": 25
+   },
+   "second_minus_first_pp": -2.5350593311758374
+  },
+  "F1b": {
+   "model_only_pp": 14.401294498381878,
+   "first": {
+    "adjusted_pp": 15.171829249499153,
+    "ci": [
+     11.400086022279515,
+     18.94357247671879
+    ],
+    "sample_only_pp": 15.347125905378334,
+    "support": 19
+   },
+   "second": {
+    "adjusted_pp": 12.756202804746493,
+    "ci": [
+     9.025706308622613,
+     16.486699300870374
+    ],
+    "sample_only_pp": 12.931499460625675,
+    "support": 16
+   },
+   "second_minus_first_pp": -2.415626444752659
+  },
+  "F2b": {
+   "model_only_pp": 19.41747572815534,
+   "first": {
+    "adjusted_pp": 37.720372938819544,
+    "ci": [
+     31.101071916248912,
+     44.33967396139018
+    ],
+    "sample_only_pp": 40.05586376945599,
+    "support": 44
+   },
+   "second": {
+    "adjusted_pp": 33.0663430420712,
+    "ci": [
+     27.14851258614896,
+     38.98417349799344
+    ],
+    "sample_only_pp": 35.401833872707655,
+    "support": 39
+   },
+   "second_minus_first_pp": -4.654029896748341
+  },
+  "F2c": {
+   "model_only_pp": 19.25566343042071,
+   "first": {
+    "adjusted_pp": 21.25404530744337,
+    "ci": [
+     14.074966058928423,
+     28.433124555958315
+    ],
+    "sample_only_pp": 23.1222068115272,
+    "support": 29
+   },
+   "second": {
+    "adjusted_pp": 16.531052550470026,
+    "ci": [
+     10.082832079261598,
+     22.979273021678452
+    ],
+    "sample_only_pp": 18.399214054553862,
+    "support": 24
+   },
+   "second_minus_first_pp": -4.722992756973344
+  },
+  "F3a": {
+   "model_only_pp": 6.796116504854369,
+   "first": {
+    "adjusted_pp": 9.535367545076284,
+    "ci": [
+     5.7458543863570535,
+     13.324880703795511
+    ],
+    "sample_only_pp": 9.200955463091386,
+    "support": 12
+   },
+   "second": {
+    "adjusted_pp": 7.726537216828479,
+    "ci": [
+     4.340200974095255,
+     11.112873459561703
+    ],
+    "sample_only_pp": 7.392125134843582,
+    "support": 9
+   },
+   "second_minus_first_pp": -1.8088303282478044
+  },
+  "F3b": {
+   "model_only_pp": 21.035598705501616,
+   "first": {
+    "adjusted_pp": 17.61057173678533,
+    "ci": [
+     10.603176923000856,
+     24.617966550569804
+    ],
+    "sample_only_pp": 21.146170442286948,
+    "support": 25
+   },
+   "second": {
+    "adjusted_pp": 10.919633225458467,
+    "ci": [
+     4.803531417335583,
+     17.035735033581354
+    ],
+    "sample_only_pp": 14.455231930960089,
+    "support": 17
+   },
+   "second_minus_first_pp": -6.6909385113268645
+  },
+  "F4a": {
+   "model_only_pp": 3.3980582524271843,
+   "first": {
+    "adjusted_pp": 5.825242718446602,
+    "ci": [
+     3.2980027660987967,
+     8.352482670794407
+    ],
+    "sample_only_pp": 7.348975188781015,
+    "support": 9
+   },
+   "second": {
+    "adjusted_pp": 4.153182308522115,
+    "ci": [
+     0.7579227748000711,
+     7.5484418422441575
+    ],
+    "sample_only_pp": 5.676914778856527,
+    "support": 6
+   },
+   "second_minus_first_pp": -1.6720604099244873
+  },
+  "F4b": {
+   "model_only_pp": 5.177993527508091,
+   "first": {
+    "adjusted_pp": 5.177993527508091,
+    "ci": [
+     1.2147223750580256,
+     9.141264679958155
+    ],
+    "sample_only_pp": 7.726537216828479,
+    "support": 8
+   },
+   "second": {
+    "adjusted_pp": 3.263214670981661,
+    "ci": [
+     -0.6982936956531183,
+     7.22472303761644
+    ],
+    "sample_only_pp": 5.811758360302051,
+    "support": 7
+   },
+   "second_minus_first_pp": -1.9147788565264303
+  },
+  "F5a": {
+   "model_only_pp": 8.576051779935275,
+   "first": {
+    "adjusted_pp": 6.969486823855756,
+    "ci": [
+     3.812701774189432,
+     10.12627187352208
+    ],
+    "sample_only_pp": 9.331175836030205,
+    "support": 11
+   },
+   "second": {
+    "adjusted_pp": 8.888118354137772,
+    "ci": [
+     6.5559278306316555,
+     11.22030887764389
+    ],
+    "sample_only_pp": 11.24980736631222,
+    "support": 14
+   },
+   "second_minus_first_pp": 1.918631530282016
+  },
+  "F5b": {
+   "model_only_pp": 9.385113268608414,
+   "first": {
+    "adjusted_pp": 11.893203883495145,
+    "ci": [
+     9.29133700502079,
+     14.495070761969503
+    ],
+    "sample_only_pp": 10.182616736014795,
+    "support": 14
+   },
+   "second": {
+    "adjusted_pp": 10.625674217907228,
+    "ci": [
+     8.358330943370378,
+     12.89301749244408
+    ],
+    "sample_only_pp": 8.915087070426877,
+    "support": 12
+   },
+   "second_minus_first_pp": -1.267529665587917
+  },
+  "F6a": {
+   "model_only_pp": 16.50485436893204,
+   "first": {
+    "adjusted_pp": 21.42857142857143,
+    "ci": [
+     16.29329728500606,
+     26.563845572136803
+    ],
+    "sample_only_pp": 17.86870087840962,
+    "support": 20
+   },
+   "second": {
+    "adjusted_pp": 12.810140237324703,
+    "ci": [
+     8.427110250993424,
+     17.19317022365598
+    ],
+    "sample_only_pp": 9.25026968716289,
+    "support": 11
+   },
+   "second_minus_first_pp": -8.618431191246728
+  },
+  "F6b": {
+   "model_only_pp": 7.605177993527508,
+   "first": {
+    "adjusted_pp": 4.935275080906148,
+    "ci": [
+     -0.2828122822191158,
+     10.153362444031414
+    ],
+    "sample_only_pp": 7.672599784250268,
+    "support": 11
+   },
+   "second": {
+    "adjusted_pp": 3.101402373247033,
+    "ci": [
+     -0.641804539586669,
+     6.844609286080735
+    ],
+    "sample_only_pp": 5.838727076591153,
+    "support": 7
+   },
+   "second_minus_first_pp": -1.8338727076591153
+  },
+  "F7a": {
+   "model_only_pp": 1.779935275080906,
+   "first": {
+    "adjusted_pp": 7.375943905070119,
+    "ci": [
+     3.004013796069718,
+     11.74787401407052
+    ],
+    "sample_only_pp": 8.02319309600863,
+    "support": 9
+   },
+   "second": {
+    "adjusted_pp": 2.103559870550162,
+    "ci": [
+     0.1948181720029557,
+     4.012301569097368
+    ],
+    "sample_only_pp": 2.750809061488673,
+    "support": 3
+   },
+   "second_minus_first_pp": -5.272384034519957
+  },
+  "F7b": {
+   "model_only_pp": 3.7216828478964405,
+   "first": {
+    "adjusted_pp": 9.951456310679612,
+    "ci": [
+     5.5917362792959215,
+     14.3111763420633
+    ],
+    "sample_only_pp": 8.67044228694714,
+    "support": 10
+   },
+   "second": {
+    "adjusted_pp": 6.539913700107876,
+    "ci": [
+     3.5074975454192385,
+     9.572329854796513
+    ],
+    "sample_only_pp": 5.258899676375404,
+    "support": 6
+   },
+   "second_minus_first_pp": -3.411542610571736
+  },
+  "F8a": {
+   "model_only_pp": 10.032362459546926,
+   "first": {
+    "adjusted_pp": 18.23470488519032,
+    "ci": [
+     12.604543841515353,
+     23.864865928865292
+    ],
+    "sample_only_pp": 16.915164123901988,
+    "support": 22
+   },
+   "second": {
+    "adjusted_pp": 11.517568192325474,
+    "ci": [
+     7.14824431552418,
+     15.886892069126768
+    ],
+    "sample_only_pp": 10.19802743103714,
+    "support": 13
+   },
+   "second_minus_first_pp": -6.717136692864848
+  },
+  "_frame": {
+   "N": 618,
+   "failed_executions": {
+    "a2_sonnet_20261013": 5,
+    "frame_completion_20261019": 30,
+    "a3_sonnet_20261019": 8
+   },
+   "valid_records": 575,
+   "F2b_model_only_pp_all": 19.41747572815534,
+   "F2b_model_only_pp_valid_records": 20.8695652173913
+  }
+ },
+ "class_sets": {
+  "technology": {
+   "pooled": 7,
+   "de": 7,
+   "en": 7,
+   "common_support": 7,
+   "only_de": [],
+   "only_en": []
+  },
+  "element": {
+   "pooled": 17,
+   "de": 16,
+   "en": 16,
+   "common_support": 15,
+   "only_de": [
+    "F2a"
+   ],
+   "only_en": [
+    "F9"
+   ]
+  },
+  "evaluation_A": {
+   "pooled": 4,
+   "de": 4,
+   "en": 4,
+   "common_support": 4,
+   "only_de": [],
+   "only_en": []
+  },
+  "evaluation_B": {
+   "pooled": 4,
+   "de": 4,
+   "en": 4,
+   "common_support": 4,
+   "only_de": [],
+   "only_en": []
+  },
+  "comparison_A": {
+   "pooled": 7,
+   "de": 3,
+   "en": 7,
+   "common_support": 3,
+   "only_de": [],
+   "only_en": [
+    "hydrogen",
+    "multiple",
+    "natural_gas",
+    "other"
+   ]
+  },
+  "comparison_B": {
+   "pooled": 8,
+   "de": 5,
+   "en": 7,
+   "common_support": 4,
+   "only_de": [
+    "other_renewable"
+   ],
+   "only_en": [
+    "hydrogen",
+    "natural_gas",
+    "other"
+   ]
+  }
+ },
+ "element_labels": [
+  {
+   "id": "F1a",
+   "label": "Cost or price"
+  },
+  {
+   "id": "F1b",
+   "label": "Subsidies"
+  },
+  {
+   "id": "F2a",
+   "label": "Employment"
+  },
+  {
+   "id": "F2b",
+   "label": "Investment, industry"
+  },
+  {
+   "id": "F2c",
+   "label": "Deployment growth"
+  },
+  {
+   "id": "F3a",
+   "label": "Emissions, climate"
+  },
+  {
+   "id": "F3b",
+   "label": "Transition pathway"
+  },
+  {
+   "id": "F4a",
+   "label": "Import dependence"
+  },
+  {
+   "id": "F4b",
+   "label": "Security of supply"
+  },
+  {
+   "id": "F5a",
+   "label": "Intermittency"
+  },
+  {
+   "id": "F5b",
+   "label": "Grid integration"
+  },
+  {
+   "id": "F6a",
+   "label": "Technical feasibility"
+  },
+  {
+   "id": "F6b",
+   "label": "Technical performance"
+  },
+  {
+   "id": "F7a",
+   "label": "Land requirement"
+  },
+  {
+   "id": "F7b",
+   "label": "Landscape"
+  },
+  {
+   "id": "F8a",
+   "label": "Regulation"
+  },
+  {
+   "id": "F9",
+   "label": "Other frame"
+  }
+ ]
+}

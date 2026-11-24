@@ -1,0 +1,560 @@
+{
+  "session": "A3",
+  "sheet_kind": "sheet-1",
+  "sheet_schema": 2,
+  "generated_at": "2026-10-14",
+  "codebook_versions": [
+    "1.0"
+  ],
+  "passes": {
+    "pass1": {
+      "codebook_version": "1.0",
+      "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+    },
+    "pass2": {
+      "codebook_version": "1.0",
+      "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+    }
+  },
+  "registry_head_hash": "24167d3a65b99f06",
+  "generator": {
+    "file": "build_sheets.py",
+    "sha256": "163b591c94da16d7a20a9c11a65bd0cdf666283e4c07ea44aee3a6e644da7f3e"
+  },
+  "n_paragraphs": 55,
+  "paragraphs": [
+    {
+      "paragraph_id": "A038_p01",
+      "article_id": "A038",
+      "text_sha256": "cd50f4a7605d2123",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A038_p02",
+      "article_id": "A038",
+      "text_sha256": "378ee3a81bb4e4b9",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A038_p05",
+      "article_id": "A038",
+      "text_sha256": "7b7067260272d187",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A040_p01",
+      "article_id": "A040",
+      "text_sha256": "128deb7494753a3f",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A040_p02",
+      "article_id": "A040",
+      "text_sha256": "331a1d53260ad3c0",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A040_p03",
+      "article_id": "A040",
+      "text_sha256": "b6e2ed7ba5a4cab5",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A040_p04",
+      "article_id": "A040",
+      "text_sha256": "482cfb6d541aa5b2",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A040_p05",
+      "article_id": "A040",
+      "text_sha256": "19fc91caeaec039c",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A040_p06",
+      "article_id": "A040",
+      "text_sha256": "c38f5cea35b24000",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "BILD"
+    },
+    {
+      "paragraph_id": "A045_p01",
+      "article_id": "A045",
+      "text_sha256": "8d2f60bc5fd6b1a7",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A045_p02",
+      "article_id": "A045",
+      "text_sha256": "f983b5c9655ca830",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A045_p03",
+      "article_id": "A045",
+      "text_sha256": "e7ed3e7bee120a2f",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A045_p04",
+      "article_id": "A045",
+      "text_sha256": "4662c9d2246d2914",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DIE ZEIT"
+    },
+    {
+      "paragraph_id": "A050_p02",
+      "article_id": "A050",
+      "text_sha256": "f763baf8c1ed1da6",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Economist"
+    },
+    {
+      "paragraph_id": "A050_p03",
+      "article_id": "A050",
+      "text_sha256": "1cb4b54899c34695",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Economist"
+    },
+    {
+      "paragraph_id": "A050_p04",
+      "article_id": "A050",
+      "text_sha256": "9a5ec1778a64d72c",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Economist"
+    },
+    {
+      "paragraph_id": "A050_p06",
+      "article_id": "A050",
+      "text_sha256": "2b4ef0fbf6050adf",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Economist"
+    },
+    {
+      "paragraph_id": "A062_p01",
+      "article_id": "A062",
+      "text_sha256": "143da12c9ce86fb0",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p02",
+      "article_id": "A062",
+      "text_sha256": "93407f5dbbb8fef5",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p03",
+      "article_id": "A062",
+      "text_sha256": "5c881161db574f69",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p04",
+      "article_id": "A062",
+      "text_sha256": "1b883dbd290c9af1",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p05",
+      "article_id": "A062",
+      "text_sha256": "5711d978b384785e",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p07",
+      "article_id": "A062",
+      "text_sha256": "2cac601d8491d0d7",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p08",
+      "article_id": "A062",
+      "text_sha256": "cba29841944e94b2",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A062_p09",
+      "article_id": "A062",
+      "text_sha256": "5b685fcb7af113c0",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The Guardian"
+    },
+    {
+      "paragraph_id": "A064_p02",
+      "article_id": "A064",
+      "text_sha256": "facf5575726575fd",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p03",
+      "article_id": "A064",
+      "text_sha256": "b48f8203abe02269",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p04",
+      "article_id": "A064",
+      "text_sha256": "7817f78c59970891",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p05",
+      "article_id": "A064",
+      "text_sha256": "e29cb9706be00058",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p13",
+      "article_id": "A064",
+      "text_sha256": "38d8b46b5f8baa45",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p15",
+      "article_id": "A064",
+      "text_sha256": "b77865f82da593f0",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p18",
+      "article_id": "A064",
+      "text_sha256": "1cb9aa6ccd9c158b",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p19",
+      "article_id": "A064",
+      "text_sha256": "77a7ded248a48f7d",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p20",
+      "article_id": "A064",
+      "text_sha256": "6210947d6a355725",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A064_p21",
+      "article_id": "A064",
+      "text_sha256": "aa938308514ec625",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A073_p01",
+      "article_id": "A073",
+      "text_sha256": "d7f5ceeea7853863",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A073_p04",
+      "article_id": "A073",
+      "text_sha256": "f890f17af77bdea3",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A073_p05",
+      "article_id": "A073",
+      "text_sha256": "41edaeb32f29c300",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A073_p12",
+      "article_id": "A073",
+      "text_sha256": "c4ac9bdaa52a5817",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A073_p17",
+      "article_id": "A073",
+      "text_sha256": "006d83a400ab2851",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A073_p18",
+      "article_id": "A073",
+      "text_sha256": "08b6861262d19135",
+      "split": "A3",
+      "lang": "en",
+      "outlet": "The New York Times"
+    },
+    {
+      "paragraph_id": "A081_p01",
+      "article_id": "A081",
+      "text_sha256": "a7cac15432acb2c7",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DER SPIEGEL"
+    },
+    {
+      "paragraph_id": "A081_p03",
+      "article_id": "A081",
+      "text_sha256": "2b8a47ac541ea539",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DER SPIEGEL"
+    },
+    {
+      "paragraph_id": "A081_p04",
+      "article_id": "A081",
+      "text_sha256": "d326629a3b34fb05",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DER SPIEGEL"
+    },
+    {
+      "paragraph_id": "A081_p05",
+      "article_id": "A081",
+      "text_sha256": "f0b3cddcb73da553",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "DER SPIEGEL"
+    },
+    {
+      "paragraph_id": "A084_p03",
+      "article_id": "A084",
+      "text_sha256": "c5fae3a0f16057fc",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p04",
+      "article_id": "A084",
+      "text_sha256": "230c5581c3d6a280",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p05",
+      "article_id": "A084",
+      "text_sha256": "515c9671cf9cf954",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p09",
+      "article_id": "A084",
+      "text_sha256": "3132b785a4a72d75",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p10",
+      "article_id": "A084",
+      "text_sha256": "36574a0fa2336c1f",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p14",
+      "article_id": "A084",
+      "text_sha256": "af5d6ff22eea60f7",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p15",
+      "article_id": "A084",
+      "text_sha256": "0156aa0937aeddfb",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p16",
+      "article_id": "A084",
+      "text_sha256": "9e96eec6f3b4d8d8",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A084_p19",
+      "article_id": "A084",
+      "text_sha256": "3b99ac3aba01152a",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung"
+    },
+    {
+      "paragraph_id": "A090_p03",
+      "article_id": "A090",
+      "text_sha256": "4d070b1c11cf45d2",
+      "split": "A3",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung"
+    }
+  ],
+  "note": "IDs and hashes only -- no article text. A label file of this session is valid only if every row's text hash is in this list; finalize.py checks that by recomputing the hash from the sheet, not by reading the cell.",
+  "fresh_sample": {
+    "sample_manifest": "A3_sample_manifest.json",
+    "sample_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "seed_order": 20261014,
+    "census": true,
+    "authority": "pre-analysis specification §4b (2026-10-14)"
+  },
+  "pass1_keys": [
+    "A038_p01__general",
+    "A038_p02__general",
+    "A038_p02__wind",
+    "A038_p05__general",
+    "A040_p01__solar",
+    "A040_p02__solar",
+    "A040_p03__solar",
+    "A040_p04__solar",
+    "A040_p05__solar",
+    "A040_p06__general",
+    "A045_p01__wind",
+    "A045_p02__wind",
+    "A045_p03__wind",
+    "A045_p04__wind",
+    "A050_p02__general",
+    "A050_p02__solar",
+    "A050_p02__wind",
+    "A050_p03__general",
+    "A050_p03__solar",
+    "A050_p03__wind",
+    "A050_p04__nuclear",
+    "A050_p04__other_renewable",
+    "A050_p04__solar",
+    "A050_p04__wind",
+    "A050_p06__general",
+    "A050_p06__nuclear",
+    "A050_p06__solar",
+    "A050_p06__wind",
+    "A062_p01__hydrogen",
+    "A062_p02__hydrogen",
+    "A062_p03__hydrogen",
+    "A062_p04__hydrogen",
+    "A062_p05__general",
+    "A062_p05__hydrogen",
+    "A062_p07__hydrogen",
+    "A062_p08__hydrogen",
+    "A062_p09__hydrogen",
+    "A064_p02__general",
+    "A064_p03__other_renewable",
+    "A064_p03__solar",
+    "A064_p03__wind",
+    "A064_p04__other_renewable",
+    "A064_p05__general",
+    "A064_p13__other_renewable",
+    "A064_p13__wind",
+    "A064_p15__other_renewable",
+    "A064_p18__hydrogen",
+    "A064_p19__hydrogen",
+    "A064_p19__wind",
+    "A064_p20__hydrogen",
+    "A064_p21__other_renewable",
+    "A073_p01__solar",
+    "A073_p04__solar",
+    "A073_p05__solar",
+    "A073_p12__solar",
+    "A073_p17__solar",
+    "A073_p18__solar",
+    "A081_p01__general",
+    "A081_p03__general",
+    "A081_p03__solar",
+    "A081_p04__solar",
+    "A081_p04__wind",
+    "A081_p05__general",
+    "A081_p05__solar",
+    "A084_p03__general",
+    "A084_p03__nuclear",
+    "A084_p04__general",
+    "A084_p05__solar",
+    "A084_p05__wind",
+    "A084_p09__general",
+    "A084_p10__general",
+    "A084_p14__solar",
+    "A084_p14__wind",
+    "A084_p15__general",
+    "A084_p16__general",
+    "A084_p16__solar",
+    "A084_p16__wind",
+    "A084_p19__general",
+    "A090_p03__general",
+    "A090_p03__hydrogen",
+    "A090_p03__nuclear"
+  ],
+  "pass1_off_topic": [],
+  "pass1_labels_file": "A3_pass1_v1.0.csv"
+}

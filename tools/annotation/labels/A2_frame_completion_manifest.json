@@ -1,0 +1,4465 @@
+{
+  "kind": "frame_completion_manifest",
+  "created": "2026-10-19",
+  "frame_manifest_digest": "a5eccabd1bf6ef64a4583d74b5276a20ad6fbd176fe2224174f20a0727bea425",
+  "freeze_event_hash": "24167d3a65b99f06",
+  "excludes": {
+    "A2": {
+      "kind": "A2_sample_manifest",
+      "digest": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015"
+    },
+    "A3": {
+      "kind": "A3_sample_manifest",
+      "digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6"
+    }
+  },
+  "rule": "every frame paragraph whose digest is in neither the registered A2 sample nor the A3 census; not a sample, no weights, never scored; the model's execution-one predictions on it complete the frame coverage for the exploratory DSL estimate (specification §4d)",
+  "n": 443,
+  "by_language": {
+    "de": 138,
+    "en": 305
+  },
+  "n_articles": 57,
+  "by_exposure": {
+    "sibling_calibration_article": 50,
+    "clean_article": 393
+  },
+  "paragraphs": [
+    {
+      "article_id": "A001",
+      "paragraph_id": "A001_p01",
+      "digest": "4098bcc2fa188e88a710f7fc73c2ab001aaaba35a04a020f2e03202c53cfdbd9",
+      "text_sha256": "4098bcc2fa188e88",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A001",
+      "paragraph_id": "A001_p02",
+      "digest": "3afc4849f0f9f7aa2b5a2d1f740a92e85e36b1910c1d438af2d0202ff218f8f9",
+      "text_sha256": "3afc4849f0f9f7aa",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A001",
+      "paragraph_id": "A001_p03",
+      "digest": "ef7dc2d5c222ac7972000b7d730dad009217190f9fc7e722724e71204c14b99c",
+      "text_sha256": "ef7dc2d5c222ac79",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A001",
+      "paragraph_id": "A001_p04",
+      "digest": "eb2fc5fd746fa5881141afc5e0adf1d9a77a7b89ccba1f7c296bc8772dec975b",
+      "text_sha256": "eb2fc5fd746fa588",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A001",
+      "paragraph_id": "A001_p07",
+      "digest": "703ffc4e1b3c513059a6ce6bf102ae2c7c6620c24b33292b3b5ececc428258ae",
+      "text_sha256": "703ffc4e1b3c5130",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A001",
+      "paragraph_id": "A001_p11",
+      "digest": "c0ea91affe873e7b48c00715ce069855a5d3d2938c62c17701cee5e8812d11c5",
+      "text_sha256": "c0ea91affe873e7b",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p02",
+      "digest": "0cdbfde289fa79c7746b12d4f8ea5c48b1775d7efe79eb44da74e2bb24c1625e",
+      "text_sha256": "0cdbfde289fa79c7",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p03",
+      "digest": "2f80a6766c0ae231fff185905d6ef2ccf7f1174e13111a8f869a1c67ceb4f441",
+      "text_sha256": "2f80a6766c0ae231",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p04",
+      "digest": "a389f5be68587cce316a5a46a17df8b52ed31397fcf66ce21e0c21b0b1bccb91",
+      "text_sha256": "a389f5be68587cce",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p05",
+      "digest": "6182a5714b3497eef3adba441b71a8d02a24670d06a000c30233ae7a5183c58d",
+      "text_sha256": "6182a5714b3497ee",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p06",
+      "digest": "18f1945efd3d3fee33f3215abc00ac882dce68607215a76402e7f2ef7f015a4a",
+      "text_sha256": "18f1945efd3d3fee",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p07",
+      "digest": "fea6df3ca39b7fe668d2a474efd087c7cb5b47f71344f01692465f159d0de802",
+      "text_sha256": "fea6df3ca39b7fe6",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p09",
+      "digest": "88917a2e1ce34414aa02919eb31e5028abc2806db8de60f9dc55405f03d5e691",
+      "text_sha256": "88917a2e1ce34414",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p12",
+      "digest": "5b941c99f4d1f175ceed8408c8b60858224422f300c9ccb5eef1cd39e457487f",
+      "text_sha256": "5b941c99f4d1f175",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A003",
+      "paragraph_id": "A003_p13",
+      "digest": "46e4ff115b6fbcd9f9a5fbae6c8dbfb7b3f34b8c9c1708a8ddef6dbb17364755",
+      "text_sha256": "46e4ff115b6fbcd9",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A005",
+      "paragraph_id": "A005_p02",
+      "digest": "ad263b6792aebc1b82c620dac281d2cf889239ddc50bdf975a42bce4ac25f5eb",
+      "text_sha256": "ad263b6792aebc1b",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A005",
+      "paragraph_id": "A005_p03",
+      "digest": "016da673d42d31bd3630827807df68eb6e65e9ddef2d859dce488c64fa808137",
+      "text_sha256": "016da673d42d31bd",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A005",
+      "paragraph_id": "A005_p06",
+      "digest": "5cf0ef215033e8e73b031260e8d2c145996bf717f620d2ea1efc8c90cf74da3a",
+      "text_sha256": "5cf0ef215033e8e7",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A005",
+      "paragraph_id": "A005_p08",
+      "digest": "6e11f4f5a7954deb4a59804d00e27b1c5d8759de793e64b01941e1b1979da9dd",
+      "text_sha256": "6e11f4f5a7954deb",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p01",
+      "digest": "330a68a6d9b1781d20fd44aaccdf6cf9c2efdf27ee9c8e799c97ba3e4c2352a1",
+      "text_sha256": "330a68a6d9b1781d",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p05",
+      "digest": "f2d92983291493f6aa9775775c2a6e24afcc542c0ad644450f60c64d87eefbad",
+      "text_sha256": "f2d92983291493f6",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p06",
+      "digest": "f7315fcf722131367829c5620cc4f83c24f1c07c073f3d6a32d5b9b64042db04",
+      "text_sha256": "f7315fcf72213136",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p07",
+      "digest": "c4b71183d2d4ad31ef70f0785090098e63ac2898f1c4ce8963939e323c02359a",
+      "text_sha256": "c4b71183d2d4ad31",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p08",
+      "digest": "7a015480a4f7ec78d95d58882ac790706613d5ec982b4f0cce38660017bfac4b",
+      "text_sha256": "7a015480a4f7ec78",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p09",
+      "digest": "5a8729e4dd27e12cfa538c650a5659f65459777988d029fb80c331f9eb785129",
+      "text_sha256": "5a8729e4dd27e12c",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p11",
+      "digest": "a2b860e61cbddd831e20c8789ddd9e63c22ae25888a23be43faf9b5b509d92d3",
+      "text_sha256": "a2b860e61cbddd83",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A007",
+      "paragraph_id": "A007_p12",
+      "digest": "288a96a7c0dd4c5c52b53ccab6798c1e1a9113446a64258389b34e161d408f44",
+      "text_sha256": "288a96a7c0dd4c5c",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A008",
+      "paragraph_id": "A008_p01",
+      "digest": "c27c43b37f4fa3e27a604850c868e27459f7e53ad0e012a1ef3edecafe6c78af",
+      "text_sha256": "c27c43b37f4fa3e2",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A008",
+      "paragraph_id": "A008_p03",
+      "digest": "45f34f209b19feb9935d5f858617b9edb02e1460b794b677bf7db9d01fa35dc1",
+      "text_sha256": "45f34f209b19feb9",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A008",
+      "paragraph_id": "A008_p04",
+      "digest": "937ef2bf7fc19ae5ba47a84d7221c1e85e4654d2e4aa49f6e66ed6c77c18c6c4",
+      "text_sha256": "937ef2bf7fc19ae5",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A008",
+      "paragraph_id": "A008_p07",
+      "digest": "fc2123d8de64a6ed2baeac51eecfe2b0dd64064a26782a4e1acab0c19cba19b6",
+      "text_sha256": "fc2123d8de64a6ed",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A008",
+      "paragraph_id": "A008_p11",
+      "digest": "b1d21bf23246ef98001e1fabd33faf5735153ed68c773503e86ffda3c2dbd906",
+      "text_sha256": "b1d21bf23246ef98",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A010",
+      "paragraph_id": "A010_p12",
+      "digest": "67af11940a3af27ce629031fe7d1cca36cd085da7a5be547a3e570e65c953b0c",
+      "text_sha256": "67af11940a3af27c",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A010",
+      "paragraph_id": "A010_p17",
+      "digest": "e788f582e58e4295767a8229faee134f762238ef8ab0e472af3e8cc5a960b3e1",
+      "text_sha256": "e788f582e58e4295",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p01",
+      "digest": "514fb7c8f1f502c2d9fcad1848c0d44af7b8e6fab7a6a548e70379f2605bce48",
+      "text_sha256": "514fb7c8f1f502c2",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p03",
+      "digest": "3a369b6c813b1528575b8163f8b67a3ffaef3be78a041fab7fef5c5e4990d777",
+      "text_sha256": "3a369b6c813b1528",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p05",
+      "digest": "12c041ee2f357388c23b3b1f5818e9bceff88ddb3874d41497cd9280c8ad845e",
+      "text_sha256": "12c041ee2f357388",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p06",
+      "digest": "41a399cb744a2de168199271559bd8c4787282d91b3bca6c6fd4fb01124b55f9",
+      "text_sha256": "41a399cb744a2de1",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p10",
+      "digest": "dabb14fc01b04c106398c51996d5b86c1da1b5d342a23f4e21d6154f161ae7b2",
+      "text_sha256": "dabb14fc01b04c10",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p12",
+      "digest": "c1a520a4c6e56149281a0f687db0b15c8bfb78091b498a5419bb852dde3869da",
+      "text_sha256": "c1a520a4c6e56149",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p14",
+      "digest": "23024f286534b07dd2062729caeaa7c4f41cccd37d41697b77325e6486c28769",
+      "text_sha256": "23024f286534b07d",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p15",
+      "digest": "c31b9121478027e677bc0b0c57577850e40e13e80c742a75c6bf6a6e81095f51",
+      "text_sha256": "c31b9121478027e6",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p22",
+      "digest": "cbc310294996eb32bc99bceb7c622bc8941ee9f1e6ac4304cdf0cba479966822",
+      "text_sha256": "cbc310294996eb32",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p24",
+      "digest": "9f47a55fb59589c711146a97b02a7a0533300e6472972476d49ed08ac0e15fe9",
+      "text_sha256": "9f47a55fb59589c7",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p25",
+      "digest": "c42494565781258b3625abd2c56242d952eee58b32bf718547f3cb40135d0fd6",
+      "text_sha256": "c42494565781258b",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p26",
+      "digest": "f31d8af24979447e5097243b9beaffb8fbf1ef548e6553cd9c9cb555bae1c857",
+      "text_sha256": "f31d8af24979447e",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p28",
+      "digest": "13644205f17972d3dde0dd733f610223e9a6c98317540d511ceede2df525aeb5",
+      "text_sha256": "13644205f17972d3",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p30",
+      "digest": "129a6550942a1db34cdb0031b4624d37198561b00b327cabf2aea92490d2f7b5",
+      "text_sha256": "129a6550942a1db3",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p32",
+      "digest": "0192596ffd4d3567398a06aa7da7cb2fc119dbf1a913fc4f6850723cacb775f8",
+      "text_sha256": "0192596ffd4d3567",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A012",
+      "paragraph_id": "A012_p34",
+      "digest": "3b9a7bc30db8fd00894bdf9fb020490ba3c39eb87c1e02e174c5ec128294d9f6",
+      "text_sha256": "3b9a7bc30db8fd00",
+      "lang": "en",
+      "outlet": "Al Jazeera",
+      "country": "QA",
+      "exposure": "sibling_calibration_article"
+    },
+    {
+      "article_id": "A036",
+      "paragraph_id": "A036_p03",
+      "digest": "a62737bfd2c1f286a78bb6ea9be14f2bce947394304b8b9c433a4ec0a5792b36",
+      "text_sha256": "a62737bfd2c1f286",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A036",
+      "paragraph_id": "A036_p04",
+      "digest": "b5b85221a6ec9c19a87811e849c61d077db43f4d466cbd8dc34134372c762bd7",
+      "text_sha256": "b5b85221a6ec9c19",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A037",
+      "paragraph_id": "A037_p01",
+      "digest": "1df68e2759a9aff4cb1c0bb0121f1bc9336078aa96d88e25fe8dd070a3473b1b",
+      "text_sha256": "1df68e2759a9aff4",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A037",
+      "paragraph_id": "A037_p04",
+      "digest": "34844f8a032ab3c936711a6eaa985dfc700f41401721b2e6504ae6350fe5ac8c",
+      "text_sha256": "34844f8a032ab3c9",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A037",
+      "paragraph_id": "A037_p07",
+      "digest": "8db2c5c537d0b91675552697affe0fe4791f4f067d5e2448ee301e79a2d41669",
+      "text_sha256": "8db2c5c537d0b916",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A039",
+      "paragraph_id": "A039_p03",
+      "digest": "b6184c1a409327997f6730f0a6791834e3139ef03ee67f30842ca7ce2c63e679",
+      "text_sha256": "b6184c1a40932799",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A039",
+      "paragraph_id": "A039_p05",
+      "digest": "41afe51af3839aeec071f962c75a794e6e5413597d640af603bba9de2632e0a6",
+      "text_sha256": "41afe51af3839aee",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A039",
+      "paragraph_id": "A039_p06",
+      "digest": "9e645714ffffb557791b20f94f2381edb26d5c2ad186d13b7fae3ec18ded79c7",
+      "text_sha256": "9e645714ffffb557",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A041",
+      "paragraph_id": "A041_p01",
+      "digest": "a1b016ab85c97ea6135ca7a0a7d1511cc5b0c7d0103874bce4902be4cf877cf8",
+      "text_sha256": "a1b016ab85c97ea6",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A041",
+      "paragraph_id": "A041_p03",
+      "digest": "d7685e233542fd65703c32f327c1f89a0fb62aaae79d5ae15428c597a848bdcf",
+      "text_sha256": "d7685e233542fd65",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A041",
+      "paragraph_id": "A041_p06",
+      "digest": "f0be48e36a88be0df390d21ae7103db795b46b5fc56db8b6faa566fae6c9d2f5",
+      "text_sha256": "f0be48e36a88be0d",
+      "lang": "de",
+      "outlet": "BILD",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p03",
+      "digest": "6e4c3bd809f553bfd44fa3dda1fc454a93a33172c5f52352e32bb30bd6bb3b5d",
+      "text_sha256": "6e4c3bd809f553bf",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p04",
+      "digest": "9cf2c72c8069296238df2ad1721f18352dd9abe7d248f815f0a30c5965194282",
+      "text_sha256": "9cf2c72c80692962",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p07",
+      "digest": "c035045deda87cc048cc0fca20cb97880cc070cdecec748dd20fea8a89dc86b6",
+      "text_sha256": "c035045deda87cc0",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p08",
+      "digest": "f62914721c3340fddab5770fca6aef383116bd4880e3ae0a9d354bdb0e06243b",
+      "text_sha256": "f62914721c3340fd",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p12",
+      "digest": "d2834b1be808e12dc647a4db2eaf154a24c78c5e6e81915bb88a39602a8c0155",
+      "text_sha256": "d2834b1be808e12d",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p13",
+      "digest": "80be0d184f2659fab446322997536055be09e298ff9cd54bbd273c522118fe60",
+      "text_sha256": "80be0d184f2659fa",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p14",
+      "digest": "95aafe462e376b00b42c022ca8727d02e5b788774ef7b069d46d2948801c639a",
+      "text_sha256": "95aafe462e376b00",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A042",
+      "paragraph_id": "A042_p15",
+      "digest": "bfe1c82117611ee022ab8b589ac327b365a707247e3a8c327e5980ebd24fb56c",
+      "text_sha256": "bfe1c82117611ee0",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A043",
+      "paragraph_id": "A043_p02",
+      "digest": "7b47881d23d0031d90ec3fb6094ee8359392d3cf7275b9e78bdc893eec52c580",
+      "text_sha256": "7b47881d23d0031d",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A043",
+      "paragraph_id": "A043_p03",
+      "digest": "cd1876133b7ab59726550dae154b991d6ddc177b4d0eec919160072bd974ec95",
+      "text_sha256": "cd1876133b7ab597",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A043",
+      "paragraph_id": "A043_p05",
+      "digest": "433385adb3acd8155cd0ee5c5a2925be73aa67575401138b1c756baafa8319aa",
+      "text_sha256": "433385adb3acd815",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A044",
+      "paragraph_id": "A044_p01",
+      "digest": "3b9a8e2be0abe170cecbf094e8fe8d90415b77d3d59e3a724a6a7d27426a4477",
+      "text_sha256": "3b9a8e2be0abe170",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A044",
+      "paragraph_id": "A044_p03",
+      "digest": "fca25e5065c74c3d679639e88f06e7bbb49c1bb7ddb9c3e982043b4b30855af9",
+      "text_sha256": "fca25e5065c74c3d",
+      "lang": "de",
+      "outlet": "DIE ZEIT",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A046",
+      "paragraph_id": "A046_p02",
+      "digest": "821c1fbfdc97acc8bf9f8730cd85c62581d58606d90840e2958371ce4346996a",
+      "text_sha256": "821c1fbfdc97acc8",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A046",
+      "paragraph_id": "A046_p06",
+      "digest": "3f83a4f6cbc12658749e0614844e45622d8c05bb575509c67f22a4abc82deb1d",
+      "text_sha256": "3f83a4f6cbc12658",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A046",
+      "paragraph_id": "A046_p08",
+      "digest": "94347f3e89c5969bd5187e5ba56fafb13e974deaebac6d1f7cc1dc73d8762ca1",
+      "text_sha256": "94347f3e89c5969b",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A046",
+      "paragraph_id": "A046_p09",
+      "digest": "32f4bd727048e346581e4735721981011d67ad1bfa29637cfceebb069755c9cd",
+      "text_sha256": "32f4bd727048e346",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A046",
+      "paragraph_id": "A046_p12",
+      "digest": "446d10a0fe4ff4ad0762bcfc58f5e23ebcf1a957e892eabc3ead479e27e92642",
+      "text_sha256": "446d10a0fe4ff4ad",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A047",
+      "paragraph_id": "A047_p01",
+      "digest": "f60aa70eeab1d6eeb8f59d7d1debbd0a308078dd7b6e75a983a500d49c1dbccd",
+      "text_sha256": "f60aa70eeab1d6ee",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A047",
+      "paragraph_id": "A047_p02",
+      "digest": "1c113facd603df6e076b3c3da2bd54faa3297c760422663d5a0c742238acd3af",
+      "text_sha256": "1c113facd603df6e",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A047",
+      "paragraph_id": "A047_p03",
+      "digest": "bebb327a63a330528ef789d7f42a4ad842efd0152c8f246c996a6bb4b859853e",
+      "text_sha256": "bebb327a63a33052",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A047",
+      "paragraph_id": "A047_p04",
+      "digest": "c30f969aa3d0c4a4c0c6809d2369fda24976f4486d1f04f22aaaf8bcd5c2a594",
+      "text_sha256": "c30f969aa3d0c4a4",
+      "lang": "de",
+      "outlet": "Handelsblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A048",
+      "paragraph_id": "A048_p01",
+      "digest": "a8a38893bdb29c9912f710ca93bd7cf9fe4d95d525cde3de7e080e397ae6f3bd",
+      "text_sha256": "a8a38893bdb29c99",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A048",
+      "paragraph_id": "A048_p07",
+      "digest": "71f2a6fad1ef4e34e943461a9c44efc235fa69d6e33ac47c56b402aeea29c72d",
+      "text_sha256": "71f2a6fad1ef4e34",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A048",
+      "paragraph_id": "A048_p08",
+      "digest": "5277cff6c56e87f5e72015d803d94e817878c01496c448f914375fa6e68723aa",
+      "text_sha256": "5277cff6c56e87f5",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p01",
+      "digest": "dd3ac13c694f8998b6770ce26ddce2575ec710e0cc8ed1dd1b473eae625dcedf",
+      "text_sha256": "dd3ac13c694f8998",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p02",
+      "digest": "23604a31a2e50765f89549c5f168e80b2b2117f23fc34f9f8fd5fe4636af3e24",
+      "text_sha256": "23604a31a2e50765",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p03",
+      "digest": "33e4c3cd7b6a8d477f15ff33094eb25a896908db04c70c455b8103a2f589f648",
+      "text_sha256": "33e4c3cd7b6a8d47",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p04",
+      "digest": "47a8a8dd6b54bfed5015b7ba9e165f2f3dd68d09caca73185048921a31fa5ee4",
+      "text_sha256": "47a8a8dd6b54bfed",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p08",
+      "digest": "d1045f354a8196470e58aff780adfd06762445f9fa54d27557a0f6c3f3a43074",
+      "text_sha256": "d1045f354a819647",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p09",
+      "digest": "4c63075f16c391143dccd47e700a572d398d36cc33377b4e150bb7ace8988ecb",
+      "text_sha256": "4c63075f16c39114",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p10",
+      "digest": "042a03b073c8feccf3771de4ab00b2155c5001ef7cff23a335942533edb72edb",
+      "text_sha256": "042a03b073c8fecc",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p11",
+      "digest": "af73df5475ded57049da660321a96c0cf0319db09dbc934ec8fc9ed8d5131a4c",
+      "text_sha256": "af73df5475ded570",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p12",
+      "digest": "3b6580d27ef0a255727a4d28c7ef353783582920d2060636bcd7a3d95e369f4b",
+      "text_sha256": "3b6580d27ef0a255",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p13",
+      "digest": "30644e4d9ed1e9e1db112e24145372548efdfbe3461ffb0e3f40da8cfeac6c4e",
+      "text_sha256": "30644e4d9ed1e9e1",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p16",
+      "digest": "66a9488a49ac19c435f3dbc8cbec16aaeb48d676df79b97ef0a6756ea29b1cba",
+      "text_sha256": "66a9488a49ac19c4",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p17",
+      "digest": "febd302ebd70987ca00148d29f4bae0bc924f1882425dbcf5c55fa1a2938f317",
+      "text_sha256": "febd302ebd70987c",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p18",
+      "digest": "59a35b855fd4fdaf66acd9f861581ac162186c9b02732e1e8fcc1824903bfcc1",
+      "text_sha256": "59a35b855fd4fdaf",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p19",
+      "digest": "4a847c0a0ba35382b52aff7c1c6bb04a0148eb3d01f9c9742f619a39e395738a",
+      "text_sha256": "4a847c0a0ba35382",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p21",
+      "digest": "0784338b3158175998721f8eab8ccd0f30504abc6029e0e6aedd1554757c225b",
+      "text_sha256": "0784338b31581759",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p23",
+      "digest": "18d2289f2f7c5e8ef43e589edc383c32da4ce9a3954cb812071d64e34f2b4b27",
+      "text_sha256": "18d2289f2f7c5e8e",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p24",
+      "digest": "06dccd6d4b349d48828aea372aab57fcb1524f86e64d40152421309e2c3df49d",
+      "text_sha256": "06dccd6d4b349d48",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A049",
+      "paragraph_id": "A049_p25",
+      "digest": "9862c98acc33d0b4417dfeda408696292478c6ea6c5a268ba259d71b20db518b",
+      "text_sha256": "9862c98acc33d0b4",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A051",
+      "paragraph_id": "A051_p01",
+      "digest": "6f4a6942fda30446988cdcf8ea5f9215a084a309907a942c05563398881800ec",
+      "text_sha256": "6f4a6942fda30446",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A051",
+      "paragraph_id": "A051_p03",
+      "digest": "4e20dfe303e906bda4ad1ed11df2e3218415da848dde7bb9346cbcbda12fc714",
+      "text_sha256": "4e20dfe303e906bd",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A051",
+      "paragraph_id": "A051_p04",
+      "digest": "b9b8760005e3a3231c095300092843049384a0629adaf338c9e92db4519d42c0",
+      "text_sha256": "b9b8760005e3a323",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A051",
+      "paragraph_id": "A051_p07",
+      "digest": "23f6c9f7e3aee4badd1452f22eb20a8225c812d821025b87c2f9c4ba078e49ab",
+      "text_sha256": "23f6c9f7e3aee4ba",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A051",
+      "paragraph_id": "A051_p09",
+      "digest": "8d352350c27e2a79c4eb1f09cd3bb93fb83dd68299459a67d4188703f0e746e1",
+      "text_sha256": "8d352350c27e2a79",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p01",
+      "digest": "2185a326924b3f85d38fda27cbc674f13b96163c146967be604f4515220da70b",
+      "text_sha256": "2185a326924b3f85",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p02",
+      "digest": "c8f5dc7ea39d6424178c57bd4b7b1d511b543b2ae2568364d3634b6533044819",
+      "text_sha256": "c8f5dc7ea39d6424",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p03",
+      "digest": "7763f907dad8ec1496304ecd60344ca2724fc15bd06300f5c4099124701bd574",
+      "text_sha256": "7763f907dad8ec14",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p04",
+      "digest": "3bb29c91da8e87edd80d53707a218fc0e8d9ce3d5caa4307e047ccdf8424372a",
+      "text_sha256": "3bb29c91da8e87ed",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p06",
+      "digest": "200800eca31c30c4fd48fff46953d9389ba4de6f9475ce845190bceeba2a241b",
+      "text_sha256": "200800eca31c30c4",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p08",
+      "digest": "5140772c0aed9cd11a10e0ce12d06e8a88ece0689e69121c16ca6ea0356d75ff",
+      "text_sha256": "5140772c0aed9cd1",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p11",
+      "digest": "0550543c04e5bbe6ede9a7a88bea610782411cb8a754b91d6d24f1286bb83d4c",
+      "text_sha256": "0550543c04e5bbe6",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p15",
+      "digest": "ea91beac73fb90b13fb4f8eb080c796fec7adee53fc5e2b5a6dc76e4d1fec39c",
+      "text_sha256": "ea91beac73fb90b1",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A052",
+      "paragraph_id": "A052_p16",
+      "digest": "69de9a1e67ffeb0cb1de90323e62607bb8167d9144947641b81bb63bd36a264f",
+      "text_sha256": "69de9a1e67ffeb0c",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A053",
+      "paragraph_id": "A053_p03",
+      "digest": "a2266e8d98bd959aa782f09a246e3ce446383a09cc67a04801e277bfd4429a20",
+      "text_sha256": "a2266e8d98bd959a",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A053",
+      "paragraph_id": "A053_p06",
+      "digest": "ab4e7af2ef494cfde23a00badfe2ee65bc8ccb5470919ea377db6d8e69a5882e",
+      "text_sha256": "ab4e7af2ef494cfd",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A053",
+      "paragraph_id": "A053_p10",
+      "digest": "abd8c89c9786ef01e8397ab7dfab2ed6f62887333fd2dbe2c345ea76c130087e",
+      "text_sha256": "abd8c89c9786ef01",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p01",
+      "digest": "b1ce01b12bb8fa18ff9db3498a95bdc6e46a1421f8570e52473685165a4c5e1c",
+      "text_sha256": "b1ce01b12bb8fa18",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p03",
+      "digest": "9761720eefbdd60097b42eb8dd486b893207f8ed523239307730451bb94e7cb9",
+      "text_sha256": "9761720eefbdd600",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p07",
+      "digest": "769652f42920b2198674f2d17b52e21aa8f01e38c1f9e2b90a694235880281ce",
+      "text_sha256": "769652f42920b219",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p10",
+      "digest": "447676e83c4bb25ed367cfd13e370767c314588447eb8c10e6c4dc18eb6b25ec",
+      "text_sha256": "447676e83c4bb25e",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p13",
+      "digest": "c6d1b3dd227813f3d22627b4473289dbf3d683a4c19402ca9bfb8c03d71ed288",
+      "text_sha256": "c6d1b3dd227813f3",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p14",
+      "digest": "39727581e00176fbdebed7716c20ace2818d5f48a66b2028676511fef8ebd637",
+      "text_sha256": "39727581e00176fb",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p15",
+      "digest": "59c3546ed304cef7ce2af44da534f44da48c67073b9360dc750ce116359858e4",
+      "text_sha256": "59c3546ed304cef7",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p19",
+      "digest": "071c748c0916f871d2cd2ca11863e4e385a40a31b1dc085c68a5e093e142853a",
+      "text_sha256": "071c748c0916f871",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p21",
+      "digest": "4ed2d41d9d1565d05592ee9ef7f0fa3f704f8c8ecd775f5fb9b1d27aa0634659",
+      "text_sha256": "4ed2d41d9d1565d0",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p22",
+      "digest": "e8f2ccc932e27e8c25037ba065aba795f95e38397c34fe2e89a74b5731043a87",
+      "text_sha256": "e8f2ccc932e27e8c",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A054",
+      "paragraph_id": "A054_p23",
+      "digest": "f3baa3bb982f935a060ce5a1853482359ad55a89025273351c818775a0fedc29",
+      "text_sha256": "f3baa3bb982f935a",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p01",
+      "digest": "4f6668f6427c73f23d2dccc4f9187c7c29c1ab7da980ca4a3f3978d0a947d10a",
+      "text_sha256": "4f6668f6427c73f2",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p02",
+      "digest": "6791aabf3dc8213ecbc93e19831dd61332ac16fdefc0d19d749cad3b4ad48a9e",
+      "text_sha256": "6791aabf3dc8213e",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p03",
+      "digest": "f053d9dfd1578c02bc11567f2b3267bfea1ce1774011a7bdcce510e1573757e5",
+      "text_sha256": "f053d9dfd1578c02",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p04",
+      "digest": "a33aff5764b47e9f8930d689d69d13fbda2ce9d7beccbb58c3fb60a82121e7dc",
+      "text_sha256": "a33aff5764b47e9f",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p05",
+      "digest": "fe3fa0ee9dccd1f28f341e036d70082ef4d0f23e7f5726e3ec780bfd5a5f2ed2",
+      "text_sha256": "fe3fa0ee9dccd1f2",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p06",
+      "digest": "12aea53abbacfd3911eedb6de14fb87f9f3635cf42860a4047d123d666ae45e5",
+      "text_sha256": "12aea53abbacfd39",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p07",
+      "digest": "8f183e38a9a625bcdf8dbbb2cefeecc717777f4bdbef89c9b083fc3a01100fd4",
+      "text_sha256": "8f183e38a9a625bc",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p08",
+      "digest": "382679b3f0b99ce1f8aac511eb521ea4209513aae2efa07f69c3631dc356de7d",
+      "text_sha256": "382679b3f0b99ce1",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p09",
+      "digest": "339277a7b39640e0b13e41634854e059274304a47241932327086c584a607f31",
+      "text_sha256": "339277a7b39640e0",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p12",
+      "digest": "9328fcc85d8a6aed160807faf7f7fa6ec01df3c867f7269c079262065ff06d56",
+      "text_sha256": "9328fcc85d8a6aed",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A055",
+      "paragraph_id": "A055_p13",
+      "digest": "ea6b559a30b39fbad937460d4511edd192962caa650b09c8d82aa1427e1d7ec3",
+      "text_sha256": "ea6b559a30b39fba",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A056",
+      "paragraph_id": "A056_p03",
+      "digest": "077602bc05541c507f7c722e7eb4bed71c05a37d867a877408d36d03f14dfd37",
+      "text_sha256": "077602bc05541c50",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A056",
+      "paragraph_id": "A056_p04",
+      "digest": "5b13eab1b79b53a843a0d0b01dbd9d88376a47664fb7b5f3ccddaf891d4f7ea7",
+      "text_sha256": "5b13eab1b79b53a8",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A056",
+      "paragraph_id": "A056_p06",
+      "digest": "454ded1226926fae4413a83af81d2a9a0d9cc6fde2a5512793fa400080836b22",
+      "text_sha256": "454ded1226926fae",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A056",
+      "paragraph_id": "A056_p07",
+      "digest": "df3590b96bf62b339203c8bf83026912aa56ebda07fe46d0f4ef78b5b1b91844",
+      "text_sha256": "df3590b96bf62b33",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A056",
+      "paragraph_id": "A056_p08",
+      "digest": "a54df488282870afb1948c31615f805d07911cf0c264be00164e997df8d57a4b",
+      "text_sha256": "a54df488282870af",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A056",
+      "paragraph_id": "A056_p09",
+      "digest": "0dde6cecff98a3766fb078285d46261eaa84e3be8e627a49954a04a9cf493df1",
+      "text_sha256": "0dde6cecff98a376",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A057",
+      "paragraph_id": "A057_p02",
+      "digest": "43f6d71e89828555a516d089070499826fe568ff74edb70f259e69d9c48db4a0",
+      "text_sha256": "43f6d71e89828555",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A057",
+      "paragraph_id": "A057_p04",
+      "digest": "0cf56504c30e7da1062739a11dab5056c419d3e2aa5d0bf731b25a320432d575",
+      "text_sha256": "0cf56504c30e7da1",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A057",
+      "paragraph_id": "A057_p05",
+      "digest": "933439f33963e1685419d381bd83d3b0f2d40b653d1a46882ab766e518d87e64",
+      "text_sha256": "933439f33963e168",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A057",
+      "paragraph_id": "A057_p07",
+      "digest": "4a6905928b0c52638fe0e1a8027ed19dc8beeb0589fcbbe14aa4f9562b572c67",
+      "text_sha256": "4a6905928b0c5263",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A057",
+      "paragraph_id": "A057_p08",
+      "digest": "24856a38218ac64915de330fd6c68ebd46c8dde634135fee27699902a4fd1b2f",
+      "text_sha256": "24856a38218ac649",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p01",
+      "digest": "1db7384644df3ab5457eb150b6b36c69e6c1b88ae4fed9580dccb39b14b05e9d",
+      "text_sha256": "1db7384644df3ab5",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p02",
+      "digest": "b0ef88b8fcf12b4af132db20f360af3155d7cd9a23ec54f2a28faf991a1f4f85",
+      "text_sha256": "b0ef88b8fcf12b4a",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p03",
+      "digest": "bfd3228b8807136d76243a60511f69289f5452f6957d82a2cc018901301908d0",
+      "text_sha256": "bfd3228b8807136d",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p04",
+      "digest": "eace682d87a8aefc737172af14e6bab6faf60cf053c35c055c555bebef2cd69d",
+      "text_sha256": "eace682d87a8aefc",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p05",
+      "digest": "50179a58fa5c149aca98688953c1467d81304627e71f51204ea3627a6d2ab21f",
+      "text_sha256": "50179a58fa5c149a",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p07",
+      "digest": "12bfee8bee57c627544868056f32d5d6153b7251ef7e175d50824e944ed54be6",
+      "text_sha256": "12bfee8bee57c627",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p08",
+      "digest": "394d7e7344438ec71be6ad41b46210b4b0ec5ca1066bebf5d92189d7477c0c60",
+      "text_sha256": "394d7e7344438ec7",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p11",
+      "digest": "8763279fa72a89ec0f434c8e139881ec317b5417bfde9265e1e026fa1e42a7e7",
+      "text_sha256": "8763279fa72a89ec",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A058",
+      "paragraph_id": "A058_p12",
+      "digest": "1487aaa9f4f8f372e5d245a0cb23128ba87fe2cf495f4999368dfb854a8ed8c9",
+      "text_sha256": "1487aaa9f4f8f372",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A059",
+      "paragraph_id": "A059_p01",
+      "digest": "df9af8ac1e0a2bc586d4af223d5bdc14e769e99a64367e7faf6f344818ab7fac",
+      "text_sha256": "df9af8ac1e0a2bc5",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A059",
+      "paragraph_id": "A059_p02",
+      "digest": "a48da4642e43a1dc8e1ddd13f84606bd18990e8525142644a9effc337ea12379",
+      "text_sha256": "a48da4642e43a1dc",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A059",
+      "paragraph_id": "A059_p03",
+      "digest": "3d3fb4aa471725c7b7b4ad3c064e8483c37e05be291151d405059d168a7955d5",
+      "text_sha256": "3d3fb4aa471725c7",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A059",
+      "paragraph_id": "A059_p06",
+      "digest": "8bf88eddd8bd204c147e16b95cc751a7aaa08c467aba2c6f8385a19a42670c3a",
+      "text_sha256": "8bf88eddd8bd204c",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A059",
+      "paragraph_id": "A059_p07",
+      "digest": "53ac0c59dd223221ed4a491f5f1e1a06a71ad2a7fd43da79f5de3fd11944b679",
+      "text_sha256": "53ac0c59dd223221",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A059",
+      "paragraph_id": "A059_p08",
+      "digest": "6727241b214d778d5c7bbd0b64b859952abca830079efa7fff2f833c80bc4e3d",
+      "text_sha256": "6727241b214d778d",
+      "lang": "en",
+      "outlet": "The Economist",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p01",
+      "digest": "9128cc4b7cc6c935caf2579d5faed87af66996a9d56b00e57904ddf46beb7792",
+      "text_sha256": "9128cc4b7cc6c935",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p02",
+      "digest": "c9e2f57ccbcd8280b8a4b374a1b83430dc4b449abec01085dfedbedd9b08708f",
+      "text_sha256": "c9e2f57ccbcd8280",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p03",
+      "digest": "3b8851f3af1c43f47a9432ce0ac48050009ba6e2f6879574cd5e801afd3acf47",
+      "text_sha256": "3b8851f3af1c43f4",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p04",
+      "digest": "f55392094350adf25f793f1507eb6b13c2d550c19ccd4141a0855240759e03c1",
+      "text_sha256": "f55392094350adf2",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p06",
+      "digest": "b2d1148437d69ecae0ed956f6ac538adc9007b3b664a0d3961214f86de2e3886",
+      "text_sha256": "b2d1148437d69eca",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p09",
+      "digest": "5bc00f0e82d76be298186a4619c92459eea173eb8c7fb888da0275d82f3581ea",
+      "text_sha256": "5bc00f0e82d76be2",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p11",
+      "digest": "3e77b7ac013f020bbcc889f74623dfe7e9f38bad774ca396c2e5e965df9f9c23",
+      "text_sha256": "3e77b7ac013f020b",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p12",
+      "digest": "fb0d74ddfe595448089945a9dd7a787ee8a085a98dd971f84d9977957418f632",
+      "text_sha256": "fb0d74ddfe595448",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p14",
+      "digest": "f4e488abd65a91557665247b0d1f0436db50610b6bad1069e949e291c63408e2",
+      "text_sha256": "f4e488abd65a9155",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p15",
+      "digest": "270d0cc57d201a26686c38c634c2e8588982c91ba9a34ca2284152bde941e2cc",
+      "text_sha256": "270d0cc57d201a26",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p18",
+      "digest": "24cc14c686542fa485de6144ca6ddacad1cc61bc78aed0c80c6727ca01e8c1a0",
+      "text_sha256": "24cc14c686542fa4",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p19",
+      "digest": "ef3db803b7539fd550e4d7e3a5fb620481e4ff6fee071a3bfceb06a9d736d971",
+      "text_sha256": "ef3db803b7539fd5",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p20",
+      "digest": "0e10afcbbabe0222d9cb9515d0fe91f8f21b98c8e0b60f58c3672c8c3bec024a",
+      "text_sha256": "0e10afcbbabe0222",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p21",
+      "digest": "21c2d172d37f379ea9e8cf197810fb0f9ee6c664ba0c59beb6a7bc0e5a690703",
+      "text_sha256": "21c2d172d37f379e",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p22",
+      "digest": "fcb6fd3c9ae75510f99f1994edcdeb56e4a6a924a9ed4a839e4ebe4315b32d53",
+      "text_sha256": "fcb6fd3c9ae75510",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p24",
+      "digest": "b58f356ca11422d578771c80904a026d060b712581d55be0ea4231b45dbf3b5f",
+      "text_sha256": "b58f356ca11422d5",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p26",
+      "digest": "3762f8fbb73be9af42da9c219c0f330de320dc27ffda9fd719d8ef69adcdf817",
+      "text_sha256": "3762f8fbb73be9af",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p27",
+      "digest": "3f69adda8471999db5de3cc9ff5fac4a6dbe578e46185840aa87c96fe5bc9e43",
+      "text_sha256": "3f69adda8471999d",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p28",
+      "digest": "c5168b9e01f3396005a8e1a9f8fc57ab9ce091eff2b3eee149a317bbba1b7850",
+      "text_sha256": "c5168b9e01f33960",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p29",
+      "digest": "39f95d45bb6d47f6900a5f5b78a08e2171f064ffa9fcc213d836d8e02afa0129",
+      "text_sha256": "39f95d45bb6d47f6",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p31",
+      "digest": "178e7675de5fad0892ce1200cac53863010243873f9572ba0f656cf5495d5768",
+      "text_sha256": "178e7675de5fad08",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p32",
+      "digest": "8436c9930a3bfd3829d763aaefab539b6508f1e897eb7c1f9ab152646b0523ff",
+      "text_sha256": "8436c9930a3bfd38",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A060",
+      "paragraph_id": "A060_p33",
+      "digest": "0ce4c856943fd3716e32cc5151caeb1ad031f5c460aa3f05b9621d924890a229",
+      "text_sha256": "0ce4c856943fd371",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p01",
+      "digest": "7de84192927a788227ff2bf505a70fbf094d5923f6175193450f56d95ec802c1",
+      "text_sha256": "7de84192927a7882",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p03",
+      "digest": "2f9dfa0801b93019ef490f927692bcc007404188b75d678928fea6d170fe8d21",
+      "text_sha256": "2f9dfa0801b93019",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p04",
+      "digest": "46e2e4aef7a9bd77aea47348d2cf286c5ac4a8745b152f606fbb1087b6cf7d19",
+      "text_sha256": "46e2e4aef7a9bd77",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p05",
+      "digest": "6a8b42be0e93abfe1a15d5d4d2626e29cdc86ee6943e0ff15077608ce456ecfd",
+      "text_sha256": "6a8b42be0e93abfe",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p06",
+      "digest": "88c19c992b8fd81ea2072339a1cbde8da7c3f18b76e038fc17074a257262cfb4",
+      "text_sha256": "88c19c992b8fd81e",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p07",
+      "digest": "477b8d32b7e43a5d5ff7f66a529070e962db60afb46d347707a8577ff510c147",
+      "text_sha256": "477b8d32b7e43a5d",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p08",
+      "digest": "30714c912668cc2125ce4f4c9c32523dd9b51b1b5a343f9d3a12aefb7ff1d1c7",
+      "text_sha256": "30714c912668cc21",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p09",
+      "digest": "9871dc32fdbf340fef37b7bca9e9b9c68b18f7e6466af03d8a8a19ebc674593f",
+      "text_sha256": "9871dc32fdbf340f",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p10",
+      "digest": "a56c33403ce50bf3298047c514746925a1fd3a8b3f1efa13bae9611e7ee133fe",
+      "text_sha256": "a56c33403ce50bf3",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p13",
+      "digest": "82ef0725141cfb6a2d7c88ad11d87c855f29a48267302efee7d50ee1d80357e1",
+      "text_sha256": "82ef0725141cfb6a",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p14",
+      "digest": "7e492c3d9912ac9872228d77fe308d060428592ece4b57d4a6c207f3e0b5fc8c",
+      "text_sha256": "7e492c3d9912ac98",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A061",
+      "paragraph_id": "A061_p16",
+      "digest": "121a2f932740057db69a1c4f9269c97ffdda1e6a6f45fc5029b5ea0e5e5f696a",
+      "text_sha256": "121a2f932740057d",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p02",
+      "digest": "3ba06ebd7636ca3ceb3a7f3b4d60c4b93d2e099794c5049ec6f1992ee923d237",
+      "text_sha256": "3ba06ebd7636ca3c",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p04",
+      "digest": "8f9d4640316577d9f68c6d0e4326a49931a8c894d0ef49ccc0afd087a471536b",
+      "text_sha256": "8f9d4640316577d9",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p05",
+      "digest": "327bdc2a0591c376d55abf1b573995e00a598db7bc875431a4fb1d34a1ef5723",
+      "text_sha256": "327bdc2a0591c376",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p07",
+      "digest": "d4231abc91f11ef7b28af15943221b65867e922e325ac2006f81a78c1be59737",
+      "text_sha256": "d4231abc91f11ef7",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p08",
+      "digest": "2edea04293e5f964d439bb48b4466be48492fe4ab3a6a0f1ab945c63970f19bf",
+      "text_sha256": "2edea04293e5f964",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p10",
+      "digest": "2d9f26d6f86113b88b9fc5fdbfbe16526da758f629ffb5f2181790b56ff5e46b",
+      "text_sha256": "2d9f26d6f86113b8",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p12",
+      "digest": "6fcf94d9e5b31da37c2b6cf63dc3454c790c20aaa571e32b3d8f93ddcace18aa",
+      "text_sha256": "6fcf94d9e5b31da3",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p15",
+      "digest": "210f27de8a6a613827307ac58bd71768ff6647321233f09218dd299dce985901",
+      "text_sha256": "210f27de8a6a6138",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p17",
+      "digest": "2d47333f0b1635f761d55e5982e7ac55721c7f4ab6e70688447e6b6e7e064c35",
+      "text_sha256": "2d47333f0b1635f7",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p23",
+      "digest": "b8f9176bc9147a5c9dc53148e4375e94ab91b0733c6d9c68030462c2b7d91992",
+      "text_sha256": "b8f9176bc9147a5c",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p26",
+      "digest": "f26ebd7d0f59a777ce46f3a485fa9ac0f83935667b2ad8220a6a86028a155ecb",
+      "text_sha256": "f26ebd7d0f59a777",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p27",
+      "digest": "a2120a77e995d2cf742fe7d31f575e23850ef971065776e9dde9193548c78806",
+      "text_sha256": "a2120a77e995d2cf",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A063",
+      "paragraph_id": "A063_p28",
+      "digest": "684f94972548378c0988bacb89789d61cc01f75512a95f8108de7133782b9865",
+      "text_sha256": "684f94972548378c",
+      "lang": "en",
+      "outlet": "The Guardian",
+      "country": "GB",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p08",
+      "digest": "a939fc16a217188e6ac9bf1f04f8dfaa021ced8d85f0c11cc344e1e3e2ee039d",
+      "text_sha256": "a939fc16a217188e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p09",
+      "digest": "6609ec462f33ce5eeea2cad2c150cbcbf4f616f9d2ee6679142629a133412975",
+      "text_sha256": "6609ec462f33ce5e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p12",
+      "digest": "4699ac65ad0c91d45875748b411813169983370422399bdbe845d179ed7d4382",
+      "text_sha256": "4699ac65ad0c91d4",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p20",
+      "digest": "bebcc1980f75ad7400ec28f33aad5fcb348543d59828f7ab3c7afa4bba9c4ff5",
+      "text_sha256": "bebcc1980f75ad74",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p26",
+      "digest": "7efecde00e7bf2be744fbc2985fc95bb3aaffd97794a73ad3cb13346a64da40e",
+      "text_sha256": "7efecde00e7bf2be",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p29",
+      "digest": "2a183ab8c12049f6a10ef264a84fedec5a5ad7a82cf1bea461791357d0963184",
+      "text_sha256": "2a183ab8c12049f6",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A065",
+      "paragraph_id": "A065_p30",
+      "digest": "4ab7744a7215cc92280bc9926dcaf72997e3948fa4f05b75e0b3e20ff0285695",
+      "text_sha256": "4ab7744a7215cc92",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p02",
+      "digest": "b6fa330058d1b2e35e1b4d67b48cb46aeede8c4397b9ce52db933c20fb986bee",
+      "text_sha256": "b6fa330058d1b2e3",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p03",
+      "digest": "1f78f5e6e94ab34f092a7980832c3f36ca7cd7d2804182a49f5f79f5620a69c5",
+      "text_sha256": "1f78f5e6e94ab34f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p04",
+      "digest": "4059b213c362b6c62e2317824940967a0b60edb6836ccec0a7474198aabc379d",
+      "text_sha256": "4059b213c362b6c6",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p05",
+      "digest": "f20bf3a1488ea9e01821ae495068b4af014d7d4eec0d5af0e3bc95e00a6814fc",
+      "text_sha256": "f20bf3a1488ea9e0",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p06",
+      "digest": "2aee2dba9946ad7f5c8ce5e853ab1ce15e84770392c66fa5fa953e0bea9e1368",
+      "text_sha256": "2aee2dba9946ad7f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p07",
+      "digest": "baf189f0bf932b211bad28e99212f799b005c52ea6efd23d31d66c160403420a",
+      "text_sha256": "baf189f0bf932b21",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p08",
+      "digest": "321da3712c02b341c243b18648939bb29a27d7b0932733882a1de47cc889edf3",
+      "text_sha256": "321da3712c02b341",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p09",
+      "digest": "a9598be083b7d1be271dd12b3b16a21d9dc5d041c2e52656b888c272220df80b",
+      "text_sha256": "a9598be083b7d1be",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p10",
+      "digest": "4a6c8e3ca0d544554559c87683de76c25d92e931bacc163ca7f97f423ac25e4b",
+      "text_sha256": "4a6c8e3ca0d54455",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p11",
+      "digest": "66c9f7dcd7e2288fa2e6aedcb4f5651f7a7084bd2bda8f7a77766c0016eeec9d",
+      "text_sha256": "66c9f7dcd7e2288f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p12",
+      "digest": "de36823dd0e4e04dd6ff5e2c518d2eea2117728d6246a4675f543574f36ebfe8",
+      "text_sha256": "de36823dd0e4e04d",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p13",
+      "digest": "da82d9e10aeb7a9f3e0ff294526f55e4c5e6f8acace5ff252a80bfdaa9d7373b",
+      "text_sha256": "da82d9e10aeb7a9f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p16",
+      "digest": "afb5cf5bcb9c221d7720985c15609cfda3e21a6a080e23f13ee13093086ae0ba",
+      "text_sha256": "afb5cf5bcb9c221d",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p17",
+      "digest": "f99832abf6d250b40fd733116d22cd35b793651b441b08a0796eaafa60c35e73",
+      "text_sha256": "f99832abf6d250b4",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p18",
+      "digest": "a3852830e9eb8d407486606dfef0c4f40ecb1b807957dd96b3aede0f712912bc",
+      "text_sha256": "a3852830e9eb8d40",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p20",
+      "digest": "f4fe922865470f2ee85838a8a59b9016c990fbe6dca01c334f96499101a0b142",
+      "text_sha256": "f4fe922865470f2e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p22",
+      "digest": "4dafc21e75aa834b0610691a236d3ede2a68b9bf3422f04846379e87a9953118",
+      "text_sha256": "4dafc21e75aa834b",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p23",
+      "digest": "66b6309124243f3350e4d376a6d53b515e46a623e0fa0fb02ea53f62a78db30e",
+      "text_sha256": "66b6309124243f33",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p24",
+      "digest": "ade55328518e5e45454c799108808205e3d95bfbec2c1bde001cb392840f6918",
+      "text_sha256": "ade55328518e5e45",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p25",
+      "digest": "af85ec78e66f2a5e74650c9cef56b4e455a3406581ec0175b63dca1432f03912",
+      "text_sha256": "af85ec78e66f2a5e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A066",
+      "paragraph_id": "A066_p26",
+      "digest": "418abbfbf99edee2dffe8f614c4838e68e196b15cc4d1772547e45bb29cbe0aa",
+      "text_sha256": "418abbfbf99edee2",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p03",
+      "digest": "48249f02f417df4c32b505b75668dd0649c31460baeffe2b990b7ea865fc5722",
+      "text_sha256": "48249f02f417df4c",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p06",
+      "digest": "2ad244d1860f4a03bc60d40c9a8da8ed23a63933bb62c90558dc9595c345f5fb",
+      "text_sha256": "2ad244d1860f4a03",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p07",
+      "digest": "66cb36f733355d8da541bc2aad7267ce9a484828753fd13d08dfefd4b0d66526",
+      "text_sha256": "66cb36f733355d8d",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p08",
+      "digest": "f1a2fd5db2163562b931f852640b04cba888e5961f15846195e95857d0d43993",
+      "text_sha256": "f1a2fd5db2163562",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p09",
+      "digest": "77fd98704310fa8e2f785a3e8621c3d574518d55b667a6262e52795791c2ac6d",
+      "text_sha256": "77fd98704310fa8e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p10",
+      "digest": "8a0a8b22e0d6dbe38afa0422522ae905c3eb8cd3804d31313e10b8aa9aa842c5",
+      "text_sha256": "8a0a8b22e0d6dbe3",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p11",
+      "digest": "b55394146d7e5c5d2402b91bf5b5bbbaec8867f05666ef420006b4c621fc5f5c",
+      "text_sha256": "b55394146d7e5c5d",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p12",
+      "digest": "fa3df10ff57d9df0e2e81426369d47fafad74bb845ece50e5c716729e775327a",
+      "text_sha256": "fa3df10ff57d9df0",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p13",
+      "digest": "b3e9296a81db73d74c16b0224c058531e4751735c09916e706d8024b0bd108fa",
+      "text_sha256": "b3e9296a81db73d7",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p14",
+      "digest": "f555b5f0a3a43f0fd25fb83efeb577ea4ed928a981a30731256541f6cd549e1b",
+      "text_sha256": "f555b5f0a3a43f0f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p15",
+      "digest": "8119b41d0ae3e56c778db4c74c0154b38ee2994877c6fa7139dd12394479b4d2",
+      "text_sha256": "8119b41d0ae3e56c",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p16",
+      "digest": "8eccb251161108cbe99193739492a25e6304976f200d1faecf4f0c59a5629dcb",
+      "text_sha256": "8eccb251161108cb",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A067",
+      "paragraph_id": "A067_p20",
+      "digest": "2936200b71bf95e51e3d3299972359a294e9d00d4fe8b62c8a66d326bf676b3c",
+      "text_sha256": "2936200b71bf95e5",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p01",
+      "digest": "fc84afd114335c6bee221613d61eca825bcf5c2ccd0ca9e63c51ceee02d9c760",
+      "text_sha256": "fc84afd114335c6b",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p08",
+      "digest": "58b024098c98ae158fc1464a01b3a42a5753bc2c61cda16ce2f3e4207036e035",
+      "text_sha256": "58b024098c98ae15",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p12",
+      "digest": "4984c2ffa23211780f6c3cfce34d6aa0bba3911574bd7cf7788355f60c3f550c",
+      "text_sha256": "4984c2ffa2321178",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p13",
+      "digest": "740f9edf20608bc33e4bd91a2211e024267a657cbf2547307758977292ebc6b0",
+      "text_sha256": "740f9edf20608bc3",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p17",
+      "digest": "4df3c668fc4870af3f41ff66bb59fd3ebc4b4d6f0ebc3ee6d3a1422b29641c08",
+      "text_sha256": "4df3c668fc4870af",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p22",
+      "digest": "786c524dbff27f53b15b9e638f4f9f2159bef9884b39a0b9bad07dc41734931b",
+      "text_sha256": "786c524dbff27f53",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p23",
+      "digest": "3aadf8331d43cfe877eed3a2722cc9c877db31fb669afe166453303e511f53e8",
+      "text_sha256": "3aadf8331d43cfe8",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p26",
+      "digest": "d5ec2ed20de80099c40ef90de000dd2dd4c452e8d4d7654fe710a3ea2e751bdd",
+      "text_sha256": "d5ec2ed20de80099",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p30",
+      "digest": "198319eb2fc9caebf8c729ade712499697ebaca7b5dedd563e1f79e43e275e9b",
+      "text_sha256": "198319eb2fc9caeb",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p34",
+      "digest": "063963419d39737eb6a816a655f0f8c9eeb061fa534163df7bd3f6624d2a118f",
+      "text_sha256": "063963419d39737e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p36",
+      "digest": "67cedccca0700de0a2e08d7269b530cffc8e55a7fb823446b2f8613674d6df10",
+      "text_sha256": "67cedccca0700de0",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A068",
+      "paragraph_id": "A068_p37",
+      "digest": "defa51e942e5bccd3ec08252be916209e316622edfa10e01a20615aacfe37029",
+      "text_sha256": "defa51e942e5bccd",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p01",
+      "digest": "65bfcade97bd53ad21c0f0c0ce194fc09afd214e3d15b764851335ae771b2f06",
+      "text_sha256": "65bfcade97bd53ad",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p02",
+      "digest": "0176a494116134a323bd4d658d8df93942140f9d525b2348c6333207c521ea1b",
+      "text_sha256": "0176a494116134a3",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p03",
+      "digest": "e5343eaf72cf719e9cc47ffaa2e37ffe34e2a3144fe7c93bd54b77770ec49b8f",
+      "text_sha256": "e5343eaf72cf719e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p04",
+      "digest": "4def32044049afee4cc44e87c57f9fd6cb7b8454d88a23520d25e558ac087a53",
+      "text_sha256": "4def32044049afee",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p05",
+      "digest": "73195cdaba295bfb0f0397c6f10aa6d3e758719ab08b96ebfaa23eddf6f727e8",
+      "text_sha256": "73195cdaba295bfb",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p06",
+      "digest": "b4e7567a72274c7acf4b0f8b09841ce57f60fb9dfa5cf358875342f3964f10c4",
+      "text_sha256": "b4e7567a72274c7a",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p07",
+      "digest": "d7f33318ab8e6c45835cadae1d532b19c8f15392f8deb90e5a09280ffaa5e106",
+      "text_sha256": "d7f33318ab8e6c45",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p08",
+      "digest": "af8c7dc6654d7061ad9ec6fb4f25b6e0024ce318cf46b4755bf0427a9820ffef",
+      "text_sha256": "af8c7dc6654d7061",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p09",
+      "digest": "caf5fc0bfbbda2ad08a2d0d52ab7278577671a8cc90df8a99ca8b40af2638e02",
+      "text_sha256": "caf5fc0bfbbda2ad",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p10",
+      "digest": "ee24b9c49a3f7178c0226e9076c923d63066f5516a578f2361b9d1c881a6bcf8",
+      "text_sha256": "ee24b9c49a3f7178",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p11",
+      "digest": "fac899ee08d32dbe5e7ce3ae46447d00a114f92ede6bd580c76ed652dd7aebac",
+      "text_sha256": "fac899ee08d32dbe",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p12",
+      "digest": "dfff2fa5713c19838d8e761b315b61997997e74a499d64ef4181ae76c67e3ef9",
+      "text_sha256": "dfff2fa5713c1983",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p13",
+      "digest": "3e3daeb9aa03eae9dbb8c76c8c5f339ad8176833ab46e4fdabe06ea76a02e66f",
+      "text_sha256": "3e3daeb9aa03eae9",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p14",
+      "digest": "1051259069a8e8167493408f99cbe3e2313a698e6801f7edc42a01e3fcdc31eb",
+      "text_sha256": "1051259069a8e816",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p15",
+      "digest": "8ce0dd9ebb27c9fd2ce42b067e3ccf29e01d5c54bbf941ef2255b40d70cdee8c",
+      "text_sha256": "8ce0dd9ebb27c9fd",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p17",
+      "digest": "3c92f4e1612adeb0abac74cdc1147e1988d3882619fd33537d7768577aa3487e",
+      "text_sha256": "3c92f4e1612adeb0",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p18",
+      "digest": "1ab9b8e22fc57d7b9dcd336fa414d931c1eec0b8f273fdc879efd22e3c208f4d",
+      "text_sha256": "1ab9b8e22fc57d7b",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p20",
+      "digest": "795b830226312b15359fb816836b69a4da5f7c97888cc30b21f36e3cb2dbb1ec",
+      "text_sha256": "795b830226312b15",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p21",
+      "digest": "a772a6a01bef7871e414fafd9fee80a684a00ac88b65e82c46dc80aa514b4e89",
+      "text_sha256": "a772a6a01bef7871",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p22",
+      "digest": "c5ff437e128a6da88932e47725a76bffd224fd029079cd765079a76551dba49e",
+      "text_sha256": "c5ff437e128a6da8",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p23",
+      "digest": "49c2618ad710d7985d37e19fc1d8575210c21b8e0d8f2634f8ca56792193d339",
+      "text_sha256": "49c2618ad710d798",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p24",
+      "digest": "a69de632ceb756c7382bbac3b109ea674ccda8a8a423fb0050ca5af376e4b097",
+      "text_sha256": "a69de632ceb756c7",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p26",
+      "digest": "60988d850a99e8638b050eef0cb33be2aeec7d90c144cc10f47b40600cd5cb63",
+      "text_sha256": "60988d850a99e863",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p27",
+      "digest": "a7732f3765082a6cca845e9f6c558d6eb2d4fb9cf09bcbbbdb5a6271dbf91f48",
+      "text_sha256": "a7732f3765082a6c",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p30",
+      "digest": "cecb25cd72cc615ba15befb22c7ad960541f2d50c195c635b3cceab582364836",
+      "text_sha256": "cecb25cd72cc615b",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p32",
+      "digest": "b13245a8cd07955152f31af35166047a9da09141912133207e92e1ecb7292b72",
+      "text_sha256": "b13245a8cd079551",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p33",
+      "digest": "12b7753fcd65e90cda3efc12552d654d958a5f66dd348974c0f8307b91c074a8",
+      "text_sha256": "12b7753fcd65e90c",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p34",
+      "digest": "3e0a804a9199a5d3360dd6a8f1121408db04d726b38c7ed40184b2045710844a",
+      "text_sha256": "3e0a804a9199a5d3",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A069",
+      "paragraph_id": "A069_p35",
+      "digest": "673b006bf4270c2c097eb5e0be82216b796365779eec27cf762c990f83b44fe1",
+      "text_sha256": "673b006bf4270c2c",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p01",
+      "digest": "96c04cbef8498035d97c39bb1f544cdead6c1e7caef0d37e44f97b1aaa427ff5",
+      "text_sha256": "96c04cbef8498035",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p02",
+      "digest": "5a24ad12a28c8447361e48dab7b48dacc390613f52c31334b1aeea453b56672c",
+      "text_sha256": "5a24ad12a28c8447",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p03",
+      "digest": "f7fb18f11deeb2fccb314ea27ed2bd5283f49366fa6aadfb31793413eab12b05",
+      "text_sha256": "f7fb18f11deeb2fc",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p04",
+      "digest": "8d72c66c4b3a35611a415fc7856b88ed95d0a7a16b63d829e075ab935faf2e26",
+      "text_sha256": "8d72c66c4b3a3561",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p05",
+      "digest": "0f8c63f99450f27f0f7b3486fa62072d7ca3b40a0d03c8d881e37429d9a69f49",
+      "text_sha256": "0f8c63f99450f27f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p06",
+      "digest": "a0363bd9595a3abc0d01270aa03399fa40c5fcdf44fd2bc57366c704da9d41fb",
+      "text_sha256": "a0363bd9595a3abc",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p07",
+      "digest": "ef96e6453c609632cd33c0b368d2cbe73e452209e947dc923bd28c3d69a200ab",
+      "text_sha256": "ef96e6453c609632",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p11",
+      "digest": "6d0e456490647216d7d9cbbc3a43f92c622b4ee107614e81a58b7de1e00fbc03",
+      "text_sha256": "6d0e456490647216",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p13",
+      "digest": "b651009ba5ab701436938c034fbfd040d2a70a7b6e01d6ad4bbf2c5595d5394f",
+      "text_sha256": "b651009ba5ab7014",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p14",
+      "digest": "f6735d165d72eb58ec775c216a44d6e82637bed48e43512eb8ac56a0fdf98331",
+      "text_sha256": "f6735d165d72eb58",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p17",
+      "digest": "b9b87e75cce7cde168091f269759866bc3eebf7ca55655aa78a9f7f9d404521a",
+      "text_sha256": "b9b87e75cce7cde1",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A070",
+      "paragraph_id": "A070_p18",
+      "digest": "73a7d502c422d2a44a8e7c6e478dc05c36fc0277fe07f96916fc4daca3367bae",
+      "text_sha256": "73a7d502c422d2a4",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p01",
+      "digest": "d3ee1a19cfc8937a1fff7cc78b8de7e7ea8f01f77dfb13cce592c496a9cfe4c4",
+      "text_sha256": "d3ee1a19cfc8937a",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p02",
+      "digest": "600005a7a35087990d9baf6cd592f97599b30f9fb09235bd7a714420f35b7890",
+      "text_sha256": "600005a7a3508799",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p05",
+      "digest": "65c4f03def5e9020f4cab69894e438eeae0112222c909743c284b3b8c6bccb89",
+      "text_sha256": "65c4f03def5e9020",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p07",
+      "digest": "f808644ceed02ccc8f2eaca265b1606c82d8c958456d2c18cff2d8f46ded2617",
+      "text_sha256": "f808644ceed02ccc",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p08",
+      "digest": "677cd252eecd0b38e86deda2a7954a1eae727ff5ec992c38fbc722d091f767f0",
+      "text_sha256": "677cd252eecd0b38",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p09",
+      "digest": "3bf03f6a6ce4767fa07fc80dea67f6cda594827b1392bc452b77d5c2c0118bd0",
+      "text_sha256": "3bf03f6a6ce4767f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p11",
+      "digest": "89332eb180a065b6b9975bf27644c43afdcefc7c5851e6f2b14e2e6f8133d35d",
+      "text_sha256": "89332eb180a065b6",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p12",
+      "digest": "564712c89d6b6f59fd2f3e87a1d60cb8d3b113b620e30f0e77f6358e4cbbbe7c",
+      "text_sha256": "564712c89d6b6f59",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p14",
+      "digest": "0839aa0a2b8e6e50bd457d4da49e2659ecffc38b07fa6f65e85e8f528e5f162e",
+      "text_sha256": "0839aa0a2b8e6e50",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p15",
+      "digest": "893b8e7285a2e09fb57a489a509a308557c338b28744127d2123b596ab048c28",
+      "text_sha256": "893b8e7285a2e09f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p16",
+      "digest": "c2be0754bd12bdff2eda30d38c981a29ed4d344f386e6cc60fed5e67a399c0a2",
+      "text_sha256": "c2be0754bd12bdff",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A071",
+      "paragraph_id": "A071_p17",
+      "digest": "78cf271dfbacf97e6dc526caa4d43bef8f7eb52a676f3ad962e855649e5040bf",
+      "text_sha256": "78cf271dfbacf97e",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p02",
+      "digest": "d4e0a152a14f298f2dd3b53c3b10dd79fc016417001d2692852524003af63014",
+      "text_sha256": "d4e0a152a14f298f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p03",
+      "digest": "9aa5ff0db8f907a454935aad89c5604e823d31ffd28c35a1112fb30c1aae3b89",
+      "text_sha256": "9aa5ff0db8f907a4",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p05",
+      "digest": "9596efd956555055433e5cd09933320efe83a5590933e0333cce1b4c113c12e1",
+      "text_sha256": "9596efd956555055",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p08",
+      "digest": "5fc9c079a428ae042492d39696a2b1664c06112430218167afec280365aed34f",
+      "text_sha256": "5fc9c079a428ae04",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p09",
+      "digest": "9ae11d73255386f27651c1b0d5b28e5d027dd014e90325f7b5abd713676b1732",
+      "text_sha256": "9ae11d73255386f2",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p11",
+      "digest": "235c9fe12a10d6bebe5cac981d9b424ca7f93c9d8d6d0794e5f6dbd3b291f991",
+      "text_sha256": "235c9fe12a10d6be",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p13",
+      "digest": "f4f2a98dc82d6988d15eb011124344f7b246720e14065e2f965d4eb73e5035d9",
+      "text_sha256": "f4f2a98dc82d6988",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p19",
+      "digest": "0d34010128c37f7ad1c5b8349f652fdf146951d22c4f13785eaaf2df346aa5a0",
+      "text_sha256": "0d34010128c37f7a",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p20",
+      "digest": "4651d87310a11285fa3229061d4672465712205815d5d7d7bee74cd0b07dcd99",
+      "text_sha256": "4651d87310a11285",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p21",
+      "digest": "8b9dec525aa4bd6af82dc1cd2518aa8a654a3d502ed0832819f5819ec244190a",
+      "text_sha256": "8b9dec525aa4bd6a",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p22",
+      "digest": "6662ddb84de4aebbec5c088d4cbee72401e2a65e398521dc159b0f0c7b3f501d",
+      "text_sha256": "6662ddb84de4aebb",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p25",
+      "digest": "056f06b3695bcae57149556222038188e905f7eeb0192f3501c88b8939f08ba5",
+      "text_sha256": "056f06b3695bcae5",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p39",
+      "digest": "acc5914b6e9c8b3087289d9d1d75722224157f46fb27a2656bb271307b775999",
+      "text_sha256": "acc5914b6e9c8b30",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A072",
+      "paragraph_id": "A072_p40",
+      "digest": "93c1bdfaae148247feb5ec7cb5ddb38e28187ae58ff69e79640050c2507d7ad8",
+      "text_sha256": "93c1bdfaae148247",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p01",
+      "digest": "783494405acf9821efa48d7be28eda1019d1d3c69fc90f9e74eb758f4bafc5a6",
+      "text_sha256": "783494405acf9821",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p02",
+      "digest": "93fab7d0d6a1fa001b3de9fb0cec1e90668d942658d83cfc06d4a6db82894313",
+      "text_sha256": "93fab7d0d6a1fa00",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p03",
+      "digest": "05fb63d62c5e192ff3409ffc36f893b4b3f75cf0bcda9d8766724b8252770bd9",
+      "text_sha256": "05fb63d62c5e192f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p04",
+      "digest": "8747dc511045185a3d846ef594dcefe74a4722aa420570b249b85ce7fec8fd5e",
+      "text_sha256": "8747dc511045185a",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p05",
+      "digest": "3b35755eba02ee84e3628320fef4a18f5fbfe776e71f0bb6105ca8f65f848227",
+      "text_sha256": "3b35755eba02ee84",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p06",
+      "digest": "f22de4a884014e289a64a31a96101b7dcad1926b031ed91643729504d0f2a1fe",
+      "text_sha256": "f22de4a884014e28",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p07",
+      "digest": "784f68eeffbe2e379c7c135cd9aad8c2161cf6ba1e18b3045cb32e709853c8df",
+      "text_sha256": "784f68eeffbe2e37",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p08",
+      "digest": "33c434122e31f6555c2c1f32cf0d44becb90b600c3776827ab440be5a461d5f3",
+      "text_sha256": "33c434122e31f655",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p10",
+      "digest": "f6b7f87b0d3fa1928fe05598db1b5561f9893a163db0cdbbc40c2c92d3a7627b",
+      "text_sha256": "f6b7f87b0d3fa192",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p11",
+      "digest": "d401c3ef64366910b6291923d494a85aedf57aed6d3fbc4f41ecfa407ebbb7b1",
+      "text_sha256": "d401c3ef64366910",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p12",
+      "digest": "38e716bc70b0a5621bb0d7c2745d84db021857bdb85de6cf8727dcde866029b4",
+      "text_sha256": "38e716bc70b0a562",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p13",
+      "digest": "5b77413c35108bd8e174b062b2e28e6ef608939841e29faa5cd7637cfb60c218",
+      "text_sha256": "5b77413c35108bd8",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p16",
+      "digest": "58fdcbb3fbda2fb79618b8f03e41112e00bf924d3976a90c203c626a63dbb86d",
+      "text_sha256": "58fdcbb3fbda2fb7",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p17",
+      "digest": "b4dd87a69e742b8d2b993ef03f40dbb282a0c090e7d47acf76e96e9fba84073a",
+      "text_sha256": "b4dd87a69e742b8d",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p18",
+      "digest": "cbf004ea4849c9bd1f6ae793f619d427af581c2dedaa060bc9523ff1f30bdd3e",
+      "text_sha256": "cbf004ea4849c9bd",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p19",
+      "digest": "4096b98d74f5f7f42ff676e472c9b73f29ee2b2c2c86c804a20b41427649e352",
+      "text_sha256": "4096b98d74f5f7f4",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A074",
+      "paragraph_id": "A074_p20",
+      "digest": "7129d67f8290244f5d313d88fd5aef054ea40107b77c0b7035c0d400b40228df",
+      "text_sha256": "7129d67f8290244f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A075",
+      "paragraph_id": "A075_p01",
+      "digest": "e3cc2bbd482debff1161c31541b9916c94cbf02bb0807d88f65c036885ce9ce7",
+      "text_sha256": "e3cc2bbd482debff",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A075",
+      "paragraph_id": "A075_p03",
+      "digest": "a237162a0e8a604f3aa28a8e3bb9e6ca29954ef843ca55799cb245c16deabd63",
+      "text_sha256": "a237162a0e8a604f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A075",
+      "paragraph_id": "A075_p07",
+      "digest": "3f3270ee5a357ca539273ca5e6bcec316a8b8bfaa11f789cb4c5692ece34fe80",
+      "text_sha256": "3f3270ee5a357ca5",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A076",
+      "paragraph_id": "A076_p02",
+      "digest": "7eb5e29bb9d8d3e2fa02ca3cf6effd6f5f5cdf143ca29aee7125120d5a9d6027",
+      "text_sha256": "7eb5e29bb9d8d3e2",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A076",
+      "paragraph_id": "A076_p04",
+      "digest": "b40e3fdb22756c2acd607c599dd4370feaba94c93ad73b90876698c7ac78d140",
+      "text_sha256": "b40e3fdb22756c2a",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A076",
+      "paragraph_id": "A076_p08",
+      "digest": "c7afd94aafc82611f6d81b069af573727ed0f837513bafbbf9669efacd5767fa",
+      "text_sha256": "c7afd94aafc82611",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A076",
+      "paragraph_id": "A076_p09",
+      "digest": "d6b94ee868ed1b0f60a37dc7c771154dcfa08ecebc700e2b2ed7aa225ede625d",
+      "text_sha256": "d6b94ee868ed1b0f",
+      "lang": "en",
+      "outlet": "The New York Times",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p02",
+      "digest": "6c3bd00c0b48c72402892f9b31b3d59782ca557b2820db0ba09b0cee433337ae",
+      "text_sha256": "6c3bd00c0b48c724",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p08",
+      "digest": "57fd4b7523808b42088350e3aec8d2a95930879d038683002ed76a718373209b",
+      "text_sha256": "57fd4b7523808b42",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p09",
+      "digest": "8ce934ed4ee76b323dd217af0a269b0b143d2568d40f8dcb779504914348484c",
+      "text_sha256": "8ce934ed4ee76b32",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p10",
+      "digest": "c7157d74e4ed1c50e8eef3fe399fa56b1b42e0d32045cd37f4033a78d34e798e",
+      "text_sha256": "c7157d74e4ed1c50",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p11",
+      "digest": "af72e12bfb20f4b7cc1a619185897cc82d1337f49b901892b1a9c69fca8d6c5d",
+      "text_sha256": "af72e12bfb20f4b7",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p12",
+      "digest": "ce81d2a24449b86b9a3f55993252e6a91e5cf1a18985ffdb69c817de7ed8cfc2",
+      "text_sha256": "ce81d2a24449b86b",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p13",
+      "digest": "a9935ec3df7edc4164b3e63edb45b79991c8d117441694eda51760dbe13a1987",
+      "text_sha256": "a9935ec3df7edc41",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p16",
+      "digest": "b2732659b3114f69cc3c12c7b67884b2a564f1b486e1034ccd95186920831c5c",
+      "text_sha256": "b2732659b3114f69",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A077",
+      "paragraph_id": "A077_p18",
+      "digest": "75075553a3695a2f44c142c45ef1757a0f202cd0c57e3aee5051f843ae316278",
+      "text_sha256": "75075553a3695a2f",
+      "lang": "en",
+      "outlet": "The Washington Post",
+      "country": "US",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A078",
+      "paragraph_id": "A078_p02",
+      "digest": "364179b09a9973cf627f43ecadbd7092f27dc9027ae2cb6682f3bd6834d67344",
+      "text_sha256": "364179b09a9973cf",
+      "lang": "de",
+      "outlet": "BR24",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A078",
+      "paragraph_id": "A078_p05",
+      "digest": "a0b8422bf9aee2b13e44a4d7fb2676a1a58cf28cc24d1a6fbcb56e4aa25a3a51",
+      "text_sha256": "a0b8422bf9aee2b1",
+      "lang": "de",
+      "outlet": "BR24",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A078",
+      "paragraph_id": "A078_p06",
+      "digest": "5190599fa99a4d57f7c7fa3abd01c2f5f6368afe786d2a8dde0614c93defbe7a",
+      "text_sha256": "5190599fa99a4d57",
+      "lang": "de",
+      "outlet": "BR24",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A078",
+      "paragraph_id": "A078_p07",
+      "digest": "aa2c94b73d6089da41ef15065957d6a37222a46681e0897173db67571624eba5",
+      "text_sha256": "aa2c94b73d6089da",
+      "lang": "de",
+      "outlet": "BR24",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A078",
+      "paragraph_id": "A078_p08",
+      "digest": "f344bb06a51786700bee129d7ff9ff93f7e73bb18d87fb669b07b0dce4397127",
+      "text_sha256": "f344bb06a5178670",
+      "lang": "de",
+      "outlet": "BR24",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A079",
+      "paragraph_id": "A079_p01",
+      "digest": "625d7cd89292b33ff3625c87c24041ddd14a1010b246c7f4b0b13d07f864141c",
+      "text_sha256": "625d7cd89292b33f",
+      "lang": "de",
+      "outlet": "Berliner Morgenpost",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A079",
+      "paragraph_id": "A079_p03",
+      "digest": "ec3af08f3f8e6031447274b92d950ff51695dbb0c3828f56f2ecd5cac3cb796b",
+      "text_sha256": "ec3af08f3f8e6031",
+      "lang": "de",
+      "outlet": "Berliner Morgenpost",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A079",
+      "paragraph_id": "A079_p06",
+      "digest": "c21a850fb4bef838592c2435ecf9e89c4965757c891975a2018eed85ee80f2b0",
+      "text_sha256": "c21a850fb4bef838",
+      "lang": "de",
+      "outlet": "Berliner Morgenpost",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A080",
+      "paragraph_id": "A080_p03",
+      "digest": "bfefda35b4de3ae0206e989898bbcb8bc58c2d8735a3f434a6c8a178082cc8bb",
+      "text_sha256": "bfefda35b4de3ae0",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A080",
+      "paragraph_id": "A080_p04",
+      "digest": "d34deae5c8cf9396f06bb6d0b2fda99a06d6a2be34eb44bc26e338c779e4102d",
+      "text_sha256": "d34deae5c8cf9396",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A080",
+      "paragraph_id": "A080_p05",
+      "digest": "24bd295abd34e7f64384f77b761195636911b4b175a7b6846b0b9e4b6aed5f6e",
+      "text_sha256": "24bd295abd34e7f6",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A080",
+      "paragraph_id": "A080_p07",
+      "digest": "9aa5597de33c3438d91243737bec2144c5372973a29886f95d8737c70447c6fc",
+      "text_sha256": "9aa5597de33c3438",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A080",
+      "paragraph_id": "A080_p08",
+      "digest": "21e976c3d4ed02753e30b66da1974894f11306ef5b1a4593a236e55ba4439cc4",
+      "text_sha256": "21e976c3d4ed0275",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A080",
+      "paragraph_id": "A080_p09",
+      "digest": "bac401388e326247d5a773659ddfb344769dc1ff73b9e8bc14239abae92581f7",
+      "text_sha256": "bac401388e326247",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A082",
+      "paragraph_id": "A082_p01",
+      "digest": "5b4bce098b6fecd1d5db8503e62092922babc7dfa43c2cbfd0bcac72bfda1090",
+      "text_sha256": "5b4bce098b6fecd1",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A082",
+      "paragraph_id": "A082_p03",
+      "digest": "c492e94cea978b4a76f0d537a544cf8edb57f506b4b85ea4af325e128ea5e615",
+      "text_sha256": "c492e94cea978b4a",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A082",
+      "paragraph_id": "A082_p04",
+      "digest": "65fd9255bedd067b830d0cb9c880155f9bfdcc394c9e295f5d78e8ef56451e69",
+      "text_sha256": "65fd9255bedd067b",
+      "lang": "de",
+      "outlet": "DER SPIEGEL",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p01",
+      "digest": "a7cf91f9a3a8b2256c88047ebdeaac6b38cddfd20b920da78ed0bb150a7f209f",
+      "text_sha256": "a7cf91f9a3a8b225",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p03",
+      "digest": "812cc2dbd6ae18f1c7cf6f7334965cb67607927dc006bb49f9f3cebc39584694",
+      "text_sha256": "812cc2dbd6ae18f1",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p04",
+      "digest": "f83b7e85238fbcde27643eeb461b0660ff4c99c5cd1a4df9a1e2e359cdcf7e3a",
+      "text_sha256": "f83b7e85238fbcde",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p05",
+      "digest": "b0de9a5b1c90ef4424512c841d27834ca3c3bb3585859721932feb56f6d306d5",
+      "text_sha256": "b0de9a5b1c90ef44",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p06",
+      "digest": "63f2d2e6b75a122d7b406dff86c784864edc02b58253fe1cfe4b0b856c45be3b",
+      "text_sha256": "63f2d2e6b75a122d",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p08",
+      "digest": "6243e61f5463662c01477c8ec4aa40fa9a255dc2344c0d842a79c5cbe53cfe77",
+      "text_sha256": "6243e61f5463662c",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A083",
+      "paragraph_id": "A083_p11",
+      "digest": "246d20f53150380f26c75e44ead9b61998e8a99fdd78c6051191713cc5af48f3",
+      "text_sha256": "246d20f53150380f",
+      "lang": "de",
+      "outlet": "Hamburger Abendblatt",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p01",
+      "digest": "a07682803557bee58d55dc8d5935c7d94d3f469abe78c30a85a9f3412aa99696",
+      "text_sha256": "a07682803557bee5",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p02",
+      "digest": "b9253d4b3b3fc001f787b19e4a9805cfbe98abc673fac1c295a39005e42de730",
+      "text_sha256": "b9253d4b3b3fc001",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p06",
+      "digest": "2fe6efb86db2b4703b0953969ee3406cddbdb270990f903bc42428957cfa9cbe",
+      "text_sha256": "2fe6efb86db2b470",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p08",
+      "digest": "c1b499d29ba51816b0479ac41129f921daadd16a12f2620cef7a6b0b5f86492d",
+      "text_sha256": "c1b499d29ba51816",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p13",
+      "digest": "452f46181d5fb5e2fb04d31024ff1be1fc669e5cb927fc6c760c1f35c2646d96",
+      "text_sha256": "452f46181d5fb5e2",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p14",
+      "digest": "c8ec6800418ff2a01a0db71f0ed9b43f53d2a323cf1b3b1baf6be6059ad7a9dc",
+      "text_sha256": "c8ec6800418ff2a0",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A085",
+      "paragraph_id": "A085_p15",
+      "digest": "6bbdbc54c85747955a22f71c8c6f155c085228503b1bd48717cb7c93d69d385f",
+      "text_sha256": "6bbdbc54c8574795",
+      "lang": "de",
+      "outlet": "Neue Zürcher Zeitung",
+      "country": "CH",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A086",
+      "paragraph_id": "A086_p01",
+      "digest": "9368d6d7d646c67f9f792492a9d8986f089fe49d269d063210cb4935ca0da1c5",
+      "text_sha256": "9368d6d7d646c67f",
+      "lang": "de",
+      "outlet": "Salzburger Nachrichten (SN.at)",
+      "country": "AT",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A086",
+      "paragraph_id": "A086_p02",
+      "digest": "786cb4c85817792a03dcea206ef1f2a7587b4b7ac916dffcd9ec91a80f0ea1f6",
+      "text_sha256": "786cb4c85817792a",
+      "lang": "de",
+      "outlet": "Salzburger Nachrichten (SN.at)",
+      "country": "AT",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A086",
+      "paragraph_id": "A086_p04",
+      "digest": "0c986cfbf0a1c08757f372f41e6f8b802c4c4188280714046afeb613f62e6dc9",
+      "text_sha256": "0c986cfbf0a1c087",
+      "lang": "de",
+      "outlet": "Salzburger Nachrichten (SN.at)",
+      "country": "AT",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A087",
+      "paragraph_id": "A087_p01",
+      "digest": "8b8f8351177b5288fc54a5798607199bc0e09625daece96713b0f77868c021fc",
+      "text_sha256": "8b8f8351177b5288",
+      "lang": "de",
+      "outlet": "STERN.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A087",
+      "paragraph_id": "A087_p02",
+      "digest": "42d1ed9aef1166154f3c45aec054211fb16916c8a654475db36271addef32634",
+      "text_sha256": "42d1ed9aef116615",
+      "lang": "de",
+      "outlet": "STERN.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A087",
+      "paragraph_id": "A087_p03",
+      "digest": "5ab09f1681685cf70560a907c2a47dade324ce6bf4da1223243f83a1ae6ff915",
+      "text_sha256": "5ab09f1681685cf7",
+      "lang": "de",
+      "outlet": "STERN.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A087",
+      "paragraph_id": "A087_p07",
+      "digest": "3afb5f54dcf91ce0d73b685de1cc042897af351e85f2f4ce69a8255737182727",
+      "text_sha256": "3afb5f54dcf91ce0",
+      "lang": "de",
+      "outlet": "STERN.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p01",
+      "digest": "6660db9629040e49e540f6d7af6e05f36a2b3425a6641ebeb39f65ed5319fbbc",
+      "text_sha256": "6660db9629040e49",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p02",
+      "digest": "a9e9ed91c564aec4ee7ab09ba66f71417151e3ff6c6ec813a72e690f068fdf0b",
+      "text_sha256": "a9e9ed91c564aec4",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p04",
+      "digest": "1beeb94a8b04586902efe3384d6c430d6bdb82b339d9218cf98f06f4b1ae9760",
+      "text_sha256": "1beeb94a8b045869",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p05",
+      "digest": "3e781aaa1bf1a33c6cc6a4c69410056c2eee87c8de3b4e9ec97da9f739b5a858",
+      "text_sha256": "3e781aaa1bf1a33c",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p06",
+      "digest": "d8d9fe1534a933f2100f02f826a40b130105cc53988c74433989ba4620e1454a",
+      "text_sha256": "d8d9fe1534a933f2",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p07",
+      "digest": "408f0865e1849a3b46936818376046a1e6481f94eeb4d197beb8a316ea11b971",
+      "text_sha256": "408f0865e1849a3b",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p08",
+      "digest": "a641b4ed9823e6a1bffc20b5ac4baae643b1cb991a7a739ace9f384498804bd3",
+      "text_sha256": "a641b4ed9823e6a1",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p10",
+      "digest": "4f1f6effdcd9e1eb57db3e579d4f0ba3934dd47c6fb4c07003e8feebccdcf4a5",
+      "text_sha256": "4f1f6effdcd9e1eb",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p11",
+      "digest": "9da84681f40858fd2bd05a3c0572b934da4f80410919988a63c5b9e955223d33",
+      "text_sha256": "9da84681f40858fd",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p12",
+      "digest": "48a9cbc717294abebaa8c1b7dc536a2174ba3e7a55035b9b878da80fb19a73ae",
+      "text_sha256": "48a9cbc717294abe",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A088",
+      "paragraph_id": "A088_p13",
+      "digest": "572e7fe7ee8affd49619124fbe90e92dea650df501dd0b2fe3019590dcc31ed5",
+      "text_sha256": "572e7fe7ee8affd4",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A089",
+      "paragraph_id": "A089_p01",
+      "digest": "931a6d4aeab7eae9f9f218009e56d2c4c3a20bc8658c2db35f90c7f0251d8243",
+      "text_sha256": "931a6d4aeab7eae9",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A091",
+      "paragraph_id": "A091_p01",
+      "digest": "75b4c0d16627b13d74cbcafba4e139ecdd2208c53de42a85518348fa917bc4e9",
+      "text_sha256": "75b4c0d16627b13d",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A091",
+      "paragraph_id": "A091_p02",
+      "digest": "4e961540fb1cb9130f691e56aec0b1824cfce2e517507dcafc25ac70f82d0c41",
+      "text_sha256": "4e961540fb1cb913",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A091",
+      "paragraph_id": "A091_p03",
+      "digest": "89ed916e82aa4d24f2e1e896d47a012b7111b293dde861502c952ec632b74889",
+      "text_sha256": "89ed916e82aa4d24",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A091",
+      "paragraph_id": "A091_p06",
+      "digest": "0db0fdaec693c80cb594a51e03fe28325a1a2250e7eb3877b7539f47877463c3",
+      "text_sha256": "0db0fdaec693c80c",
+      "lang": "de",
+      "outlet": "Süddeutsche Zeitung",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p01",
+      "digest": "641256140a8ab3171ffe02e3794b82ad44f21c7765022a8ffb600248d95d9ee6",
+      "text_sha256": "641256140a8ab317",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p02",
+      "digest": "5f326c4826aa144216a6601518c9b817c357698248a40b59176e7b15462f5c8a",
+      "text_sha256": "5f326c4826aa1442",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p04",
+      "digest": "a1021bd63357c3e9721f376b42347467ad2e4addf88fc5e816a6d45f41e78a0d",
+      "text_sha256": "a1021bd63357c3e9",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p05",
+      "digest": "93b1a63da5506ec92f9b387b2c9642659df1e4d7ee977eea6524f9f4f01ef75a",
+      "text_sha256": "93b1a63da5506ec9",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p06",
+      "digest": "71a690813db77aff47630e9016e0fa0511c90da31877ef1a8f0ce25d6a756a95",
+      "text_sha256": "71a690813db77aff",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p08",
+      "digest": "919daa336b21fbe5c65afb027cfd0462162609494f0a36b4dbbd1e4c0a4642a5",
+      "text_sha256": "919daa336b21fbe5",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A092",
+      "paragraph_id": "A092_p10",
+      "digest": "f0e38c0e526e9ae6a36b1abe799f5e096960f4a59531efbd196bdb0a49ccb6ca",
+      "text_sha256": "f0e38c0e526e9ae6",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p01",
+      "digest": "0b589b8f33b2080114a6f55a5f862d8b0c79d1d6474088e1c21d42543df06f61",
+      "text_sha256": "0b589b8f33b20801",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p02",
+      "digest": "c8b93e19d3c705da52a59e3a6870170d8e9649898abca89278bb84ed159e343d",
+      "text_sha256": "c8b93e19d3c705da",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p03",
+      "digest": "883d87a9fa99a031e4d00015e666a8d6599c46702a9fe7248e5832f0617d61d2",
+      "text_sha256": "883d87a9fa99a031",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p04",
+      "digest": "e84106b7bc2a28e9b8fbe21950ba8145340d41476daac6b733228a78943f74cf",
+      "text_sha256": "e84106b7bc2a28e9",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p05",
+      "digest": "d87b98d4b242dfabdbb30bd58c5b20642e45dae127ccc8fa735a85331a052e53",
+      "text_sha256": "d87b98d4b242dfab",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p06",
+      "digest": "f77b33d51547f9cf61cb29c471945c8cdef84da4d157b2db442cecce679913ba",
+      "text_sha256": "f77b33d51547f9cf",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p08",
+      "digest": "16148ca5aa355d532e641763d83ca0eb9c5f544a7de827da09633f1876b739f2",
+      "text_sha256": "16148ca5aa355d53",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p09",
+      "digest": "162bb7c8f6005c8806f535dec1731259d4a575ea997a58e093dd24ef3e5df389",
+      "text_sha256": "162bb7c8f6005c88",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A093",
+      "paragraph_id": "A093_p10",
+      "digest": "6586ef3807f52641a2b07b07882f9575b86b78d65dc574c41298c6a2cf596cfc",
+      "text_sha256": "6586ef3807f52641",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A094",
+      "paragraph_id": "A094_p04",
+      "digest": "e4f813a7a5cd2eb34036f9224f248cbd2af53b300de41363edc2080ab2b004aa",
+      "text_sha256": "e4f813a7a5cd2eb3",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A094",
+      "paragraph_id": "A094_p06",
+      "digest": "1b3d41b8e46f66e52fc1946f62eea35b49e6c7a1f1797a0ba3c335ba583e5dc1",
+      "text_sha256": "1b3d41b8e46f66e5",
+      "lang": "de",
+      "outlet": "tagesschau.de",
+      "country": "DE",
+      "exposure": "clean_article"
+    },
+    {
+      "article_id": "A095",
+      "paragraph_id": "A095_p01",
+      "digest": "7e5b2a2f348d414cb5e812a336986424b780f2aaa5bb283c4ee110fb980f443a",
+      "text_sha256": "7e5b2a2f348d414c",
+      "lang": "de",
+      "outlet": "taz",
+      "country": "DE",
+      "exposure": "clean_article"
+    }
+  ],
+  "generator": {
+    "file": "list_frame_completion.py",
+    "sha256": "174def94f3e688e889c9a0d727d0230536e4652b8d2bc09bd4683d8b615362a0"
+  },
+  "note": "IDs, digests and frozen metadata only -- no text. Listed once; never re-listed.",
+  "digest": "fd46e5b37c97ace32e3c3883a447988f1b7fcf6fcd53fc581cef93ea486a1903"
+}

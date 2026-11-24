@@ -1,0 +1,7 @@
+population;paragraphs;gold off-topic;execution;outcomes (partition);technologies present on both sides (subset)
+pooled;120;1;1;"{""technologies_present"": 112, ""parse_failed"": 6, ""off_topic"": 2}";111
+de;60;1;1;"{""technologies_present"": 53, ""off_topic"": 2, ""parse_failed"": 5}";52
+en;60;0;1;"{""technologies_present"": 59, ""parse_failed"": 1}";59
+clean_pooled;105;1;1;"{""technologies_present"": 101, ""off_topic"": 2, ""parse_failed"": 2}";100
+clean_de;49;1;1;"{""technologies_present"": 45, ""off_topic"": 2, ""parse_failed"": 2}";44
+clean_en;56;0;1;"{""technologies_present"": 56}";56

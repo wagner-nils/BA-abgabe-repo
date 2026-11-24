@@ -1,0 +1,198 @@
+{
+  "run_id": "a1_dryrun_20261009",
+  "started_at": "2026-10-09T09:55:13.336492+00:00",
+  "ended_at": "2026-10-09T09:58:14.068531+00:00",
+  "first_call_at": "2026-10-09T09:55:22.026075+00:00",
+  "reportable": false,
+  "dev": true,
+  "arm": "main",
+  "manifest": {
+    "path": "tools/annotation/labels/A1_manifest.json",
+    "sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+    "restrict_split": "A1",
+    "n_paragraphs": 32
+  },
+  "repeats": 3,
+  "execution_fingerprint": "dd7e4c43aac1646871fb4b8f43aad4cb5fbf22450130600602bf2db5c8d241c8",
+  "execution_contract": {
+    "manifest_sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+    "restrict_split": "A1",
+    "dev": true,
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 3,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "428a74b224ea035b8d2e95314a5c44eb70070a35b2c058552b0a5d8450317cb2",
+    "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+    "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+    "preflight_sha256": "b22f0194685a90f0ba550c0e4b4a6109ef2efe87680ce9dfffff4c8a531b9ee9",
+    "max_recovery_episodes": 2
+  },
+  "git_commit": "acaf6a2acb0a6ae293d83123d4c442a19eab5fd9",
+  "git_dirty": true,
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_a1_dryrun_20261009.json",
+    "sha256": "fc908e05d696964d948a18d0ef1ebea6e071b3125e409202395708bd7b13814b",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_a1_dryrun_20261009.json",
+        "sha256": "fc908e05d696964d948a18d0ef1ebea6e071b3125e409202395708bd7b13814b",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-09T09:55:13.339151+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 97,
+    "input_tokens": 49295,
+    "output_tokens": 12709,
+    "cache_read_tokens": 418943,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 78,
+      "ok_off_topic": 18,
+      "contract_invalid": 1
+    },
+    "billable_tokens": 480947,
+    "quota_tokens": 49295
+  },
+  "cost": {
+    "estimated_usd": 0.510623,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "a1_dryrun_20261009_calls.jsonl": {
+      "path": "tools/runs/a1_dryrun_20261009_calls.jsonl",
+      "sha256": "fd492a4ff0f62462552b78b5dd146d2df786cd7ce37ba5d8ab3cf0da81d3deb3"
+    },
+    "a1_dryrun_20261009_terminal.csv": {
+      "path": "tools/runs/a1_dryrun_20261009_terminal.csv",
+      "sha256": "a706de39faa51ae5f5f68bf0326fa14cb708eaaad91e65fe03d9e8fc3a8081e5"
+    },
+    "a1_dryrun_20261009_predictions.csv": {
+      "path": "tools/runs/a1_dryrun_20261009_predictions.csv",
+      "sha256": "69349178e9cd36c1b514294c0c66b4b98b0d3334336b60c9137c61a8250ea6d3"
+    }
+  },
+  "raw_private": "tools/runs/raw/a1_dryrun_20261009.jsonl"
+}

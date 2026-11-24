@@ -1,0 +1,48 @@
+% 2026-11-16 (author comment C35): new hand-drawn schematic of the design-based adjustment of Section 5.6, the method
+% behind Figure fig:dsl. Thesis figure style (preamble): sans-serif, palette by meaning, no measured quantity drawn to
+% scale. Colours: model-only selection figModelLight fill with figModel outline; model share figModel outline; coder
+% sample and residual figInk; the adjusted share figAdjusted at 1pt (model and coder combined); the later-analysis tag
+% figChanged. Greyscale cues: fill (light = model only), outline weight (thick = adjusted), and a direct label on
+% every box. Worked example, investment, industry or competitiveness (F2b), as annotated in Figure fig:dsl:
+%   first coding:  tab:dsl row F2b: model 19.4, registered displacement -18.3 (residual = -D_c, as the design
+%                  weights sum to the 618 frame paragraphs, Eq. eq:weights), adjusted 37.7 [31.1, 44.3];
+%   second coding: tab:checks_4p panel (f), investment, second-coding column: -13.6; tab:checks_4o panel (6),
+%                  adjusted, second coding: 33.1 [27.1, 39.0]. 19.4 + 13.6 = 33.0 against the printed 33.1 is
+%                  rounding of unrounded inputs (19.417 in images/fig_dsl.tex), hence "rounded" in the source note.
+\begin{figure}[b]
+\centering
+\begin{tikzpicture}[x=1mm, y=1mm, font=\figfontsmall,
+  box/.style={draw=figInk, line width=0.5pt, rectangle, rounded corners=1.5pt, align=center, text width=34mm,
+    inner sep=2pt, minimum height=14mm, fill=white,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  boxmodel/.style={box, draw=figModel},
+  storemodel/.style={boxmodel, fill=figModelLight},
+  adjbox/.style={box, draw=figAdjusted, line width=1pt, text width=36mm, minimum height=24mm},
+  sumnode/.style={draw=figInk, circle, line width=0.6pt, inner sep=0.8pt, font=\figfont\bfseries},
+  arr/.style={-{Latex[length=1.8mm]}, line width=0.6pt},
+  arrmodel/.style={arr, draw=figModel},
+  arrhuman/.style={arr, draw=figInk},
+  arradj/.style={arr, draw=figAdjusted, line width=1pt},
+  lbl/.style={font=\figfontsmall, text=figGreyA, inner sep=1pt, align=center},
+]
+% inputs (left column), the two estimates (centre), their sum (right)
+\node[storemodel] (frame) at (17,15) {\textbf{Eligible frame}\\ 618 paragraphs,\\ model labels only};
+\node[box] (sample) at (17,-15) {\textbf{Probability sample}\\ 120 paragraphs, coder's\\ reference and model labels};
+\node[boxmodel, text width=38mm] (share) at (72,15) {\textbf{Model share}\\ over all 618 paragraphs\\ 19.4\,\%};
+\node[box, text width=38mm] (resid) at (72,-15) {\textbf{Mean residual}, design-weighted,\\ reference minus model ($-D_c$)\\ first coding: $+18.3$ pp\\ second coding: $+13.6$ pp};
+\node[sumnode] (sum) at (101,0) {$+$};
+\node[adjbox, anchor=west] (adj) at (108,0) {\textbf{Adjusted share}\\[1pt] first coding:\\ 37.7\,\% [31.1, 44.3]\\[1pt] second coding:\\ 33.1\,\% [27.1, 39.0]};
+\node[font=\figfontsmall\itshape, text=figChanged, anchor=south east, inner sep=1pt] at ([yshift=1mm]adj.north east) {later analysis};
+% edges
+\draw[arr, draw=figGreyA] (frame.south) -- (sample.north) node[lbl, midway, right=1mm, align=left] {stratified\\ random draw};
+\draw[arrmodel] (frame.east) -- (share.west);
+\draw[arrhuman] (sample.east) -- (resid.west);
+\draw[arrmodel] (share.east) -| (sum.north);
+\draw[arrhuman] (resid.east) -| (sum.south);
+\draw[arradj] (sum.east) -- (adj.west);
+% source note (figure text, not counted)
+\node[lbl, anchor=north west, text width=150mm, align=left] at (0,-27) {Investment, industry or competitiveness, in \% of the 618 eligible-frame paragraphs, values rounded. pp: percentage points. First coding: Table~\ref{tab:dsl}. Exploratory second-coding results: Tables~\ref{tab:checks_4o} and~\ref{tab:checks_4p}. $D_c$: Equation~\eqref{eq:displacement}. Brackets: approximate 95\% design-based intervals. The second coding combines the registered 40-paragraph re-code, made before the model run, and the supplementary 80-paragraph re-code, made after the results.};
+\end{tikzpicture}
+\caption[Design-based adjustment]{\textbf{The adjustment adds the sample's mean residual to the model's share, here for investment.}}
+\label{fig:dsl_scheme}
+\end{figure}

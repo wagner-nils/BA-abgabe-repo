@@ -1,0 +1,80 @@
+{
+  "kind": "language_arm_translation_record",
+  "authority": "pre-analysis specification §4e(a), amendment of 2026-11-05",
+  "translator": {
+    "model_id": "openai.gpt-oss-120b-1:0",
+    "region": "eu-central-1",
+    "invocation": "on-demand in-region (no cross-region or global profile)",
+    "provider": "Amazon Bedrock"
+  },
+  "request": {
+    "system_prompt": "Translate the user's German news paragraph into English. Translate faithfully and completely: keep every statement, hedge, negation, number, unit and name, keep who says what (attribution and reported speech, e.g. render German reported speech with 'said', 'according to' or 'reportedly'), and keep the order of information. Do not add, explain, summarise, correct or resolve ambiguity. Output only the English translation.",
+    "system_prompt_sha256": "bc115b205d187ee5094c42a26e5ab9dd5143135e916565fced2bfca624c87404",
+    "user_turn": "the paragraph text alone",
+    "inference_config": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "additional_model_request_fields": {
+      "reasoning_effort": "medium"
+    },
+    "post_processing": "the answer's text blocks joined with a newline, outer whitespace stripped; reasoning blocks counted and discarded, never stored",
+    "failure_handling": "up to 2 identical repeats after an exception (backoff 2 s, then 4 s), a stop other than end_turn or empty text; a rejection before the translator (credentials, access, validation, unknown model, throttling persisting through 6 backoffs) charges no attempt and aborts"
+  },
+  "file": {
+    "path": "tools/annotation/sheets/A2_translations_de_en.csv",
+    "complete": true,
+    "rows": 60,
+    "translated": 60,
+    "failed": 0,
+    "sha256": "b273def3a27552f8f708529f2dc3a73c1657077e36da0b39ea66905b8bab3a66",
+    "pairs_sha256": "9d50f0893055fc6ea1df2d4c55d24be2423bf385f4376ad02b1eec87a9c1a798"
+  },
+  "attempts": {
+    "calls_started": 61,
+    "calls_finished": 61,
+    "codes": {
+      "infrastructure": 1,
+      "ok": 60
+    },
+    "charged": 60,
+    "unknown_completion": 0,
+    "torn_journal_lines": 0,
+    "infrastructure_aborts": 1,
+    "backoff_seconds": 0.0,
+    "reconciled_from_file": 0,
+    "reasoning_blocks_discarded": 60
+  },
+  "usage": {
+    "input_tokens": 14709,
+    "output_tokens": 29542
+  },
+  "cost": {
+    "estimated_usd": 0.019932,
+    "rates_per_million_usd": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "note": "PROVISIONAL: Bedrock list price of openai.gpt-oss-120b-1:0 as known on 2026-11-05 (0.15 / 0.60 USD per 1M input / output tokens), not read off the eu-central-1 price page; estimate, not an invoice"
+  },
+  "baseline_before_first_call": {
+    "at": "2026-11-05T09:21:07.273566+00:00",
+    "declared": "0.621",
+    "equal": true,
+    "evaluate_sha256": "a32d9f57c58e3870ef9b07fed61d9ab96af97f623fdc9dea80f469e656eb216e",
+    "language_arm_sha256": "198f95bacad7554c2cf5fcd1ff632532877207ad6007d4a520fabd47f1aaee94",
+    "metrics_sha256": "9d69e490475a885f7216ceb5c49d295b9d7e55662b7092ca6faa1636e46c57f4",
+    "metrics_value": 0.6213019678687827,
+    "recomputed": 0.6213019678687827,
+    "run_id": "a2_sonnet_20261013",
+    "run_record_sha256": "6c0f2d95f7914aad86407dbe52976f7f2d885562398fa6b36d4f488408f226b3",
+    "sample_contract_sha256": "a0081dc4f10f0ac4f0b55d94d266af8b2c388d396a018f4e9c2f43bd08ba0def"
+  },
+  "first_call_at": "2026-11-05T09:21:07.581681+00:00",
+  "last_call_at": "2026-11-05T09:24:50.831306+00:00",
+  "journal": {
+    "path": "tools/runs/language_arm/translation_journal.jsonl",
+    "sha256": "04c553bc796286c96cbc8a8d9d688f2f50137736be745c7017dc37e2cfbfa425"
+  },
+  "digest": "89c833e3c072ae4f1d8ad6fce24603dbc1ce28314dfb7e6804dc24c55577120d"
+}

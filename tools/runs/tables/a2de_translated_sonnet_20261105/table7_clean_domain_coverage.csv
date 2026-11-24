@@ -1,0 +1,3 @@
+population;paragraphs;articles;outlets;classes with support
+clean_pooled;49;24;BILD, BR24, Berliner Morgenpost, DER SPIEGEL, DIE ZEIT, Hamburger Abendblatt, Handelsblatt, Neue Zürcher Zeitung, STERN.de, Salzburger Nachrichten (SN.at), Süddeutsche Zeitung, tagesschau.de, taz;"{""element"": 16, ""evaluation_B"": 4, ""comparison_B"": 5}"
+clean_de;49;24;BILD, BR24, Berliner Morgenpost, DER SPIEGEL, DIE ZEIT, Hamburger Abendblatt, Handelsblatt, Neue Zürcher Zeitung, STERN.de, Salzburger Nachrichten (SN.at), Süddeutsche Zeitung, tagesschau.de, taz;"{""element"": 16, ""evaluation_B"": 4, ""comparison_B"": 5}"

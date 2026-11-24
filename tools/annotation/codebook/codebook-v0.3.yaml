@@ -1,0 +1,504 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# CODEBOOK v0.1 — DRAFT FOR CALIBRATION (session A0)
+#
+# This one file is the single source of three artifacts:
+#   1. the task prompt sent to the model
+#   2. the JSON schema that constrains the model's output (Bedrock toolConfig)
+#   3. the human annotation sheet
+#
+# That is what makes the agreement numbers mean anything: the model and the
+# human receive identical instructions. Never hand-edit a generated prompt.
+#
+# v0.1 is DELIBERATELY UNFINISHED. Session A0 exists to break it. Expect to
+# rewrite roughly one rule per two calibration paragraphs. Do not annotate A1
+# against v0.1 — annotate A1 against whatever A0 produces.
+#
+# Once a version has been used for a reported annotation session, it is frozen.
+# Changing it invalidates every annotation made under it, exactly as changing a
+# survey item invalidates prior responses.
+# ─────────────────────────────────────────────────────────────────────────────
+
+version: "0.3"
+status: draft-for-calibration (revised from A0 and A0b, 2026-08-29)
+created: 2026-08-29
+frozen: false
+supersedes: "0.2"
+
+unit_of_analysis: >
+  One paragraph of a news article, together with its headline and its article-level
+  metadata. Code only what is inside the paragraph. Speakers, comparisons and
+  antecedents that live in a neighbouring paragraph are not recoverable at this
+  unit and must not be inferred — that limit is stated in the thesis rather than
+  worked around.
+
+perspective: >
+  The label captures WHAT THE PARAGRAPH ASSERTS about the technology-frame
+  relation. It is not what a reader would feel, and it is not whether the outlet
+  endorses the claim. Whether an assertion is the outlet's own voice or is
+  attributed to a source is recorded separately in the `speaker` field.
+
+# ─── FIELD 1 ── TECHNOLOGY ────────────────────────────────────────────────────
+technologies:
+  - id: general
+    label: Renewable energy in general
+    definition: >
+      Renewables, clean power, green energy, or "the energy transition" as a
+      bundle, with no identifiable individual technology carrying the statement.
+  - id: solar
+    label: Solar energy
+    definition: Solar photovoltaic and solar thermal.
+  - id: wind
+    label: Wind energy
+    definition: Onshore and offshore wind power.
+    subtype_field: wind_siting        # onshore | offshore | unspecified
+  - id: hydrogen
+    label: Hydrogen
+    definition: >
+      Hydrogen as an energy carrier, particularly low-carbon, renewable or green
+      hydrogen. Record the production pathway where the text identifies one.
+    subtype_field: hydrogen_pathway   # green | blue | gray | unspecified
+  - id: nuclear
+    label: Nuclear energy
+    definition: >
+      Included as a low-carbon COMPARATOR, although not a renewable technology.
+  - id: other_renewable
+    label: Other renewable technologies
+    definition: Hydropower, bioenergy, geothermal, marine energy.
+  - id: storage
+    label: Energy storage
+    definition: >
+      Batteries, pumped hydro, and other storage as the SUBJECT of the statement.
+    status: PROVISIONAL
+    note: >
+      Whether storage becomes a seventh category is an open decision for the
+      supervisor. It is coded HERE AND NOW anyway, because collapsing `storage`
+      into `other_renewable` afterwards is free, while splitting it out
+      afterwards requires re-annotating everything. Code it; decide later.
+
+# ─── FIELD 2 ── FRAME ELEMENTS ────────────────────────────────────────────────
+# Ten binary items, two per frame. You mark elements; the FRAME is derived from
+# them, never coded directly. This is what lets the frame inventory change later
+# without re-annotating: P064 reached alpha 0.72 and P068 alpha >= 0.67 on binary
+# items, against the 0.35-0.6 ceiling P026 reports for holistic frame labels.
+
+frame_elements:
+  - id: F1a
+    frame: costs
+    label: Cost or price
+    fires_when: >
+      The paragraph refers to the money cost or price of the technology, of the
+      electricity it produces, or of the bills, levies or taxes people pay because
+      of it. Includes claims that it is cheap, expensive, cheaper or dearer than
+      something else, or that costs are rising or falling.
+    does_not_fire_when: >
+      A number appears that is not a price. Installed capacity in megawatts,
+      output in terawatt-hours, or a count of turbines is NOT a cost claim.
+
+  - id: F1b
+    frame: costs
+    label: Subsidy, levy or public funding
+    fires_when: >
+      The paragraph refers to subsidies, feed-in tariffs, levies, auctions, public
+      funding, tax credits, or the question of who pays for deployment.
+
+  - id: F2a
+    frame: jobs
+    label: Employment
+    fires_when: >
+      The paragraph refers to jobs created, lost, threatened or secured, or to
+      workers, skills shortages, or plant closures in employment terms.
+
+  - id: F2b
+    frame: jobs
+    label: Investment, industry or competitiveness
+    fires_when: >
+      The paragraph refers to investment, industrial capacity, factory or project
+      decisions, market growth, exports, supply chains, or national competitiveness.
+    does_not_fire_when: >
+      A company is merely named, or corporate boilerplate appears, without the
+      statement bearing on the technology.
+
+  - id: F3a
+    frame: climate
+    label: Emissions or climate effect
+    fires_when: >
+      The paragraph refers to greenhouse gases, carbon, emissions, climate targets,
+      or the technology's effect on the climate.
+
+  - id: F3b
+    frame: climate
+    label: Transition or phase-out pathway
+    fires_when: >
+      The paragraph places the technology inside — or as an obstacle to — the
+      energy transition, a coal or nuclear phase-out, or a decarbonisation pathway,
+      WITHOUT making an explicit emissions claim.
+
+  - id: F4a
+    frame: security
+    label: Import dependence or independence
+    fires_when: >
+      The paragraph refers to dependence on, or independence from, energy imports,
+      a foreign supplier, or a named exporting country.
+
+  - id: F4b
+    frame: security
+    label: Security of supply or geopolitics
+    fires_when: >
+      The paragraph refers to security of supply, sovereignty, geopolitical risk,
+      or shortage framed as a national-security matter.
+    recall_warning: >
+      A frame does NOT require a stated causal mechanism. "Wind strengthens
+      Germany's energy security", with no explanation of how, FIRES F4b. P034
+      finds that generic, unspecified benefit is the single largest code in energy
+      opinion writing; requiring a mechanism would destroy recall on this frame.
+      Expect this to be the hardest element for humans too — P031 had to drop its
+      entire political frame for failing intercoder reliability.
+
+  - id: F5a
+    frame: reliability
+    label: Intermittency and dispatchability
+    fires_when: >
+      The paragraph refers to intermittency, baseload, dispatchability, backup, the
+      need for storage, or whether power is available when it is needed.
+    does_not_fire_when: >
+      Weather is described without being connected to power supply. "It was a
+      still, grey week" alone does not fire F5a.
+
+  - id: F5b
+    frame: reliability
+    label: Grid and system integration
+    fires_when: >
+      The paragraph refers to grid infrastructure, connection queues, transmission
+      lines and their permitting, curtailment, or the siting of generation relative
+      to demand.
+
+  # ══════════════════════════════════════════════════════════════════════════
+  # ADDED IN v0.2, FROM SESSION A0. 9 of 20 calibration paragraphs (45%) carried
+  # a note reporting that no element fitted. The gaps were not random: they
+  # clustered into technical feasibility, land and siting, and legal process.
+  #
+  # ROOT CAUSE, and it is worth a paragraph in Chapter 4: the wiki's frame table
+  # collapses Toetzke et al.'s THREE labels - Technology efficiency, Technology
+  # characteristics, Infrastructure - into the single frame "Reliability and
+  # system integration". F5a/F5b therefore cover the grid and the dispatch
+  # problem but not "can this thing be built at all". The collapse created the
+  # hole; the pilot found it.
+  #
+  # ⚠ PROVISIONAL - PENDING SUPERVISOR. This takes the scheme past the five
+  # frames in the topic description. The topic description says the scheme "may
+  # be refined and distinctions added based on the literature and the retrieval
+  # pilot", which is what this is, but it is a research decision and Kerstin
+  # should see it before A2 is drawn.
+  # ══════════════════════════════════════════════════════════════════════════
+
+  - id: F6a
+    frame: feasibility
+    label: Technical feasibility and maturity
+    fires_when: >
+      The paragraph refers to whether the technology can be built, rebuilt,
+      restarted or operated at all: technical obstacles, immaturity,
+      irreversibility, or a physical constraint on doing it.
+    boundary: >
+      NOT F5a. F5a is about delivering power when it is needed - intermittency,
+      baseload, backup. F6a is about whether the plant can exist or run at all.
+      "Reaktivierung kaum mehr denkbar, weil der Rückbau fortgeschritten ist"
+      is F6a, not F5a.
+    a0_evidence: A002_p02, A002_p03, A002_p05, A002_p07, A019_p10
+
+  - id: F6b
+    frame: feasibility
+    label: Technical performance and potential
+    fires_when: >
+      The paragraph refers to efficiency, yield, output potential, or the
+      technical suitability of a design or a site.
+    boundary: >
+      NOT F1a. Cost per unit is F1a; energy per unit of area, or a yield
+      estimate, is F6b. "Cheaper per MWh" is F1a. "Produces more kWh per m²" is
+      F6b. A paragraph can fire both.
+    boundary_vs_F5a: >
+      ADDED IN v0.3, from A0b. The annotator wrote on A011_p02 ("weak wind
+      conditions cut the wind turbines' output by 3.2 percent"): "F5a and/or F6b
+      depending whether interpreted as availability vs yield." The rule is the
+      CAUSE, not the effect:
+        - the cause is weather, season or variability  -> F5a (it is an
+          availability claim: the wind did not blow)
+        - the cause is the design, the site or the technology's efficiency
+          -> F6b (it is a performance claim: this design yields this much)
+      A011_p02 is therefore F5a. "PV on noise barriers yields X kWh/m²" is F6b.
+      Both fire when the text makes both claims.
+    a0_evidence: A019_p08, A019_p09, A011_p02
+
+  - id: F7a
+    frame: siting
+    label: Land and area requirement
+    fires_when: >
+      The paragraph refers to how much land or space the technology needs, or to
+      competition with other uses of that land.
+    a0_evidence: A019_p05 ("fast vier Prozent der Bodenflächen")
+
+  - id: F7b
+    frame: siting
+    label: Landscape, visual impact and local amenity
+    fires_when: >
+      The paragraph refers to how the technology looks in the landscape, to
+      noise, to local acceptance or opposition, or to a siting conflict.
+    note: >
+      P031 found a single contested offshore project driving an entire US
+      state's coverage profile, so this element is not decorative - it is where
+      local conflict enters the corpus.
+    a0_evidence: A019_p01 ("Es glitzert und glänzt entlang der A9")
+
+  - id: F8a
+    frame: regulation
+    label: Regulation, permitting and legal process
+    fires_when: >
+      The paragraph refers to approval procedures, legal classification,
+      planning law, regulatory burden, or regulatory facilitation.
+    boundary: >
+      NOT F5b. F5b is permitting of GRID infrastructure - transmission lines,
+      connection queues. F8a is the legal and administrative treatment of the
+      generating installation itself.
+    a0_evidence: >
+      A002_p04 (restart legally reclassified as new build - the annotator wrote
+      "No obvious F1-F5 element; possible F6"), A003_p01 (Genehmigungsrecht)
+
+  - id: F9
+    frame: other
+    label: Other frame
+    fires_when: >
+      A framing function is clearly performed that none of F1a-F8a captures.
+    requires_note: true
+    supersedes: "F6 in v0.1, renumbered because F6 is now a frame"
+
+no_frame_present:
+  label: No frame present
+  fires_when: >
+    The paragraph mentions a technology but performs NO framing function at all -
+    pure procedural or factual reporting. A permit was granted, a plant went
+    online, a meeting is scheduled, a vote was 34 to 11.
+  # ── CHANGED IN v0.2. THE MOST IMPORTANT RULE CHANGE FROM A0. ──────────────
+  hard_rule: >
+    `no_frame_present` means THE TEXT DOES NOT FRAME. It does NOT mean "I could
+    not find an element that fits". If you believe something is being framed but
+    no element matches, that is **F9 plus a note** - never `no_frame_present`.
+  why: >
+    In session A0, A002_p03 and A019_p12 were both marked no_frame_present with
+    notes reading "unclear whether feasibility should count as framing" and
+    "delay is mentioned but no clear frame claim". Both were paragraphs that DO
+    frame, using a category the codebook lacked. Left uncorrected, this rule
+    would have silently converted every missing category into a fake null, and
+    the "no frame present" share - which the thesis reports as a finding - would
+    have measured the codebook's gaps rather than the corpus.
+  note: >
+    A substantive value, not missing data. Its share is reported alongside the
+    label distributions. P031 found only 19% of US wind articles mentioned
+    climate at all; much energy coverage genuinely fits no frame.
+
+frame_derivation:
+  costs:       [F1a, F1b]        # frame fires if ANY of its elements fires
+  jobs:        [F2a, F2b]
+  climate:     [F3a, F3b]
+  security:    [F4a, F4b]
+  reliability: [F5a, F5b]
+  feasibility: [F6a, F6b]        # NEW in v0.2
+  siting:      [F7a, F7b]        # NEW in v0.2
+  regulation:  [F8a]             # NEW in v0.2
+  other:       [F9]
+
+# ─── FIELD 3 ── EVALUATION ────────────────────────────────────────────────────
+# Coded PER FIRED FRAME, not once per paragraph. P031 found aggregate benefit
+# framing near-identical across three US states while risk framing differed
+# sharply — a single net valence would have hidden the entire finding.
+
+evaluation:
+  litmus_test: >
+    Would a staunch SUPPORTER of this technology be gratified to see this printed?
+    Would a staunch OPPONENT be? (Boydstun et al., Policy Frames Codebook.)
+  values:
+    - id: positive
+      definition: A staunch supporter would be gratified; an opponent would not.
+    - id: negative
+      definition: A staunch opponent would be gratified; a supporter would not.
+    - id: neutral
+      definition: >
+        A factual mention within the frame that would gratify neither side.
+        News prose is overwhelmingly factual in register, so this class will be
+        large, and how you define it will drive the numbers.
+    - id: mixed
+      definition: >
+        Both a positive and a negative evaluation are present on the SAME frame.
+        Inherited directly from SemEval ABSA's `conflict`, whose organizers
+        explicitly refused to force a dominant polarity because that "would be
+        difficult to agree on".
+  excluded_value:
+    id: uncertain
+    reason: >
+      `uncertain` is deliberately NOT in this list. It is a statement about the
+      annotator, not about the text. Mixing an epistemic label into a semantic
+      label set makes the distribution uninterpretable and inflates apparent
+      disagreement. Annotator uncertainty goes in `confidence`.
+  calibration_rule: >
+    When torn between `neutral` and a valenced label, choose `neutral`. When torn
+    between `mixed` and a single valence, choose `mixed` only if you can point to
+    both directions in the text.
+
+# ─── FIELD 4 ── COMPARISON TARGET ─────────────────────────────────────────────
+comparison_target:
+  definition: >
+    Where an evaluation is made by comparison against something OUTSIDE the
+    technology scheme, record that reference point. Scored independently of the
+    frame and evaluation labels, and reported with its own agreement figure.
+  values: [natural_gas, coal, oil, fossil_generic, grid_status_quo, none, other]
+  rules:
+    - "`none` is a substantive value and NOT missing data."
+    - "`other` requires a note."
+    - >
+      Nuclear is NOT a value here. It is a technology category in its own right;
+      listing it in both places would double-count it.
+  open_tiebreak:
+    status: OPEN — to be decided after A0
+    case: >
+      The comparison target is itself a study technology, e.g. geothermal
+      evaluated against nuclear.
+    provisional_rule: >
+      The reference point gets its own technology row only if the text evaluates
+      it in its own right. Otherwise it appears in the comparison field alone.
+    instruction_to_annotator: >
+      Apply the provisional rule AND set `tiebreak_used = TRUE` on that row, so
+      every affected case can be pulled up and reviewed together once the rule is
+      settled. Do not silently decide it differently each time.
+
+# ─── FIELD 5 ── SPEAKER ───────────────────────────────────────────────────────
+speaker:
+  status: DESCRIPTIVE ONLY — carried in the schema, reported as a distribution,
+          explicitly not a measured contribution of this thesis.
+  values:
+    - id: outlet
+      definition: The article's own narrating voice.
+    - id: political
+      definition: Government, party, parliament, regulator, or a named politician.
+    - id: industry
+      definition: A company, industry association, or a named executive.
+    - id: ngo
+      definition: An NGO, campaign group, or citizens' initiative.
+    - id: expert
+      definition: A researcher, academic institution, or independent analyst.
+    - id: unattributed
+      definition: An evaluation with no identifiable source in this paragraph.
+    - id: ambiguous
+      definition: >
+        The paragraph blends the outlet's voice with an attributed one so that
+        they cannot be separated. Use this rather than guessing.
+  caution: >
+    Direct quotation is only about 21 % of quotes in German news (P079); most
+    attributable evaluation is indirect. Journalists also select, relocate and
+    reword quotations, erasing the question that elicited them (P080), so an
+    attributed evaluation measures MEDIATED attributed stance, not speaker stance.
+
+# ─── FIELD 6 ── CONFIDENCE ────────────────────────────────────────────────────
+confidence:
+  values:
+    - {id: 1, label: "guessing — the text genuinely underdetermines the label"}
+    - {id: 2, label: "reasonably sure"}
+    - {id: 3, label: "clear"}
+  note: >
+    Kept strictly separate from the label. A `confidence: 1` row is data about the
+    instrument, not a failure. If a paragraph takes more than three minutes, mark
+    1, write a note, and move on.
+
+# ─── WHAT DOES NOT COUNT ──────────────────────────────────────────────────────
+# The load-bearing half of an interpretive codebook. Read this before every
+# session, not once.
+exclusion_principles:
+  - id: X1
+    rule: >
+      Merely naming a technology is not a frame. "The wind farm went into
+      operation on Tuesday" fires no element.
+  - id: X2
+    rule: >
+      A frame does not require a stated mechanism. An asserted benefit with no
+      explanation still fires its element. (See F4b's recall warning.)
+  - id: X3
+    rule: >
+      Repeating an evaluation that a quoted source voiced is not the outlet's own
+      evaluation. Code the evaluation, and set `speaker` to mark it as attributed.
+      Do not average the two into one row.
+  - id: X4
+    rule: >
+      Do not infer from the headline, the previous paragraph, or the rest of the
+      article. The paragraph is the unit. If the referent is only resolvable
+      outside the paragraph, set `confidence: 1` and say so in the note.
+  - id: X5
+    rule: >
+      Do not code your own knowledge of the world. If the paragraph makes a claim
+      you believe is false, code the claim it makes.
+  - id: X6
+    rule: >
+      A number is not automatically an economic frame. Capacity, output and
+      turbine counts are not F1a; prices, costs and bills are.
+  - id: X10
+    rule: >
+      ADDED IN v0.3, from A0b, and it resolves a direct inconsistency. A010_p15
+      ("solar and wind reached a record 22 percent of the EU mix, a one-fifth
+      increase") was marked no_frame_present with the note "no clear frame
+      beyond factual performance statistics". A024_p02 ("record solar generation
+      and strong expected growth") was not, with the note "could signal market
+      growth". The two paragraphs are doing the same thing and must be coded the
+      same way.
+      RULE: a deployment, output or market statistic reported as GROWTH, as a
+      RECORD, or as a DECLINE fires **F2b**. Apply the litmus test - a staunch
+      supporter is gratified to read that renewables hit a record share, so a
+      framing function is being performed. Where the text also ties the number
+      to the transition or to a phase-out, **F3b** fires as well.
+      A bare number with no directional framing ("wind produced 132 TWh") fires
+      nothing on its own.
+      WHY THIS MATTERS BEYOND CONSISTENCY: growth statistics are extremely
+      common in this corpus. Letting them fall into no_frame_present would make
+      the reported "no frame present" share measure the codebook's blind spot
+      rather than the corpus, which is the same defect the v0.2 nfp rule fixed.
+  - id: X11
+    rule: >
+      ADDED IN v0.3, from A0b. On A007_p03 the note reads "EEG also implicitly
+      includes other technologies I believe". It does - but that is world
+      knowledge, not text. Tick only the technologies the paragraph itself makes
+      a statement about. This is X5 applied to the technology field rather than
+      to the evaluation.
+  - id: X8
+    rule: >
+      The technology columns take 0 or 1 and nothing else. In A0 the label
+      "nuclear" was typed into `tech_general` while the correct box was also
+      ticked; harmless there, silently wrong if it happens on a column that is
+      not cross-checked.
+  - id: X9
+    rule: >
+      Recorded from A0 as a MEASURED COST of X4, not as a rule change. A002_p08
+      quotes a minister calling the reactor plans "realitätsfern" - clearly an
+      evaluation of nuclear power - but the word "nuclear" appears nowhere in
+      the paragraph. Coded with no technology, correctly. That is 1 of 20 = 5%
+      of evaluative paragraphs lost to the paragraph unit, and the figure
+      belongs in the limitations chapter rather than in a workaround.
+  - id: X7
+    rule: >
+      Do not code the technology's evaluation from the article's overall tone.
+      This is the single most likely error mode: models attribute a passage's
+      overall sentiment to the wrong target when several are present, losing 25-69
+      accuracy points (P040), and multi-technology paragraphs are 41 % of this
+      corpus. Each technology gets its own judgement.
+
+# ─── PROMPT GENERATION ────────────────────────────────────────────────────────
+prompt:
+  system: >
+    Rendered from this file. Contains: unit of analysis, perspective, every
+    definition above, every exclusion principle, the worked examples, and the
+    abstention instruction. Never written by hand.
+  abstention_instruction: >
+    If no technology-frame relation is present, return an empty relation list and
+    set no_frame_present. Do not invent a relation to fill the schema.
+  language:
+    default: English instructions, native-language paragraph
+    status: >
+      An ablation. The evidence is contradictory and model-dependent (P056 found
+      English instructions beat Swedish on Swedish text; P060 claims alignment
+      helps but its own best result contradicts that). Reported under GUIDE-LLM
+      either way.
+  cache_point: after the full codebook prefix, ttl 1h

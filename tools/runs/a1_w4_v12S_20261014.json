@@ -1,0 +1,241 @@
+{
+  "run_id": "a1_w4_v12S_20261014",
+  "started_at": "2026-10-14T10:20:41.621548+00:00",
+  "ended_at": "2026-10-14T10:23:34.366296+00:00",
+  "first_call_at": "2026-10-14T10:20:54.480234+00:00",
+  "reportable": false,
+  "dev": true,
+  "arm": "main",
+  "analysis_status": "development",
+  "w3_authorisation": null,
+  "manifest": {
+    "path": "tools/annotation/labels/A1_manifest.json",
+    "sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+    "restrict_split": "A1",
+    "n_paragraphs": 32
+  },
+  "repeats": 3,
+  "execution_fingerprint": "211f29b40aad884b374d2e7d6fe31674fe67ca04e46aae9fae9f484ab6a7706a",
+  "execution_contract": {
+    "manifest_sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+    "restrict_split": "A1",
+    "dev": true,
+    "prompt_sha256": "bf796df44959102b00f3d1eaf7fbd49e01d0e5dc6b2b2a5d1add3970ee1b4e26",
+    "tool_config_sha256": "80a923052f1c143e0b33d5efd902a01e27a873a9cca96405cff0113dc836fa78",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 3,
+    "retry_policy_version": "3",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "cb0d7ee29ac81f173b9fefb747e802a960f3b6de59c2cfe1379ac16c62edd288",
+    "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+    "instrument_version": "1.2S",
+    "instrument_v11_sha256": "441fe99a946e03eddea05b3134ec12168c802feca7e07ab7c816b7be869d8681",
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.2S.txt",
+    "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+    "preflight_sha256": "32c2fcd6c51a4799ff153be60878d51fe1cfde9c78570717af71236aeda97951",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null
+  },
+  "git_commit": "aaf62e7d530c3a3b6c579b6af8ac5d725e012228",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/pipeline/instrument/manifest_v1.1E.json",
+      "tools/pipeline/instrument/manifest_v1.1S.json",
+      "tools/runs/a1_w4_v10_20261014.json",
+      "tools/runs/a1_w4_v10_20261014_calls.jsonl",
+      "tools/runs/a1_w4_v10_20261014_predictions.csv",
+      "tools/runs/a1_w4_v10_20261014_terminal.csv",
+      "tools/runs/preflight_a1_w4_v10_20261014.json",
+      "tools/runs/tables/dev/a1_w4_v10_20261014/"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/pipeline/instrument/manifest_v1.1E.json",
+      "tools/pipeline/instrument/manifest_v1.1S.json",
+      "tools/runs/a1_w4_v10_20261014.json",
+      "tools/runs/a1_w4_v10_20261014_calls.jsonl",
+      "tools/runs/a1_w4_v10_20261014_predictions.csv",
+      "tools/runs/a1_w4_v10_20261014_terminal.csv",
+      "tools/runs/preflight_a1_w4_v10_20261014.json",
+      "tools/runs/tables/dev/a1_w4_v10_20261014/"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.2S.txt",
+    "sha256": "bf796df44959102b00f3d1eaf7fbd49e01d0e5dc6b2b2a5d1add3970ee1b4e26",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "80a923052f1c143e0b33d5efd902a01e27a873a9cca96405cff0113dc836fa78",
+  "instrument": {
+    "name": "v1.2S",
+    "version": "1.2S",
+    "variant": "T",
+    "retry_policy_version": "3",
+    "pins": "tools/pipeline/pins_v1.2S.json",
+    "module_sha256": {
+      "instrument.py": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+      "instrument_v11.py": "441fe99a946e03eddea05b3134ec12168c802feca7e07ab7c816b7be869d8681"
+    }
+  },
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_a1_w4_v12S_20261014.json",
+    "sha256": "d7c183eed35661ecf15f16e7a457b9a51b11f6e08fcb9c599063f42e3256582a",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_a1_w4_v12S_20261014.json",
+        "sha256": "d7c183eed35661ecf15f16e7a457b9a51b11f6e08fcb9c599063f42e3256582a",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-14T10:20:41.653805+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 98,
+    "input_tokens": 50056,
+    "output_tokens": 13057,
+    "cache_read_tokens": 569282,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 78,
+      "ok_off_topic": 18,
+      "contract_invalid": 2
+    },
+    "billable_tokens": 632395,
+    "quota_tokens": 50056
+  },
+  "cost": {
+    "estimated_usd": 0.568488,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "a1_w4_v12S_20261014_calls.jsonl": {
+      "path": "tools/runs/a1_w4_v12S_20261014_calls.jsonl",
+      "sha256": "0acfb402f5e467853332660033da341fba0f3aa7513365a61132de3bef113cc4"
+    },
+    "a1_w4_v12S_20261014_terminal.csv": {
+      "path": "tools/runs/a1_w4_v12S_20261014_terminal.csv",
+      "sha256": "b606e5d4ada6302494539218888a26e5df9e2ef9fb10145db6819f8261a2722f"
+    },
+    "a1_w4_v12S_20261014_predictions.csv": {
+      "path": "tools/runs/a1_w4_v12S_20261014_predictions.csv",
+      "sha256": "d9c77125eec5f5184ea93add235c70e6ebabbbfded3d8044827e70640f53c7b9"
+    }
+  },
+  "raw_private": "tools/runs/raw/a1_w4_v12S_20261014.jsonl"
+}

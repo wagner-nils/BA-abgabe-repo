@@ -1,0 +1,381 @@
+{
+  "technology": {
+    "pooled": {
+      "nuclear": {
+        "rows": 9,
+        "articles": 2
+      },
+      "general": {
+        "rows": 16,
+        "articles": 3
+      },
+      "solar": {
+        "rows": 3,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 7,
+        "articles": 2
+      },
+      "hydrogen": {
+        "rows": 4,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "de": {
+      "nuclear": {
+        "rows": 9,
+        "articles": 2
+      },
+      "general": {
+        "rows": 4,
+        "articles": 2
+      },
+      "hydrogen": {
+        "rows": 4,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 1,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 4,
+        "articles": 1
+      }
+    },
+    "en": {
+      "general": {
+        "rows": 12,
+        "articles": 1
+      },
+      "solar": {
+        "rows": 3,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 3,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "general",
+      "wind"
+    ]
+  },
+  "element": {
+    "pooled": {
+      "F3b": {
+        "rows": 22,
+        "articles": 3
+      },
+      "F9": {
+        "rows": 4,
+        "articles": 2
+      },
+      "F5b": {
+        "rows": 3,
+        "articles": 1
+      },
+      "F6a": {
+        "rows": 6,
+        "articles": 2
+      },
+      "F1a": {
+        "rows": 5,
+        "articles": 2
+      },
+      "F2c": {
+        "rows": 11,
+        "articles": 1
+      },
+      "F3a": {
+        "rows": 1,
+        "articles": 1
+      },
+      "F2b": {
+        "rows": 7,
+        "articles": 2
+      },
+      "F1b": {
+        "rows": 2,
+        "articles": 1
+      },
+      "F4b": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "de": {
+      "F3b": {
+        "rows": 13,
+        "articles": 2
+      },
+      "F9": {
+        "rows": 4,
+        "articles": 2
+      },
+      "F5b": {
+        "rows": 3,
+        "articles": 1
+      },
+      "F6a": {
+        "rows": 6,
+        "articles": 2
+      },
+      "F2b": {
+        "rows": 5,
+        "articles": 1
+      },
+      "F4b": {
+        "rows": 1,
+        "articles": 1
+      },
+      "F1a": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "en": {
+      "F1a": {
+        "rows": 4,
+        "articles": 1
+      },
+      "F2c": {
+        "rows": 11,
+        "articles": 1
+      },
+      "F3b": {
+        "rows": 9,
+        "articles": 1
+      },
+      "F3a": {
+        "rows": 1,
+        "articles": 1
+      },
+      "F2b": {
+        "rows": 2,
+        "articles": 1
+      },
+      "F1b": {
+        "rows": 2,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "F1a",
+      "F2b",
+      "F3b"
+    ]
+  },
+  "evaluation_A": {
+    "pooled": {
+      "negative": {
+        "rows": 11,
+        "articles": 3
+      },
+      "positive": {
+        "rows": 24,
+        "articles": 3
+      }
+    },
+    "de": {
+      "negative": {
+        "rows": 6,
+        "articles": 2
+      },
+      "positive": {
+        "rows": 9,
+        "articles": 2
+      }
+    },
+    "en": {
+      "positive": {
+        "rows": 15,
+        "articles": 1
+      },
+      "negative": {
+        "rows": 5,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "negative",
+      "positive"
+    ]
+  },
+  "evaluation_B": {
+    "pooled": {
+      "negative": {
+        "rows": 18,
+        "articles": 3
+      },
+      "neutral": {
+        "rows": 2,
+        "articles": 2
+      },
+      "positive": {
+        "rows": 40,
+        "articles": 3
+      }
+    },
+    "de": {
+      "negative": {
+        "rows": 13,
+        "articles": 2
+      },
+      "neutral": {
+        "rows": 2,
+        "articles": 2
+      },
+      "positive": {
+        "rows": 18,
+        "articles": 2
+      }
+    },
+    "en": {
+      "positive": {
+        "rows": 22,
+        "articles": 1
+      },
+      "negative": {
+        "rows": 5,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "negative",
+      "positive"
+    ]
+  },
+  "comparison_A": {
+    "pooled": {
+      "none": {
+        "rows": 30,
+        "articles": 3
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      },
+      "general": {
+        "rows": 1,
+        "articles": 1
+      },
+      "fossil_generic": {
+        "rows": 4,
+        "articles": 1
+      },
+      "nuclear": {
+        "rows": 2,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "de": {
+      "none": {
+        "rows": 16,
+        "articles": 2
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      },
+      "general": {
+        "rows": 1,
+        "articles": 1
+      },
+      "nuclear": {
+        "rows": 2,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "en": {
+      "none": {
+        "rows": 14,
+        "articles": 1
+      },
+      "fossil_generic": {
+        "rows": 4,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "none"
+    ]
+  },
+  "comparison_B": {
+    "pooled": {
+      "none": {
+        "rows": 31,
+        "articles": 3
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      },
+      "general": {
+        "rows": 1,
+        "articles": 1
+      },
+      "fossil_generic": {
+        "rows": 4,
+        "articles": 1
+      },
+      "nuclear": {
+        "rows": 2,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "de": {
+      "none": {
+        "rows": 17,
+        "articles": 2
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      },
+      "general": {
+        "rows": 1,
+        "articles": 1
+      },
+      "nuclear": {
+        "rows": 2,
+        "articles": 1
+      },
+      "wind": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "en": {
+      "none": {
+        "rows": 14,
+        "articles": 1
+      },
+      "fossil_generic": {
+        "rows": 4,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "none"
+    ]
+  }
+}

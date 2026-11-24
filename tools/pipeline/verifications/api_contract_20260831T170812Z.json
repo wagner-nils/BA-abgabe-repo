@@ -1,0 +1,141 @@
+{
+  "started_at": "2026-08-31T17:08:12.272179+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "sonnet": "eu.anthropic.claude-sonnet-4-6",
+    "opus": "eu.anthropic.claude-opus-4-6-v1"
+  },
+  "probes": [
+    {
+      "model": "sonnet",
+      "probe": "temperature 0 is accepted",
+      "mode": "accept",
+      "why_it_matters": "section A.4 pins temperature 0 for the main run",
+      "ok": true,
+      "detail": "accepted",
+      "usage": {
+        "inputTokens": 10,
+        "outputTokens": 5,
+        "totalTokens": 15,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "stop_reason": "end_turn"
+    },
+    {
+      "model": "sonnet",
+      "probe": "temperature + topP together is rejected",
+      "mode": "reject",
+      "why_it_matters": "if both became legal, section A.4's request rules need rewriting",
+      "ok": true,
+      "error_code": "ValidationException",
+      "error": "An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` and `top_p` cannot both be specified for this model. Please use only one.",
+      "detail": "rejected with ValidationException"
+    },
+    {
+      "model": "sonnet",
+      "probe": "temperature 0 + adaptive thinking is rejected",
+      "mode": "reject",
+      "why_it_matters": "the determinism fork in section A.4 exists only because these are exclusive",
+      "ok": true,
+      "error_code": "ValidationException",
+      "error": "An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` may only be set to 1 when thinking is enabled. Please consult our documentation at https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+      "detail": "rejected with ValidationException"
+    },
+    {
+      "model": "sonnet",
+      "probe": "a seed parameter is rejected",
+      "mode": "reject",
+      "why_it_matters": "every document saying 'fixed seed, temperature 0' describes something absent",
+      "ok": true,
+      "error_code": "ParamValidationError",
+      "error": "Parameter validation failed:\nUnknown parameter in inferenceConfig: \"seed\", must be one of: maxTokens, temperature, topP, stopSequences",
+      "detail": "rejected with ParamValidationError"
+    },
+    {
+      "model": "sonnet",
+      "probe": "a bogus cachePoint ttl is rejected",
+      "mode": "reject",
+      "why_it_matters": "if ttl were ignored rather than validated, ttl:1h would be decoration and section B.6's cache-write budget would be wrong",
+      "ok": true,
+      "error_code": "ValidationException",
+      "error": "An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'system.2.member.cachePoint.ttl' failed to satisfy constraint: Member must satisfy enum value set: [1h, 5m]",
+      "detail": "rejected with ValidationException"
+    },
+    {
+      "model": "sonnet",
+      "probe": "CountTokens callability",
+      "mode": "capability",
+      "ok": true,
+      "error_code": "AccessDeniedException",
+      "detail": "not callable (AccessDeniedException) -- accounting stays post-hoc"
+    },
+    {
+      "model": "opus",
+      "probe": "temperature 0 is accepted",
+      "mode": "accept",
+      "why_it_matters": "section A.4 pins temperature 0 for the main run",
+      "ok": true,
+      "detail": "accepted",
+      "usage": {
+        "inputTokens": 10,
+        "outputTokens": 5,
+        "totalTokens": 15,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "stop_reason": "end_turn"
+    },
+    {
+      "model": "opus",
+      "probe": "temperature + topP together is rejected",
+      "mode": "reject",
+      "why_it_matters": "if both became legal, section A.4's request rules need rewriting",
+      "ok": true,
+      "error_code": "ValidationException",
+      "error": "An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` and `top_p` cannot both be specified for this model. Please use only one.",
+      "detail": "rejected with ValidationException"
+    },
+    {
+      "model": "opus",
+      "probe": "temperature 0 + adaptive thinking is rejected",
+      "mode": "reject",
+      "why_it_matters": "the determinism fork in section A.4 exists only because these are exclusive",
+      "ok": true,
+      "error_code": "ValidationException",
+      "error": "An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` may only be set to 1 when thinking is enabled. Please consult our documentation at https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+      "detail": "rejected with ValidationException"
+    },
+    {
+      "model": "opus",
+      "probe": "a seed parameter is rejected",
+      "mode": "reject",
+      "why_it_matters": "every document saying 'fixed seed, temperature 0' describes something absent",
+      "ok": true,
+      "error_code": "ParamValidationError",
+      "error": "Parameter validation failed:\nUnknown parameter in inferenceConfig: \"seed\", must be one of: maxTokens, temperature, topP, stopSequences",
+      "detail": "rejected with ParamValidationError"
+    },
+    {
+      "model": "opus",
+      "probe": "a bogus cachePoint ttl is rejected",
+      "mode": "reject",
+      "why_it_matters": "if ttl were ignored rather than validated, ttl:1h would be decoration and section B.6's cache-write budget would be wrong",
+      "ok": true,
+      "error_code": "ValidationException",
+      "error": "An error occurred (ValidationException) when calling the Converse operation: 1 validation error detected: Value at 'system.2.member.cachePoint.ttl' failed to satisfy constraint: Member must satisfy enum value set: [1h, 5m]",
+      "detail": "rejected with ValidationException"
+    },
+    {
+      "model": "opus",
+      "probe": "CountTokens callability",
+      "mode": "capability",
+      "ok": true,
+      "error_code": "AccessDeniedException",
+      "detail": "not callable (AccessDeniedException) -- accounting stays post-hoc"
+    }
+  ],
+  "failures": [],
+  "ended_at": "2026-08-31T17:08:17.472402+00:00",
+  "passed": true
+}

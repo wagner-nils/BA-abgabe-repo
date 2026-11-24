@@ -1,0 +1,43 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{63.9pt}>{\raggedright\arraybackslash}p{61.1pt}>{\raggedright\arraybackslash}p{71.3pt}>{\raggedright\arraybackslash}p{47.9pt}>{\raggedright\arraybackslash}p{67.6pt}>{\raggedright\arraybackslash}p{71.3pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (DEVELOPMENT -- not reportable (instrument v1.0F, W3 post-registration development)). (part 1 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{matched units} & \textbf{excluded units (reason:\allowbreak{} n)} & \textbf{score B micro-F1 (weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 1.000 & 40 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 17; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 3 & 0.741 \\
+pooled & comparison target & 0.895 & 38 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 2 & 0.872 \\
+de & evaluation & 1.000 & 17 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 13; row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 3 & 0.596 \\
+de & comparison target & 0.800 & 20 & row\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 2 & 0.762 \\
+en & evaluation & 1.000 & 23 & frame\_\allowbreak{}not\_\allowbreak{}predicted:\allowbreak{} 4 & 0.902 \\
+en & comparison target & 1.000 & 18 & none & 1.000 \\
+\end{longtable}
+\endgroup
+
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{68.1pt}>{\raggedright\arraybackslash}p{68.4pt}>{\raggedright\arraybackslash}p{82.7pt}>{\raggedright\arraybackslash}p{87.9pt}>{\raggedright\arraybackslash}p{87.9pt}}
+\caption{Categorical layers:\allowbreak{} score A conditional on the parent being detected (post-hoc intersection), score B end-to-end labelled tuples (DEVELOPMENT -- not reportable (instrument v1.0F, W3 post-registration development)). (part 2 of 2)} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score A accuracy (weighted)} & \textbf{score A macro (supported classes)} & \textbf{score B macro (supported classes)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pooled & evaluation & 1.000 & 1.000 over 2 & 0.491 over 3 \\
+pooled & comparison target & 0.895 & 0.439 over 6 & 0.434 over 6 \\
+de & evaluation & 1.000 & 1.000 over 2 & 0.409 over 3 \\
+de & comparison target & 0.800 & 0.321 over 5 & 0.310 over 5 \\
+en & evaluation & 1.000 & 1.000 over 2 & 0.939 over 2 \\
+en & comparison target & 1.000 & 1.000 over 2 & 1.000 over 2 \\
+\end{longtable}
+\endgroup

@@ -1,0 +1,149 @@
+{
+  "baseline": {
+    "run_id": "a3_sonnet_20261019",
+    "instrument": "v1.0",
+    "retry_policy_version": "2",
+    "decision": null,
+    "element_f1": {
+      "pooled": 0.563265306122449,
+      "de": 0.5555555555555556,
+      "en": 0.5742574257425742
+    },
+    "element_iv": {
+      "pooled": [
+        0.5106382978723404,
+        0.6218667233430336
+      ],
+      "de": [
+        0.5072412737293326,
+        0.6222222222222222
+      ],
+      "en": [
+        0.45,
+        0.6785714285714286
+      ]
+    },
+    "technology_f1": 0.8648648648648649,
+    "technology_iv": [
+      0.7884469696969697,
+      0.9271578674756742
+    ],
+    "element_precision": 0.6571428571428571,
+    "element_recall": 0.4928571428571429,
+    "evaluation_A": 0.7424242424242424,
+    "evaluation_A_units": 66,
+    "evaluation_B": 0.4474885844748858,
+    "stability_any": 0.09929078014184396,
+    "attempts": {
+      "executions": 165,
+      "invalid_first": 24,
+      "recovered": 1,
+      "terminal_failures": 23,
+      "first_execution_failures": 8,
+      "attempts": 189,
+      "by_language": {
+        "de": {
+          "executions": 81,
+          "invalid_first": 12,
+          "recovered": 0,
+          "terminal_failures": 12
+        },
+        "en": {
+          "executions": 84,
+          "invalid_first": 12,
+          "recovered": 1,
+          "terminal_failures": 11
+        }
+      }
+    },
+    "cost_usd": 1.087634,
+    "billing_complete": true,
+    "metrics_sha256": "5e469e5e5a702466cf11223d7be1977b65bc105f4dc620c459a125de4b441805",
+    "run_record_sha256": "d4aae3e1eb96b0d0470774d0727f690462480e0cc99e73627ced3c165b426062"
+  },
+  "candidate": {
+    "run_id": "a3_sonnet_r3_20261026",
+    "instrument": "v1.0r3",
+    "retry_policy_version": "3",
+    "decision": "Nils Wagner, 2026-10-26, in the working session: 'Starte zudem den V1.0 R3-Lauf' -- the frozen candidate v1.0r3 on the A3 census, decided after the v1.0 A3 figure of 2026-10-19 (element micro-F1 0.563) had been inspected",
+    "element_f1": {
+      "pooled": 0.6615969581749049,
+      "de": 0.6580645161290323,
+      "en": 0.6666666666666666
+    },
+    "element_iv": {
+      "pooled": [
+        0.5892808441558441,
+        0.7372557328015953
+      ],
+      "de": [
+        0.5714285714285714,
+        0.7454545454545455
+      ],
+      "en": [
+        0.5203252032520326,
+        0.8
+      ]
+    },
+    "technology_f1": 0.9506172839506173,
+    "technology_iv": [
+      0.9032165898617511,
+      0.9857193158953722
+    ],
+    "element_precision": 0.7073170731707317,
+    "element_recall": 0.6214285714285714,
+    "evaluation_A": 0.7037037037037037,
+    "evaluation_A_units": 81,
+    "evaluation_B": 0.48717948717948717,
+    "stability_any": 0.14545454545454545,
+    "attempts": {
+      "executions": 165,
+      "invalid_first": 20,
+      "recovered": 20,
+      "terminal_failures": 0,
+      "first_execution_failures": 0,
+      "attempts": 185,
+      "by_language": {
+        "de": {
+          "executions": 81,
+          "invalid_first": 12,
+          "recovered": 12,
+          "terminal_failures": 0
+        },
+        "en": {
+          "executions": 84,
+          "invalid_first": 8,
+          "recovered": 8,
+          "terminal_failures": 0
+        }
+      }
+    },
+    "cost_usd": 1.073894,
+    "billing_complete": true,
+    "metrics_sha256": "619331a20ac6a79c1f7e18f5e2312871f4db0ad1801e9014168a66b2fdbfef4d",
+    "run_record_sha256": "866672b48a43af4fc6312a984f0d0296d8ee9dcbd9bebec270d99b8ffc187e1e"
+  },
+  "paired": {
+    "element": {
+      "diff": 0.09833165205245598,
+      "lo": 0.03342505962208775,
+      "hi": 0.1738236193335001,
+      "B": 2000,
+      "seed": 20260905,
+      "articles": 10,
+      "defined_draws": 2000
+    },
+    "technology": {
+      "diff": 0.08575241908575237,
+      "lo": 0.027327935222672073,
+      "hi": 0.15842062852538275,
+      "B": 2000,
+      "seed": 20260905,
+      "articles": 10,
+      "defined_draws": 2000
+    }
+  },
+  "authority": "pre-analysis specification §4b (2026-10-14): the one frozen candidate configuration v1.0r3",
+  "sample": "A3 census (55 paragraphs, weight one)",
+  "script_sha256": "1c8e779bed648fb809fd5e85bbbf553dbcac0cd07b8762634ef7a0cc177780de"
+}

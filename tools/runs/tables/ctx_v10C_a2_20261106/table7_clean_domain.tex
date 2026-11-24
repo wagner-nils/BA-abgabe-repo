@@ -1,0 +1,61 @@
+\begingroup\footnotesize
+\begin{longtable}{>{\raggedright\arraybackslash}p{60.8pt}>{\raggedright\arraybackslash}p{59.8pt}>{\raggedright\arraybackslash}p{90.5pt}>{\raggedright\arraybackslash}p{48.8pt}>{\raggedright\arraybackslash}p{60.6pt}>{\raggedright\arraybackslash}p{62.6pt}}
+\caption{Clean-domain sensitivity:\allowbreak{} the full primary table recomputed on paragraphs from articles with no calibration exposure (POST-REVIEW CONTEXT VARIANT -- v1.0C (specification §4l (5)):\allowbreak{} the registered request with the headline, outlet and language before the paragraph; inspected sample, descriptive, not the registered result); coverage in table7\_\allowbreak{}clean\_\allowbreak{}domain\_\allowbreak{}coverage.} \\
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score} & \textbf{weighted} & \textbf{unweighted} & \textbf{interval (2.5-97.5, weighted)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{population} & \textbf{dimension} & \textbf{score} & \textbf{weighted} & \textbf{unweighted} & \textbf{interval (2.5-97.5, weighted)} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+clean\_\allowbreak{}pooled & elements (tuples) & micro-F1 & 0.643 & 0.633 & [0.578, 0.708] \\
+clean\_\allowbreak{}pooled & technology detection & micro-F1 & 0.933 & 0.926 & [0.897, 0.961] \\
+clean\_\allowbreak{}pooled & evaluation, score B & micro-F1 & 0.596 & 0.592 & [0.528, 0.664] \\
+clean\_\allowbreak{}pooled & comparison target, score B & micro-F1 & 0.729 & 0.738 & [0.618, 0.823] \\
+clean\_\allowbreak{}pooled & evaluation, score A & accuracy on 180 matched units & 0.853 & 0.850 & [0.789, 0.910] \\
+clean\_\allowbreak{}pooled & comparison target, score A & accuracy on 143 matched units & 0.782 & 0.797 & [0.670, 0.878] \\
+clean\_\allowbreak{}pooled & element & macro-F1 over 17 supported classes (resampled:\allowbreak{} available-class; defined-class counts {17:\allowbreak{} 1695, 16:\allowbreak{} 301, 15:\allowbreak{} 4}) & 0.595 & 0.585 & [0.478, 0.642] \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}A & macro-F1 over 4 supported classes (resampled:\allowbreak{} available-class; defined-class counts {4:\allowbreak{} 2000}) & 0.695 & 0.695 & [0.591, 0.790] \\
+clean\_\allowbreak{}pooled & evaluation\_\allowbreak{}B & macro-F1 over 4 supported classes (resampled:\allowbreak{} available-class; defined-class counts {4:\allowbreak{} 2000}) & 0.486 & 0.484 & [0.395, 0.565] \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}A & macro-F1 over 7 supported classes (resampled:\allowbreak{} available-class; defined-class counts {7:\allowbreak{} 819, 6:\allowbreak{} 917, 5:\allowbreak{} 258, 4:\allowbreak{} 6}) & 0.432 & 0.440 & [0.308, 0.680] \\
+clean\_\allowbreak{}pooled & comparison\_\allowbreak{}B & macro-F1 over 8 supported classes (resampled:\allowbreak{} available-class; defined-class counts {8:\allowbreak{} 1369, 7:\allowbreak{} 503, 6:\allowbreak{} 118, 5:\allowbreak{} 10}) & 0.364 & 0.370 & [0.251, 0.504] \\
+clean\_\allowbreak{}pooled & row exact match & 166 rows & 0.212 & 0.199 &  \\
+clean\_\allowbreak{}de & elements (tuples) & micro-F1 & 0.609 & 0.613 & [0.538, 0.687] \\
+clean\_\allowbreak{}de & technology detection & micro-F1 & 0.897 & 0.897 & [0.793, 0.962] \\
+clean\_\allowbreak{}de & evaluation, score B & micro-F1 & 0.575 & 0.582 & [0.456, 0.683] \\
+clean\_\allowbreak{}de & comparison target, score B & micro-F1 & 0.809 & 0.809 & [0.708, 0.890] \\
+clean\_\allowbreak{}de & evaluation, score A & accuracy on 75 matched units & 0.822 & 0.827 & [0.709, 0.920] \\
+clean\_\allowbreak{}de & comparison target, score A & accuracy on 61 matched units & 0.902 & 0.902 & [0.832, 0.970] \\
+clean\_\allowbreak{}de & element & macro-F1 over 16 supported classes (resampled:\allowbreak{} available-class; defined-class counts {16:\allowbreak{} 683, 15:\allowbreak{} 743, 14:\allowbreak{} 427, 13:\allowbreak{} 123, 12:\allowbreak{} 22, 11:\allowbreak{} 2}) & 0.512 & 0.516 & [0.420, 0.601] \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & macro-F1 over 4 supported classes (resampled:\allowbreak{} available-class; defined-class counts {4:\allowbreak{} 1989, 3:\allowbreak{} 11}) & 0.696 & 0.698 & [0.474, 0.880] \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & macro-F1 over 4 supported classes (resampled:\allowbreak{} available-class; defined-class counts {4:\allowbreak{} 2000}) & 0.485 & 0.490 & [0.310, 0.646] \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & macro-F1 over 3 supported classes (resampled:\allowbreak{} available-class; defined-class counts {3:\allowbreak{} 1695, 2:\allowbreak{} 300, 1:\allowbreak{} 5}) & 0.916 & 0.914 & [0.638, 0.992] \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & macro-F1 over 5 supported classes (resampled:\allowbreak{} available-class; defined-class counts {5:\allowbreak{} 1162, 4:\allowbreak{} 177, 3:\allowbreak{} 579, 2:\allowbreak{} 80, 1:\allowbreak{} 2}) & 0.506 & 0.503 & [0.326, 0.924] \\
+clean\_\allowbreak{}de & element & macro-F1 over 15 common-support classes (sensitivity, point estimate; L21) & 0.505 & 0.506 &  \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}A & macro-F1 over 4 common-support classes (sensitivity, point estimate; L21) & 0.696 & 0.698 &  \\
+clean\_\allowbreak{}de & evaluation\_\allowbreak{}B & macro-F1 over 4 common-support classes (sensitivity, point estimate; L21) & 0.485 & 0.490 &  \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}A & macro-F1 over 3 common-support classes (sensitivity, point estimate; L21) & 0.916 & 0.914 &  \\
+clean\_\allowbreak{}de & comparison\_\allowbreak{}B & macro-F1 over 4 common-support classes (sensitivity, point estimate; L21) & 0.633 & 0.629 &  \\
+clean\_\allowbreak{}de & row exact match & 75 rows & 0.168 & 0.173 &  \\
+clean\_\allowbreak{}en & elements (tuples) & micro-F1 & 0.657 & 0.647 & [0.568, 0.740] \\
+clean\_\allowbreak{}en & technology detection & micro-F1 & 0.949 & 0.948 & [0.920, 0.977] \\
+clean\_\allowbreak{}en & evaluation, score B & micro-F1 & 0.605 & 0.599 & [0.522, 0.688] \\
+clean\_\allowbreak{}en & comparison target, score B & micro-F1 & 0.693 & 0.682 & [0.524, 0.833] \\
+clean\_\allowbreak{}en & evaluation, score A & accuracy on 105 matched units & 0.866 & 0.867 & [0.788, 0.935] \\
+clean\_\allowbreak{}en & comparison target, score A & accuracy on 82 matched units & 0.730 & 0.720 & [0.559, 0.864] \\
+clean\_\allowbreak{}en & element & macro-F1 over 16 supported classes (resampled:\allowbreak{} available-class; defined-class counts {16:\allowbreak{} 1641, 15:\allowbreak{} 324, 14:\allowbreak{} 32, 13:\allowbreak{} 2, 12:\allowbreak{} 1}) & 0.600 & 0.586 & [0.455, 0.667] \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & macro-F1 over 4 supported classes (resampled:\allowbreak{} available-class; defined-class counts {4:\allowbreak{} 1990, 3:\allowbreak{} 10}) & 0.683 & 0.678 & [0.544, 0.807] \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & macro-F1 over 4 supported classes (resampled:\allowbreak{} available-class; defined-class counts {4:\allowbreak{} 1993, 3:\allowbreak{} 7}) & 0.478 & 0.469 & [0.367, 0.560] \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & macro-F1 over 7 supported classes (resampled:\allowbreak{} available-class; defined-class counts {7:\allowbreak{} 690, 6:\allowbreak{} 933, 5:\allowbreak{} 346, 4:\allowbreak{} 30, 3:\allowbreak{} 1}) & 0.422 & 0.432 & [0.262, 0.706] \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & macro-F1 over 7 supported classes (resampled:\allowbreak{} available-class; defined-class counts {7:\allowbreak{} 971, 6:\allowbreak{} 825, 5:\allowbreak{} 189, 4:\allowbreak{} 14, 3:\allowbreak{} 1}) & 0.409 & 0.421 & [0.247, 0.626] \\
+clean\_\allowbreak{}en & element & macro-F1 over 15 common-support classes (sensitivity, point estimate; L21) & 0.603 & 0.591 &  \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}A & macro-F1 over 4 common-support classes (sensitivity, point estimate; L21) & 0.683 & 0.678 &  \\
+clean\_\allowbreak{}en & evaluation\_\allowbreak{}B & macro-F1 over 4 common-support classes (sensitivity, point estimate; L21) & 0.478 & 0.469 &  \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}A & macro-F1 over 3 common-support classes (sensitivity, point estimate; L21) & 0.741 & 0.744 &  \\
+clean\_\allowbreak{}en & comparison\_\allowbreak{}B & macro-F1 over 4 common-support classes (sensitivity, point estimate; L21) & 0.534 & 0.538 &  \\
+clean\_\allowbreak{}en & row exact match & 91 rows & 0.233 & 0.220 &  \\
+\end{longtable}
+\endgroup

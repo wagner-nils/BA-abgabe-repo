@@ -1,0 +1,172 @@
+{
+  "kind": "w3_seal",
+  "sealed_at": "2026-10-14T09:39:18.808208+00:00",
+  "git_commit": "29e44b233c9af043002eb7c330e4ba06af63ba77",
+  "git_dirty": true,
+  "code": {
+    "instrument.py": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+    "instrument_v11.py": "e03f75abe7ce90e16c2eb3fc3ffa3e658b866787b9fe51f45c58456b2f88ff5a",
+    "run_extract.py": "5d3bb0fbe1a4a23a534ae5018e0bc9293ba62de69a488c59eb75c1c6b2c47e68",
+    "preflight.py": "78f72d50d8d416ed176e3585cf8a57acaf6fba848bc16cb6b4473481e80e39a4",
+    "evaluate.py": "3afe97ba3e610793b916eb4a5752ee7d5e1c661fab0d4200da34a814d4c186ab",
+    "sample_contract.py": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+    "w3.py": "ffef836d698f5c03d0c8f24d9d6a1e1a1849b3cc662114b8f6c3ae334b04625d"
+  },
+  "pins": {
+    "pins.json": "6e8d01a03f165a83e80b3437dbcbd074543b65bd12fd0f6e38b427417f064359",
+    "pins_v1.1S.json": "85991dc5899948d97f2bcfdb2de18bc59aba3b4d61696c86aed6c65118754d0f",
+    "pins_v1.1E.json": "483580fc429af614591a3b827d8c96b2f1507d772bed50932cccabc50c2cb5f1"
+  },
+  "artefacts": {
+    "instrument/system-prompt_v1.0.txt": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "instrument/tool-config_v1.0.json": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "instrument/system-prompt_v1.1S.txt": "ec19c1978527a6c5ba5cad02f8c542c03f6f464f5653b1c1c44120b81fe2f888",
+    "instrument/tool-config_v1.1S.json": "8d29762f89fba1e64460702ab8045ffb4e786a941761561055e1631eb59b0fb5",
+    "instrument/system-prompt_v1.1E.txt": "97657900e0d30376e57321d09e634d60c42805c899eddf46202534301be4d6a8",
+    "instrument/tool-config_v1.1E.json": "74e8e9cac03bc0adb13beb9597a88fca93621ef976b7298f7ab4b71db0f7e264"
+  },
+  "reference": {
+    "manifest": "95ee10d99a805a88d4d31f63422a479df171cc363662ab365bb774655f8f6c9d",
+    "A1_pass1_v1.0.csv": "3119dd2c1485233e1b77a7a9406cfcb77605742e038fdf70b4d1855cd5c19435",
+    "A1_pass2_v1.0.csv": "50ef4dd9934a4c3450365c5c773ba2b253da5bccd4f32fb756cb80f37fc9f624"
+  },
+  "manifest_digest": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+  "expected_contracts": {
+    "v0": {
+      "contract": {
+        "manifest_sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+        "restrict_split": "A1",
+        "dev": true,
+        "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+        "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+        "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "region": "eu-central-1",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "additional_model_request_fields": null,
+        "max_tokens": 1024,
+        "repeats": 3,
+        "retry_policy_version": "2",
+        "retry_policy": {
+          "parse": 1,
+          "throttle": 6,
+          "error": 2
+        },
+        "runner_sha256": "5d3bb0fbe1a4a23a534ae5018e0bc9293ba62de69a488c59eb75c1c6b2c47e68",
+        "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+        "instrument_version": "1.0",
+        "instrument_v11_sha256": null,
+        "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+        "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+        "preflight_sha256": "78f72d50d8d416ed176e3585cf8a57acaf6fba848bc16cb6b4473481e80e39a4",
+        "max_recovery_episodes": 2,
+        "w3_authorisation": null
+      },
+      "fingerprint": "826e09667dc41506d4506334f7b9d6da09a26485b48dfac3117c92709becfb1a"
+    },
+    "v1": {
+      "contract": {
+        "manifest_sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+        "restrict_split": "A1",
+        "dev": true,
+        "prompt_sha256": "ec19c1978527a6c5ba5cad02f8c542c03f6f464f5653b1c1c44120b81fe2f888",
+        "tool_config_sha256": "8d29762f89fba1e64460702ab8045ffb4e786a941761561055e1631eb59b0fb5",
+        "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "region": "eu-central-1",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "additional_model_request_fields": null,
+        "max_tokens": 1024,
+        "repeats": 3,
+        "retry_policy_version": "3",
+        "retry_policy": {
+          "parse": 1,
+          "throttle": 6,
+          "error": 2
+        },
+        "runner_sha256": "5d3bb0fbe1a4a23a534ae5018e0bc9293ba62de69a488c59eb75c1c6b2c47e68",
+        "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+        "instrument_version": "1.1S",
+        "instrument_v11_sha256": "e03f75abe7ce90e16c2eb3fc3ffa3e658b866787b9fe51f45c58456b2f88ff5a",
+        "prompt_path": "tools/pipeline/instrument/system-prompt_v1.1S.txt",
+        "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+        "preflight_sha256": "78f72d50d8d416ed176e3585cf8a57acaf6fba848bc16cb6b4473481e80e39a4",
+        "max_recovery_episodes": 2,
+        "w3_authorisation": null
+      },
+      "fingerprint": "0df7b3c355544de7a2773d3298e268f4ab6b518f52b5ef488be4064afbc613b2"
+    },
+    "v2": {
+      "contract": {
+        "manifest_sha256": "82cc6a80434296fb89e063560473f619c24dc430cb73eb91eae4da50d3542dca",
+        "restrict_split": "A1",
+        "dev": true,
+        "prompt_sha256": "97657900e0d30376e57321d09e634d60c42805c899eddf46202534301be4d6a8",
+        "tool_config_sha256": "74e8e9cac03bc0adb13beb9597a88fca93621ef976b7298f7ab4b71db0f7e264",
+        "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+        "model_id": "eu.anthropic.claude-sonnet-4-6",
+        "region": "eu-central-1",
+        "inference_config": {
+          "maxTokens": 1024,
+          "temperature": 0
+        },
+        "additional_model_request_fields": null,
+        "max_tokens": 1024,
+        "repeats": 3,
+        "retry_policy_version": "3",
+        "retry_policy": {
+          "parse": 1,
+          "throttle": 6,
+          "error": 2
+        },
+        "runner_sha256": "5d3bb0fbe1a4a23a534ae5018e0bc9293ba62de69a488c59eb75c1c6b2c47e68",
+        "instrument_sha256": "ae8380dde00cb5e4f363b7c79d43dc24da0d9130122372cec0fe2bd609d43afa",
+        "instrument_version": "1.1E",
+        "instrument_v11_sha256": "e03f75abe7ce90e16c2eb3fc3ffa3e658b866787b9fe51f45c58456b2f88ff5a",
+        "prompt_path": "tools/pipeline/instrument/system-prompt_v1.1E.txt",
+        "sample_contract_sha256": "af87564880f51a1c9d4b083fb3e5175a7a4ee6be2afa3d288155da5c3d7c3c16",
+        "preflight_sha256": "78f72d50d8d416ed176e3585cf8a57acaf6fba848bc16cb6b4473481e80e39a4",
+        "max_recovery_episodes": 2,
+        "w3_authorisation": null
+      },
+      "fingerprint": "245951db08c526e1040106910df54ac683467a98e9fe9b4e4c864f74fbc45b1e"
+    }
+  },
+  "evaluation": {
+    "threshold": 5,
+    "B": 2000,
+    "seed": 20260905
+  },
+  "protocol_sha256": "18a45a5cb9b722d2600c4317096425a58a00e4c4911b022397548d74c39e9dde",
+  "roster": {
+    "v0": "v1.0",
+    "v1": "v1.1S",
+    "v2": "v1.1E"
+  },
+  "run_ids": {
+    "v0": "a1_w3_v10_20261014",
+    "v1": "a1_w3_v11S_20261014",
+    "v2": "a1_w3_v11E_20261014"
+  },
+  "restart_policy": "a run that aborted before its first extraction call (a gate refusal: journal without attempt_started, last record run_finished with a refused_* outcome) may be restarted ONCE, as exactly <id>_r1; a run that made a call is only resumed under its own id",
+  "selector": {
+    "margin": "1/20",
+    "score": "mean over executions 1..3 of the element micro-F1 computed from per_execution.pooled[k].element_counts_unweighted as exact fractions",
+    "invalidity": "scheduled executions whose first returned model response (first non-transport attempt) carried a parse-failure code",
+    "eligibility": "every journalled gate certified; exactly the A1 paragraphs x 3 executions; every terminal technologies_present or off_topic",
+    "baseline": "V0 scoreable = gates certified, complete coverage, development metrics present (parse failures are omissions, not disqualifying)",
+    "rule": "incumbent V1 if eligible else not_achieved; V2 replaces only if V2 eligible and S gain >= 1/20 and I not higher; if V0 scoreable and S(selected) < S(V0) then no_upgrade; an unscoreable V0 is reported as baseline not assessed; only the outcome selected authorises a later A2 run"
+  },
+  "development_set": {
+    "manifest": "tools/annotation/labels/A1_manifest.json",
+    "restrict_split": "A1",
+    "k": 3
+  },
+  "digest": "a333c43bee1bdd86470a5dfff378e0d11a65f6062ac69a66d0e1b948142541c7"
+}

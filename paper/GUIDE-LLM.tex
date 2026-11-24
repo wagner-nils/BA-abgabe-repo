@@ -1,0 +1,259 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[
+    a4paper,
+    left=1.5cm,
+    right=1.5cm,
+    top=2cm,
+    bottom=1.5cm
+]{geometry}
+
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{pifont}
+\usepackage{longtable}
+\usepackage{ragged2e}
+
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+\providecommand{\checked}{\ding{110}}   % filled box
+\providecommand{\unchecked}{\ding{111}} % empty box
+\DeclareUrlCommand\modelid{\urlstyle{tt}\def\UrlBreaks{\do\.\do\-\do\:\do\/\do\_}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+\fancyhead[L]{\url{http://www.llm-checklist.com}} % Left header
+\fancyhead[R]{Version: 1.1} % Right header
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\renewcommand{\maketitle}{
+        \vspace{-1.5cm} \noindent
+        \textbf{\Large{A checklist for reporting studies with large language models in behavioral and social science}} \\
+}
+
+\begin{document}
+
+\providecommand{\gopen}{\textcolor{red}{\textbf{[OPEN]}}}
+\providecommand{\guse}[1]{\textbf{U#1}}
+\providecommand{\guideexpl}[1]{}
+\newcolumntype{J}{>{\RaggedRight\arraybackslash}p{\dimexpr0.19\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}}
+\newcolumntype{K}{>{\RaggedRight\arraybackslash}p{\dimexpr0.81\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}}
+
+\ifdefined\inthesis\else
+\maketitle
+
+\noindent The GUIDE-LLM checklist provides a standardized framework for reporting studies that use large language models (LLMs) in the behavioral and social sciences. It aims to promote transparency, reproducibility, and ethical accountability across all stages of LLM-based research.
+
+\vspace{0.2cm}
+\fi
+
+{\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.0}
+
+\noindent\textbf{Uses reported separately (Item A.1).} \guse{1}: the registered extraction and re-runs of the same instrument; \guse{2}: robustness comparisons of further extraction models (specification \S4f, \S4g, \S4k, \S4m); \guse{3}: instrument checks --- codebook review (\S4h), perturbation battery with paraphrasers, judges and sharpening agents (\S4i), mandatory-form variant (\S4j); \guse{4}: the language arm (\S4e(a) amendment); \guse{5}: AI assistants for literature, corpus collection, code and writing. ``Specification'' is the pre-analysis specification (\modelid{tools/docs/pre-analysis-specification.md}). No label of any registered figure comes from \guse{2}--\guse{5}.
+
+\begin{longtable}{|J|K|}
+\hline
+\rowcolor{green!20}
+\textbf{Scope of LLM use} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item A.1:} LLMs were used in this project for:
+\guideexpl{Briefly describe how and for what purposes LLMs were used in the study (research design, data processing, analysis, LLM as research object, participant-facing settings, communication). Depending on the use case, later items may have to be reported separately for each use case.}
+&
+\textbf{Analysis} (\guse{1}): extracting technology $\times$ frame element $\times$ evaluation $\times$ comparison target per paragraph under the frozen codebook v1.0; the LLM is the measuring instrument. The exposé's relevance step was never a model call (a deterministic keyword prefilter). \textbf{LLM as research object} (\guse{2}, \guse{3}): benchmarking further models on the task; model review of the codebook; perturbing the instrument, with model paraphrases rated by model judges; codebook-sharpening rules derived by model agents. \textbf{Data processing} (\guse{4}): machine translation of the 60 German evaluation paragraphs. \textbf{Research support and communication} (\guse{5}): coding assistants for literature work, code, drafting and revising the text, adversarial reviews; a claude.ai Artifact as the coding interface (versions in the thesis's \emph{Übersicht verwendeter Hilfsmittel}).
+\\
+\hline
+\textbf{Item A.2:} Degree of automation (human-in-the-loop vs. fully automated):
+\guideexpl{Indicate how much human oversight was involved, whether each output was reviewed, and who provided oversight.}
+&
+\guse{1}, \guse{2}, \guse{4}: fully automated; individual outputs are not reviewed (revised 2026-10-08): the 120 evaluation paragraphs, and on 2026-10-19 the 443 frame-completion and 55 fresh-sample paragraphs under the unchanged request. Humans author the codebook and code the reference and the blind re-code (Item E.1); one coder, no adjudication. Translations are never edited; all 60 pairs are checked before any agreement figure. \guse{3}: automated; paraphrases and review issues are accepted or matched by two blinded model judges; sharpening rules are recommendations, not adopted into the codebook. \guse{5}: interactive and agentic Claude Code and Codex CLI sessions, some of them autonomous handover sessions (e.g.\ the completion plan of 2026-09-05). How the output was checked and adopted: direct proofreading of every adopted passage, a cross-check by GPT-6 Astra, and comparison versions showing removed text in red and new text in blue.
+\\[2pt]
+& \textbf{Who performed the human coding} (reference, re-code, fresh sample), qualifications and training: the author only, for every set; trained by calibration on development material before evaluation coding.
+\\
+\hline
+\rowcolor{green!20}
+\textbf{Model/system details} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item B.1:} Model name, including provider, model size, exact version/ID, date of access, and source link (if possible):
+\guideexpl{Report exact model names (provider, version, date accessed); for local models a source link; if several models were tested, which one was used in the final study and why; roles consistent with Item A.1.}
+&
+\guse{1}: \textbf{Claude Sonnet 4.6} (Anthropic; proprietary, size not disclosed), \modelid{eu.anthropic.claude-sonnet-4-6}, Amazon Bedrock, \modelid{eu-central-1}; verified 2026-08-31 (\modelid{tools/pipeline/verifications/api_contract_20260831T170812Z.json}, 12 probes, plus two \modelid{cache_ttl_longgap} records); first certified run 2026-09-05. Defined in \modelid{tools/pipeline/instrument.py} (\texttt{MODELS}) and digested by the preflight gate. Selection W1 (Sonnet 4.6, Opus 4.6, Sonnet 5, Opus 5; registered 2026-09-06, when Sonnet 5 and Opus 5 were listed but denied): fork W1-a chosen 2026-09-06, lapsed 2026-09-15 unrun; the pin stands. W2 (Opus 4.6, registered 2026-09-15) closed 2026-09-24, reopened as \S4f.
+\\[2pt]
+& \guse{2}, \S4f (Bedrock, \modelid{eu-central-1}, accessed 2026-10-19): Claude Opus 4.6 \modelid{eu.anthropic.claude-opus-4-6-v1} (probed 2026-08-31), Claude Sonnet 4.5 \modelid{eu.anthropic.claude-sonnet-4-5-20250929-v1:0}, Claude Haiku 4.5 \modelid{eu.anthropic.claude-haiku-4-5-20251001-v1:0}; Amazon Nova Pro \modelid{eu.amazon.nova-pro-v1:0}; Qwen3-235B-A22B-Instruct-2507 \modelid{qwen.qwen3-235b-a22b-2507-v1:0} (Alibaba, open weights, 235B, 22B active); NVIDIA Nemotron 3 Super \modelid{nvidia.nemotron-super-3-120b} (open weights, about 120B). Unreachable that day: Claude 5 and 5.5 series, Opus 4.7/4.8; excluded (always return a reasoning block): gpt-oss-120b, MiniMax M2.5. \S4g: \textbf{Mercury 3} \modelid{mercury-3} (Inception Labs, proprietary diffusion model, size not disclosed), \modelid{https://api.inceptionlabs.ai/v1/chat/completions}, accessed 2026-10-30. \S4k: \textbf{Claude Sonnet 5} \modelid{eu.anthropic.claude-sonnet-5}, \textbf{Claude Opus 5} \modelid{eu.anthropic.claude-opus-5} (size not disclosed), Bedrock \modelid{eu-central-1}, accessed 2026-11-01 (denied 2026-09-06 and 2026-10-19); Sonnet 4.6 and Opus 4.6 as configuration controls (agent's addition, ratified 2026-11-02). \S4m: \textbf{Claude Opus 5.5} \modelid{eu.anthropic.claude-opus-5-5} (size not disclosed), Bedrock \modelid{eu-central-1}, accessed 2026-11-08; Opus 5 as configuration control under the same request and repeated under the \S4k request (agent's additions within the author's request).
+\\[2pt]
+& \guse{3}, 2026-10-30: \S4h Opus 4.6, Sonnet 4.6 (Bedrock EU) and Mercury 3; \S4i Sonnet 4.6, from 15:11 UTC via \modelid{global.anthropic.claude-sonnet-4-6}; paraphrasers Kimi K3 \modelid{global.moonshotai.kimi-k3} (Moonshot AI; the only profile the account can call) and Qwen3-235B (EU); judges Codex CLI (OpenAI; 0.158.0), \modelid{gpt-6-astra}, reasoning effort xhigh, read-only, and a Claude judge as Claude Code subagents on Claude Opus 5.5 (\modelid{claude-opus-5-5}) (both read from the local session records of that day); sharpening agents: Claude Code subagents, Claude Opus 5.5. \S4j: Sonnet 4.6 under v1.0F and v1.0r3. \S4l (2026-11-06): Sonnet 4.6 under v1.0C.
+\\[2pt]
+& \guse{4}: \textbf{gpt-oss-120b} \modelid{openai.gpt-oss-120b-1:0} (OpenAI, open weights, 120B, mixture of experts), Bedrock on demand in \modelid{eu-central-1}, accessed 2026-11-05: the only OpenAI model reachable without leaving the EU (proprietary OpenAI models only via \texttt{global.} profiles, not used); another developer than the extractor (registered Sonnet 4.6 request).
+\\[2pt]
+& \guse{5}: Claude Code (Anthropic), models Claude Fable 5, Opus 5, Fable 5.1, Opus 5.5 and Fable 5.2. Codex CLI (OpenAI), versions 0.151.0--0.158.0, was read-only. It used GPT-5.6 Sol \modelid{gpt-5.6-sol}, the CLI 0.151.0 default model, from 2026-08-29 to 2026-09-02 for prototype plan and design reviews (\modelid{tools/docs/PROTOTYPE-PLAN-REVIEW-LOG.md}). It then used \modelid{gpt-6-astra} from 2026-09-05. GPT-6 Astra \modelid{global.openai.gpt-6-astra} (OpenAI) ran on Amazon Bedrock's global inference profile with reasoning effort xhigh. From 2026-11-09 to 2026-11-12, it reviewed the whole thesis, debated cuts and re-code integration with Claude Code (three to five rounds), and contributed a measured cut pass. On 2026-11-24, it debated the changes following the supervisor's final feedback and the cut of the main text to below 70,000 characters with Claude Code (two and five rounds). It used read-only repository tools without corpus text, and none in the 2026-11-12 cut pass. Claude Opus 5.5 \modelid{eu.anthropic.claude-opus-5-5} ran on Bedrock's EU inference profile with effort high or xhigh from 2026-11-09. Its work included whole-thesis reviews and the final optimisation pass. Claude Fable 5.2 \modelid{global.anthropic.claude-fable-5-2} ran on Bedrock's global inference profile, possibly outside the EU, with effort high from 2026-11-10. It contributed reviews, debates and chapter drafts without receiving corpus text. Perplexity web search served online research, without corpus text. The overview of tools used itemises these activities. The claude.ai model that built the coding interface was Claude Opus~5.
+\\
+\hline
+\textbf{Item B.2:} Model access (e.g., API, web interface, local) and context mode (e.g., chat mode or separate calls):
+\guideexpl{How the models were accessed and whether in chat mode or stateless mode; the exact API name and version.}
+&
+\guse{1}--\guse{4}: \textbf{Amazon Bedrock Runtime \texttt{Converse} API} (\modelid{eu-central-1}) via \texttt{boto3}/\texttt{botocore} 1.43.83 (pinned in \modelid{pyproject.toml}, \modelid{uv.lock}); \textbf{stateless separate calls}, \texttt{build\_request()} sends one single-turn message holding one paragraph; no web interface, no local model. A \texttt{cachePoint} (\texttt{ttl: 1h}) after the system block changes transmission, not behaviour. Mercury 3 through Inception's OpenAI-compatible chat-completions API via a Converse-shaped adapter (\modelid{tools/pipeline/inception_client.py}), one stateless execution per paragraph (439 calls for 350 executions); adapter digest bound into later contracts, the four runs via commit \texttt{e7e049a}. Retry policy v3 (W3 development, v1.0r3): one correction call carrying paragraph, invalid call and validator messages, within one execution; feedback journalled privately. Judges and agents (\guse{3}) and \guse{5}: interactive or agentic Codex CLI and Claude Code sessions; also the Perplexity web interface, claude.ai for the coding-interface Artifact, and Amazon Bedrock for the reviewers named in B.1.
+\\
+\hline
+\textbf{Item B.3:} Relevant LLM configurations reported (as applicable), such as temperature, max tokens, seed, and number of runs:
+\guideexpl{Temperature, sampling parameters, penalties, stop sequences, number of completions or runs, quantization level, reasoning-related settings.}
+&
+\guse{1}: \texttt{build\_request()} (2026-09-02): \textbf{temperature 0}, no \texttt{topP} (rejected together); \textbf{no seed} (not offered; identical output not claimed); no reasoning mode, compute budget or quantization; \texttt{maxTokens} 1{,}024; no stop sequences, \texttt{stopReason == "tool\_use"} asserted; retry policy v2. \textbf{$k = 3$} executions on identical bytes (a convention), execution 1 primary, 1--3 for stability (registered run \texttt{a2\_sonnet\_20261013}, 2026-10-13; A3 run); frame-completion run $k = 1$. One English instrument, the paragraph in its original language (\texttt{INSTRUMENT-DESIGN.md} D6). v1.0r3 (A3, 2026-10-26): retry policy v3, $k = 3$.
+\\[2pt]
+& \guse{2}: \S4f the registered request, $k = 1$ on A2 and A3. \S4g \texttt{mercury3\_instant}: \texttt{reasoning\_effort} instant, \texttt{max\_completion\_tokens} 1{,}024; \texttt{mercury3\_low}: low, 8{,}192 (reasoning counts against it); temperature 0.5, the API minimum (0 refused, out-of-range reset to 1); no seed; $k = 1$; gate check 13 against \texttt{instrument.REQUEST\_ADAPTATION}. \S4k: temperature omitted (``\texttt{temperature} is deprecated for this model''; provider default), \modelid{additionalModelRequestFields: {"thinking": {"type": "disabled"}}}, otherwise pinned (1{,}024, cache point, policy v2); no seed; $k = 1$; controls under the same request; the tokenizer counts about 40\,\% more prompt tokens; no truncation. \S4m: Opus 5.5 rejects disabled thinking and a forced tool choice, so its request omits temperature, sets \modelid{additionalModelRequestFields: {"thinking": {"type": "adaptive"}, "output_config": {"effort": "low"}}} (also \texttt{"high"} as a contrast), \texttt{toolChoice auto} and \texttt{maxTokens} 8{,}192 (reasoning counts against it); otherwise pinned (cache point, policy v2); no seed; $k = 3$ at effort low, $k = 1$ at high; Opus 5 under the same request $k = 1$; Opus 5 under the \S4k request again, $k = 3$.
+\\[2pt]
+& \guse{3}: \S4h Opus and Sonnet 4.6 temperature 0, Mercury 0.5 instant and low; caps 8{,}192 (Mercury low 32{,}768), raised before the main runs after a smoke truncation at 8{,}192; 3 runs per cell, 72 runs; one identical retry. \S4i registered decoding, one execution per variant and paragraph (baseline three, most variants two); Kimi K3 (no temperature accepted), Qwen3 temperature 0.7; one call per text and set, at most three draws per text. \S4j v1.0F temperature 0, cap 2{,}048 (estimate about 1{,}000, longest 1{,}121; set from journalled answers, a disclosed deviation), policy v3; v1.0r3 1{,}024. \S4l v1.0C: the registered decoding (temperature 0, 1{,}024, policy v2), $k = 1$ on A2 and A3. Codex judge xhigh; Claude Code defaults.
+\\[2pt]
+& \guse{4}, translator: temperature 0, \texttt{maxTokens} 4{,}096, \texttt{reasoning\_effort} medium (reasoning discarded, never stored); one translation per paragraph, never edited or regenerated; up to two identical repeats on an exception, a stop other than \texttt{end\_turn} or empty text. Extractor: registered request on the stored translations, $k = 3$.
+\\
+\hline
+\textbf{Item B.4:} Customization:
+\guideexpl{Fine-tuning, RAG, automated prompt optimization, web search, agentic workflows, post-training refinements, other provider-specific features.}
+&
+\checked~Base model \quad \unchecked~Fine-tuning \quad \unchecked~RAG \quad \unchecked~Automated prompt optimization \quad \checked~Tool/function calling \quad \checked~Web search (\guse{5} only; none in \guse{1}--\guse{4}) \quad \checked~Agentic workflows (\guse{3} judges and agents, \guse{5}) \quad \unchecked~Other
+\\[2pt]
+& \guse{1}, \guse{2}, \guse{4}: \textbf{JSON-schema-constrained output through one forced tool} (\texttt{toolChoice}; 2026-09-02), \modelid{tools/pipeline/instrument/tool-config_v1.0.json} (sha256 \texttt{a1e82607f50e8c04}\ldots), generated from the codebook. Forcing does not guarantee a valid call (validation, Item E.2); the model retrieves and acts on nothing; one call, no loop. \S4f: Nova Pro, Qwen3, Nemotron without the cache point, which they refuse (gate-certified, no cache traffic); Claude models byte-identical. \S4g: one function with the pinned schema (\texttt{strict} not set), forced by name, no cache point; finish reason \texttt{stop} on a forced call read as tool use; malformed envelopes are response failures (hardened after two code reviews, 2026-10-30). \S4m: the one pinned tool offered with \texttt{toolChoice auto}, since Opus 5.5 rejects a forced choice; a reply without the call is a parse failure under the registered retry; a \texttt{reasoningContent} block beside the call is accepted for the thinking configurations only, never read or stored publicly (gate check 13 certifies the declared choice). W3 (development; seven probe calls on invented paragraphs, 2026-10-13): \texttt{strict: true}, nested shape, variant E an \texttt{explanation} field; neither eligible (lost 4 of 96 executions with 20 invalid first responses, and 1 with 9; v1.0 none), not carried forward. \guse{3}: \S4h forced tool \texttt{report\_codebook\_issues} (at most 15 issues); \S4j 17 booleans \texttt{element\_checks}, normalised to the registered list; judges and agents work in multi-step sessions with file access, no web search. \guse{5}: Claude Code web search and page fetching for literature and formal rules.
+\\
+\hline
+\textbf{Item B.5:} Did the LLM session(s) include persistent memory across interactions?
+\guideexpl{Whether the LLM could remember previous conversations; spillover effects.}
+&
+\guse{1}--\guse{4} pipeline calls: \unchecked~Yes \quad \checked~No \quad \unchecked~N/A --- no history, no memory feature; a policy-v3 correction stays within one execution. \guse{5} and the Claude Code sessions of \guse{3}: \checked~Yes --- Claude Code loads the repository's instruction files and a project memory directory.
+\\
+\hline
+\rowcolor{green!20}
+\textbf{Prompts} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item C.1:} Exact prompt(s) reported:
+\guideexpl{The exact text of prompts, including in-context examples; if not shareable, a representative example or a link.}
+&
+\guse{1}, \guse{2}: \modelid{tools/pipeline/instrument/system-prompt_v1.0.txt} (194 lines, sha256 \texttt{138cade3add5dcc4}\ldots; pinned 2026-09-02, unchanged since), \textbf{reproduced in full in the thesis appendix on the rendered instrument} (generated by \modelid{render_instrument_appendix.py}, 2026-10-29); the tool configuration (\modelid{tool-config_v1.0.json}, sha256 \texttt{a1e82607}\ldots) is in the electronic appendix. Rendered from \modelid{codebook-v1.0.yaml} (sha256 \texttt{1edb4601519417de}\ldots), both pinned in \modelid{pins.json}. No input-to-label demonstration; 16 quoted illustrations (15 English, one German), about 13 marking when a label fires; one phrase and the figure ``132 TWh'' derive from calibration paragraph \texttt{A011\_p02}, so article A011 is excluded from the frame; the deployment-growth illustration follows calibration paragraph \texttt{A010\_p15}, whose article stays in the frame (four paragraphs, two sampled, both removed by the clean-domain sensitivity); the German illustration paraphrases A002 (calibration only); the other illustrations are untraced. Exclusion rules: X1, X2, X5, X6 as written, X3, X4, X7, X11 transformed, X8--X10 excluded (\modelid{tools/pipeline/INSTRUMENT-DESIGN.md}; thesis Table of rule concordance); only the prompt prescribes \emph{mixed} for opposing voices. Development prompts, not reported: \modelid{system-prompt_v1.1S.txt}, \modelid{system-prompt_v1.1E.txt} (one demonstration on an invented paragraph), \modelid{system-prompt_v1.2S.txt} (W4: development F1 0.591 against 0.663, outcome ``retained''), each with its pins file. \guse{3}: \texttt{SYSTEM}, \texttt{ARM\_B\_NOTE} (\modelid{codebook_review.py}); \texttt{SYSTEM}, \texttt{SYSTEM\_ROUND2} (\modelid{battery_paraphrase.py}); battery variants hashed in the journal; \modelid{system-prompt_v1.0F.txt} (four replacements); judge and agent prompts in session workflow scripts, not in the repository.
+\\[2pt]
+& \guse{4}: fixed on two invented paragraphs: ``Translate the user's German news paragraph into English. Translate faithfully and completely: keep every statement, hedge, negation, number, unit and name, keep who says what (attribution and reported speech, e.g. render German reported speech with `said', `according to' or `reportedly'), and keep the order of information. Do not add, explain, summarise, correct or resolve ambiguity. Output only the English translation.''
+\\[2pt]
+& \guse{3}, \S4l v1.0C (2026-11-06): the registered prompt and schema; the user turn carries three lines before the unchanged paragraph block, ``Headline: \ldots'', ``Outlet: \ldots'' and ``Language: German'' or ``English'' (\modelid{tools/pipeline/instrument_v10c.py}).
+\\
+\hline
+\textbf{Item C.2:} System-wide instructions (if any):
+\guideexpl{System-level instructions that guide the model's general behavior.}
+&
+The task prompt is the system instruction (instrument or translation prompt); the user turn holds the paragraph alone (\S4l v1.0C: after the headline, outlet and language). No persona preamble; what the provider adds beneath is not visible and not claimed absent.
+\\
+\hline
+\rowcolor{green!20}
+\textbf{Data inputs \& privacy} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item D.1:} Handling of personal or sensitive data (if any) (e.g., consent for data processing):
+\guideexpl{Personal or sensitive data, consent, de-identification, provider safeguards, storage location, cross-border transfers.}
+&
+\textbf{Material:} paragraphs of published news articles, which name and quote persons as the outlets published them; no further personal data was collected and no special categories were sought. The corpus was assembled from online editions and the author's browser prints, under no database licence; the coding assistant (\guse{5}) searched for and retrieved batches 1--4 and transcribed batch 5, so all article text passed through the assistant, by a route not recorded; the author authorised sending it to Bedrock (\modelid{eu-central-1}). Complete article text is never committed; the exceptions (phrases in the prompt; short quotations of calibration paragraphs in the committed codebook files; free-text notes in six legacy label files) are in \modelid{tools/README.md} or named in the thesis appendix. No basis for storing, externally processing or redistributing the hand-collected texts is documented in the study records; the routing approvals are the author's own. The coding interface (\guse{5} tooling) is not archived in any build. Exported sheets with paragraph text were handled by the coding assistant (census pass 2, supplementary re-code) and local files with paragraph text were read by it in the checks of November 2026; inputs and routes of those sessions were not recorded, so further exposure to the assistant's provider is likely and not itemised. \textbf{Routes:} \texttt{eu.} profiles or in-region models, except the remaining \S4i calls from 2026-10-30, 15:11 UTC, via \modelid{global.anthropic.claude-sonnet-4-6} (possibly outside the EU) after the EU quota was exhausted, on the author's written authorisation, journalled per call; Kimi K3 received codebook text only, corpus quotes masked. Headlines (\S4l) are corpus text and went via the EU profile only. The 120 evaluation and 55 census paragraphs (\S4g) and the \S4h calibration and development paragraphs (67 occurrences, 64 distinct) went to Inception's API (hosting region not stated). Sharpening packets were read by Claude Code subagents; the public rules share no five-word run with any of the 563 paragraphs. \guse{4}: in-region. \guse{5}: on 2026-10-14 A3 text with provisional labels and the A2 labels went to a Claude Code session (consistency question), disclosed with the labels.
+\\
+\hline
+\rowcolor{green!20}
+\textbf{Validation \& interpretation} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item E.1:} Human validation of LLM outputs:
+\guideexpl{Whether and how human reviewers examined outputs, their roles and expertise, selection of reviewed outputs, training, criteria, disagreement resolution, reliability statistics, and use of feedback.}
+&
+\checked~Yes \quad \unchecked~No \quad \unchecked~N/A. \textbf{Who coded:} the author only (Item A.2).\par\smallskip
+\guse{1}: Calibration comprises A0 and A0b (32 paragraphs, codebook drafts v0.1--v0.3); development comprises A1 (32 paragraphs, v1.0). The first development session on 1 September 2026 coded 35 paragraphs, including 6 off-topic paragraphs, and produced 53 scoring rows. Calibration and development are excluded from the evaluation. A2 contains 120 evaluation paragraphs, 60 German and 60 English, drawn from the frozen frame by language and outlet, with a 24-paragraph cap and design weights. The registered blind re-code (wave 1) covers 40 paragraphs, 20 per language, before the model run. The washout was registered at 14 days; the realised minimum was five days, with an evaluator minimum of four (deviation of 12 October 2026). This measures temporal stability, not intercoder reliability; a single coder was specified on 6 September 2026. Reference finalised 2026-09-30 (120 paragraphs) and 2026-10-08 (178 technology rows); re-code 2026-10-13. A first attempt displayed keyword-derived technology suggestions and was discarded; its export was opened only by the coder. No labels were carried over (2026-09-25). Metrics fixed 2026-09-05 (Chapter~5 of the thesis): design-weighted tuple micro-F1, technology detection, per-element F1, scores A and B, 2{,}000 article resamples, change rates, displacement. \textbf{Result:} tuples 0.643 [0.581, 0.705], technology 0.935, evaluation B 0.617 (A 0.874 on 208 units), comparison target B 0.742; 13 terminal failures of 360 executions as omissions; intra-coder $\alpha$ technology 0.78--1.00, elements 0.37--0.90, comparison target 0.62. Later article-resampling intervals for all eight reportable registered elements extend below 0.667 (\S4n (2), 2026-11-10). Pooled-cell $\alpha$ is 0.641 [0.555, 0.723] on shared rows and 0.619 [0.530, 0.697] on the full grid. The supplementary re-code (wave 2) covered the remaining 80 paragraphs on 10 November, at least 33 days after the first coding (\S4n (1)). Analyses using it, alone or pooled, are exploratory. First labels were hidden, but the coder knew the results; 25 paragraphs had direct item exposure through the re-reading of misses. Results are reported with and without those paragraphs. The agent set eight blank comparison targets on unframed rows to \texttt{none}, as in A2R. Combining waves gives shared-row pooled-cell $\alpha$ 0.711 [0.655, 0.762], mixing different intervals and exposures. Against the second coding, model precision and recall are 0.695 and 0.666; against the first, 0.759 and 0.557. The paired recall increase is $+0.109$ [$+0.056$, $+0.161$]. A smaller marking shift preceded the registered results; neither reading is established as correct. No borrowed benchmark or ceiling; below the more than 1{,}300 items that Song et al.'s simulation advises at an intercoder reliability of at least 0.7 (declared). \textbf{A3} (census of 55, 27/28, ten articles, \S4b): passes 2026-10-14 and 2026-10-19 (ten blank cells set to \texttt{none} by the agent on written instruction); reliability unmeasured; run after the reference commit \texttt{3f633bb}: technology 0.865, elements 0.563 [0.511, 0.622], 23 of 165 executions failed, 19 of 25 reportable displacements downward; v1.0r3 (20 invalid first responses, all recovered) 0.662; descriptive.
+\\[2pt]
+& \guse{2}: same references and evaluator (optional comparison item). \guse{3}: \S4h, nine gaps documented beforehand; found if both judges agree (95\,\% of 336 run--gap pairs, $\kappa = 0.88$); gaps found in 18 runs each (of 84): Opus 4.6 38, Sonnet 4.6 29, Mercury low 25, instant 18; none diffusion-only. Paraphrases: 35 of 90 accepted in round 1 (Codex 61, Claude 39), 55 regenerated once. \S4i on A2: AUC 0.62 [0.59, 0.66] (model--reference), 0.56 [0.52, 0.61] (first vs re-code); rules unvalidated. \S4j: element recall $+0.019$ [$-0.046$, $+0.078$] A2, $+0.079$ [$+0.031$, $+0.116$] A3: no consistent difference. \S4p (2026-11-11, existing data, no model call): first against second coding technology 0.942, elements 0.725, matched-frame evaluation 0.866 (model against first coding 0.935, 0.643, 0.874); 102 of 168 model misses absent from the second coding; keyword lexicon 0.961 against model 0.940 on five technologies, 0.895 against 0.935 on seven; precision above recall against the second coding in 10 of 12 configurations; German minus English technology detection on valid output $-0.016$ [$-0.077$, $+0.033$]. \S4o (2026-11-10, existing data, no model call): German minus English element micro-F1 $-0.032$ [$-0.145$, $+0.091$]; 12 of 13 terminal failures of the registered run violate the relational rules, none truncated; precision minus recall on valid first executions $+0.187$ (A2) and $+0.057$ (A3); adjusted investment share 33.1\% with the second coding as reference. \S4l (2026-11-06): v1.0C element recall $-0.019$ [$-0.067$, $+0.026$] A2, $+0.007$ [$-0.065$, $+0.113$] A3, no consistent difference. Against the blind re-code (40 paragraphs) the model reaches precision 0.662, recall 0.584 and F1 0.620, the first coding 0.602, 0.720 and 0.656; element $\alpha$ on the full row grid 0.619 (shared rows 0.641); on all 120 paragraphs, 86\,\% (design-weighted) of the missed elements lie within matched rows. \S4l (6), tallied 2026-11-09: the coder re-read 45 sampled misses within matched rows against the codebook, with the model's output visible. Counts: clear miss 16, borderline 10, reference possibly over-marked 15, cue outside the paragraph 2, assigned elsewhere 1, other 1. Two categories contradicted their notes; the coding agent (\guse{5}) set them to borderline on the author's instruction. The returned counts were 17 / 8 / 16 / 2 / 1 / 1. No reference label changed; the analysis is descriptive.
+\\[2pt]
+& \guse{4}: the author checks all 60 pairs before any agreement figure (sealed); primary: execution-1 element F1 translated minus the registered German 0.621 (reproduced before the first call), paired over 2{,}000 resamples of 28 articles. \textit{Result (2026-11-05):} the author checked all 60 pairs individually and flagged none (sealed); translated 0.599 against original 0.621, difference $-0.022$ [$-0.084$, $+0.032$], inconclusive; precision, recall and technology F1 differences include zero; 2 against 5 failed first executions; the translation changed the element sets of 43\,\% of matched units, against 3--6\,\% between native repeats.
+\\
+\hline
+\textbf{Item E.2:} Describe any relevant post-processing (e.g., filtering in case of format mismatches, unit conversions, etc.):
+\guideexpl{Cleaning or reformatting outputs, handling of inconsistent or unusable outputs, automated or manual corrections, exclusions.}
+&
+\textbf{Validation} (\modelid{run_extract.py}, policy v2): one \texttt{toolUse} block, pinned schema, relational rules. \texttt{refusal} terminal; \texttt{truncated}, \texttt{no\_tool\_use}, \texttt{schema\_invalid}, \texttt{contract\_invalid}, \texttt{unexpected\_content}, \texttt{unexpected\_stop\_reason}: one identical retry, then \emph{parse\_failed}; \texttt{throttled} six retries, \texttt{error} two (at most two journalled recovery episodes). Nothing is repaired; public files carry codes, not model text. Policy v3 retries with feedback; \S4j normaliser; \S4m thinking configurations: a \texttt{reasoningContent} block beside the one call is accepted and discarded (elsewhere \texttt{unexpected\_content}); \guse{4} text blocks joined and stripped, a missing translation is an omission. \textbf{Abstention:} \texttt{off\_topic} and an empty \texttt{elements} list are classes, not missing data. Codes mapped by script; frames derived from elements. \textbf{Funnel:} 95 articles $\to$ 74 with prose $\to$ 1{,}047 paragraphs $\to$ 696 candidates $\to$ 618 eligible $\to$ 120 sampled. Registered run: off topic 3 / 2 / 3, parse failures 5 / 5 / 3 per execution (omissions in execution 1, out of stability pairs). \textbf{Reporting:} cells need reference support $\geq s = 5$ (sealed 2026-09-07, commit \texttt{7c61b3d}, digest \texttt{4d4fbd87}\ldots); displacement in percentage points; exploratory DSL (\S4d) beside it (e.g.\ the investment element 37.7\,\% against the model's 19.4\,\%). \textbf{A3 embargo:} runs on A3 refused until both passes were committed (\modelid{A3_pass2_v1.0.csv}, \texttt{0257e3b0e081a766}\ldots).
+\\
+\hline
+\rowcolor{green!20}
+\textbf{Reproducibility} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item F.1:} Code/\allowbreak notebooks/\allowbreak scripts for LLM calls shared:
+\guideexpl{Whether code, prompts, logs or transcripts are shared, with sensitive information removed and a README.}
+&
+\unchecked~Yes \quad \checked~No \quad \unchecked~N/A. The repository stays private (author's decision of 2026-11-16).\par\smallskip
+Prepared: pipeline code with README and tests; codebook, prompt, tool schema and pins; run, per-call (no free text), terminal and prediction files; sample, frame and class manifests; label files (identifiers, labels). Withheld: raw responses, private journals, article text, keys. Nothing is published while the repository stays private.
+\\
+\hline
+\rowcolor{green!20}
+\textbf{Competing interests} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Item G.1:} Funding, support, or other relevant relationships (including in-kind access to compute or models, or professional affiliations):
+\guideexpl{Funding, in-kind access, affiliations, investments or family relationships with entities that have a financial interest in LLMs.}
+&
+\checked~Yes \quad \unchecked~No. In-kind access: Amazon Bedrock use (all Bedrock models listed in B.1) was paid from AWS promotional credits. Claude Code and OpenAI Codex were paid privately by the author, as business plans chosen for stronger data protection; a data-processing agreement is in place with AWS. The author also paid privately for the Inception API (Mercury~3). No other funding, affiliation or relationship with AWS, Anthropic, OpenAI or Inception exists.
+\\
+\hline
+\rowcolor{yellow!30}
+\textbf{Optional items} & \textbf{Answer} \\*
+\noalign{\hrule height \arrayrulewidth}% not \hline: longtable's \hline allows a page break below itself, which
+
+\textbf{Justification for the LLM choice}
+\guideexpl{Performance, transparency, reproducibility, ethical considerations, cost or ease-of-use.}
+&
+\unchecked~Performance: no criterion (W1 lapsed unrun). \checked~Transparency: proprietary, undisclosed size; open weights only in \guse{2}. \checked~Reproducibility: pinned ID, request digest and gate certificate per run; no seed. \checked~Ethics: EU route for every registered call. \checked~Cost: see below.
+\\
+\hline
+\textbf{Rationale for the prompt design}
+\guideexpl{Structured format, guidelines or literature, iteration, few-shot selection, standardization across models.}
+&
+The frozen codebook renders both the human instrument and the prompt, so coder and model get the same definitions: exhaustive descriptions, no demonstrations, explicit abstention states, schema-forced output. No automated optimisation; frozen before any evaluation label existed; identical across \guse{1} and \guse{2}.
+\\
+\hline
+\textbf{Comparison against other methods/LLMs}
+\guideexpl{How comparisons were conducted, metrics, fairness of inputs, and exclusions.}
+&
+\checked~Yes. Comparisons use the registered evaluator's quantities and paired differences under common article resamples. Better or worse requires the paired 95\,\% element-F1 difference interval to exclude zero on both samples (\S4g, \S4k). Requests differ only through declared adaptations. First executions are reported; repeated executions are identified in Item B.3. The prompt was developed with Claude runs. \textbf{Element micro-F1, A2 / A3:} Opus 4.6 0.674 / 0.680, Sonnet 4.5 0.578 / 0.623, Haiku 4.5 0.413 / 0.529, Nova Pro 0.350 / 0.416, Qwen3 0.515 / 0.536, Nemotron 0.425 / 0.422, Mercury instant 0.428 / 0.442, low 0.580 / 0.684, Sonnet 5 0.641 / 0.650, Opus 5 0.740 / 0.684 (controls Sonnet 4.6 0.622 / 0.604, Opus 4.6 0.667 / 0.682; registered 0.643 / 0.563); \S4m Opus 5.5 0.726 / 0.774 (execution 1 of 3; control Opus 5 under the 5.5 request 0.744 / 0.700; effort high 0.709 / 0.824; Opus 5 repeated 0.741 / 0.662). Mercury instant worse than Opus 4.6; Opus 5 better than Sonnet 4.6 on both samples (A3 margin rests on that run's failed first executions), the only model without precision distinguishably above recall on A2 (0.75 / 0.73) and with recall above precision on A3 (0.64 / 0.74), reproduced in three further executions on 2026-11-08; Opus 5.5 better than Sonnet 4.6 and Opus 4.6 on both samples, no consistent difference against Opus 5 or its control, precision above recall on A2 (0.81 / 0.66); effort high against low no consistent difference (recall lower on A2, precision higher on A3); all other pairings no consistent difference; no selection. Prompt variants: W3 and W4 on the development split only; the later variants (\S4i paraphrases, \S4j v1.0F, \S4l v1.0C) ran on inspected samples, descriptive and without selection.
+\\
+\hline
+\textbf{Training data leakage}
+&
+\unchecked~Yes \quad \checked~No \quad \unchecked~N/A: not examined; the corpus is published online news; A3 controls exposure to this study, not to pre-training.
+\\
+\hline
+\textbf{Risk of bias}
+&
+\checked~Yes: tuples German 0.621 [0.532, 0.710] vs English 0.653 [0.569, 0.731], technology 0.884 vs 0.960; 11 of 13 parse failures German. Language is collinear with country and outlet; no mitigation beyond reporting (motivation of \guse{4}).
+\\
+\hline
+\textbf{Conversation transcripts}
+&
+\unchecked~Yes \quad \unchecked~No \quad \checked~N/A for \guse{1}--\guse{4} (single journalled calls). \guse{5} transcripts are not in the repository.
+\\
+\hline
+\textbf{Ethical implications}
+&
+No human participants; published news; licensing and routing in Item D.1.
+\\
+\hline
+\textbf{Computational resources}
+&
+USD estimated from observed tokens at provisional list rates (run records \modelid{tools/runs/}; Bedrock price map of 2026-08-14); probes excluded; no GPU hours. Dry run 2026-09-05: 96 calls, 48{,}660 input, 12{,}353 output, 414{,}624 cache-read tokens, USD 0.50 (superseded run 0.51; re-check 2026-10-09 0.51). Registered run: 379 attempts, 0 throttles, 200{,}646 input, 59{,}296 output, 1{,}636{,}901 cache-read tokens, USD 2.18, about 12 minutes (cumulative 3.70). W3 1.85; W4 1.08; frame completion 2.76; A3 189 calls, 1.09; \S4f about 4.2 (+0.13 superseded); v1.0r3 185 calls, 1.07 (cumulative about 15.9); \S4g 439 calls, about 0.34; \S4h 3.97; \S4i 19{,}206 executions, 22{,}643 attempts, 121.01 (\S4i + \S4j about 126); \S4k 5.07; \S4m 14.98 for the eight reported runs (1{,}400 executions, 1{,}413 calls) plus 2.19 for four superseded journals; \guse{4} translation 61 calls, 14{,}709 / 29{,}542 tokens, 0.02, extraction 188 calls, 1.04. Sum about USD 169; \guse{5} subscriptions not measured.
+\\
+\hline
+\end{longtable}
+}
+
+\ifdefined\inthesis\else
+\noindent
+\fcolorbox{gray}{gray!20}{
+  \parbox{.95\linewidth}{
+    \textbf{How to cite:} Feuerriegel et al. (2026). \textit{A reporting checklist for large language models in behavioural science}. In: \textit{Nature Human Behaviour}. DOI: 10.1038/s41562-026-02492-7
+  }
+}
+\fi
+
+\end{document}

@@ -1,0 +1,295 @@
+{
+  "run_id": "mc_sonnet5_a3_20261101",
+  "started_at": "2026-11-01T13:33:55.384212+00:00",
+  "ended_at": "2026-11-01T13:35:49.927597+00:00",
+  "first_call_at": "2026-11-01T13:34:04.410169+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "analysis_status": "robustness model comparison",
+  "w3_authorisation": null,
+  "a3_embargo": {
+    "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+    "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "touches_a3": true,
+    "paragraphs_touched": 55,
+    "finalised": {
+      "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+      "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+    },
+    "session_manifest_sha256": "2b06db189b360ba227d5352e34b31c1d17411bc18fbba62b822105cc15965e99",
+    "committed": "tracked and clean"
+  },
+  "model_comparison": {
+    "decision": "Nils Wagner (author), 2026-11-01: benchmark Opus 5 and Sonnet 5 once beside Sonnet 4.6 and Opus 4.6 (German message, paraphrased; specification §4k); the configuration controls sonnet_req5 and opus_req5 are the agent's declared addition to that request",
+    "decision_sha256": "56dd42136f6bf6700083cf5c56ffafb87ebc932d8cea5214879c9b102b43c65c",
+    "authority": "pre-analysis specification §4k (2026-11-01)",
+    "registered_model": "sonnet",
+    "sample": "A3 census"
+  },
+  "manifest": {
+    "path": "tools/annotation/labels/A3_sample_manifest.json",
+    "sha256": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "restrict_split": null,
+    "n_paragraphs": 55
+  },
+  "repeats": 1,
+  "execution_fingerprint": "fc5fbedb8d86a2184d3cb70ad2472e0621dd99355baae8e943c9cfe9981bce12",
+  "execution_contract": {
+    "manifest_sha256": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "restrict_split": null,
+    "dev": false,
+    "a3_embargo": {
+      "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+      "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+      "touches_a3": true,
+      "paragraphs_touched": 55,
+      "finalised": {
+        "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+        "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+      },
+      "session_manifest_sha256": "2b06db189b360ba227d5352e34b31c1d17411bc18fbba62b822105cc15965e99",
+      "committed": "tracked and clean"
+    },
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-5",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024
+    },
+    "additional_model_request_fields": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "max_tokens": 1024,
+    "repeats": 1,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "3a764b28fe081ea36d4348a99d124281febe1e4ed4a7ee421e8d3da4a29e0501",
+    "instrument_sha256": "5de6db6fb2fae0e686163e0a7ed7297d4e02d2ee87b0de0bbb8ed1a755b754b1",
+    "instrument_version": "1.0",
+    "instrument_v11_sha256": null,
+    "instrument_v10r3_sha256": null,
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sample_contract_sha256": "1e0469d6c783c7936df5f6a08b3587b55b2d00d62a3835c4a9140b3bf2f5a25d",
+    "preflight_sha256": "d06c418078d1be0206e78a1081ad42aeb0530c48748934530ae108f81f084acf",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null,
+    "model_comparison": {
+      "decision": "Nils Wagner (author), 2026-11-01: benchmark Opus 5 and Sonnet 5 once beside Sonnet 4.6 and Opus 4.6 (German message, paraphrased; specification §4k); the configuration controls sonnet_req5 and opus_req5 are the agent's declared addition to that request",
+      "decision_sha256": "56dd42136f6bf6700083cf5c56ffafb87ebc932d8cea5214879c9b102b43c65c",
+      "authority": "pre-analysis specification §4k (2026-11-01)",
+      "registered_model": "sonnet",
+      "sample": "A3 census"
+    }
+  },
+  "git_commit": "f2535f6242d82895d15ac1d31694c37d2e573a4e",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/runs/mc_opus5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_opus_req5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_sonnet5_a2_20261101.json",
+      "tools/runs/mc_sonnet5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_sonnet5_a2_20261101_predictions.csv",
+      "tools/runs/mc_sonnet5_a2_20261101_terminal.csv",
+      "tools/runs/mc_sonnet_req5_a2_20261101.json",
+      "tools/runs/mc_sonnet_req5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_sonnet_req5_a2_20261101_predictions.csv",
+      "tools/runs/mc_sonnet_req5_a2_20261101_terminal.csv",
+      "tools/runs/mc_sonnet_req5_a3_20261101_calls.jsonl",
+      "tools/runs/preflight_mc_opus5_a2_20261101.json",
+      "tools/runs/preflight_mc_opus_req5_a2_20261101.json",
+      "tools/runs/preflight_mc_sonnet5_a2_20261101.json",
+      "tools/runs/preflight_mc_sonnet_req5_a2_20261101.json",
+      "tools/runs/preflight_mc_sonnet_req5_a3_20261101.json"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/runs/mc_opus5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_opus_req5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_sonnet5_a2_20261101.json",
+      "tools/runs/mc_sonnet5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_sonnet5_a2_20261101_predictions.csv",
+      "tools/runs/mc_sonnet5_a2_20261101_terminal.csv",
+      "tools/runs/mc_sonnet_req5_a2_20261101.json",
+      "tools/runs/mc_sonnet_req5_a2_20261101_calls.jsonl",
+      "tools/runs/mc_sonnet_req5_a2_20261101_predictions.csv",
+      "tools/runs/mc_sonnet_req5_a2_20261101_terminal.csv",
+      "tools/runs/mc_sonnet_req5_a3_20261101_calls.jsonl",
+      "tools/runs/preflight_mc_opus5_a2_20261101.json",
+      "tools/runs/preflight_mc_opus_req5_a2_20261101.json",
+      "tools/runs/preflight_mc_sonnet5_a2_20261101.json",
+      "tools/runs/preflight_mc_sonnet_req5_a2_20261101.json",
+      "tools/runs/preflight_mc_sonnet_req5_a3_20261101.json"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "instrument": {
+    "name": "v1.0",
+    "version": "1.0",
+    "variant": null,
+    "retry_policy_version": "2",
+    "pins": "tools/pipeline/pins.json",
+    "module_sha256": {
+      "instrument.py": "5de6db6fb2fae0e686163e0a7ed7297d4e02d2ee87b0de0bbb8ed1a755b754b1"
+    }
+  },
+  "model_id": "eu.anthropic.claude-sonnet-5",
+  "model_key": "sonnet5",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024
+  },
+  "thinking": "disabled: the request carries thinking {type: disabled} in additionalModelRequestFields (§4k). This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content).",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_mc_sonnet5_a3_20261101.json",
+    "sha256": "dbdc79a986a845859bb72802677464763440c334f0b0d938681e378fc1614301",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_mc_sonnet5_a3_20261101.json",
+        "sha256": "dbdc79a986a845859bb72802677464763440c334f0b0d938681e378fc1614301",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-11-01T13:33:55.407770+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 55,
+    "input_tokens": 20080,
+    "output_tokens": 8000,
+    "cache_read_tokens": 335390,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 55
+    },
+    "billable_tokens": 363470,
+    "quota_tokens": 20080
+  },
+  "cost": {
+    "estimated_usd": 0.205962,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 2.2,
+      "output": 11.0,
+      "cache_write_1h": 4.4,
+      "cache_read": 0.22
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5; §4k controls sonnet_req5, opus_req5 at the sonnet, opus rows); §4f 2026-10-19 provisional rows (haiku45, sonnet45, novapro, qwen3_235b, nemotron3s); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "mc_sonnet5_a3_20261101_calls.jsonl": {
+      "path": "tools/runs/mc_sonnet5_a3_20261101_calls.jsonl",
+      "sha256": "a94434705fc779055cbefd5e0cad310d0d8ec900dfff125bc36c5e181690e974"
+    },
+    "mc_sonnet5_a3_20261101_terminal.csv": {
+      "path": "tools/runs/mc_sonnet5_a3_20261101_terminal.csv",
+      "sha256": "b4be51dc144d6ae25c098b83175cdd230d53c13bcf427f92ccc606d43775a169"
+    },
+    "mc_sonnet5_a3_20261101_predictions.csv": {
+      "path": "tools/runs/mc_sonnet5_a3_20261101_predictions.csv",
+      "sha256": "0147d2b624021d27d84d7030b10e7a11601103bbeb69707046598fc8da13e2e4"
+    }
+  },
+  "raw_private": "tools/runs/raw/mc_sonnet5_a3_20261101.jsonl"
+}

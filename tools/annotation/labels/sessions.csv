@@ -1,0 +1,15 @@
+﻿session;codebook_version;n_rows;annotators;coded_at;sittings;labels_file;labels_sha256;source_sheet;finalized_on
+A0_pass2;0.3;27;NW;2026-08-29;1;A0_pass2_v0.3.csv;24e09e3893aa3104;nw-A0_calibration_sheet-2_coded_v0.3_redo_coded_2026-08-30.csv;2026-08-30
+A0b_pass2;0.3;37;NW;2026-08-29;2|3;A0b_pass2_v0.3.csv;3fe08cb6c885d7fa;nw-A0b_diversity_sheet-2_coded_v0.3_redo_coded_2026-08-30.csv;2026-08-30
+A0_pass1;0.1;20;NW;29.8.2026;unrecorded;A0_pass1_v0.1.csv;2d18c2e5446105d5;A0_calibration_sheet-1.csv;2026-08-30
+A0b_pass1;0.2;12;NW;29.8.2026;A0b;A0b_pass1_v0.2.csv;714ee9369ce32a71;A0b_diversity_sheet-1.csv;2026-08-30
+A1_pass1;1.0;35;NW;2026-09-01;1;A1_pass1_v1.0.csv;3119dd2c1485233e;A1_development_sheet-1_coded_2026-09-01.csv;2026-09-01
+A1_pass2;1.0;53;NW;2026-09-01;1|2;A1_pass2_v1.0.csv;50ef4dd9934a4c34;A1_development_sheet-2_coded_2026-09-01.csv;2026-09-01
+A2_pass1;1.0;120;NW;2026-09-28|2026-09-29|2026-09-30;1|2|3|4|5;A2_pass1_v1.0.csv;46db3ab6e661d80b;A2_evaluation_sheet-1_coded_2026-09-30.csv;2026-09-30
+A2_pass2;1.0;178;NW;2026-09-30|2026-10-05|2026-10-08;6|7|8|9;A2_pass2_v1.0.csv;59eb4937324e8e3d;A2_evaluation_sheet-2_CODED.csv;2026-10-08
+A2R_pass1;1.0;40;NW;2026-10-13;1;A2R_pass1_v1.0.csv;201b439216d7a62e;A2R_reliability_sheet-1_coded_2026-10-13.csv;2026-10-13
+A2R_pass2;1.0;54;NW;2026-10-13;1|2;A2R_pass2_v1.0.csv;6b9b203db52f9729;A2R_reliability_sheet-2_CODED.csv;2026-10-13
+A3_pass1;1.0;55;NW;2026-10-14;1;A3_pass1_v1.0.csv;211591df0511cd34;A3_evaluation_sheet-1_coded_2026-10-14.csv;2026-10-14
+A3_pass2;1.0;81;NW;2026-10-14|2026-10-19;2|3|4;A3_pass2_v1.0.csv;0257e3b0e081a766;A3_evaluation_sheet-2_CODED.csv;2026-10-19
+A2R2_pass1;1.0;80;NW;2026-11-10;1;A2R2_pass1_v1.0.csv;8369b667b08bd12e;A2R2_reliability_sheet-1_coded_2026-11-10.csv;2026-11-10
+A2R2_pass2;1.0;113;NW;2026-11-10;2|3;A2R2_pass2_v1.0.csv;efbfe7b50769096f;A2R2_reliability_sheet-2_CODED.csv;2026-11-10

@@ -1,0 +1,1216 @@
+{
+  "technology": {
+    "pooled": {
+      "solar": {
+        "rows": 37,
+        "articles": 24
+      },
+      "hydrogen": {
+        "rows": 20,
+        "articles": 8
+      },
+      "wind": {
+        "rows": 36,
+        "articles": 22
+      },
+      "general": {
+        "rows": 40,
+        "articles": 29
+      },
+      "nuclear": {
+        "rows": 22,
+        "articles": 11
+      },
+      "storage": {
+        "rows": 13,
+        "articles": 9
+      },
+      "other_renewable": {
+        "rows": 10,
+        "articles": 9
+      }
+    },
+    "de": {
+      "solar": {
+        "rows": 23,
+        "articles": 13
+      },
+      "hydrogen": {
+        "rows": 3,
+        "articles": 3
+      },
+      "wind": {
+        "rows": 24,
+        "articles": 13
+      },
+      "general": {
+        "rows": 17,
+        "articles": 14
+      },
+      "nuclear": {
+        "rows": 3,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 8,
+        "articles": 5
+      },
+      "other_renewable": {
+        "rows": 6,
+        "articles": 5
+      }
+    },
+    "en": {
+      "general": {
+        "rows": 23,
+        "articles": 15
+      },
+      "solar": {
+        "rows": 14,
+        "articles": 11
+      },
+      "wind": {
+        "rows": 12,
+        "articles": 9
+      },
+      "nuclear": {
+        "rows": 19,
+        "articles": 10
+      },
+      "other_renewable": {
+        "rows": 4,
+        "articles": 4
+      },
+      "storage": {
+        "rows": 5,
+        "articles": 4
+      },
+      "hydrogen": {
+        "rows": 17,
+        "articles": 5
+      }
+    },
+    "clean_pooled": {
+      "hydrogen": {
+        "rows": 19,
+        "articles": 7
+      },
+      "solar": {
+        "rows": 28,
+        "articles": 20
+      },
+      "wind": {
+        "rows": 34,
+        "articles": 21
+      },
+      "general": {
+        "rows": 35,
+        "articles": 26
+      },
+      "nuclear": {
+        "rows": 22,
+        "articles": 11
+      },
+      "storage": {
+        "rows": 13,
+        "articles": 9
+      },
+      "other_renewable": {
+        "rows": 10,
+        "articles": 9
+      }
+    },
+    "clean_de": {
+      "hydrogen": {
+        "rows": 2,
+        "articles": 2
+      },
+      "solar": {
+        "rows": 15,
+        "articles": 10
+      },
+      "wind": {
+        "rows": 22,
+        "articles": 12
+      },
+      "general": {
+        "rows": 16,
+        "articles": 13
+      },
+      "nuclear": {
+        "rows": 3,
+        "articles": 1
+      },
+      "storage": {
+        "rows": 8,
+        "articles": 5
+      },
+      "other_renewable": {
+        "rows": 6,
+        "articles": 5
+      }
+    },
+    "clean_en": {
+      "wind": {
+        "rows": 12,
+        "articles": 9
+      },
+      "general": {
+        "rows": 19,
+        "articles": 13
+      },
+      "nuclear": {
+        "rows": 19,
+        "articles": 10
+      },
+      "other_renewable": {
+        "rows": 4,
+        "articles": 4
+      },
+      "solar": {
+        "rows": 13,
+        "articles": 10
+      },
+      "storage": {
+        "rows": 5,
+        "articles": 4
+      },
+      "hydrogen": {
+        "rows": 17,
+        "articles": 5
+      }
+    },
+    "common_support": [
+      "general",
+      "hydrogen",
+      "nuclear",
+      "other_renewable",
+      "solar",
+      "storage",
+      "wind"
+    ],
+    "common_support_clean": [
+      "general",
+      "hydrogen",
+      "nuclear",
+      "other_renewable",
+      "solar",
+      "storage",
+      "wind"
+    ]
+  },
+  "element": {
+    "pooled": {
+      "F7a": {
+        "rows": 14,
+        "articles": 6
+      },
+      "F7b": {
+        "rows": 12,
+        "articles": 6
+      },
+      "F8a": {
+        "rows": 28,
+        "articles": 14
+      },
+      "F3a": {
+        "rows": 13,
+        "articles": 11
+      },
+      "F4a": {
+        "rows": 11,
+        "articles": 8
+      },
+      "F4b": {
+        "rows": 13,
+        "articles": 6
+      },
+      "F1b": {
+        "rows": 30,
+        "articles": 16
+      },
+      "F2b": {
+        "rows": 60,
+        "articles": 31
+      },
+      "F3b": {
+        "rows": 38,
+        "articles": 19
+      },
+      "F2c": {
+        "rows": 35,
+        "articles": 25
+      },
+      "F6b": {
+        "rows": 15,
+        "articles": 7
+      },
+      "F1a": {
+        "rows": 45,
+        "articles": 20
+      },
+      "F6a": {
+        "rows": 20,
+        "articles": 14
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F5b": {
+        "rows": 17,
+        "articles": 12
+      },
+      "F5a": {
+        "rows": 20,
+        "articles": 10
+      },
+      "F9": {
+        "rows": 2,
+        "articles": 2
+      }
+    },
+    "de": {
+      "F7a": {
+        "rows": 2,
+        "articles": 2
+      },
+      "F7b": {
+        "rows": 4,
+        "articles": 3
+      },
+      "F8a": {
+        "rows": 17,
+        "articles": 7
+      },
+      "F3a": {
+        "rows": 7,
+        "articles": 7
+      },
+      "F4a": {
+        "rows": 5,
+        "articles": 3
+      },
+      "F4b": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F1b": {
+        "rows": 13,
+        "articles": 8
+      },
+      "F2b": {
+        "rows": 19,
+        "articles": 12
+      },
+      "F3b": {
+        "rows": 13,
+        "articles": 7
+      },
+      "F2c": {
+        "rows": 17,
+        "articles": 13
+      },
+      "F6b": {
+        "rows": 13,
+        "articles": 5
+      },
+      "F1a": {
+        "rows": 18,
+        "articles": 8
+      },
+      "F6a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F5b": {
+        "rows": 13,
+        "articles": 9
+      },
+      "F5a": {
+        "rows": 9,
+        "articles": 5
+      }
+    },
+    "en": {
+      "F2c": {
+        "rows": 18,
+        "articles": 12
+      },
+      "F3b": {
+        "rows": 25,
+        "articles": 12
+      },
+      "F4b": {
+        "rows": 10,
+        "articles": 4
+      },
+      "F1a": {
+        "rows": 27,
+        "articles": 12
+      },
+      "F3a": {
+        "rows": 6,
+        "articles": 4
+      },
+      "F4a": {
+        "rows": 6,
+        "articles": 5
+      },
+      "F1b": {
+        "rows": 17,
+        "articles": 8
+      },
+      "F2b": {
+        "rows": 41,
+        "articles": 19
+      },
+      "F6a": {
+        "rows": 12,
+        "articles": 9
+      },
+      "F9": {
+        "rows": 2,
+        "articles": 2
+      },
+      "F5a": {
+        "rows": 11,
+        "articles": 5
+      },
+      "F5b": {
+        "rows": 4,
+        "articles": 3
+      },
+      "F7a": {
+        "rows": 12,
+        "articles": 4
+      },
+      "F8a": {
+        "rows": 11,
+        "articles": 7
+      },
+      "F7b": {
+        "rows": 8,
+        "articles": 3
+      },
+      "F6b": {
+        "rows": 2,
+        "articles": 2
+      }
+    },
+    "clean_pooled": {
+      "F1a": {
+        "rows": 44,
+        "articles": 19
+      },
+      "F3a": {
+        "rows": 10,
+        "articles": 8
+      },
+      "F6a": {
+        "rows": 20,
+        "articles": 14
+      },
+      "F1b": {
+        "rows": 22,
+        "articles": 12
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F2b": {
+        "rows": 55,
+        "articles": 28
+      },
+      "F5b": {
+        "rows": 17,
+        "articles": 12
+      },
+      "F3b": {
+        "rows": 33,
+        "articles": 16
+      },
+      "F5a": {
+        "rows": 20,
+        "articles": 10
+      },
+      "F8a": {
+        "rows": 21,
+        "articles": 11
+      },
+      "F2c": {
+        "rows": 31,
+        "articles": 22
+      },
+      "F4a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F6b": {
+        "rows": 14,
+        "articles": 6
+      },
+      "F9": {
+        "rows": 2,
+        "articles": 2
+      },
+      "F7a": {
+        "rows": 13,
+        "articles": 5
+      },
+      "F7b": {
+        "rows": 9,
+        "articles": 4
+      },
+      "F4b": {
+        "rows": 11,
+        "articles": 4
+      }
+    },
+    "clean_de": {
+      "F1a": {
+        "rows": 18,
+        "articles": 8
+      },
+      "F3a": {
+        "rows": 5,
+        "articles": 5
+      },
+      "F6a": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F1b": {
+        "rows": 8,
+        "articles": 5
+      },
+      "F2a": {
+        "rows": 3,
+        "articles": 2
+      },
+      "F2b": {
+        "rows": 17,
+        "articles": 10
+      },
+      "F5b": {
+        "rows": 13,
+        "articles": 9
+      },
+      "F3b": {
+        "rows": 9,
+        "articles": 5
+      },
+      "F5a": {
+        "rows": 9,
+        "articles": 5
+      },
+      "F8a": {
+        "rows": 10,
+        "articles": 4
+      },
+      "F2c": {
+        "rows": 15,
+        "articles": 12
+      },
+      "F4a": {
+        "rows": 4,
+        "articles": 2
+      },
+      "F6b": {
+        "rows": 12,
+        "articles": 4
+      },
+      "F4b": {
+        "rows": 2,
+        "articles": 1
+      },
+      "F7a": {
+        "rows": 1,
+        "articles": 1
+      },
+      "F7b": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "clean_en": {
+      "F2b": {
+        "rows": 38,
+        "articles": 18
+      },
+      "F2c": {
+        "rows": 16,
+        "articles": 10
+      },
+      "F1b": {
+        "rows": 14,
+        "articles": 7
+      },
+      "F3b": {
+        "rows": 24,
+        "articles": 11
+      },
+      "F6a": {
+        "rows": 12,
+        "articles": 9
+      },
+      "F9": {
+        "rows": 2,
+        "articles": 2
+      },
+      "F1a": {
+        "rows": 26,
+        "articles": 11
+      },
+      "F5a": {
+        "rows": 11,
+        "articles": 5
+      },
+      "F4a": {
+        "rows": 4,
+        "articles": 3
+      },
+      "F5b": {
+        "rows": 4,
+        "articles": 3
+      },
+      "F7a": {
+        "rows": 12,
+        "articles": 4
+      },
+      "F8a": {
+        "rows": 11,
+        "articles": 7
+      },
+      "F3a": {
+        "rows": 5,
+        "articles": 3
+      },
+      "F7b": {
+        "rows": 8,
+        "articles": 3
+      },
+      "F4b": {
+        "rows": 9,
+        "articles": 3
+      },
+      "F6b": {
+        "rows": 2,
+        "articles": 2
+      }
+    },
+    "common_support": [
+      "F1a",
+      "F1b",
+      "F2b",
+      "F2c",
+      "F3a",
+      "F3b",
+      "F4a",
+      "F4b",
+      "F5a",
+      "F5b",
+      "F6a",
+      "F6b",
+      "F7a",
+      "F7b",
+      "F8a"
+    ],
+    "common_support_clean": [
+      "F1a",
+      "F1b",
+      "F2b",
+      "F2c",
+      "F3a",
+      "F3b",
+      "F4a",
+      "F4b",
+      "F5a",
+      "F5b",
+      "F6a",
+      "F6b",
+      "F7a",
+      "F7b",
+      "F8a"
+    ]
+  },
+  "evaluation_A": {
+    "pooled": {
+      "mixed": {
+        "rows": 9,
+        "articles": 8
+      },
+      "positive": {
+        "rows": 85,
+        "articles": 40
+      },
+      "negative": {
+        "rows": 35,
+        "articles": 19
+      },
+      "neutral": {
+        "rows": 5,
+        "articles": 4
+      }
+    },
+    "de": {
+      "mixed": {
+        "rows": 4,
+        "articles": 4
+      },
+      "positive": {
+        "rows": 37,
+        "articles": 19
+      },
+      "negative": {
+        "rows": 20,
+        "articles": 10
+      },
+      "neutral": {
+        "rows": 4,
+        "articles": 3
+      }
+    },
+    "en": {
+      "positive": {
+        "rows": 48,
+        "articles": 21
+      },
+      "mixed": {
+        "rows": 5,
+        "articles": 4
+      },
+      "neutral": {
+        "rows": 1,
+        "articles": 1
+      },
+      "negative": {
+        "rows": 15,
+        "articles": 9
+      }
+    },
+    "clean_pooled": {
+      "positive": {
+        "rows": 69,
+        "articles": 35
+      },
+      "negative": {
+        "rows": 31,
+        "articles": 17
+      },
+      "mixed": {
+        "rows": 8,
+        "articles": 7
+      },
+      "neutral": {
+        "rows": 5,
+        "articles": 4
+      }
+    },
+    "clean_de": {
+      "positive": {
+        "rows": 29,
+        "articles": 16
+      },
+      "negative": {
+        "rows": 16,
+        "articles": 8
+      },
+      "mixed": {
+        "rows": 3,
+        "articles": 3
+      },
+      "neutral": {
+        "rows": 4,
+        "articles": 3
+      }
+    },
+    "clean_en": {
+      "positive": {
+        "rows": 40,
+        "articles": 19
+      },
+      "mixed": {
+        "rows": 5,
+        "articles": 4
+      },
+      "neutral": {
+        "rows": 1,
+        "articles": 1
+      },
+      "negative": {
+        "rows": 15,
+        "articles": 9
+      }
+    },
+    "common_support": [
+      "mixed",
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "common_support_clean": [
+      "mixed",
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "evaluation_B": {
+    "pooled": {
+      "mixed": {
+        "rows": 14,
+        "articles": 9
+      },
+      "neutral": {
+        "rows": 19,
+        "articles": 14
+      },
+      "positive": {
+        "rows": 189,
+        "articles": 45
+      },
+      "negative": {
+        "rows": 118,
+        "articles": 27
+      }
+    },
+    "de": {
+      "mixed": {
+        "rows": 6,
+        "articles": 5
+      },
+      "neutral": {
+        "rows": 10,
+        "articles": 7
+      },
+      "positive": {
+        "rows": 69,
+        "articles": 22
+      },
+      "negative": {
+        "rows": 60,
+        "articles": 12
+      }
+    },
+    "en": {
+      "positive": {
+        "rows": 120,
+        "articles": 23
+      },
+      "negative": {
+        "rows": 58,
+        "articles": 15
+      },
+      "mixed": {
+        "rows": 8,
+        "articles": 4
+      },
+      "neutral": {
+        "rows": 9,
+        "articles": 7
+      }
+    },
+    "clean_pooled": {
+      "negative": {
+        "rows": 107,
+        "articles": 24
+      },
+      "positive": {
+        "rows": 163,
+        "articles": 40
+      },
+      "mixed": {
+        "rows": 13,
+        "articles": 8
+      },
+      "neutral": {
+        "rows": 18,
+        "articles": 13
+      }
+    },
+    "clean_de": {
+      "negative": {
+        "rows": 50,
+        "articles": 10
+      },
+      "positive": {
+        "rows": 55,
+        "articles": 19
+      },
+      "mixed": {
+        "rows": 5,
+        "articles": 4
+      },
+      "neutral": {
+        "rows": 9,
+        "articles": 6
+      }
+    },
+    "clean_en": {
+      "positive": {
+        "rows": 108,
+        "articles": 21
+      },
+      "mixed": {
+        "rows": 8,
+        "articles": 4
+      },
+      "negative": {
+        "rows": 57,
+        "articles": 14
+      },
+      "neutral": {
+        "rows": 9,
+        "articles": 7
+      }
+    },
+    "common_support": [
+      "mixed",
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "common_support_clean": [
+      "mixed",
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "comparison_A": {
+    "pooled": {
+      "none": {
+        "rows": 104,
+        "articles": 45
+      },
+      "fossil_generic": {
+        "rows": 17,
+        "articles": 10
+      },
+      "coal": {
+        "rows": 5,
+        "articles": 4
+      },
+      "natural_gas": {
+        "rows": 3,
+        "articles": 2
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 2,
+        "articles": 1
+      }
+    },
+    "de": {
+      "none": {
+        "rows": 58,
+        "articles": 23
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 5,
+        "articles": 3
+      }
+    },
+    "en": {
+      "none": {
+        "rows": 46,
+        "articles": 22
+      },
+      "fossil_generic": {
+        "rows": 12,
+        "articles": 7
+      },
+      "coal": {
+        "rows": 2,
+        "articles": 2
+      },
+      "natural_gas": {
+        "rows": 3,
+        "articles": 2
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 2,
+        "articles": 1
+      }
+    },
+    "clean_pooled": {
+      "none": {
+        "rows": 88,
+        "articles": 39
+      },
+      "coal": {
+        "rows": 5,
+        "articles": 4
+      },
+      "fossil_generic": {
+        "rows": 16,
+        "articles": 9
+      },
+      "natural_gas": {
+        "rows": 3,
+        "articles": 2
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 2,
+        "articles": 1
+      }
+    },
+    "clean_de": {
+      "none": {
+        "rows": 46,
+        "articles": 19
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 5,
+        "articles": 3
+      }
+    },
+    "clean_en": {
+      "none": {
+        "rows": 42,
+        "articles": 20
+      },
+      "fossil_generic": {
+        "rows": 11,
+        "articles": 6
+      },
+      "coal": {
+        "rows": 2,
+        "articles": 2
+      },
+      "natural_gas": {
+        "rows": 3,
+        "articles": 2
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 2,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "coal",
+      "fossil_generic",
+      "none"
+    ],
+    "common_support_clean": [
+      "coal",
+      "fossil_generic",
+      "none"
+    ]
+  },
+  "comparison_B": {
+    "pooled": {
+      "none": {
+        "rows": 127,
+        "articles": 46
+      },
+      "fossil_generic": {
+        "rows": 28,
+        "articles": 13
+      },
+      "coal": {
+        "rows": 5,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 4,
+        "articles": 2
+      },
+      "natural_gas": {
+        "rows": 9,
+        "articles": 5
+      },
+      "other": {
+        "rows": 1,
+        "articles": 1
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "de": {
+      "none": {
+        "rows": 71,
+        "articles": 24
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 6,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "en": {
+      "none": {
+        "rows": 56,
+        "articles": 22
+      },
+      "fossil_generic": {
+        "rows": 22,
+        "articles": 9
+      },
+      "coal": {
+        "rows": 2,
+        "articles": 2
+      },
+      "natural_gas": {
+        "rows": 9,
+        "articles": 5
+      },
+      "other": {
+        "rows": 1,
+        "articles": 1
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 3,
+        "articles": 1
+      }
+    },
+    "clean_pooled": {
+      "none": {
+        "rows": 111,
+        "articles": 40
+      },
+      "coal": {
+        "rows": 5,
+        "articles": 4
+      },
+      "fossil_generic": {
+        "rows": 27,
+        "articles": 12
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 4,
+        "articles": 2
+      },
+      "natural_gas": {
+        "rows": 9,
+        "articles": 5
+      },
+      "other": {
+        "rows": 1,
+        "articles": 1
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "clean_de": {
+      "none": {
+        "rows": 59,
+        "articles": 20
+      },
+      "coal": {
+        "rows": 3,
+        "articles": 2
+      },
+      "fossil_generic": {
+        "rows": 6,
+        "articles": 4
+      },
+      "other_renewable": {
+        "rows": 3,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 1,
+        "articles": 1
+      }
+    },
+    "clean_en": {
+      "none": {
+        "rows": 52,
+        "articles": 20
+      },
+      "fossil_generic": {
+        "rows": 21,
+        "articles": 8
+      },
+      "coal": {
+        "rows": 2,
+        "articles": 2
+      },
+      "natural_gas": {
+        "rows": 9,
+        "articles": 5
+      },
+      "other": {
+        "rows": 1,
+        "articles": 1
+      },
+      "hydrogen": {
+        "rows": 1,
+        "articles": 1
+      },
+      "multiple": {
+        "rows": 3,
+        "articles": 1
+      }
+    },
+    "common_support": [
+      "coal",
+      "fossil_generic",
+      "multiple",
+      "none"
+    ],
+    "common_support_clean": [
+      "coal",
+      "fossil_generic",
+      "multiple",
+      "none"
+    ]
+  }
+}

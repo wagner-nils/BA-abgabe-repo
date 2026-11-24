@@ -1,0 +1,274 @@
+{
+  "tools": [
+    {
+      "toolSpec": {
+        "name": "record_relations",
+        "description": "Record the technology-frame-evaluation relations asserted in one news paragraph, exactly as the coding instrument defines them.",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "outcome",
+              "relations"
+            ],
+            "properties": {
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "off_topic",
+                  "technologies_present"
+                ],
+                "description": "`off_topic` when the paragraph makes no statement about any listed technology; `technologies_present` otherwise."
+              },
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "technology",
+                    "element_checks",
+                    "evaluations",
+                    "comparison_target"
+                  ],
+                  "properties": {
+                    "technology": {
+                      "type": "string",
+                      "enum": [
+                        "general",
+                        "solar",
+                        "wind",
+                        "hydrogen",
+                        "nuclear",
+                        "other_renewable",
+                        "storage"
+                      ]
+                    },
+                    "element_checks": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "F1a",
+                        "F1b",
+                        "F2a",
+                        "F2b",
+                        "F2c",
+                        "F3a",
+                        "F3b",
+                        "F4a",
+                        "F4b",
+                        "F5a",
+                        "F5b",
+                        "F6a",
+                        "F6b",
+                        "F7a",
+                        "F7b",
+                        "F8a",
+                        "F9"
+                      ],
+                      "properties": {
+                        "F1a": {
+                          "type": "boolean"
+                        },
+                        "F1b": {
+                          "type": "boolean"
+                        },
+                        "F2a": {
+                          "type": "boolean"
+                        },
+                        "F2b": {
+                          "type": "boolean"
+                        },
+                        "F2c": {
+                          "type": "boolean"
+                        },
+                        "F3a": {
+                          "type": "boolean"
+                        },
+                        "F3b": {
+                          "type": "boolean"
+                        },
+                        "F4a": {
+                          "type": "boolean"
+                        },
+                        "F4b": {
+                          "type": "boolean"
+                        },
+                        "F5a": {
+                          "type": "boolean"
+                        },
+                        "F5b": {
+                          "type": "boolean"
+                        },
+                        "F6a": {
+                          "type": "boolean"
+                        },
+                        "F6b": {
+                          "type": "boolean"
+                        },
+                        "F7a": {
+                          "type": "boolean"
+                        },
+                        "F7b": {
+                          "type": "boolean"
+                        },
+                        "F8a": {
+                          "type": "boolean"
+                        },
+                        "F9": {
+                          "type": "boolean"
+                        }
+                      },
+                      "description": "Every one of the 17 elements, answered for THIS technology: true if it fires, false if it does not. All false means the paragraph makes a statement about this technology but frames nothing about it."
+                    },
+                    "evaluations": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "description": "One entry per fired frame; none for a frame that did not fire.",
+                      "properties": {
+                        "costs": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "jobs": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "climate": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "security": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "reliability": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "feasibility": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "siting": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "regulation": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        },
+                        "other": {
+                          "type": "string",
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "neutral",
+                            "mixed"
+                          ]
+                        }
+                      }
+                    },
+                    "comparison_target": {
+                      "type": "string",
+                      "enum": [
+                        "natural_gas",
+                        "coal",
+                        "oil",
+                        "fossil_generic",
+                        "grid_status_quo",
+                        "general",
+                        "solar",
+                        "wind",
+                        "hydrogen",
+                        "nuclear",
+                        "other_renewable",
+                        "storage",
+                        "multiple",
+                        "none",
+                        "other"
+                      ]
+                    },
+                    "comparison_note": {
+                      "type": "string",
+                      "description": "Required when comparison_target is `other` or `multiple`."
+                    },
+                    "note": {
+                      "type": "string",
+                      "description": "Required when any of `F9` fires."
+                    },
+                    "wind_siting": {
+                      "type": "string",
+                      "enum": [
+                        "onshore",
+                        "offshore",
+                        "unspecified"
+                      ],
+                      "description": "Only for technology `wind`."
+                    },
+                    "hydrogen_pathway": {
+                      "type": "string",
+                      "enum": [
+                        "green",
+                        "blue",
+                        "gray",
+                        "unspecified"
+                      ],
+                      "description": "Only for technology `hydrogen`."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "toolChoice": {
+    "tool": {
+      "name": "record_relations"
+    }
+  }
+}

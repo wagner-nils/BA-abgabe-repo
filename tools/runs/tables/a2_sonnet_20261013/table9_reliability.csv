@@ -1,0 +1,35 @@
+level;item;alpha;raw agreement;n;support (first coding);support (second coding);support articles;coverage
+technology tick;general;0.779;0.925;40;8;9;7;
+technology tick;solar;1.000;1.000;40;11;11;9;
+technology tick;wind;1.000;1.000;40;9;9;7;
+technology tick;hydrogen;1.000;1.000;40;10;10;5;
+technology tick;nuclear;1.000;1.000;40;9;9;6;
+technology tick;other_renewable;n<5 (1);n<5 (1);40;1;1;1;
+technology tick;storage;n<5 (3);n<5 (3);40;3;5;3;
+element (aligned rows);F1a;0.678;0.900;50;10;9;7;rows only one coder: 1+4
+element (aligned rows);F1b;0.899;0.980;50;6;5;5;rows only one coder: 1+4
+element (aligned rows);F2a;n<5 (0);n<5 (0);50;0;1;0;rows only one coder: 1+4
+element (aligned rows);F2b;0.788;0.900;50;20;17;14;rows only one coder: 1+4
+element (aligned rows);F2c;0.369;0.820;50;8;9;7;rows only one coder: 1+4
+element (aligned rows);F3a;n<5 (4);n<5 (4);50;4;4;4;rows only one coder: 1+4
+element (aligned rows);F3b;0.562;0.900;50;8;5;7;rows only one coder: 1+4
+element (aligned rows);F4a;n<5 (3);n<5 (3);50;3;2;3;rows only one coder: 1+4
+element (aligned rows);F4b;n<5 (2);n<5 (2);50;2;3;1;rows only one coder: 1+4
+element (aligned rows);F5a;n<5 (4);n<5 (4);50;4;6;3;rows only one coder: 1+4
+element (aligned rows);F5b;n<5 (3);n<5 (3);50;3;2;3;rows only one coder: 1+4
+element (aligned rows);F6a;0.625;0.920;50;8;4;6;rows only one coder: 1+4
+element (aligned rows);F6b;0.462;0.920;50;5;3;2;rows only one coder: 1+4
+element (aligned rows);F7a;n<5 (2);n<5 (2);50;2;3;1;rows only one coder: 1+4
+element (aligned rows);F7b;n<5 (2);n<5 (2);50;2;1;2;rows only one coder: 1+4
+element (aligned rows);F8a;0.598;0.880;50;12;6;9;rows only one coder: 1+4
+element (aligned rows);F9;undefined;n<5 (0);50;0;0;0;rows only one coder: 1+4
+evaluation (both fired);costs;1.000;1.000;12;12;;10;12 of 17 rows where either fired
+evaluation (both fired);jobs;0.787;0.895;19;19;;13;19 of 29 rows where either fired
+evaluation (both fired);climate;0.492;0.750;8;8;;8;8 of 12 rows where either fired
+evaluation (both fired);security;undefined;n<5 (4);4;4;;4;4 of 5 rows where either fired
+evaluation (both fired);reliability;n<5 (4);n<5 (4);4;4;;3;4 of 11 rows where either fired
+evaluation (both fired);feasibility;0.755;0.857;7;7;;4;7 of 13 rows where either fired
+evaluation (both fired);siting;n<5 (3);n<5 (3);3;3;;2;3 of 5 rows where either fired
+evaluation (both fired);regulation;0.756;0.833;6;6;;5;6 of 12 rows where either fired
+evaluation (both fired);other;undefined;undefined;0;0;;0;0 of 0 rows where either fired
+comparison target (aligned rows);;0.624;0.880;50;50;;27;

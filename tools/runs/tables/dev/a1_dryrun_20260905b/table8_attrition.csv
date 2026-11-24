@@ -1,0 +1,10 @@
+population;paragraphs;gold off-topic;execution;outcomes
+pooled;32;6;1;"{""technologies_present"": 26, ""off_topic"": 6}"
+pooled;32;6;2;"{""technologies_present"": 26, ""off_topic"": 6}"
+pooled;32;6;3;"{""technologies_present"": 26, ""off_topic"": 6}"
+de;14;1;1;"{""technologies_present"": 13, ""off_topic"": 1}"
+de;14;1;2;"{""technologies_present"": 13, ""off_topic"": 1}"
+de;14;1;3;"{""technologies_present"": 13, ""off_topic"": 1}"
+en;18;5;1;"{""technologies_present"": 13, ""off_topic"": 5}"
+en;18;5;2;"{""technologies_present"": 13, ""off_topic"": 5}"
+en;18;5;3;"{""technologies_present"": 13, ""off_topic"": 5}"

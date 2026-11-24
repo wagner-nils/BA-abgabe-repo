@@ -1,0 +1,260 @@
+{
+  "run_id": "f4j_v10r3_a2_20261030",
+  "started_at": "2026-10-30T13:34:32.231024+00:00",
+  "ended_at": "2026-10-30T13:38:14.004740+00:00",
+  "first_call_at": "2026-10-30T13:34:40.621235+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "analysis_status": "post-draft instrument variant",
+  "w3_authorisation": null,
+  "a3_embargo": {
+    "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+    "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "touches_a3": false,
+    "paragraphs_touched": 0
+  },
+  "form_variant": {
+    "configuration": "v1.0r3",
+    "decision": "Nils Wagner (author), 2026-10-30, chat: \"Teil 2: hier machen wir b -> (B) Zusätzlich A3 (gegen v1.0r3) und A2.\"",
+    "decision_sha256": "69a6495904a35b094f1fff8e0f78329c18e8f453872674ac320b02ebbfddd039",
+    "authority": "pre-analysis specification §4j (2026-10-30)",
+    "sample": "A2",
+    "retry_policy_version": "3",
+    "max_tokens": 1024
+  },
+  "manifest": {
+    "path": "tools/annotation/labels/A2_sample_manifest.json",
+    "sha256": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+    "restrict_split": null,
+    "n_paragraphs": 120
+  },
+  "repeats": 1,
+  "execution_fingerprint": "50a0145667ce33a166f3db55044b61094191caf51bea5d940255985c916a1bc6",
+  "execution_contract": {
+    "manifest_sha256": "1cbfa597b9203b64b5b8aa2df8439d603764e33df98225cc03ec85e0bb818015",
+    "restrict_split": null,
+    "dev": false,
+    "a3_embargo": {
+      "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+      "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+      "touches_a3": false,
+      "paragraphs_touched": 0
+    },
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-sonnet-4-6",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 1024,
+      "temperature": 0
+    },
+    "additional_model_request_fields": null,
+    "max_tokens": 1024,
+    "repeats": 1,
+    "retry_policy_version": "3",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "c66897c50174069c728e496be7b2728868f7036455f3f4b23377294a23555d1d",
+    "instrument_sha256": "061a98dcdcee96efdb0b20d83c80f641491d6c0afdeee31a75acedb79c88dbed",
+    "instrument_version": "1.0r3",
+    "instrument_v11_sha256": "441fe99a946e03eddea05b3134ec12168c802feca7e07ab7c816b7be869d8681",
+    "instrument_v10r3_sha256": "12a669bbbf99caf2ecc196570986207403145fbaa4f3af1a601eb48f41ebb7b8",
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sample_contract_sha256": "ec0fcf7047de4554557fabb43509c7eff350bf3729090c6dd12f7c460393c3f9",
+    "preflight_sha256": "c9cce92dfab629e97d4a151b6a3df4037bdc27173862386f1b71f330ca486f6f",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null,
+    "form_variant": {
+      "configuration": "v1.0r3",
+      "decision": "Nils Wagner (author), 2026-10-30, chat: \"Teil 2: hier machen wir b -> (B) Zusätzlich A3 (gegen v1.0r3) und A2.\"",
+      "decision_sha256": "69a6495904a35b094f1fff8e0f78329c18e8f453872674ac320b02ebbfddd039",
+      "authority": "pre-analysis specification §4j (2026-10-30)",
+      "sample": "A2",
+      "retry_policy_version": "3",
+      "max_tokens": 1024
+    }
+  },
+  "git_commit": "bf9389c5d1682c1ad1985079990978d81ab3f14c",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/runs/battery/"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "tools/runs/battery/"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "instrument": {
+    "name": "v1.0r3",
+    "version": "1.0r3",
+    "variant": null,
+    "retry_policy_version": "3",
+    "pins": "tools/pipeline/pins.json",
+    "module_sha256": {
+      "instrument.py": "061a98dcdcee96efdb0b20d83c80f641491d6c0afdeee31a75acedb79c88dbed",
+      "instrument_v11.py": "441fe99a946e03eddea05b3134ec12168c802feca7e07ab7c816b7be869d8681",
+      "instrument_v10r3.py": "12a669bbbf99caf2ecc196570986207403145fbaa4f3af1a601eb48f41ebb7b8"
+    }
+  },
+  "model_id": "eu.anthropic.claude-sonnet-4-6",
+  "model_key": "sonnet",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 1024,
+    "temperature": 0
+  },
+  "thinking": "not requested: the request carries no thinking field; for the pinned Claude 4.6 models the provider default is thinking off. This describes the request, not the response: a reasoningContent block in a response is a contract violation (unexpected_content), and its absence proves nothing.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_f4j_v10r3_a2_20261030.json",
+    "sha256": "5487d9d7ed1a68d8a6b62eac026880f43546b2444371854203555f96eed66483",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_f4j_v10r3_a2_20261030.json",
+        "sha256": "5487d9d7ed1a68d8a6b62eac026880f43546b2444371854203555f96eed66483",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-10-30T13:34:32.270392+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 126,
+    "input_tokens": 68141,
+    "output_tokens": 19092,
+    "cache_read_tokens": 544194,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 0,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 0,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 117,
+      "contract_invalid": 5,
+      "schema_invalid": 1,
+      "ok_off_topic": 3
+    },
+    "billable_tokens": 631427,
+    "quota_tokens": 68141
+  },
+  "cost": {
+    "estimated_usd": 0.719467,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 3.3,
+      "output": 16.5,
+      "cache_write_1h": 6.6,
+      "cache_read": 0.33
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5); §4f 2026-10-19 provisional rows (haiku45, sonnet45, novapro, qwen3_235b, nemotron3s); USD per 1M tokens",
+    "billing_complete": true,
+    "note": "every attempt finished with complete usage; the token-derived estimate is complete"
+  },
+  "files": {
+    "f4j_v10r3_a2_20261030_calls.jsonl": {
+      "path": "tools/runs/f4j_v10r3_a2_20261030_calls.jsonl",
+      "sha256": "fa91144acd0c75b59b49a9d13960b590d4779592137ca89e764fda14f839f8db"
+    },
+    "f4j_v10r3_a2_20261030_terminal.csv": {
+      "path": "tools/runs/f4j_v10r3_a2_20261030_terminal.csv",
+      "sha256": "ad69a6237ea8383f52b08987b18c1549efc4a39a5537a4d202920c90ad9b1ec5"
+    },
+    "f4j_v10r3_a2_20261030_predictions.csv": {
+      "path": "tools/runs/f4j_v10r3_a2_20261030_predictions.csv",
+      "sha256": "fc7c35b3974b5261c5feec95e097a14dd5b621612957e07280b91232ae4361c2"
+    }
+  },
+  "raw_private": "tools/runs/raw/f4j_v10r3_a2_20261030.jsonl"
+}

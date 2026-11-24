@@ -1,0 +1,17 @@
+family;model_key;reference;sample;verdict;overall;diff_element;lo;hi;diff_technology;lo;hi;diff_precision;lo;hi;diff_recall;lo;hi
+same_request;sonnet5;sonnet_req5;A2;no distinguishable difference;no consistent difference;0.0185;-0.0370;0.0816;0.0136;-0.0131;0.0458;0.0636;0.0069;0.1237;-0.0034;-0.0613;0.0647
+same_request;sonnet5;sonnet_req5;A3;no distinguishable difference;no consistent difference;0.0461;-0.0289;0.1162;0.0460;0.0048;0.1083;0.1104;0.0224;0.1926;0.0071;-0.0687;0.0705
+same_request;opus5;opus_req5;A2;better;no consistent difference;0.0722;0.0265;0.1174;0.0206;-0.0019;0.0414;-0.0345;-0.0815;0.0126;0.1496;0.0953;0.2072
+same_request;opus5;opus_req5;A3;no distinguishable difference;no consistent difference;0.0020;-0.0640;0.0700;0.0325;0.0000;0.0788;-0.1168;-0.1959;-0.0356;0.1143;0.0481;0.1656
+as_run;sonnet5;sonnet;A2;no distinguishable difference;no consistent difference;-0.0020;-0.0454;0.0454;0.0104;-0.0175;0.0412;0.0519;0.0011;0.1005;-0.0277;-0.0753;0.0232
+as_run;sonnet5;sonnet;A3;no distinguishable difference;no consistent difference;0.0867;-0.0081;0.1764;0.0785;0.0140;0.1559;0.1229;0.0326;0.2131;0.0643;-0.0365;0.1646
+as_run;sonnet5;opus;A2;no distinguishable difference;no consistent difference;-0.0337;-0.0875;0.0246;-0.0000;-0.0208;0.0220;0.0169;-0.0353;0.0725;-0.0565;-0.1109;0.0018
+as_run;sonnet5;opus;A3;no distinguishable difference;no consistent difference;-0.0295;-0.0989;0.0313;-0.0014;-0.0264;0.0208;0.0405;-0.0231;0.1041;-0.0714;-0.1394;-0.0076
+as_run;opus5;sonnet;A2;better;better;0.0969;0.0392;0.1502;0.0312;0.0089;0.0548;-0.0112;-0.0657;0.0424;0.1742;0.1087;0.2335
+as_run;opus5;sonnet;A3;better;better;0.1211;0.0319;0.1987;0.0917;0.0326;0.1600;-0.0174;-0.1024;0.0672;0.2429;0.1520;0.3125
+as_run;opus5;opus;A2;better;no consistent difference;0.0652;0.0194;0.1084;0.0208;-0.0032;0.0446;-0.0462;-0.0933;-0.0020;0.1454;0.0944;0.1959
+as_run;opus5;opus;A3;no distinguishable difference;no consistent difference;0.0048;-0.0673;0.0851;0.0117;0.0000;0.0226;-0.0997;-0.1681;-0.0154;0.1071;0.0300;0.1720
+decoding;sonnet_req5;sonnet;A2;no distinguishable difference;no consistent difference;-0.0205;-0.0511;0.0031;-0.0032;-0.0213;0.0116;-0.0117;-0.0378;0.0094;-0.0244;-0.0628;0.0031
+decoding;sonnet_req5;sonnet;A3;no distinguishable difference;no consistent difference;0.0407;-0.0131;0.1030;0.0326;-0.0248;0.0903;0.0124;-0.0254;0.0504;0.0571;-0.0052;0.1327
+decoding;opus_req5;opus;A2;no distinguishable difference;no consistent difference;-0.0070;-0.0251;0.0111;0.0002;-0.0090;0.0100;-0.0117;-0.0274;0.0049;-0.0042;-0.0261;0.0168
+decoding;opus_req5;opus;A3;no distinguishable difference;no consistent difference;0.0028;-0.0173;0.0193;-0.0207;-0.0619;0.0126;0.0170;-0.0143;0.0479;-0.0071;-0.0336;0.0137

@@ -1,0 +1,31 @@
+% 2026-11-11: rewritten for the fourth review's plan (M16); earlier versions and number sources in git (state d5a2bfb).
+% 2026-11-24: the instrument-check block moved to tab_instrument_checks (appendix).
+% OUTLINE: The overview retains adjustment, recurrence, translation and exploratory reference sensitivity; instrument checks have a separate appendix overview, and no later analysis replaces a registered figure.
+\begin{table}[!tbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{threeparttable}
+\caption[Analyses added after the registered result]{Descriptive analyses added after the registered result. None replaces a registered figure. Instrument checks: Table~\ref{tab:instrument_checks}. Reference and context checks: Appendix~\ref{app:later_checks}.}
+\label{tab:added_analyses}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{36mm}>{\raggedright\arraybackslash}p{50mm}>{\raggedright\arraybackslash}p{65mm}@{}}
+\toprule
+\textbf{Analysis (appendix tables)} & \textbf{Question; material} & \textbf{Result} \\
+\midrule
+Prevalence adjustment (Table~\ref{tab:dsl}) & Eligible-frame class shares? 618 model-labelled paragraphs, 120 human-coded & Investment 37.7\% (model only 19.4\%) under the first coding's convention \\
+\addlinespace
+Fresh census (Table~\ref{tab:fresh_displacement}) & Recurrence on articles without prior use? 55 paragraphs of ten articles; reference coded after the registered result & Element F1 0.563, precision above recall; eight of ten reported elements displaced downward \\
+\addlinespace
+Other models (Tables~\ref{tab:model_config} and~\ref{tab:pr_gaps}) & Is the gap model-specific? Both samples, mostly one execution each & In point estimate, precision above recall against both first codings in 11 of 12 configurations, all but Claude Opus~5 \\
+\addlinespace
+Translated input (Appendix~\ref{app:language}) & Does translation change agreement? 60 German evaluation paragraphs & Inconclusive for agreement \\
+\addlinespace
+Supplementary re-code (exploratory; Tables~\ref{tab:alpha_waves} and~\ref{tab:recode_waves}) & Reference sensitivity? 80 paragraphs re-coded after the results & Second coding, both waves (120 paragraphs): precision 0.695, recall 0.666; 290 element tuples against 376 in the first coding \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Evaluation sample design-weighted, census unweighted. F1: element micro-F1. Claude~5 and 5.5: provider's default sampling.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

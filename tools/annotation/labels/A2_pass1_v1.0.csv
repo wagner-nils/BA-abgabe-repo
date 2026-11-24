@@ -1,0 +1,121 @@
+﻿paragraph_id;article_id;lang;outlet;country;pub_date;tech_general;tech_solar;tech_wind;tech_hydrogen;tech_nuclear;tech_other_renewable;tech_storage;wind_siting;hydrogen_pathway;no_frame_present;confidence;note;annotator;annotator_type;coded_at;codebook_version;sitting;text_sha256
+A070_p10;A070;en;The New York Times;US;2026-04-10;0;1;1;0;1;1;0;unspecified;;0;3;[private: 36 chars];NW;human;2026-09-28;1.0;1;947ca196303e7aa7
+A003_p10;A003;de;taz;DE;2024-04-16;0;0;1;0;0;0;0;unspecified;;0;2;[private: 36 chars];NW;human;2026-09-28;1.0;1;4ca3fad7b68ba9a3
+A078_p03;A078;de;BR24;DE;2026-04-19;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-28;1.0;1;1cfa4deda1aaed1a
+A072_p18;A072;en;The New York Times;US;2026-07-27;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-28;1.0;1;3a4d360ddba67be0
+A052_p13;A052;en;The Economist;GB;2025-09-04;0;0;0;0;1;0;0;;;0;2;;NW;human;2026-09-28;1.0;1;44397b13dd862370
+A059_p04;A059;en;The Economist;GB;2026-08-27;0;1;0;0;0;0;1;;;0;3;;NW;human;2026-09-28;1.0;1;1c2d2fd32d89821a
+A010_p18;A010;en;Al Jazeera;QA;2023-02-28;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-28;1.0;1;04d7547167cf1c3a
+A092_p03;A092;de;tagesschau.de;DE;2026-01-15;0;0;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-28;1.0;1;369adfa2eaccaca0
+A070_p12;A070;en;The New York Times;US;2026-04-10;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-28;1.0;1;f02677001161ac99
+A072_p01;A072;en;The New York Times;US;2026-07-27;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-28;1.0;1;ec8225e9e48b9166
+A066_p14;A066;en;The New York Times;US;2023-12-04;0;0;0;1;0;0;0;;unspecified;0;2;[private: 47 chars];NW;human;2026-09-28;1.0;1;99280bc69be6bc6e
+A012_p29;A012;en;Al Jazeera;QA;2024-12-11;1;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-28;1.0;1;54be2dc4399e81e1
+A088_p09;A088;de;Süddeutsche Zeitung;DE;2026-04-26;1;0;0;0;0;0;1;;;0;3;;NW;human;2026-09-28;1.0;1;6b414869ee56fcee
+A063_p03;A063;en;The Guardian;GB;2025-11-14;0;1;1;1;0;0;0;onshore;green;0;2;[private: 49 chars];NW;human;2026-09-28;1.0;1;ffedd6ba1d346d73
+A044_p04;A044;de;DIE ZEIT;DE;2026-08-31;1;1;0;0;0;1;0;;;0;3;[private: 26 chars];NW;human;2026-09-28;1.0;1;202242db3fa3ea19
+A078_p01;A078;de;BR24;DE;2026-04-19;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-28;1.0;1;d4b46921a11c59b1
+A076_p01;A076;en;The New York Times;US;2026-08-28;0;0;1;0;0;0;0;offshore;;0;3;;NW;human;2026-09-29;1.0;2;1cf8d431a35f6033
+A089_p03;A089;de;Süddeutsche Zeitung;DE;2024-03-22;0;0;0;0;0;1;0;;;0;3;[private: 51 chars];NW;human;2026-09-29;1.0;2;cbd65e559c5c6e17
+A054_p09;A054;en;The Economist;GB;2025-11-03;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;8633481b6bf4f193
+A074_p14;A074;en;The New York Times;US;2026-08-26;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;9e264cd2cd68c23b
+A042_p11;A042;de;DIE ZEIT;DE;2026-08-10;0;0;1;0;0;0;1;onshore;;0;2;;NW;human;2026-09-29;1.0;2;d6503261f0603919
+A012_p11;A012;en;Al Jazeera;QA;2024-12-11;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;c362bedfca4dae52
+A069_p28;A069;en;The New York Times;US;2026-01-06;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;f3a726b58bfb0357
+A037_p03;A037;de;BILD;DE;2026-06-12;0;0;0;0;0;0;0;;;;2;[private: 73 chars];NW;human;2026-09-28;1.0;1;70bf6ebbaee0cc34
+A003_p11;A003;de;taz;DE;2024-04-16;0;0;1;0;0;0;0;onshore;;0;2;[private: 51 chars];NW;human;2026-09-29;1.0;2;1957907579756f45
+A088_p03;A088;de;Süddeutsche Zeitung;DE;2026-04-26;0;0;0;0;0;0;1;;;0;3;;NW;human;2026-09-29;1.0;2;9d15e318568f62b2
+A007_p10;A007;de;taz;DE;2026-04-03;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;529a4a8d2c69aa67
+A053_p08;A053;en;The Economist;GB;2025-10-30;0;0;0;0;0;0;1;;;0;3;;NW;human;2026-09-29;1.0;2;7ca38586115e9b49
+A066_p19;A066;en;The New York Times;US;2023-12-04;1;0;0;1;0;0;0;;green;0;2;[private: 39 chars];NW;human;2026-09-29;1.0;2;ed95324f1882b455
+A054_p17;A054;en;The Economist;GB;2025-11-03;1;1;1;0;0;0;1;unspecified;;0;2;[private: 60 chars];NW;human;2026-09-29;1.0;2;a9fa1d2c470fcfb5
+A092_p09;A092;de;tagesschau.de;DE;2026-01-15;0;0;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-29;1.0;2;d5aadb15472738ef
+A039_p04;A039;de;BILD;DE;2026-06-29;0;0;0;0;1;0;0;;;0;2;;NW;human;2026-09-29;1.0;2;1a504dc76554ac77
+A074_p15;A074;en;The New York Times;US;2026-08-26;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;d1ca1ce60303431d
+A072_p36;A072;en;The New York Times;US;2026-07-27;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;700c121a7f130871
+A008_p08;A008;de;taz;DE;2025-12-08;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;866df040efe00d30
+A079_p02;A079;de;Berliner Morgenpost;DE;2026-03-07;0;0;1;0;0;0;0;unspecified;;0;2;[private: 49 chars];NW;human;2026-09-29;1.0;2;7fdb6d7bed03332d
+A001_p09;A001;de;taz;DE;2024-07-24;0;1;0;0;0;0;0;;;0;2;[private: 35 chars];NW;human;2026-09-29;1.0;2;694af258975a03b5
+A042_p01;A042;de;DIE ZEIT;DE;2026-08-10;0;1;1;0;0;0;0;unspecified;;1;3;;NW;human;2026-09-29;1.0;2;1d4b9a95dba4c623
+A067_p05;A067;en;The New York Times;US;2025-08-11;0;0;0;1;0;0;0;;unspecified;0;2;[private: 39 chars];NW;human;2026-09-29;1.0;2;c63f11aee60f9038
+A076_p03;A076;en;The New York Times;US;2026-08-28;0;0;1;0;0;0;0;offshore;;0;3;;NW;human;2026-09-29;1.0;2;30fa6298e32fe341
+A060_p10;A060;en;The Guardian;GB;2025-03-24;0;0;0;1;0;0;0;;unspecified;0;2;[private: 103 chars];NW;human;2026-09-29;1.0;2;7aaa18d5c293068f
+A001_p12;A001;de;taz;DE;2024-07-24;0;0;0;1;0;0;0;;green;0;3;;NW;human;2026-09-29;1.0;2;afbe88dde24b4fb5
+A071_p04;A071;en;The New York Times;US;2026-05-06;1;1;1;0;0;0;1;unspecified;;0;3;;NW;human;2026-09-29;1.0;2;4fd9d2512ccb504f
+A092_p07;A092;de;tagesschau.de;DE;2026-01-15;1;0;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-29;1.0;2;fa50436f079a65a0
+A051_p02;A051;en;The Economist;GB;2025-09-03;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;89d439d2aefcdf79
+A063_p19;A063;en;The Guardian;GB;2025-11-14;0;0;0;1;0;0;0;;green;0;3;;NW;human;2026-09-29;1.0;2;11f6264afc178fba
+A083_p07;A083;de;Hamburger Abendblatt;DE;2026-08-16;1;0;0;0;0;0;0;;;0;2;[private: 61 chars];NW;human;2026-09-29;1.0;2;7d93674fd6ee753f
+A060_p16;A060;en;The Guardian;GB;2025-03-24;0;0;0;1;0;0;0;;unspecified;0;2;;NW;human;2026-09-29;1.0;2;e38fec4ffdd4d9f0
+A008_p02;A008;de;taz;DE;2025-12-08;1;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;918898bcbed8b2fd
+A052_p12;A052;en;The Economist;GB;2025-09-04;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;37903aaa225414be
+A060_p30;A060;en;The Guardian;GB;2025-03-24;1;0;0;1;0;0;0;;green;0;2;[private: 49 chars];NW;human;2026-09-29;1.0;2;104f5b048eac77ce
+A054_p11;A054;en;The Economist;GB;2025-11-03;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-29;1.0;2;6ef2014f3a0ec2e4
+A042_p02;A042;de;DIE ZEIT;DE;2026-08-10;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;63ad89206dd959ce
+A087_p05;A087;de;STERN.de;DE;2026-09-02;1;0;0;0;0;0;1;;;0;2;[private: 28 chars];NW;human;2026-09-29;1.0;2;ad83ab087afcd2cf
+A061_p12;A061;en;The Guardian;GB;2025-07-25;0;0;0;1;0;0;0;;green;0;3;;NW;human;2026-09-29;1.0;2;6de404c4d2f70e24
+A065_p03;A065;en;The New York Times;US;2023-07-22;1;0;0;0;0;0;0;;;0;3;[private: 27 chars];NW;human;2026-09-29;1.0;2;cf56bb2e27e77012
+A063_p01;A063;en;The Guardian;GB;2025-11-14;0;0;1;1;0;0;0;onshore;unspecified;0;2;[private: 64 chars];NW;human;2026-09-29;1.0;2;24864d72a0a80aa0
+A060_p13;A060;en;The Guardian;GB;2025-03-24;0;0;0;1;0;0;0;;green;0;3;;NW;human;2026-09-29;1.0;2;aa329bbcc38e19a0
+A072_p23;A072;en;The New York Times;US;2026-07-27;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;cb8fc05e228198b9
+A051_p06;A051;en;The Economist;GB;2025-09-03;0;0;0;0;1;0;0;;;0;3;[private: 29 chars];NW;human;2026-09-29;1.0;2;7b1e807012c328aa
+A046_p03;A046;de;Handelsblatt;DE;2026-07-16;1;0;0;0;0;1;0;;;0;3;[private: 30 chars];NW;human;2026-09-29;1.0;2;ea87540a77153c86
+A063_p20;A063;en;The Guardian;GB;2025-11-14;1;0;0;1;0;0;0;;green;0;3;;NW;human;2026-09-29;1.0;2;a39acf99f9087b82
+A008_p06;A008;de;taz;DE;2025-12-08;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;2;1c0edf324f77f896
+A068_p20;A068;en;The New York Times;US;2025-11-17;0;0;0;0;0;1;0;;;0;3;[private: 29 chars];NW;human;2026-09-29;1.0;2;12fc1bdfd97622ab
+A088_p14;A088;de;Süddeutsche Zeitung;DE;2026-04-26;0;0;0;0;0;0;1;;;0;3;;NW;human;2026-09-29;1.0;2;1303fd026b8be953
+A056_p02;A056;en;The Economist;GB;2026-03-19;1;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-29;1.0;2;9ad825ff19ab07f8
+A086_p03;A086;de;Salzburger Nachrichten (SN.at);AT;2026-09-02;0;1;0;0;0;0;1;;;0;2;[private: 45 chars];NW;human;2026-09-29;1.0;3;003cae87b09d3747
+A010_p13;A010;en;Al Jazeera;QA;2023-02-28;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;7d675ebaf421ee12
+A053_p09;A053;en;The Economist;GB;2025-10-30;1;0;0;0;0;0;1;;;0;3;;NW;human;2026-09-29;1.0;3;c350174abd4722ae
+A041_p02;A041;de;BILD;DE;2026-07-19;0;0;0;1;0;0;0;;unspecified;0;2;[private: 50 chars];NW;human;2026-09-29;1.0;3;a4daae5404342360
+A091_p05;A091;de;Süddeutsche Zeitung;DE;2026-07-14;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;2fa1c6e8d7a40e47
+A077_p01;A077;en;The Washington Post;US;2026-07-28;1;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-29;1.0;3;458bde50429c9121
+A043_p04;A043;de;DIE ZEIT;DE;2026-08-10;0;0;0;0;0;1;0;;;0;2;[private: 61 chars];NW;human;2026-09-29;1.0;3;50c4edc32ea23bce
+A093_p11;A093;de;tagesschau.de;DE;2025-09-15;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;105d3f6929227da5
+A046_p07;A046;de;Handelsblatt;DE;2026-07-16;1;1;1;0;0;1;0;unspecified;;0;3;[private: 67 chars];NW;human;2026-09-29;1.0;3;1c0a047237132e22
+A080_p01;A080;de;DER SPIEGEL;DE;2026-08-13;0;0;1;0;0;0;0;offshore;;0;3;;NW;human;2026-09-29;1.0;3;6e4a66cc6c0955ee
+A057_p03;A057;en;The Economist;GB;2026-04-01;1;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;8b820b9a1301a9cf
+A080_p02;A080;de;DER SPIEGEL;DE;2026-08-13;0;0;1;0;0;0;0;unspecified;;0;2;[private: 33 chars];NW;human;2026-09-29;1.0;3;1d50a7f5dab5fc17
+A055_p11;A055;en;The Economist;GB;2026-03-02;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;26deacdb1827c7e0
+A085_p05;A085;de;Neue Zürcher Zeitung;CH;2026-05-16;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;874f170e3e879597
+A058_p09;A058;en;The Economist;GB;2026-05-26;1;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;8391138dfb5fb090
+A039_p01;A039;de;BILD;DE;2026-06-29;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;c2a820b129dc32f5
+A082_p02;A082;de;DER SPIEGEL;DE;2026-07-01;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;1ef847ac76eac331
+A008_p09;A008;de;taz;DE;2025-12-08;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;c20673f7ef7b6188
+A008_p05;A008;de;taz;DE;2025-12-08;0;1;0;0;0;0;0;;;0;2;[private: 25 chars];NW;human;2026-09-29;1.0;3;5c15103778a9f9c9
+A080_p10;A080;de;DER SPIEGEL;DE;2026-08-13;0;0;1;0;0;0;0;offshore;;0;3;;NW;human;2026-09-29;1.0;3;46b4ef07965fa5b0
+A042_p06;A042;de;DIE ZEIT;DE;2026-08-10;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;4eab7f6c80c19896
+A036_p05;A036;de;BILD;DE;2026-05-27;0;1;1;1;0;0;0;unspecified;green;0;3;;NW;human;2026-09-29;1.0;3;b392528ef6472ccc
+A067_p19;A067;en;The New York Times;US;2025-08-11;0;0;0;1;0;0;0;;blue;0;2;[private: 26 chars];NW;human;2026-09-29;1.0;3;3f36e431997160c6
+A060_p23;A060;en;The Guardian;GB;2025-03-24;1;0;0;1;0;0;0;;green;0;3;;NW;human;2026-09-29;1.0;3;bf6bfa17386abd08
+A037_p02;A037;de;BILD;DE;2026-06-12;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-29;1.0;3;f8eae6d0e7eb9b92
+A070_p16;A070;en;The New York Times;US;2026-04-10;1;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;3;4bb3651c3017280b
+A039_p02;A039;de;BILD;DE;2026-06-29;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;4;a49725c17a17e896
+A069_p37;A069;en;The New York Times;US;2026-01-06;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-29;1.0;4;5e015146d64af8c8
+A063_p32;A063;en;The Guardian;GB;2025-11-14;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-29;1.0;4;3c33a8e15027807d
+A066_p21;A066;en;The New York Times;US;2023-12-04;0;0;0;1;0;0;0;;unspecified;0;3;[private: 25 chars];NW;human;2026-09-30;1.0;5;ad599235aca92547
+A085_p07;A085;de;Neue Zürcher Zeitung;CH;2026-05-16;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;0de49372340623b1
+A037_p05;A037;de;BILD;DE;2026-06-12;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;454373b533c02e44
+A094_p02;A094;de;tagesschau.de;DE;2025-08-07;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;dc54f76784c632d9
+A048_p02;A048;en;The Economist;GB;2024-03-26;0;0;1;0;0;0;0;offshore;;0;3;;NW;human;2026-09-30;1.0;5;fa316918dc582af2
+A091_p13;A091;de;Süddeutsche Zeitung;DE;2026-07-14;0;0;1;0;0;1;0;unspecified;;0;3;[private: 30 chars];NW;human;2026-09-30;1.0;5;a5d488cc8e546e64
+A049_p07;A049;en;The Economist;GB;2025-07-31;1;1;1;0;1;1;0;unspecified;;0;3;[private: 29 chars];NW;human;2026-09-30;1.0;5;4334dfd18b73ff00
+A093_p07;A093;de;tagesschau.de;DE;2025-09-15;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;2ff5aeaa30876e9b
+A042_p10;A042;de;DIE ZEIT;DE;2026-08-10;0;0;1;0;0;0;1;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;fe3f7880078d113c
+A085_p03;A085;de;Neue Zürcher Zeitung;CH;2026-05-16;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;71e9437f6b4d06de
+A082_p05;A082;de;DER SPIEGEL;DE;2026-07-01;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;1256ad38a139a9b2
+A054_p05;A054;en;The Economist;GB;2025-11-03;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;2da25c233c90ca2c
+A075_p04;A075;en;The New York Times;US;2026-08-27;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;768414253b271b81
+A085_p11;A085;de;Neue Zürcher Zeitung;CH;2026-05-16;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;d163be496bda1a6a
+A095_p02;A095;de;taz;DE;2026-06-10;0;0;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;0ede6468fa0f4650
+A085_p09;A085;de;Neue Zürcher Zeitung;CH;2026-05-16;0;1;1;0;0;0;0;unspecified;;0;3;;NW;human;2026-09-30;1.0;5;4a09f29576b2049a
+A053_p05;A053;en;The Economist;GB;2025-10-30;1;0;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;fec550a1910850f0
+A061_p02;A061;en;The Guardian;GB;2025-07-25;0;0;0;1;0;0;0;;green;0;2;[private: 18 chars];NW;human;2026-09-30;1.0;5;d992617a9730948e
+A072_p16;A072;en;The New York Times;US;2026-07-27;0;0;0;0;1;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;f3830ae9b024816f
+A047_p05;A047;de;Handelsblatt;DE;2026-09-01;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;e0fe49cabc074fc7
+A007_p04;A007;de;taz;DE;2026-04-03;0;1;0;0;0;0;0;;;0;3;;NW;human;2026-09-30;1.0;5;ff70740be9d7836e
+A083_p02;A083;de;Hamburger Abendblatt;DE;2026-08-16;0;0;0;0;0;0;1;;;0;3;;NW;human;2026-09-30;1.0;5;a75f1d24698b2c8f
+A067_p02;A067;en;The New York Times;US;2025-08-11;0;0;0;1;0;0;0;;unspecified;0;2;;NW;human;2026-09-30;1.0;5;19ee22a2a81ffa29
+A085_p10;A085;de;Neue Zürcher Zeitung;CH;2026-05-16;0;1;1;0;0;0;0;onshore;;0;3;;NW;human;2026-09-30;1.0;5;26f9c9286bed9a8b
+A077_p15;A077;en;The Washington Post;US;2026-07-28;1;1;0;0;1;1;0;;;0;2;[private: 80 chars];NW;human;2026-09-30;1.0;5;5740055ff86e85b3

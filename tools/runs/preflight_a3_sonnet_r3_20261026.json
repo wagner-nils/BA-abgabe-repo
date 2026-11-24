@@ -1,0 +1,329 @@
+{
+  "started_at": "2026-10-26T10:10:25.750904+00:00",
+  "ended_at": "2026-10-26T10:10:31.219192+00:00",
+  "region": "eu-central-1",
+  "models": {
+    "sonnet": "eu.anthropic.claude-sonnet-4-6"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "system_prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+  "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+  "instrument": "v1.0r3",
+  "provenance": {
+    "git_commit": "b83a4728bfd6bcd5aff61f37daa22380051103e5",
+    "git_dirty": true,
+    "git_dirty_files": 1,
+    "preflight_sha256": "677e94b7bce328fd5424a3a0e24f17fef05f04d38014ac72dd421348d5f51e9a",
+    "instrument_sha256": "cd5679b1e8856d7681ee0d434b9048dfde06985df6d34f366cedbc5da3cae128",
+    "instrument_version": "v1.0r3",
+    "instrument_v11_sha256": "441fe99a946e03eddea05b3134ec12168c802feca7e07ab7c816b7be869d8681",
+    "instrument_v10r3_sha256": "12a669bbbf99caf2ecc196570986207403145fbaa4f3af1a601eb48f41ebb7b8",
+    "uv_lock_sha256": "ee09c5c794c8d08f6423ddaa0573e04f43416c6fb26e1aae668e5ac41f0d10e8",
+    "python": "3.13.12",
+    "botocore": "1.43.83"
+  },
+  "execution_mode": "live",
+  "live_attempted": true,
+  "skip_reason": "",
+  "cache_initial_state": {
+    "sonnet": "cold"
+  },
+  "cache_prefix_tokens": {
+    "sonnet": 4319
+  },
+  "cache_ttl": "1h",
+  "checks": [
+    {
+      "id": "14",
+      "name": "the pinned instrument loads and matches its pins",
+      "silent": true,
+      "ok": true,
+      "detail": "prompt 13,260 chars sha=138cade3add5dcc4; tool config sha=a1e82607f50e8c04; codebook v1.0",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "11",
+      "name": "codebook is frozen and matches its pinned hash",
+      "silent": true,
+      "ok": true,
+      "detail": "annotation/codebook/codebook-v1.0.yaml sha256=1edb4601519417de == pin",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "7",
+      "name": "tool config matches its pin and is the config the builder loads",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/tool-config_v1.0.json sha256=a1e82607f50e8c04 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "12",
+      "name": "the prompt under test IS the pinned production prompt",
+      "silent": true,
+      "ok": true,
+      "detail": "pipeline/instrument/system-prompt_v1.0.txt sha256=138cade3add5dcc4 == pin and is the artifact the production request builder loaded",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "13",
+      "name": "the request comes from instrument.build_request()",
+      "silent": true,
+      "ok": true,
+      "detail": "7/7 clauses hold. No topP (the API rejects it beside temperature), no thinking block, no extra system instruction. Converse caches tools then system then messages, so the cached prefix is the pinned config plus the pinned prompt.",
+      "skipped": "",
+      "phase": "offline"
+    },
+    {
+      "id": "1",
+      "name": "[sonnet] inference profile resolves and returns a completion",
+      "silent": false,
+      "ok": true,
+      "detail": "eu.anthropic.claude-sonnet-4-6  stopReason=end_turn",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "2",
+      "name": "[sonnet] forced tool use returns exactly one schema-valid toolUse and no reasoning block on both production calls",
+      "silent": false,
+      "ok": true,
+      "detail": "call 1: schema-valid and contract-valid: {\"outcome\": \"technologies_present\", \"relations\": [{\"technology\": \"wind\", \"wind_siting\": \"onshore\", \"elements\": [\"F8a\", \"F7b\"], \"evaluations\": {\"regulation\": \"negative\", \"siting\": \"negative\"}, \"comparison_target\": \"none\"}]}  |  call 2: schema-valid and contract-valid: {\"outcome\": \"technologies_present\", \"relations\": [{\"technology\": \"wind\", \"wind_siting\": \"onshore\", \"elements\": [\"F7b\", \"F8a\"], \"evaluations\": {\"siting\": \"negative\", \"regulation\": \"negative\"}, \"comparison_target\": \"none\"}]}",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "3",
+      "name": "[sonnet] stopReason is tool_use on both production calls, never max_tokens",
+      "silent": true,
+      "ok": true,
+      "detail": "call 1 stopReason=tool_use, call 2 stopReason=tool_use",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "5",
+      "name": "[sonnet] the production prefix caches, and reads back whole",
+      "silent": true,
+      "ok": true,
+      "detail": "cold start: 4319 tokens written then read back whole (requested ttl=1h); call 1 cacheDetails: ttl=['1h'], tokens=4319",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "6",
+      "name": "[sonnet] cached prefix clears this model's minimum (1024 tokens)",
+      "silent": true,
+      "ok": true,
+      "detail": "cached_prefix_tokens=4319  model_minimum=1024  margin=+3295. CountTokens is not callable on this credential, so a live call is the only way to know. The cached prefix is the pinned tool config plus the pinned system prompt.",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "8",
+      "name": "[sonnet] usage complete; two accountings recorded",
+      "silent": true,
+      "ok": true,
+      "detail": "{'inputTokens': 472, 'outputTokens': 132, 'cacheReadInputTokens': 4319, 'cacheWriteInputTokens': 0}  |  billable=4923 quota=472 (10.4x divergence)",
+      "skipped": "",
+      "phase": "live"
+    },
+    {
+      "id": "13b",
+      "name": "every submitted envelope is canonically identical to the one the builder produced",
+      "silent": true,
+      "ok": true,
+      "detail": "2 production call(s), 1 distinct request digest(s): 4332cdf6a063. Every one matched the digest taken when it was built.",
+      "skipped": "",
+      "phase": "live"
+    }
+  ],
+  "raw_responses": [
+    {
+      "model": "sonnet",
+      "label": "reachability",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "a19e5146-50ee-432f-a7b7-36de1e5dc3d9",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 26 Oct 2026 10:10:27 GMT",
+            "content-type": "application/json",
+            "content-length": "313",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "a19e5146-50ee-432f-a7b7-36de1e5dc3d9"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "text": "OK"
+              }
+            ]
+          }
+        },
+        "stopReason": "end_turn",
+        "usage": {
+          "inputTokens": 14,
+          "outputTokens": 4,
+          "totalTokens": 18,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 824
+        }
+      }
+    },
+    {
+      "model": "sonnet",
+      "label": "production-call-1",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "c44be743-68b1-41de-a399-80e3aca8654d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 26 Oct 2026 10:10:28 GMT",
+            "content-type": "application/json",
+            "content-length": "678",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "c44be743-68b1-41de-a399-80e3aca8654d"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_SfcKnfuchLHeOfW3CBxwsY",
+                  "name": "record_relations",
+                  "input": {
+                    "outcome": "technologies_present",
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "wind_siting": "onshore",
+                        "elements": [
+                          "F8a",
+                          "F7b"
+                        ],
+                        "evaluations": {
+                          "regulation": "negative",
+                          "siting": "negative"
+                        },
+                        "comparison_target": "none"
+                      }
+                    ]
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 472,
+          "outputTokens": 132,
+          "totalTokens": 4923,
+          "cacheReadInputTokens": 0,
+          "cacheWriteInputTokens": 4319,
+          "cacheDetails": [
+            {
+              "ttl": "1h",
+              "inputTokens": 4319
+            }
+          ]
+        },
+        "metrics": {
+          "latencyMs": 1758
+        }
+      }
+    },
+    {
+      "model": "sonnet",
+      "label": "production-call-2",
+      "outcome": "ok",
+      "response": {
+        "ResponseMetadata": {
+          "RequestId": "ef65cd54-ed38-4b49-be5b-954cf2dd4ccf",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Mon, 26 Oct 2026 10:10:31 GMT",
+            "content-type": "application/json",
+            "content-length": "629",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "ef65cd54-ed38-4b49-be5b-954cf2dd4ccf"
+          },
+          "MaxAttemptsReached": true,
+          "RetryAttempts": 0
+        },
+        "output": {
+          "message": {
+            "role": "assistant",
+            "content": [
+              {
+                "toolUse": {
+                  "toolUseId": "tooluse_G90a1bb0YE9UPzm3QAV7M9",
+                  "name": "record_relations",
+                  "input": {
+                    "outcome": "technologies_present",
+                    "relations": [
+                      {
+                        "technology": "wind",
+                        "wind_siting": "onshore",
+                        "elements": [
+                          "F7b",
+                          "F8a"
+                        ],
+                        "evaluations": {
+                          "siting": "negative",
+                          "regulation": "negative"
+                        },
+                        "comparison_target": "none"
+                      }
+                    ]
+                  },
+                  "type": "tool_use"
+                }
+              }
+            ]
+          }
+        },
+        "stopReason": "tool_use",
+        "usage": {
+          "inputTokens": 472,
+          "outputTokens": 132,
+          "totalTokens": 4923,
+          "cacheReadInputTokens": 4319,
+          "cacheWriteInputTokens": 0
+        },
+        "metrics": {
+          "latencyMs": 2160
+        }
+      }
+    }
+  ],
+  "persisted_to": "/Users/nilswagner/Entwicklung/llm-energy-discourse-analysis/tools/runs/preflight_a3_sonnet_r3_20261026.json",
+  "certification_status": "CERTIFIED",
+  "certified": true,
+  "offline_checks": "passed",
+  "live_checks": "passed",
+  "n_failed": 0,
+  "n_failed_offline": 0,
+  "n_failed_live": 0,
+  "n_unasserted": 0
+}

@@ -1,0 +1,84 @@
+% 2026-11-09, second slimming pass (G-52): caption tightened again; no key or fact removed.
+% 2026-11-09: caption shortened; the evaluator is the solid green box, not a dashed frame (consensus F-09)
+% Pipeline architecture (Section 4.1, moved from the appendix 2026-11-05); it implements the evaluation design of Figure 1a.
+% Drawn by hand in TikZ in the thesis figure style (preamble): sans-serif text, neutral fills, no hatching; the
+% stores are shaded light grey. Restyled 2026-11-05: labels no longer crossed by arrows or by the dashed frames, the
+% paragraph arrows enter the runner and the coder from the side. Every box names a module that exists in tools/; the dashed boxes are the
+% two halves that share the codebook as their single source. No measured quantity appears in this figure.
+% Palette 2026-11-06: the model half frame and its label take figModel, the human half frame and its label figInk (both stay dashed and labelled, so they read in greyscale by position and label); the call journal, the model-side store, is filled figModelLight (this supersedes "shaded light grey" above for that store), the reference labels store keeps figGreyC; the evaluator is outlined figAdjusted at 1pt (it joins both halves; its weight and its position where both arrows meet carry the cue); the arrows from derive and from labels into it take figModel and figInk. New styles derive from the shared ones; no geometry, text or value changed.
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\figfontsmall,
+  node distance=6mm and 9mm,
+  box/.style={draw=figInk, line width=0.5pt, rectangle, rounded corners=1.5pt, minimum width=31mm, minimum height=9mm,
+    align=center, text width=31mm, inner sep=2pt, fill=white,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  store/.style={box, fill=figGreyC, minimum height=11mm},
+  src/.style={box, line width=1pt, fill=figGreyC, text width=32mm},
+  half/.style={dashed, line width=0.5pt, rounded corners=2pt, inner sep=4mm},
+  halflabel/.style={font=\figfontsmall\itshape},
+  halfmodel/.style={half, draw=figModel},
+  halfhuman/.style={half, draw=figInk},
+  halflabelmodel/.style={halflabel, text=figModel},
+  halflabelhuman/.style={halflabel, text=figInk},
+  storemodel/.style={store, fill=figModelLight},
+  evalbox/.style={box, draw=figAdjusted, line width=1pt},
+  arr/.style={-{Latex[length=1.8mm]}, line width=0.6pt},
+  arrmodel/.style={arr, draw=figModel},
+  arrhuman/.style={arr, draw=figInk},
+  lbl/.style={font=\figfontsmall, text=figGreyA, inner sep=1pt},
+]
+% --- single source
+\node[src] (codebook) {\textbf{Frozen codebook}\\ one versioned file, hash-pinned};
+
+% --- model half (left column)
+\node[box, below left=16mm and 24mm of codebook] (render) {\textbf{Renderer}\\ system prompt and tool schema};
+\node[box, below=of render] (gate) {\textbf{Pre-run gate}\\ contract, forced tool use, cache read-back};
+% 2026-11-06 (review G3): the runner box names the three executions instead of the symbol k.
+\node[box, below=of gate] (runner) {\textbf{Extraction runner}\\ one stateless call per paragraph, three executions};
+\node[storemodel, below=of runner] (journal) {\textbf{Append-only call journal}\\ private, raw responses};
+\node[box, below=of journal] (derive) {\textbf{Derivation}\\ terminal outcomes, predictions};
+
+% --- human half (right column)
+\node[box, below right=16mm and 24mm of codebook] (sheets) {\textbf{Sheet generator}\\ two-pass coding sheets};
+\node[box, below=of sheets] (coder) {\textbf{Human coder}\\ pass 1: technologies; pass 2: elements, evaluation, target};
+\node[box, below=of coder] (finalize) {\textbf{Finalisation}\\ strip text, validate against the codebook};
+\node[store, below=of finalize] (labels) {\textbf{Reference labels}\\ identifiers and labels only};
+
+% --- shared centre column: corpus, registry, sample, evaluator
+\node[box, below=10mm of codebook] (corpus) {\textbf{Corpus}\\ articles, segmented into paragraphs};
+\node[box, below=of corpus] (registry) {\textbf{Split registry}\\ identities, hash-chained assignment log, frozen frame};
+\node[box, below=of registry] (sample) {\textbf{Evaluation sample}\\ stratified draw, design weights};
+\node[evalbox, anchor=north] (evaluate) at ([yshift=-12mm]codebook.south |- derive.south) {\textbf{Evaluator}\\ agreement, stability, displacement};
+
+% --- frames around the halves, labelled below so that no arrow crosses the label
+\begin{scope}[on background layer]
+  \node[halfmodel, fit=(render)(derive)] (mh) {};
+  \node[halfhuman, fit=(sheets)(labels)] (hh) {};
+\end{scope}
+\node[halflabelmodel, below=1mm of mh.south] {model half};
+\node[halflabelhuman, below=1mm of hh.south] {human half};
+
+% --- edges
+\draw[arr] (codebook.west) -| (render.north);
+\draw[arr] (codebook.east) -| (sheets.north);
+\draw[arr] (render) -- (gate);
+\draw[arr] (gate) -- (runner);
+\draw[arr] (runner) -- (journal);
+\draw[arr] (journal) -- (derive);
+\draw[arr] (sheets) -- (coder);
+\draw[arr] (coder) -- (finalize);
+\draw[arr] (finalize) -- (labels);
+\draw[arr] (corpus) -- (registry);
+\draw[arr] (registry) -- (sample);
+% the paragraph labels sit above the outer segment beside the sample box, clear of the dashed half frames
+\draw[arr] (sample.west) -- ++(-17mm,0) node[lbl, midway, above] {paragraphs} |- (runner.east);
+\draw[arr] (sample.east) -- ++(17mm,0) node[lbl, midway, above] {paragraphs} |- (coder.west);
+\draw[arr] (sample.south) -- (evaluate.north) node[lbl, pos=0.4, left=1mm, align=right] {design weights,\\ manifest digests};
+\draw[arrmodel] (derive.east) -| ([xshift=-8mm]evaluate.north);
+\draw[arrhuman] (labels.west) -| ([xshift=8mm]evaluate.north);
+\end{tikzpicture}
+\caption[Pipeline architecture]{\textbf{One frozen codebook supplies the model's prompt and the coder's sheets; model and coder labels are compared on a design-weighted sample.}}
+\label{fig:architecture}
+\end{figure}

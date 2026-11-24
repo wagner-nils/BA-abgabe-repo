@@ -1,0 +1,401 @@
+{
+  "run_id": "mc_opus55_a3_20261108r2",
+  "started_at": "2026-11-08T10:59:01.178034+00:00",
+  "ended_at": "2026-11-08T11:10:53.679684+00:00",
+  "first_call_at": "2026-11-08T10:59:10.485145+00:00",
+  "reportable": true,
+  "dev": false,
+  "arm": "main",
+  "analysis_status": "robustness model comparison",
+  "w3_authorisation": null,
+  "a3_embargo": {
+    "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+    "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "touches_a3": true,
+    "paragraphs_touched": 55,
+    "finalised": {
+      "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+      "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+    },
+    "session_manifest_sha256": "2b06db189b360ba227d5352e34b31c1d17411bc18fbba62b822105cc15965e99",
+    "committed": "tracked and clean"
+  },
+  "model_comparison": {
+    "decision": "Nils Wagner (author), 2026-11-08: use Opus 5.5 on Bedrock beside Opus 5 to examine precision and recall further and work the findings into the thesis (German message, paraphrased; specification §4m); the control opus5_req55, the high-effort configuration opus55_high and the Opus 5 repeat opus5_rep are the agent's declared additions within that request",
+    "decision_sha256": "adfa1804f2dfaa27d19b3998a7ba6777c1cfd42c7ac10e11d74bc7f7e85a500d",
+    "authority": "pre-analysis specification §4m (2026-11-08)",
+    "registered_model": "sonnet",
+    "sample": "A3 census"
+  },
+  "manifest": {
+    "path": "tools/annotation/labels/A3_sample_manifest.json",
+    "sha256": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "restrict_split": null,
+    "n_paragraphs": 55
+  },
+  "repeats": 3,
+  "execution_fingerprint": "93705f53727acaec8b0d27f1b51e4a65ec44f2fe26e08354e7c5007f712ba7d8",
+  "execution_contract": {
+    "manifest_sha256": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+    "restrict_split": null,
+    "dev": false,
+    "a3_embargo": {
+      "manifest": "tools/annotation/labels/A3_sample_manifest.json",
+      "a3_manifest_digest": "65c9bf350261c9783ce8fd00242b32ccfa2d8c7538ca5960d76936d94e552bb6",
+      "touches_a3": true,
+      "paragraphs_touched": 55,
+      "finalised": {
+        "A3_pass1_v1.0.csv": "211591df0511cd3421ae7b012b224fda102fca55e8a2d9da289fda9b575b53a7",
+        "A3_pass2_v1.0.csv": "0257e3b0e081a76646df088d7493f4bdde794a3e6e77e9bc177a958e3af15345"
+      },
+      "session_manifest_sha256": "2b06db189b360ba227d5352e34b31c1d17411bc18fbba62b822105cc15965e99",
+      "committed": "tracked and clean"
+    },
+    "prompt_sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+    "codebook_sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291",
+    "model_id": "eu.anthropic.claude-opus-5-5",
+    "region": "eu-central-1",
+    "inference_config": {
+      "maxTokens": 8192
+    },
+    "additional_model_request_fields": {
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "low"
+      }
+    },
+    "tool_choice": {
+      "auto": {}
+    },
+    "max_tokens": 8192,
+    "repeats": 3,
+    "retry_policy_version": "2",
+    "retry_policy": {
+      "parse": 1,
+      "throttle": 6,
+      "error": 2
+    },
+    "runner_sha256": "47ca0d05cd94bef0282226b81bef284928f6a0f375fffbd451c8f63b09bafe7b",
+    "instrument_sha256": "d39b332d3df113156aa8f9c15bf0fdbf29a93bbeb5d0c5b95fd6dc87d0a74c14",
+    "instrument_version": "1.0",
+    "instrument_v11_sha256": null,
+    "instrument_v10r3_sha256": null,
+    "prompt_path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sample_contract_sha256": "f2b923be286bc4feda5377fb4c06d7f18b1cc84163fc254afde2a98b091cbb6d",
+    "preflight_sha256": "6eab7ecefa219b47f5d93f3dc9597497699fb0b69bd0dc87a5ef9aeb424cd6e7",
+    "max_recovery_episodes": 2,
+    "w3_authorisation": null,
+    "model_comparison": {
+      "decision": "Nils Wagner (author), 2026-11-08: use Opus 5.5 on Bedrock beside Opus 5 to examine precision and recall further and work the findings into the thesis (German message, paraphrased; specification §4m); the control opus5_req55, the high-effort configuration opus55_high and the Opus 5 repeat opus5_rep are the agent's declared additions within that request",
+      "decision_sha256": "adfa1804f2dfaa27d19b3998a7ba6777c1cfd42c7ac10e11d74bc7f7e85a500d",
+      "authority": "pre-analysis specification §4m (2026-11-08)",
+      "registered_model": "sonnet",
+      "sample": "A3 census"
+    }
+  },
+  "git_commit": "5ed4cdc970ab2a9f247e4556899d14b443a778f2",
+  "git_dirty": true,
+  "git_at_start": {
+    "dirty": true,
+    "changed_paths": [
+      "knowledge/bibliography/literature.bib",
+      "knowledge/reviews/chair-guide-check_2026-11-07.md",
+      "knowledge/reviews/slimming-decisions_2026-11-07.md",
+      "paper/BA_NW_2026.tex",
+      "paper/chapters/01_introduction.tex",
+      "paper/chapters/02_theoretical_background.tex",
+      "paper/chapters/03_related_work.tex",
+      "paper/chapters/04_system_design.tex",
+      "paper/chapters/05_methodology.tex",
+      "paper/chapters/06_results.tex",
+      "paper/chapters/07_discussion.tex",
+      "paper/chapters/08_conclusion.tex",
+      "paper/chapters/appendix.tex",
+      "paper/images/architecture.tex",
+      "paper/images/fig_anatomy.tex",
+      "paper/images/fig_dsl.tex",
+      "paper/tables/fresh_sample/tab_attrition.tex",
+      "paper/tables/fresh_sample/tab_categorical.tex",
+      "paper/tables/fresh_sample/tab_displacement.tex",
+      "paper/tables/fresh_sample/tab_limits.tex",
+      "paper/tables/fresh_sample/tab_per_class.tex",
+      "paper/tables/fresh_sample/tab_primary.tex",
+      "paper/tables/fresh_sample/tab_run_record.tex",
+      "paper/tables/fresh_sample/tab_stability.tex",
+      "paper/tables/tab_a2_allocation.tex",
+      "paper/tables/tab_added_analyses.tex",
+      "paper/tables/tab_battery_families.tex",
+      "paper/tables/tab_battery_primary.tex",
+      "paper/tables/tab_battery_units.tex",
+      "paper/tables/tab_codebook_elements.tex",
+      "paper/tables/tab_codebook_review.tex",
+      "paper/tables/tab_context_variant.tex",
+      "paper/tables/tab_corpus.tex",
+      "paper/tables/tab_displacement.tex",
+      "paper/tables/tab_dsl.tex",
+      "paper/tables/tab_form_variant.tex",
+      "paper/tables/tab_limits.tex",
+      "paper/tables/tab_literature_short.tex",
+      "paper/tables/tab_per_class.tex",
+      "paper/tables/tab_primary_full.tex",
+      "paper/tables/tab_recode_comparison.tex",
+      "paper/tables/tab_sessions.tex",
+      "tools/annotation/descriptives.py",
+      "tools/pipeline/battery_analyse.py",
+      "tools/pipeline/codebook_review.py",
+      "tools/pipeline/compare_context.py",
+      "tools/pipeline/compare_form.py",
+      "tools/pipeline/compare_gen55.py",
+      "tools/pipeline/compare_models.py",
+      "tools/pipeline/dsl.py",
+      "tools/pipeline/figures.py",
+      "tools/pipeline/review_analyses.py",
+      "tools/runs/mc_opus55_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus55_high_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_rep_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_req55_a2_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_req55_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_req55_a3_20261108_predictions.csv",
+      "tools/runs/mc_opus5_req55_a3_20261108_terminal.csv",
+      "tools/runs/preflight_mc_opus55_a3_20261108.json",
+      "tools/runs/preflight_mc_opus55_high_a3_20261108.json",
+      "tools/runs/preflight_mc_opus5_rep_a3_20261108.json",
+      "tools/runs/preflight_mc_opus5_req55_a2_20261108.json",
+      "tools/runs/preflight_mc_opus5_req55_a3_20261108.json",
+      "tools/runs/tables/dsl/dsl_prevalence.json"
+    ]
+  },
+  "git_at_invocation": {
+    "dirty": true,
+    "changed_paths": [
+      "knowledge/bibliography/literature.bib",
+      "knowledge/reviews/chair-guide-check_2026-11-07.md",
+      "knowledge/reviews/slimming-decisions_2026-11-07.md",
+      "paper/BA_NW_2026.tex",
+      "paper/chapters/01_introduction.tex",
+      "paper/chapters/02_theoretical_background.tex",
+      "paper/chapters/03_related_work.tex",
+      "paper/chapters/04_system_design.tex",
+      "paper/chapters/05_methodology.tex",
+      "paper/chapters/06_results.tex",
+      "paper/chapters/07_discussion.tex",
+      "paper/chapters/08_conclusion.tex",
+      "paper/chapters/appendix.tex",
+      "paper/images/architecture.tex",
+      "paper/images/fig_anatomy.tex",
+      "paper/images/fig_dsl.tex",
+      "paper/tables/fresh_sample/tab_attrition.tex",
+      "paper/tables/fresh_sample/tab_categorical.tex",
+      "paper/tables/fresh_sample/tab_displacement.tex",
+      "paper/tables/fresh_sample/tab_limits.tex",
+      "paper/tables/fresh_sample/tab_per_class.tex",
+      "paper/tables/fresh_sample/tab_primary.tex",
+      "paper/tables/fresh_sample/tab_run_record.tex",
+      "paper/tables/fresh_sample/tab_stability.tex",
+      "paper/tables/tab_a2_allocation.tex",
+      "paper/tables/tab_added_analyses.tex",
+      "paper/tables/tab_battery_families.tex",
+      "paper/tables/tab_battery_primary.tex",
+      "paper/tables/tab_battery_units.tex",
+      "paper/tables/tab_codebook_elements.tex",
+      "paper/tables/tab_codebook_review.tex",
+      "paper/tables/tab_context_variant.tex",
+      "paper/tables/tab_corpus.tex",
+      "paper/tables/tab_displacement.tex",
+      "paper/tables/tab_dsl.tex",
+      "paper/tables/tab_form_variant.tex",
+      "paper/tables/tab_limits.tex",
+      "paper/tables/tab_literature_short.tex",
+      "paper/tables/tab_per_class.tex",
+      "paper/tables/tab_primary_full.tex",
+      "paper/tables/tab_recode_comparison.tex",
+      "paper/tables/tab_sessions.tex",
+      "tools/annotation/descriptives.py",
+      "tools/pipeline/battery_analyse.py",
+      "tools/pipeline/codebook_review.py",
+      "tools/pipeline/compare_context.py",
+      "tools/pipeline/compare_form.py",
+      "tools/pipeline/compare_gen55.py",
+      "tools/pipeline/compare_models.py",
+      "tools/pipeline/dsl.py",
+      "tools/pipeline/figures.py",
+      "tools/pipeline/review_analyses.py",
+      "tools/runs/mc_opus55_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus55_high_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_rep_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_req55_a2_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_req55_a3_20261108_calls.jsonl",
+      "tools/runs/mc_opus5_req55_a3_20261108_predictions.csv",
+      "tools/runs/mc_opus5_req55_a3_20261108_terminal.csv",
+      "tools/runs/preflight_mc_opus55_a3_20261108.json",
+      "tools/runs/preflight_mc_opus55_high_a3_20261108.json",
+      "tools/runs/preflight_mc_opus5_rep_a3_20261108.json",
+      "tools/runs/preflight_mc_opus5_req55_a2_20261108.json",
+      "tools/runs/preflight_mc_opus5_req55_a3_20261108.json",
+      "tools/runs/tables/dsl/dsl_prevalence.json"
+    ]
+  },
+  "python": "3.13.12",
+  "botocore": "1.43.83",
+  "codebook": {
+    "version": "1.0",
+    "sha256": "1edb4601519417dea30e1d079ed2dd98265a61a550afab7d59994dd081e5d291"
+  },
+  "prompt": {
+    "path": "tools/pipeline/instrument/system-prompt_v1.0.txt",
+    "sha256": "138cade3add5dcc4edff4b1dd86747b57b1c7321de8ac77b6ff38f2d0eb606f1",
+    "note": "referenced by path and hash; the rendered prompt is a tracked artefact"
+  },
+  "tool_config_sha256": "a1e82607f50e8c044b49c9a6b063800bc92ad97ffbccea2e2297f420762fe40b",
+  "instrument": {
+    "name": "v1.0",
+    "version": "1.0",
+    "variant": null,
+    "retry_policy_version": "2",
+    "pins": "tools/pipeline/pins.json",
+    "module_sha256": {
+      "instrument.py": "d39b332d3df113156aa8f9c15bf0fdbf29a93bbeb5d0c5b95fd6dc87d0a74c14"
+    }
+  },
+  "model_id": "eu.anthropic.claude-opus-5-5",
+  "model_key": "opus55",
+  "region": "eu-central-1",
+  "provider": "Amazon Bedrock",
+  "inference_config": {
+    "maxTokens": 8192
+  },
+  "thinking": "adaptive: the request carries thinking {type: adaptive} and output_config.effort=low in additionalModelRequestFields (§4m; Opus 5.5 cannot disable thinking). This describes the request, not the response: a reasoningContent block beside the single tool call is accepted and never read or stored publicly; reasoning tokens count in the output tokens.",
+  "cache_ttl_requested": "1h",
+  "cache_writes_other_ttl": 0,
+  "preflight": {
+    "artefact": "tools/runs/preflight_mc_opus55_a3_20261108r2.json",
+    "sha256": "2b3d5efbd9deca9665c634af10a3d4a171b6f3c00ef094b1e5cbd541f12853e6",
+    "gates": [
+      {
+        "artefact": "tools/runs/preflight_mc_opus55_a3_20261108r2.json",
+        "sha256": "2b3d5efbd9deca9665c634af10a3d4a171b6f3c00ef094b1e5cbd541f12853e6",
+        "certified": true,
+        "certification_status": "CERTIFIED",
+        "gate_started_at": "2026-11-08T10:59:01.203644+00:00"
+      }
+    ],
+    "all_certified": true,
+    "certified": true,
+    "certification_status": "CERTIFIED",
+    "checks": [
+      {
+        "id": "14",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "11",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "7",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "12",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "1",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "2",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "3",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "5",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "6",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "8",
+        "ok": true,
+        "skipped": false
+      },
+      {
+        "id": "13b",
+        "ok": true,
+        "skipped": false
+      }
+    ]
+  },
+  "totals": {
+    "calls": 166,
+    "input_tokens": 39780,
+    "output_tokens": 54806,
+    "cache_read_tokens": 994950,
+    "cache_write_tokens": 0,
+    "throttles": 0,
+    "errors": 1,
+    "unknown_completion_attempts": 0,
+    "usage_incomplete_attempts": 0,
+    "billing_uncertain_attempts": 1,
+    "cache_writes_other_ttl": 0,
+    "torn_records": 0,
+    "recovered_attempts": 0,
+    "verdict_codes": {
+      "ok_technologies_present": 164,
+      "ok_off_topic": 1,
+      "error": 1
+    },
+    "billable_tokens": 1089536,
+    "quota_tokens": 39780
+  },
+  "cost": {
+    "estimated_usd": 1.599653,
+    "basis": "estimated USD from the observed token usage of every finished attempt at the frozen provisional list rates below; not an invoice, not an observed charge",
+    "rates_per_million_usd": {
+      "input": 4.4,
+      "output": 22.0,
+      "cache_write_1h": 8.8,
+      "cache_read": 0.22
+    },
+    "price_table": "aws-bedrock-price-map-2026-08-14 (sonnet, opus) + anthropic-list-2026-09-06 x 1.10 eu regional premium (sonnet5, opus5; §4k controls sonnet_req5, opus_req5 at the sonnet, opus rows); §4f 2026-10-19 provisional rows (haiku45, sonnet45, novapro, qwen3_235b, nemotron3s); §4m 2026-11-08 provisional rows (opus55, opus55_high = anthropic list x 1.10; opus5_req55, opus5_rep at the opus5 row); USD per 1M tokens",
+    "billing_complete": false,
+    "note": "the estimate covers finished attempts with complete usage only; 0 unknown-completion, 0 usage-incomplete and 1 billing-uncertain attempt(s) may have been billed and are not in it; 0 write(s) were stored for a TTL other than the one costed"
+  },
+  "files": {
+    "mc_opus55_a3_20261108r2_calls.jsonl": {
+      "path": "tools/runs/mc_opus55_a3_20261108r2_calls.jsonl",
+      "sha256": "31aed5cf1756af536698b108bdca168df3d1e5060441876c09046c73da939aa2"
+    },
+    "mc_opus55_a3_20261108r2_terminal.csv": {
+      "path": "tools/runs/mc_opus55_a3_20261108r2_terminal.csv",
+      "sha256": "e94e97a379f6ea2f0ba0e405bc5a1b037e05d105c60cae4e3bb6867c434c3813"
+    },
+    "mc_opus55_a3_20261108r2_predictions.csv": {
+      "path": "tools/runs/mc_opus55_a3_20261108r2_predictions.csv",
+      "sha256": "6589f009f1581581c3940e08caa79330f047cda6b27d3662ccede40a8d1fb585"
+    }
+  },
+  "raw_private": "tools/runs/raw/mc_opus55_a3_20261108r2.jsonl"
+}
