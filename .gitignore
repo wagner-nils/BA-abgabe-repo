@@ -1,0 +1,47 @@
+# Credentials: never committed.
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# LaTeX build output
+paper/build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# PDFs are build products, except the submitted thesis.
+*.pdf
+!/BA_NW_2026.pdf
+
+# Archives and binary data
+*.zip
+*.tar.gz
+*.pkl
+*.parquet
+*.sqlite
+*.db
+.DS_Store
+
+# Article text and anything that can quote it (withheld; see README.md, "What is not in this repository").
+corpus/articles
+tools/data/
+tools/annotation/sheets/
+tools/annotation/_quarantine/
+tools/annotation/labels/private/
+tools/runs/raw/
+tools/runs/language_arm/private/
